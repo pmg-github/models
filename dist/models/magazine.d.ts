@@ -1,10 +1,10 @@
-export declare class MagazineTileViewModel {
+export declare class ViewerTileBaseViewModel {
     reference: string | undefined;
     title: string | undefined;
     isPremium: boolean | undefined;
     imageUrl: string | undefined;
 }
-export declare class MagazineArticleViewModel {
+export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;
     title: string | undefined;
     description: string | undefined;
@@ -15,10 +15,27 @@ export declare class MagazineArticleViewModel {
     imageUrl: string | undefined;
     customerReference: string | undefined;
 }
-export declare class MagazineAdViewModel {
+export declare class ViewerAdBaseViewModel {
     typeId: number;
     imageUrl: string | undefined;
     customerReference: string | undefined;
+}
+export declare class ViewerCustomerTileViewModel {
+    customerReference: string | undefined;
+    name: string | undefined;
+    brand: string | undefined;
+    logoUrl: string | undefined;
+    redirectUrl: string | undefined;
+}
+export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
+}
+export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
+}
+export declare class MagazineAdViewModel extends ViewerAdBaseViewModel {
+}
+export declare class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
+}
+export declare class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
 export declare class MagazineMetaDataViewModel {
     title: string | undefined;
@@ -29,11 +46,4 @@ export declare class MagazineImageArticleCombinationViewModel {
     reference: string | undefined;
     article: MagazineArticleViewModel | null;
     imageUrl: string | undefined;
-}
-export declare class MagazineCustomerTileViewModel {
-    customerReference: string | undefined;
-    name: string | undefined;
-    brand: string | undefined;
-    logoUrl: string | undefined;
-    redirectUrl: string | undefined;
 }
