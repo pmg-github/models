@@ -1,82 +1,56 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
 // BASE CLASSES
 // Actual classes should inherit from this
-class ViewerTileBaseViewModel {
-    constructor() {
-        this.reference = undefined;
-        this.title = undefined;
-        this.isPremium = undefined;
-        this.imageUrl = undefined;
-    }
+export class ViewerTileBaseViewModel {
+    reference = undefined;
+    title = undefined;
+    isPremium = undefined;
+    imageUrl = undefined;
 }
-exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
-class ViewerArticleBaseViewModel {
-    constructor() {
-        this.reference = undefined;
-        this.title = undefined;
-        this.description = undefined;
-        this.text = undefined;
-        this.displayDate = undefined;
-        this.displayAuthor = undefined;
-        this.isPremium = undefined;
-        this.imageUrl = undefined;
-        this.customerReference = undefined;
-    }
+export class ViewerArticleBaseViewModel {
+    reference = undefined;
+    title = undefined;
+    description = undefined;
+    text = undefined;
+    displayDate = undefined;
+    displayAuthor = undefined;
+    isPremium = undefined;
+    imageUrl = undefined;
+    customerReference = undefined;
 }
-exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
-class ViewerAdBaseViewModel {
-    constructor() {
-        this.typeId = 1; // for now only 1 type
-        this.imageUrl = undefined;
-        this.customerReference = undefined;
-    }
+export class ViewerAdBaseViewModel {
+    typeId = 1; // for now only 1 type
+    imageUrl = undefined;
+    customerReference = undefined;
 }
-exports.ViewerAdBaseViewModel = ViewerAdBaseViewModel;
-class ViewerCustomerTileViewModel {
-    constructor() {
-        this.customerReference = undefined;
-        this.name = undefined;
-        this.brand = undefined;
-        this.logoUrl = undefined;
-        this.redirectUrl = undefined;
-    }
+export class ViewerCustomerTileViewModel {
+    customerReference = undefined;
+    name = undefined;
+    brand = undefined;
+    logoUrl = undefined;
+    redirectUrl = undefined;
 }
-exports.ViewerCustomerTileViewModel = ViewerCustomerTileViewModel;
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
-class MagazineTileViewModel extends ViewerTileBaseViewModel {
+export class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
-exports.MagazineTileViewModel = MagazineTileViewModel;
-class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
+export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
 }
-exports.MagazineArticleViewModel = MagazineArticleViewModel;
-class MagazineAdViewModel extends ViewerAdBaseViewModel {
+export class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }
-exports.MagazineAdViewModel = MagazineAdViewModel;
-class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
+export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }
-exports.MagazineCustomerTileViewModel = MagazineCustomerTileViewModel;
 // NEWSLETTERS (in magazine project)
-class NewsletterTileViewModel extends ViewerTileBaseViewModel {
+export class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
-exports.NewsletterTileViewModel = NewsletterTileViewModel;
 // SPECIFIC CLASSES (no inheritance needed since only used on)
-class MagazineMetaDataViewModel {
-    constructor() {
-        this.title = undefined;
-        this.portalLogoUrl = undefined;
-        this.coverImageUrl = undefined;
-    }
+export class MagazineMetaDataViewModel {
+    title = undefined;
     ;
+    portalLogoUrl = undefined;
+    coverImageUrl = undefined;
 }
-exports.MagazineMetaDataViewModel = MagazineMetaDataViewModel;
-class MagazineImageArticleCombinationViewModel {
-    constructor() {
-        this.reference = undefined;
-        this.article = null;
-        this.imageUrl = undefined;
-    }
+export class MagazineImageArticleCombinationViewModel {
+    reference = undefined;
+    article = null;
+    imageUrl = undefined;
 }
-exports.MagazineImageArticleCombinationViewModel = MagazineImageArticleCombinationViewModel;

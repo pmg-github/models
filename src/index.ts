@@ -9,6 +9,10 @@ import {
   NewsletterTileViewModel
 } from './models/magazine'
 
+import {
+  UserViewModel
+} from './models/user'
+
 export {
   MagazineTileViewModel,
   MagazineArticleViewModel,
@@ -16,6 +20,7 @@ export {
   MagazineMetaDataViewModel,
   MagazineImageArticleCombinationViewModel,
   MagazineCustomerTileViewModel,
-  NewsletterTileViewModel
+  NewsletterTileViewModel,
+  UserViewModel
   // Add more exports if you have additional modules
 };
