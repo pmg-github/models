@@ -10,7 +10,8 @@ import {
 } from './models/magazine'
 
 import {
-  UserViewModel
+  UserViewModel,
+  UserAboViewModel
 } from './models/user'
 
 export {
@@ -21,6 +22,7 @@ export {
   MagazineImageArticleCombinationViewModel,
   MagazineCustomerTileViewModel,
   NewsletterTileViewModel,
-  UserViewModel
+  UserViewModel,
+  UserAboViewModel
   // Add more exports if you have additional modules
 };

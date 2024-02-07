@@ -6,3 +6,7 @@ export declare class UserViewModel {
     get fullName(): string | undefined;
     constructor(id: number, email: string, firstName?: string, lastName?: string);
 }
+export declare class UserAboViewModel {
+    expiryDate: Date | null;
+    get isActive(): boolean;
+}
