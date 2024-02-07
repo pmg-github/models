@@ -17,6 +17,6 @@ export class UserViewModel {
 export class UserAboViewModel {
     expiryDate = null;
     get isActive() {
-        return this.expiryDate != null && this.expiryDate > new Date(Date.now());
+        return this.expiryDate != null && new Date(this.expiryDate) > new Date(Date.now());
     }
 }

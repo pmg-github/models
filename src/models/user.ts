@@ -18,9 +18,9 @@ export class UserViewModel {
 
 // Class which will return if the user has an active abo and when it expires
 export class UserAboViewModel {
-    expiryDate: Date | null = null;
+    expiryDate: string | null = null;
 
     get isActive() : boolean{
-        return this.expiryDate != null && this.expiryDate > new Date(Date.now())
+        return this.expiryDate != null && new Date(this.expiryDate) > new Date(Date.now())
     }
 }
