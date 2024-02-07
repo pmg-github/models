@@ -1,12 +1,22 @@
 export declare class UserViewModel {
     id: number;
     email: string;
-    firstName: string | undefined;
-    lastName: string | undefined;
+    firstName: string | null;
+    lastName: string | null;
     get fullName(): string | undefined;
-    constructor(id: number, email: string, firstName?: string, lastName?: string);
+    constructor(userAPIInterface: UserAPIInterface);
 }
-export declare class UserAboViewModel {
+export declare class UserAboViewModel implements UserAboAPIInterface {
     expiryDate: string | null;
     get isActive(): boolean;
+    constructor(userAboAPIInterface: UserAboAPIInterface);
+}
+export interface UserAPIInterface {
+    id: number;
+    email: string;
+    firstName: string | null;
+    lastName: string | null;
+}
+export interface UserAboAPIInterface {
+    expiryDate: string | null;
 }

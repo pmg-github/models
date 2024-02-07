@@ -10,6 +10,8 @@ import {
 } from './models/magazine'
 
 import {
+  UserAPIInterface,
+  UserAboAPIInterface, 
   UserViewModel,
   UserAboViewModel
 } from './models/user'
@@ -22,6 +24,8 @@ export {
   MagazineImageArticleCombinationViewModel,
   MagazineCustomerTileViewModel,
   NewsletterTileViewModel,
+  UserAPIInterface, 
+  UserAboAPIInterface,
   UserViewModel,
   UserAboViewModel
   // Add more exports if you have additional modules
