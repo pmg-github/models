@@ -6,7 +6,8 @@ import {
   MagazineMetaDataViewModel,
   MagazineImageArticleCombinationViewModel,
   MagazineCustomerTileViewModel,
-  NewsletterTileViewModel
+  NewsletterTileViewModel,
+  NewsletterMetaDataViewModel
 } from './models/magazine'
 
 import {
@@ -24,6 +25,7 @@ export {
   MagazineImageArticleCombinationViewModel,
   MagazineCustomerTileViewModel,
   NewsletterTileViewModel,
+  NewsletterMetaDataViewModel,
   UserAPIInterface, 
   UserAboAPIInterface,
   UserViewModel,
