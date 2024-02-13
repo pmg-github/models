@@ -27,6 +27,10 @@ export declare class ViewerCustomerTileViewModel {
     logoUrl: string | undefined;
     redirectUrl: string | undefined;
 }
+export declare class ViewerMetaDataViewModel {
+    title: string | undefined;
+    portalLogoUrl: string | undefined;
+}
 export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
 export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
@@ -35,12 +39,12 @@ export declare class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }
 export declare class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }
+export declare class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
+    coverImageUrl: string | undefined;
+}
 export declare class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
-export declare class MagazineMetaDataViewModel {
-    title: string | undefined;
-    portalLogoUrl: string | undefined;
-    coverImageUrl: string | undefined;
+export declare class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
 }
 export declare class MagazineImageArticleCombinationViewModel {
     reference: string | undefined;

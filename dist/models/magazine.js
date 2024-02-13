@@ -29,6 +29,10 @@ export class ViewerCustomerTileViewModel {
     logoUrl = undefined;
     redirectUrl = undefined;
 }
+export class ViewerMetaDataViewModel {
+    title = undefined;
+    portalLogoUrl = undefined;
+}
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
 export class MagazineTileViewModel extends ViewerTileBaseViewModel {
@@ -39,16 +43,15 @@ export class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }
+export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
+    coverImageUrl = undefined;
+}
 // NEWSLETTERS (in magazine project)
 export class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
-// SPECIFIC CLASSES (no inheritance needed since only used on)
-export class MagazineMetaDataViewModel {
-    title = undefined;
-    ;
-    portalLogoUrl = undefined;
-    coverImageUrl = undefined;
+export class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
 }
+// SPECIFIC CLASSES (no inheritance needed since only used on)
 export class MagazineImageArticleCombinationViewModel {
     reference = undefined;
     article = null;

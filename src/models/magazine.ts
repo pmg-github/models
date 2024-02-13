@@ -33,22 +33,26 @@ export class ViewerCustomerTileViewModel {
     redirectUrl: string | undefined = undefined;
 }
 
+export class ViewerMetaDataViewModel {
+    title: string | undefined = undefined;
+    portalLogoUrl: string | undefined = undefined;
+}
+
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
 export class MagazineTileViewModel extends ViewerTileBaseViewModel { }
 export class MagazineArticleViewModel extends ViewerArticleBaseViewModel { }
 export class MagazineAdViewModel extends ViewerAdBaseViewModel { }
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel { }
+export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
+    coverImageUrl: string | undefined = undefined;
+}
 
 // NEWSLETTERS (in magazine project)
 export class NewsletterTileViewModel extends ViewerTileBaseViewModel { }
+export class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel { }
 
 // SPECIFIC CLASSES (no inheritance needed since only used on)
-export class MagazineMetaDataViewModel {
-    title: string | undefined = undefined;;
-    portalLogoUrl: string | undefined = undefined;
-    coverImageUrl: string | undefined = undefined;
-}
 
 export class MagazineImageArticleCombinationViewModel {
     reference: string | undefined = undefined;
