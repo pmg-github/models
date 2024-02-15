@@ -8,6 +8,7 @@ export class ViewerTileBaseViewModel {
 }
 export class ViewerArticleBaseViewModel {
     reference = undefined;
+    jobCode = undefined;
     title = undefined;
     description = undefined;
     text = undefined;
@@ -16,6 +17,7 @@ export class ViewerArticleBaseViewModel {
     isPremium = undefined;
     imageUrl = undefined;
     customerReference = undefined;
+    interesses = undefined;
 }
 export class ViewerAdBaseViewModel {
     typeId = 1; // for now only 1 type
@@ -33,11 +35,17 @@ export class ViewerMetaDataViewModel {
     title = undefined;
     portalLogoUrl = undefined;
 }
+export class ViewerInteresseViewModel {
+    name = undefined;
+    code = undefined;
+    isMain = false;
+}
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
 export class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
 export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
+    interesses = undefined;
 }
 export class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }
@@ -45,6 +53,8 @@ export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }
 export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
     coverImageUrl = undefined;
+}
+export class MagazineInteresseViewModel extends ViewerInteresseViewModel {
 }
 // NEWSLETTERS (in magazine project)
 export class NewsletterTileViewModel extends ViewerTileBaseViewModel {

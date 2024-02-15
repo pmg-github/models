@@ -6,6 +6,7 @@ export declare class ViewerTileBaseViewModel {
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;
+    jobCode: string | undefined;
     title: string | undefined;
     description: string | undefined;
     text: string | undefined;
@@ -14,6 +15,7 @@ export declare class ViewerArticleBaseViewModel {
     isPremium: boolean | undefined;
     imageUrl: string | undefined;
     customerReference: string | undefined;
+    interesses: ViewerInteresseViewModel[] | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;
@@ -31,9 +33,15 @@ export declare class ViewerMetaDataViewModel {
     title: string | undefined;
     portalLogoUrl: string | undefined;
 }
+export declare class ViewerInteresseViewModel {
+    name: string | undefined;
+    code: string | undefined;
+    isMain: boolean;
+}
 export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
 export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
+    interesses: MagazineInteresseViewModel[] | undefined;
 }
 export declare class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }
@@ -41,6 +49,8 @@ export declare class MagazineCustomerTileViewModel extends ViewerCustomerTileVie
 }
 export declare class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
     coverImageUrl: string | undefined;
+}
+export declare class MagazineInteresseViewModel extends ViewerInteresseViewModel {
 }
 export declare class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }

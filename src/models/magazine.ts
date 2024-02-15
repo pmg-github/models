@@ -9,6 +9,7 @@ export class ViewerTileBaseViewModel {
 
 export class ViewerArticleBaseViewModel {
     reference: string | undefined = undefined;
+    jobCode: string | undefined = undefined;
     title: string | undefined = undefined;
     description: string | undefined = undefined;
     text: string | undefined = undefined;
@@ -17,6 +18,7 @@ export class ViewerArticleBaseViewModel {
     isPremium: boolean | undefined = undefined;
     imageUrl: string | undefined = undefined;
     customerReference: string | undefined = undefined;
+    interesses: ViewerInteresseViewModel[] | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {
@@ -38,15 +40,24 @@ export class ViewerMetaDataViewModel {
     portalLogoUrl: string | undefined = undefined;
 }
 
+export class ViewerInteresseViewModel {
+    name: string | undefined = undefined;
+    code: string | undefined = undefined;
+    isMain: boolean = false;
+}
+
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
 export class MagazineTileViewModel extends ViewerTileBaseViewModel { }
-export class MagazineArticleViewModel extends ViewerArticleBaseViewModel { }
+export class MagazineArticleViewModel extends ViewerArticleBaseViewModel { 
+    interesses: MagazineInteresseViewModel[] | undefined = undefined;
+}
 export class MagazineAdViewModel extends ViewerAdBaseViewModel { }
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel { }
 export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
     coverImageUrl: string | undefined = undefined;
 }
+export class MagazineInteresseViewModel extends ViewerInteresseViewModel { }
 
 // NEWSLETTERS (in magazine project)
 export class NewsletterTileViewModel extends ViewerTileBaseViewModel { }
