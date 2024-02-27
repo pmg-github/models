@@ -5,7 +5,17 @@ export class UserViewModel {
     lastName: string | null;
 
     get fullName(): string | undefined {
-        return `${this.firstName} ${this.lastName}`;
+        let returnValue : string = '';
+        if(this.firstName){
+            returnValue += this.firstName
+            returnValue += ' '; 
+        }
+
+        if(this.lastName) {
+            returnValue += this.lastName;
+        }
+
+        return returnValue;
     }
 
     constructor(userAPIInterface : UserAPIInterface){
