@@ -38,6 +38,7 @@ export class ViewerCustomerTileViewModel {
 export class ViewerMetaDataViewModel {
     title: string | undefined = undefined;
     portalLogoUrl: string | undefined = undefined;
+    domain: string | undefined= undefined;
 }
 
 export class ViewerInteresseViewModel {
