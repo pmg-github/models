@@ -17,6 +17,14 @@ import {
   UserAboViewModel
 } from './models/user'
 
+import {
+  AddressViewModel
+} from './models/address'
+
+import {
+  CompanyViewModel
+} from './models/company'
+
 export {
   MagazineTileViewModel,
   MagazineArticleViewModel,
@@ -29,6 +37,8 @@ export {
   UserAPIInterface, 
   UserAboAPIInterface,
   UserViewModel,
-  UserAboViewModel
+  UserAboViewModel,
+  CompanyViewModel,
+  AddressViewModel
   // Add more exports if you have additional modules
 };
