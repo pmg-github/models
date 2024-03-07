@@ -4,6 +4,7 @@ export declare class CompanyViewModel {
     reference: string | undefined;
     name: string | undefined;
     brand: string | undefined;
+    logoUrl: string | undefined;
     email: string | undefined;
     website: string | undefined;
     phone: string | undefined;
