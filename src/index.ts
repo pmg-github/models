@@ -22,7 +22,9 @@ import {
 } from './models/address'
 
 import {
-  CompanyViewModel
+  CompanyViewModel,
+  CompanyCornerDBModel,
+  CompanyCornerPictureModel
 } from './models/company'
 
 export {
@@ -39,6 +41,8 @@ export {
   UserViewModel,
   UserAboViewModel,
   CompanyViewModel,
+  CompanyCornerDBModel,
+  CompanyCornerPictureModel,
   AddressViewModel
   // Add more exports if you have additional modules
 };
