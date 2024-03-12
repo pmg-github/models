@@ -16,6 +16,7 @@ export declare class ViewerArticleBaseViewModel {
     imageUrl: string | undefined;
     customerReference: string | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;
+    externalUrl: string | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;

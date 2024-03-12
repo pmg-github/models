@@ -18,6 +18,7 @@ export class ViewerArticleBaseViewModel {
     imageUrl = undefined;
     customerReference = undefined;
     interesses = undefined;
+    externalUrl = undefined;
 }
 export class ViewerAdBaseViewModel {
     typeId = 1; // for now only 1 type
