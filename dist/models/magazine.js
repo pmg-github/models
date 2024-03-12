@@ -35,6 +35,7 @@ export class ViewerMetaDataViewModel {
     title = undefined;
     portalLogoUrl = undefined;
     domain = undefined;
+    date = undefined;
 }
 export class ViewerInteresseViewModel {
     name = undefined;

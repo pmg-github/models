@@ -33,6 +33,7 @@ export declare class ViewerMetaDataViewModel {
     title: string | undefined;
     portalLogoUrl: string | undefined;
     domain: string | undefined;
+    date: Date | undefined;
 }
 export declare class ViewerInteresseViewModel {
     name: string | undefined;
