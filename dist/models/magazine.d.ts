@@ -66,6 +66,7 @@ export declare class MagazineImageArticleCombinationViewModel {
 }
 export declare class RelatedMagazineViewModel {
     portalCode: string | undefined;
+    domain: string | undefined;
     magazineReference: string | undefined;
     name: string | undefined;
     recentCover: string | undefined;

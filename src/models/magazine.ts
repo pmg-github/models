@@ -77,6 +77,7 @@ export class MagazineImageArticleCombinationViewModel {
 
 export class RelatedMagazineViewModel{
     portalCode: string | undefined = undefined;
+    domain: string | undefined = undefined;
     magazineReference: string | undefined = undefined;
     name: string | undefined = undefined;
     recentCover: string | undefined = undefined;
