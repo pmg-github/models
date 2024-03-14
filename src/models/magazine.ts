@@ -49,6 +49,7 @@ export class ViewerInteresseViewModel {
     isMain: boolean = false;
 }
 
+
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
 export class MagazineTileViewModel extends ViewerTileBaseViewModel { }
@@ -72,4 +73,11 @@ export class MagazineImageArticleCombinationViewModel {
     reference: string | undefined = undefined;
     article: MagazineArticleViewModel | null = null;
     imageUrl: string | undefined = undefined;
+}
+
+export class RelatedMagazineViewModel{
+    portalCode: string | undefined = undefined;
+    magazineReference: string | undefined = undefined;
+    name: string | undefined = undefined;
+    recentCover: string | undefined = undefined;
 }

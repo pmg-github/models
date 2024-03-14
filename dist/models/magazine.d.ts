@@ -64,3 +64,9 @@ export declare class MagazineImageArticleCombinationViewModel {
     article: MagazineArticleViewModel | null;
     imageUrl: string | undefined;
 }
+export declare class RelatedMagazineViewModel {
+    portalCode: string | undefined;
+    magazineReference: string | undefined;
+    name: string | undefined;
+    recentCover: string | undefined;
+}

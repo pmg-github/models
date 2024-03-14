@@ -70,3 +70,9 @@ export class MagazineImageArticleCombinationViewModel {
     article = null;
     imageUrl = undefined;
 }
+export class RelatedMagazineViewModel {
+    portalCode = undefined;
+    magazineReference = undefined;
+    name = undefined;
+    recentCover = undefined;
+}
