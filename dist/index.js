@@ -3,6 +3,4 @@ import { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, M
 import { UserViewModel, UserAboViewModel } from './models/user';
 import { AddressViewModel } from './models/address';
 import { CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel } from './models/company';
-export { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, UserViewModel, UserAboViewModel, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, AddressViewModel
-// Add more exports if you have additional modules
- };
+export { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, UserViewModel, UserAboViewModel, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, AddressViewModel };

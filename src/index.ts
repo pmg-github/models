@@ -28,6 +28,15 @@ import {
   CompanyCornerPictureModel
 } from './models/company'
 
+import {
+  SelectOptionViewModel
+} from './models/selectoption'
+
+import {
+  SymposiumSearchTypeViewModel,
+  SymposiumUserTypeViewModel
+} from './models/symposium'
+
 export {
   MagazineTileViewModel,
   MagazineArticleViewModel,
@@ -45,6 +54,9 @@ export {
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
-  AddressViewModel
+  AddressViewModel,
+  SelectOptionViewModel, 
+  SymposiumSearchTypeViewModel, 
+  SymposiumUserTypeViewModel
   // Add more exports if you have additional modules
 };
