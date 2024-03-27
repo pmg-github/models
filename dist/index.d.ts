@@ -3,5 +3,5 @@ import { UserAPIInterface, UserAboAPIInterface, UserViewModel, UserAboViewModel 
 import { AddressViewModel } from './models/address';
 import { CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel } from './models/company';
 import { SelectOptionViewModel } from './models/selectoption';
-import { SymposiumSearchTypeViewModel, SymposiumUserTypeViewModel } from './models/symposium';
-export { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, UserAPIInterface, UserAboAPIInterface, UserViewModel, UserAboViewModel, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, AddressViewModel, SelectOptionViewModel, SymposiumSearchTypeViewModel, SymposiumUserTypeViewModel };
+import { SymposiumSearchTypeViewModel, SymposiumUserTypeViewModel, SymposiumPostResultViewModel } from './models/symposium';
+export { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, UserAPIInterface, UserAboAPIInterface, UserViewModel, UserAboViewModel, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, AddressViewModel, SelectOptionViewModel, SymposiumSearchTypeViewModel, SymposiumUserTypeViewModel, SymposiumPostResultViewModel };
