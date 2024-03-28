@@ -7,6 +7,7 @@ export interface SymposiumPostResultViewModel {
     id: number;
     title: string;
     imageUrl: string;
+    tags: string[];
 }
 
 export interface SymposiumPostViewModel {
