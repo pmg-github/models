@@ -5,12 +5,12 @@ export interface SymposiumSearchTypeViewModel extends SelectOptionViewModel {
 }
 export interface SymposiumPostResultViewModel {
     id: number;
-    name: string;
+    title: string;
     imageUrl: string;
 }
 export interface SymposiumPostViewModel {
     id: number;
-    name: string;
+    title: string;
     description: string;
     imageUrl: string;
     addressId: number;
