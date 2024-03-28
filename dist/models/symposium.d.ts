@@ -14,6 +14,7 @@ export interface SymposiumPostViewModel {
     description: string;
     imageUrl: string;
     addressId: number;
+    tags: string[];
 }
 export interface SymposiumContactInfoViewModel {
     firstName: string;
