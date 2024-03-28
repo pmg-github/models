@@ -35,7 +35,9 @@ import {
 import {
   SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
-  SymposiumPostResultViewModel
+  SymposiumPostResultViewModel,
+  SymposiumPostViewModel,
+  SymposiumContactInfoViewModel
 } from './models/symposium'
 
 export {
@@ -59,6 +61,8 @@ export {
   SelectOptionViewModel, 
   SymposiumSearchTypeViewModel, 
   SymposiumUserTypeViewModel,
-  SymposiumPostResultViewModel
+  SymposiumPostResultViewModel,
+  SymposiumContactInfoViewModel,
+  SymposiumPostViewModel
   // Add more exports if you have additional modules
 };
