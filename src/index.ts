@@ -36,7 +36,7 @@ import {
   SymposiumContactInfoViewModel,
 } from "./models/symposium";
 
-import { NewsletterProjectModel } from "./models/newsletter";
+import { NewsletterProjectModel, NewsletterModel } from "./models/newsletter";
 
 export {
   MagazineTileViewModel,
@@ -63,5 +63,6 @@ export {
   SymposiumContactInfoViewModel,
   SymposiumPostViewModel,
   NewsletterProjectModel,
+  NewsletterModel,
   // Add more exports if you have additional modules
 };
