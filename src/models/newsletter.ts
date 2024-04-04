@@ -2,7 +2,7 @@ export class NewsletterProjectModel {
   code: string | undefined = undefined;
   name: string | undefined = undefined;
   releaseDate: Date | undefined = undefined;
-  NumberOfRecipients: number | undefined = undefined;
+  numberOfRecipients: number | undefined = undefined;
   numberOfSuccess: number | undefined = undefined;
   numberOfFailed: number | undefined = undefined;
   numberOfBounced: number | undefined = undefined;

@@ -2,7 +2,7 @@ export class NewsletterProjectModel {
     code = undefined;
     name = undefined;
     releaseDate = undefined;
-    NumberOfRecipients = undefined;
+    numberOfRecipients = undefined;
     numberOfSuccess = undefined;
     numberOfFailed = undefined;
     numberOfBounced = undefined;
