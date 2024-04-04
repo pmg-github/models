@@ -8,37 +8,35 @@ import {
   MagazineCustomerTileViewModel,
   RelatedMagazineViewModel,
   NewsletterTileViewModel,
-  NewsletterMetaDataViewModel
-} from './models/magazine'
+  NewsletterMetaDataViewModel,
+} from "./models/magazine";
 
 import {
   UserAPIInterface,
-  UserAboAPIInterface, 
+  UserAboAPIInterface,
   UserViewModel,
-  UserAboViewModel
-} from './models/user'
+  UserAboViewModel,
+} from "./models/user";
 
-import {
-  AddressViewModel
-} from './models/address'
+import { AddressViewModel } from "./models/address";
 
 import {
   CompanyViewModel,
   CompanyCornerDBModel,
-  CompanyCornerPictureModel
-} from './models/company'
+  CompanyCornerPictureModel,
+} from "./models/company";
 
-import {
-  SelectOptionViewModel
-} from './models/selectoption'
+import { SelectOptionViewModel } from "./models/selectoption";
 
 import {
   SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
   SymposiumPostResultViewModel,
   SymposiumPostViewModel,
-  SymposiumContactInfoViewModel
-} from './models/symposium'
+  SymposiumContactInfoViewModel,
+} from "./models/symposium";
+
+import { NewsletterProjectModel } from "./models/newsletter";
 
 export {
   MagazineTileViewModel,
@@ -50,7 +48,7 @@ export {
   RelatedMagazineViewModel,
   NewsletterTileViewModel,
   NewsletterMetaDataViewModel,
-  UserAPIInterface, 
+  UserAPIInterface,
   UserAboAPIInterface,
   UserViewModel,
   UserAboViewModel,
@@ -58,11 +56,12 @@ export {
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
   AddressViewModel,
-  SelectOptionViewModel, 
-  SymposiumSearchTypeViewModel, 
+  SelectOptionViewModel,
+  SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
   SymposiumPostResultViewModel,
   SymposiumContactInfoViewModel,
-  SymposiumPostViewModel
+  SymposiumPostViewModel,
+  NewsletterProjectModel,
   // Add more exports if you have additional modules
 };
