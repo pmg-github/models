@@ -22,3 +22,17 @@ export class NewsletterModel {
     numberOfOpened = undefined;
     numberOfClicks = undefined;
 }
+export class NewsletterContentModel {
+    id = undefined;
+    typeId = undefined;
+    projectCode = undefined;
+    languageCode = undefined;
+    articleReference = undefined;
+    sortOrder = undefined;
+    title = undefined;
+    description = undefined;
+    moreLabel = undefined;
+    moreLink = undefined;
+    infoLabel = undefined;
+    infoLink = undefined;
+}

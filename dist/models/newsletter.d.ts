@@ -22,3 +22,17 @@ export declare class NewsletterModel {
     numberOfOpened: number | undefined;
     numberOfClicks: number | undefined;
 }
+export declare class NewsletterContentModel {
+    id: number | undefined;
+    typeId: number | undefined;
+    projectCode: string | undefined;
+    languageCode: string | undefined;
+    articleReference: string | undefined;
+    sortOrder: number | undefined;
+    title: string | undefined;
+    description: string | undefined;
+    moreLabel: string | undefined;
+    moreLink: string | undefined;
+    infoLabel: string | undefined;
+    infoLink: string | undefined;
+}

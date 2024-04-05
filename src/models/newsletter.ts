@@ -23,3 +23,18 @@ export class NewsletterModel {
   numberOfOpened: number | undefined = undefined;
   numberOfClicks: number | undefined = undefined;
 }
+
+export class NewsletterContentModel {
+  id: number | undefined = undefined;
+  typeId: number | undefined = undefined;
+  projectCode: string | undefined = undefined;
+  languageCode: string | undefined = undefined;
+  articleReference: string | undefined = undefined;
+  sortOrder: number | undefined = undefined;
+  title: string | undefined = undefined;
+  description: string | undefined = undefined;
+  moreLabel: string | undefined = undefined;
+  moreLink: string | undefined = undefined;
+  infoLabel: string | undefined = undefined;
+  infoLink: string | undefined = undefined;
+}
