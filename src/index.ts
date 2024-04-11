@@ -34,6 +34,8 @@ import {
   SymposiumPostResultViewModel,
   SymposiumPostViewModel,
   SymposiumContactInfoViewModel,
+  SymposiumFilterViewModel,
+  SymposiumFilterOptionViewModel,
 } from "./models/symposium";
 
 import {
@@ -66,6 +68,8 @@ export {
   SymposiumPostResultViewModel,
   SymposiumContactInfoViewModel,
   SymposiumPostViewModel,
+  SymposiumFilterViewModel,
+  SymposiumFilterOptionViewModel,
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
