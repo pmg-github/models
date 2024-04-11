@@ -27,3 +27,12 @@ export interface SymposiumContactInfoViewModel {
     linkedin: string | null;
     facebook: string | null;
 }
+export interface SymposiumFilterViewModel {
+    id: number;
+    name: string;
+    options: SymposiumFilterOptionViewModel[];
+}
+export interface SymposiumFilterOptionViewModel {
+    id: number;
+    name: string;
+}
