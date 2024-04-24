@@ -1,4 +1,7 @@
-export class UserViewModel {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserAboViewModel = exports.UserViewModel = void 0;
+class UserViewModel {
     id; // = ContactID
     email;
     firstName;
@@ -21,8 +24,9 @@ export class UserViewModel {
         this.lastName = userAPIInterface.lastName;
     }
 }
+exports.UserViewModel = UserViewModel;
 // Class which will return if the user has an active abo and when it expires
-export class UserAboViewModel {
+class UserAboViewModel {
     expiryDate = null;
     get isActive() {
         return this.expiryDate != null && new Date(this.expiryDate) > new Date();
@@ -31,3 +35,4 @@ export class UserAboViewModel {
         this.expiryDate = userAboAPIInterface.expiryDate;
     }
 }
+exports.UserAboViewModel = UserAboViewModel;

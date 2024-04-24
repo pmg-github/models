@@ -1,4 +1,7 @@
-export class AddressViewModel {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AddressViewModel = void 0;
+class AddressViewModel {
     countryCode = undefined;
     street = undefined;
     streetNumber = undefined;
@@ -6,3 +9,4 @@ export class AddressViewModel {
     city = undefined;
     zipCode = undefined;
 }
+exports.AddressViewModel = AddressViewModel;

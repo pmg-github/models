@@ -1,12 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineInteresseViewModel = exports.MagazineMetaDataViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerInteresseViewModel = exports.ViewerMetaDataViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
 // BASE CLASSES
 // Actual classes should inherit from this
-export class ViewerTileBaseViewModel {
+class ViewerTileBaseViewModel {
     reference = undefined;
     title = undefined;
     isPremium = undefined;
     imageUrl = undefined;
 }
-export class ViewerArticleBaseViewModel {
+exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
+class ViewerArticleBaseViewModel {
     reference = undefined;
     jobCode = undefined;
     title = undefined;
@@ -21,60 +25,75 @@ export class ViewerArticleBaseViewModel {
     typeId = undefined;
     externalUrl = undefined;
 }
-export class ViewerAdBaseViewModel {
+exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
+class ViewerAdBaseViewModel {
     typeId = 1; // for now only 1 type
     imageUrl = undefined;
     customerReference = undefined;
 }
-export class ViewerCustomerTileViewModel {
+exports.ViewerAdBaseViewModel = ViewerAdBaseViewModel;
+class ViewerCustomerTileViewModel {
     customerReference = undefined;
     name = undefined;
     brand = undefined;
     logoUrl = undefined;
     redirectUrl = undefined;
 }
-export class ViewerMetaDataViewModel {
+exports.ViewerCustomerTileViewModel = ViewerCustomerTileViewModel;
+class ViewerMetaDataViewModel {
     title = undefined;
     portalLogoUrl = undefined;
     domain = undefined;
     date = undefined;
 }
-export class ViewerInteresseViewModel {
+exports.ViewerMetaDataViewModel = ViewerMetaDataViewModel;
+class ViewerInteresseViewModel {
     name = undefined;
     code = undefined;
     isMain = false;
 }
+exports.ViewerInteresseViewModel = ViewerInteresseViewModel;
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
-export class MagazineTileViewModel extends ViewerTileBaseViewModel {
+class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
-export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
+exports.MagazineTileViewModel = MagazineTileViewModel;
+class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
     interesses = undefined;
 }
-export class MagazineAdViewModel extends ViewerAdBaseViewModel {
+exports.MagazineArticleViewModel = MagazineArticleViewModel;
+class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }
-export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
+exports.MagazineAdViewModel = MagazineAdViewModel;
+class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }
-export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
+exports.MagazineCustomerTileViewModel = MagazineCustomerTileViewModel;
+class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
     coverImageUrl = undefined;
 }
-export class MagazineInteresseViewModel extends ViewerInteresseViewModel {
+exports.MagazineMetaDataViewModel = MagazineMetaDataViewModel;
+class MagazineInteresseViewModel extends ViewerInteresseViewModel {
 }
+exports.MagazineInteresseViewModel = MagazineInteresseViewModel;
 // NEWSLETTERS (in magazine project)
-export class NewsletterTileViewModel extends ViewerTileBaseViewModel {
+class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
-export class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
+exports.NewsletterTileViewModel = NewsletterTileViewModel;
+class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
 }
+exports.NewsletterMetaDataViewModel = NewsletterMetaDataViewModel;
 // SPECIFIC CLASSES (no inheritance needed since only used on)
-export class MagazineImageArticleCombinationViewModel {
+class MagazineImageArticleCombinationViewModel {
     reference = undefined;
     article = null;
     imageUrl = undefined;
 }
-export class RelatedMagazineViewModel {
+exports.MagazineImageArticleCombinationViewModel = MagazineImageArticleCombinationViewModel;
+class RelatedMagazineViewModel {
     portalCode = undefined;
     domain = undefined;
     magazineReference = undefined;
     name = undefined;
     recentCover = undefined;
 }
+exports.RelatedMagazineViewModel = RelatedMagazineViewModel;

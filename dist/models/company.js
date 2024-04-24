@@ -1,4 +1,7 @@
-export class CompanyViewModel {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = void 0;
+class CompanyViewModel {
     reference = undefined;
     name = undefined;
     brand = undefined;
@@ -12,7 +15,8 @@ export class CompanyViewModel {
     mainAddress = undefined;
     interesses = undefined;
 }
-export class CompanyCornerDBModel {
+exports.CompanyViewModel = CompanyViewModel;
+class CompanyCornerDBModel {
     ID = undefined;
     Reference = undefined;
     LogoID = undefined;
@@ -33,5 +37,7 @@ export class CompanyCornerDBModel {
     WebsiteFR;
     WebsiteEN;
 }
-export class CompanyCornerPictureModel {
+exports.CompanyCornerDBModel = CompanyCornerDBModel;
+class CompanyCornerPictureModel {
 }
+exports.CompanyCornerPictureModel = CompanyCornerPictureModel;

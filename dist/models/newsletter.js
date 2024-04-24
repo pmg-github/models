@@ -1,4 +1,7 @@
-export class NewsletterProjectModel {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = void 0;
+class NewsletterProjectModel {
     code = undefined;
     name = undefined;
     date = undefined;
@@ -9,7 +12,8 @@ export class NewsletterProjectModel {
     numberOfOpened = undefined;
     numberOfClicks = undefined;
 }
-export class NewsletterModel {
+exports.NewsletterProjectModel = NewsletterProjectModel;
+class NewsletterModel {
     id = undefined;
     projectCode = undefined;
     languageCode = undefined;
@@ -22,7 +26,8 @@ export class NewsletterModel {
     numberOfOpened = undefined;
     numberOfClicks = undefined;
 }
-export class NewsletterContentModel {
+exports.NewsletterModel = NewsletterModel;
+class NewsletterContentModel {
     id = undefined;
     typeId = undefined;
     projectCode = undefined;
@@ -36,3 +41,4 @@ export class NewsletterContentModel {
     infoLabel = undefined;
     infoLink = undefined;
 }
+exports.NewsletterContentModel = NewsletterContentModel;
