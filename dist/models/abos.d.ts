@@ -1,10 +1,18 @@
 export declare class ProefAboCreateModel {
+    lang: string;
+    email: string;
     firstName: string;
     lastName: string;
+    phone: string;
     password: string;
-    email: string;
+    street: string;
+    streetNumber: string;
+    streetBoxNumber: string | undefined;
+    zipCode: string;
+    city: string;
     countryCode: string;
     type: string;
-    vatNumber: string;
+    vat: string;
+    companyName: string;
     constructor(data: Partial<ProefAboCreateModel>);
 }

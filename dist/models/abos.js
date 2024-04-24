@@ -12,18 +12,36 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProefAboCreateModel = void 0;
 const class_validator_1 = require("class-validator");
 class ProefAboCreateModel {
+    lang;
+    email;
     firstName;
     lastName;
+    phone;
     password;
-    email;
+    // adress
+    street;
+    streetNumber;
+    streetBoxNumber = undefined;
+    zipCode;
+    city;
     countryCode;
     type;
-    vatNumber;
+    vat;
+    companyName;
     constructor(data) {
         Object.assign(this, data);
     }
 }
 exports.ProefAboCreateModel = ProefAboCreateModel;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "lang", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsEmail)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
@@ -33,19 +51,41 @@ __decorate([
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "lastName", void 0);
 __decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "phone", void 0);
+__decorate([
     (0, class_validator_1.MinLength)(6),
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "password", void 0);
 __decorate([
-    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], ProefAboCreateModel.prototype, "email", void 0);
+], ProefAboCreateModel.prototype, "street", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "streetNumber", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "zipCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "city", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "countryCode", void 0);
 __decorate([
     (0, class_validator_1.ValidateIf)((obj, val) => obj.type == "b2b"),
+    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Matches)(/^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[\s-.]?[0-9A-Z]{2,12}[\s-.]?/),
     __metadata("design:type", String)
-], ProefAboCreateModel.prototype, "vatNumber", void 0);
+], ProefAboCreateModel.prototype, "vat", void 0);
+__decorate([
+    (0, class_validator_1.ValidateIf)((obj, val) => obj.type == "b2b"),
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "companyName", void 0);
