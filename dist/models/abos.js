@@ -16,6 +16,9 @@ class ProefAboCreateModel {
     lastName;
     password;
     email;
+    countryCode;
+    isCompany;
+    vatNumber;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -37,3 +40,12 @@ __decorate([
     (0, class_validator_1.IsEmail)(),
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "email", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "countryCode", void 0);
+__decorate([
+    (0, class_validator_1.ValidateIf)((obj, val) => obj.isCompany),
+    (0, class_validator_1.Matches)("^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[s-.]?[0-9A-Z]{2,12}[s-.]?"),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "vatNumber", void 0);

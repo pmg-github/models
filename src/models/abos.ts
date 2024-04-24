@@ -1,4 +1,10 @@
-import { IsEmail, IsNotEmpty, MinLength } from "class-validator";
+import {
+  IsEmail,
+  IsNotEmpty,
+  MinLength,
+  ValidateIf,
+  Matches,
+} from "class-validator";
 
 export class ProefAboCreateModel {
   @IsNotEmpty()
@@ -12,6 +18,17 @@ export class ProefAboCreateModel {
 
   @IsEmail()
   email!: string;
+
+  @IsNotEmpty()
+  countryCode!: string;
+
+  isCompany!: boolean;
+
+  @ValidateIf((obj: ProefAboCreateModel, val: string) => obj.isCompany)
+  @Matches(
+    "^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[s-.]?[0-9A-Z]{2,12}[s-.]?"
+  )
+  vatNumber!: string;
 
   constructor(data: Partial<ProefAboCreateModel>) {
     Object.assign(this, data);

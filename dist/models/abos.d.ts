@@ -3,5 +3,8 @@ export declare class ProefAboCreateModel {
     lastName: string;
     password: string;
     email: string;
+    countryCode: string;
+    isCompany: boolean;
+    vatNumber: string;
     constructor(data: Partial<ProefAboCreateModel>);
 }
