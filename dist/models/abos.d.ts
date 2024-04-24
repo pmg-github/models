@@ -4,7 +4,7 @@ export declare class ProefAboCreateModel {
     password: string;
     email: string;
     countryCode: string;
-    isCompany: boolean;
+    type: string;
     vatNumber: string;
     constructor(data: Partial<ProefAboCreateModel>);
 }
