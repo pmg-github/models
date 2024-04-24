@@ -4,6 +4,7 @@ import { UserViewModel, UserAboViewModel, } from "./models/user";
 import { AddressViewModel } from "./models/address";
 import { CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, } from "./models/company";
 import { NewsletterProjectModel, NewsletterModel, NewsletterContentModel, } from "./models/newsletter";
-export { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, UserViewModel, UserAboViewModel, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, AddressViewModel, NewsletterProjectModel, NewsletterModel, NewsletterContentModel,
+import { ProefAboCreateModel } from "./models/abos";
+export { MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, UserViewModel, UserAboViewModel, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, AddressViewModel, NewsletterProjectModel, NewsletterModel, NewsletterContentModel, ProefAboCreateModel,
 // Add more exports if you have additional modules
  };
