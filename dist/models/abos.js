@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProefAboCreateModel = void 0;
 const class_validator_1 = require("class-validator");
 class ProefAboCreateModel {
+    portalCode;
     lang;
     email;
     firstName;
@@ -35,6 +36,12 @@ class ProefAboCreateModel {
 exports.ProefAboCreateModel = ProefAboCreateModel;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(4),
+    __metadata("design:type", String)
+], ProefAboCreateModel.prototype, "portalCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2),
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "lang", void 0);
 __decorate([
@@ -76,6 +83,7 @@ __decorate([
 ], ProefAboCreateModel.prototype, "city", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2),
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "countryCode", void 0);
 __decorate([

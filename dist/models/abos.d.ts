@@ -1,4 +1,5 @@
 export declare class ProefAboCreateModel {
+    portalCode: string;
     lang: string;
     email: string;
     firstName: string;

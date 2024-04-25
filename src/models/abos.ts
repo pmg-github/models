@@ -4,11 +4,16 @@ import {
   MinLength,
   ValidateIf,
   Matches,
-  isNotEmpty,
+  Length,
 } from "class-validator";
 
 export class ProefAboCreateModel {
   @IsNotEmpty()
+  @Length(4)
+  portalCode!: string;
+
+  @IsNotEmpty()
+  @Length(2)
   lang!: string;
 
   @IsNotEmpty()
@@ -43,6 +48,7 @@ export class ProefAboCreateModel {
   city!: string;
 
   @IsNotEmpty()
+  @Length(2)
   countryCode!: string;
 
   type!: string;
