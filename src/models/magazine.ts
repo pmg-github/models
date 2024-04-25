@@ -74,6 +74,7 @@ export class MagazineImageArticleCombinationViewModel {
   reference: string | undefined = undefined;
   article: MagazineArticleViewModel | null = null;
   imageUrl: string | undefined = undefined;
+  redirectUrl: string | undefined = undefined;
 }
 
 export class RelatedMagazineViewModel {

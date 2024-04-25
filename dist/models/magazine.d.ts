@@ -65,6 +65,7 @@ export declare class MagazineImageArticleCombinationViewModel {
     reference: string | undefined;
     article: MagazineArticleViewModel | null;
     imageUrl: string | undefined;
+    redirectUrl: string | undefined;
 }
 export declare class RelatedMagazineViewModel {
     portalCode: string | undefined;

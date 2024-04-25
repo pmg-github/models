@@ -88,6 +88,7 @@ class MagazineImageArticleCombinationViewModel {
     reference = undefined;
     article = null;
     imageUrl = undefined;
+    redirectUrl = undefined;
 }
 exports.MagazineImageArticleCombinationViewModel = MagazineImageArticleCombinationViewModel;
 class RelatedMagazineViewModel {
