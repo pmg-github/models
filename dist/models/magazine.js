@@ -29,6 +29,7 @@ exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {
     typeId = 1; // for now only 1 type
     imageUrl = undefined;
+    redirectUrl = undefined;
     customerReference = undefined;
 }
 exports.ViewerAdBaseViewModel = ViewerAdBaseViewModel;

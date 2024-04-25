@@ -22,6 +22,7 @@ export declare class ViewerArticleBaseViewModel {
 export declare class ViewerAdBaseViewModel {
     typeId: number;
     imageUrl: string | undefined;
+    redirectUrl: string | undefined;
     customerReference: string | undefined;
 }
 export declare class ViewerCustomerTileViewModel {
