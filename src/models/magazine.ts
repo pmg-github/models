@@ -26,7 +26,7 @@ export class ViewerArticleBaseViewModel {
 export class ViewerAdBaseViewModel {
   typeId: number = 1; // for now only 1 type
   imageUrl: string | undefined = undefined;
-  redirectUrl: string | undefined = undefined;
+  redirectUrl: string | null | undefined = undefined;
   customerReference: string | undefined = undefined;
 }
 
