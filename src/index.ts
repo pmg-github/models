@@ -16,6 +16,7 @@ import {
   UserAboAPIInterface,
   UserViewModel,
   UserAboViewModel,
+  ContactCreateModel,
 } from "./models/user";
 
 import { AddressViewModel } from "./models/address";
@@ -60,6 +61,7 @@ export {
   UserAboAPIInterface,
   UserViewModel,
   UserAboViewModel,
+  ContactCreateModel,
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,

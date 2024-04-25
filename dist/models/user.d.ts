@@ -20,3 +20,11 @@ export interface UserAPIInterface {
 export interface UserAboAPIInterface {
     expiryDate: string | null;
 }
+export declare class ContactCreateModel {
+    email: string;
+    firstName: string;
+    lastName: string;
+    phone: string;
+    lang: string;
+    constructor(data: Partial<ContactCreateModel>);
+}
