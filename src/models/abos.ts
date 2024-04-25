@@ -9,11 +9,11 @@ import {
 
 export class ProefAboCreateModel {
   @IsNotEmpty()
-  @Length(4)
+  @Length(4, 4)
   portalCode!: string;
 
   @IsNotEmpty()
-  @Length(2)
+  @Length(2, 2)
   lang!: string;
 
   @IsNotEmpty()
@@ -48,7 +48,7 @@ export class ProefAboCreateModel {
   city!: string;
 
   @IsNotEmpty()
-  @Length(2)
+  @Length(2, 2)
   countryCode!: string;
 
   type!: string;
