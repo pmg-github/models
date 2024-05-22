@@ -93,3 +93,17 @@ export class EmailCodeRequest {
     Object.assign(this, data);
   }
 }
+
+export class ValidateTokenRequest {
+  @IsNotEmpty()
+  @Length(8, 8)
+  code!: string;
+
+  @IsNotEmpty()
+  @IsEmail()
+  email!: string;
+
+  constructor(data: Partial<ValidateTokenRequest>) {
+    Object.assign(this, data);
+  }
+}

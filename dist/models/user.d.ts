@@ -34,3 +34,8 @@ export declare class EmailCodeRequest {
     lang: string;
     constructor(data: Partial<EmailCodeRequest>);
 }
+export declare class ValidateTokenRequest {
+    code: string;
+    email: string;
+    constructor(data: Partial<ValidateTokenRequest>);
+}
