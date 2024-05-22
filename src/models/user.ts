@@ -88,4 +88,8 @@ export class EmailCodeRequest {
   @IsNotEmpty()
   @Length(2, 2)
   lang!: string;
+
+  constructor(data: Partial<EmailCodeRequest>) {
+    Object.assign(this, data);
+  }
 }

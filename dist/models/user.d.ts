@@ -32,4 +32,5 @@ export declare class EmailCodeRequest {
     email: string;
     portalCode: string;
     lang: string;
+    constructor(data: Partial<EmailCodeRequest>);
 }

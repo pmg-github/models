@@ -84,6 +84,9 @@ class EmailCodeRequest {
     email;
     portalCode;
     lang;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.EmailCodeRequest = EmailCodeRequest;
 __decorate([
