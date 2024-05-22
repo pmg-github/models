@@ -17,6 +17,7 @@ import {
   UserViewModel,
   UserAboViewModel,
   ContactCreateModel,
+  EmailCodeRequest,
 } from "./models/user";
 
 import { AddressViewModel } from "./models/address";
@@ -62,6 +63,7 @@ export {
   UserViewModel,
   UserAboViewModel,
   ContactCreateModel,
+  EmailCodeRequest,
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,

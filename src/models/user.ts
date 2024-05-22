@@ -75,3 +75,17 @@ export class ContactCreateModel {
     Object.assign(this, data);
   }
 }
+
+export class EmailCodeRequest {
+  @IsNotEmpty()
+  @IsEmail()
+  email!: string;
+
+  @IsNotEmpty()
+  @Length(4, 4)
+  portalCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  lang!: string;
+}
