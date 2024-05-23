@@ -21,7 +21,10 @@ import {
   ValidateTokenRequest,
 } from "./models/user";
 
-import { AddressViewModel } from "./models/address";
+import {
+  AddressViewModel,
+  AddressContactCreateRequest,
+} from "./models/address";
 
 import {
   CompanyViewModel,
@@ -70,6 +73,7 @@ export {
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
   AddressViewModel,
+  AddressContactCreateRequest,
   SelectOptionViewModel,
   SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
