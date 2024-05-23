@@ -1,5 +1,12 @@
 import { IsNotEmpty, Length, Matches, ValidateIf } from "class-validator";
 
+export class AddressHelper {
+  // remove spaces and dots for a clean comparison
+  static cleanVat(vatNumber: string): string {
+    return vatNumber.replaceAll(" ", "").replaceAll(".", "");
+  }
+}
+
 export class AddressViewModel {
   street: string | undefined = undefined;
   streetNumber: string | undefined = undefined;

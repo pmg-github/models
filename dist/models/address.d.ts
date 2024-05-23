@@ -1,3 +1,6 @@
+export declare class AddressHelper {
+    static cleanVat(vatNumber: string): string;
+}
 export declare class AddressViewModel {
     street: string | undefined;
     streetNumber: string | undefined;

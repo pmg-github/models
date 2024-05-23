@@ -22,6 +22,7 @@ import {
 } from "./models/user";
 
 import {
+  AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
 } from "./models/address";
@@ -72,6 +73,7 @@ export {
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
+  AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
   SelectOptionViewModel,
