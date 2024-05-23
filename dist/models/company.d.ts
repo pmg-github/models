@@ -1,5 +1,5 @@
-import { ViewerInteresseViewModel } from './magazine';
-import { AddressViewModel } from './address';
+import { ViewerInteresseViewModel } from "./magazine";
+import { AddressViewModel } from "./address";
 export declare class CompanyViewModel {
     reference: string | undefined;
     name: string | undefined;

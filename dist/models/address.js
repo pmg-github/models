@@ -57,17 +57,25 @@ __decorate([
 ], AddressContactCreateRequest.prototype, "lang", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(355),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "street", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(50),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "streetNumber", void 0);
 __decorate([
+    (0, class_validator_1.MaxLength)(50),
+    __metadata("design:type", String)
+], AddressContactCreateRequest.prototype, "streetBoxNumber", void 0);
+__decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "city", void 0);
 __decorate([
+    (0, class_validator_1.MaxLength)(20),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "zipCode", void 0);
@@ -85,5 +93,6 @@ __decorate([
 __decorate([
     (0, class_validator_1.ValidateIf)((obj, val) => obj.isB2b),
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(80),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "companyName", void 0);

@@ -1,4 +1,10 @@
-import { IsNotEmpty, Length, Matches, ValidateIf } from "class-validator";
+import {
+  IsNotEmpty,
+  Length,
+  Matches,
+  MaxLength,
+  ValidateIf,
+} from "class-validator";
 
 export class AddressHelper {
   // remove spaces and dots for a clean comparison
@@ -25,16 +31,21 @@ export class AddressContactCreateRequest {
   lang!: string;
 
   @IsNotEmpty()
+  @MaxLength(355)
   street!: string;
 
   @IsNotEmpty()
+  @MaxLength(50)
   streetNumber!: string;
 
+  @MaxLength(50)
   streetBoxNumber!: string;
 
   @IsNotEmpty()
+  @MaxLength(255)
   city!: string;
 
+  @MaxLength(20)
   @IsNotEmpty()
   zipCode!: string;
 
@@ -57,6 +68,7 @@ export class AddressContactCreateRequest {
 
   @ValidateIf((obj: AddressContactCreateRequest, val: string) => obj.isB2b)
   @IsNotEmpty()
+  @MaxLength(80)
   companyName!: string;
 
   constructor(data: Partial<AddressContactCreateRequest>) {

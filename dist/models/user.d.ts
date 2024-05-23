@@ -41,7 +41,7 @@ export declare class EmailCodeRequest {
     constructor(data: Partial<EmailCodeRequest>);
 }
 export declare class ValidateTokenRequest {
-    code: string;
     email: string;
+    code: string;
     constructor(data: Partial<ValidateTokenRequest>);
 }

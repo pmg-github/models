@@ -65,14 +65,17 @@ __decorate([
 ], ContactCreateModel.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(30),
     __metadata("design:type", String)
 ], ContactCreateModel.prototype, "firstName", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(40),
     __metadata("design:type", String)
 ], ContactCreateModel.prototype, "lastName", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactCreateModel.prototype, "phone", void 0);
 __decorate([
@@ -92,14 +95,17 @@ class ContactUpdateRequest {
 exports.ContactUpdateRequest = ContactUpdateRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(30),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "firstName", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(40),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "lastName", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "phone", void 0);
 class EmailCodeRequest {
@@ -114,6 +120,7 @@ exports.EmailCodeRequest = EmailCodeRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)
 ], EmailCodeRequest.prototype, "email", void 0);
 __decorate([
@@ -127,8 +134,8 @@ __decorate([
     __metadata("design:type", String)
 ], EmailCodeRequest.prototype, "lang", void 0);
 class ValidateTokenRequest {
-    code;
     email;
+    code;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -136,11 +143,12 @@ class ValidateTokenRequest {
 exports.ValidateTokenRequest = ValidateTokenRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.MaxLength)(60),
+    __metadata("design:type", String)
+], ValidateTokenRequest.prototype, "email", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(8, 8),
     __metadata("design:type", String)
 ], ValidateTokenRequest.prototype, "code", void 0);
-__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsEmail)(),
-    __metadata("design:type", String)
-], ValidateTokenRequest.prototype, "email", void 0);

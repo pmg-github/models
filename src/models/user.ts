@@ -1,4 +1,4 @@
-import { IsEmail, IsNotEmpty, Length } from "class-validator";
+import { IsEmail, IsNotEmpty, Length, MaxLength } from "class-validator";
 
 export class UserViewModel {
   id: number; // = ContactID
@@ -59,12 +59,15 @@ export class ContactCreateModel {
 
   // For now make them required (maybe change later)
   @IsNotEmpty()
+  @MaxLength(30)
   firstName!: string;
 
   @IsNotEmpty()
+  @MaxLength(40)
   lastName!: string;
 
   @IsNotEmpty()
+  @MaxLength(36)
   phone!: string;
 
   @IsNotEmpty()
@@ -79,12 +82,15 @@ export class ContactCreateModel {
 export class ContactUpdateRequest {
   // For now make them required (maybe change later)
   @IsNotEmpty()
+  @MaxLength(30)
   firstName!: string;
 
   @IsNotEmpty()
+  @MaxLength(40)
   lastName!: string;
 
   @IsNotEmpty()
+  @MaxLength(36)
   phone!: string;
 
   constructor(data: Partial<ContactUpdateRequest>) {
@@ -95,6 +101,7 @@ export class ContactUpdateRequest {
 export class EmailCodeRequest {
   @IsNotEmpty()
   @IsEmail()
+  @MaxLength(60)
   email!: string;
 
   @IsNotEmpty()
@@ -112,12 +119,13 @@ export class EmailCodeRequest {
 
 export class ValidateTokenRequest {
   @IsNotEmpty()
-  @Length(8, 8)
-  code!: string;
+  @IsEmail()
+  @MaxLength(60)
+  email!: string;
 
   @IsNotEmpty()
-  @IsEmail()
-  email!: string;
+  @Length(8, 8)
+  code!: string;
 
   constructor(data: Partial<ValidateTokenRequest>) {
     Object.assign(this, data);
