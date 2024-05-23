@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProefAboCreateModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = void 0;
+exports.ProefAboCreateModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = void 0;
 // Import and re-export your modules
 const magazine_1 = require("./models/magazine");
 Object.defineProperty(exports, "MagazineTileViewModel", { enumerable: true, get: function () { return magazine_1.MagazineTileViewModel; } });
@@ -16,6 +16,7 @@ const user_1 = require("./models/user");
 Object.defineProperty(exports, "UserViewModel", { enumerable: true, get: function () { return user_1.UserViewModel; } });
 Object.defineProperty(exports, "UserAboViewModel", { enumerable: true, get: function () { return user_1.UserAboViewModel; } });
 Object.defineProperty(exports, "ContactCreateModel", { enumerable: true, get: function () { return user_1.ContactCreateModel; } });
+Object.defineProperty(exports, "ContactUpdateRequest", { enumerable: true, get: function () { return user_1.ContactUpdateRequest; } });
 Object.defineProperty(exports, "EmailCodeRequest", { enumerable: true, get: function () { return user_1.EmailCodeRequest; } });
 Object.defineProperty(exports, "ValidateTokenRequest", { enumerable: true, get: function () { return user_1.ValidateTokenRequest; } });
 const address_1 = require("./models/address");

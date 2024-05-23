@@ -28,6 +28,12 @@ export declare class ContactCreateModel {
     lang: string;
     constructor(data: Partial<ContactCreateModel>);
 }
+export declare class ContactUpdateRequest {
+    firstName: string;
+    lastName: string;
+    phone: string;
+    constructor(data: Partial<ContactUpdateRequest>);
+}
 export declare class EmailCodeRequest {
     email: string;
     portalCode: string;

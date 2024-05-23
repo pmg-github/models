@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
+exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
 const class_validator_1 = require("class-validator");
 class UserViewModel {
     id; // = ContactID
@@ -80,6 +80,28 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], ContactCreateModel.prototype, "lang", void 0);
+class ContactUpdateRequest {
+    // For now make them required (maybe change later)
+    firstName;
+    lastName;
+    phone;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.ContactUpdateRequest = ContactUpdateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ContactUpdateRequest.prototype, "firstName", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ContactUpdateRequest.prototype, "lastName", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], ContactUpdateRequest.prototype, "phone", void 0);
 class EmailCodeRequest {
     email;
     portalCode;

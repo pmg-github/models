@@ -17,6 +17,7 @@ import {
   UserViewModel,
   UserAboViewModel,
   ContactCreateModel,
+  ContactUpdateRequest,
   EmailCodeRequest,
   ValidateTokenRequest,
 } from "./models/user";
@@ -68,6 +69,7 @@ export {
   UserViewModel,
   UserAboViewModel,
   ContactCreateModel,
+  ContactUpdateRequest,
   EmailCodeRequest,
   ValidateTokenRequest,
   CompanyViewModel,

@@ -76,6 +76,22 @@ export class ContactCreateModel {
   }
 }
 
+export class ContactUpdateRequest {
+  // For now make them required (maybe change later)
+  @IsNotEmpty()
+  firstName!: string;
+
+  @IsNotEmpty()
+  lastName!: string;
+
+  @IsNotEmpty()
+  phone!: string;
+
+  constructor(data: Partial<ContactUpdateRequest>) {
+    Object.assign(this, data);
+  }
+}
+
 export class EmailCodeRequest {
   @IsNotEmpty()
   @IsEmail()
