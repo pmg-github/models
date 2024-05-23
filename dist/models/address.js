@@ -14,6 +14,9 @@ const class_validator_1 = require("class-validator");
 class AddressHelper {
     // remove spaces and dots for a clean comparison
     static cleanVat(vatNumber) {
+        if (!vatNumber) {
+            return "";
+        }
         return vatNumber.replaceAll(" ", "").replaceAll(".", "");
     }
 }

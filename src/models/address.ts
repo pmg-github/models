@@ -3,6 +3,9 @@ import { IsNotEmpty, Length, Matches, ValidateIf } from "class-validator";
 export class AddressHelper {
   // remove spaces and dots for a clean comparison
   static cleanVat(vatNumber: string): string {
+    if (!vatNumber) {
+      return "";
+    }
     return vatNumber.replaceAll(" ", "").replaceAll(".", "");
   }
 }
