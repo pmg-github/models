@@ -21,6 +21,10 @@ export class AddressViewModel {
 
 export class AddressContactCreateRequest {
   @IsNotEmpty()
+  @Length(2, 2)
+  lang!: string;
+
+  @IsNotEmpty()
   street!: string;
 
   @IsNotEmpty()

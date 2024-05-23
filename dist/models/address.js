@@ -31,6 +31,7 @@ class AddressViewModel {
 }
 exports.AddressViewModel = AddressViewModel;
 class AddressContactCreateRequest {
+    lang;
     street;
     streetNumber;
     streetBoxNumber;
@@ -49,6 +50,11 @@ class AddressContactCreateRequest {
     }
 }
 exports.AddressContactCreateRequest = AddressContactCreateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], AddressContactCreateRequest.prototype, "lang", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)

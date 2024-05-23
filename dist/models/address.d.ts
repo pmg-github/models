@@ -10,6 +10,7 @@ export declare class AddressViewModel {
     countryCode: string | undefined;
 }
 export declare class AddressContactCreateRequest {
+    lang: string;
     street: string;
     streetNumber: string;
     streetBoxNumber: string;
