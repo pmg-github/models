@@ -1,4 +1,5 @@
 import {
+  IsBoolean,
   IsNotEmpty,
   Length,
   Matches,
@@ -54,10 +55,9 @@ export class AddressContactCreateRequest {
   countryCode!: string;
 
   // Company stuff
-  type!: string;
-  public get isB2b(): boolean {
-    return this.type == "b2b";
-  }
+  @IsNotEmpty()
+  @IsBoolean()
+  isB2b!: boolean;
 
   @ValidateIf((obj: AddressContactCreateRequest, val: string) => obj.isB2b)
   @IsNotEmpty()

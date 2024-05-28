@@ -39,10 +39,7 @@ class AddressContactCreateRequest {
     zipCode;
     countryCode;
     // Company stuff
-    type;
-    get isB2b() {
-        return this.type == "b2b";
-    }
+    isB2b;
     vat;
     companyName;
     constructor(data) {
@@ -84,6 +81,11 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "countryCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsBoolean)(),
+    __metadata("design:type", Boolean)
+], AddressContactCreateRequest.prototype, "isB2b", void 0);
 __decorate([
     (0, class_validator_1.ValidateIf)((obj, val) => obj.isB2b),
     (0, class_validator_1.IsNotEmpty)(),
