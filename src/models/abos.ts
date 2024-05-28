@@ -10,7 +10,7 @@ export class ProefAboCreateModel {
   lang!: string;
 
   @IsNotEmpty()
-  @IsNumber()
+  // @IsNumber() -> somehow throws an error in nuxt??
   addressId!: number;
 
   constructor(data: Partial<ProefAboCreateModel>) {

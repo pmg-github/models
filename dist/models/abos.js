@@ -14,6 +14,7 @@ const class_validator_1 = require("class-validator");
 class ProefAboCreateModel {
     portalCode;
     lang;
+    // @IsNumber() -> somehow throws an error in nuxt??
     addressId;
     constructor(data) {
         Object.assign(this, data);
@@ -31,7 +32,8 @@ __decorate([
     __metadata("design:type", String)
 ], ProefAboCreateModel.prototype, "lang", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
+    (0, class_validator_1.IsNotEmpty)()
+    // @IsNumber() -> somehow throws an error in nuxt??
+    ,
     __metadata("design:type", Number)
 ], ProefAboCreateModel.prototype, "addressId", void 0);
