@@ -16,6 +16,7 @@ class UserViewModel {
     email;
     firstName;
     lastName;
+    phone;
     get fullName() {
         let returnValue = "";
         if (this.firstName) {
@@ -32,6 +33,7 @@ class UserViewModel {
         this.email = userAPIInterface.email;
         this.firstName = userAPIInterface.firstName;
         this.lastName = userAPIInterface.lastName;
+        this.phone = userAPIInterface.phone;
     }
 }
 exports.UserViewModel = UserViewModel;

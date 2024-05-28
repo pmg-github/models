@@ -5,6 +5,7 @@ export class UserViewModel {
   email: string;
   firstName: string | null;
   lastName: string | null;
+  phone: string | null;
 
   get fullName(): string | undefined {
     let returnValue: string = "";
@@ -25,6 +26,7 @@ export class UserViewModel {
     this.email = userAPIInterface.email;
     this.firstName = userAPIInterface.firstName;
     this.lastName = userAPIInterface.lastName;
+    this.phone = userAPIInterface.phone;
   }
 }
 
@@ -46,6 +48,7 @@ export interface UserAPIInterface {
   email: string;
   firstName: string | null;
   lastName: string | null;
+  phone: string | null;
 }
 
 export interface UserAboAPIInterface {
