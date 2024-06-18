@@ -34,6 +34,8 @@ import {
   CompanyCornerPictureModel,
 } from "./models/company";
 
+import { ContextViewModel } from "./models/context";
+
 import { SelectOptionViewModel } from "./models/selectoption";
 
 import {
@@ -64,6 +66,7 @@ export {
   RelatedMagazineViewModel,
   NewsletterTileViewModel,
   NewsletterMetaDataViewModel,
+  ContextViewModel,
   UserAPIInterface,
   UserAboAPIInterface,
   UserViewModel,
