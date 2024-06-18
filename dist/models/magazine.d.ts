@@ -3,6 +3,7 @@ export declare class ViewerTileBaseViewModel {
     title: string | undefined;
     isPremium: boolean | undefined;
     imageUrl: string | undefined;
+    redirectUrl: string | undefined;
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;

@@ -5,6 +5,7 @@ export class ViewerTileBaseViewModel {
   title: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
   imageUrl: string | undefined = undefined;
+  redirectUrl: string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {

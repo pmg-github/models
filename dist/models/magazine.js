@@ -8,6 +8,7 @@ class ViewerTileBaseViewModel {
     title = undefined;
     isPremium = undefined;
     imageUrl = undefined;
+    redirectUrl = undefined;
 }
 exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
 class ViewerArticleBaseViewModel {
