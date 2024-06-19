@@ -22,6 +22,8 @@ import {
   ValidateTokenRequest,
 } from "./models/user";
 
+import { FaqViewModel } from "./models/faq";
+
 import {
   AddressHelper,
   AddressViewModel,
@@ -78,6 +80,7 @@ export {
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
+  FaqViewModel,
   AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
