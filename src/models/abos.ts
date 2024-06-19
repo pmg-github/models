@@ -1,5 +1,12 @@
 import { IsNotEmpty, Length, IsNumber } from "class-validator";
 
+export interface AboViewModel {
+  id: number;
+  reference: string;
+  magazine: string;
+  expiryDate: Date;
+}
+
 export class ProefAboCreateModel {
   @IsNotEmpty()
   @Length(4, 4)

@@ -56,7 +56,7 @@ import {
   NewsletterContentModel,
 } from "./models/newsletter";
 
-import { ProefAboCreateModel } from "./models/abos";
+import { AboViewModel, ProefAboCreateModel } from "./models/abos";
 
 export {
   MagazineTileViewModel,
@@ -95,6 +95,7 @@ export {
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
+  AboViewModel,
   ProefAboCreateModel,
   // Add more exports if you have additional modules
 };
