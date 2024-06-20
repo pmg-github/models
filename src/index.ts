@@ -57,6 +57,7 @@ import {
 } from "./models/newsletter";
 
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
+import { PortalViewModel } from "./models/portal";
 
 export {
   MagazineTileViewModel,
@@ -97,5 +98,6 @@ export {
   NewsletterContentModel,
   AboViewModel,
   ProefAboCreateModel,
+  PortalViewModel,
   // Add more exports if you have additional modules
 };
