@@ -9,6 +9,7 @@ import {
   RelatedMagazineViewModel,
   NewsletterTileViewModel,
   NewsletterMetaDataViewModel,
+  ViewerTileBaseViewModel,
 } from "./models/magazine";
 
 import {
@@ -60,6 +61,7 @@ import { AboViewModel, ProefAboCreateModel } from "./models/abos";
 import { PortalViewModel } from "./models/portal";
 
 export {
+  ViewerTileBaseViewModel,
   MagazineTileViewModel,
   MagazineArticleViewModel,
   MagazineAdViewModel,

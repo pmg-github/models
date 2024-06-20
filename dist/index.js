@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProefAboCreateModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = void 0;
+exports.ProefAboCreateModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerTileBaseViewModel = void 0;
 // Import and re-export your modules
 const magazine_1 = require("./models/magazine");
 Object.defineProperty(exports, "MagazineTileViewModel", { enumerable: true, get: function () { return magazine_1.MagazineTileViewModel; } });
@@ -12,6 +12,7 @@ Object.defineProperty(exports, "MagazineCustomerTileViewModel", { enumerable: tr
 Object.defineProperty(exports, "RelatedMagazineViewModel", { enumerable: true, get: function () { return magazine_1.RelatedMagazineViewModel; } });
 Object.defineProperty(exports, "NewsletterTileViewModel", { enumerable: true, get: function () { return magazine_1.NewsletterTileViewModel; } });
 Object.defineProperty(exports, "NewsletterMetaDataViewModel", { enumerable: true, get: function () { return magazine_1.NewsletterMetaDataViewModel; } });
+Object.defineProperty(exports, "ViewerTileBaseViewModel", { enumerable: true, get: function () { return magazine_1.ViewerTileBaseViewModel; } });
 const user_1 = require("./models/user");
 Object.defineProperty(exports, "UserViewModel", { enumerable: true, get: function () { return user_1.UserViewModel; } });
 Object.defineProperty(exports, "UserAboViewModel", { enumerable: true, get: function () { return user_1.UserAboViewModel; } });
