@@ -60,6 +60,8 @@ import {
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
 import { PortalViewModel } from "./models/portal";
 
+import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
+
 export {
   ViewerTileBaseViewModel,
   MagazineTileViewModel,
@@ -101,5 +103,7 @@ export {
   AboViewModel,
   ProefAboCreateModel,
   PortalViewModel,
+  CampagneViewModel,
+  CampagneItemViewModel,
   // Add more exports if you have additional modules
 };
