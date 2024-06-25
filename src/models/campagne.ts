@@ -8,5 +8,6 @@ export interface CampagneViewModel {
 export interface CampagneItemViewModel {
   id: number;
   name: string;
+  logoUrl: string;
   url: string;
 }
