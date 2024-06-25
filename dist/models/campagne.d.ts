@@ -1,6 +1,7 @@
 export interface CampagneViewModel {
     id: number;
     title: string;
+    items: CampagneItemViewModel[] | undefined;
 }
 export interface CampagneItemViewModel {
     id: number;
