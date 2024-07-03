@@ -127,7 +127,7 @@ export class ValidateTokenRequest {
   email!: string;
 
   @IsNotEmpty()
-  @Length(8, 8)
+  @Length(4, 4)
   code!: string;
 
   constructor(data: Partial<ValidateTokenRequest>) {

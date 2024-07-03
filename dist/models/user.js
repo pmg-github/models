@@ -151,6 +151,6 @@ __decorate([
 ], ValidateTokenRequest.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Length)(8, 8),
+    (0, class_validator_1.Length)(4, 4),
     __metadata("design:type", String)
 ], ValidateTokenRequest.prototype, "code", void 0);
