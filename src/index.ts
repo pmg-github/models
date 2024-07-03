@@ -62,6 +62,8 @@ import { PortalViewModel } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
 
+import { TranslationSaveRequest } from "./models/translation";
+
 export {
   ViewerTileBaseViewModel,
   MagazineTileViewModel,
@@ -105,5 +107,6 @@ export {
   PortalViewModel,
   CampagneViewModel,
   CampagneItemViewModel,
+  TranslationSaveRequest,
   // Add more exports if you have additional modules
 };
