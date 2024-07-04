@@ -1,4 +1,4 @@
-import { IsNotEmpty, Length } from "class-validator";
+import { IsNotEmpty, Length, ValidateIf } from "class-validator";
 
 export class TranslationSaveRequest {
   @IsNotEmpty()
@@ -14,6 +14,10 @@ export class TranslationSaveRequest {
   @Length(2, 2)
   language!: string;
 
+  @ValidateIf(
+    (obj: TranslationSaveRequest, val: string) => obj.portalCode != undefined
+  )
+  @Length(4, 4)
   portalCode!: string | undefined;
 
   constructor(data: Partial<TranslationSaveRequest>) {

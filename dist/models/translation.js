@@ -39,3 +39,8 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], TranslationSaveRequest.prototype, "language", void 0);
+__decorate([
+    (0, class_validator_1.ValidateIf)((obj, val) => obj.portalCode != undefined),
+    (0, class_validator_1.Length)(4, 4),
+    __metadata("design:type", Object)
+], TranslationSaveRequest.prototype, "portalCode", void 0);
