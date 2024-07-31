@@ -38,3 +38,11 @@ export class NewsletterContentModel {
   infoLabel: string | undefined = undefined;
   infoLink: string | undefined = undefined;
 }
+
+export interface NewsletterTileModel {
+  id: number;
+  reference: string;
+  date: Date;
+  title: string;
+  redirectUrl: string;
+}

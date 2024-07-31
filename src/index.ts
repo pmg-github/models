@@ -55,6 +55,7 @@ import {
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
+  NewsletterTileModel,
 } from "./models/newsletter";
 
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
@@ -102,6 +103,7 @@ export {
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
+  NewsletterTileModel,
   AboViewModel,
   ProefAboCreateModel,
   PortalViewModel,

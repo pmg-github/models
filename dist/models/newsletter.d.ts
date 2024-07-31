@@ -36,3 +36,10 @@ export declare class NewsletterContentModel {
     infoLabel: string | undefined;
     infoLink: string | undefined;
 }
+export interface NewsletterTileModel {
+    id: number;
+    reference: string;
+    date: Date;
+    title: string;
+    redirectUrl: string;
+}
