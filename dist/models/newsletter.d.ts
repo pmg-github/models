@@ -40,6 +40,7 @@ export interface NewsletterTileModel {
     id: number;
     reference: string;
     date: Date;
+    displayDate: string;
     title: string;
     redirectUrl: string;
 }
