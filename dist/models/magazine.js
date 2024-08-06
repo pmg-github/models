@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineInteresseViewModel = exports.MagazineMetaDataViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerInteresseViewModel = exports.ViewerMetaDataViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
+exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineInteresseViewModel = exports.MagazineMetaDataViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerMagazineViewModel = exports.ViewerInteresseViewModel = exports.ViewerMetaDataViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
 // BASE CLASSES
 // Actual classes should inherit from this
 class ViewerTileBaseViewModel {
@@ -55,6 +55,13 @@ class ViewerInteresseViewModel {
     isMain = false;
 }
 exports.ViewerInteresseViewModel = ViewerInteresseViewModel;
+class ViewerMagazineViewModel {
+    reference;
+    name;
+    description;
+    releaseDate; // note: cast to string when sending as API response!
+}
+exports.ViewerMagazineViewModel = ViewerMagazineViewModel;
 // INHERITED CLASSES
 // EXTEND HERE IF SEPERATION IS NEEDED AFTERWARDS
 class MagazineTileViewModel extends ViewerTileBaseViewModel {

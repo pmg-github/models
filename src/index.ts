@@ -1,5 +1,6 @@
 // Import and re-export your modules
 import {
+  ViewerMagazineViewModel,
   MagazineTileViewModel,
   MagazineArticleViewModel,
   MagazineAdViewModel,
@@ -67,6 +68,7 @@ import { TranslationSaveRequest } from "./models/translation";
 
 export {
   ViewerTileBaseViewModel,
+  ViewerMagazineViewModel,
   MagazineTileViewModel,
   MagazineArticleViewModel,
   MagazineAdViewModel,

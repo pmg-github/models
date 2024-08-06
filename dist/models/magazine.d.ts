@@ -44,6 +44,12 @@ export declare class ViewerInteresseViewModel {
     code: string | undefined;
     isMain: boolean;
 }
+export declare class ViewerMagazineViewModel {
+    reference: string;
+    name: string;
+    description: string | null;
+    releaseDate: Date | string;
+}
 export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
 export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
