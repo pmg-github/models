@@ -44,7 +44,7 @@ export declare class ViewerInteresseViewModel {
     code: string | undefined;
     isMain: boolean;
 }
-export declare class ViewerMagazineViewModel {
+export interface ViewerMagazineViewModel {
     reference: string;
     name: string;
     description: string | null;

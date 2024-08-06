@@ -52,11 +52,11 @@ export class ViewerInteresseViewModel {
   isMain: boolean = false;
 }
 
-export class ViewerMagazineViewModel {
-  reference!: string;
-  name!: string;
-  description!: string | null;
-  releaseDate!: Date | string; // note: cast to string when sending as API response!
+export interface ViewerMagazineViewModel {
+  reference: string;
+  name: string;
+  description: string | null;
+  releaseDate: Date | string; // note: cast to string when sending as API response!
 }
 
 // INHERITED CLASSES
