@@ -4,6 +4,7 @@ export declare class ViewerTileBaseViewModel {
     isPremium: boolean | undefined;
     imageUrl: string | undefined;
     redirectUrl: string | undefined;
+    interests: ViewerInteresseViewModel[] | undefined;
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;

@@ -9,6 +9,7 @@ class ViewerTileBaseViewModel {
     isPremium = undefined;
     imageUrl = undefined;
     redirectUrl = undefined;
+    interests = undefined;
 }
 exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
 class ViewerArticleBaseViewModel {

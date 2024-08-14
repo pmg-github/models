@@ -6,6 +6,7 @@ export class ViewerTileBaseViewModel {
   isPremium: boolean | undefined = undefined;
   imageUrl: string | undefined = undefined;
   redirectUrl: string | undefined = undefined;
+  interests: ViewerInteresseViewModel[] | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {
