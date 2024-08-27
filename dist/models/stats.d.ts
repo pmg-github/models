@@ -8,7 +8,7 @@ export interface StatsPostModel {
     collectionReference?: string;
     campagneCode?: string;
     contactId?: number;
-    intValue: number;
+    intValue?: number;
     varCharValue?: string;
     jsonData?: string;
 }
