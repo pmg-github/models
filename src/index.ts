@@ -68,6 +68,8 @@ import { TranslationSaveRequest } from "./models/translation";
 
 import { StatsPostModel } from "./models/stats";
 
+import { InterestViewModel } from "./models/interest";
+
 export {
   ViewerTileBaseViewModel,
   ViewerMagazineViewModel,
@@ -115,5 +117,6 @@ export {
   CampagneItemViewModel,
   TranslationSaveRequest,
   StatsPostModel,
+  InterestViewModel,
   // Add more exports if you have additional modules
 };
