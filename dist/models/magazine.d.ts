@@ -15,6 +15,7 @@ export declare class ViewerArticleBaseViewModel {
     displayDate: Date | undefined;
     displayAuthor: string | undefined;
     isPremium: boolean | undefined;
+    requiresRegistration: boolean | undefined;
     imageUrl: string | undefined;
     customerReference: string | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;
@@ -50,6 +51,7 @@ export interface ViewerMagazineViewModel {
     name: string;
     description: string | null;
     releaseDate: Date | string;
+    isFreePremium: boolean;
 }
 export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }

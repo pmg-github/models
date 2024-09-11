@@ -18,6 +18,7 @@ export class ViewerArticleBaseViewModel {
   displayDate: Date | undefined = undefined;
   displayAuthor: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
+  requiresRegistration: boolean | undefined = undefined;
   imageUrl: string | undefined = undefined;
   customerReference: string | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
@@ -58,6 +59,7 @@ export interface ViewerMagazineViewModel {
   name: string;
   description: string | null;
   releaseDate: Date | string; // note: cast to string when sending as API response!
+  isFreePremium: boolean;
 }
 
 // INHERITED CLASSES
