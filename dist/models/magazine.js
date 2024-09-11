@@ -74,6 +74,7 @@ class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 exports.MagazineCustomerTileViewModel = MagazineCustomerTileViewModel;
 class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
     coverImageUrl = undefined;
+    isFreePremium = undefined;
 }
 exports.MagazineMetaDataViewModel = MagazineMetaDataViewModel;
 class MagazineInteresseViewModel extends ViewerInteresseViewModel {

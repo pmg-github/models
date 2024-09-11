@@ -64,6 +64,7 @@ export declare class MagazineCustomerTileViewModel extends ViewerCustomerTileVie
 }
 export declare class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
     coverImageUrl: string | undefined;
+    isFreePremium: boolean | undefined;
 }
 export declare class MagazineInteresseViewModel extends ViewerInteresseViewModel {
 }
