@@ -1,8 +1,10 @@
 // BASE CLASSES
 // Actual classes should inherit from this
+// TODO make a single article base class and use these for both tiles and detail!
 export class ViewerTileBaseViewModel {
   reference: string | undefined = undefined;
   title: string | undefined = undefined;
+  description: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
   imageUrl: string | undefined = undefined;
   redirectUrl: string | undefined = undefined;

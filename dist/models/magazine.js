@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineInteresseViewModel = exports.MagazineMetaDataViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerInteresseViewModel = exports.ViewerMetaDataViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
 // BASE CLASSES
 // Actual classes should inherit from this
+// TODO make a single article base class and use these for both tiles and detail!
 class ViewerTileBaseViewModel {
     reference = undefined;
     title = undefined;
+    description = undefined;
     isPremium = undefined;
     imageUrl = undefined;
     redirectUrl = undefined;

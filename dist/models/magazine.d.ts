@@ -1,6 +1,7 @@
 export declare class ViewerTileBaseViewModel {
     reference: string | undefined;
     title: string | undefined;
+    description: string | undefined;
     isPremium: boolean | undefined;
     imageUrl: string | undefined;
     redirectUrl: string | undefined;
