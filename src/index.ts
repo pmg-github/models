@@ -1,4 +1,6 @@
 // Import and re-export your modules
+import { ArticleOrderByType, articleOrderByData } from "./models/article";
+
 import {
   ViewerMagazineViewModel,
   MagazineTileViewModel,
@@ -71,6 +73,8 @@ import { StatsPostModel } from "./models/stats";
 import { InterestViewModel } from "./models/interest";
 
 export {
+  ArticleOrderByType,
+  articleOrderByData,
   ViewerTileBaseViewModel,
   ViewerMagazineViewModel,
   MagazineTileViewModel,
