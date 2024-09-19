@@ -3,8 +3,7 @@ import { IsNotEmpty, Length } from "class-validator";
 export class SearchResultsSaveRequest {
   @IsNotEmpty()
   keyword!: string;
-  @IsNotEmpty()
-  contactId!: number;
+
   @IsNotEmpty()
   @Length(4, 4)
   portalCode!: string;

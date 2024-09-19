@@ -13,7 +13,6 @@ exports.SearchResultsSaveRequest = void 0;
 const class_validator_1 = require("class-validator");
 class SearchResultsSaveRequest {
     keyword;
-    contactId;
     portalCode;
     language;
     constructor(data) {
@@ -25,10 +24,6 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], SearchResultsSaveRequest.prototype, "keyword", void 0);
-__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", Number)
-], SearchResultsSaveRequest.prototype, "contactId", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(4, 4),
