@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.articleOrderByData = exports.ArticleOrderByType = void 0;
+exports.ArticleTypes = exports.articleOrderByData = exports.ArticleOrderByType = void 0;
+exports.combineArticleTypes = combineArticleTypes;
 var ArticleOrderByType;
 (function (ArticleOrderByType) {
     ArticleOrderByType["RECENT_FIRST"] = "recentFirst";
@@ -16,3 +17,10 @@ exports.articleOrderByData = {
         direction: "asc",
     },
 };
+exports.ArticleTypes = {
+    NEWS: [2, 3],
+    ARTICLES: [1, 4, 5, 11, 12, 13, 14, 15, 16, 18], // TODO check
+};
+function combineArticleTypes(...types) {
+    return Array.from(new Set(types.flat()));
+}

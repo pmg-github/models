@@ -16,3 +16,17 @@ export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
       direction: "asc",
     },
   };
+
+export const ArticleTypes = {
+  NEWS: [2, 3],
+  ARTICLES: [1, 4, 5, 11, 12, 13, 14, 15, 16, 18], // TODO check
+} as const;
+
+export type ArticleType =
+  (typeof ArticleTypes)[keyof typeof ArticleTypes][number];
+
+export function combineArticleTypes(
+  ...types: readonly number[][]
+): ArticleType[] {
+  return Array.from(new Set(types.flat())) as ArticleType[];
+}

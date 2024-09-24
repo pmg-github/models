@@ -1,5 +1,11 @@
 // Import and re-export your modules
-import { ArticleOrderByType, articleOrderByData } from "./models/article";
+import {
+  ArticleOrderByType,
+  articleOrderByData,
+  ArticleType,
+  ArticleTypes,
+  combineArticleTypes,
+} from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
 
@@ -125,5 +131,8 @@ export {
   TranslationSaveRequest,
   StatsPostModel,
   InterestViewModel,
+  ArticleType,
+  ArticleTypes,
+  combineArticleTypes,
   // Add more exports if you have additional modules
 };
