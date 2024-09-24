@@ -26,7 +26,7 @@ export type ArticleType =
   (typeof ArticleTypes)[keyof typeof ArticleTypes][number];
 
 export function combineArticleTypes(
-  ...types: readonly number[][]
-): ArticleType[] {
+  ...types: readonly (readonly number[])[]
+): readonly ArticleType[] {
   return Array.from(new Set(types.flat())) as ArticleType[];
 }

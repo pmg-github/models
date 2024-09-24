@@ -11,4 +11,4 @@ export declare const ArticleTypes: {
     readonly ARTICLES: readonly [1, 4, 5, 11, 12, 13, 14, 15, 16, 18];
 };
 export type ArticleType = (typeof ArticleTypes)[keyof typeof ArticleTypes][number];
-export declare function combineArticleTypes(...types: readonly number[][]): ArticleType[];
+export declare function combineArticleTypes(...types: readonly (readonly number[])[]): readonly ArticleType[];
