@@ -18,8 +18,8 @@ exports.articleOrderByData = {
     },
 };
 exports.ArticleTypes = {
-    NEWS: [2, 3],
-    ARTICLES: [1, 4, 5, 11, 12, 13, 14, 15, 16, 18], // TODO check
+    NEWS: [2],
+    ARTICLES: [1, 3, 4, 5, 11, 12, 13, 14, 15, 16, 18], // TODO check
 };
 function combineArticleTypes(...types) {
     return Array.from(new Set(types.flat()));
