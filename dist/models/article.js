@@ -5,6 +5,7 @@ exports.combineArticleTypes = combineArticleTypes;
 var ArticleOrderByType;
 (function (ArticleOrderByType) {
     ArticleOrderByType["RECENT_FIRST"] = "recentFirst";
+    ArticleOrderByType["MOST_RELEVANT"] = "mostRelevant";
     ArticleOrderByType["ARTICLE_NUMBER"] = "articleNumber";
 })(ArticleOrderByType || (exports.ArticleOrderByType = ArticleOrderByType = {}));
 exports.articleOrderByData = {
@@ -15,6 +16,10 @@ exports.articleOrderByData = {
     [ArticleOrderByType.ARTICLE_NUMBER]: {
         column: "article.Number",
         direction: "asc",
+    },
+    [ArticleOrderByType.MOST_RELEVANT]: {
+        column: "relevancy",
+        direction: "desc",
     },
 };
 exports.ArticleTypes = {
