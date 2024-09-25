@@ -5,6 +5,7 @@ exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewMo
 // Actual classes should inherit from this
 // TODO make a single article base class and use these for both tiles and detail!
 class ViewerTileBaseViewModel {
+    id;
     reference = undefined;
     title = undefined;
     description = undefined;
@@ -12,6 +13,7 @@ class ViewerTileBaseViewModel {
     imageUrl = undefined;
     redirectUrl = undefined;
     interests = undefined;
+    orderByValue = undefined;
 }
 exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
 class ViewerArticleBaseViewModel {

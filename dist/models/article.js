@@ -18,7 +18,7 @@ exports.articleOrderByData = {
         direction: "asc",
     },
     [ArticleOrderByType.MOST_RELEVANT]: {
-        column: "relevancy",
+        column: "relevancy", // not really used
         direction: "desc",
     },
 };

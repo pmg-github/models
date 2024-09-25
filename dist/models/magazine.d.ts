@@ -1,4 +1,5 @@
 export declare class ViewerTileBaseViewModel {
+    id: number;
     reference: string | undefined;
     title: string | undefined;
     description: string | undefined;
@@ -6,6 +7,7 @@ export declare class ViewerTileBaseViewModel {
     imageUrl: string | undefined;
     redirectUrl: string | undefined;
     interests: ViewerInteresseViewModel[] | undefined;
+    orderByValue: string | undefined;
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;

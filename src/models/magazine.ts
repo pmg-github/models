@@ -2,6 +2,7 @@
 // Actual classes should inherit from this
 // TODO make a single article base class and use these for both tiles and detail!
 export class ViewerTileBaseViewModel {
+  id!: number;
   reference: string | undefined = undefined;
   title: string | undefined = undefined;
   description: string | undefined = undefined;
@@ -9,6 +10,7 @@ export class ViewerTileBaseViewModel {
   imageUrl: string | undefined = undefined;
   redirectUrl: string | undefined = undefined;
   interests: ViewerInteresseViewModel[] | undefined = undefined;
+  orderByValue: string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {

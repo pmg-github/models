@@ -17,7 +17,7 @@ export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
       direction: "asc",
     },
     [ArticleOrderByType.MOST_RELEVANT]: {
-      column: "relevancy",
+      column: "relevancy", // not really used
       direction: "desc",
     },
   };
