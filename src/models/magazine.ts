@@ -28,6 +28,7 @@ export class ViewerArticleBaseViewModel {
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
   typeId: number | undefined = undefined;
   externalUrl: string | undefined = undefined;
+  searchTextRelated: string | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {

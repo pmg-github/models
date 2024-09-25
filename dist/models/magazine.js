@@ -31,6 +31,7 @@ class ViewerArticleBaseViewModel {
     interesses = undefined;
     typeId = undefined;
     externalUrl = undefined;
+    searchTextRelated = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {
