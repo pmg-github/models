@@ -6,8 +6,9 @@ exports.combineArticleTypes = combineArticleTypes;
 var ArticleOrderByType;
 (function (ArticleOrderByType) {
     ArticleOrderByType["RECENT_FIRST"] = "recentFirst";
-    ArticleOrderByType["MOST_RELEVANT"] = "mostRelevant";
     ArticleOrderByType["ARTICLE_NUMBER"] = "articleNumber";
+    ArticleOrderByType["MOST_RELEVANT"] = "mostRelevant";
+    ArticleOrderByType["MOST_POPULAR"] = "mostPopular";
 })(ArticleOrderByType || (exports.ArticleOrderByType = ArticleOrderByType = {}));
 exports.articleOrderByData = {
     [ArticleOrderByType.RECENT_FIRST]: {
@@ -20,6 +21,10 @@ exports.articleOrderByData = {
     },
     [ArticleOrderByType.MOST_RELEVANT]: {
         column: "relevancy", // not really used
+        direction: "desc",
+    },
+    [ArticleOrderByType.MOST_POPULAR]: {
+        column: "article_views.Views",
         direction: "desc",
     },
 };

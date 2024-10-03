@@ -1,8 +1,9 @@
 import { OrderByType } from "./db";
 export declare enum ArticleOrderByType {
     RECENT_FIRST = "recentFirst",
+    ARTICLE_NUMBER = "articleNumber",
     MOST_RELEVANT = "mostRelevant",
-    ARTICLE_NUMBER = "articleNumber"
+    MOST_POPULAR = "mostPopular"
 }
 export declare const articleOrderByData: {
     [key in ArticleOrderByType]: OrderByType;

@@ -3,8 +3,9 @@ import { OrderByType } from "./db";
 // ORDER BY
 export enum ArticleOrderByType {
   RECENT_FIRST = "recentFirst",
-  MOST_RELEVANT = "mostRelevant",
   ARTICLE_NUMBER = "articleNumber",
+  MOST_RELEVANT = "mostRelevant",
+  MOST_POPULAR = "mostPopular",
 }
 
 export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
@@ -19,6 +20,10 @@ export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
     },
     [ArticleOrderByType.MOST_RELEVANT]: {
       column: "relevancy", // not really used
+      direction: "desc",
+    },
+    [ArticleOrderByType.MOST_POPULAR]: {
+      column: "article_views.Views",
       direction: "desc",
     },
   };
