@@ -29,8 +29,10 @@ export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
   };
 
 export const ArticleTypes = {
-  NEWS: [2],
-  ARTICLES: [1, 3, 4, 5, 11, 12, 13, 14, 15, 16, 18], // TODO check
+  NEWS: [2], // TODO: CHECK IF THIS IS OKAY
+  ARTICLES: [1, 3, 4, 11, 12, 13, 14, 15, 16, 18],
+  MARKETING: [5],
+  PRODUCTS: [7, 8, 9, 10, 17],
   HOW_TO_CHOOSE: [20], // TODO check if this is still correct once it's added to DB
 } as const;
 

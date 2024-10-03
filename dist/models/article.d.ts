@@ -10,7 +10,9 @@ export declare const articleOrderByData: {
 };
 export declare const ArticleTypes: {
     readonly NEWS: readonly [2];
-    readonly ARTICLES: readonly [1, 3, 4, 5, 11, 12, 13, 14, 15, 16, 18];
+    readonly ARTICLES: readonly [1, 3, 4, 11, 12, 13, 14, 15, 16, 18];
+    readonly MARKETING: readonly [5];
+    readonly PRODUCTS: readonly [7, 8, 9, 10, 17];
     readonly HOW_TO_CHOOSE: readonly [20];
 };
 export type ArticleType = (typeof ArticleTypes)[keyof typeof ArticleTypes][number];
