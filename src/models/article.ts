@@ -29,13 +29,13 @@ export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
   };
 
 export const ArticleTypes = {
-  NEWS: [2], // TODO: CHECK IF THIS IS OKAY
-  ARTICLES: [1, 3, 4, 15, 16, 18],
-  MARKETING: [5],
-  PRODUCTS: [7, 8, 9, 10, 17],
-  HOW_TO_CHOOSE: [20], // TODO check if this is still correct once it's added to DB
-  SURVEYS: [14],
-  ADS: [11, 12, 13],
+  NEWS: [2], // Gewone "nieuwsberichten"
+  ARTICLES: [1, 3, 4, 15, 16, 18], // Gewone "artikels"
+  MARKETING: [5], // Marketing
+  PRODUCTS: [7, 8, 9, 10, 17], // Webshop
+  HOW_TO_CHOOSE: [20], // Hoe kiezen? => TODO check if this is still correct once it's added to DB
+  SURVEYS: [14], // Eloket artikels
+  ADS: [11, 12, 13], // TRTs enzo...
 } as const;
 
 // TYPE
