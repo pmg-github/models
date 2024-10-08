@@ -10,10 +10,12 @@ export declare const articleOrderByData: {
 };
 export declare const ArticleTypes: {
     readonly NEWS: readonly [2];
-    readonly ARTICLES: readonly [1, 3, 4, 11, 12, 13, 14, 15, 16, 18];
+    readonly ARTICLES: readonly [1, 3, 4, 15, 16, 18];
     readonly MARKETING: readonly [5];
     readonly PRODUCTS: readonly [7, 8, 9, 10, 17];
     readonly HOW_TO_CHOOSE: readonly [20];
+    readonly SURVEYS: readonly [14];
+    readonly ADS: readonly [11, 12, 13];
 };
 export type ArticleType = (typeof ArticleTypes)[keyof typeof ArticleTypes][number];
 export declare function combineArticleTypes(...types: readonly (readonly number[])[]): readonly ArticleType[];
