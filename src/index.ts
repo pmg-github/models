@@ -3,8 +3,7 @@ import {
   ArticleOrderByType,
   articleOrderByData,
   ArticleType,
-  ArticleTypes,
-  combineArticleTypes,
+  articleTypeData,
   ArticlePremiumType,
 } from "./models/article";
 
@@ -133,8 +132,7 @@ export {
   StatsPostModel,
   InterestViewModel,
   ArticleType,
-  ArticleTypes,
-  combineArticleTypes,
+  articleTypeData,
   ArticlePremiumType,
   // Add more exports if you have additional modules
 };

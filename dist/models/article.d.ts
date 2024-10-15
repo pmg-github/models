@@ -8,17 +8,18 @@ export declare enum ArticleOrderByType {
 export declare const articleOrderByData: {
     [key in ArticleOrderByType]: OrderByType;
 };
-export declare const ArticleTypes: {
-    readonly NEWS: readonly [2];
-    readonly ARTICLES: readonly [1, 3, 4, 15, 16, 18];
-    readonly MARKETING: readonly [5];
-    readonly PRODUCTS: readonly [7, 8, 9, 10, 17];
-    readonly HOW_TO_CHOOSE: readonly [20];
-    readonly SURVEYS: readonly [14];
-    readonly ADS: readonly [11, 12, 13];
+export declare enum ArticleType {
+    NEWS = "news",
+    ARTICLES = "articles",
+    MARKETING = "marketing",
+    PRODUCTS = "products",
+    HOW_TO_CHOOSE = "howToChoose",
+    SURVEYS = "surveys",
+    ADS = "ads"
+}
+export declare const articleTypeData: {
+    [key in ArticleType]: number[];
 };
-export type ArticleType = (typeof ArticleTypes)[keyof typeof ArticleTypes][number];
-export declare function combineArticleTypes(...types: readonly (readonly number[])[]): readonly ArticleType[];
 export declare enum ArticlePremiumType {
     ALL = 0,
     ONLY_PREMIUM = 1,
