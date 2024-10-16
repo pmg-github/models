@@ -5,6 +5,7 @@ import {
   ArticleType,
   articleTypeData,
   ArticlePremiumType,
+  ArticleSearchOptions,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -134,5 +135,6 @@ export {
   ArticleType,
   articleTypeData,
   ArticlePremiumType,
+  ArticleSearchOptions,
   // Add more exports if you have additional modules
 };

@@ -1,4 +1,5 @@
 import { OrderByType } from "./db";
+import { ViewerTileBaseViewModel } from "./magazine";
 
 // ORDER BY
 export enum ArticleOrderByType {
@@ -76,3 +77,20 @@ export enum ArticlePremiumType {
   ONLY_PREMIUM = 1,
   NO_PREMIUM = 2,
 }
+
+export type ArticleSearchOptions = {
+  portalCode?: string;
+  lang?: string;
+  articleTypes?: ArticleType[];
+  excludeArticles?: string[];
+  interestCodes?: string[];
+  limit?: number;
+  customerReferences?: string[];
+  ignoreAvailableDates?: boolean;
+  term?: string;
+  contextCodes?: string[];
+  jobCodes?: string[];
+  premiumType?: ArticlePremiumType;
+  orderByType?: ArticleOrderByType;
+  cursorArticle?: ViewerTileBaseViewModel;
+};
