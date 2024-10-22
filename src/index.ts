@@ -81,6 +81,8 @@ import { StatsPostModel } from "./models/stats";
 
 import { InterestViewModel } from "./models/interest";
 
+import { AdTileViewModel } from "./models/tiles";
+
 export {
   ArticleOrderByType,
   articleOrderByData,
@@ -136,5 +138,6 @@ export {
   articleTypeData,
   ArticlePremiumType,
   ArticleSearchOptions,
+  AdTileViewModel,
   // Add more exports if you have additional modules
 };
