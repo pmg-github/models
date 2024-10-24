@@ -64,6 +64,7 @@ import {
 } from "./models/symposium";
 
 import {
+  NewsletterContentType,
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
@@ -123,6 +124,7 @@ export {
   SymposiumPostViewModel,
   SymposiumFilterViewModel,
   SymposiumFilterOptionViewModel,
+  NewsletterContentType,
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
