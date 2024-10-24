@@ -17,6 +17,7 @@ export class NewsletterModel {
   subject: string | undefined = undefined;
   statusId: number | undefined = undefined;
   statusReference: string | undefined = undefined;
+  statusName: string | undefined = undefined;
   scheduledOn: Date | undefined = undefined;
   timestampStart: Date | undefined = undefined;
   timestampEnd: Date | undefined = undefined;
