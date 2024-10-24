@@ -15,7 +15,11 @@ export class NewsletterModel {
   projectCode: string | undefined = undefined;
   languageCode: string | undefined = undefined;
   subject: string | undefined = undefined;
-  date: Date | undefined = undefined;
+  statusId: number | undefined = undefined;
+  statusReference: string | undefined = undefined;
+  scheduledOn: Date | undefined = undefined;
+  timestampStart: Date | undefined = undefined;
+  timestampEnd: Date | undefined = undefined;
   numberOfRecipients: number | undefined = undefined;
   numberOfSuccess: number | undefined = undefined;
   numberOfFailed: number | undefined = undefined;
