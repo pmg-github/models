@@ -1,3 +1,7 @@
+export declare class NewsletterContentType {
+    id: number | undefined;
+    name: string | undefined;
+}
 export declare class NewsletterProjectModel {
     code: string | undefined;
     name: string | undefined;

@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = void 0;
+exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
+class NewsletterContentType {
+    id = undefined;
+    name = undefined;
+}
+exports.NewsletterContentType = NewsletterContentType;
 class NewsletterProjectModel {
     code = undefined;
     name = undefined;
