@@ -1,5 +1,6 @@
 export class NewsletterContentType {
   id: number | undefined = undefined;
+  reference: string | undefined = undefined;
   name: string | undefined = undefined;
 }
 export class NewsletterProjectModel {
