@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = void 0;
+exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = void 0;
 class NewsletterProjectModel {
     code = undefined;
     name = undefined;
@@ -18,7 +18,18 @@ class NewsletterModel {
     projectCode = undefined;
     languageCode = undefined;
     subject = undefined;
-    date = undefined;
+    introTitle = undefined;
+    introDescription = undefined;
+    introName = undefined;
+    introFunction = undefined;
+    introFileID = undefined;
+    pollCode = undefined;
+    statusId = undefined;
+    statusReference = undefined;
+    statusName = undefined;
+    scheduledOn = undefined;
+    timestampStart = undefined;
+    timestampEnd = undefined;
     numberOfRecipients = undefined;
     numberOfSuccess = undefined;
     numberOfFailed = undefined;
@@ -42,3 +53,13 @@ class NewsletterContentModel {
     infoLink = undefined;
 }
 exports.NewsletterContentModel = NewsletterContentModel;
+class NewsletterQuicklinkModel {
+    id = undefined;
+    jobCode = undefined;
+    languageCode = undefined;
+    articleReference = undefined;
+    title = undefined;
+    url = undefined;
+    sortOrder = undefined;
+}
+exports.NewsletterQuicklinkModel = NewsletterQuicklinkModel;

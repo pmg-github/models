@@ -14,7 +14,18 @@ export declare class NewsletterModel {
     projectCode: string | undefined;
     languageCode: string | undefined;
     subject: string | undefined;
-    date: Date | undefined;
+    introTitle: string | undefined;
+    introDescription: string | undefined;
+    introName: string | undefined;
+    introFunction: string | undefined;
+    introFileID: number | undefined;
+    pollCode: string | undefined;
+    statusId: number | undefined;
+    statusReference: string | undefined;
+    statusName: string | undefined;
+    scheduledOn: Date | undefined;
+    timestampStart: Date | undefined;
+    timestampEnd: Date | undefined;
     numberOfRecipients: number | undefined;
     numberOfSuccess: number | undefined;
     numberOfFailed: number | undefined;
@@ -35,6 +46,15 @@ export declare class NewsletterContentModel {
     moreLink: string | undefined;
     infoLabel: string | undefined;
     infoLink: string | undefined;
+}
+export declare class NewsletterQuicklinkModel {
+    id: number | undefined;
+    jobCode: string | undefined;
+    languageCode: string | undefined;
+    articleReference: string | undefined;
+    title: string | undefined;
+    url: string | undefined;
+    sortOrder: number | undefined;
 }
 export interface NewsletterTileModel {
     id: number;
