@@ -67,6 +67,7 @@ import {
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
+  NewsletterQuicklinkModel,
   NewsletterTileModel,
 } from "./models/newsletter";
 
@@ -125,6 +126,7 @@ export {
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
+  NewsletterQuicklinkModel,
   NewsletterTileModel,
   AboViewModel,
   ProefAboCreateModel,
