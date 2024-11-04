@@ -72,6 +72,8 @@ import {
   NewsletterTileModel,
 } from "./models/newsletter";
 
+import { PopupModel } from "./models/popup";
+
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
 import { PortalViewModel } from "./models/portal";
 
@@ -130,6 +132,7 @@ export {
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   NewsletterTileModel,
+  PopupModel,
   AboViewModel,
   ProefAboCreateModel,
   PortalViewModel,

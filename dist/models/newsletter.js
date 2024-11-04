@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
 class NewsletterContentType {
     id = undefined;
+    reference = undefined;
     name = undefined;
 }
 exports.NewsletterContentType = NewsletterContentType;

@@ -1,0 +1,31 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PopupModel = void 0;
+class PopupModel {
+    ID = undefined;
+    typeID = undefined;
+    typeReference = undefined;
+    languageCode = undefined;
+    targetAudienceID = undefined;
+    targetAudienceReference = undefined;
+    positionID = undefined;
+    positionReference = undefined;
+    displayFrequencyID = undefined;
+    displayFrequencyReference = undefined;
+    delaySeconds = undefined;
+    fileID = undefined;
+    title = undefined;
+    subTitle = undefined;
+    intro = undefined;
+    text = undefined;
+    buttonText = undefined;
+    buttonLink = undefined;
+    width = undefined;
+    height = undefined;
+    dateFrom = undefined;
+    dateUntil = undefined;
+    isActive = undefined;
+    creationDate = undefined;
+    lastModificationDate = undefined;
+}
+exports.PopupModel = PopupModel;
