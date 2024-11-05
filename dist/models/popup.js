@@ -27,5 +27,6 @@ class PopupModel {
     isActive = undefined;
     creationDate = undefined;
     lastModificationDate = undefined;
+    fileUrl = undefined;
 }
 exports.PopupModel = PopupModel;
