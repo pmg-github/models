@@ -54,6 +54,7 @@ class ViewerMetaDataViewModel {
     portalLogoUrl = undefined;
     domain = undefined;
     date = undefined;
+    isFreePremium = undefined;
 }
 exports.ViewerMetaDataViewModel = ViewerMetaDataViewModel;
 class ViewerInteresseViewModel {

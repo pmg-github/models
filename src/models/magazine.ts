@@ -51,6 +51,7 @@ export class ViewerMetaDataViewModel {
   portalLogoUrl: string | undefined = undefined;
   domain: string | undefined = undefined;
   date: Date | undefined = undefined;
+  isFreePremium: boolean | undefined = undefined;
 }
 
 export class ViewerInteresseViewModel {
