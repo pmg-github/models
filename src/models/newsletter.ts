@@ -108,4 +108,8 @@ export class NewsletterArticleSaveRequest {
   description!: string;
   moreLabel!: string;
   moreLink!: string;
+
+  constructor(data: Partial<NewsletterArticleSaveRequest>) {
+    Object.assign(this, data);
+  }
 }

@@ -95,6 +95,9 @@ class NewsletterArticleSaveRequest {
     description;
     moreLabel;
     moreLink;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.NewsletterArticleSaveRequest = NewsletterArticleSaveRequest;
 __decorate([

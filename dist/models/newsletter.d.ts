@@ -80,4 +80,5 @@ export declare class NewsletterArticleSaveRequest {
     description: string;
     moreLabel: string;
     moreLink: string;
+    constructor(data: Partial<NewsletterArticleSaveRequest>);
 }
