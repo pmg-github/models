@@ -69,3 +69,15 @@ export interface NewsletterTileModel {
     title: string;
     redirectUrl: string;
 }
+export declare class NewsletterArticleSaveRequest {
+    id: number;
+    jobCode: string;
+    languageCode: string;
+    articleReference: string;
+    typeId: number;
+    fileId: number;
+    title: string;
+    description: string;
+    moreLabel: string;
+    moreLink: string;
+}

@@ -1,3 +1,5 @@
+import { IsNotEmpty, Length } from "class-validator";
+
 export class NewsletterContentType {
   id: number | undefined = undefined;
   reference: string | undefined = undefined;
@@ -72,4 +74,38 @@ export interface NewsletterTileModel {
   displayDate: string;
   title: string;
   redirectUrl: string;
+}
+
+export class NewsletterArticleSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @Length(12, 12)
+  jobCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  languageCode!: string;
+
+  @IsNotEmpty()
+  articleReference!: string;
+
+  //articleTypeId?
+  //sortOrder? (andere API)
+  // colorId? (unused)
+
+  @IsNotEmpty()
+  typeId!: number; // viewtypeId
+
+  @IsNotEmpty()
+  fileId!: number;
+
+  // quicklicks => not here!
+
+  // Can be empty => default fallback is used when empty DB values!!!
+  title!: string;
+  description!: string;
+  moreLabel!: string;
+  moreLink!: string;
 }

@@ -70,6 +70,7 @@ import {
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   NewsletterTileModel,
+  NewsletterArticleSaveRequest,
 } from "./models/newsletter";
 
 import { PopupModel } from "./models/popup";
@@ -132,6 +133,7 @@ export {
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   NewsletterTileModel,
+  NewsletterArticleSaveRequest,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,
