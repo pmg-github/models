@@ -86,9 +86,10 @@ export class NewsletterArticleSaveRequest {
 
   @IsNotEmpty()
   @Length(2, 2)
-  languageCode!: string;
+  language!: string;
 
   @IsNotEmpty()
+  @Length(15, 15)
   articleReference!: string;
 
   //articleTypeId?
@@ -103,11 +104,12 @@ export class NewsletterArticleSaveRequest {
 
   // quicklicks => not here!
 
-  // Can be empty => default fallback is used when empty DB values!!!
+  @IsNotEmpty()
   title!: string;
+  @IsNotEmpty()
   description!: string;
+  @IsNotEmpty()
   moreLabel!: string;
-  moreLink!: string;
 
   constructor(data: Partial<NewsletterArticleSaveRequest>) {
     Object.assign(this, data);

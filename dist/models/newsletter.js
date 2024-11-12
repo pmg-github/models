@@ -82,7 +82,7 @@ exports.NewsletterQuicklinkModel = NewsletterQuicklinkModel;
 class NewsletterArticleSaveRequest {
     id;
     jobCode;
-    languageCode;
+    language;
     articleReference;
     //articleTypeId?
     //sortOrder? (andere API)
@@ -90,11 +90,9 @@ class NewsletterArticleSaveRequest {
     typeId; // viewtypeId
     fileId;
     // quicklicks => not here!
-    // Can be empty => default fallback is used when empty DB values!!!
     title;
     description;
     moreLabel;
-    moreLink;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -113,9 +111,10 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
-], NewsletterArticleSaveRequest.prototype, "languageCode", void 0);
+], NewsletterArticleSaveRequest.prototype, "language", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(15, 15),
     __metadata("design:type", String)
 ], NewsletterArticleSaveRequest.prototype, "articleReference", void 0);
 __decorate([
@@ -126,3 +125,15 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
 ], NewsletterArticleSaveRequest.prototype, "fileId", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], NewsletterArticleSaveRequest.prototype, "title", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], NewsletterArticleSaveRequest.prototype, "description", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], NewsletterArticleSaveRequest.prototype, "moreLabel", void 0);

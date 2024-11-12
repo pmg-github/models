@@ -72,13 +72,12 @@ export interface NewsletterTileModel {
 export declare class NewsletterArticleSaveRequest {
     id: number;
     jobCode: string;
-    languageCode: string;
+    language: string;
     articleReference: string;
     typeId: number;
     fileId: number;
     title: string;
     description: string;
     moreLabel: string;
-    moreLink: string;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
 }
