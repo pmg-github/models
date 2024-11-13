@@ -88,6 +88,8 @@ import { InterestViewModel } from "./models/interest";
 
 import { AdTileViewModel } from "./models/tiles";
 
+import { SimpleSortSaveRequest } from "./models/helper";
+
 export {
   ArticleOrderByType,
   articleOrderByData,
@@ -148,5 +150,6 @@ export {
   ArticlePremiumType,
   ArticleSearchOptions,
   AdTileViewModel,
+  SimpleSortSaveRequest,
   // Add more exports if you have additional modules
 };
