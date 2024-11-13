@@ -73,6 +73,13 @@ import {
   NewsletterArticleSaveRequest,
 } from "./models/newsletter";
 
+import {
+  NotificationListModel,
+  NotificationMediaListModel,
+  NotificationSummaryListModel,
+  NotificationTopicModel,
+} from "./models/notification";
+
 import { PopupModel } from "./models/popup";
 
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
@@ -136,6 +143,10 @@ export {
   NewsletterQuicklinkModel,
   NewsletterTileModel,
   NewsletterArticleSaveRequest,
+  NotificationListModel,
+  NotificationMediaListModel,
+  NotificationSummaryListModel,
+  NotificationTopicModel,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,
