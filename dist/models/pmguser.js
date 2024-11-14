@@ -6,11 +6,11 @@ class PmgUserModel {
     code;
     firstName;
     lastName;
-    constructor(id, code, firstName, lastName) {
-        this.id = id;
-        this.code = code;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    constructor(pmgUserInterface) {
+        this.id = pmgUserInterface.id;
+        this.code = pmgUserInterface.code;
+        this.firstName = pmgUserInterface.firstName;
+        this.lastName = pmgUserInterface.lastName;
     }
 }
 exports.PmgUserModel = PmgUserModel;
