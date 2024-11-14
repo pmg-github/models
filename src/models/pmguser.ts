@@ -1,10 +1,15 @@
 export class PmgUserModel {
-  constructor(
-    public id?: number,
-    public code?: string,
-    public firstName?: string,
-    public lastName?: string
-  ) {}
+  id?: number;
+  code?: string;
+  firstName?: string;
+  lastName?: string;
+
+  constructor(pmgUserInterface: PmgUserInterface) {
+    this.id = pmgUserInterface.id;
+    this.code = pmgUserInterface.code;
+    this.firstName = pmgUserInterface.firstName;
+    this.lastName = pmgUserInterface.lastName;
+  }
 }
 
 export type PmgUserInterface = Partial<PmgUserModel>;
