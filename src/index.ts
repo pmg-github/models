@@ -90,6 +90,8 @@ import { AdTileViewModel } from "./models/tiles";
 
 import { SimpleSortSaveRequest } from "./models/helper";
 
+import { PollViewModel, PollAnswerViewModel } from "./models/eloket";
+
 export {
   ArticleOrderByType,
   articleOrderByData,
@@ -151,5 +153,7 @@ export {
   ArticleSearchOptions,
   AdTileViewModel,
   SimpleSortSaveRequest,
+  PollViewModel,
+  PollAnswerViewModel,
   // Add more exports if you have additional modules
 };
