@@ -1,4 +1,4 @@
-import { UserViewModel } from "./user";
+import { PmgUserModel } from "./pmguser";
 export declare class NotificationMediaListModel {
     fileUrl: string | undefined;
 }
@@ -14,7 +14,7 @@ export declare class NotificationListModel {
     text: string | undefined;
     articleReference: string | undefined;
     lastModificationDate: Date | undefined;
-    user: UserViewModel | undefined;
+    sender: PmgUserModel | undefined;
     media: NotificationMediaListModel[] | undefined;
     topics: NotificationTopicModel[] | undefined;
 }
@@ -23,7 +23,7 @@ export declare class NotificationSummaryListModel {
     typeName: string | undefined;
     title: string | undefined;
     lastModificationDate: Date | undefined;
-    user: UserViewModel | undefined;
+    sender: PmgUserModel | undefined;
     isRead: Boolean;
     reactionCounter: number;
 }

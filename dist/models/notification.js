@@ -18,7 +18,7 @@ class NotificationListModel {
     text = undefined;
     articleReference = undefined;
     lastModificationDate = undefined;
-    user = undefined;
+    sender = undefined;
     media = undefined;
     topics = undefined;
 }
@@ -28,7 +28,7 @@ class NotificationSummaryListModel {
     typeName = undefined;
     title = undefined;
     lastModificationDate = undefined;
-    user = undefined;
+    sender = undefined;
     isRead = false;
     reactionCounter = 0;
 }
