@@ -67,6 +67,7 @@ class NewsletterContentModel {
     moreLink = undefined;
     infoLabel = undefined;
     infoLink = undefined;
+    imageUrl = undefined;
 }
 exports.NewsletterContentModel = NewsletterContentModel;
 class NewsletterQuicklinkModel {
