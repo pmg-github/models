@@ -1,6 +1,10 @@
 export class PmgUserModel {
-  id: number | undefined = undefined;
-  code: string | undefined = undefined;
-  firstName: string | undefined = undefined;
-  lastName: string | undefined = undefined;
+  constructor(
+    public id?: number,
+    public code?: string,
+    public firstName?: string,
+    public lastName?: string
+  ) {}
 }
+
+export type PmgUserInterface = Partial<PmgUserModel>;
