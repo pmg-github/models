@@ -35,6 +35,8 @@ import {
   ValidateTokenRequest,
 } from "./models/user";
 
+import { PmgUserModel } from "./models/pmguser";
+
 import { FaqViewModel } from "./models/faq";
 
 import {
@@ -72,6 +74,13 @@ import {
   NewsletterTileModel,
   NewsletterArticleSaveRequest,
 } from "./models/newsletter";
+
+import {
+  NotificationListModel,
+  NotificationMediaListModel,
+  NotificationSummaryListModel,
+  NotificationTopicModel,
+} from "./models/notification";
 
 import { PopupModel } from "./models/popup";
 
@@ -138,6 +147,11 @@ export {
   NewsletterQuicklinkModel,
   NewsletterTileModel,
   NewsletterArticleSaveRequest,
+  PmgUserModel,
+  NotificationListModel,
+  NotificationMediaListModel,
+  NotificationSummaryListModel,
+  NotificationTopicModel,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,

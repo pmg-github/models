@@ -1,14 +1,73 @@
-import { ArticleOrderByType, articleOrderByData, ArticleType, articleTypeData, ArticlePremiumType, ArticleSearchOptions } from "./models/article";
+import {
+  ArticleOrderByType,
+  articleOrderByData,
+  ArticleType,
+  articleTypeData,
+  ArticlePremiumType,
+  ArticleSearchOptions,
+} from "./models/article";
 import { SearchResultsSaveRequest } from "./models/search";
-import { ViewerMagazineViewModel, MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, ViewerTileBaseViewModel } from "./models/magazine";
-import { UserAPIInterface, UserAboAPIInterface, UserViewModel, UserAboViewModel, ContactCreateModel, ContactUpdateRequest, EmailCodeRequest, ValidateTokenRequest } from "./models/user";
+import {
+  ViewerMagazineViewModel,
+  MagazineTileViewModel,
+  MagazineArticleViewModel,
+  MagazineAdViewModel,
+  MagazineMetaDataViewModel,
+  MagazineImageArticleCombinationViewModel,
+  MagazineCustomerTileViewModel,
+  RelatedMagazineViewModel,
+  NewsletterTileViewModel,
+  NewsletterMetaDataViewModel,
+  ViewerTileBaseViewModel,
+} from "./models/magazine";
+import {
+  UserAPIInterface,
+  UserAboAPIInterface,
+  UserViewModel,
+  UserAboViewModel,
+  ContactCreateModel,
+  ContactUpdateRequest,
+  EmailCodeRequest,
+  ValidateTokenRequest,
+} from "./models/user";
+import { PmgUserModel } from "./models/pmguser";
 import { FaqViewModel } from "./models/faq";
-import { AddressHelper, AddressViewModel, AddressContactCreateRequest } from "./models/address";
-import { CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel } from "./models/company";
+import {
+  AddressHelper,
+  AddressViewModel,
+  AddressContactCreateRequest,
+} from "./models/address";
+import {
+  CompanyViewModel,
+  CompanyCornerDBModel,
+  CompanyCornerPictureModel,
+} from "./models/company";
 import { ContextViewModel } from "./models/context";
 import { SelectOptionViewModel } from "./models/selectoption";
-import { SymposiumSearchTypeViewModel, SymposiumUserTypeViewModel, SymposiumPostResultViewModel, SymposiumPostViewModel, SymposiumContactInfoViewModel, SymposiumFilterViewModel, SymposiumFilterOptionViewModel } from "./models/symposium";
-import { NewsletterContentType, NewsletterProjectModel, NewsletterModel, NewsletterContentModel, NewsletterQuicklinkModel, NewsletterTileModel, NewsletterArticleSaveRequest } from "./models/newsletter";
+import {
+  SymposiumSearchTypeViewModel,
+  SymposiumUserTypeViewModel,
+  SymposiumPostResultViewModel,
+  SymposiumPostViewModel,
+  SymposiumContactInfoViewModel,
+  SymposiumFilterViewModel,
+  SymposiumFilterOptionViewModel,
+} from "./models/symposium";
+import {
+  NewsletterContentType,
+  NewsletterProjectModel,
+  NewsletterModel,
+  NewsletterContentModel,
+  NewsletterQuicklinkModel,
+  NewsletterTileModel,
+  NewsletterArticleSaveRequest,
+} from "./models/newsletter";
+import {
+  NotificationListModel,
+  NotificationMediaListModel,
+  NotificationSummaryListModel,
+  NotificationTopicModel,
+} from "./models/notification";
 import { PopupModel } from "./models/popup";
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
 import { PortalViewModel } from "./models/portal";
@@ -18,5 +77,70 @@ import { StatsPostModel } from "./models/stats";
 import { InterestViewModel } from "./models/interest";
 import { AdTileViewModel } from "./models/tiles";
 import { SimpleSortSaveRequest } from "./models/helper";
-import { PollViewModel, PollAnswerViewModel } from "./models/eloket";
-export { ArticleOrderByType, articleOrderByData, SearchResultsSaveRequest, ViewerTileBaseViewModel, ViewerMagazineViewModel, MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, ContextViewModel, UserAPIInterface, UserAboAPIInterface, UserViewModel, UserAboViewModel, ContactCreateModel, ContactUpdateRequest, EmailCodeRequest, ValidateTokenRequest, CompanyViewModel, CompanyCornerDBModel, CompanyCornerPictureModel, FaqViewModel, AddressHelper, AddressViewModel, AddressContactCreateRequest, SelectOptionViewModel, SymposiumSearchTypeViewModel, SymposiumUserTypeViewModel, SymposiumPostResultViewModel, SymposiumContactInfoViewModel, SymposiumPostViewModel, SymposiumFilterViewModel, SymposiumFilterOptionViewModel, NewsletterContentType, NewsletterProjectModel, NewsletterModel, NewsletterContentModel, NewsletterQuicklinkModel, NewsletterTileModel, NewsletterArticleSaveRequest, PopupModel, AboViewModel, ProefAboCreateModel, PortalViewModel, CampagneViewModel, CampagneItemViewModel, TranslationSaveRequest, StatsPostModel, InterestViewModel, ArticleType, articleTypeData, ArticlePremiumType, ArticleSearchOptions, AdTileViewModel, SimpleSortSaveRequest, PollViewModel, PollAnswerViewModel, };
+export {
+  ArticleOrderByType,
+  articleOrderByData,
+  SearchResultsSaveRequest,
+  ViewerTileBaseViewModel,
+  ViewerMagazineViewModel,
+  MagazineTileViewModel,
+  MagazineArticleViewModel,
+  MagazineAdViewModel,
+  MagazineMetaDataViewModel,
+  MagazineImageArticleCombinationViewModel,
+  MagazineCustomerTileViewModel,
+  RelatedMagazineViewModel,
+  NewsletterTileViewModel,
+  NewsletterMetaDataViewModel,
+  ContextViewModel,
+  UserAPIInterface,
+  UserAboAPIInterface,
+  UserViewModel,
+  UserAboViewModel,
+  ContactCreateModel,
+  ContactUpdateRequest,
+  EmailCodeRequest,
+  ValidateTokenRequest,
+  CompanyViewModel,
+  CompanyCornerDBModel,
+  CompanyCornerPictureModel,
+  FaqViewModel,
+  AddressHelper,
+  AddressViewModel,
+  AddressContactCreateRequest,
+  SelectOptionViewModel,
+  SymposiumSearchTypeViewModel,
+  SymposiumUserTypeViewModel,
+  SymposiumPostResultViewModel,
+  SymposiumContactInfoViewModel,
+  SymposiumPostViewModel,
+  SymposiumFilterViewModel,
+  SymposiumFilterOptionViewModel,
+  NewsletterContentType,
+  NewsletterProjectModel,
+  NewsletterModel,
+  NewsletterContentModel,
+  NewsletterQuicklinkModel,
+  NewsletterTileModel,
+  NewsletterArticleSaveRequest,
+  PmgUserModel,
+  NotificationListModel,
+  NotificationMediaListModel,
+  NotificationSummaryListModel,
+  NotificationTopicModel,
+  PopupModel,
+  AboViewModel,
+  ProefAboCreateModel,
+  PortalViewModel,
+  CampagneViewModel,
+  CampagneItemViewModel,
+  TranslationSaveRequest,
+  StatsPostModel,
+  InterestViewModel,
+  ArticleType,
+  articleTypeData,
+  ArticlePremiumType,
+  ArticleSearchOptions,
+  AdTileViewModel,
+  SimpleSortSaveRequest,
+};

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SimpleSortSaveRequest = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = exports.TranslationSaveRequest = exports.ProefAboCreateModel = exports.PopupModel = exports.NewsletterArticleSaveRequest = exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerTileBaseViewModel = exports.SearchResultsSaveRequest = exports.articleOrderByData = exports.ArticleOrderByType = void 0;
+exports.SimpleSortSaveRequest = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = exports.TranslationSaveRequest = exports.ProefAboCreateModel = exports.PopupModel = exports.NotificationTopicModel = exports.NotificationSummaryListModel = exports.NotificationMediaListModel = exports.NotificationListModel = exports.PmgUserModel = exports.NewsletterArticleSaveRequest = exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerTileBaseViewModel = exports.SearchResultsSaveRequest = exports.articleOrderByData = exports.ArticleOrderByType = void 0;
 // Import and re-export your modules
 const article_1 = require("./models/article");
 Object.defineProperty(exports, "ArticleOrderByType", { enumerable: true, get: function () { return article_1.ArticleOrderByType; } });
@@ -28,6 +28,8 @@ Object.defineProperty(exports, "ContactCreateModel", { enumerable: true, get: fu
 Object.defineProperty(exports, "ContactUpdateRequest", { enumerable: true, get: function () { return user_1.ContactUpdateRequest; } });
 Object.defineProperty(exports, "EmailCodeRequest", { enumerable: true, get: function () { return user_1.EmailCodeRequest; } });
 Object.defineProperty(exports, "ValidateTokenRequest", { enumerable: true, get: function () { return user_1.ValidateTokenRequest; } });
+const pmguser_1 = require("./models/pmguser");
+Object.defineProperty(exports, "PmgUserModel", { enumerable: true, get: function () { return pmguser_1.PmgUserModel; } });
 const address_1 = require("./models/address");
 Object.defineProperty(exports, "AddressHelper", { enumerable: true, get: function () { return address_1.AddressHelper; } });
 Object.defineProperty(exports, "AddressViewModel", { enumerable: true, get: function () { return address_1.AddressViewModel; } });
@@ -43,6 +45,11 @@ Object.defineProperty(exports, "NewsletterModel", { enumerable: true, get: funct
 Object.defineProperty(exports, "NewsletterContentModel", { enumerable: true, get: function () { return newsletter_1.NewsletterContentModel; } });
 Object.defineProperty(exports, "NewsletterQuicklinkModel", { enumerable: true, get: function () { return newsletter_1.NewsletterQuicklinkModel; } });
 Object.defineProperty(exports, "NewsletterArticleSaveRequest", { enumerable: true, get: function () { return newsletter_1.NewsletterArticleSaveRequest; } });
+const notification_1 = require("./models/notification");
+Object.defineProperty(exports, "NotificationListModel", { enumerable: true, get: function () { return notification_1.NotificationListModel; } });
+Object.defineProperty(exports, "NotificationMediaListModel", { enumerable: true, get: function () { return notification_1.NotificationMediaListModel; } });
+Object.defineProperty(exports, "NotificationSummaryListModel", { enumerable: true, get: function () { return notification_1.NotificationSummaryListModel; } });
+Object.defineProperty(exports, "NotificationTopicModel", { enumerable: true, get: function () { return notification_1.NotificationTopicModel; } });
 const popup_1 = require("./models/popup");
 Object.defineProperty(exports, "PopupModel", { enumerable: true, get: function () { return popup_1.PopupModel; } });
 const abos_1 = require("./models/abos");
