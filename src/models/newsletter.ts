@@ -76,6 +76,20 @@ export interface NewsletterTileModel {
   redirectUrl: string;
 }
 
+export class NewsletterArticleAddRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  jobCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  @IsNotEmpty()
+  @Length(15, 15)
+  articleReference!: string;
+}
+
 export class NewsletterArticleSaveRequest {
   @IsNotEmpty()
   id!: number;

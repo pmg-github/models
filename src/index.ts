@@ -73,6 +73,7 @@ import {
   NewsletterQuicklinkModel,
   NewsletterTileModel,
   NewsletterArticleSaveRequest,
+  NewsletterArticleAddRequest,
 } from "./models/newsletter";
 
 import {
@@ -146,6 +147,7 @@ export {
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   NewsletterTileModel,
+  NewsletterArticleAddRequest,
   NewsletterArticleSaveRequest,
   PmgUserModel,
   NotificationListModel,

@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterArticleSaveRequest = exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
+exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -79,6 +79,27 @@ class NewsletterQuicklinkModel {
     sortOrder = undefined;
 }
 exports.NewsletterQuicklinkModel = NewsletterQuicklinkModel;
+class NewsletterArticleAddRequest {
+    jobCode;
+    language;
+    articleReference;
+}
+exports.NewsletterArticleAddRequest = NewsletterArticleAddRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterArticleAddRequest.prototype, "jobCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], NewsletterArticleAddRequest.prototype, "language", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(15, 15),
+    __metadata("design:type", String)
+], NewsletterArticleAddRequest.prototype, "articleReference", void 0);
 class NewsletterArticleSaveRequest {
     id;
     jobCode;

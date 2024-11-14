@@ -69,6 +69,11 @@ export interface NewsletterTileModel {
     title: string;
     redirectUrl: string;
 }
+export declare class NewsletterArticleAddRequest {
+    jobCode: string;
+    language: string;
+    articleReference: string;
+}
 export declare class NewsletterArticleSaveRequest {
     id: number;
     jobCode: string;
