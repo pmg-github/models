@@ -91,6 +91,8 @@ import {
   KnowledgebaseTagViewModel,
 } from "./models/knowledgebase";
 
+import { EmployeesSearchListModel } from "./models/employee";
+
 import { PopupModel } from "./models/popup";
 
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
@@ -167,6 +169,7 @@ export {
   KnowledgebaseModel,
   KnowledgebaseSimpleListModel,
   KnowledgebaseTagViewModel,
+  EmployeesSearchListModel,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,
