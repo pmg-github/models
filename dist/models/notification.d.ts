@@ -8,6 +8,7 @@ export declare class NotificationTopicModel {
     name: string | undefined;
 }
 export declare class NotificationListModel {
+    id: number | undefined;
     typeReference: string | undefined;
     typeName: string | undefined;
     title: string | undefined;

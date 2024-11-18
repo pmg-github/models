@@ -11,6 +11,7 @@ export class NotificationTopicModel {
 }
 
 export class NotificationListModel {
+  id: number | undefined = undefined;
   typeReference: string | undefined = undefined;
   typeName: string | undefined = undefined;
   title: string | undefined = undefined;
