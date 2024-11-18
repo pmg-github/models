@@ -16,6 +16,7 @@ export declare class NotificationListModel {
     articleReference: string | undefined;
     lastModificationDate: Date | undefined;
     sender: PmgUserModel | undefined;
+    userReactionTypeId: number | undefined;
     media: NotificationMediaListModel[] | undefined;
     topics: NotificationTopicModel[] | undefined;
 }

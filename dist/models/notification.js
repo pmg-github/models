@@ -20,6 +20,7 @@ class NotificationListModel {
     articleReference = undefined;
     lastModificationDate = undefined;
     sender = undefined;
+    userReactionTypeId = undefined;
     media = undefined;
     topics = undefined;
 }

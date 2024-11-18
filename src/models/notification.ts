@@ -19,6 +19,7 @@ export class NotificationListModel {
   articleReference: string | undefined = undefined;
   lastModificationDate: Date | undefined = undefined;
   sender: PmgUserModel | undefined = undefined;
+  userReactionTypeId: number | undefined = undefined;
   media: NotificationMediaListModel[] | undefined = undefined;
   topics: NotificationTopicModel[] | undefined = undefined;
 }
