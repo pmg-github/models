@@ -20,6 +20,7 @@ export declare class NotificationListModel {
     topics: NotificationTopicModel[] | undefined;
 }
 export declare class NotificationSummaryListModel {
+    id: number | undefined;
     typeReference: string | undefined;
     typeName: string | undefined;
     title: string | undefined;

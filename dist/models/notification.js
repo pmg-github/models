@@ -25,6 +25,7 @@ class NotificationListModel {
 }
 exports.NotificationListModel = NotificationListModel;
 class NotificationSummaryListModel {
+    id = undefined;
     typeReference = undefined;
     typeName = undefined;
     title = undefined;
