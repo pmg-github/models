@@ -26,6 +26,7 @@ class ViewerArticleBaseViewModel {
     displayAuthor = undefined;
     isPremium = undefined;
     requiresRegistration = undefined;
+    fileId = undefined;
     imageUrl = undefined;
     customerReference = undefined;
     interesses = undefined;

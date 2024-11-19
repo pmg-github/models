@@ -23,6 +23,7 @@ export class ViewerArticleBaseViewModel {
   displayAuthor: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
   requiresRegistration: boolean | undefined = undefined;
+  fileId: string | undefined = undefined;
   imageUrl: string | undefined = undefined;
   customerReference: string | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
