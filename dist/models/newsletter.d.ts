@@ -51,6 +51,7 @@ export declare class NewsletterContentModel {
     moreLink: string | undefined;
     infoLabel: string | undefined;
     infoLink: string | undefined;
+    fileId: number | undefined;
     imageUrl: string | undefined;
     url: string | undefined;
 }

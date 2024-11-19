@@ -67,6 +67,7 @@ class NewsletterContentModel {
     moreLink = undefined;
     infoLabel = undefined;
     infoLink = undefined;
+    fileId = undefined;
     imageUrl = undefined;
     url = undefined;
 }
