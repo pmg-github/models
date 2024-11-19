@@ -26,7 +26,7 @@ export class NewsletterModel {
   introDescription: string | undefined = undefined;
   introName: string | undefined = undefined;
   introFunction: string | undefined = undefined;
-  introFileID: number | undefined = undefined;
+  introFileId: number | undefined = undefined;
   pollCode: string | undefined = undefined;
   statusId: number | undefined = undefined;
   statusReference: string | undefined = undefined;

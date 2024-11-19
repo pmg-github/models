@@ -23,7 +23,7 @@ export declare class NewsletterModel {
     introDescription: string | undefined;
     introName: string | undefined;
     introFunction: string | undefined;
-    introFileID: number | undefined;
+    introFileId: number | undefined;
     pollCode: string | undefined;
     statusId: number | undefined;
     statusReference: string | undefined;

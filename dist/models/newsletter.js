@@ -38,7 +38,7 @@ class NewsletterModel {
     introDescription = undefined;
     introName = undefined;
     introFunction = undefined;
-    introFileID = undefined;
+    introFileId = undefined;
     pollCode = undefined;
     statusId = undefined;
     statusReference = undefined;
