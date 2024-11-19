@@ -12,6 +12,7 @@ class NotificationTopicModel {
 }
 exports.NotificationTopicModel = NotificationTopicModel;
 class NotificationListModel {
+    id = undefined;
     typeReference = undefined;
     typeName = undefined;
     title = undefined;
@@ -19,11 +20,13 @@ class NotificationListModel {
     articleReference = undefined;
     lastModificationDate = undefined;
     sender = undefined;
+    userReactionTypeId = undefined;
     media = undefined;
     topics = undefined;
 }
 exports.NotificationListModel = NotificationListModel;
 class NotificationSummaryListModel {
+    id = undefined;
     typeReference = undefined;
     typeName = undefined;
     title = undefined;

@@ -11,6 +11,7 @@ export class NotificationTopicModel {
 }
 
 export class NotificationListModel {
+  id: number | undefined = undefined;
   typeReference: string | undefined = undefined;
   typeName: string | undefined = undefined;
   title: string | undefined = undefined;
@@ -18,11 +19,13 @@ export class NotificationListModel {
   articleReference: string | undefined = undefined;
   lastModificationDate: Date | undefined = undefined;
   sender: PmgUserModel | undefined = undefined;
+  userReactionTypeId: number | undefined = undefined;
   media: NotificationMediaListModel[] | undefined = undefined;
   topics: NotificationTopicModel[] | undefined = undefined;
 }
 
 export class NotificationSummaryListModel {
+  id: number | undefined = undefined;
   typeReference: string | undefined = undefined;
   typeName: string | undefined = undefined;
   title: string | undefined = undefined;

@@ -8,6 +8,7 @@ export declare class NotificationTopicModel {
     name: string | undefined;
 }
 export declare class NotificationListModel {
+    id: number | undefined;
     typeReference: string | undefined;
     typeName: string | undefined;
     title: string | undefined;
@@ -15,10 +16,12 @@ export declare class NotificationListModel {
     articleReference: string | undefined;
     lastModificationDate: Date | undefined;
     sender: PmgUserModel | undefined;
+    userReactionTypeId: number | undefined;
     media: NotificationMediaListModel[] | undefined;
     topics: NotificationTopicModel[] | undefined;
 }
 export declare class NotificationSummaryListModel {
+    id: number | undefined;
     typeReference: string | undefined;
     typeName: string | undefined;
     title: string | undefined;

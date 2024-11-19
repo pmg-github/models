@@ -83,6 +83,17 @@ import {
   NotificationTopicModel,
 } from "./models/notification";
 
+import {
+  KnowledgebaseMediaListModel,
+  KnowledgebaseCategoryViewModel,
+  KnowledgebaseModel,
+  KnowledgebaseSimpleListModel,
+  KnowledgebaseTagViewModel,
+} from "./models/knowledgebase";
+
+import { EmployeesSearchListModel } from "./models/employee";
+import { BoPageSearchListModel } from "./models/bopage";
+
 import { PopupModel } from "./models/popup";
 
 import { AboViewModel, ProefAboCreateModel } from "./models/abos";
@@ -154,6 +165,13 @@ export {
   NotificationMediaListModel,
   NotificationSummaryListModel,
   NotificationTopicModel,
+  KnowledgebaseMediaListModel,
+  KnowledgebaseCategoryViewModel,
+  KnowledgebaseModel,
+  KnowledgebaseSimpleListModel,
+  KnowledgebaseTagViewModel,
+  EmployeesSearchListModel,
+  BoPageSearchListModel,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,
