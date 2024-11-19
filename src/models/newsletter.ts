@@ -78,6 +78,16 @@ export interface NewsletterTileModel {
   redirectUrl: string;
 }
 
+export interface NewsletterMetaDataModel {
+  id: number;
+  projectCode: string;
+  introTitle: string;
+  introDescription: string;
+  introName: string | null;
+  introFunctino: string | null;
+  pollCode: string | null;
+}
+
 export class NewsletterArticleAddRequest {
   @IsNotEmpty()
   @Length(12, 12)

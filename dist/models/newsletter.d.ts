@@ -71,6 +71,15 @@ export interface NewsletterTileModel {
     title: string;
     redirectUrl: string;
 }
+export interface NewsletterMetaDataModel {
+    id: number;
+    projectCode: string;
+    introTitle: string;
+    introDescription: string;
+    introName: string | null;
+    introFunctino: string | null;
+    pollCode: string | null;
+}
 export declare class NewsletterArticleAddRequest {
     jobCode: string;
     language: string;
