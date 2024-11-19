@@ -10,6 +10,7 @@ class ViewerTileBaseViewModel {
     title = undefined;
     description = undefined;
     isPremium = undefined;
+    fileId = undefined;
     imageUrl = undefined;
     redirectUrl = undefined;
     interests = undefined;

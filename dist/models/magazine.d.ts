@@ -4,6 +4,7 @@ export declare class ViewerTileBaseViewModel {
     title: string | undefined;
     description: string | undefined;
     isPremium: boolean | undefined;
+    fileId: number | undefined;
     imageUrl: string | undefined;
     redirectUrl: string | undefined;
     interests: ViewerInteresseViewModel[] | undefined;
@@ -19,7 +20,7 @@ export declare class ViewerArticleBaseViewModel {
     displayAuthor: string | undefined;
     isPremium: boolean | undefined;
     requiresRegistration: boolean | undefined;
-    fileId: string | undefined;
+    fileId: number | undefined;
     imageUrl: string | undefined;
     customerReference: string | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;

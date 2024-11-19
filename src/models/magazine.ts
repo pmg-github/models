@@ -7,6 +7,7 @@ export class ViewerTileBaseViewModel {
   title: string | undefined = undefined;
   description: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
+  fileId: number | undefined = undefined;
   imageUrl: string | undefined = undefined;
   redirectUrl: string | undefined = undefined;
   interests: ViewerInteresseViewModel[] | undefined = undefined;
@@ -23,7 +24,7 @@ export class ViewerArticleBaseViewModel {
   displayAuthor: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
   requiresRegistration: boolean | undefined = undefined;
-  fileId: string | undefined = undefined;
+  fileId: number | undefined = undefined;
   imageUrl: string | undefined = undefined;
   customerReference: string | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
