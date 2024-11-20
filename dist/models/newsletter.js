@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
+exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -104,6 +104,33 @@ __decorate([
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", Object)
 ], NewsletterIntroSaveRequest.prototype, "introFunction", void 0);
+class NewsletterQuicklinkAddRequest {
+    jobCode;
+    language;
+    articleReference;
+    html;
+}
+exports.NewsletterQuicklinkAddRequest = NewsletterQuicklinkAddRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterQuicklinkAddRequest.prototype, "jobCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], NewsletterQuicklinkAddRequest.prototype, "language", void 0);
+__decorate([
+    (0, class_validator_1.ValidateIf)((o) => o.articleReference != undefined),
+    (0, class_validator_1.Length)(15, 15),
+    __metadata("design:type", Object)
+], NewsletterQuicklinkAddRequest.prototype, "articleReference", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(500),
+    __metadata("design:type", String)
+], NewsletterQuicklinkAddRequest.prototype, "html", void 0);
 class NewsletterQuicklinkSaveRequest {
     id;
     html;
