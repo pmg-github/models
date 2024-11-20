@@ -86,6 +86,10 @@ export declare class NewsletterIntroSaveRequest {
     introName: string | undefined;
     introFunction: string | undefined;
 }
+export declare class NewsletterQuicklinkSaveRequest {
+    id: number;
+    html: string;
+}
 export declare class NewsletterArticleAddRequest {
     jobCode: string;
     language: string;

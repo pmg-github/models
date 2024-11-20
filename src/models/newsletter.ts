@@ -107,6 +107,15 @@ export class NewsletterIntroSaveRequest {
   introFunction: string | undefined;
 }
 
+export class NewsletterQuicklinkSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @MaxLength(500)
+  html!: string;
+}
+
 export class NewsletterArticleAddRequest {
   @IsNotEmpty()
   @Length(12, 12)
