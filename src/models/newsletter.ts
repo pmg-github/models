@@ -1,4 +1,4 @@
-import { IsNotEmpty, Length } from "class-validator";
+import { IsNotEmpty, Length, MaxLength } from "class-validator";
 
 export class NewsletterContentType {
   id: number | undefined = undefined;
@@ -88,6 +88,24 @@ export interface NewsletterMetaDataModel {
   introFunction: string | null;
   introImageUrl: string | null;
   pollCode: string | null;
+}
+
+export class NewsletterIntroSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  introTitle!: string;
+
+  @IsNotEmpty()
+  introDescription!: string;
+
+  // optional
+  @MaxLength(255)
+  introName!: string | undefined;
+  @MaxLength(255)
+  introFunction: string | undefined;
 }
 
 export class NewsletterArticleAddRequest {

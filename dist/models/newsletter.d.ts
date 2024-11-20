@@ -82,6 +82,13 @@ export interface NewsletterMetaDataModel {
     introImageUrl: string | null;
     pollCode: string | null;
 }
+export declare class NewsletterIntroSaveRequest {
+    id: number;
+    introTitle: string;
+    introDescription: string;
+    introName: string | undefined;
+    introFunction: string | undefined;
+}
 export declare class NewsletterArticleAddRequest {
     jobCode: string;
     language: string;
