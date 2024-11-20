@@ -60,14 +60,11 @@ export class NewsletterContentModel {
   url: string | undefined = undefined;
 }
 
-export class NewsletterQuicklinkModel {
-  id: number | undefined = undefined;
-  jobCode: string | undefined = undefined;
-  languageCode: string | undefined = undefined;
-  articleReference: string | undefined = undefined;
-  title: string | undefined = undefined;
-  url: string | undefined = undefined;
-  sortOrder: number | undefined = undefined;
+export interface NewsletterQuicklinkModel {
+  id: number;
+  articleReference: string | null;
+  html: string;
+  sortOrder: number;
 }
 
 export interface NewsletterTileModel {

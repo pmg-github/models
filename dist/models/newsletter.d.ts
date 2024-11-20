@@ -55,14 +55,11 @@ export declare class NewsletterContentModel {
     imageUrl: string | undefined;
     url: string | undefined;
 }
-export declare class NewsletterQuicklinkModel {
-    id: number | undefined;
-    jobCode: string | undefined;
-    languageCode: string | undefined;
-    articleReference: string | undefined;
-    title: string | undefined;
-    url: string | undefined;
-    sortOrder: number | undefined;
+export interface NewsletterQuicklinkModel {
+    id: number;
+    articleReference: string | null;
+    html: string;
+    sortOrder: number;
 }
 export interface NewsletterTileModel {
     id: number;

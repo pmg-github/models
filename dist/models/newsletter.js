@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterQuicklinkModel = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
+exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -72,16 +72,6 @@ class NewsletterContentModel {
     url = undefined;
 }
 exports.NewsletterContentModel = NewsletterContentModel;
-class NewsletterQuicklinkModel {
-    id = undefined;
-    jobCode = undefined;
-    languageCode = undefined;
-    articleReference = undefined;
-    title = undefined;
-    url = undefined;
-    sortOrder = undefined;
-}
-exports.NewsletterQuicklinkModel = NewsletterQuicklinkModel;
 class NewsletterIntroSaveRequest {
     id;
     introTitle;
