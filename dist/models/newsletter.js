@@ -105,10 +105,12 @@ __decorate([
     __metadata("design:type", String)
 ], NewsletterIntroSaveRequest.prototype, "introDescription", void 0);
 __decorate([
+    (0, class_validator_1.ValidateIf)((o) => o.introName != undefined),
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", Object)
 ], NewsletterIntroSaveRequest.prototype, "introName", void 0);
 __decorate([
+    (0, class_validator_1.ValidateIf)((o) => o.introFunction != undefined),
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", Object)
 ], NewsletterIntroSaveRequest.prototype, "introFunction", void 0);

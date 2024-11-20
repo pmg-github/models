@@ -1,4 +1,4 @@
-import { IsNotEmpty, Length, MaxLength } from "class-validator";
+import { IsNotEmpty, Length, MaxLength, ValidateIf } from "class-validator";
 
 export class NewsletterContentType {
   id: number | undefined = undefined;
@@ -102,8 +102,10 @@ export class NewsletterIntroSaveRequest {
   introDescription!: string;
 
   // optional
+  @ValidateIf((o) => o.introName != undefined)
   @MaxLength(255)
   introName!: string | undefined;
+  @ValidateIf((o) => o.introFunction != undefined)
   @MaxLength(255)
   introFunction: string | undefined;
 }
