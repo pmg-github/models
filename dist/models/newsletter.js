@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
+exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -79,6 +79,9 @@ class NewsletterIntroSaveRequest {
     // optional
     introName;
     introFunction;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.NewsletterIntroSaveRequest = NewsletterIntroSaveRequest;
 __decorate([
@@ -109,6 +112,9 @@ class NewsletterQuicklinkAddRequest {
     language;
     articleReference;
     html;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.NewsletterQuicklinkAddRequest = NewsletterQuicklinkAddRequest;
 __decorate([
@@ -134,6 +140,9 @@ __decorate([
 class NewsletterQuicklinkSaveRequest {
     id;
     html;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.NewsletterQuicklinkSaveRequest = NewsletterQuicklinkSaveRequest;
 __decorate([
@@ -149,6 +158,9 @@ class NewsletterArticleAddRequest {
     jobCode;
     language;
     articleReference;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.NewsletterArticleAddRequest = NewsletterArticleAddRequest;
 __decorate([
@@ -224,3 +236,27 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], NewsletterArticleSaveRequest.prototype, "moreLabel", void 0);
+class NewsletterPollAddRequest {
+    pollCode;
+    projectCode;
+    language;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.NewsletterPollAddRequest = NewsletterPollAddRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterPollAddRequest.prototype, "pollCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterPollAddRequest.prototype, "projectCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], NewsletterPollAddRequest.prototype, "language", void 0);

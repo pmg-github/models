@@ -105,6 +105,10 @@ export class NewsletterIntroSaveRequest {
   @ValidateIf((o) => o.introFunction != undefined)
   @MaxLength(255)
   introFunction: string | undefined;
+
+  constructor(data: Partial<NewsletterIntroSaveRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class NewsletterQuicklinkAddRequest {
@@ -123,6 +127,10 @@ export class NewsletterQuicklinkAddRequest {
   @IsNotEmpty()
   @MaxLength(500)
   html!: string;
+
+  constructor(data: Partial<NewsletterQuicklinkAddRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class NewsletterQuicklinkSaveRequest {
@@ -132,6 +140,10 @@ export class NewsletterQuicklinkSaveRequest {
   @IsNotEmpty()
   @MaxLength(500)
   html!: string;
+
+  constructor(data: Partial<NewsletterQuicklinkSaveRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class NewsletterArticleAddRequest {
@@ -146,6 +158,10 @@ export class NewsletterArticleAddRequest {
   @IsNotEmpty()
   @Length(15, 15)
   articleReference!: string;
+
+  constructor(data: Partial<NewsletterArticleAddRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class NewsletterArticleSaveRequest {
@@ -184,6 +200,24 @@ export class NewsletterArticleSaveRequest {
   moreLabel!: string;
 
   constructor(data: Partial<NewsletterArticleSaveRequest>) {
+    Object.assign(this, data);
+  }
+}
+
+export class NewsletterPollAddRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  pollCode!: string;
+
+  @IsNotEmpty()
+  @Length(12, 12)
+  projectCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  constructor(data: Partial<NewsletterPollAddRequest>) {
     Object.assign(this, data);
   }
 }

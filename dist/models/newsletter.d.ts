@@ -85,21 +85,25 @@ export declare class NewsletterIntroSaveRequest {
     introDescription: string;
     introName: string | undefined;
     introFunction: string | undefined;
+    constructor(data: Partial<NewsletterIntroSaveRequest>);
 }
 export declare class NewsletterQuicklinkAddRequest {
     jobCode: string;
     language: string;
     articleReference: string | undefined;
     html: string;
+    constructor(data: Partial<NewsletterQuicklinkAddRequest>);
 }
 export declare class NewsletterQuicklinkSaveRequest {
     id: number;
     html: string;
+    constructor(data: Partial<NewsletterQuicklinkSaveRequest>);
 }
 export declare class NewsletterArticleAddRequest {
     jobCode: string;
     language: string;
     articleReference: string;
+    constructor(data: Partial<NewsletterArticleAddRequest>);
 }
 export declare class NewsletterArticleSaveRequest {
     id: number;
@@ -112,4 +116,10 @@ export declare class NewsletterArticleSaveRequest {
     description: string;
     moreLabel: string;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
+}
+export declare class NewsletterPollAddRequest {
+    pollCode: string;
+    projectCode: string;
+    language: string;
+    constructor(data: Partial<NewsletterPollAddRequest>);
 }
