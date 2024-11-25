@@ -95,7 +95,7 @@ import {
 } from "./models/knowledgebase";
 
 import { EmployeesSearchListModel } from "./models/employee";
-import { UnpaidInvoicesListModel } from "./models/invoice";
+import { UnpaidInvoicesListModel, PmgCompanyList } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 
 import { PopupModel } from "./models/popup";
@@ -179,6 +179,7 @@ export {
   KnowledgebaseTagViewModel,
   EmployeesSearchListModel,
   UnpaidInvoicesListModel,
+  PmgCompanyList,
   BoPageSearchListModel,
   PopupModel,
   AboViewModel,
