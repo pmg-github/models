@@ -25,3 +25,8 @@ export interface UnpaidInvoicesListModel {
   invoiceAmount: number;
   invoiceUnpaidAmount: number;
 }
+
+export interface PmgCompanyList {
+  reference: string;
+  name: string;
+}
