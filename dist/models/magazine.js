@@ -10,6 +10,7 @@ class ViewerTileBaseViewModel {
     title = undefined;
     description = undefined;
     isPremium = undefined;
+    fileId = undefined;
     imageUrl = undefined;
     redirectUrl = undefined;
     interests = undefined;
@@ -26,6 +27,7 @@ class ViewerArticleBaseViewModel {
     displayAuthor = undefined;
     isPremium = undefined;
     requiresRegistration = undefined;
+    fileId = undefined;
     imageUrl = undefined;
     customerReference = undefined;
     interesses = undefined;

@@ -39,6 +39,7 @@ export type ArticleSearchOptions = {
     contextCodes?: string[];
     jobCodes?: string[];
     premiumType?: ArticlePremiumType;
+    ordersNewsletterReference?: string;
     orderByType?: ArticleOrderByType;
     cursorArticle?: ViewerTileBaseViewModel;
 };

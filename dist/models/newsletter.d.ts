@@ -23,7 +23,7 @@ export declare class NewsletterModel {
     introDescription: string | undefined;
     introName: string | undefined;
     introFunction: string | undefined;
-    introFileID: number | undefined;
+    introFileId: number | undefined;
     pollCode: string | undefined;
     statusId: number | undefined;
     statusReference: string | undefined;
@@ -51,17 +51,15 @@ export declare class NewsletterContentModel {
     moreLink: string | undefined;
     infoLabel: string | undefined;
     infoLink: string | undefined;
+    fileId: number | undefined;
     imageUrl: string | undefined;
     url: string | undefined;
 }
-export declare class NewsletterQuicklinkModel {
-    id: number | undefined;
-    jobCode: string | undefined;
-    languageCode: string | undefined;
-    articleReference: string | undefined;
-    title: string | undefined;
-    url: string | undefined;
-    sortOrder: number | undefined;
+export interface NewsletterQuicklinkModel {
+    id: number;
+    articleReference: string | null;
+    html: string;
+    sortOrder: number;
 }
 export interface NewsletterTileModel {
     id: number;
@@ -71,10 +69,41 @@ export interface NewsletterTileModel {
     title: string;
     redirectUrl: string;
 }
+export interface NewsletterMetaDataModel {
+    id: number;
+    projectCode: string;
+    introTitle: string;
+    introDescription: string;
+    introName: string | null;
+    introFunction: string | null;
+    introImageUrl: string | null;
+    pollCode: string | null;
+}
+export declare class NewsletterIntroSaveRequest {
+    id: number;
+    introTitle: string;
+    introDescription: string;
+    introName: string | undefined;
+    introFunction: string | undefined;
+    constructor(data: Partial<NewsletterIntroSaveRequest>);
+}
+export declare class NewsletterQuicklinkAddRequest {
+    jobCode: string;
+    language: string;
+    articleReference: string | undefined;
+    html: string;
+    constructor(data: Partial<NewsletterQuicklinkAddRequest>);
+}
+export declare class NewsletterQuicklinkSaveRequest {
+    id: number;
+    html: string;
+    constructor(data: Partial<NewsletterQuicklinkSaveRequest>);
+}
 export declare class NewsletterArticleAddRequest {
     jobCode: string;
     language: string;
     articleReference: string;
+    constructor(data: Partial<NewsletterArticleAddRequest>);
 }
 export declare class NewsletterArticleSaveRequest {
     id: number;
@@ -87,4 +116,10 @@ export declare class NewsletterArticleSaveRequest {
     description: string;
     moreLabel: string;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
+}
+export declare class NewsletterPollAddRequest {
+    pollCode: string;
+    projectCode: string;
+    language: string;
+    constructor(data: Partial<NewsletterPollAddRequest>);
 }

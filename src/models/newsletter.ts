@@ -1,4 +1,4 @@
-import { IsNotEmpty, Length } from "class-validator";
+import { IsNotEmpty, Length, MaxLength, ValidateIf } from "class-validator";
 
 export class NewsletterContentType {
   id: number | undefined = undefined;
@@ -26,7 +26,7 @@ export class NewsletterModel {
   introDescription: string | undefined = undefined;
   introName: string | undefined = undefined;
   introFunction: string | undefined = undefined;
-  introFileID: number | undefined = undefined;
+  introFileId: number | undefined = undefined;
   pollCode: string | undefined = undefined;
   statusId: number | undefined = undefined;
   statusReference: string | undefined = undefined;
@@ -55,18 +55,16 @@ export class NewsletterContentModel {
   moreLink: string | undefined = undefined;
   infoLabel: string | undefined = undefined;
   infoLink: string | undefined = undefined;
+  fileId: number | undefined = undefined;
   imageUrl: string | undefined = undefined;
   url: string | undefined = undefined;
 }
 
-export class NewsletterQuicklinkModel {
-  id: number | undefined = undefined;
-  jobCode: string | undefined = undefined;
-  languageCode: string | undefined = undefined;
-  articleReference: string | undefined = undefined;
-  title: string | undefined = undefined;
-  url: string | undefined = undefined;
-  sortOrder: number | undefined = undefined;
+export interface NewsletterQuicklinkModel {
+  id: number;
+  articleReference: string | null;
+  html: string;
+  sortOrder: number;
 }
 
 export interface NewsletterTileModel {
@@ -76,6 +74,76 @@ export interface NewsletterTileModel {
   displayDate: string;
   title: string;
   redirectUrl: string;
+}
+
+export interface NewsletterMetaDataModel {
+  id: number;
+  projectCode: string;
+  introTitle: string;
+  introDescription: string;
+  introName: string | null;
+  introFunction: string | null;
+  introImageUrl: string | null;
+  pollCode: string | null;
+}
+
+export class NewsletterIntroSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  introTitle!: string;
+
+  @IsNotEmpty()
+  introDescription!: string;
+
+  // optional
+  @ValidateIf((o) => o.introName != undefined)
+  @MaxLength(255)
+  introName!: string | undefined;
+  @ValidateIf((o) => o.introFunction != undefined)
+  @MaxLength(255)
+  introFunction: string | undefined;
+
+  constructor(data: Partial<NewsletterIntroSaveRequest>) {
+    Object.assign(this, data);
+  }
+}
+
+export class NewsletterQuicklinkAddRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  jobCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  @ValidateIf((o) => o.articleReference != undefined)
+  @Length(15, 15)
+  articleReference!: string | undefined;
+
+  @IsNotEmpty()
+  @MaxLength(500)
+  html!: string;
+
+  constructor(data: Partial<NewsletterQuicklinkAddRequest>) {
+    Object.assign(this, data);
+  }
+}
+
+export class NewsletterQuicklinkSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @MaxLength(500)
+  html!: string;
+
+  constructor(data: Partial<NewsletterQuicklinkSaveRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class NewsletterArticleAddRequest {
@@ -90,6 +158,10 @@ export class NewsletterArticleAddRequest {
   @IsNotEmpty()
   @Length(15, 15)
   articleReference!: string;
+
+  constructor(data: Partial<NewsletterArticleAddRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class NewsletterArticleSaveRequest {
@@ -128,6 +200,24 @@ export class NewsletterArticleSaveRequest {
   moreLabel!: string;
 
   constructor(data: Partial<NewsletterArticleSaveRequest>) {
+    Object.assign(this, data);
+  }
+}
+
+export class NewsletterPollAddRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  pollCode!: string;
+
+  @IsNotEmpty()
+  @Length(12, 12)
+  projectCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  constructor(data: Partial<NewsletterPollAddRequest>) {
     Object.assign(this, data);
   }
 }
