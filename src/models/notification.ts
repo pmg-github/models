@@ -1,3 +1,4 @@
+import { IsNotEmpty, Length } from "class-validator";
 import { PmgUserModel } from "./pmguser";
 
 export class NotificationMediaListModel {
