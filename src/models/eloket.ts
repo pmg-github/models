@@ -8,6 +8,7 @@ export interface PollViewModel {
 }
 
 export interface PollAnswerViewModel {
+  eloketFieldId: number;
   eloketFieldOptionId: number;
   answer: string;
   url: string;
