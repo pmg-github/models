@@ -6,4 +6,5 @@ export interface BoMenuListModel {
     icon: string;
     url: string;
     target: string;
+    items: BoMenuListModel[];
 }
