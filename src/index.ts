@@ -97,6 +97,7 @@ import {
 import { EmployeesSearchListModel } from "./models/employee";
 import { UnpaidInvoicesListModel, PmgCompanyList } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
+import { BoMenuListModel } from "./models/bomenu";
 
 import { PopupModel } from "./models/popup";
 
@@ -181,6 +182,7 @@ export {
   UnpaidInvoicesListModel,
   PmgCompanyList,
   BoPageSearchListModel,
+  BoMenuListModel,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,
