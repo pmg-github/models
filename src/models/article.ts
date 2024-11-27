@@ -94,4 +94,5 @@ export type ArticleSearchOptions = {
   ordersNewsletterReference?: string;
   orderByType?: ArticleOrderByType;
   cursorArticle?: ViewerTileBaseViewModel;
+  useNewsletterTitles?: boolean;
 };
