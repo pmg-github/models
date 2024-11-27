@@ -79,6 +79,12 @@ export interface NewsletterMetaDataModel {
     introImageUrl: string | null;
     pollCode: string | null;
 }
+export interface NewsletterNewsModel {
+    id: number;
+    articleReference: string;
+    title: string;
+    date: string;
+}
 export declare class NewsletterIntroSaveRequest {
     id: number;
     introTitle: string;
@@ -122,4 +128,14 @@ export declare class NewsletterPollAddRequest {
     projectCode: string;
     language: string;
     constructor(data: Partial<NewsletterPollAddRequest>);
+}
+export declare class NewsletterNewsAddRequest {
+    jobCode: string;
+    language: string;
+    articleReference: string;
+}
+export declare class NewsletterNewsSaveRequest {
+    id: number;
+    title: string;
+    date: string;
 }

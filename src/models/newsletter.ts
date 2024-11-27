@@ -1,4 +1,10 @@
-import { IsNotEmpty, Length, MaxLength, ValidateIf } from "class-validator";
+import {
+  isNotEmpty,
+  IsNotEmpty,
+  Length,
+  MaxLength,
+  ValidateIf,
+} from "class-validator";
 
 export class NewsletterContentType {
   id: number | undefined = undefined;
@@ -85,6 +91,13 @@ export interface NewsletterMetaDataModel {
   introFunction: string | null;
   introImageUrl: string | null;
   pollCode: string | null;
+}
+
+export interface NewsletterNewsModel {
+  id: number;
+  articleReference: string;
+  title: string;
+  date: string;
 }
 
 export class NewsletterIntroSaveRequest {
@@ -220,4 +233,31 @@ export class NewsletterPollAddRequest {
   constructor(data: Partial<NewsletterPollAddRequest>) {
     Object.assign(this, data);
   }
+}
+
+export class NewsletterNewsAddRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  jobCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  @IsNotEmpty()
+  @Length(15, 15)
+  articleReference!: string;
+}
+
+export class NewsletterNewsSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  title!: string;
+
+  @IsNotEmpty()
+  @MaxLength(20)
+  date!: string;
 }
