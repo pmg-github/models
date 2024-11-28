@@ -100,6 +100,16 @@ export interface NewsletterNewsModel {
   date: string;
 }
 
+export class NewsletterMetaDataCreateRequest {
+  @IsNotEmpty()
+  @Length(15, 15)
+  projectCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+}
+
 export class NewsletterIntroSaveRequest {
   @IsNotEmpty()
   id!: number;

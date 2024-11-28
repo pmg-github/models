@@ -85,6 +85,10 @@ export interface NewsletterNewsModel {
     title: string;
     date: string;
 }
+export declare class NewsletterMetaDataCreateRequest {
+    projectCode: string;
+    language: string;
+}
 export declare class NewsletterIntroSaveRequest {
     id: number;
     introTitle: string;
