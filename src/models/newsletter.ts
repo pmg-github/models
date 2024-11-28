@@ -102,7 +102,7 @@ export interface NewsletterNewsModel {
 
 export class NewsletterMetaDataCreateRequest {
   @IsNotEmpty()
-  @Length(15, 15)
+  @Length(12, 12)
   projectCode!: string;
 
   @IsNotEmpty()

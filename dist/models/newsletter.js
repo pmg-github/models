@@ -79,7 +79,7 @@ class NewsletterMetaDataCreateRequest {
 exports.NewsletterMetaDataCreateRequest = NewsletterMetaDataCreateRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Length)(15, 15),
+    (0, class_validator_1.Length)(12, 12),
     __metadata("design:type", String)
 ], NewsletterMetaDataCreateRequest.prototype, "projectCode", void 0);
 __decorate([
