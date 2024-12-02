@@ -1,18 +1,18 @@
-interface Category {
+export interface SupportCategory {
     id: number;
     name: string;
 }
 
 enum statusName {'Nieuw', 'Toegewezen', 'In behandeling', 'Afgerond', 'Gesloten'}
 
-interface Status {
+export interface SupportStatus {
     id: number;
     name: statusName;
 }
 
 enum Priority {'low', 'medium', 'high'};
 
-interface Ticket {
+export interface SupportTicket {
     id: number;
     user_id: number;
     category_id: number;
@@ -24,7 +24,7 @@ interface Ticket {
     updated_at: string;
 }
 
-interface Comment {
+export interface SupportComment {
     id: number;
     ticket_id: number;
     user_id: number;
@@ -33,7 +33,7 @@ interface Comment {
     updated_at: string;
 }
 
-interface CreateTicketData {
+export interface CreateTicketData {
     user_id: number;
     category_id: number;
     subject: string;
@@ -41,23 +41,23 @@ interface CreateTicketData {
     priority: Priority;
 }
 
-interface AddUserToTicketData {
+export interface AddUserToTicketData {
     ticket_id:number;
     user_id: number;
 }
 
-interface AddCommentToTicketData {
+export interface AddCommentToTicketData {
     ticket_id:number;
     user_id: number;
     comment: string;
 }
 
-interface UpdateCommentToTicketData {
+export interface UpdateCommentToTicketData {
     id: number;
     comment: string;
 }
 
-interface TicketFilterParams {
+export interface TicketFilterParams {
     user_id?: number;
     status_id?: number;
     category_id?: number;
@@ -65,12 +65,12 @@ interface TicketFilterParams {
     created_at?: string; // Formaat: YYYY-MM-DD
 }
 
-interface UpdateTicketStatusData {
+export interface UpdateTicketStatusData {
     id:number;
     status_id: number;
 }
 
-interface UpdateTicketPriorityData {
+export interface UpdateTicketPriorityData {
     id:number
     priority: Priority;
 }
