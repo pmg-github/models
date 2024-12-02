@@ -123,17 +123,17 @@ import { SimpleSortSaveRequest } from "./models/helper";
 import { PollViewModel, PollAnswerViewModel } from "./models/eloket";
 
 import { 
-  AddCommentToTicketData,
-  CreateTicketData,
-  UpdateTicketStatusData,
-  UpdateTicketPriorityData,
-  UpdateCommentToTicketData,
-  TicketFilterParams,
-  AddUserToTicketData,
+  AddCommentToTicketModel,
+  AddUserToTicketModel,
+  CreateSuportTicketModel,
   SupportCategory,
-  SupportComment,
+  SupportCommentViewModel,
   SupportStatus,
-  SupportTicket
+  SupportTicketViewModel,
+  TicketFilterParamsModel,
+  UpdateCommentToTicketModel,
+  UpdateTicketPriorityModel,
+  UpdateTicketStatusModel
 } from "./models/support"
 
 export {
@@ -222,16 +222,16 @@ export {
   SimpleSortSaveRequest,
   PollViewModel,
   PollAnswerViewModel,
-  AddCommentToTicketData,
-  CreateTicketData,
-  UpdateTicketStatusData,
-  UpdateTicketPriorityData,
-  UpdateCommentToTicketData,
-  TicketFilterParams,
-  AddUserToTicketData,
+  AddCommentToTicketModel,
+  AddUserToTicketModel,
+  CreateSuportTicketModel,
   SupportCategory,
-  SupportComment,
+  SupportCommentViewModel,
   SupportStatus,
-  SupportTicket
+  SupportTicketViewModel,
+  TicketFilterParamsModel,
+  UpdateCommentToTicketModel,
+  UpdateTicketPriorityModel,
+  UpdateTicketStatusModel
   // Add more exports if you have additional modules
 };

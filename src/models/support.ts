@@ -1,20 +1,21 @@
+import { IsEnum, IsNotEmpty, IsString } from "class-validator";
+import { PmgUserInterface } from "./pmguser";
+
 export interface SupportCategory {
     id: number;
     name: string;
 }
 
-enum statusName {'Nieuw', 'Toegewezen', 'In behandeling', 'Afgerond', 'Gesloten'}
-
 export interface SupportStatus {
     id: number;
-    name: statusName;
+    name: string;
 }
 
 enum Priority {'low', 'medium', 'high'};
 
-export interface SupportTicket {
+export interface SupportTicketViewModel {
     id: number;
-    user_id: number;
+    user: PmgUserInterface;
     category_id: number;
     status_id: number;
     subject: string;
@@ -24,40 +25,62 @@ export interface SupportTicket {
     updated_at: string;
 }
 
-export interface SupportComment {
+export interface SupportCommentViewModel {
     id: number;
-    ticket_id: number;
-    user_id: number;
+    user: PmgUserInterface;
     comment: string;
-    created_at: string;
     updated_at: string;
 }
 
-export interface CreateTicketData {
-    user_id: number;
-    category_id: number;
-    subject: string;
-    description: string;
-    priority: Priority;
+export class CreateSuportTicketModel {
+    @IsNotEmpty()
+    user_id!: number;
+
+    @IsNotEmpty()
+    category_id!: number;
+
+    @IsNotEmpty()
+    @IsString()
+    subject!: string;
+    
+    @IsNotEmpty()
+    @IsString()
+    description!: string;
+
+    @IsNotEmpty()
+    @IsEnum(Priority)
+    priority!: Priority;
+
+    file?:File
 }
 
-export interface AddUserToTicketData {
-    ticket_id:number;
-    user_id: number;
+export class AddUserToTicketModel {
+    @IsNotEmpty()
+    ticket_id!:number;
+
+    @IsNotEmpty()
+    user_id!: number;
 }
 
-export interface AddCommentToTicketData {
-    ticket_id:number;
-    user_id: number;
-    comment: string;
+export class AddCommentToTicketModel {
+    @IsNotEmpty()
+    ticket_id!:number;
+
+    @IsNotEmpty()
+    @IsString()
+    comment!: string;
 }
 
-export interface UpdateCommentToTicketData {
-    id: number;
-    comment: string;
+export class UpdateCommentToTicketModel {
+    @IsNotEmpty()
+    id!: number;
+
+    @IsNotEmpty()
+    @IsString()
+    comment!: string;
 }
 
-export interface TicketFilterParams {
+export interface TicketFilterParamsModel {
     user_id?: number;
     status_id?: number;
     category_id?: number;
@@ -65,12 +88,19 @@ export interface TicketFilterParams {
     created_at?: string; // Formaat: YYYY-MM-DD
 }
 
-export interface UpdateTicketStatusData {
-    id:number;
-    status_id: number;
+export class UpdateTicketStatusModel {
+    @IsNotEmpty()
+    id!:number;
+
+    @IsNotEmpty()
+    status_id!: number;
 }
 
-export interface UpdateTicketPriorityData {
-    id:number
-    priority: Priority;
+export class UpdateTicketPriorityModel {
+    @IsNotEmpty()
+    id!:number;
+    
+    @IsNotEmpty()
+    @IsEnum(Priority)
+    priority!: Priority;
 }
