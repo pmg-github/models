@@ -16,8 +16,8 @@ enum Priority {'low', 'medium', 'high'};
 export interface SupportTicketViewModel {
     id: number;
     user: PmgUserInterface;
-    category_id: number;
-    status_id: number;
+    category: string;
+    status: string;
     subject: string;
     description: string;
     priority: Priority;
