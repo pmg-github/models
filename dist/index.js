@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TranslationSaveRequest = exports.ProefAboCreateModel = exports.PopupModel = exports.KnowledgebaseTagViewModel = exports.KnowledgebaseSimpleListModel = exports.KnowledgebaseModel = exports.KnowledgebaseCategoryViewModel = exports.KnowledgebaseMediaListModel = exports.NotificationTopicModel = exports.NotificationSummaryListModel = exports.NotificationMediaListModel = exports.NotificationListModel = exports.PmgUserModel = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterProjectModel = exports.NewsletterContentType = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerTileBaseViewModel = exports.SearchResultsSaveRequest = exports.articleOrderByData = exports.ArticleOrderByType = void 0;
-exports.SimpleSortSaveRequest = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = void 0;
+exports.UpdateTicketStatusModel = exports.UpdateTicketPriorityModel = exports.UpdateCommentToTicketModel = exports.CreateSuportTicketModel = exports.AddUserToTicketModel = exports.AddCommentToTicketModel = exports.SimpleSortSaveRequest = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = void 0;
 // Import and re-export your modules
 const article_1 = require("./models/article");
 Object.defineProperty(exports, "ArticleOrderByType", { enumerable: true, get: function () { return article_1.ArticleOrderByType; } });
@@ -71,3 +71,10 @@ const translation_1 = require("./models/translation");
 Object.defineProperty(exports, "TranslationSaveRequest", { enumerable: true, get: function () { return translation_1.TranslationSaveRequest; } });
 const helper_1 = require("./models/helper");
 Object.defineProperty(exports, "SimpleSortSaveRequest", { enumerable: true, get: function () { return helper_1.SimpleSortSaveRequest; } });
+const support_1 = require("./models/support");
+Object.defineProperty(exports, "AddCommentToTicketModel", { enumerable: true, get: function () { return support_1.AddCommentToTicketModel; } });
+Object.defineProperty(exports, "AddUserToTicketModel", { enumerable: true, get: function () { return support_1.AddUserToTicketModel; } });
+Object.defineProperty(exports, "CreateSuportTicketModel", { enumerable: true, get: function () { return support_1.CreateSuportTicketModel; } });
+Object.defineProperty(exports, "UpdateCommentToTicketModel", { enumerable: true, get: function () { return support_1.UpdateCommentToTicketModel; } });
+Object.defineProperty(exports, "UpdateTicketPriorityModel", { enumerable: true, get: function () { return support_1.UpdateTicketPriorityModel; } });
+Object.defineProperty(exports, "UpdateTicketStatusModel", { enumerable: true, get: function () { return support_1.UpdateTicketStatusModel; } });
