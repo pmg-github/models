@@ -11,16 +11,18 @@ export class NewsletterContentType {
   reference: string | undefined = undefined;
   name: string | undefined = undefined;
 }
-export class NewsletterProjectModel {
-  code: string | undefined = undefined;
-  name: string | undefined = undefined;
-  date: Date | undefined = undefined;
-  numberOfRecipients: number | undefined = undefined;
-  numberOfSuccess: number | undefined = undefined;
-  numberOfFailed: number | undefined = undefined;
-  numberOfBounced: number | undefined = undefined;
-  numberOfOpened: number | undefined = undefined;
-  numberOfClicks: number | undefined = undefined;
+export interface NewsletterProjectModel {
+  id: number;
+  code: string;
+  name: string | null;
+  date: Date;
+  numberOfRecipients: number;
+  numberOfSuccess: number;
+  numberOfFailed: number;
+  numberOfBounced: number;
+  numberOfOpened: number;
+  numberOfClicks: number;
+  orderByValue: string;
 }
 
 export class NewsletterModel {

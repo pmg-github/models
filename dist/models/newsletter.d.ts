@@ -3,16 +3,18 @@ export declare class NewsletterContentType {
     reference: string | undefined;
     name: string | undefined;
 }
-export declare class NewsletterProjectModel {
-    code: string | undefined;
-    name: string | undefined;
-    date: Date | undefined;
-    numberOfRecipients: number | undefined;
-    numberOfSuccess: number | undefined;
-    numberOfFailed: number | undefined;
-    numberOfBounced: number | undefined;
-    numberOfOpened: number | undefined;
-    numberOfClicks: number | undefined;
+export interface NewsletterProjectModel {
+    id: number;
+    code: string;
+    name: string | null;
+    date: Date;
+    numberOfRecipients: number;
+    numberOfSuccess: number;
+    numberOfFailed: number;
+    numberOfBounced: number;
+    numberOfOpened: number;
+    numberOfClicks: number;
+    orderByValue: string;
 }
 export declare class NewsletterModel {
     id: number | undefined;
