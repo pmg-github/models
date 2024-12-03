@@ -57,6 +57,10 @@ export declare class NewsletterContentModel {
     imageUrl: string | undefined;
     url: string | undefined;
 }
+export interface NewsletterOrderModel {
+    reference: string;
+    articleReference: string | null;
+}
 export interface NewsletterQuicklinkModel {
     id: number;
     articleReference: string | null;
