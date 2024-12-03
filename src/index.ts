@@ -81,6 +81,7 @@ import {
   NewsletterArticleAddRequest,
   NewsletterNewsAddRequest,
   NewsletterNewsSaveRequest,
+  NewsletterOrderModel,
 } from "./models/newsletter";
 
 import {
@@ -122,7 +123,7 @@ import { SimpleSortSaveRequest } from "./models/helper";
 
 import { PollViewModel, PollAnswerViewModel } from "./models/eloket";
 
-import { 
+import {
   AddCommentToTicketModel,
   AddUserToTicketModel,
   CreateSuportTicketModel,
@@ -134,8 +135,8 @@ import {
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
-  UpdateTicketStatusModel
-} from "./models/support"
+  UpdateTicketStatusModel,
+} from "./models/support";
 
 export {
   ArticleOrderByType,
@@ -181,6 +182,7 @@ export {
   NewsletterModel,
   NewsletterContentModel,
   NewsletterQuicklinkModel,
+  NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterNewsModel,
   NewsletterMetaDataCreateRequest,
@@ -234,6 +236,6 @@ export {
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
-  UpdateTicketStatusModel
+  UpdateTicketStatusModel,
   // Add more exports if you have additional modules
 };
