@@ -12,7 +12,7 @@ declare enum Priority {
     'medium' = 1,
     'high' = 2
 }
-export interface SupportTicketViewModel {
+export interface SupportTicketListViewModel {
     id: number;
     user: PmgUserInterface;
     category: string;
@@ -21,7 +21,17 @@ export interface SupportTicketViewModel {
     description: string;
     priority: Priority;
     created_at: string;
-    updated_at: string;
+}
+export interface SupportTicketViewModel {
+    id: number;
+    user: PmgUserInterface;
+    connected_users: PmgUserInterface[];
+    category: string;
+    status: string;
+    subject: string;
+    description: string;
+    priority: Priority;
+    created_at: string;
 }
 export interface SupportCommentViewModel {
     id: number;
