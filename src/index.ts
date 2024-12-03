@@ -122,6 +122,20 @@ import { SimpleSortSaveRequest } from "./models/helper";
 
 import { PollViewModel, PollAnswerViewModel } from "./models/eloket";
 
+import { 
+  AddCommentToTicketModel,
+  AddUserToTicketModel,
+  CreateSuportTicketModel,
+  SupportCategory,
+  SupportCommentViewModel,
+  SupportStatus,
+  SupportTicketViewModel,
+  TicketFilterParamsModel,
+  UpdateCommentToTicketModel,
+  UpdateTicketPriorityModel,
+  UpdateTicketStatusModel
+} from "./models/support"
+
 export {
   ArticleOrderByType,
   articleOrderByData,
@@ -208,5 +222,16 @@ export {
   SimpleSortSaveRequest,
   PollViewModel,
   PollAnswerViewModel,
+  AddCommentToTicketModel,
+  AddUserToTicketModel,
+  CreateSuportTicketModel,
+  SupportCategory,
+  SupportCommentViewModel,
+  SupportStatus,
+  SupportTicketViewModel,
+  TicketFilterParamsModel,
+  UpdateCommentToTicketModel,
+  UpdateTicketPriorityModel,
+  UpdateTicketStatusModel
   // Add more exports if you have additional modules
 };
