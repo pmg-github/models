@@ -25,6 +25,7 @@ export interface SupportTicketListViewModel {
     description: string;
     priority: Priority;
     created_at: string;
+    ticketNumber: string;
 }
 export interface SupportTicketViewModel {
     id: number;
