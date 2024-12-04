@@ -12,9 +12,9 @@ export interface SupportStatus {
 }
 
 export enum Priority {
-  "low",
-  "medium",
-  "high",
+  "low"="low",
+  "medium"="medium",
+  "high"="high",
 }
 
 export interface SupportTicketListViewModelWhitCursorAndContent {

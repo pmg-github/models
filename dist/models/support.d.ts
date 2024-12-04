@@ -8,9 +8,9 @@ export interface SupportStatus {
     name: string;
 }
 export declare enum Priority {
-    "low" = 0,
-    "medium" = 1,
-    "high" = 2
+    "low" = "low",
+    "medium" = "medium",
+    "high" = "high"
 }
 export interface SupportTicketListViewModelWhitCursorAndContent {
     content: SupportTicketListViewModel[];

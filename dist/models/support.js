@@ -13,9 +13,9 @@ exports.UpdateTicketPriorityModel = exports.UpdateTicketStatusModel = exports.Up
 const class_validator_1 = require("class-validator");
 var Priority;
 (function (Priority) {
-    Priority[Priority["low"] = 0] = "low";
-    Priority[Priority["medium"] = 1] = "medium";
-    Priority[Priority["high"] = 2] = "high";
+    Priority["low"] = "low";
+    Priority["medium"] = "medium";
+    Priority["high"] = "high";
 })(Priority || (exports.Priority = Priority = {}));
 class CreateSuportTicketModel {
     user_id;
@@ -47,7 +47,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsEnum)(Priority),
-    __metadata("design:type", Number)
+    __metadata("design:type", String)
 ], CreateSuportTicketModel.prototype, "priority", void 0);
 class AddUserToTicketModel {
     ticket_id;
@@ -115,5 +115,5 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsEnum)(Priority),
-    __metadata("design:type", Number)
+    __metadata("design:type", String)
 ], UpdateTicketPriorityModel.prototype, "priority", void 0);
