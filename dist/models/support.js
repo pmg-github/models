@@ -17,7 +17,6 @@ var Priority;
     Priority[Priority["medium"] = 1] = "medium";
     Priority[Priority["high"] = 2] = "high";
 })(Priority || (Priority = {}));
-;
 class CreateSuportTicketModel {
     user_id;
     category_id;
