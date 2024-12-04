@@ -11,7 +11,7 @@ export interface SupportStatus {
   name: string;
 }
 
-enum Priority {
+export enum Priority {
   "low",
   "medium",
   "high",

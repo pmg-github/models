@@ -7,7 +7,7 @@ export interface SupportStatus {
     id: number;
     name: string;
 }
-declare enum Priority {
+export declare enum Priority {
     "low" = 0,
     "medium" = 1,
     "high" = 2
@@ -78,4 +78,3 @@ export declare class UpdateTicketPriorityModel {
     id: number;
     priority: Priority;
 }
-export {};

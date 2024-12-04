@@ -9,14 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UpdateTicketPriorityModel = exports.UpdateTicketStatusModel = exports.UpdateCommentToTicketModel = exports.AddCommentToTicketModel = exports.AddUserToTicketModel = exports.CreateSuportTicketModel = void 0;
+exports.UpdateTicketPriorityModel = exports.UpdateTicketStatusModel = exports.UpdateCommentToTicketModel = exports.AddCommentToTicketModel = exports.AddUserToTicketModel = exports.CreateSuportTicketModel = exports.Priority = void 0;
 const class_validator_1 = require("class-validator");
 var Priority;
 (function (Priority) {
     Priority[Priority["low"] = 0] = "low";
     Priority[Priority["medium"] = 1] = "medium";
     Priority[Priority["high"] = 2] = "high";
-})(Priority || (Priority = {}));
+})(Priority || (exports.Priority = Priority = {}));
 class CreateSuportTicketModel {
     user_id;
     category_id;

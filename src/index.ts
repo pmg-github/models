@@ -136,7 +136,8 @@ import {
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
   UpdateTicketStatusModel,
-  SupportTicketListViewModelWhitCursorAndContent
+  SupportTicketListViewModelWhitCursorAndContent,
+  Priority
 } from "./models/support";
 
 export {
@@ -238,6 +239,7 @@ export {
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
   UpdateTicketStatusModel,
-  SupportTicketListViewModelWhitCursorAndContent
+  SupportTicketListViewModelWhitCursorAndContent,
+  Priority
   // Add more exports if you have additional modules
 };
