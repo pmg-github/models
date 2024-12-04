@@ -91,6 +91,8 @@ import {
   NotificationTopicModel,
 } from "./models/notification";
 
+import { BookmarkListModel, BookmarkFolderListModel } from "./models/bookmark";
+
 import {
   KnowledgebaseMediaListModel,
   KnowledgebaseCategoryViewModel,
@@ -137,7 +139,7 @@ import {
   UpdateTicketPriorityModel,
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
-  Priority
+  Priority,
 } from "./models/support";
 
 export {
@@ -200,6 +202,8 @@ export {
   NotificationMediaListModel,
   NotificationSummaryListModel,
   NotificationTopicModel,
+  BookmarkListModel,
+  BookmarkFolderListModel,
   KnowledgebaseMediaListModel,
   KnowledgebaseCategoryViewModel,
   KnowledgebaseModel,
@@ -240,6 +244,6 @@ export {
   UpdateTicketPriorityModel,
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
-  Priority
+  Priority,
   // Add more exports if you have additional modules
 };
