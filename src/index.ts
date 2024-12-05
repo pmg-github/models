@@ -6,6 +6,9 @@ import {
   articleTypeData,
   ArticlePremiumType,
   ArticleSearchOptions,
+  BoArticleListModel,
+  BoArticleStatus,
+  BoArticleType,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -154,6 +157,9 @@ export {
   SearchResultsSaveRequest,
   ViewerTileBaseViewModel,
   ViewerMagazineViewModel,
+  BoArticleListModel,
+  BoArticleStatus,
+  BoArticleType,
   MagazineTileViewModel,
   MagazineArticleViewModel,
   MagazineAdViewModel,
