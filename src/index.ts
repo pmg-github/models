@@ -93,6 +93,8 @@ import {
 
 import { BookmarkListModel, BookmarkFolderListModel } from "./models/bookmark";
 
+import { EventListModel } from "./models/agenda";
+
 import {
   KnowledgebaseMediaListModel,
   KnowledgebaseCategoryViewModel,
@@ -204,6 +206,7 @@ export {
   NotificationTopicModel,
   BookmarkListModel,
   BookmarkFolderListModel,
+  EventListModel,
   KnowledgebaseMediaListModel,
   KnowledgebaseCategoryViewModel,
   KnowledgebaseModel,

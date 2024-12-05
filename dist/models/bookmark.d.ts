@@ -12,3 +12,14 @@ export interface BookmarkFolderListModel {
     userId: number;
     name: string;
 }
+export declare class CreateBookmarkModel {
+    user_id: number;
+    folder_id: number;
+    url: string;
+}
+export declare class UpdateBookmarkModel {
+    id: number;
+    folder_id: number;
+    title: string;
+    description: string;
+}

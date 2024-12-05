@@ -5,4 +5,5 @@ export interface EmployeesSearchListModel {
   internalPhoneNumber: string;
   teamName: string;
   functionName: string;
+  presenceStatus: string;
 }
