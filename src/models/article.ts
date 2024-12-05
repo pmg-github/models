@@ -113,6 +113,7 @@ export interface BoArticleListModel {
   seoScore: number;
   updatedOn: Date;
   updatedBy: PmgUserModel;
+  portalDomain: string;
 }
 
 export interface BoArticleType {
