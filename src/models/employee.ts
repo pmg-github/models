@@ -3,12 +3,23 @@ export interface EmployeesSearchListModel {
   firstName: string;
   lastName: string;
   internalPhoneNumber: string;
-  privateMobileNumber: string;
   teamName: string;
   functionName: string;
   presenceStatus: string;
   lastActivityTime: string;
-  workSchedule: EmployeeWorkSchedule;
+}
+
+export interface EmployeeDetailModel {
+  code: string;
+  firstName: string;
+  lastName: string;
+  internalPhoneNumber: string; // Intern telefoonnummer
+  privateMobileNumber: string; // Privé GSM-nummer
+  teamName: string;
+  functionName: string;
+  presenceStatus: string;
+  lastActivityTime: string;
+  workSchedule: EmployeeWorkSchedule; // Uurrooster
 }
 
 export interface EmployeeWorkSchedule {

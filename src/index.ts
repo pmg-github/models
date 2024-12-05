@@ -103,7 +103,11 @@ import {
   KnowledgebaseTagViewModel,
 } from "./models/knowledgebase";
 
-import { EmployeesSearchListModel } from "./models/employee";
+import {
+  EmployeesSearchListModel,
+  EmployeeDetailModel,
+  EmployeeWorkSchedule,
+} from "./models/employee";
 import { UnpaidInvoicesListModel, PmgCompanyList } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuListModel } from "./models/bomenu";
@@ -213,6 +217,8 @@ export {
   KnowledgebaseSimpleListModel,
   KnowledgebaseTagViewModel,
   EmployeesSearchListModel,
+  EmployeeDetailModel,
+  EmployeeWorkSchedule,
   UnpaidInvoicesListModel,
   PmgCompanyList,
   BoPageSearchListModel,

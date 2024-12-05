@@ -3,6 +3,16 @@ export interface EmployeesSearchListModel {
     firstName: string;
     lastName: string;
     internalPhoneNumber: string;
+    teamName: string;
+    functionName: string;
+    presenceStatus: string;
+    lastActivityTime: string;
+}
+export interface EmployeeDetailModel {
+    code: string;
+    firstName: string;
+    lastName: string;
+    internalPhoneNumber: string;
     privateMobileNumber: string;
     teamName: string;
     functionName: string;
