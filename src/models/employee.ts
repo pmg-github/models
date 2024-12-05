@@ -19,7 +19,7 @@ export interface EmployeeDetailModel {
   functionName: string;
   presenceStatus: string;
   lastActivityTime: string;
-  workSchedule: EmployeeWorkSchedule; // Uurrooster
+  todayWorkSchedule: EmployeeWorkSchedule; // Uurrooster
 }
 
 export interface EmployeeWorkSchedule {
