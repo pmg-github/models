@@ -45,3 +45,25 @@ export type ArticleSearchOptions = {
     useNewsletterTitles?: boolean;
     allowHiddenArticles?: boolean;
 };
+import { PmgUserModel } from "./pmguser";
+export interface BoArticleListModel {
+    id: number;
+    reference: string;
+    languageCode: string;
+    title: string;
+    type: BoArticleType;
+    status: BoArticleStatus;
+    availableFrom: Date;
+    availableUntil: Date;
+    seoScore: number;
+    updatedOn: Date;
+    updatedBy: PmgUserModel;
+}
+export interface BoArticleType {
+    id: number;
+    name: string;
+}
+export interface BoArticleStatus {
+    id: number;
+    name: string;
+}
