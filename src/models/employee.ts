@@ -6,4 +6,5 @@ export interface EmployeesSearchListModel {
   teamName: string;
   functionName: string;
   presenceStatus: string;
+  lastActivityTime: string;
 }
