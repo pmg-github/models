@@ -56,6 +56,7 @@ export interface BoArticleListModel {
     availableFrom: Date;
     availableUntil: Date;
     seoScore: number;
+    author: string;
     updatedOn: Date;
     updatedBy: PmgUserModel;
     portalDomain: string;
