@@ -8,6 +8,7 @@ import {
   ArticleSearchOptions,
   BoArticleListModel,
   BoArticleStatus,
+  BoArticleJobTask,
   BoArticleType,
 } from "./models/article";
 
@@ -159,6 +160,7 @@ export {
   ViewerMagazineViewModel,
   BoArticleListModel,
   BoArticleStatus,
+  BoArticleJobTask,
   BoArticleType,
   MagazineTileViewModel,
   MagazineArticleViewModel,
