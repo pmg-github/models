@@ -96,7 +96,7 @@ import {
 
 import { BookmarkListModel, BookmarkFolderListModel } from "./models/bookmark";
 
-import { EventListModel } from "./models/agenda";
+import { AgendaModel, EventListModel } from "./models/agenda";
 
 import {
   KnowledgebaseMediaListModel,
@@ -260,5 +260,6 @@ export {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
+  AgendaModel
   // Add more exports if you have additional modules
 };
