@@ -1,7 +1,7 @@
 export interface EventListModel {
     id: number;
     type: string;
-    title: number;
+    title: string;
     description: string;
     startDateTime: Date;
     endDateTime: Date;
