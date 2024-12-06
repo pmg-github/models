@@ -114,6 +114,7 @@ export interface BoArticleListModel {
   author: string;
   updatedOn: Date;
   updatedBy: PmgUserModel;
+  task: BoArticleJobTask;
   portalDomain: string;
 }
 
@@ -125,4 +126,12 @@ export interface BoArticleType {
 export interface BoArticleStatus {
   id: number;
   name: string;
+}
+
+export interface BoArticleJobTask {
+  id: number;
+  code: string;
+  name: string;
+  startDate: Date;
+  parentCode: string;
 }
