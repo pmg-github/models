@@ -88,7 +88,7 @@ import {
   NewsletterNewsSaveRequest,
   NewsletterOrderModel,
   NewsletterSubjectSaveRequest,
-  NewsletterSubjectSaveRequestItem,
+  NewsletterSubjectAddRequest,
 } from "./models/newsletter";
 
 import {
@@ -216,7 +216,7 @@ export {
   NewsletterNewsAddRequest,
   NewsletterNewsSaveRequest,
   NewsletterSubjectSaveRequest,
-  NewsletterSubjectSaveRequestItem,
+  NewsletterSubjectAddRequest,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,
@@ -268,6 +268,6 @@ export {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
-  AgendaModel
+  AgendaModel,
   // Add more exports if you have additional modules
 };

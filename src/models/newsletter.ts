@@ -111,6 +111,7 @@ export interface NewsletterNewsModel {
 }
 
 export interface NewsletterSubjectModel {
+  id: number;
   index: number;
   subjectNL: string | null;
   subjectFR: string | null;
@@ -288,18 +289,20 @@ export class NewsletterNewsSaveRequest {
   date!: string;
 }
 
-export class NewsletterSubjectSaveRequestItem {
-  subjectNL!: string | undefined;
-  subjectFR!: string | undefined;
-}
-
-export class NewsletterSubjectSaveRequest {
+export class NewsletterSubjectAddRequest {
   @IsNotEmpty()
   @Length(12, 12)
   projectCode!: string;
 
-  // @ValidateNested({ each: true })
-  // @Type(() => NewsletterSubjectSaveRequestItem)
-  // @ArrayMinSize(1) // Ensure 1 element is in array
-  // items!: NewsletterSubjectSaveRequestItem;
+  // Wil most likely be empty by default, but allow values at API level anyway
+  subjectNL!: string | null;
+  subjectFR!: string | null;
+}
+
+export class NewsletterSubjectSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  subjectNL!: string | null;
+  subjectFR!: string | null;
 }
