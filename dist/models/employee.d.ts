@@ -18,7 +18,7 @@ export interface EmployeeDetailModel {
     functionName: string;
     presenceStatus: string;
     lastActivityTime: string;
-    workSchedule: EmployeeWorkSchedule;
+    todayWorkSchedule: EmployeeWorkSchedule;
 }
 export interface EmployeeWorkSchedule {
     dayOfWeek: number;

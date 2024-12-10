@@ -6,6 +6,10 @@ import {
   articleTypeData,
   ArticlePremiumType,
   ArticleSearchOptions,
+  BoArticleListModel,
+  BoArticleStatus,
+  BoArticleJobTask,
+  BoArticleType,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -96,7 +100,7 @@ import {
 
 import { BookmarkListModel, BookmarkFolderListModel } from "./models/bookmark";
 
-import { EventListModel } from "./models/agenda";
+import { AgendaModel, EventListModel } from "./models/agenda";
 
 import {
   KnowledgebaseMediaListModel,
@@ -157,6 +161,10 @@ export {
   SearchResultsSaveRequest,
   ViewerTileBaseViewModel,
   ViewerMagazineViewModel,
+  BoArticleListModel,
+  BoArticleStatus,
+  BoArticleJobTask,
+  BoArticleType,
   MagazineTileViewModel,
   MagazineArticleViewModel,
   MagazineAdViewModel,
@@ -260,5 +268,6 @@ export {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
+  AgendaModel
   // Add more exports if you have additional modules
 };
