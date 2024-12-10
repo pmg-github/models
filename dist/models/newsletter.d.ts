@@ -160,5 +160,4 @@ export declare class NewsletterSubjectSaveRequestItem {
 }
 export declare class NewsletterSubjectSaveRequest {
     projectCode: string;
-    items: NewsletterSubjectSaveRequestItem;
 }

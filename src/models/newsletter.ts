@@ -298,8 +298,8 @@ export class NewsletterSubjectSaveRequest {
   @Length(12, 12)
   projectCode!: string;
 
-  @ValidateNested({ each: true })
-  @Type(() => NewsletterSubjectSaveRequestItem)
-  @ArrayMinSize(1) // Ensure 1 element is in array
-  items!: NewsletterSubjectSaveRequestItem;
+  // @ValidateNested({ each: true })
+  // @Type(() => NewsletterSubjectSaveRequestItem)
+  // @ArrayMinSize(1) // Ensure 1 element is in array
+  // items!: NewsletterSubjectSaveRequestItem;
 }
