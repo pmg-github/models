@@ -1,9 +1,12 @@
+import { Type } from "class-transformer";
 import {
+  ArrayMinSize,
   isNotEmpty,
   IsNotEmpty,
   Length,
   MaxLength,
   ValidateIf,
+  ValidateNested,
 } from "class-validator";
 
 export class NewsletterContentType {
@@ -105,6 +108,12 @@ export interface NewsletterNewsModel {
   articleReference: string;
   title: string;
   date: string;
+}
+
+export interface NewsletterSubjectModel {
+  index: number;
+  subjectNL: string | null;
+  subjectFR: string | null;
 }
 
 export class NewsletterMetaDataCreateRequest {
@@ -277,4 +286,20 @@ export class NewsletterNewsSaveRequest {
   @IsNotEmpty()
   @MaxLength(20)
   date!: string;
+}
+
+export class NewsletterSubjectSaveRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  projectCode!: string;
+
+  @ValidateNested({ each: true })
+  @Type(() => NewsletterSubjectSaveRequestItem)
+  @ArrayMinSize(1) // Ensure 1 element is in array
+  items!: NewsletterSubjectSaveRequestItem;
+}
+
+export class NewsletterSubjectSaveRequestItem {
+  subjectNL!: string | undefined;
+  subjectFR!: string | undefined;
 }

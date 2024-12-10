@@ -9,7 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
+exports.NewsletterSubjectSaveRequestItem = exports.NewsletterSubjectSaveRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
+const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -304,3 +305,25 @@ __decorate([
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
 ], NewsletterNewsSaveRequest.prototype, "date", void 0);
+class NewsletterSubjectSaveRequest {
+    projectCode;
+    items;
+}
+exports.NewsletterSubjectSaveRequest = NewsletterSubjectSaveRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterSubjectSaveRequest.prototype, "projectCode", void 0);
+__decorate([
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => NewsletterSubjectSaveRequestItem),
+    (0, class_validator_1.ArrayMinSize)(1) // Ensure 1 element is in array
+    ,
+    __metadata("design:type", NewsletterSubjectSaveRequestItem)
+], NewsletterSubjectSaveRequest.prototype, "items", void 0);
+class NewsletterSubjectSaveRequestItem {
+    subjectNL;
+    subjectFR;
+}
+exports.NewsletterSubjectSaveRequestItem = NewsletterSubjectSaveRequestItem;

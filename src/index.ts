@@ -73,6 +73,7 @@ import {
   NewsletterQuicklinkModel,
   NewsletterTileModel,
   NewsletterNewsModel,
+  NewsletterSubjectModel,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,
   NewsletterQuicklinkAddRequest,
@@ -82,6 +83,8 @@ import {
   NewsletterNewsAddRequest,
   NewsletterNewsSaveRequest,
   NewsletterOrderModel,
+  NewsletterSubjectSaveRequest,
+  NewsletterSubjectSaveRequestItem,
 } from "./models/newsletter";
 
 import {
@@ -195,6 +198,7 @@ export {
   NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterNewsModel,
+  NewsletterSubjectModel,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,
   NewsletterQuicklinkAddRequest,
@@ -203,6 +207,8 @@ export {
   NewsletterArticleSaveRequest,
   NewsletterNewsAddRequest,
   NewsletterNewsSaveRequest,
+  NewsletterSubjectSaveRequest,
+  NewsletterSubjectSaveRequestItem,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,
