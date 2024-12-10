@@ -154,11 +154,11 @@ export declare class NewsletterNewsSaveRequest {
     title: string;
     date: string;
 }
-export declare class NewsletterSubjectSaveRequest {
-    projectCode: string;
-    items: NewsletterSubjectSaveRequestItem;
-}
 export declare class NewsletterSubjectSaveRequestItem {
     subjectNL: string | undefined;
     subjectFR: string | undefined;
+}
+export declare class NewsletterSubjectSaveRequest {
+    projectCode: string;
+    items: NewsletterSubjectSaveRequestItem;
 }

@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterSubjectSaveRequestItem = exports.NewsletterSubjectSaveRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
+exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectSaveRequestItem = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
 const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
@@ -305,6 +305,11 @@ __decorate([
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
 ], NewsletterNewsSaveRequest.prototype, "date", void 0);
+class NewsletterSubjectSaveRequestItem {
+    subjectNL;
+    subjectFR;
+}
+exports.NewsletterSubjectSaveRequestItem = NewsletterSubjectSaveRequestItem;
 class NewsletterSubjectSaveRequest {
     projectCode;
     items;
@@ -322,8 +327,3 @@ __decorate([
     ,
     __metadata("design:type", NewsletterSubjectSaveRequestItem)
 ], NewsletterSubjectSaveRequest.prototype, "items", void 0);
-class NewsletterSubjectSaveRequestItem {
-    subjectNL;
-    subjectFR;
-}
-exports.NewsletterSubjectSaveRequestItem = NewsletterSubjectSaveRequestItem;

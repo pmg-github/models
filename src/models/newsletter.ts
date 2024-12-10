@@ -288,6 +288,11 @@ export class NewsletterNewsSaveRequest {
   date!: string;
 }
 
+export class NewsletterSubjectSaveRequestItem {
+  subjectNL!: string | undefined;
+  subjectFR!: string | undefined;
+}
+
 export class NewsletterSubjectSaveRequest {
   @IsNotEmpty()
   @Length(12, 12)
@@ -297,9 +302,4 @@ export class NewsletterSubjectSaveRequest {
   @Type(() => NewsletterSubjectSaveRequestItem)
   @ArrayMinSize(1) // Ensure 1 element is in array
   items!: NewsletterSubjectSaveRequestItem;
-}
-
-export class NewsletterSubjectSaveRequestItem {
-  subjectNL!: string | undefined;
-  subjectFR!: string | undefined;
 }
