@@ -1,9 +1,12 @@
+import { Type } from "class-transformer";
 import {
+  ArrayMinSize,
   isNotEmpty,
   IsNotEmpty,
   Length,
   MaxLength,
   ValidateIf,
+  ValidateNested,
 } from "class-validator";
 
 export class NewsletterContentType {
@@ -105,6 +108,13 @@ export interface NewsletterNewsModel {
   articleReference: string;
   title: string;
   date: string;
+}
+
+export interface NewsletterSubjectModel {
+  id: number;
+  index: number;
+  subjectNL: string | null;
+  subjectFR: string | null;
 }
 
 export class NewsletterMetaDataCreateRequest {
@@ -277,4 +287,22 @@ export class NewsletterNewsSaveRequest {
   @IsNotEmpty()
   @MaxLength(20)
   date!: string;
+}
+
+export class NewsletterSubjectAddRequest {
+  @IsNotEmpty()
+  @Length(12, 12)
+  projectCode!: string;
+
+  // Wil most likely be empty by default, but allow values at API level anyway
+  subjectNL!: string | null;
+  subjectFR!: string | null;
+}
+
+export class NewsletterSubjectSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  subjectNL!: string | null;
+  subjectFR!: string | null;
 }

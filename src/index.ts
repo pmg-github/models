@@ -77,6 +77,7 @@ import {
   NewsletterQuicklinkModel,
   NewsletterTileModel,
   NewsletterNewsModel,
+  NewsletterSubjectModel,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,
   NewsletterQuicklinkAddRequest,
@@ -86,6 +87,8 @@ import {
   NewsletterNewsAddRequest,
   NewsletterNewsSaveRequest,
   NewsletterOrderModel,
+  NewsletterSubjectSaveRequest,
+  NewsletterSubjectAddRequest,
 } from "./models/newsletter";
 
 import {
@@ -203,6 +206,7 @@ export {
   NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterNewsModel,
+  NewsletterSubjectModel,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,
   NewsletterQuicklinkAddRequest,
@@ -211,6 +215,8 @@ export {
   NewsletterArticleSaveRequest,
   NewsletterNewsAddRequest,
   NewsletterNewsSaveRequest,
+  NewsletterSubjectSaveRequest,
+  NewsletterSubjectAddRequest,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,
@@ -262,6 +268,6 @@ export {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
-  AgendaModel
+  AgendaModel,
   // Add more exports if you have additional modules
 };

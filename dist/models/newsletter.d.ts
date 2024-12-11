@@ -91,6 +91,12 @@ export interface NewsletterNewsModel {
     title: string;
     date: string;
 }
+export interface NewsletterSubjectModel {
+    id: number;
+    index: number;
+    subjectNL: string | null;
+    subjectFR: string | null;
+}
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;
     language: string;
@@ -148,4 +154,14 @@ export declare class NewsletterNewsSaveRequest {
     id: number;
     title: string;
     date: string;
+}
+export declare class NewsletterSubjectAddRequest {
+    projectCode: string;
+    subjectNL: string | null;
+    subjectFR: string | null;
+}
+export declare class NewsletterSubjectSaveRequest {
+    id: number;
+    subjectNL: string | null;
+    subjectFR: string | null;
 }
