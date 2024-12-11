@@ -306,3 +306,15 @@ export class NewsletterSubjectSaveRequest {
   subjectNL!: string | null;
   subjectFR!: string | null;
 }
+
+export class NewsletterTestMailCreateRequest {
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  @IsNotEmpty()
+  type!: "user" | "group" | "list";
+
+  @IsNotEmpty()
+  html!: string;
+}

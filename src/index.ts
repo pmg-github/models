@@ -89,6 +89,7 @@ import {
   NewsletterOrderModel,
   NewsletterSubjectSaveRequest,
   NewsletterSubjectAddRequest,
+  NewsletterTestMailCreateRequest,
 } from "./models/newsletter";
 
 import {
@@ -217,6 +218,7 @@ export {
   NewsletterNewsSaveRequest,
   NewsletterSubjectSaveRequest,
   NewsletterSubjectAddRequest,
+  NewsletterTestMailCreateRequest,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,
