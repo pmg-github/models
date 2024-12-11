@@ -309,6 +309,10 @@ export class NewsletterSubjectSaveRequest {
 
 export class NewsletterTestMailCreateRequest {
   @IsNotEmpty()
+  @Length(12, 12)
+  projectCode!: string;
+
+  @IsNotEmpty()
   @Length(2, 2)
   language!: string;
 

@@ -327,11 +327,17 @@ __decorate([
     __metadata("design:type", Number)
 ], NewsletterSubjectSaveRequest.prototype, "id", void 0);
 class NewsletterTestMailCreateRequest {
+    projectCode;
     language;
     type;
     html;
 }
 exports.NewsletterTestMailCreateRequest = NewsletterTestMailCreateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterTestMailCreateRequest.prototype, "projectCode", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(2, 2),

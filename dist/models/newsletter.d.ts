@@ -166,6 +166,7 @@ export declare class NewsletterSubjectSaveRequest {
     subjectFR: string | null;
 }
 export declare class NewsletterTestMailCreateRequest {
+    projectCode: string;
     language: string;
     type: "user" | "group" | "list";
     html: string;
