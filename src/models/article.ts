@@ -114,6 +114,7 @@ export interface BoArticleListModel {
   author: string;
   updatedOn: Date;
   updatedBy: PmgUserModel;
+  successor: PmgUserModel;
   task?: BoArticleJobTask;
   portalDomain: string;
 }

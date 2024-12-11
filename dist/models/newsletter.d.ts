@@ -92,6 +92,7 @@ export interface NewsletterNewsModel {
     date: string;
 }
 export interface NewsletterSubjectModel {
+    id: number;
     index: number;
     subjectNL: string | null;
     subjectFR: string | null;
@@ -154,10 +155,20 @@ export declare class NewsletterNewsSaveRequest {
     title: string;
     date: string;
 }
-export declare class NewsletterSubjectSaveRequestItem {
-    subjectNL: string | undefined;
-    subjectFR: string | undefined;
+export declare class NewsletterSubjectAddRequest {
+    projectCode: string;
+    subjectNL: string | null;
+    subjectFR: string | null;
 }
 export declare class NewsletterSubjectSaveRequest {
+    id: number;
+    subjectNL: string | null;
+    subjectFR: string | null;
+}
+export declare class NewsletterTestMailCreateRequest {
     projectCode: string;
+    language: string;
+    type: "user" | "group" | "list";
+    html: string;
+    emailList?: string | undefined;
 }

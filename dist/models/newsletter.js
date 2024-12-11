@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectSaveRequestItem = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
+exports.NewsletterTestMailCreateRequest = exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectAddRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -304,17 +304,51 @@ __decorate([
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
 ], NewsletterNewsSaveRequest.prototype, "date", void 0);
-class NewsletterSubjectSaveRequestItem {
+class NewsletterSubjectAddRequest {
+    projectCode;
+    // Wil most likely be empty by default, but allow values at API level anyway
     subjectNL;
     subjectFR;
 }
-exports.NewsletterSubjectSaveRequestItem = NewsletterSubjectSaveRequestItem;
-class NewsletterSubjectSaveRequest {
-    projectCode;
-}
-exports.NewsletterSubjectSaveRequest = NewsletterSubjectSaveRequest;
+exports.NewsletterSubjectAddRequest = NewsletterSubjectAddRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(12, 12),
     __metadata("design:type", String)
-], NewsletterSubjectSaveRequest.prototype, "projectCode", void 0);
+], NewsletterSubjectAddRequest.prototype, "projectCode", void 0);
+class NewsletterSubjectSaveRequest {
+    id;
+    subjectNL;
+    subjectFR;
+}
+exports.NewsletterSubjectSaveRequest = NewsletterSubjectSaveRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], NewsletterSubjectSaveRequest.prototype, "id", void 0);
+class NewsletterTestMailCreateRequest {
+    projectCode;
+    language;
+    type;
+    html;
+    emailList;
+}
+exports.NewsletterTestMailCreateRequest = NewsletterTestMailCreateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(12, 12),
+    __metadata("design:type", String)
+], NewsletterTestMailCreateRequest.prototype, "projectCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], NewsletterTestMailCreateRequest.prototype, "language", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], NewsletterTestMailCreateRequest.prototype, "type", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], NewsletterTestMailCreateRequest.prototype, "html", void 0);
