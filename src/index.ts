@@ -115,6 +115,9 @@ import {
   EmployeeDetailModel,
   EmployeeWorkSchedule,
 } from "./models/employee";
+
+import { PromptListModel } from "./models/prompt";
+
 import { UnpaidInvoicesListModel, PmgCompanyList } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuListModel } from "./models/bomenu";
@@ -233,6 +236,7 @@ export {
   EmployeesSearchListModel,
   EmployeeDetailModel,
   EmployeeWorkSchedule,
+  PromptListModel,
   UnpaidInvoicesListModel,
   PmgCompanyList,
   BoPageSearchListModel,
@@ -268,6 +272,6 @@ export {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
-  AgendaModel
+  AgendaModel,
   // Add more exports if you have additional modules
 };
