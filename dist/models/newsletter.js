@@ -331,6 +331,7 @@ class NewsletterTestMailCreateRequest {
     language;
     type;
     html;
+    emailList;
 }
 exports.NewsletterTestMailCreateRequest = NewsletterTestMailCreateRequest;
 __decorate([

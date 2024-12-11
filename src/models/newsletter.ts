@@ -321,4 +321,6 @@ export class NewsletterTestMailCreateRequest {
 
   @IsNotEmpty()
   html!: string;
+
+  emailList?: string | undefined;
 }

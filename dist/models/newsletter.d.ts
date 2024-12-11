@@ -170,4 +170,5 @@ export declare class NewsletterTestMailCreateRequest {
     language: string;
     type: "user" | "group" | "list";
     html: string;
+    emailList?: string | undefined;
 }
