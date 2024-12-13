@@ -1,5 +1,6 @@
 export interface UnpaidInvoicesListModel {
     pmgCompanyName: string;
+    pmgCompanyFolder: string;
     customerNumber: string;
     customerCompanyName: string;
     customerEmail: string;
@@ -24,6 +25,9 @@ export interface UnpaidInvoicesListModel {
     invoiceDaysOverdue: number;
     invoiceAmount: number;
     invoiceUnpaidAmount: number;
+    invoiceYear: string;
+    invoiceFolder: string;
+    invoiceFilePath: string;
 }
 export interface PmgCompanyList {
     reference: string;
