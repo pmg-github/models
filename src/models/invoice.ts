@@ -27,6 +27,10 @@ export class UnpaidInvoicesListModel {
   invoiceAmount?: number;
   invoiceUnpaidAmount?: number;
 
+  get test(): string | undefined {
+    return "dave";
+  }
+
   get invoiceYear(): string | undefined {
     return this.invoiceDate
       ? this.invoiceDate.getFullYear().toString()

@@ -25,6 +25,7 @@ export declare class UnpaidInvoicesListModel {
     invoiceDaysOverdue?: number;
     invoiceAmount?: number;
     invoiceUnpaidAmount?: number;
+    get test(): string | undefined;
     get invoiceYear(): string | undefined;
     get invoiceFolder(): string | undefined;
     get invoiceFilePath(): string | undefined;

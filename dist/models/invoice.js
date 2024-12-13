@@ -29,6 +29,9 @@ class UnpaidInvoicesListModel {
     invoiceDaysOverdue;
     invoiceAmount;
     invoiceUnpaidAmount;
+    get test() {
+        return "dave";
+    }
     get invoiceYear() {
         return this.invoiceDate
             ? this.invoiceDate.getFullYear().toString()
