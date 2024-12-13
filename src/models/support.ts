@@ -32,6 +32,8 @@ export interface SupportTicketListViewModel {
   priority: Priority;
   created_at: string;
   ticketNumber:string;
+  connected_users_ids:string;
+  connected_user_code:string
 }
 
 export interface SupportTicketViewModel {
