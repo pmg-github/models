@@ -4,7 +4,7 @@ exports.UnpaidInvoicesListModel = void 0;
 const INVOICE_FOLDER = "\\\\bkhserver\\BoekhDocumenten\\Facturen\\";
 class UnpaidInvoicesListModel {
     pmgCompanyName;
-    pmCompanyFolder;
+    pmgCompanyFolder;
     customerNumber;
     customerCompanyName;
     customerEmail;
@@ -43,10 +43,10 @@ class UnpaidInvoicesListModel {
         if (!this.invoiceYear ||
             !this.invoiceFolder ||
             !this.invoiceNumber ||
-            !this.pmgCompanyName) {
+            !this.pmgCompanyFolder) {
             return undefined;
         }
-        return `${INVOICE_FOLDER}${this.pmgCompanyName}\\${this.invoiceYear}\\${this.invoiceFolder}\\${this.invoiceNumber}.PDF`;
+        return `${INVOICE_FOLDER}${this.pmgCompanyFolder}\\${this.invoiceYear}\\${this.invoiceFolder}\\${this.invoiceNumber}.PDF`;
     }
 }
 exports.UnpaidInvoicesListModel = UnpaidInvoicesListModel;

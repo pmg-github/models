@@ -1,6 +1,6 @@
 export declare class UnpaidInvoicesListModel {
     pmgCompanyName?: string;
-    pmCompanyFolder?: string;
+    pmgCompanyFolder?: string;
     customerNumber?: string;
     customerCompanyName?: string;
     customerEmail?: string;
