@@ -34,6 +34,7 @@ export interface SupportTicketListViewModel {
   ticketNumber:string;
   connected_users_ids?:string;
   connected_user_code?:string
+  snoozed?:boolean
 }
 
 export interface SupportTicketViewModel {
