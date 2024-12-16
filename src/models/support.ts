@@ -47,6 +47,7 @@ export interface SupportTicketViewModel {
   description: string;
   priority: Priority;
   created_at: string;
+  ticket_number:string
 }
 
 export interface SupportCommentViewModel {
