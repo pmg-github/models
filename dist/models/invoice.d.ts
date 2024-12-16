@@ -27,7 +27,7 @@ export interface UnpaidInvoicesListModel {
     invoiceUnpaidAmount: number;
     invoiceYear: string;
     invoiceFolder: string;
-    invoiceFilePath: string;
+    invoiceFileUrl: string;
 }
 export interface PmgCompanyList {
     reference: string;
