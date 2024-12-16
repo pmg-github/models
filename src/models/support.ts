@@ -48,6 +48,12 @@ export interface SupportTicketViewModel {
   priority: Priority;
   created_at: string;
   ticket_number:string
+  file:returnFileResponse[]
+}
+
+export interface returnFileResponse{
+  name:string
+  url:string
 }
 
 export interface SupportCommentViewModel {

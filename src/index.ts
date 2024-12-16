@@ -151,6 +151,7 @@ import {
   SupportStatus,
   SupportTicketListViewModel,
   SupportTicketViewModel,
+  returnFileResponse,
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
@@ -275,4 +276,5 @@ export {
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
   AgendaModel,
+  returnFileResponse
 };
