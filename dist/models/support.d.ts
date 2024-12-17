@@ -53,7 +53,6 @@ export interface SupportCommentViewModel {
     comment: string;
     updated_at: string;
     files: returnFileResponse[];
-    isDeleted: boolean;
 }
 export declare class CreateSuportTicketModel {
     user_id: number;

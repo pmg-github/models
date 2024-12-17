@@ -62,7 +62,7 @@ export interface SupportCommentViewModel {
   comment: string;
   updated_at: string;
   files:returnFileResponse[]
-  isDeleted:boolean
+  // isDeleted:boolean
 }
 
 export class CreateSuportTicketModel {
