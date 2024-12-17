@@ -52,6 +52,7 @@ export interface SupportCommentViewModel {
     user: PmgUserInterface;
     comment: string;
     updated_at: string;
+    files: returnFileResponse[];
 }
 export declare class CreateSuportTicketModel {
     user_id: number;
