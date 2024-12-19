@@ -32,6 +32,6 @@ export declare class NotificationSummaryListModel {
     link: string | undefined;
 }
 export declare class NotificationSummaryListModelWhitCursorAndContent {
-    content: NotificationSummaryListModel[];
-    cursor: number;
+    content: NotificationSummaryListModel[] | undefined;
+    cursor: number | undefined;
 }

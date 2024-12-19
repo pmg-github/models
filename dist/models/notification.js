@@ -38,7 +38,7 @@ class NotificationSummaryListModel {
 }
 exports.NotificationSummaryListModel = NotificationSummaryListModel;
 class NotificationSummaryListModelWhitCursorAndContent {
-    content;
-    cursor;
+    content = undefined;
+    cursor = undefined;
 }
 exports.NotificationSummaryListModelWhitCursorAndContent = NotificationSummaryListModelWhitCursorAndContent;

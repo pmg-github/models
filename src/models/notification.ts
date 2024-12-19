@@ -38,6 +38,6 @@ export class NotificationSummaryListModel {
 }
 
 export class NotificationSummaryListModelWhitCursorAndContent{
-  content:NotificationSummaryListModel[]
-  cursor:number
+  content:NotificationSummaryListModel[]| undefined = undefined;
+  cursor:number| undefined = undefined;
 }
