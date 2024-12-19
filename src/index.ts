@@ -96,6 +96,7 @@ import {
   NotificationListModel,
   NotificationMediaListModel,
   NotificationSummaryListModel,
+  NotificationSummaryListModelWhitCursorAndContent,
   NotificationTopicModel,
 } from "./models/notification";
 
@@ -161,6 +162,7 @@ import {
 } from "./models/support";
 
 export {
+  NotificationSummaryListModelWhitCursorAndContent,
   ArticleOrderByType,
   articleOrderByData,
   SearchResultsSaveRequest,
