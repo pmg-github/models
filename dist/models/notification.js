@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NotificationSummaryListModel = exports.NotificationListModel = exports.NotificationTopicModel = exports.NotificationMediaListModel = void 0;
+exports.NotificationSummaryListModelWhitCursorAndContent = exports.NotificationSummaryListModel = exports.NotificationListModel = exports.NotificationTopicModel = exports.NotificationMediaListModel = void 0;
 class NotificationMediaListModel {
     fileUrl = undefined;
 }
@@ -37,3 +37,8 @@ class NotificationSummaryListModel {
     link = undefined;
 }
 exports.NotificationSummaryListModel = NotificationSummaryListModel;
+class NotificationSummaryListModelWhitCursorAndContent {
+    content;
+    cursor;
+}
+exports.NotificationSummaryListModelWhitCursorAndContent = NotificationSummaryListModelWhitCursorAndContent;

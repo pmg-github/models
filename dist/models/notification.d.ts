@@ -31,7 +31,7 @@ export declare class NotificationSummaryListModel {
     reactionCounter: number;
     link: string | undefined;
 }
-export interface NotificationSummaryListModelWhitCursorAndContent {
+export declare class NotificationSummaryListModelWhitCursorAndContent {
     content: NotificationSummaryListModel[];
     cursor: number;
 }

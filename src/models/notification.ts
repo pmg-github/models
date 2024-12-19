@@ -37,7 +37,7 @@ export class NotificationSummaryListModel {
   link:string|undefined=undefined
 }
 
-export interface NotificationSummaryListModelWhitCursorAndContent{
+export class NotificationSummaryListModelWhitCursorAndContent{
   content:NotificationSummaryListModel[]
   cursor:number
 }
