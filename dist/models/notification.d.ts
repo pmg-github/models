@@ -29,4 +29,5 @@ export declare class NotificationSummaryListModel {
     sender: PmgUserModel | undefined;
     isRead: Boolean;
     reactionCounter: number;
+    link: string | undefined;
 }

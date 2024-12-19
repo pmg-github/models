@@ -34,5 +34,6 @@ class NotificationSummaryListModel {
     sender = undefined;
     isRead = false;
     reactionCounter = 0;
+    link = undefined;
 }
 exports.NotificationSummaryListModel = NotificationSummaryListModel;

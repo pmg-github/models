@@ -34,4 +34,5 @@ export class NotificationSummaryListModel {
   sender: PmgUserModel | undefined = undefined;
   isRead: Boolean = false;
   reactionCounter: number = 0;
+  link:string|undefined=undefined
 }
