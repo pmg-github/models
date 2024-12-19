@@ -36,3 +36,8 @@ export class NotificationSummaryListModel {
   reactionCounter: number = 0;
   link:string|undefined=undefined
 }
+
+export interface NotificationSummaryListModelWhitCursorAndContent{
+  content:NotificationSummaryListModel[]
+  cursor:number
+}
