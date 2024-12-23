@@ -29,6 +29,14 @@ export interface UnpaidInvoicesListModel {
     invoiceFolder: string;
     invoiceFileUrl: string;
 }
+export interface UnpaidInvoicesStatsModel {
+    totalCount: number;
+    totalInvoiceAmount: number;
+    totalInvoiceUnpaidAmount: number;
+    overdue30Days: number;
+    overdue60Days: number;
+    overdue90Days: number;
+}
 export interface PmgCompanyList {
     reference: string;
     name: string;
