@@ -32,7 +32,7 @@ export class NotificationSummaryListModel {
   title: string | undefined = undefined;
   lastModificationDate: Date | undefined = undefined;
   sender: PmgUserModel | undefined = undefined;
-  isRead: Boolean = false;
+  isRead: number = 0;
   reactionCounter: number = 0;
   link:string|undefined=undefined
 }

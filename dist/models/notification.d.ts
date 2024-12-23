@@ -27,7 +27,7 @@ export declare class NotificationSummaryListModel {
     title: string | undefined;
     lastModificationDate: Date | undefined;
     sender: PmgUserModel | undefined;
-    isRead: Boolean;
+    isRead: number;
     reactionCounter: number;
     link: string | undefined;
 }

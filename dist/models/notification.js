@@ -32,7 +32,7 @@ class NotificationSummaryListModel {
     title = undefined;
     lastModificationDate = undefined;
     sender = undefined;
-    isRead = false;
+    isRead = 0;
     reactionCounter = 0;
     link = undefined;
 }
