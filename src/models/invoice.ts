@@ -37,5 +37,5 @@ export interface PmgCompanyList {
 
 export interface UnpaidInvoicesListModelWithCursor{
   content:UnpaidInvoicesListModel[]
-  cursor:number
+  nextCursor:number
 }
