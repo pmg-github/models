@@ -33,3 +33,7 @@ export interface PmgCompanyList {
     reference: string;
     name: string;
 }
+export interface UnpaidInvoicesListModelWithCursor {
+    content: UnpaidInvoicesListModel[];
+    cursor: number;
+}

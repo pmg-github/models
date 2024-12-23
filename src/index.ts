@@ -120,7 +120,7 @@ import {
 
 import { PromptListModel } from "./models/prompt";
 
-import { UnpaidInvoicesListModel, PmgCompanyList } from "./models/invoice";
+import { UnpaidInvoicesListModel, PmgCompanyList, UnpaidInvoicesListModelWithCursor } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuListModel } from "./models/bomenu";
 
@@ -162,6 +162,7 @@ import {
 } from "./models/support";
 
 export {
+  UnpaidInvoicesListModelWithCursor,
   NotificationSummaryListModelWhitCursorAndContent,
   ArticleOrderByType,
   articleOrderByData,
