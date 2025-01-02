@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NotificationSummaryListModelWhitCursorAndContent = exports.NotificationSummaryListModel = exports.NotificationListModel = exports.NotificationTopicModel = exports.NotificationMediaListModel = void 0;
+exports.NotificationSummaryListModelWhitCursorAndContent = exports.NotificationListModel = exports.NotificationTopicModel = exports.NotificationMediaListModel = void 0;
 class NotificationMediaListModel {
     fileUrl = undefined;
 }
@@ -25,19 +25,6 @@ class NotificationListModel {
     topics = undefined;
 }
 exports.NotificationListModel = NotificationListModel;
-class NotificationSummaryListModel {
-    id = undefined;
-    typeReference = undefined;
-    typeName = undefined;
-    title = undefined;
-    text = undefined;
-    lastModificationDate = undefined;
-    sender = undefined;
-    isRead = 0;
-    reactionCounter = 0;
-    link = undefined;
-}
-exports.NotificationSummaryListModel = NotificationSummaryListModel;
 class NotificationSummaryListModelWhitCursorAndContent {
     content = undefined;
     cursor = undefined;

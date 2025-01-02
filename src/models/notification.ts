@@ -25,17 +25,17 @@ export class NotificationListModel {
   topics: NotificationTopicModel[] | undefined = undefined;
 }
 
-export class NotificationSummaryListModel {
-  id: number | undefined = undefined;
-  typeReference: string | undefined = undefined;
-  typeName: string | undefined = undefined;
-  title: string | undefined = undefined;
-  text: string | undefined = undefined;
-  lastModificationDate: Date | undefined = undefined;
-  sender: PmgUserModel | undefined = undefined;
-  isRead: number = 0;
-  reactionCounter: number = 0;
-  link:string|undefined=undefined
+export interface NotificationSummaryListModel {
+  id: number | undefined ;
+  typeReference: string | undefined;
+  typeName: string | undefined ;
+  title: string | undefined;
+  text: string | undefined;
+  lastModificationDate: Date | undefined;
+  sender: PmgUserModel;
+  isRead: number ;
+  reactionCounter: number ;
+  link:string|undefined
 }
 
 export class NotificationSummaryListModelWhitCursorAndContent{

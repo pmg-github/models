@@ -20,14 +20,14 @@ export declare class NotificationListModel {
     media: NotificationMediaListModel[] | undefined;
     topics: NotificationTopicModel[] | undefined;
 }
-export declare class NotificationSummaryListModel {
+export interface NotificationSummaryListModel {
     id: number | undefined;
     typeReference: string | undefined;
     typeName: string | undefined;
     title: string | undefined;
     text: string | undefined;
     lastModificationDate: Date | undefined;
-    sender: PmgUserModel | undefined;
+    sender: PmgUserModel;
     isRead: number;
     reactionCounter: number;
     link: string | undefined;
