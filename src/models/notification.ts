@@ -30,6 +30,7 @@ export class NotificationSummaryListModel {
   typeReference: string | undefined = undefined;
   typeName: string | undefined = undefined;
   title: string | undefined = undefined;
+  text: string | undefined = undefined;
   lastModificationDate: Date | undefined = undefined;
   sender: PmgUserModel | undefined = undefined;
   isRead: number = 0;

@@ -30,6 +30,7 @@ class NotificationSummaryListModel {
     typeReference = undefined;
     typeName = undefined;
     title = undefined;
+    text = undefined;
     lastModificationDate = undefined;
     sender = undefined;
     isRead = 0;
