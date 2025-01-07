@@ -120,7 +120,12 @@ import {
 
 import { PromptListModel } from "./models/prompt";
 
-import { UnpaidInvoicesListModel, PmgCompanyList, UnpaidInvoicesListModelWithCursor, UnpaidInvoicesStatsModel } from "./models/invoice";
+import {
+  UnpaidInvoicesListModel,
+  PmgCompanyList,
+  UnpaidInvoicesListModelWithCursor,
+  UnpaidInvoicesStatsModel,
+} from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuListModel } from "./models/bomenu";
 
@@ -160,6 +165,8 @@ import {
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
 } from "./models/support";
+
+import { FileUploadResponseModel } from "./models/files";
 
 export {
   UnpaidInvoicesStatsModel,
@@ -280,5 +287,6 @@ export {
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
   AgendaModel,
-  returnFileResponse
+  returnFileResponse,
+  FileUploadResponseModel,
 };
