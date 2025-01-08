@@ -67,7 +67,6 @@ export class SymposiumPostCreateRequest {
 
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => SymposiumPostMultiLanguageField)
   multiLanguageFields!: SymposiumPostMultiLanguageField[];
 
   @IsOptional()
