@@ -4,11 +4,13 @@ import {
   IsNotEmpty,
   IsNumber,
   IsNumberString,
+  IsOptional,
   Length,
   MaxLength,
   ValidateNested,
 } from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
+import { Type } from "class-transformer";
 
 export interface SymposiumUserTypeViewModel extends SelectOptionViewModel {}
 export interface SymposiumSearchTypeViewModel extends SelectOptionViewModel {}
@@ -57,23 +59,21 @@ export class SymposiumPostCreateRequest {
   @IsNumberString()
   klnr!: string;
 
-  @IsNotEmpty()
   @IsNumber()
   searchTypeId!: number;
 
-  @IsNotEmpty()
   @IsArray()
   categoryIds!: number[];
 
-  @IsNotEmpty()
   @IsArray()
   @ValidateNested({ each: true })
+  @Type(() => SymposiumPostMultiLanguageField)
   multiLanguageFields!: SymposiumPostMultiLanguageField[];
 
+  @IsOptional()
   @IsNumber()
-  fileId!: number;
+  fileId: number | undefined;
 
-  @IsNotEmpty()
   @IsNumber()
   addressId!: number;
 

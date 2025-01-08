@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SymposiumPostSaveRequest = exports.SymposiumPostMultiLanguageField = exports.SymposiumPostCreateRequest = void 0;
 const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
 class SymposiumPostCreateRequest {
     klnr;
     searchTypeId;
@@ -34,27 +35,25 @@ __decorate([
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "klnr", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], SymposiumPostCreateRequest.prototype, "searchTypeId", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsArray)(),
     __metadata("design:type", Array)
 ], SymposiumPostCreateRequest.prototype, "categoryIds", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => SymposiumPostMultiLanguageField),
     __metadata("design:type", Array)
 ], SymposiumPostCreateRequest.prototype, "multiLanguageFields", void 0);
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
+    __metadata("design:type", Object)
 ], SymposiumPostCreateRequest.prototype, "fileId", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], SymposiumPostCreateRequest.prototype, "addressId", void 0);
