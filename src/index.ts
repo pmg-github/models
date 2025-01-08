@@ -67,6 +67,9 @@ import {
   SymposiumContactInfoViewModel,
   SymposiumFilterViewModel,
   SymposiumFilterOptionViewModel,
+  SymposiumPostCreateRequest,
+  SymposiumPostMultiLanguageField,
+  SymposiumPostSaveRequest,
 } from "./models/symposium";
 
 import {
@@ -214,6 +217,9 @@ export {
   SymposiumPostViewModel,
   SymposiumFilterViewModel,
   SymposiumFilterOptionViewModel,
+  SymposiumPostCreateRequest,
+  SymposiumPostSaveRequest,
+  SymposiumPostMultiLanguageField,
   NewsletterContentType,
   NewsletterProjectModel,
   NewsletterModel,

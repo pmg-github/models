@@ -36,3 +36,25 @@ export interface SymposiumFilterOptionViewModel {
     id: number;
     name: string;
 }
+export declare class SymposiumPostCreateRequest {
+    klnr: string;
+    searchTypeId: number;
+    categoryIds: number[];
+    multiLanguageFields: SymposiumPostMultiLanguageField[];
+    fileId: number;
+    addressId: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    wesbite: string;
+    isLive: boolean;
+}
+export declare class SymposiumPostMultiLanguageField {
+    language: string;
+    title: string;
+    description: string;
+}
+export declare class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
+    id: number;
+}

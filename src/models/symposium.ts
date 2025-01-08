@@ -1,3 +1,13 @@
+import {
+  IsArray,
+  IsBoolean,
+  IsNotEmpty,
+  IsNumber,
+  IsNumberString,
+  Length,
+  MaxLength,
+  ValidateNested,
+} from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
 
 export interface SymposiumUserTypeViewModel extends SelectOptionViewModel {}
@@ -39,4 +49,75 @@ export interface SymposiumFilterViewModel {
 export interface SymposiumFilterOptionViewModel {
   id: number;
   name: string;
+}
+
+export class SymposiumPostCreateRequest {
+  @IsNotEmpty()
+  @Length(8, 8)
+  @IsNumberString()
+  klnr!: string;
+
+  @IsNotEmpty()
+  @IsNumber()
+  searchTypeId!: number;
+
+  @IsNotEmpty()
+  @IsArray()
+  categoryIds!: number[];
+
+  @IsNotEmpty()
+  @IsArray()
+  @ValidateNested({ each: true })
+  multiLanguageFields!: SymposiumPostMultiLanguageField[];
+
+  @IsNumber()
+  fileId!: number;
+
+  @IsNotEmpty()
+  @IsNumber()
+  addressId!: number;
+
+  // Contactinfo
+  @IsNotEmpty()
+  @MaxLength(50)
+  firstName!: string;
+
+  @IsNotEmpty()
+  @MaxLength(50)
+  lastName!: string;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  email!: string;
+
+  @IsNotEmpty()
+  @MaxLength(20)
+  phone!: string;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  wesbite!: string;
+
+  @IsBoolean()
+  isLive!: boolean;
+}
+
+export class SymposiumPostMultiLanguageField {
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  title!: string;
+
+  @IsNotEmpty()
+  @MaxLength(5000)
+  description!: string;
+}
+
+export class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
+  @IsNotEmpty()
+  @IsNumber()
+  id!: number;
 }
