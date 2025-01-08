@@ -10,6 +10,7 @@ import {
   BoArticleStatus,
   BoArticleJobTask,
   BoArticleType,
+  bcArticleListModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -212,6 +213,7 @@ export {
   NewsletterModel,
   NewsletterContentModel,
   NewsletterQuicklinkModel,
+  bcArticleListModel,
   NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterNewsModel,

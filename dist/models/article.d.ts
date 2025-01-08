@@ -63,6 +63,19 @@ export interface BoArticleListModel {
     task?: BoArticleJobTask;
     portalDomain: string;
 }
+export interface bcArticleListModel {
+    id: number;
+    reference: string;
+    title: string;
+    availableFrom: Date;
+    availableUntil: Date;
+    portalDomain: string;
+    available: bcAvailableLanguage[];
+}
+export interface bcAvailableLanguage {
+    language: string;
+    Status: string;
+}
 export interface BoArticleType {
     id: number;
     name: string;
