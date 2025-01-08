@@ -68,6 +68,9 @@ import {
   SymposiumContactInfoViewModel,
   SymposiumFilterViewModel,
   SymposiumFilterOptionViewModel,
+  SymposiumPostCreateRequest,
+  SymposiumPostMultiLanguageField,
+  SymposiumPostSaveRequest,
 } from "./models/symposium";
 
 import {
@@ -121,7 +124,12 @@ import {
 
 import { PromptListModel } from "./models/prompt";
 
-import { UnpaidInvoicesListModel, PmgCompanyList, UnpaidInvoicesListModelWithCursor, UnpaidInvoicesStatsModel } from "./models/invoice";
+import {
+  UnpaidInvoicesListModel,
+  PmgCompanyList,
+  UnpaidInvoicesListModelWithCursor,
+  UnpaidInvoicesStatsModel,
+} from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuListModel } from "./models/bomenu";
 
@@ -161,6 +169,8 @@ import {
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
 } from "./models/support";
+
+import { FileUploadResponseModel } from "./models/files";
 
 export {
   UnpaidInvoicesStatsModel,
@@ -208,6 +218,9 @@ export {
   SymposiumPostViewModel,
   SymposiumFilterViewModel,
   SymposiumFilterOptionViewModel,
+  SymposiumPostCreateRequest,
+  SymposiumPostSaveRequest,
+  SymposiumPostMultiLanguageField,
   NewsletterContentType,
   NewsletterProjectModel,
   NewsletterModel,
@@ -282,5 +295,6 @@ export {
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
   AgendaModel,
-  returnFileResponse
+  returnFileResponse,
+  FileUploadResponseModel,
 };
