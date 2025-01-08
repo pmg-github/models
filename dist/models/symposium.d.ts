@@ -7,6 +7,9 @@ export interface SymposiumPostResultViewModel {
     id: number;
     title: string;
     imageUrl: string;
+    companyName: string;
+    companyReference: string;
+    city: string;
     tags: string[];
 }
 export interface SymposiumPostViewModel {
@@ -15,6 +18,9 @@ export interface SymposiumPostViewModel {
     description: string;
     imageUrl: string;
     addressId: number;
+    companyName: string;
+    companyReference: string;
+    city: string;
     tags: string[];
 }
 export interface SymposiumContactInfoViewModel {
