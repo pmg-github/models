@@ -1,6 +1,7 @@
 import {
   IsArray,
   IsBoolean,
+  IsDateString,
   IsNotEmpty,
   IsNumber,
   IsNumberString,
@@ -71,7 +72,7 @@ export class SymposiumPostCreateRequest {
   categoryIds!: number[];
 
   @IsArray()
-  @ValidateNested({ each: true })
+  @ValidateNested({ each: true }) // note: doesn't work since class isn't enfored; can use Type decorator but this requires an extra dependency in api project, otherwise this throws a build error
   multiLanguageFields!: SymposiumPostMultiLanguageField[];
 
   @IsOptional()
@@ -80,6 +81,13 @@ export class SymposiumPostCreateRequest {
 
   @IsNumber()
   addressId!: number;
+
+  @IsDateString()
+  @IsNotEmpty()
+  removeAfterDate!: string;
+
+  @IsBoolean()
+  isLive!: boolean;
 
   // Contactinfo
   @IsNotEmpty()
@@ -101,9 +109,6 @@ export class SymposiumPostCreateRequest {
   @IsNotEmpty()
   @MaxLength(255)
   website!: string;
-
-  @IsBoolean()
-  isLive!: boolean;
 }
 
 export class SymposiumPostMultiLanguageField {

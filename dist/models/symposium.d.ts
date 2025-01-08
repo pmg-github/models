@@ -48,12 +48,13 @@ export declare class SymposiumPostCreateRequest {
     multiLanguageFields: SymposiumPostMultiLanguageField[];
     fileId: number | undefined;
     addressId: number;
+    removeAfterDate: string;
+    isLive: boolean;
     firstName: string;
     lastName: string;
     email: string;
     phone: string;
     website: string;
-    isLive: boolean;
 }
 export declare class SymposiumPostMultiLanguageField {
     language: string;

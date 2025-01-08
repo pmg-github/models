@@ -18,13 +18,14 @@ class SymposiumPostCreateRequest {
     multiLanguageFields;
     fileId;
     addressId;
+    removeAfterDate;
+    isLive;
     // Contactinfo
     firstName;
     lastName;
     email;
     phone;
     website;
-    isLive;
 }
 exports.SymposiumPostCreateRequest = SymposiumPostCreateRequest;
 __decorate([
@@ -43,7 +44,8 @@ __decorate([
 ], SymposiumPostCreateRequest.prototype, "categoryIds", void 0);
 __decorate([
     (0, class_validator_1.IsArray)(),
-    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_validator_1.ValidateNested)({ each: true }) // note: doesn't work since class isn't enfored; can use Type decorator but this requires an extra dependency in api project, otherwise this throws a build error
+    ,
     __metadata("design:type", Array)
 ], SymposiumPostCreateRequest.prototype, "multiLanguageFields", void 0);
 __decorate([
@@ -55,6 +57,15 @@ __decorate([
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], SymposiumPostCreateRequest.prototype, "addressId", void 0);
+__decorate([
+    (0, class_validator_1.IsDateString)(),
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], SymposiumPostCreateRequest.prototype, "removeAfterDate", void 0);
+__decorate([
+    (0, class_validator_1.IsBoolean)(),
+    __metadata("design:type", Boolean)
+], SymposiumPostCreateRequest.prototype, "isLive", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MaxLength)(50),
@@ -80,10 +91,6 @@ __decorate([
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "website", void 0);
-__decorate([
-    (0, class_validator_1.IsBoolean)(),
-    __metadata("design:type", Boolean)
-], SymposiumPostCreateRequest.prototype, "isLive", void 0);
 class SymposiumPostMultiLanguageField {
     language;
     title;
