@@ -95,7 +95,7 @@ export class SymposiumPostCreateRequest {
 
   @IsNotEmpty()
   @MaxLength(255)
-  wesbite!: string;
+  website!: string;
 
   @IsBoolean()
   isLive!: boolean;

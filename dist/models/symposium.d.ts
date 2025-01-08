@@ -47,7 +47,7 @@ export declare class SymposiumPostCreateRequest {
     lastName: string;
     email: string;
     phone: string;
-    wesbite: string;
+    website: string;
     isLive: boolean;
 }
 export declare class SymposiumPostMultiLanguageField {

@@ -23,7 +23,7 @@ class SymposiumPostCreateRequest {
     lastName;
     email;
     phone;
-    wesbite;
+    website;
     isLive;
 }
 exports.SymposiumPostCreateRequest = SymposiumPostCreateRequest;
@@ -79,7 +79,7 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
-], SymposiumPostCreateRequest.prototype, "wesbite", void 0);
+], SymposiumPostCreateRequest.prototype, "website", void 0);
 __decorate([
     (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
