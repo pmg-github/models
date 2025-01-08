@@ -130,6 +130,7 @@ export interface bcArticleListModel {
 export interface bcAvailableLanguage {
   language: string;
   Status: string;
+  StatusId:number;
 }
 
 export interface BoArticleType {
