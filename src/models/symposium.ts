@@ -35,7 +35,6 @@ export interface SymposiumContactInfoViewModel {
   firstName: string;
   lastName: string;
   email: string;
-  mobile: string | null;
   phone: string | null;
   website: string | null;
   linkedin: string | null;
