@@ -1,6 +1,6 @@
 import { ViewerInteresseViewModel } from "./magazine";
 import { AddressViewModel } from "./address";
-import { PmgUserModel } from "./pmguser";
+import { PmgUserInterface } from "./pmguser";
 export declare class CompanyViewModel {
     reference: string | undefined;
     name: string | undefined;
@@ -16,7 +16,7 @@ export declare class CompanyViewModel {
     interesses: ViewerInteresseViewModel[] | undefined;
 }
 export interface BcCompanyViewModel extends CompanyViewModel {
-    contactPerson: PmgUserModel;
+    contactPerson: PmgUserInterface;
 }
 export declare class CompanyCornerDBModel {
     [key: string]: any;
