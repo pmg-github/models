@@ -17,8 +17,8 @@ export class CompanyViewModel {
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
 }
 
-export class BcCompanyViewModel extends CompanyViewModel{
-  contactPerson:PmgUserModel| undefined = undefined;
+export interface BcCompanyViewModel extends CompanyViewModel{
+  contactPerson:PmgUserModel;
 }
 
 export class CompanyCornerDBModel {

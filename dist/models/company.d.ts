@@ -15,8 +15,8 @@ export declare class CompanyViewModel {
     mainAddress: AddressViewModel | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;
 }
-export declare class BcCompanyViewModel extends CompanyViewModel {
-    contactPerson: PmgUserModel | undefined;
+export interface BcCompanyViewModel extends CompanyViewModel {
+    contactPerson: PmgUserModel;
 }
 export declare class CompanyCornerDBModel {
     [key: string]: any;
