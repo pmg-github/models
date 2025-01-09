@@ -18,6 +18,7 @@ export class AddressHelper {
 }
 
 export class AddressViewModel {
+  id: number | undefined = undefined;
   street: string | undefined = undefined;
   streetNumber: string | undefined = undefined;
   streetBoxNumber: string | undefined = undefined;

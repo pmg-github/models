@@ -22,6 +22,7 @@ class AddressHelper {
 }
 exports.AddressHelper = AddressHelper;
 class AddressViewModel {
+    id = undefined;
     street = undefined;
     streetNumber = undefined;
     streetBoxNumber = undefined;

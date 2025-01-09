@@ -2,6 +2,7 @@ export declare class AddressHelper {
     static cleanVat(vatNumber: string): string;
 }
 export declare class AddressViewModel {
+    id: number | undefined;
     street: string | undefined;
     streetNumber: string | undefined;
     streetBoxNumber: string | undefined;
