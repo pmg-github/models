@@ -1,5 +1,6 @@
 import { ViewerInteresseViewModel } from "./magazine";
 import { AddressViewModel } from "./address";
+import { PmgUserModel } from "./pmguser";
 
 export class CompanyViewModel {
   reference: string | undefined = undefined;
@@ -14,6 +15,10 @@ export class CompanyViewModel {
   mainAddressID: number | undefined = undefined;
   mainAddress: AddressViewModel | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
+}
+
+export class BcCompanyViewModel extends CompanyViewModel{
+  contactPerson:PmgUserModel| undefined = undefined;
 }
 
 export class CompanyCornerDBModel {

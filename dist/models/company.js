@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = void 0;
+exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.BcCompanyViewModel = exports.CompanyViewModel = void 0;
 class CompanyViewModel {
     reference = undefined;
     name = undefined;
@@ -16,6 +16,10 @@ class CompanyViewModel {
     interesses = undefined;
 }
 exports.CompanyViewModel = CompanyViewModel;
+class BcCompanyViewModel extends CompanyViewModel {
+    contactPerson = undefined;
+}
+exports.BcCompanyViewModel = BcCompanyViewModel;
 class CompanyCornerDBModel {
     ID = undefined;
     Reference = undefined;

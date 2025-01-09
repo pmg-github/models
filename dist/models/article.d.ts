@@ -71,7 +71,6 @@ export interface bcArticleListModel {
     availableUntil: Date;
     portalDomain: string;
     available: bcAvailableLanguage[];
-    contactPerson: PmgUserModel;
 }
 export interface bcAvailableLanguage {
     language: string;

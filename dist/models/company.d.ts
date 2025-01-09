@@ -1,5 +1,6 @@
 import { ViewerInteresseViewModel } from "./magazine";
 import { AddressViewModel } from "./address";
+import { PmgUserModel } from "./pmguser";
 export declare class CompanyViewModel {
     reference: string | undefined;
     name: string | undefined;
@@ -13,6 +14,9 @@ export declare class CompanyViewModel {
     mainAddressID: number | undefined;
     mainAddress: AddressViewModel | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;
+}
+export declare class BcCompanyViewModel extends CompanyViewModel {
+    contactPerson: PmgUserModel | undefined;
 }
 export declare class CompanyCornerDBModel {
     [key: string]: any;
