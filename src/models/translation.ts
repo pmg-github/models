@@ -1,4 +1,22 @@
-import { IsNotEmpty, Length, ValidateIf } from "class-validator";
+import { IsNotEmpty, Length, MaxLength, ValidateIf } from "class-validator";
+
+export class DeeplTranslationRequest {
+  @IsNotEmpty()
+  @MaxLength(5000) // for now limit this to 5000 characters at once!!!
+  text!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  sourceLang!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  targetLang!: string;
+
+  constructor(data: Partial<DeeplTranslationRequest>) {
+    Object.assign(this, data);
+  }
+}
 
 export class TranslationSaveRequest {
   @IsNotEmpty()

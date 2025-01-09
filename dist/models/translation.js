@@ -9,8 +9,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TranslationSaveRequest = void 0;
+exports.TranslationSaveRequest = exports.DeeplTranslationRequest = void 0;
 const class_validator_1 = require("class-validator");
+class DeeplTranslationRequest {
+    text;
+    sourceLang;
+    targetLang;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.DeeplTranslationRequest = DeeplTranslationRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(5000) // for now limit this to 5000 characters at once!!!
+    ,
+    __metadata("design:type", String)
+], DeeplTranslationRequest.prototype, "text", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], DeeplTranslationRequest.prototype, "sourceLang", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], DeeplTranslationRequest.prototype, "targetLang", void 0);
 class TranslationSaveRequest {
     appId;
     key;

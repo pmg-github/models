@@ -140,7 +140,10 @@ import { PortalViewModel } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
 
-import { TranslationSaveRequest } from "./models/translation";
+import {
+  DeeplTranslationRequest,
+  TranslationSaveRequest,
+} from "./models/translation";
 
 import { StatsPostModel } from "./models/stats";
 
@@ -269,6 +272,7 @@ export {
   PortalViewModel,
   CampagneViewModel,
   CampagneItemViewModel,
+  DeeplTranslationRequest,
   TranslationSaveRequest,
   StatsPostModel,
   InterestViewModel,
