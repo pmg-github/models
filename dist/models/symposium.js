@@ -26,6 +26,9 @@ class SymposiumPostCreateRequest {
     email;
     phone;
     website;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.SymposiumPostCreateRequest = SymposiumPostCreateRequest;
 __decorate([
@@ -95,6 +98,9 @@ class SymposiumPostMultiLanguageField {
     language;
     title;
     description;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.SymposiumPostMultiLanguageField = SymposiumPostMultiLanguageField;
 __decorate([
@@ -114,6 +120,10 @@ __decorate([
 ], SymposiumPostMultiLanguageField.prototype, "description", void 0);
 class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
     id;
+    constructor(data) {
+        super(data);
+        Object.assign(this, data);
+    }
 }
 exports.SymposiumPostSaveRequest = SymposiumPostSaveRequest;
 __decorate([

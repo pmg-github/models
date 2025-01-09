@@ -109,6 +109,10 @@ export class SymposiumPostCreateRequest {
   @IsNotEmpty()
   @MaxLength(255)
   website!: string;
+
+  constructor(data: Partial<SymposiumPostCreateRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class SymposiumPostMultiLanguageField {
@@ -123,10 +127,19 @@ export class SymposiumPostMultiLanguageField {
   @IsNotEmpty()
   @MaxLength(5000)
   description!: string;
+
+  constructor(data: Partial<SymposiumPostMultiLanguageField>) {
+    Object.assign(this, data);
+  }
 }
 
 export class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
   @IsNotEmpty()
   @IsNumber()
   id!: number;
+
+  constructor(data: Partial<SymposiumPostSaveRequest>) {
+    super(data);
+    Object.assign(this, data);
+  }
 }

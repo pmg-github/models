@@ -55,12 +55,15 @@ export declare class SymposiumPostCreateRequest {
     email: string;
     phone: string;
     website: string;
+    constructor(data: Partial<SymposiumPostCreateRequest>);
 }
 export declare class SymposiumPostMultiLanguageField {
     language: string;
     title: string;
     description: string;
+    constructor(data: Partial<SymposiumPostMultiLanguageField>);
 }
 export declare class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
     id: number;
+    constructor(data: Partial<SymposiumPostSaveRequest>);
 }
