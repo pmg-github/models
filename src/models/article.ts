@@ -127,6 +127,23 @@ export interface bcArticleListModel {
   portalDomain: string;
   available:bcAvailableLanguage[];
 }
+export interface BcArticleDetailModel {
+  id: number;
+  reference: string;
+  languageCode:string;
+  statusId:number;
+  title: string;
+  file:string;
+  text:string
+  availableFrom: Date;
+  availableUntil: Date
+  intresses:intresses[]
+}
+interface intresses{
+  interesse:string;
+  interesseNl:string;
+  interesseFr:string
+}
 export interface bcAvailableLanguage {
   language: string;
   Status: string;

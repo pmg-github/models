@@ -11,6 +11,7 @@ import {
   BoArticleJobTask,
   BoArticleType,
   bcArticleListModel,
+  BcArticleDetailModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -187,6 +188,7 @@ export {
   BoArticleListModel,
   BoArticleStatus,
   BoArticleJobTask,
+  BcArticleDetailModel,
   BoArticleType,
   MagazineTileViewModel,
   MagazineArticleViewModel,
