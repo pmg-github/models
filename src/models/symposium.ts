@@ -1,4 +1,5 @@
 import {
+  ArrayMinSize,
   IsArray,
   IsBoolean,
   IsDateString,
@@ -69,6 +70,7 @@ export class SymposiumPostCreateRequest {
   searchTypeId!: number;
 
   @IsArray()
+  @ArrayMinSize(1)
   categoryIds!: number[];
 
   @IsArray()
@@ -102,11 +104,11 @@ export class SymposiumPostCreateRequest {
   @MaxLength(255)
   email!: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(20)
   phone!: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   website!: string;
 

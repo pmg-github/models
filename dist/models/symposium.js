@@ -43,6 +43,7 @@ __decorate([
 ], SymposiumPostCreateRequest.prototype, "searchTypeId", void 0);
 __decorate([
     (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ArrayMinSize)(1),
     __metadata("design:type", Array)
 ], SymposiumPostCreateRequest.prototype, "categoryIds", void 0);
 __decorate([
@@ -85,12 +86,12 @@ __decorate([
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "email", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "phone", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "website", void 0);
