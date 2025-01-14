@@ -64,6 +64,7 @@ import { SelectOptionViewModel } from "./models/selectoption";
 import {
   SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
+  SymposiumPostBaseViewModel,
   SymposiumPostResultViewModel,
   SymposiumPostViewModel,
   SymposiumContactInfoViewModel,
@@ -218,6 +219,7 @@ export {
   SelectOptionViewModel,
   SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
+  SymposiumPostBaseViewModel,
   SymposiumPostResultViewModel,
   SymposiumContactInfoViewModel,
   SymposiumPostViewModel,

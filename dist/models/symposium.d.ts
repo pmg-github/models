@@ -3,25 +3,21 @@ export interface SymposiumUserTypeViewModel extends SelectOptionViewModel {
 }
 export interface SymposiumSearchTypeViewModel extends SelectOptionViewModel {
 }
-export interface SymposiumPostResultViewModel {
+export interface SymposiumPostBaseViewModel {
     id: number;
     title: string;
     imageUrl: string;
     companyName: string;
     companyReference: string;
+    searchType: string;
     city: string;
     tags: string[];
 }
-export interface SymposiumPostViewModel {
-    id: number;
-    title: string;
+export interface SymposiumPostResultViewModel extends SymposiumPostBaseViewModel {
+}
+export interface SymposiumPostViewModel extends SymposiumPostBaseViewModel {
     description: string;
-    imageUrl: string;
     addressId: number;
-    companyName: string;
-    companyReference: string;
-    city: string;
-    tags: string[];
 }
 export interface SymposiumContactInfoViewModel {
     firstName: string;
