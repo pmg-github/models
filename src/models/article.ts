@@ -132,6 +132,7 @@ export interface BcArticleDetailModel {
   reference: string;
   languageCode:string;
   statusId:number;
+  status:string;
   title: string;
   file:string;
   text:string
