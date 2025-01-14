@@ -26,6 +26,9 @@ class SymposiumPostCreateRequest {
     email;
     phone;
     website;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.SymposiumPostCreateRequest = SymposiumPostCreateRequest;
 __decorate([
@@ -40,6 +43,7 @@ __decorate([
 ], SymposiumPostCreateRequest.prototype, "searchTypeId", void 0);
 __decorate([
     (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ArrayMinSize)(1),
     __metadata("design:type", Array)
 ], SymposiumPostCreateRequest.prototype, "categoryIds", void 0);
 __decorate([
@@ -82,12 +86,12 @@ __decorate([
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "email", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(20),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "phone", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "website", void 0);
@@ -95,6 +99,9 @@ class SymposiumPostMultiLanguageField {
     language;
     title;
     description;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.SymposiumPostMultiLanguageField = SymposiumPostMultiLanguageField;
 __decorate([
@@ -114,6 +121,10 @@ __decorate([
 ], SymposiumPostMultiLanguageField.prototype, "description", void 0);
 class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
     id;
+    constructor(data) {
+        super(data);
+        Object.assign(this, data);
+    }
 }
 exports.SymposiumPostSaveRequest = SymposiumPostSaveRequest;
 __decorate([

@@ -1,4 +1,5 @@
 import {
+  ArrayMinSize,
   IsArray,
   IsBoolean,
   IsDateString,
@@ -11,31 +12,27 @@ import {
   ValidateNested,
 } from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
-import { Type } from "class-transformer";
 
 export interface SymposiumUserTypeViewModel extends SelectOptionViewModel {}
 export interface SymposiumSearchTypeViewModel extends SelectOptionViewModel {}
 
-export interface SymposiumPostResultViewModel {
+export interface SymposiumPostBaseViewModel {
   id: number;
   title: string;
   imageUrl: string;
   companyName: string;
   companyReference: string;
+  searchType: string;
   city: string;
-  tags: string[];
+  tags: string[]; // categories for now
 }
 
-export interface SymposiumPostViewModel {
-  id: number;
-  title: string;
+export interface SymposiumPostResultViewModel
+  extends SymposiumPostBaseViewModel {}
+
+export interface SymposiumPostViewModel extends SymposiumPostBaseViewModel {
   description: string;
-  imageUrl: string;
   addressId: number;
-  companyName: string;
-  companyReference: string;
-  city: string;
-  tags: string[];
 }
 
 export interface SymposiumContactInfoViewModel {
@@ -69,6 +66,7 @@ export class SymposiumPostCreateRequest {
   searchTypeId!: number;
 
   @IsArray()
+  @ArrayMinSize(1)
   categoryIds!: number[];
 
   @IsArray()
@@ -102,13 +100,17 @@ export class SymposiumPostCreateRequest {
   @MaxLength(255)
   email!: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(20)
   phone!: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   website!: string;
+
+  constructor(data: Partial<SymposiumPostCreateRequest>) {
+    Object.assign(this, data);
+  }
 }
 
 export class SymposiumPostMultiLanguageField {
@@ -123,10 +125,19 @@ export class SymposiumPostMultiLanguageField {
   @IsNotEmpty()
   @MaxLength(5000)
   description!: string;
+
+  constructor(data: Partial<SymposiumPostMultiLanguageField>) {
+    Object.assign(this, data);
+  }
 }
 
 export class SymposiumPostSaveRequest extends SymposiumPostCreateRequest {
   @IsNotEmpty()
   @IsNumber()
   id!: number;
+
+  constructor(data: Partial<SymposiumPostSaveRequest>) {
+    super(data);
+    Object.assign(this, data);
+  }
 }
