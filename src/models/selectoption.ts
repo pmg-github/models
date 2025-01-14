@@ -4,4 +4,7 @@ export interface SelectOptionViewModel {
   value: number | string;
 }
 
-export interface SelectOptionDescriptionViewModel extends SelectOptionViewModel{ description:string}
+export interface SelectOptionDescriptionViewModel
+  extends SelectOptionViewModel {
+  description?: string;
+}
