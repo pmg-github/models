@@ -25,6 +25,7 @@ export interface SymposiumPostBaseViewModel {
   searchType: string;
   city: string;
   tags: string[]; // categories for now
+  removeAfterDate: Date | string | null;
 }
 
 export interface SymposiumPostResultViewModel
