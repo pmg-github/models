@@ -59,7 +59,7 @@ import {
 
 import { ContextViewModel } from "./models/context";
 
-import { SelectOptionViewModel } from "./models/selectoption";
+import { SelectOptionDescriptionViewModel, SelectOptionViewModel } from "./models/selectoption";
 
 import {
   SymposiumSearchTypeViewModel,
@@ -217,6 +217,7 @@ export {
   AddressViewModel,
   AddressContactCreateRequest,
   SelectOptionViewModel,
+  SelectOptionDescriptionViewModel,
   SymposiumSearchTypeViewModel,
   SymposiumUserTypeViewModel,
   SymposiumPostBaseViewModel,
