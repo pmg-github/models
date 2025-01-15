@@ -130,6 +130,7 @@ export interface bcArticleListModel {
 export interface BcArticleDetailModel {
   id: number;
   reference: string;
+  jobCode: string;
   languageCode:string;
   statusId:number;
   status:string;
