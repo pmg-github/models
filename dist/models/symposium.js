@@ -55,7 +55,7 @@ __decorate([
 ], SymposiumPostCreateRequest.prototype, "multiLanguageFields", void 0);
 __decorate([
     (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Object)
+    __metadata("design:type", Number)
 ], SymposiumPostCreateRequest.prototype, "fileId", void 0);
 __decorate([
     (0, class_validator_1.IsBoolean)(),
@@ -64,7 +64,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.ValidateIf)((item) => item.hasAddress),
     (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
+    __metadata("design:type", Object)
 ], SymposiumPostCreateRequest.prototype, "addressId", void 0);
 __decorate([
     (0, class_validator_1.IsDateString)(),

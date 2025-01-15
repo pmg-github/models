@@ -77,14 +77,14 @@ export class SymposiumPostCreateRequest {
   multiLanguageFields!: SymposiumPostMultiLanguageField[];
 
   @IsNumber()
-  fileId: number | undefined;
+  fileId!: number;
 
   @IsBoolean()
   hasAddress!: boolean;
 
   @ValidateIf((item) => item.hasAddress)
   @IsNumber()
-  addressId!: number;
+  addressId: number | undefined;
 
   @IsDateString()
   @IsNotEmpty()
