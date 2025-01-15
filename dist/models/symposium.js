@@ -17,6 +17,7 @@ class SymposiumPostCreateRequest {
     categoryIds;
     multiLanguageFields;
     fileId;
+    hasAddress;
     addressId;
     removeAfterDate;
     isLive;
@@ -53,13 +54,17 @@ __decorate([
     __metadata("design:type", Array)
 ], SymposiumPostCreateRequest.prototype, "multiLanguageFields", void 0);
 __decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Object)
-], SymposiumPostCreateRequest.prototype, "fileId", void 0);
-__decorate([
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
+], SymposiumPostCreateRequest.prototype, "fileId", void 0);
+__decorate([
+    (0, class_validator_1.IsBoolean)(),
+    __metadata("design:type", Boolean)
+], SymposiumPostCreateRequest.prototype, "hasAddress", void 0);
+__decorate([
+    (0, class_validator_1.ValidateIf)((item) => item.hasAddress),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Object)
 ], SymposiumPostCreateRequest.prototype, "addressId", void 0);
 __decorate([
     (0, class_validator_1.IsDateString)(),

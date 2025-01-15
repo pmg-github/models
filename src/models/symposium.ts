@@ -9,6 +9,7 @@ import {
   IsOptional,
   Length,
   MaxLength,
+  ValidateIf,
   ValidateNested,
 } from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
@@ -75,12 +76,15 @@ export class SymposiumPostCreateRequest {
   @ValidateNested({ each: true }) // note: doesn't work since class isn't enfored; can use Type decorator but this requires an extra dependency in api project, otherwise this throws a build error
   multiLanguageFields!: SymposiumPostMultiLanguageField[];
 
-  @IsOptional()
   @IsNumber()
-  fileId: number | undefined;
+  fileId!: number;
 
+  @IsBoolean()
+  hasAddress!: boolean;
+
+  @ValidateIf((item) => item.hasAddress)
   @IsNumber()
-  addressId!: number;
+  addressId: number | undefined;
 
   @IsDateString()
   @IsNotEmpty()
