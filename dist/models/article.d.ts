@@ -81,8 +81,8 @@ export interface BcArticleDetailModel {
     title: string;
     file: string;
     text: string;
-    availableFrom: Date;
-    availableUntil: Date;
+    availableFrom?: Date;
+    availableUntil?: Date;
     intresses: intresses[];
 }
 interface intresses {
