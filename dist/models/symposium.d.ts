@@ -12,6 +12,8 @@ export interface SymposiumPostBaseViewModel {
     searchType: string;
     city: string;
     tags: string[];
+    removeAfterDate: Date | string | null;
+    isLive: boolean | number;
 }
 export interface SymposiumPostResultViewModel extends SymposiumPostBaseViewModel {
 }
