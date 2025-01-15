@@ -45,6 +45,7 @@ export declare class SymposiumPostCreateRequest {
     categoryIds: number[];
     multiLanguageFields: SymposiumPostMultiLanguageField[];
     fileId: number | undefined;
+    hasAddress: boolean;
     addressId: number;
     removeAfterDate: string;
     isLive: boolean;
