@@ -23,6 +23,7 @@ export interface SymposiumPostBaseViewModel {
   imageUrl: string;
   companyName: string;
   companyReference: string;
+  userType: string;
   searchType: string;
   city: string;
   tags: string[];
@@ -64,6 +65,9 @@ export class SymposiumPostCreateRequest {
   @Length(8, 8)
   @IsNumberString()
   klnr!: string;
+
+  @IsNumber()
+  userTypeId!: number;
 
   @IsNumber()
   searchTypeId!: number;

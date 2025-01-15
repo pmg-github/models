@@ -9,6 +9,7 @@ export interface SymposiumPostBaseViewModel {
     imageUrl: string;
     companyName: string;
     companyReference: string;
+    userType: string;
     searchType: string;
     city: string;
     tags: string[];
@@ -41,6 +42,7 @@ export interface SymposiumFilterOptionViewModel {
 }
 export declare class SymposiumPostCreateRequest {
     klnr: string;
+    userTypeId: number;
     searchTypeId: number;
     categoryIds: number[];
     multiLanguageFields: SymposiumPostMultiLanguageField[];
