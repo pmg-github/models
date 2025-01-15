@@ -87,7 +87,7 @@ export class SymposiumPostCreateRequest {
   addressId: number | undefined;
 
   @IsDateString()
-  @IsNotEmpty()
+  @IsOptional()
   removeAfterDate!: string;
 
   @IsBoolean()

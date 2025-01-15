@@ -68,7 +68,7 @@ __decorate([
 ], SymposiumPostCreateRequest.prototype, "addressId", void 0);
 __decorate([
     (0, class_validator_1.IsDateString)(),
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "removeAfterDate", void 0);
 __decorate([
