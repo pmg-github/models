@@ -24,8 +24,9 @@ export interface SymposiumPostBaseViewModel {
   companyReference: string;
   searchType: string;
   city: string;
-  tags: string[]; // categories for now
+  tags: string[];
   removeAfterDate: Date | string | null;
+  isLive: boolean | number;
 }
 
 export interface SymposiumPostResultViewModel
