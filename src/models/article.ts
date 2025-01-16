@@ -141,7 +141,7 @@ export interface BcArticleDetailModel {
   availableUntil?: Date;
 }
 export interface BcArticleDetailIntressesModel {
-  Article: BcArticleDetailModel[];
+  articles: BcArticleDetailModel[];
   intresses: intresses[];
 }
 interface intresses {
