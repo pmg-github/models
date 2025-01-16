@@ -60,6 +60,31 @@ export interface SymposiumFilterOptionViewModel {
   name: string;
 }
 
+export interface SymposiumPostEditModel {
+  id: number;
+  customerReference: string;
+  firma: SelectOptionViewModel;
+  userTypeId: number;
+  searchTypeId: number;
+  categoryIds: number[];
+  multiLanguageFields: SymposiumPostMultiLanguageField[]; // for now try using this class instead of a new interace?
+  fileId: number;
+  fileUrl: string;
+  addressId: number | null;
+  removeAfterDate: Date | string | null;
+  isLive: boolean | number;
+
+  // Contactinfo
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string | null;
+  website: string | null;
+  // unused for now
+  facebook: string | null;
+  linkedIn: string | null;
+}
+
 export class SymposiumPostCreateRequest {
   @IsNotEmpty()
   @Length(8, 8)
@@ -92,7 +117,7 @@ export class SymposiumPostCreateRequest {
 
   @IsDateString()
   @IsOptional()
-  removeAfterDate!: string;
+  removeAfterDate: string | undefined | null;
 
   @IsBoolean()
   isLive!: boolean;

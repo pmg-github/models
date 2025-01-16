@@ -74,7 +74,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsDateString)(),
     (0, class_validator_1.IsOptional)(),
-    __metadata("design:type", String)
+    __metadata("design:type", Object)
 ], SymposiumPostCreateRequest.prototype, "removeAfterDate", void 0);
 __decorate([
     (0, class_validator_1.IsBoolean)(),
