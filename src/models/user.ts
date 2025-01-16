@@ -1,4 +1,10 @@
-import { IsEmail, IsNotEmpty, Length, MaxLength } from "class-validator";
+import {
+  IsEmail,
+  IsNotEmpty,
+  IsOptional,
+  Length,
+  MaxLength,
+} from "class-validator";
 
 export class UserViewModel {
   id: number; // = ContactID
@@ -69,7 +75,7 @@ export class ContactCreateModel {
   @MaxLength(40)
   lastName!: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(36)
   phone!: string;
 
@@ -92,7 +98,7 @@ export class ContactUpdateRequest {
   @MaxLength(40)
   lastName!: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(36)
   phone!: string;
 

@@ -76,7 +76,7 @@ __decorate([
     __metadata("design:type", String)
 ], ContactCreateModel.prototype, "lastName", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactCreateModel.prototype, "phone", void 0);
@@ -106,7 +106,7 @@ __decorate([
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "lastName", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "phone", void 0);
