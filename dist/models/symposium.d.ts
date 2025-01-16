@@ -43,6 +43,7 @@ export interface SymposiumFilterOptionViewModel {
 export interface SymposiumPostEditModel {
     id: number;
     customerReference: string;
+    firma: SelectOptionViewModel;
     userTypeId: number;
     searchTypeId: number;
     categoryIds: number[];
