@@ -70,7 +70,7 @@ export declare class SymposiumPostCreateRequest {
     fileId: number;
     hasAddress: boolean;
     addressId: number | undefined;
-    removeAfterDate: string;
+    removeAfterDate: string | undefined | null;
     isLive: boolean;
     firstName: string;
     lastName: string;

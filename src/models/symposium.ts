@@ -117,7 +117,7 @@ export class SymposiumPostCreateRequest {
 
   @IsDateString()
   @IsOptional()
-  removeAfterDate!: string;
+  removeAfterDate: string | undefined | null;
 
   @IsBoolean()
   isLive!: boolean;
