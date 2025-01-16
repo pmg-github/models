@@ -40,6 +40,26 @@ export interface SymposiumFilterOptionViewModel {
     id: number;
     name: string;
 }
+export interface SymposiumPostEditModel {
+    id: number;
+    customerReference: string;
+    userTypeId: number;
+    searchTypeId: number;
+    categoryIds: number[];
+    multiLanguageFields: SymposiumPostMultiLanguageField[];
+    fileId: number;
+    fileUrl: string;
+    addressId: number | null;
+    removeAfterDate: Date | string | null;
+    isLive: boolean | number;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string | null;
+    website: string | null;
+    facebook: string | null;
+    linkedIn: string | null;
+}
 export declare class SymposiumPostCreateRequest {
     klnr: string;
     userTypeId: number;
