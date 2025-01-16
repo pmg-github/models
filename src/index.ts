@@ -12,6 +12,7 @@ import {
   BoArticleType,
   bcArticleListModel,
   BcArticleDetailModel,
+  BcArticleDetailIntressesModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -59,7 +60,10 @@ import {
 
 import { ContextViewModel } from "./models/context";
 
-import { SelectOptionDescriptionViewModel, SelectOptionViewModel } from "./models/selectoption";
+import {
+  SelectOptionDescriptionViewModel,
+  SelectOptionViewModel,
+} from "./models/selectoption";
 
 import {
   SymposiumSearchTypeViewModel,
@@ -216,6 +220,7 @@ export {
   AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
+  BcArticleDetailIntressesModel,
   SelectOptionViewModel,
   SelectOptionDescriptionViewModel,
   SymposiumSearchTypeViewModel,

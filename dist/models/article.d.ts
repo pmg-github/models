@@ -84,6 +84,9 @@ export interface BcArticleDetailModel {
     text: string;
     availableFrom?: Date;
     availableUntil?: Date;
+}
+export interface BcArticleDetailIntressesModel {
+    Article: BcArticleDetailModel[];
     intresses: intresses[];
 }
 interface intresses {

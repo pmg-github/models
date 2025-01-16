@@ -125,31 +125,34 @@ export interface bcArticleListModel {
   availableFrom: Date;
   availableUntil: Date;
   portalDomain: string;
-  available:bcAvailableLanguage[];
+  available: bcAvailableLanguage[];
 }
 export interface BcArticleDetailModel {
   id: number;
   reference: string;
   jobCode: string;
-  languageCode:string;
-  statusId:number;
-  status:string;
+  languageCode: string;
+  statusId: number;
+  status: string;
   title: string;
-  file:string;
-  text:string
+  file: string;
+  text: string;
   availableFrom?: Date;
-  availableUntil?: Date
-  intresses:intresses[]
+  availableUntil?: Date;
 }
-interface intresses{
-  interesse:string;
-  interesseNl:string;
-  interesseFr:string
+export interface BcArticleDetailIntressesModel {
+  Article: BcArticleDetailModel[];
+  intresses: intresses[];
+}
+interface intresses {
+  interesse: string;
+  interesseNl: string;
+  interesseFr: string;
 }
 export interface bcAvailableLanguage {
   language: string;
   Status: string;
-  StatusId:number;
+  StatusId: number;
 }
 
 export interface BoArticleType {
