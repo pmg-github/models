@@ -13,6 +13,7 @@ exports.SymposiumPostSaveRequest = exports.SymposiumPostMultiLanguageField = exp
 const class_validator_1 = require("class-validator");
 class SymposiumPostCreateRequest {
     klnr;
+    userTypeId;
     searchTypeId;
     categoryIds;
     multiLanguageFields;
@@ -38,6 +39,10 @@ __decorate([
     (0, class_validator_1.IsNumberString)(),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "klnr", void 0);
+__decorate([
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], SymposiumPostCreateRequest.prototype, "userTypeId", void 0);
 __decorate([
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
@@ -68,7 +73,7 @@ __decorate([
 ], SymposiumPostCreateRequest.prototype, "addressId", void 0);
 __decorate([
     (0, class_validator_1.IsDateString)(),
-    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], SymposiumPostCreateRequest.prototype, "removeAfterDate", void 0);
 __decorate([

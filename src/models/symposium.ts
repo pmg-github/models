@@ -23,6 +23,7 @@ export interface SymposiumPostBaseViewModel {
   imageUrl: string;
   companyName: string;
   companyReference: string;
+  userType: string;
   searchType: string;
   city: string;
   tags: string[];
@@ -66,6 +67,9 @@ export class SymposiumPostCreateRequest {
   klnr!: string;
 
   @IsNumber()
+  userTypeId!: number;
+
+  @IsNumber()
   searchTypeId!: number;
 
   @IsArray()
@@ -87,7 +91,7 @@ export class SymposiumPostCreateRequest {
   addressId: number | undefined;
 
   @IsDateString()
-  @IsNotEmpty()
+  @IsOptional()
   removeAfterDate!: string;
 
   @IsBoolean()
