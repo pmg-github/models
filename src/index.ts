@@ -80,6 +80,8 @@ import {
   SymposiumPostSaveRequest,
 } from "./models/symposium";
 
+import {rewriteMessage} from "./models/ai"
+
 import {
   NewsletterContentType,
   NewsletterProjectModel,
@@ -237,6 +239,7 @@ export {
   SymposiumPostSaveRequest,
   SymposiumPostMultiLanguageField,
   NewsletterContentType,
+  rewriteMessage,
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterContentModel,
