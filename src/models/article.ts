@@ -144,6 +144,14 @@ export interface BcArticleDetailIntressesModel {
   articles: BcArticleDetailModel[];
   intresses: intresses[];
 }
+
+export interface BcArticleIntresseReachModel{
+  AudienceAmount:number;
+  AudienceName:string;
+  PortalCode:string;
+  id:string;
+  name:string;
+}
 interface intresses {
   interesse: string;
   interesseNl: string;

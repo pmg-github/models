@@ -13,6 +13,7 @@ import {
   bcArticleListModel,
   BcArticleDetailModel,
   BcArticleDetailIntressesModel,
+  BcArticleIntresseReachModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -80,7 +81,7 @@ import {
   SymposiumPostSaveRequest,
 } from "./models/symposium";
 
-import {rewriteMessage} from "./models/ai"
+import { rewriteMessage } from "./models/ai";
 
 import {
   NewsletterContentType,
@@ -245,6 +246,7 @@ export {
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   bcArticleListModel,
+  BcArticleIntresseReachModel,
   NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterNewsModel,
