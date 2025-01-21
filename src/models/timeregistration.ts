@@ -1,4 +1,4 @@
-import { IsDateString, IsNotEmpty, IsNumber, IsOptional, IsTimeZone, MaxLength } from "class-validator";
+import { IsDateString, IsMilitaryTime, IsNotEmpty, IsNumber, IsOptional, IsTimeZone, MaxLength } from "class-validator";
 
 export interface TimeRegistrationViewModel {
     status: TimeRegistrationStatusEnum
@@ -24,9 +24,9 @@ export class TimeRegistrationRecordCreateRequest {
     date!: string
 
     @IsNotEmpty()
-    @IsTimeZone()
+    @IsMilitaryTime()
     time!: string
-    
+
     @IsNotEmpty()
     @IsNumber()
     functionId!: number
