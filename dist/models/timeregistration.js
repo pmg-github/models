@@ -33,7 +33,7 @@ __decorate([
 ], TimeRegistrationRecordCreateRequest.prototype, "date", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsTimeZone)(),
+    (0, class_validator_1.IsMilitaryTime)(),
     __metadata("design:type", String)
 ], TimeRegistrationRecordCreateRequest.prototype, "time", void 0);
 __decorate([
