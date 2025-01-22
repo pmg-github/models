@@ -138,6 +138,9 @@ export class NewsletterIntroSaveRequest {
   @IsNotEmpty()
   introDescription!: string;
 
+  @IsNotEmpty()
+  fileId!: number;
+
   // optional
   @ValidateIf((o) => o.introName != undefined)
   @MaxLength(255)

@@ -79,6 +79,7 @@ class NewsletterIntroSaveRequest {
     id;
     introTitle;
     introDescription;
+    fileId;
     // optional
     introName;
     introFunction;
@@ -100,6 +101,10 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], NewsletterIntroSaveRequest.prototype, "introDescription", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], NewsletterIntroSaveRequest.prototype, "fileId", void 0);
 __decorate([
     (0, class_validator_1.ValidateIf)((o) => o.introName != undefined),
     (0, class_validator_1.MaxLength)(255),

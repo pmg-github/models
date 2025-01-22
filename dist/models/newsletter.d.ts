@@ -105,6 +105,7 @@ export declare class NewsletterIntroSaveRequest {
     id: number;
     introTitle: string;
     introDescription: string;
+    fileId: number;
     introName: string | undefined;
     introFunction: string | undefined;
     constructor(data: Partial<NewsletterIntroSaveRequest>);
