@@ -139,7 +139,7 @@ export class NewsletterIntroSaveRequest {
   introDescription!: string;
 
   @IsNotEmpty()
-  fileId!: number;
+  introFileId!: number;
 
   // optional
   @ValidateIf((o) => o.introName != undefined)
