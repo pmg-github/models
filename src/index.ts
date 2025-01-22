@@ -185,6 +185,8 @@ import {
 
 import { FileUploadResponseModel } from "./models/files";
 
+import { TimeRegistrationRecordCreateRequest, TimeRegistrationRecordModel, TimeRegistrationStatusEnum, TimeRegistrationViewModel} from "./models/timeregistration";
+
 export {
   UnpaidInvoicesStatsModel,
   UnpaidInvoicesListModelWithCursor,
@@ -318,4 +320,8 @@ export {
   AgendaModel,
   returnFileResponse,
   FileUploadResponseModel,
+  TimeRegistrationRecordModel,
+  TimeRegistrationViewModel,
+  TimeRegistrationStatusEnum,
+  TimeRegistrationRecordCreateRequest
 };
