@@ -82,6 +82,7 @@ export interface NewsletterMetaDataModel {
     introDescription: string;
     introName: string | null;
     introFunction: string | null;
+    introFileId: number | null;
     introImageUrl: string | null;
     pollCode: string | null;
 }
@@ -105,7 +106,7 @@ export declare class NewsletterIntroSaveRequest {
     id: number;
     introTitle: string;
     introDescription: string;
-    introFileId: number;
+    introFileId: number | null;
     introName: string | undefined;
     introFunction: string | undefined;
     constructor(data: Partial<NewsletterIntroSaveRequest>);

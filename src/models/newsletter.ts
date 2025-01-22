@@ -99,6 +99,7 @@ export interface NewsletterMetaDataModel {
   introDescription: string;
   introName: string | null;
   introFunction: string | null;
+  introFileId: number | null;
   introImageUrl: string | null;
   pollCode: string | null;
 }
@@ -138,8 +139,7 @@ export class NewsletterIntroSaveRequest {
   @IsNotEmpty()
   introDescription!: string;
 
-  @IsNotEmpty()
-  introFileId!: number;
+  introFileId!: number | null;
 
   // optional
   @ValidateIf((o) => o.introName != undefined)
