@@ -5,6 +5,6 @@ export interface SelectOptionViewModel {
 export interface SelectOptionDescriptionViewModel extends SelectOptionViewModel {
     description?: string;
 }
-export interface SelectTwoOptionDescriptionViewModel extends SelectOptionDescriptionViewModel {
-    keyTwo?: string;
+export interface SelectOptionDescriptionTagsViewModel extends SelectOptionDescriptionViewModel {
+    tags?: string;
 }

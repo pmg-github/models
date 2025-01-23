@@ -9,7 +9,7 @@ export interface SelectOptionDescriptionViewModel
   description?: string;
 }
 
-export interface SelectTwoOptionDescriptionViewModel
+export interface SelectOptionDescriptionTagsViewModel
   extends SelectOptionDescriptionViewModel {
-  keyTwo?: string;
+  tags?: string;
 }
