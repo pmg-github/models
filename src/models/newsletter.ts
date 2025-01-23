@@ -2,6 +2,7 @@ import { Type } from "class-transformer";
 import {
   ArrayMinSize,
   IsArray,
+  IsDateString,
   isNotEmpty,
   IsNotEmpty,
   Length,
@@ -334,5 +335,11 @@ export class NewsletterScheduleCreateRequest {
   bodyFR!: string | undefined | null;
 
   @IsArray()
+  @IsDateString(
+    {},
+    {
+      each: true,
+    }
+  )
   dates!: string[];
 }
