@@ -1,6 +1,8 @@
 import { Type } from "class-transformer";
 import {
   ArrayMinSize,
+  IsArray,
+  IsDateString,
   isNotEmpty,
   IsNotEmpty,
   Length,
@@ -326,4 +328,18 @@ export class NewsletterTestMailCreateRequest {
   html!: string;
 
   emailList?: string | undefined;
+}
+
+export class NewsletterScheduleCreateRequest {
+  bodyNL!: string | undefined | null;
+  bodyFR!: string | undefined | null;
+
+  @IsArray()
+  @IsDateString(
+    {},
+    {
+      each: true,
+    }
+  )
+  dates!: string[];
 }
