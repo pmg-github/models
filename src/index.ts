@@ -104,6 +104,7 @@ import {
   NewsletterSubjectSaveRequest,
   NewsletterSubjectAddRequest,
   NewsletterTestMailCreateRequest,
+  NewsletterScheduleCreateRequest,
 } from "./models/newsletter";
 
 import {
@@ -185,7 +186,12 @@ import {
 
 import { FileUploadResponseModel } from "./models/files";
 
-import { TimeRegistrationRecordCreateRequest, TimeRegistrationRecordModel, TimeRegistrationStatusEnum, TimeRegistrationViewModel} from "./models/timeregistration";
+import {
+  TimeRegistrationRecordCreateRequest,
+  TimeRegistrationRecordModel,
+  TimeRegistrationStatusEnum,
+  TimeRegistrationViewModel,
+} from "./models/timeregistration";
 
 export {
   UnpaidInvoicesStatsModel,
@@ -264,6 +270,7 @@ export {
   NewsletterSubjectSaveRequest,
   NewsletterSubjectAddRequest,
   NewsletterTestMailCreateRequest,
+  NewsletterScheduleCreateRequest,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,
@@ -323,5 +330,5 @@ export {
   TimeRegistrationRecordModel,
   TimeRegistrationViewModel,
   TimeRegistrationStatusEnum,
-  TimeRegistrationRecordCreateRequest
+  TimeRegistrationRecordCreateRequest,
 };
