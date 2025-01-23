@@ -42,11 +42,12 @@ export class TimeRegistrationRecordCreateRequest {
   @IsNumber()
   actionId!: number;
 
-  /*  @IsNotEmpty()
+  @IsNotEmpty()
   @IsNumber()
-  locationId!: number; */
+  locationId!: number;
 
   @IsOptional()
+  @MaxLength(255)
   info: string | undefined | null;
 
   constructor(data: Partial<TimeRegistrationRecordCreateRequest>) {
