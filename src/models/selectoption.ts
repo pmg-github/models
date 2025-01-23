@@ -8,3 +8,8 @@ export interface SelectOptionDescriptionViewModel
   extends SelectOptionViewModel {
   description?: string;
 }
+
+export interface SelectTwoOptionDescriptionViewModel
+  extends SelectOptionDescriptionViewModel {
+  keyTwo?: string;
+}
