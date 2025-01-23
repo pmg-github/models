@@ -151,6 +151,7 @@ export interface BcArticleIntresseReachModel{
   PortalCode:string;
   id:string;
   name:string;
+  domain:string;
 }
 interface intresses {
   interesse: string;

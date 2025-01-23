@@ -79,6 +79,7 @@ class NewsletterIntroSaveRequest {
     id;
     introTitle;
     introDescription;
+    introFileId;
     // optional
     introName;
     introFunction;
