@@ -1,38 +1,53 @@
-import { IsDateString, IsMilitaryTime, IsNotEmpty, IsNumber, IsOptional, IsTimeZone, MaxLength } from "class-validator";
+import {
+  IsDateString,
+  IsMilitaryTime,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsTimeZone,
+  MaxLength,
+} from "class-validator";
 
 export interface TimeRegistrationViewModel {
-    status: TimeRegistrationStatusEnum
-    hoursWorked: string,
-    hoursBreak: string, 
-    hoursShort: string,
-    records: TimeRegistrationRecordModel[],
+  date: string;
+  status: TimeRegistrationStatusEnum;
+  hoursWorked: string;
+  hoursBreak: string;
+  hoursShort: string;
+  records: TimeRegistrationRecordModel[];
 }
 
 export interface TimeRegistrationRecordModel {
-    time: string,
-    name: string, 
+  time: string;
+  name: string;
+  info: string;
 }
 
 export enum TimeRegistrationStatusEnum {
-    Approved = 'goedgekeurd',
-    ToApprove = 'goed te keuren'
+  ToApprove = "goed te keuren",
+  Approved = "goedgekeurd",
+  Denied = "afgekeurd",
 }
 
 export class TimeRegistrationRecordCreateRequest {
-    @IsNotEmpty()
-    @IsDateString()
-    date!: string
+  @IsNotEmpty()
+  @IsDateString()
+  date!: string;
 
-    @IsNotEmpty()
-    @IsMilitaryTime()
-    time!: string
+  @IsNotEmpty()
+  @IsMilitaryTime()
+  time!: string;
 
-    @IsNotEmpty()
-    @IsNumber()
-    functionId!: number
+  @IsNotEmpty()
+  @IsNumber()
+  actionId!: number;
 
-    @IsOptional()
-    info: string | undefined | null
+  @IsNotEmpty()
+  @IsNumber()
+  locationId!: number;
+
+  @IsOptional()
+  info: string | undefined | null;
 
   constructor(data: Partial<TimeRegistrationRecordCreateRequest>) {
     Object.assign(this, data);

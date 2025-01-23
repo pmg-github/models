@@ -13,13 +13,15 @@ exports.TimeRegistrationRecordCreateRequest = exports.TimeRegistrationStatusEnum
 const class_validator_1 = require("class-validator");
 var TimeRegistrationStatusEnum;
 (function (TimeRegistrationStatusEnum) {
-    TimeRegistrationStatusEnum["Approved"] = "goedgekeurd";
     TimeRegistrationStatusEnum["ToApprove"] = "goed te keuren";
+    TimeRegistrationStatusEnum["Approved"] = "goedgekeurd";
+    TimeRegistrationStatusEnum["Denied"] = "afgekeurd";
 })(TimeRegistrationStatusEnum || (exports.TimeRegistrationStatusEnum = TimeRegistrationStatusEnum = {}));
 class TimeRegistrationRecordCreateRequest {
     date;
     time;
-    functionId;
+    actionId;
+    locationId;
     info;
     constructor(data) {
         Object.assign(this, data);
@@ -40,7 +42,12 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
-], TimeRegistrationRecordCreateRequest.prototype, "functionId", void 0);
+], TimeRegistrationRecordCreateRequest.prototype, "actionId", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], TimeRegistrationRecordCreateRequest.prototype, "locationId", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Object)
