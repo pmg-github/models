@@ -42,9 +42,9 @@ export class TimeRegistrationRecordCreateRequest {
   @IsNumber()
   actionId!: number;
 
-  @IsNotEmpty()
+  /*  @IsNotEmpty()
   @IsNumber()
-  locationId!: number;
+  locationId!: number; */
 
   @IsOptional()
   info: string | undefined | null;
