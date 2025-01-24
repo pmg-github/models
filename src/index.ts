@@ -62,6 +62,7 @@ import {
 import { ContextViewModel } from "./models/context";
 
 import {
+  SelectOptionDescriptionTagsViewModel,
   SelectOptionDescriptionViewModel,
   SelectOptionViewModel,
 } from "./models/selectoption";
@@ -249,6 +250,7 @@ export {
   SymposiumPostCreateRequest,
   SymposiumPostSaveRequest,
   SymposiumPostMultiLanguageField,
+  SelectOptionDescriptionTagsViewModel,
   NewsletterContentType,
   rewriteMessage,
   NewsletterProjectModel,
