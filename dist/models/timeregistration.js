@@ -21,9 +21,7 @@ class TimeRegistrationRecordCreateRequest {
     date;
     time;
     actionId;
-    /*  @IsNotEmpty()
-    @IsNumber()
-    locationId!: number; */
+    locationId;
     info;
     constructor(data) {
         Object.assign(this, data);
@@ -46,6 +44,12 @@ __decorate([
     __metadata("design:type", Number)
 ], TimeRegistrationRecordCreateRequest.prototype, "actionId", void 0);
 __decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], TimeRegistrationRecordCreateRequest.prototype, "locationId", void 0);
+__decorate([
     (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", Object)
 ], TimeRegistrationRecordCreateRequest.prototype, "info", void 0);

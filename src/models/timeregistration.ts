@@ -23,6 +23,18 @@ export interface TimeRegistrationRecordModel {
   info: string;
 }
 
+export interface TimeRegistrationActionListModel {
+  id: number;
+  reference: string;
+  name: string;
+}
+
+export interface TimeRegistrationLocationListModel {
+  id: number;
+  reference: string;
+  name: string;
+}
+
 export enum TimeRegistrationStatusEnum {
   ToApprove = "goed te keuren",
   Approved = "goedgekeurd",
