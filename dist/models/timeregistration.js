@@ -19,8 +19,10 @@ var TimeRegistrationStatusEnum;
 })(TimeRegistrationStatusEnum || (exports.TimeRegistrationStatusEnum = TimeRegistrationStatusEnum = {}));
 class TimeRegistrationRecordCreateRequest {
     date;
+    // @IsMilitaryTime()
     time;
     actionId;
+    // @IsNotEmpty()
     locationId;
     info;
     constructor(data) {
@@ -34,8 +36,9 @@ __decorate([
     __metadata("design:type", String)
 ], TimeRegistrationRecordCreateRequest.prototype, "date", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsMilitaryTime)(),
+    (0, class_validator_1.IsNotEmpty)()
+    // @IsMilitaryTime()
+    ,
     __metadata("design:type", String)
 ], TimeRegistrationRecordCreateRequest.prototype, "time", void 0);
 __decorate([
@@ -44,7 +47,6 @@ __decorate([
     __metadata("design:type", Number)
 ], TimeRegistrationRecordCreateRequest.prototype, "actionId", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], TimeRegistrationRecordCreateRequest.prototype, "locationId", void 0);

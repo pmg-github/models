@@ -47,14 +47,14 @@ export class TimeRegistrationRecordCreateRequest {
   date!: string;
 
   @IsNotEmpty()
-  @IsMilitaryTime()
+  // @IsMilitaryTime()
   time!: string;
 
   @IsNotEmpty()
   @IsNumber()
   actionId!: number;
 
-  @IsNotEmpty()
+  // @IsNotEmpty()
   @IsNumber()
   locationId!: number;
 
