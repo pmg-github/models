@@ -188,6 +188,8 @@ import {
 import { FileUploadResponseModel } from "./models/files";
 
 import {
+  TimeRegistrationActionListModel,
+  TimeRegistrationLocationListModel,
   TimeRegistrationRecordCreateRequest,
   TimeRegistrationRecordModel,
   TimeRegistrationStatusEnum,
@@ -333,4 +335,6 @@ export {
   TimeRegistrationViewModel,
   TimeRegistrationStatusEnum,
   TimeRegistrationRecordCreateRequest,
+  TimeRegistrationActionListModel,
+  TimeRegistrationLocationListModel,
 };
