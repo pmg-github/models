@@ -63,9 +63,11 @@ export interface NewsletterOrderModel {
 }
 export interface NewsletterQuicklinkModel {
     id: number;
-    articleReference: string | null;
-    html: string;
+    articleReference: string;
+    text: string;
+    url: string;
     sortOrder: number;
+    html: string;
 }
 export interface NewsletterTileModel {
     id: number;

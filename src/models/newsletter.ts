@@ -80,9 +80,11 @@ export interface NewsletterOrderModel {
 
 export interface NewsletterQuicklinkModel {
   id: number;
-  articleReference: string | null;
-  html: string;
+  articleReference: string;
+  text: string;
+  url: string;
   sortOrder: number;
+  html: string; // unused for now, replaced by text and url
 }
 
 export interface NewsletterTileModel {
