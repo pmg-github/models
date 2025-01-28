@@ -117,12 +117,12 @@ export declare class NewsletterQuicklinkAddRequest {
     jobCode: string;
     language: string;
     articleReference: string | undefined;
-    html: string;
+    text: string;
     constructor(data: Partial<NewsletterQuicklinkAddRequest>);
 }
 export declare class NewsletterQuicklinkSaveRequest {
     id: number;
-    html: string;
+    text: string;
     constructor(data: Partial<NewsletterQuicklinkSaveRequest>);
 }
 export declare class NewsletterArticleAddRequest {

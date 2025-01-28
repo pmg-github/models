@@ -172,8 +172,13 @@ export class NewsletterQuicklinkAddRequest {
   articleReference!: string | undefined;
 
   @IsNotEmpty()
-  @MaxLength(500)
-  html!: string;
+  @MaxLength(255)
+  text!: string;
+
+  // Unused
+  // @IsNotEmpty()
+  // @MaxLength(500)
+  // html!: string;
 
   constructor(data: Partial<NewsletterQuicklinkAddRequest>) {
     Object.assign(this, data);
@@ -185,8 +190,13 @@ export class NewsletterQuicklinkSaveRequest {
   id!: number;
 
   @IsNotEmpty()
-  @MaxLength(500)
-  html!: string;
+  @MaxLength(255)
+  text!: string;
+
+  // Unused
+  // @IsNotEmpty()
+  // @MaxLength(500)
+  // html!: string;
 
   constructor(data: Partial<NewsletterQuicklinkSaveRequest>) {
     Object.assign(this, data);
