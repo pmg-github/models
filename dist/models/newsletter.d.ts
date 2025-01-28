@@ -63,9 +63,11 @@ export interface NewsletterOrderModel {
 }
 export interface NewsletterQuicklinkModel {
     id: number;
-    articleReference: string | null;
-    html: string;
+    articleReference: string;
+    text: string;
+    url: string;
     sortOrder: number;
+    html: string;
 }
 export interface NewsletterTileModel {
     id: number;
@@ -115,12 +117,12 @@ export declare class NewsletterQuicklinkAddRequest {
     jobCode: string;
     language: string;
     articleReference: string | undefined;
-    html: string;
+    text: string;
     constructor(data: Partial<NewsletterQuicklinkAddRequest>);
 }
 export declare class NewsletterQuicklinkSaveRequest {
     id: number;
-    html: string;
+    text: string;
     constructor(data: Partial<NewsletterQuicklinkSaveRequest>);
 }
 export declare class NewsletterArticleAddRequest {

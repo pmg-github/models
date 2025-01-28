@@ -115,7 +115,11 @@ class NewsletterQuicklinkAddRequest {
     jobCode;
     language;
     articleReference;
-    html;
+    text;
+    // Unused
+    // @IsNotEmpty()
+    // @MaxLength(500)
+    // html!: string;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -138,12 +142,16 @@ __decorate([
 ], NewsletterQuicklinkAddRequest.prototype, "articleReference", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MaxLength)(500),
+    (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
-], NewsletterQuicklinkAddRequest.prototype, "html", void 0);
+], NewsletterQuicklinkAddRequest.prototype, "text", void 0);
 class NewsletterQuicklinkSaveRequest {
     id;
-    html;
+    text;
+    // Unused
+    // @IsNotEmpty()
+    // @MaxLength(500)
+    // html!: string;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -155,9 +163,9 @@ __decorate([
 ], NewsletterQuicklinkSaveRequest.prototype, "id", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MaxLength)(500),
+    (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
-], NewsletterQuicklinkSaveRequest.prototype, "html", void 0);
+], NewsletterQuicklinkSaveRequest.prototype, "text", void 0);
 class NewsletterArticleAddRequest {
     jobCode;
     language;
