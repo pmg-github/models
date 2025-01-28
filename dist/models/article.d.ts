@@ -80,7 +80,7 @@ export interface BcArticleDetailModel {
     statusId: number;
     status: string;
     title: string;
-    file: string;
+    imageUrl: string | undefined;
     text: string;
     availableFrom?: Date;
     availableUntil?: Date;
@@ -90,7 +90,7 @@ export interface BcArticleDetailIntressesModel {
     intresses: intresses[];
 }
 export interface BcArticleIntresseReachModel {
-    AudienceAmount: number;
+    AudienceAmount: string;
     AudienceName: string;
     PortalCode: string;
     id: string;

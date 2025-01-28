@@ -135,7 +135,7 @@ export interface BcArticleDetailModel {
   statusId: number;
   status: string;
   title: string;
-  file: string;
+  imageUrl: string|undefined;
   text: string;
   availableFrom?: Date;
   availableUntil?: Date;
@@ -145,13 +145,13 @@ export interface BcArticleDetailIntressesModel {
   intresses: intresses[];
 }
 
-export interface BcArticleIntresseReachModel{
-  AudienceAmount:number;
-  AudienceName:string;
-  PortalCode:string;
-  id:string;
-  name:string;
-  domain:string;
+export interface BcArticleIntresseReachModel {
+  AudienceAmount: string;
+  AudienceName: string;
+  PortalCode: string;
+  id: string;
+  name: string;
+  domain: string;
 }
 interface intresses {
   interesse: string;
