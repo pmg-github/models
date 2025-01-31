@@ -36,6 +36,7 @@ export interface SupportTicketListViewModel {
   connected_users_ids?:string;
   connected_user_code?:string
   snoozed?:boolean
+  project:SelectOptionViewModel
 }
 
 export interface SupportTicketViewModel {
