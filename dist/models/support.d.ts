@@ -30,7 +30,7 @@ export interface SupportTicketListViewModel {
     connected_users_ids?: string;
     connected_user_code?: string;
     snoozed?: boolean;
-    project: SelectOptionViewModel;
+    project: SelectOptionViewModel | null;
 }
 export interface SupportTicketViewModel {
     id: number;
