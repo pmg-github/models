@@ -1,4 +1,5 @@
 import { PmgUserInterface } from "./pmguser";
+import { SelectOptionViewModel } from "./selectoption";
 export interface SupportCategory {
     id: number;
     name: string;
@@ -42,6 +43,7 @@ export interface SupportTicketViewModel {
     created_at: string;
     ticket_number: string;
     files: returnFileResponse[];
+    project: SelectOptionViewModel;
 }
 export interface returnFileResponse {
     name: string;
