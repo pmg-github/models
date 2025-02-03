@@ -196,6 +196,8 @@ import {
   TimeRegistrationViewModel,
 } from "./models/timeregistration";
 
+import { SecurityEnum } from "./models/security";
+
 export {
   UnpaidInvoicesStatsModel,
   UnpaidInvoicesListModelWithCursor,
@@ -337,4 +339,5 @@ export {
   TimeRegistrationRecordCreateRequest,
   TimeRegistrationActionListModel,
   TimeRegistrationLocationListModel,
+  SecurityEnum,
 };
