@@ -46,9 +46,9 @@ export interface SupportTicketViewModel {
   category: string;
   status: string;
   subject: string;
-  startDate:Date
-  endDate:Date
-  deadline:Date
+  startDate:Date|string
+  endDate:Date|string
+  deadline:Date|string
   description: string;
   priority: Priority;
   created_at: string;
