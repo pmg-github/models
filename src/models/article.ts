@@ -121,6 +121,8 @@ export interface BoArticleListModel {
   portalDomain: string;
   isPublished: boolean;
   orderByValue: string;
+  fileId: number | undefined | null;
+  imageUrl: string | undefined | null;
 }
 export interface bcArticleListModel {
   id: number;
