@@ -65,6 +65,7 @@ export interface BoArticleListModel {
     task?: BoArticleJobTask;
     portalDomain: string;
     isPublished: boolean;
+    orderByValue: string;
 }
 export interface bcArticleListModel {
     id: number;
