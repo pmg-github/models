@@ -50,6 +50,15 @@ export interface SupportTicketIcalModel {
   userLastName: string;
 }
 
+export interface ProjectIcalModel {
+  id: number;
+  name: string;
+  description: string;
+  dateStart: Date | string;
+  dateEnd: Date | string;
+  deadline: Date | string;
+}
+
 //todo alwais camalcase
 export interface SupportTicketViewModel {
   id: number;

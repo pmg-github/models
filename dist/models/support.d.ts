@@ -43,6 +43,14 @@ export interface SupportTicketIcalModel {
     userFirstName: string;
     userLastName: string;
 }
+export interface ProjectIcalModel {
+    id: number;
+    name: string;
+    description: string;
+    dateStart: Date | string;
+    dateEnd: Date | string;
+    deadline: Date | string;
+}
 export interface SupportTicketViewModel {
     id: number;
     user: PmgUserInterface;
