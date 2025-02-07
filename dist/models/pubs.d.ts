@@ -9,5 +9,5 @@ export interface PubsListView {
 }
 export interface PubsListCursorView {
     Pubs: PubsListView[];
-    cursor: number;
+    nextCursor: number;
 }
