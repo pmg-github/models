@@ -329,6 +329,7 @@ export {
   SupportTicketViewModel,
   SupportTicketListViewModel,
   SupportTicketIcalModel,
+  ProjectIcalModel,
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
