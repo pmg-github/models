@@ -13,9 +13,9 @@ export interface SupportStatus {
 }
 
 export enum Priority {
-  "low"="low",
-  "medium"="medium",
-  "high"="high",
+  "low" = "low",
+  "medium" = "medium",
+  "high" = "high",
 }
 
 export interface SupportTicketListViewModelWhitCursorAndContent {
@@ -32,11 +32,22 @@ export interface SupportTicketListViewModel {
   description: string;
   priority: Priority;
   created_at: string;
-  ticketNumber:string;
-  connected_users_ids?:string;
-  connected_user_code?:string
-  snoozed?:boolean
-  project:SelectOptionViewModel|null
+  ticketNumber: string;
+  connected_users_ids?: string;
+  connected_user_code?: string;
+  snoozed?: boolean;
+  project: SelectOptionViewModel | null;
+}
+export interface SupportTicketIcalModel {
+  id: number;
+  ticketNumber: string;
+  subject: string;
+  description: string;
+  startDate: Date | string;
+  endDate: Date | string;
+  deadline: Date | string;
+  userFirstName: string;
+  userLastName: string;
 }
 
 //todo alwais camalcase
@@ -47,20 +58,20 @@ export interface SupportTicketViewModel {
   category: string;
   status: string;
   subject: string;
-  startDate:Date|string
-  endDate:Date|string
-  deadline:Date|string
+  startDate: Date | string;
+  endDate: Date | string;
+  deadline: Date | string;
   description: string;
   priority: Priority;
   created_at: string;
-  ticket_number:string
-  files:returnFileResponse[]
-  project:SelectOptionViewModel
+  ticket_number: string;
+  files: returnFileResponse[];
+  project: SelectOptionViewModel;
 }
 
-export interface returnFileResponse{
-  name:string
-  url:string
+export interface returnFileResponse {
+  name: string;
+  url: string;
 }
 
 export interface SupportCommentViewModel {
@@ -68,7 +79,7 @@ export interface SupportCommentViewModel {
   user: PmgUserInterface;
   comment: string;
   updated_at: string;
-  files:returnFileResponse[]
+  files: returnFileResponse[];
   // isDeleted:boolean
 }
 

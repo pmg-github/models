@@ -176,6 +176,7 @@ import {
   SupportCommentViewModel,
   SupportStatus,
   SupportTicketListViewModel,
+  SupportTicketIcalModel,
   SupportTicketViewModel,
   returnFileResponse,
   TicketFilterParamsModel,
@@ -326,6 +327,7 @@ export {
   SupportStatus,
   SupportTicketViewModel,
   SupportTicketListViewModel,
+  SupportTicketIcalModel,
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
@@ -343,5 +345,5 @@ export {
   TimeRegistrationLocationListModel,
   SecurityEnum,
   CompanyCardViewModel,
-  PubsListView
+  PubsListView,
 };

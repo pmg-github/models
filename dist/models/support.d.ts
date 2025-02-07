@@ -32,6 +32,17 @@ export interface SupportTicketListViewModel {
     snoozed?: boolean;
     project: SelectOptionViewModel | null;
 }
+export interface SupportTicketIcalModel {
+    id: number;
+    ticketNumber: string;
+    subject: string;
+    description: string;
+    startDate: Date | string;
+    endDate: Date | string;
+    deadline: Date | string;
+    userFirstName: string;
+    userLastName: string;
+}
 export interface SupportTicketViewModel {
     id: number;
     user: PmgUserInterface;
