@@ -106,8 +106,10 @@ export interface BoArticleListModel {
   reference: string;
   languageCode: string;
   title: string;
+  description: string;
   type: BoArticleType;
   status: BoArticleStatus;
+  displayDate: Date | string;
   availableFrom: Date;
   availableUntil: Date;
   seoScore: number;
@@ -117,6 +119,10 @@ export interface BoArticleListModel {
   successor: PmgUserModel;
   task?: BoArticleJobTask;
   portalDomain: string;
+  isPublished: boolean;
+  orderByValue: string;
+  fileId: number | undefined | null;
+  imageUrl: string | undefined | null;
 }
 export interface bcArticleListModel {
   id: number;
@@ -135,7 +141,7 @@ export interface BcArticleDetailModel {
   statusId: number;
   status: string;
   title: string;
-  imageUrl: string|undefined;
+  imageUrl: string | undefined;
   text: string;
   availableFrom?: Date;
   availableUntil?: Date;
