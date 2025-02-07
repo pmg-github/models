@@ -13,3 +13,8 @@ export interface PubsListCursorView {
     content:PubsListView[]
     nextCursor:number
 }
+
+export interface PubsDetailView extends PubsListView {
+    views:number
+    leads:number
+  }
