@@ -177,6 +177,7 @@ import {
   SupportStatus,
   SupportTicketListViewModel,
   SupportTicketIcalModel,
+  ProjectIcalModel,
   SupportTicketViewModel,
   returnFileResponse,
   TicketFilterParamsModel,
