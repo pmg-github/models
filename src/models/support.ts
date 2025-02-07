@@ -39,6 +39,7 @@ export interface SupportTicketListViewModel {
   project:SelectOptionViewModel|null
 }
 
+//todo alwais camalcase
 export interface SupportTicketViewModel {
   id: number;
   user: PmgUserInterface;

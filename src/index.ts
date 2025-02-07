@@ -57,6 +57,7 @@ import {
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
+  CompanyCardViewModel,
 } from "./models/company";
 
 import { ContextViewModel } from "./models/context";
@@ -197,6 +198,7 @@ import {
 } from "./models/timeregistration";
 
 import { SecurityEnum } from "./models/security";
+import { PubsListView } from "./models/pubs";
 
 export {
   UnpaidInvoicesStatsModel,
@@ -340,4 +342,6 @@ export {
   TimeRegistrationActionListModel,
   TimeRegistrationLocationListModel,
   SecurityEnum,
+  CompanyCardViewModel,
+  PubsListView
 };
