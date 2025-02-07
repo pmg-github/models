@@ -199,7 +199,7 @@ import {
 } from "./models/timeregistration";
 
 import { SecurityEnum } from "./models/security";
-import { PubsListView } from "./models/pubs";
+import { PubsListCursorView, PubsListView } from "./models/pubs";
 
 export {
   UnpaidInvoicesStatsModel,
@@ -346,4 +346,5 @@ export {
   SecurityEnum,
   CompanyCardViewModel,
   PubsListView,
+  PubsListCursorView,
 };

@@ -7,3 +7,7 @@ export interface PubsListView {
     pubCode: string;
     format: SelectOptionViewModel;
 }
+export interface PubsListCursorView {
+    Pubs: PubsListView[];
+    nextCursor: number;
+}
