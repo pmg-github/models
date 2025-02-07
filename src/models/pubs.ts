@@ -10,6 +10,6 @@ export interface PubsListView {
 }
 
 export interface PubsListCursorView {
-    Pubs:PubsListView[]
+    content:PubsListView[]
     nextCursor:number
 }

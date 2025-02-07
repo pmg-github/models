@@ -8,6 +8,6 @@ export interface PubsListView {
     format: SelectOptionViewModel;
 }
 export interface PubsListCursorView {
-    Pubs: PubsListView[];
+    content: PubsListView[];
     nextCursor: number;
 }
