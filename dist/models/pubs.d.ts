@@ -15,4 +15,6 @@ export interface PubsDetailView extends PubsListView {
     views: number;
     leads: number;
     imageUrl: string;
+    title: string;
+    text: string;
 }
