@@ -89,6 +89,7 @@ import {
   NewsletterContentType,
   NewsletterProjectModel,
   NewsletterModel,
+  NewsletterViewTypeEnum,
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   NewsletterTileModel,
@@ -200,7 +201,11 @@ import {
 } from "./models/timeregistration";
 
 import { SecurityEnum } from "./models/security";
-import { PubsDetailView, PubsListCursorView, PubsListView } from "./models/pubs";
+import {
+  PubsDetailView,
+  PubsListCursorView,
+  PubsListView,
+} from "./models/pubs";
 
 export {
   UnpaidInvoicesStatsModel,
@@ -261,6 +266,7 @@ export {
   rewriteMessage,
   NewsletterProjectModel,
   NewsletterModel,
+  NewsletterViewTypeEnum,
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   bcArticleListModel,

@@ -40,9 +40,14 @@ export declare class NewsletterModel {
     numberOfOpened: number | undefined;
     numberOfClicks: number | undefined;
 }
+export declare enum NewsletterViewTypeEnum {
+    IMAGE_LEFT = 1,
+    IMAGE_TOP = 2
+}
 export declare class NewsletterContentModel {
     id: number | undefined;
     typeId: number | undefined;
+    viewType: NewsletterViewTypeEnum | undefined;
     projectCode: string | undefined;
     languageCode: string | undefined;
     articleReference: string | undefined;
