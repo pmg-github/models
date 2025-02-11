@@ -47,6 +47,7 @@ export declare class ViewerMetaDataViewModel {
     domain: string | undefined;
     date: Date | undefined;
     isFreePremium: boolean | undefined;
+    showMRKs: boolean | undefined;
 }
 export declare class ViewerInteresseViewModel {
     name: string | undefined;
@@ -59,7 +60,6 @@ export interface ViewerMagazineViewModel {
     description: string | null;
     releaseDate: Date | string;
     isFreePremium: boolean;
-    showMRKs: boolean;
 }
 export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
