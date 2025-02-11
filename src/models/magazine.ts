@@ -68,6 +68,7 @@ export interface ViewerMagazineViewModel {
   description: string | null;
   releaseDate: Date | string; // note: cast to string when sending as API response!
   isFreePremium: boolean;
+  showMRKs: boolean;
 }
 
 // INHERITED CLASSES

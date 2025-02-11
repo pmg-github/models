@@ -59,6 +59,7 @@ export interface ViewerMagazineViewModel {
     description: string | null;
     releaseDate: Date | string;
     isFreePremium: boolean;
+    showMRKs: boolean;
 }
 export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
