@@ -55,9 +55,15 @@ export class NewsletterModel {
   numberOfClicks: number | undefined = undefined;
 }
 
+export enum NewsletterViewTypeEnum {
+  IMAGE_LEFT = 1,
+  IMAGE_TOP = 2,
+}
+
 export class NewsletterContentModel {
   id: number | undefined = undefined;
   typeId: number | undefined = undefined;
+  viewType: NewsletterViewTypeEnum | undefined = undefined;
   projectCode: string | undefined = undefined;
   languageCode: string | undefined = undefined;
   articleReference: string | undefined = undefined;
