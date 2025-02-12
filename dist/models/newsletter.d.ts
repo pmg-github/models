@@ -65,6 +65,7 @@ export declare class NewsletterContentModel {
 export interface NewsletterOrderModel {
     reference: string;
     articleReference: string | null;
+    customerName: string | null;
 }
 export interface NewsletterQuicklinkModel {
     id: number;
