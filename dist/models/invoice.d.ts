@@ -1,4 +1,5 @@
 export interface UnpaidInvoicesListModel {
+    id: number;
     pmgCompanyName: string;
     pmgCompanyFolder: string;
     customerNumber: string;
