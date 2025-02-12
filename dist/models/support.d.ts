@@ -31,6 +31,7 @@ export interface SupportTicketListViewModel {
     connected_user_code?: string;
     snoozed?: boolean;
     project: SelectOptionViewModel | null;
+    isRead: boolean;
 }
 export interface SupportTicketIcalModel {
     id: number;

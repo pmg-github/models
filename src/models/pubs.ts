@@ -19,5 +19,5 @@ export interface PubsDetailView extends PubsListView {
     leads:number
     imageUrl:string
     title:string,
-    text:string
+    BcArticleDetailModel:string
   }
