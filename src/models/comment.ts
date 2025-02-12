@@ -1,7 +1,7 @@
 export interface CommentListView{
     type:CommentTypeView;
     comment:string
-    dateTime:Date
+    dateTime:Date|string
 }
 
 export interface CommentTypeView{
