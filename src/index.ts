@@ -207,7 +207,11 @@ import {
   PubsListView,
 } from "./models/pubs";
 
+import {CommentTypeView,CommentListView}from "./models/comment";
+
 export {
+  CommentTypeView,
+  CommentListView,
   UnpaidInvoicesStatsModel,
   UnpaidInvoicesListModelWithCursor,
   NotificationSummaryListModelWhitCursorAndContent,
