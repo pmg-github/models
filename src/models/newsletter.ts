@@ -16,11 +16,25 @@ export class NewsletterContentType {
   reference: string | undefined = undefined;
   name: string | undefined = undefined;
 }
+
+export enum NewsletterProjectStatusEnum {
+  CONCEPT = "Concept",
+  APPROVED = "Goedgekeurd",
+  SCHEDULED = "Ingepland",
+  PARTLY_SENT = "Deels verzonden",
+  SENT = "Verzonden",
+  NOT_SENT = "Niet verzonden",
+}
+
 export interface NewsletterProjectModel {
   id: number;
   code: string;
   name: string | null;
   date: Date;
+  totalNewsletters: number;
+  totalNewslettersPlanned: number;
+  totalNewslettersSent: number;
+  status: NewsletterProjectStatusEnum;
   numberOfRecipients: number;
   numberOfSuccess: number;
   numberOfFailed: number;
