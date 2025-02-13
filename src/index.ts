@@ -88,6 +88,7 @@ import { rewriteMessage } from "./models/ai";
 
 import {
   NewsletterContentType,
+  NewsletterProjectStatusEnum,
   NewsletterProjectModel,
   NewsletterModel,
   NewsletterViewTypeEnum,
@@ -208,7 +209,7 @@ import {
   PubsListView,
 } from "./models/pubs";
 
-import {CommentTypeView,CommentListView}from "./models/comment";
+import { CommentTypeView, CommentListView } from "./models/comment";
 
 export {
   CommentTypeView,
@@ -268,6 +269,7 @@ export {
   SymposiumPostSaveRequest,
   SymposiumPostMultiLanguageField,
   SelectOptionDescriptionTagsViewModel,
+  NewsletterProjectStatusEnum,
   NewsletterContentType,
   rewriteMessage,
   NewsletterProjectModel,
