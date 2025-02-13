@@ -127,7 +127,8 @@ export class EmailCodeRequest {
 }
 export class BcEmailCodeRequest {
   @IsNotEmpty()
-  klnr!: number;
+  @Length(8, 8)
+  klnr!: string;
 
   @IsNotEmpty()
   @Length(2, 2)
@@ -154,10 +155,11 @@ export class ValidateTokenRequest {
 }
 export class BcValidateTokenRequest {
   @IsNotEmpty()
-  klnr!: number;
+  @Length(8, 8)
+  klnr!: string;
 
   @IsNotEmpty()
-  @Length(4, 4)
+  @Length(6, 6)
   code!: string;
 
   constructor(data: Partial<ValidateTokenRequest>) {
