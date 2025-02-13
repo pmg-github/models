@@ -11,6 +11,15 @@ import {
   ValidateNested,
 } from "class-validator";
 
+// Simple interface for basic newsletter metadata (newsletter table, not projects!)
+export interface NewsletterBaseModel {
+  id: number;
+  reference: string;
+  subject: string;
+  language: string;
+  scheduledOn: Date | string;
+}
+
 export class NewsletterContentType {
   id: number | undefined = undefined;
   reference: string | undefined = undefined;
