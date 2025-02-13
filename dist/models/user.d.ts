@@ -52,3 +52,8 @@ export declare class ValidateTokenRequest {
     code: string;
     constructor(data: Partial<ValidateTokenRequest>);
 }
+export declare class BcValidateTokenRequest {
+    klnr: number;
+    code: string;
+    constructor(data: Partial<ValidateTokenRequest>);
+}

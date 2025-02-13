@@ -41,6 +41,7 @@ import {
   ContactUpdateRequest,
   EmailCodeRequest,
   BcEmailCodeRequest,
+  BcValidateTokenRequest,
   ValidateTokenRequest,
 } from "./models/user";
 
@@ -244,6 +245,7 @@ export {
   ContactUpdateRequest,
   EmailCodeRequest,
   BcEmailCodeRequest,
+  BcValidateTokenRequest,
   ValidateTokenRequest,
   CompanyViewModel,
   CompanyCornerDBModel,

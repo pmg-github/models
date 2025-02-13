@@ -152,3 +152,15 @@ export class ValidateTokenRequest {
     Object.assign(this, data);
   }
 }
+export class BcValidateTokenRequest {
+  @IsNotEmpty()
+  klnr!: number;
+
+  @IsNotEmpty()
+  @Length(4, 4)
+  code!: string;
+
+  constructor(data: Partial<ValidateTokenRequest>) {
+    Object.assign(this, data);
+  }
+}
