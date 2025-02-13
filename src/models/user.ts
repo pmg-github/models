@@ -125,6 +125,19 @@ export class EmailCodeRequest {
     Object.assign(this, data);
   }
 }
+export class BcEmailCodeRequest {
+  @IsNotEmpty()
+  @Length(8)
+  klnr!: number;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  lang!: string;
+
+  constructor(data: Partial<BcEmailCodeRequest>) {
+    Object.assign(this, data);
+  }
+}
 
 export class ValidateTokenRequest {
   @IsNotEmpty()

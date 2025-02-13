@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
+exports.ValidateTokenRequest = exports.BcEmailCodeRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
 const class_validator_1 = require("class-validator");
 class UserViewModel {
     id; // = ContactID
@@ -135,6 +135,24 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], EmailCodeRequest.prototype, "lang", void 0);
+class BcEmailCodeRequest {
+    klnr;
+    lang;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.BcEmailCodeRequest = BcEmailCodeRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(8),
+    __metadata("design:type", Number)
+], BcEmailCodeRequest.prototype, "klnr", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], BcEmailCodeRequest.prototype, "lang", void 0);
 class ValidateTokenRequest {
     email;
     code;

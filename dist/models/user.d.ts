@@ -42,6 +42,11 @@ export declare class EmailCodeRequest {
     lang: string;
     constructor(data: Partial<EmailCodeRequest>);
 }
+export declare class BcEmailCodeRequest {
+    klnr: number;
+    lang: string;
+    constructor(data: Partial<BcEmailCodeRequest>);
+}
 export declare class ValidateTokenRequest {
     email: string;
     code: string;
