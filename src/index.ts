@@ -40,6 +40,7 @@ import {
   ContactCreateModel,
   ContactUpdateRequest,
   EmailCodeRequest,
+  BcEmailCodeRequest,
   ValidateTokenRequest,
 } from "./models/user";
 
@@ -242,6 +243,7 @@ export {
   ContactCreateModel,
   ContactUpdateRequest,
   EmailCodeRequest,
+  BcEmailCodeRequest,
   ValidateTokenRequest,
   CompanyViewModel,
   CompanyCornerDBModel,
