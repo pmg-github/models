@@ -43,7 +43,7 @@ export declare class EmailCodeRequest {
     constructor(data: Partial<EmailCodeRequest>);
 }
 export declare class BcEmailCodeRequest {
-    klnr: number;
+    klnr: string;
     lang: string;
     constructor(data: Partial<BcEmailCodeRequest>);
 }
@@ -53,7 +53,7 @@ export declare class ValidateTokenRequest {
     constructor(data: Partial<ValidateTokenRequest>);
 }
 export declare class BcValidateTokenRequest {
-    klnr: number;
+    klnr: string;
     code: string;
     constructor(data: Partial<ValidateTokenRequest>);
 }
