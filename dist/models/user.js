@@ -145,7 +145,6 @@ class BcEmailCodeRequest {
 exports.BcEmailCodeRequest = BcEmailCodeRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Length)(7),
     __metadata("design:type", Number)
 ], BcEmailCodeRequest.prototype, "klnr", void 0);
 __decorate([

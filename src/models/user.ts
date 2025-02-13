@@ -127,7 +127,6 @@ export class EmailCodeRequest {
 }
 export class BcEmailCodeRequest {
   @IsNotEmpty()
-  @Length(7)
   klnr!: number;
 
   @IsNotEmpty()
