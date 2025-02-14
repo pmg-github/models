@@ -41,7 +41,7 @@ export interface SupportTicketListViewModel {
 }
 export interface SupportTaskListViewModel {
   id: number;
-  discription: string;
+  description: string;
   finished: boolean;
 }
 export interface SupportTicketIcalModel {
