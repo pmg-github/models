@@ -88,6 +88,7 @@ import {
 import { rewriteMessage } from "./models/ai";
 
 import {
+  NewsletterBaseModel,
   NewsletterContentType,
   NewsletterProjectStatusEnum,
   NewsletterProjectModel,
@@ -272,6 +273,7 @@ export {
   SymposiumPostSaveRequest,
   SymposiumPostMultiLanguageField,
   SelectOptionDescriptionTagsViewModel,
+  NewsletterBaseModel,
   NewsletterProjectStatusEnum,
   NewsletterContentType,
   rewriteMessage,

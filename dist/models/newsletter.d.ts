@@ -1,3 +1,10 @@
+export interface NewsletterBaseModel {
+    id: number;
+    reference: string;
+    subject: string;
+    language: string;
+    scheduledOn: Date | string;
+}
 export declare class NewsletterContentType {
     id: number | undefined;
     reference: string | undefined;
