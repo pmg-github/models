@@ -190,6 +190,7 @@ import {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
+  SupportTaskListViewModel,
 } from "./models/support";
 
 import { FileUploadResponseModel } from "./models/files";
@@ -345,6 +346,7 @@ export {
   SupportTicketViewModel,
   SupportTicketListViewModel,
   SupportTicketIcalModel,
+  SupportTaskListViewModel,
   ProjectIcalModel,
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,

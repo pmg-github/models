@@ -33,6 +33,11 @@ export interface SupportTicketListViewModel {
     project: SelectOptionViewModel | null;
     isRead: boolean;
 }
+export interface SupportTaskListViewModel {
+    id: number;
+    discription: string;
+    finished: boolean;
+}
 export interface SupportTicketIcalModel {
     id: number;
     ticketNumber: string;
