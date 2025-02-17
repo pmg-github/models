@@ -131,7 +131,7 @@ export class BcEmailCodeRequest {
   email!: string;
 
   @IsNotEmpty()
-  @Length(6, 6)
+  @Length(8, 8)
   klnr!: string;
 
   @IsNotEmpty()
