@@ -126,7 +126,12 @@ export class EmailCodeRequest {
   }
 }
 export class BcEmailCodeRequest {
+  @IsEmail()
+  @MaxLength(60)
+  email!: string;
+
   @IsNotEmpty()
+  @Length(6, 6)
   klnr!: string;
 
   @IsNotEmpty()
@@ -153,6 +158,10 @@ export class ValidateTokenRequest {
   }
 }
 export class BcValidateTokenRequest {
+  @IsEmail()
+  @MaxLength(60)
+  email!: string;
+
   @IsNotEmpty()
   klnr!: string;
 

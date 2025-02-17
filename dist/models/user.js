@@ -136,6 +136,7 @@ __decorate([
     __metadata("design:type", String)
 ], EmailCodeRequest.prototype, "lang", void 0);
 class BcEmailCodeRequest {
+    email;
     klnr;
     lang;
     constructor(data) {
@@ -144,7 +145,13 @@ class BcEmailCodeRequest {
 }
 exports.BcEmailCodeRequest = BcEmailCodeRequest;
 __decorate([
+    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.MaxLength)(60),
+    __metadata("design:type", String)
+], BcEmailCodeRequest.prototype, "email", void 0);
+__decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(6, 6),
     __metadata("design:type", String)
 ], BcEmailCodeRequest.prototype, "klnr", void 0);
 __decorate([
@@ -172,6 +179,7 @@ __decorate([
     __metadata("design:type", String)
 ], ValidateTokenRequest.prototype, "code", void 0);
 class BcValidateTokenRequest {
+    email;
     klnr;
     code;
     constructor(data) {
@@ -179,6 +187,11 @@ class BcValidateTokenRequest {
     }
 }
 exports.BcValidateTokenRequest = BcValidateTokenRequest;
+__decorate([
+    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.MaxLength)(60),
+    __metadata("design:type", String)
+], BcValidateTokenRequest.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
