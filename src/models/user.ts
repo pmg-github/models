@@ -1,3 +1,4 @@
+import { Transform } from "class-transformer";
 import {
   IsEmail,
   IsNotEmpty,
@@ -127,6 +128,7 @@ export class EmailCodeRequest {
 }
 export class BcEmailCodeRequest {
   @IsOptional()
+  @Transform(({ value }) => value === '' ? undefined : value)
   @IsEmail()
   @MaxLength(60)
   email!: string;
@@ -161,6 +163,7 @@ export class ValidateTokenRequest {
 export class BcValidateTokenRequest {
   @IsOptional()
   @IsEmail()
+  @Transform(({ value }) => value === '' ? undefined : value)
   @MaxLength(60)
   email!: string;
 
