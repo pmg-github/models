@@ -145,6 +145,7 @@ class BcEmailCodeRequest {
 }
 exports.BcEmailCodeRequest = BcEmailCodeRequest;
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEmail)(),
     (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)
@@ -188,6 +189,7 @@ class BcValidateTokenRequest {
 }
 exports.BcValidateTokenRequest = BcValidateTokenRequest;
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEmail)(),
     (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)

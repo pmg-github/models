@@ -3,7 +3,7 @@ import {
   IsNotEmpty,
   IsOptional,
   Length,
-  MaxLength,
+  MaxLength
 } from "class-validator";
 
 export class UserViewModel {
@@ -126,6 +126,7 @@ export class EmailCodeRequest {
   }
 }
 export class BcEmailCodeRequest {
+  @IsOptional()
   @IsEmail()
   @MaxLength(60)
   email!: string;
@@ -158,6 +159,7 @@ export class ValidateTokenRequest {
   }
 }
 export class BcValidateTokenRequest {
+  @IsOptional()
   @IsEmail()
   @MaxLength(60)
   email!: string;
