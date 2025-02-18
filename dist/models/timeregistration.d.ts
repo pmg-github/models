@@ -11,6 +11,7 @@ export interface TimeRegistrationRecordModel {
     locationName: string | null;
     info: string | null;
     isFromTimeServer: boolean;
+    isDeleted: boolean;
 }
 export interface TimeRegistrationActionListModel {
     id: number;
