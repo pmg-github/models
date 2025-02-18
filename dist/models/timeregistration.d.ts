@@ -1,5 +1,4 @@
 export interface TimeRegistrationViewModel {
-    date: string;
     status: TimeRegistrationStatusEnum;
     hoursWorked: string;
     hoursBreak: string;
@@ -8,23 +7,23 @@ export interface TimeRegistrationViewModel {
 }
 export interface TimeRegistrationRecordModel {
     time: string;
-    name: string;
-    info: string;
+    actionName: string;
+    locationName: string | null;
+    info: string | null;
+    isFromTimeServer: boolean;
 }
 export interface TimeRegistrationActionListModel {
     id: number;
-    reference: string;
     name: string;
 }
 export interface TimeRegistrationLocationListModel {
     id: number;
-    reference: string;
     name: string;
 }
 export declare enum TimeRegistrationStatusEnum {
-    ToApprove = "goed te keuren",
-    Approved = "goedgekeurd",
-    Denied = "afgekeurd"
+    TO_APPROVE = 1,
+    APPROVED = 2,
+    DENIED = 3
 }
 export declare class TimeRegistrationRecordCreateRequest {
     date: string;

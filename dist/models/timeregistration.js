@@ -13,16 +13,14 @@ exports.TimeRegistrationRecordCreateRequest = exports.TimeRegistrationStatusEnum
 const class_validator_1 = require("class-validator");
 var TimeRegistrationStatusEnum;
 (function (TimeRegistrationStatusEnum) {
-    TimeRegistrationStatusEnum["ToApprove"] = "goed te keuren";
-    TimeRegistrationStatusEnum["Approved"] = "goedgekeurd";
-    TimeRegistrationStatusEnum["Denied"] = "afgekeurd";
+    TimeRegistrationStatusEnum[TimeRegistrationStatusEnum["TO_APPROVE"] = 1] = "TO_APPROVE";
+    TimeRegistrationStatusEnum[TimeRegistrationStatusEnum["APPROVED"] = 2] = "APPROVED";
+    TimeRegistrationStatusEnum[TimeRegistrationStatusEnum["DENIED"] = 3] = "DENIED";
 })(TimeRegistrationStatusEnum || (exports.TimeRegistrationStatusEnum = TimeRegistrationStatusEnum = {}));
 class TimeRegistrationRecordCreateRequest {
     date;
-    // @IsMilitaryTime()
     time;
     actionId;
-    // @IsNotEmpty()
     locationId;
     info;
     constructor(data) {
@@ -36,9 +34,7 @@ __decorate([
     __metadata("design:type", String)
 ], TimeRegistrationRecordCreateRequest.prototype, "date", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)()
-    // @IsMilitaryTime()
-    ,
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], TimeRegistrationRecordCreateRequest.prototype, "time", void 0);
 __decorate([
