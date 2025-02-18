@@ -40,6 +40,8 @@ import {
   ContactCreateModel,
   ContactUpdateRequest,
   EmailCodeRequest,
+  BcEmailCodeRequest,
+  BcValidateTokenRequest,
   ValidateTokenRequest,
 } from "./models/user";
 
@@ -57,6 +59,7 @@ import {
   CompanyViewModel,
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
+  CompanyCardViewModel,
 } from "./models/company";
 
 import { ContextViewModel } from "./models/context";
@@ -85,9 +88,12 @@ import {
 import { rewriteMessage } from "./models/ai";
 
 import {
+  NewsletterBaseModel,
   NewsletterContentType,
+  NewsletterProjectStatusEnum,
   NewsletterProjectModel,
   NewsletterModel,
+  NewsletterViewTypeEnum,
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   NewsletterTileModel,
@@ -175,6 +181,8 @@ import {
   SupportCommentViewModel,
   SupportStatus,
   SupportTicketListViewModel,
+  SupportTicketIcalModel,
+  ProjectIcalModel,
   SupportTicketViewModel,
   returnFileResponse,
   TicketFilterParamsModel,
@@ -183,6 +191,7 @@ import {
   UpdateTicketStatusModel,
   SupportTicketListViewModelWhitCursorAndContent,
   Priority,
+  SupportTaskListViewModel,
 } from "./models/support";
 
 import { FileUploadResponseModel } from "./models/files";
@@ -197,8 +206,17 @@ import {
 } from "./models/timeregistration";
 
 import { SecurityEnum } from "./models/security";
+import {
+  PubsDetailView,
+  PubsListCursorView,
+  PubsListView,
+} from "./models/pubs";
+
+import { CommentTypeView, CommentListView } from "./models/comment";
 
 export {
+  CommentTypeView,
+  CommentListView,
   UnpaidInvoicesStatsModel,
   UnpaidInvoicesListModelWithCursor,
   NotificationSummaryListModelWhitCursorAndContent,
@@ -229,6 +247,8 @@ export {
   ContactCreateModel,
   ContactUpdateRequest,
   EmailCodeRequest,
+  BcEmailCodeRequest,
+  BcValidateTokenRequest,
   ValidateTokenRequest,
   CompanyViewModel,
   CompanyCornerDBModel,
@@ -253,10 +273,13 @@ export {
   SymposiumPostSaveRequest,
   SymposiumPostMultiLanguageField,
   SelectOptionDescriptionTagsViewModel,
+  NewsletterBaseModel,
+  NewsletterProjectStatusEnum,
   NewsletterContentType,
   rewriteMessage,
   NewsletterProjectModel,
   NewsletterModel,
+  NewsletterViewTypeEnum,
   NewsletterContentModel,
   NewsletterQuicklinkModel,
   bcArticleListModel,
@@ -324,6 +347,9 @@ export {
   SupportStatus,
   SupportTicketViewModel,
   SupportTicketListViewModel,
+  SupportTicketIcalModel,
+  SupportTaskListViewModel,
+  ProjectIcalModel,
   TicketFilterParamsModel,
   UpdateCommentToTicketModel,
   UpdateTicketPriorityModel,
@@ -340,4 +366,8 @@ export {
   TimeRegistrationActionListModel,
   TimeRegistrationLocationListModel,
   SecurityEnum,
+  CompanyCardViewModel,
+  PubsListView,
+  PubsDetailView,
+  PubsListCursorView,
 };

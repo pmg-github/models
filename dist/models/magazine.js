@@ -57,6 +57,7 @@ class ViewerMetaDataViewModel {
     domain = undefined;
     date = undefined;
     isFreePremium = undefined;
+    showMRKs = undefined;
 }
 exports.ViewerMetaDataViewModel = ViewerMetaDataViewModel;
 class ViewerInteresseViewModel {

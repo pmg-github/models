@@ -40,4 +40,8 @@ var SecurityEnum;
     SecurityEnum[SecurityEnum["ACCESS_EMAIL_BOUNCER"] = 35] = "ACCESS_EMAIL_BOUNCER";
     SecurityEnum[SecurityEnum["GENERATE_INVOICES_PREV_YEAR"] = 36] = "GENERATE_INVOICES_PREV_YEAR";
     SecurityEnum[SecurityEnum["SUPPORT_MANAGER"] = 37] = "SUPPORT_MANAGER";
+    SecurityEnum[SecurityEnum["NEWSLETTER_EDIT"] = 38] = "NEWSLETTER_EDIT";
+    SecurityEnum[SecurityEnum["NEWSLETTER_PLANNING"] = 39] = "NEWSLETTER_PLANNING";
+    SecurityEnum[SecurityEnum["UPLOAD_VIDEOS"] = 40] = "UPLOAD_VIDEOS";
+    SecurityEnum[SecurityEnum["UPLOAD_FILES_DASHBOARD"] = 41] = "UPLOAD_FILES_DASHBOARD";
 })(SecurityEnum || (exports.SecurityEnum = SecurityEnum = {}));

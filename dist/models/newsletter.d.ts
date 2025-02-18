@@ -1,13 +1,32 @@
+export interface NewsletterBaseModel {
+    id: number;
+    reference: string;
+    subject: string;
+    language: string;
+    scheduledOn: Date | string;
+}
 export declare class NewsletterContentType {
     id: number | undefined;
     reference: string | undefined;
     name: string | undefined;
+}
+export declare enum NewsletterProjectStatusEnum {
+    CONCEPT = "Concept",
+    APPROVED = "Goedgekeurd",
+    SCHEDULED = "Ingepland",
+    PARTLY_SENT = "Deels verzonden",
+    SENT = "Verzonden",
+    NOT_SENT = "Niet verzonden"
 }
 export interface NewsletterProjectModel {
     id: number;
     code: string;
     name: string | null;
     date: Date;
+    totalNewsletters: number;
+    totalNewslettersPlanned: number;
+    totalNewslettersSent: number;
+    status: NewsletterProjectStatusEnum;
     numberOfRecipients: number;
     numberOfSuccess: number;
     numberOfFailed: number;
@@ -40,9 +59,14 @@ export declare class NewsletterModel {
     numberOfOpened: number | undefined;
     numberOfClicks: number | undefined;
 }
+export declare enum NewsletterViewTypeEnum {
+    IMAGE_LEFT = 1,
+    IMAGE_TOP = 2
+}
 export declare class NewsletterContentModel {
     id: number | undefined;
     typeId: number | undefined;
+    viewType: NewsletterViewTypeEnum | undefined;
     projectCode: string | undefined;
     languageCode: string | undefined;
     articleReference: string | undefined;
@@ -60,6 +84,7 @@ export declare class NewsletterContentModel {
 export interface NewsletterOrderModel {
     reference: string;
     articleReference: string | null;
+    customerName: string | null;
 }
 export interface NewsletterQuicklinkModel {
     id: number;

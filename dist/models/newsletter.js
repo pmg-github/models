@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterScheduleCreateRequest = exports.NewsletterTestMailCreateRequest = exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectAddRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterModel = exports.NewsletterContentType = void 0;
+exports.NewsletterScheduleCreateRequest = exports.NewsletterTestMailCreateRequest = exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectAddRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterViewTypeEnum = exports.NewsletterModel = exports.NewsletterProjectStatusEnum = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -17,6 +17,15 @@ class NewsletterContentType {
     name = undefined;
 }
 exports.NewsletterContentType = NewsletterContentType;
+var NewsletterProjectStatusEnum;
+(function (NewsletterProjectStatusEnum) {
+    NewsletterProjectStatusEnum["CONCEPT"] = "Concept";
+    NewsletterProjectStatusEnum["APPROVED"] = "Goedgekeurd";
+    NewsletterProjectStatusEnum["SCHEDULED"] = "Ingepland";
+    NewsletterProjectStatusEnum["PARTLY_SENT"] = "Deels verzonden";
+    NewsletterProjectStatusEnum["SENT"] = "Verzonden";
+    NewsletterProjectStatusEnum["NOT_SENT"] = "Niet verzonden";
+})(NewsletterProjectStatusEnum || (exports.NewsletterProjectStatusEnum = NewsletterProjectStatusEnum = {}));
 class NewsletterModel {
     id = undefined;
     projectCode = undefined;
@@ -42,9 +51,15 @@ class NewsletterModel {
     numberOfClicks = undefined;
 }
 exports.NewsletterModel = NewsletterModel;
+var NewsletterViewTypeEnum;
+(function (NewsletterViewTypeEnum) {
+    NewsletterViewTypeEnum[NewsletterViewTypeEnum["IMAGE_LEFT"] = 1] = "IMAGE_LEFT";
+    NewsletterViewTypeEnum[NewsletterViewTypeEnum["IMAGE_TOP"] = 2] = "IMAGE_TOP";
+})(NewsletterViewTypeEnum || (exports.NewsletterViewTypeEnum = NewsletterViewTypeEnum = {}));
 class NewsletterContentModel {
     id = undefined;
     typeId = undefined;
+    viewType = undefined;
     projectCode = undefined;
     languageCode = undefined;
     articleReference = undefined;

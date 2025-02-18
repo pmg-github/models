@@ -9,7 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ValidateTokenRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
+exports.BcValidateTokenRequest = exports.ValidateTokenRequest = exports.BcEmailCodeRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
+const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
 class UserViewModel {
     id; // = ContactID
@@ -135,6 +136,32 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], EmailCodeRequest.prototype, "lang", void 0);
+class BcEmailCodeRequest {
+    email;
+    klnr;
+    lang;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.BcEmailCodeRequest = BcEmailCodeRequest;
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_transformer_1.Transform)(({ value }) => value === '' ? undefined : value),
+    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.MaxLength)(60),
+    __metadata("design:type", String)
+], BcEmailCodeRequest.prototype, "email", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(8, 8),
+    __metadata("design:type", String)
+], BcEmailCodeRequest.prototype, "klnr", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], BcEmailCodeRequest.prototype, "lang", void 0);
 class ValidateTokenRequest {
     email;
     code;
@@ -154,3 +181,28 @@ __decorate([
     (0, class_validator_1.Length)(4, 4),
     __metadata("design:type", String)
 ], ValidateTokenRequest.prototype, "code", void 0);
+class BcValidateTokenRequest {
+    email;
+    klnr;
+    code;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.BcValidateTokenRequest = BcValidateTokenRequest;
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsEmail)(),
+    (0, class_transformer_1.Transform)(({ value }) => value === '' ? undefined : value),
+    (0, class_validator_1.MaxLength)(60),
+    __metadata("design:type", String)
+], BcValidateTokenRequest.prototype, "email", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], BcValidateTokenRequest.prototype, "klnr", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(6, 6),
+    __metadata("design:type", String)
+], BcValidateTokenRequest.prototype, "code", void 0);

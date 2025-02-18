@@ -2,6 +2,13 @@ import { ViewerInteresseViewModel } from "./magazine";
 import { AddressViewModel } from "./address";
 import { PmgUserInterface, PmgUserModel } from "./pmguser";
 
+export interface CompanyCardViewModel{
+  klnr:string|number
+  company:string
+  brand:string
+  vat:string
+}
+
 export class CompanyViewModel {
   reference: string | undefined = undefined;
   name: string | undefined = undefined;

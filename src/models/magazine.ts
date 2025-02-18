@@ -54,6 +54,7 @@ export class ViewerMetaDataViewModel {
   domain: string | undefined = undefined;
   date: Date | undefined = undefined;
   isFreePremium: boolean | undefined = undefined;
+  showMRKs: boolean | undefined = undefined;
 }
 
 export class ViewerInteresseViewModel {

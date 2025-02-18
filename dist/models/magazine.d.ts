@@ -47,6 +47,7 @@ export declare class ViewerMetaDataViewModel {
     domain: string | undefined;
     date: Date | undefined;
     isFreePremium: boolean | undefined;
+    showMRKs: boolean | undefined;
 }
 export declare class ViewerInteresseViewModel {
     name: string | undefined;
