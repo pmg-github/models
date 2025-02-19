@@ -147,7 +147,7 @@ class BcEmailCodeRequest {
 exports.BcEmailCodeRequest = BcEmailCodeRequest;
 __decorate([
     (0, class_validator_1.IsOptional)(),
-    (0, class_transformer_1.Transform)(({ value }) => value === '' ? undefined : value),
+    (0, class_transformer_1.Transform)(({ value }) => (value === "" ? undefined : value)),
     (0, class_validator_1.IsEmail)(),
     (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)
@@ -178,7 +178,7 @@ __decorate([
 ], ValidateTokenRequest.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Length)(4, 4),
+    (0, class_validator_1.Length)(4, 6),
     __metadata("design:type", String)
 ], ValidateTokenRequest.prototype, "code", void 0);
 class BcValidateTokenRequest {
@@ -193,7 +193,7 @@ exports.BcValidateTokenRequest = BcValidateTokenRequest;
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEmail)(),
-    (0, class_transformer_1.Transform)(({ value }) => value === '' ? undefined : value),
+    (0, class_transformer_1.Transform)(({ value }) => (value === "" ? undefined : value)),
     (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)
 ], BcValidateTokenRequest.prototype, "email", void 0);

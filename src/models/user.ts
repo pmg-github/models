@@ -4,7 +4,7 @@ import {
   IsNotEmpty,
   IsOptional,
   Length,
-  MaxLength
+  MaxLength,
 } from "class-validator";
 
 export class UserViewModel {
@@ -128,7 +128,7 @@ export class EmailCodeRequest {
 }
 export class BcEmailCodeRequest {
   @IsOptional()
-  @Transform(({ value }) => value === '' ? undefined : value)
+  @Transform(({ value }) => (value === "" ? undefined : value))
   @IsEmail()
   @MaxLength(60)
   email!: string;
@@ -153,7 +153,7 @@ export class ValidateTokenRequest {
   email!: string;
 
   @IsNotEmpty()
-  @Length(4, 4)
+  @Length(4, 6)
   code!: string;
 
   constructor(data: Partial<ValidateTokenRequest>) {
@@ -163,7 +163,7 @@ export class ValidateTokenRequest {
 export class BcValidateTokenRequest {
   @IsOptional()
   @IsEmail()
-  @Transform(({ value }) => value === '' ? undefined : value)
+  @Transform(({ value }) => (value === "" ? undefined : value))
   @MaxLength(60)
   email!: string;
 
