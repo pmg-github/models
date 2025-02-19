@@ -9,7 +9,6 @@ import {
 } from "class-validator";
 
 export interface TimeRegistrationViewModel {
-  date: string;
   status: TimeRegistrationStatusEnum;
   hoursWorked: string;
   hoursBreak: string;
@@ -19,26 +18,27 @@ export interface TimeRegistrationViewModel {
 
 export interface TimeRegistrationRecordModel {
   time: string;
-  name: string;
-  info: string;
+  actionName: string;
+  locationName: string | null;
+  info: string | null;
+  isFromTimeServer: boolean;
+  isDeleted: boolean;
 }
 
 export interface TimeRegistrationActionListModel {
   id: number;
-  reference: string;
   name: string;
 }
 
 export interface TimeRegistrationLocationListModel {
   id: number;
-  reference: string;
   name: string;
 }
 
 export enum TimeRegistrationStatusEnum {
-  ToApprove = "goed te keuren",
-  Approved = "goedgekeurd",
-  Denied = "afgekeurd",
+  TO_APPROVE = 1,
+  APPROVED = 2,
+  DENIED = 3,
 }
 
 export class TimeRegistrationRecordCreateRequest {
@@ -47,14 +47,12 @@ export class TimeRegistrationRecordCreateRequest {
   date!: string;
 
   @IsNotEmpty()
-  // @IsMilitaryTime()
   time!: string;
 
   @IsNotEmpty()
   @IsNumber()
   actionId!: number;
 
-  // @IsNotEmpty()
   @IsNumber()
   locationId!: number;
 
