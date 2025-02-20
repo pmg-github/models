@@ -28,11 +28,14 @@ export interface NewsletterProjectModel {
     totalNewslettersSent: number;
     status: NewsletterProjectStatusEnum;
     numberOfRecipients: number;
+    numberOfRecipientsWarning: boolean;
     numberOfSuccess: number;
     numberOfFailed: number;
     numberOfBounced: number;
     numberOfOpened: number;
+    numberOfOpenedUnique: number;
     numberOfClicks: number;
+    numberOfClicksUnqiue: number;
     orderByValue: string;
 }
 export declare class NewsletterModel {
