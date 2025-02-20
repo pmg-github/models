@@ -63,7 +63,7 @@ export declare class NewsletterModel {
     numberOfOpened: number | undefined;
     numberOfOpenedUnique: number | undefined;
     numberOfClicks: number | undefined;
-    numberOfClicksUnqiue: number | undefined;
+    numberOfClicksUnique: number | undefined;
 }
 export declare enum NewsletterViewTypeEnum {
     IMAGE_LEFT = 1,

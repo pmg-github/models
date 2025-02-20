@@ -51,7 +51,7 @@ class NewsletterModel {
     numberOfOpened = undefined;
     numberOfOpenedUnique = undefined;
     numberOfClicks = undefined;
-    numberOfClicksUnqiue = undefined;
+    numberOfClicksUnique = undefined;
 }
 exports.NewsletterModel = NewsletterModel;
 var NewsletterViewTypeEnum;

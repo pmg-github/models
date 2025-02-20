@@ -81,7 +81,7 @@ export class NewsletterModel {
   numberOfOpened: number | undefined = undefined;
   numberOfOpenedUnique: number | undefined = undefined;
   numberOfClicks: number | undefined = undefined;
-  numberOfClicksUnqiue: number | undefined = undefined;
+  numberOfClicksUnique: number | undefined = undefined;
 }
 
 export enum NewsletterViewTypeEnum {
