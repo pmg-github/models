@@ -56,11 +56,14 @@ export declare class NewsletterModel {
     timestampStart: Date | undefined;
     timestampEnd: Date | undefined;
     numberOfRecipients: number | undefined;
+    numberOfRecipientsWarning: boolean | undefined;
     numberOfSuccess: number | undefined;
     numberOfFailed: number | undefined;
     numberOfBounced: number | undefined;
     numberOfOpened: number | undefined;
+    numberOfOpenedUnique: number | undefined;
     numberOfClicks: number | undefined;
+    numberOfClicksUnqiue: number | undefined;
 }
 export declare enum NewsletterViewTypeEnum {
     IMAGE_LEFT = 1,

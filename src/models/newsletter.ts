@@ -74,11 +74,14 @@ export class NewsletterModel {
   timestampStart: Date | undefined = undefined;
   timestampEnd: Date | undefined = undefined;
   numberOfRecipients: number | undefined = undefined;
+  numberOfRecipientsWarning: boolean | undefined = undefined;
   numberOfSuccess: number | undefined = undefined;
   numberOfFailed: number | undefined = undefined;
   numberOfBounced: number | undefined = undefined;
   numberOfOpened: number | undefined = undefined;
+  numberOfOpenedUnique: number | undefined = undefined;
   numberOfClicks: number | undefined = undefined;
+  numberOfClicksUnqiue: number | undefined = undefined;
 }
 
 export enum NewsletterViewTypeEnum {

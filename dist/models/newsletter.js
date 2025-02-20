@@ -44,11 +44,14 @@ class NewsletterModel {
     timestampStart = undefined;
     timestampEnd = undefined;
     numberOfRecipients = undefined;
+    numberOfRecipientsWarning = undefined;
     numberOfSuccess = undefined;
     numberOfFailed = undefined;
     numberOfBounced = undefined;
     numberOfOpened = undefined;
+    numberOfOpenedUnique = undefined;
     numberOfClicks = undefined;
+    numberOfClicksUnqiue = undefined;
 }
 exports.NewsletterModel = NewsletterModel;
 var NewsletterViewTypeEnum;
