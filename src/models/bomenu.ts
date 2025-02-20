@@ -1,6 +1,7 @@
 export interface BoMenuListModel {
   id: number;
   parentId: number | null;
+  reference: string;
   name: string;
   tooltip: string;
   icon: string;
