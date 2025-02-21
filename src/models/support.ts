@@ -83,6 +83,7 @@ export interface SupportTicketViewModel {
   ticket_number: string;
   files: returnFileResponse[];
   project: SelectOptionViewModel;
+  bucket:string;
 }
 
 export interface returnFileResponse {
