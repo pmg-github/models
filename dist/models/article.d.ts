@@ -90,7 +90,7 @@ export interface BcArticleDetailModel {
     text: string;
     availableFrom?: Date;
     availableUntil?: Date;
-    Company: string;
+    company: string;
 }
 export interface BcArticleDetailIntressesModel {
     articles: BcArticleDetailModel[];
