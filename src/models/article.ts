@@ -145,7 +145,7 @@ export interface BcArticleDetailModel {
   text: string;
   availableFrom?: Date;
   availableUntil?: Date;
-  company:string;
+  company?:string;
 }
 export interface BcArticleDetailIntressesModel {
   articles: BcArticleDetailModel[];
