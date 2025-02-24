@@ -46,6 +46,7 @@ export type ArticleSearchOptions = {
     allowHiddenArticles?: boolean;
 };
 import { PmgUserModel } from "./pmguser";
+import { SelectOptionViewModel } from "./selectoption";
 export interface BoArticleListModel {
     id: number;
     reference: string;
@@ -90,7 +91,7 @@ export interface BcArticleDetailModel {
     text: string;
     availableFrom?: Date;
     availableUntil?: Date;
-    company?: string;
+    company?: SelectOptionViewModel;
 }
 export interface BcArticleDetailIntressesModel {
     articles: BcArticleDetailModel[];
