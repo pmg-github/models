@@ -4,6 +4,7 @@ export interface TimeRegistrationViewModel {
     hoursBreak: string;
     hoursShort: string;
     records: TimeRegistrationRecordModel[];
+    agendaRecords: TimeRegistrationAgendaRecordModel[];
 }
 export interface TimeRegistrationRecordModel {
     time: string;
@@ -12,6 +13,10 @@ export interface TimeRegistrationRecordModel {
     info: string | null;
     isFromTimeServer: boolean;
     isDeleted: boolean;
+}
+export interface TimeRegistrationAgendaRecordModel {
+    time: string;
+    categorieName: string;
 }
 export interface TimeRegistrationActionListModel {
     id: number;
