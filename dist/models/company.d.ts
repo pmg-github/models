@@ -7,6 +7,12 @@ export interface CompanyCardViewModel {
     brand: string;
     vat: string;
 }
+export interface MyCompanyList {
+    klnr: string | number;
+    company: string;
+    brand: string;
+    isContact: boolean;
+}
 export declare class CompanyViewModel {
     reference: string | undefined;
     name: string | undefined;
