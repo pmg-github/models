@@ -395,4 +395,7 @@ export class NewsletterScheduleCreateRequest {
     }
   )
   dates!: string[];
+
+  // TODO: add validation later when frontend is updated, for now allow undefined
+  recipientsTypeId!: number | undefined;
 }

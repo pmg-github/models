@@ -215,4 +215,5 @@ export declare class NewsletterScheduleCreateRequest {
     bodyNL: string | undefined | null;
     bodyFR: string | undefined | null;
     dates: string[];
+    recipientsTypeId: number | undefined;
 }

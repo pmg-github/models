@@ -383,6 +383,8 @@ class NewsletterScheduleCreateRequest {
     bodyNL;
     bodyFR;
     dates;
+    // TODO: add validation later when frontend is updated, for now allow undefined
+    recipientsTypeId;
 }
 exports.NewsletterScheduleCreateRequest = NewsletterScheduleCreateRequest;
 __decorate([
