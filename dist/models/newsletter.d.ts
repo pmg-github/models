@@ -131,6 +131,10 @@ export interface NewsletterSubjectModel {
     subjectNL: string | null;
     subjectFR: string | null;
 }
+export interface NewsletterRecipientTypeModel {
+    id: number;
+    name: string;
+}
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;
     language: string;

@@ -158,6 +158,11 @@ export interface NewsletterSubjectModel {
   subjectFR: string | null;
 }
 
+export interface NewsletterRecipientTypeModel {
+  id: number;
+  name: string;
+}
+
 export class NewsletterMetaDataCreateRequest {
   @IsNotEmpty()
   @Length(12, 12)

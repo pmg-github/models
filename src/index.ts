@@ -112,6 +112,7 @@ import {
   NewsletterSubjectAddRequest,
   NewsletterTestMailCreateRequest,
   NewsletterScheduleCreateRequest,
+  NewsletterRecipientTypeModel,
 } from "./models/newsletter";
 
 import {
@@ -288,6 +289,7 @@ export {
   NewsletterTileModel,
   NewsletterNewsModel,
   NewsletterSubjectModel,
+  NewsletterRecipientTypeModel,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,
   NewsletterQuicklinkAddRequest,
