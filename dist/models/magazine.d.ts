@@ -9,6 +9,7 @@ export declare class ViewerTileBaseViewModel {
     redirectUrl: string | undefined;
     interests: ViewerInteresseViewModel[] | undefined;
     orderByValue: string | undefined;
+    portalDomain?: string | undefined;
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;

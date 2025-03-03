@@ -12,6 +12,7 @@ export class ViewerTileBaseViewModel {
   redirectUrl: string | undefined = undefined;
   interests: ViewerInteresseViewModel[] | undefined = undefined;
   orderByValue: string | undefined = undefined;
+  portalDomain?:string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {
