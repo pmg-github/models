@@ -35,6 +35,7 @@ class ViewerArticleBaseViewModel {
     typeId = undefined;
     externalUrl = undefined;
     searchTextRelated = undefined;
+    NewsletterMoreLabel = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {
