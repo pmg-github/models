@@ -32,7 +32,7 @@ export class ViewerArticleBaseViewModel {
   typeId: number | undefined = undefined;
   externalUrl: string | undefined = undefined;
   searchTextRelated: string | undefined = undefined;
-  NewsletterMoreLabel: string|undefined= undefined
+  newsletterMoreLabel: string|undefined= undefined
 }
 
 export class ViewerAdBaseViewModel {
