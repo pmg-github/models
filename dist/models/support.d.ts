@@ -33,6 +33,8 @@ export interface SupportTicketListViewModel {
     snoozed?: boolean;
     project: SelectOptionViewModel | null;
     isRead: boolean;
+    amountOfTasks?: number;
+    amountOfFinishedTasks?: number;
 }
 export interface SupportTaskListViewModel {
     id: number;

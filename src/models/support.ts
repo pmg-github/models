@@ -31,7 +31,7 @@ export interface SupportTicketListViewModel {
   subject: string;
   description: string;
   priority: Priority;
-  bucket:string;
+  bucket: string;
   created_at: string;
   ticketNumber: string;
   connected_users_ids?: string;
@@ -39,6 +39,8 @@ export interface SupportTicketListViewModel {
   snoozed?: boolean;
   project: SelectOptionViewModel | null;
   isRead: boolean;
+  amountOfTasks?: number;
+  amountOfFinishedTasks?: number;
 }
 export interface SupportTaskListViewModel {
   id: number;
@@ -83,7 +85,7 @@ export interface SupportTicketViewModel {
   ticket_number: string;
   files: returnFileResponse[];
   project: SelectOptionViewModel;
-  bucket:string;
+  bucket: string;
 }
 
 export interface returnFileResponse {
