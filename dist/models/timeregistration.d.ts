@@ -31,6 +31,24 @@ export declare enum TimeRegistrationStatusEnum {
     APPROVED = 2,
     DENIED = 3
 }
+export interface TimeRegistrationBaseOverviewModel {
+    hoursScheduled: string;
+    hoursWorked: string;
+    hoursWorkedFromHome: string;
+    hoursAbsent: string;
+}
+export interface TimeRegistrationOverviewModel extends TimeRegistrationBaseOverviewModel {
+    status: TimeRegistrationStatusEnum;
+    date: Date | string;
+}
+export interface TimeRegistrationTotalsViewModel extends TimeRegistrationBaseOverviewModel {
+    hoursOvertime: string;
+    absenceData: TimeRegistrationAbsenceModel[];
+}
+export interface TimeRegistrationAbsenceModel {
+    name: string;
+    hoursAbsent: string;
+}
 export declare class TimeRegistrationRecordCreateRequest {
     date: string;
     time: string;
