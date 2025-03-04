@@ -52,7 +52,7 @@ export interface NewsletterProjectModel {
   numberOfOpened: number;
   numberOfOpenedUnique: number;
   numberOfClicks: number;
-  numberOfClicksUnqiue: number;
+  numberOfClicksUnique: number;
   orderByValue: string;
 }
 
