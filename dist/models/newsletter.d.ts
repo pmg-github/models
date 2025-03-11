@@ -135,6 +135,16 @@ export interface NewsletterRecipientTypeModel {
     id: number;
     name: string;
 }
+export interface NewsletterArticleStatsViewModel {
+    articleReference: string;
+    title: string;
+    leads: LanguageCountModel[];
+    views: LanguageCountModel[];
+}
+export interface LanguageCountModel {
+    nl: number | undefined | null;
+    fr: number | undefined | null;
+}
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;
     language: string;

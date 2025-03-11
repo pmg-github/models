@@ -163,6 +163,18 @@ export interface NewsletterRecipientTypeModel {
   name: string;
 }
 
+export interface NewsletterArticleStatsViewModel {
+  articleReference: string;
+  title: string; // always NL title for BO use
+  leads: LanguageCountModel[];
+  views: LanguageCountModel[];
+}
+
+export interface LanguageCountModel {
+  nl: number | undefined | null;
+  fr: number | undefined | null;
+}
+
 export class NewsletterMetaDataCreateRequest {
   @IsNotEmpty()
   @Length(12, 12)
