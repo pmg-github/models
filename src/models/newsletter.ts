@@ -166,14 +166,14 @@ export interface NewsletterRecipientTypeModel {
 export interface NewsletterArticleStatsViewModel {
   articleReference: string;
   title: string; // always NL title for BO use
-  leads: LanguageCountModel[];
-  views: LanguageCountModel[];
+  leads: LanguageCountModel;
+  views: LanguageCountModel;
 }
 
 export interface LanguageCountModel {
-  nl: number | undefined | null;
-  fr: number | undefined | null;
-  total: number | undefined | null;
+  nl: number;
+  fr: number;
+  total: number;
 }
 
 export class NewsletterMetaDataCreateRequest {

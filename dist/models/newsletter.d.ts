@@ -138,8 +138,8 @@ export interface NewsletterRecipientTypeModel {
 export interface NewsletterArticleStatsViewModel {
     articleReference: string;
     title: string;
-    leads: LanguageCountModel[];
-    views: LanguageCountModel[];
+    leads: LanguageCountModel;
+    views: LanguageCountModel;
 }
 export interface LanguageCountModel {
     nl: number | undefined | null;
