@@ -173,6 +173,7 @@ export interface NewsletterArticleStatsViewModel {
 export interface LanguageCountModel {
   nl: number | undefined | null;
   fr: number | undefined | null;
+  total: number | undefined | null;
 }
 
 export class NewsletterMetaDataCreateRequest {
