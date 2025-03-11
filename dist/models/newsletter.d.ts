@@ -142,9 +142,9 @@ export interface NewsletterArticleStatsViewModel {
     views: LanguageCountModel;
 }
 export interface LanguageCountModel {
-    nl: number | undefined | null;
-    fr: number | undefined | null;
-    total: number | undefined | null;
+    nl: number;
+    fr: number;
+    total: number;
 }
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;

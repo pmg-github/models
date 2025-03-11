@@ -33,9 +33,9 @@ export declare enum TimeRegistrationStatusEnum {
 }
 export interface TimeRegistrationBaseOverviewModel {
     hoursScheduled: string;
-    hoursWorked: string;
-    hoursWorkedFromHome: string;
-    hoursAbsent: string;
+    hoursWorked: string | null;
+    hoursWorkedFromHome: string | null;
+    hoursAbsent: string | null;
 }
 export interface TimeRegistrationOverviewModel extends TimeRegistrationBaseOverviewModel {
     status: TimeRegistrationStatusEnum;
