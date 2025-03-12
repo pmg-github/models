@@ -6,3 +6,8 @@ export interface PortalViewModel {
     domain: string;
     logo: string;
 }
+export interface PortalCarouselViewModel {
+    link: string;
+    src: string;
+    name: string;
+}
