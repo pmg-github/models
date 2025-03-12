@@ -166,6 +166,7 @@ export interface NewsletterRecipientTypeModel {
 export interface NewsletterArticleStatsViewModel {
   articleReference: string;
   title: string; // always NL title for BO use
+  type: "article" | "news";
   leads: LanguageCountModel;
   views: LanguageCountModel;
 }

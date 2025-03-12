@@ -138,6 +138,7 @@ export interface NewsletterRecipientTypeModel {
 export interface NewsletterArticleStatsViewModel {
     articleReference: string;
     title: string;
+    type: "article" | "news";
     leads: LanguageCountModel;
     views: LanguageCountModel;
 }
