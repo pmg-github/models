@@ -217,6 +217,8 @@ import {
 
 import { CommentTypeView, CommentListView } from "./models/comment";
 
+import { DocumentTypeViewModel } from "./models/documents";
+
 export {
   CommentTypeView,
   CommentListView,
@@ -332,6 +334,7 @@ export {
   ProefAboCreateModel,
   PortalViewModel,
   PortalCarouselViewModel,
+  DocumentTypeViewModel,
   CampagneViewModel,
   CampagneItemViewModel,
   DeeplTranslationRequest,
