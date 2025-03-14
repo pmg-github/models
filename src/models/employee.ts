@@ -9,6 +9,11 @@ export interface EmployeesSearchListModel {
   lastActivityTime: string;
 }
 
+export interface EmployeesSearchCursorListModel {
+  nextCursor:string
+  content:EmployeesSearchListModel[]
+}
+
 export interface EmployeeDetailModel {
   code: string;
   firstName: string;
