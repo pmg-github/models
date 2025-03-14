@@ -86,6 +86,7 @@ export interface SupportTicketViewModel {
   files: returnFileResponse[];
   project: SelectOptionViewModel;
   bucket: string;
+  snooze?:boolean
 }
 
 export interface returnFileResponse {
