@@ -35,6 +35,9 @@ export interface SupportTicketListViewModel {
     isRead: boolean;
     amountOfTasks?: number;
     amountOfFinishedTasks?: number;
+    deadline: string;
+    endDate: string;
+    startDate: string;
 }
 export interface SupportTaskListViewModel {
     id: number;
