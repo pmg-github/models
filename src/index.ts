@@ -197,7 +197,7 @@ import {
   SupportTaskListViewModel,
 } from "./models/support";
 
-import { FileUploadResponseModel } from "./models/files";
+import { FileListViewModel, FileUploadResponseModel } from "./models/files";
 
 import {
   TimeRegistrationActionListModel,
@@ -368,6 +368,7 @@ export {
   Priority,
   AgendaModel,
   returnFileResponse,
+  FileListViewModel,
   FileUploadResponseModel,
   TimeRegistrationRecordModel,
   TimeRegistrationViewModel,
