@@ -6,6 +6,9 @@ export interface FileUploadResponseModel {
     fileExtension: string;
     fileUrl: string;
     originalName: string;
+    redirectUrl?: string;
+    redirectLabel?: string;
+    message?: string;
 }
 export interface ZipUploadResponseModel {
     statusCode: number;
