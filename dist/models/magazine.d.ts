@@ -102,7 +102,7 @@ export interface BoDigitalMagazines {
     baseMagazine?: string;
 }
 export interface BoDigitalMagazinesArticles {
-    id: string;
+    id: number;
     projectCode: string;
     articleReference: string;
     sortOrder: number;
