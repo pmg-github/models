@@ -116,7 +116,7 @@ export interface BoDigitalMagazines {
 }
 
 export interface BoDigitalMagazinesArticles {
-  id: string;
+  id: number;
   projectCode: string;
   articleReference: string;
   sortOrder: number;
