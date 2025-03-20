@@ -101,3 +101,13 @@ export interface BoDigitalMagazines {
     code: string;
     baseMagazine?: string;
 }
+export interface BoDigitalMagazinesArticles {
+    id: string;
+    projectCode: string;
+    articleReference: string;
+    sortOrder: string;
+    title: string;
+    description: string;
+    fileId: number;
+    imageUrl: string;
+}
