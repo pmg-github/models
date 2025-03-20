@@ -30,6 +30,7 @@ import {
   NewsletterTileViewModel,
   NewsletterMetaDataViewModel,
   ViewerTileBaseViewModel,
+  BoDigitalMagazines,
 } from "./models/magazine";
 
 import {
@@ -382,4 +383,5 @@ export {
   PubsListView,
   PubsDetailView,
   PubsListCursorView,
+  BoDigitalMagazines
 };

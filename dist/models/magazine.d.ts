@@ -95,3 +95,9 @@ export declare class RelatedMagazineViewModel {
     name: string | undefined;
     recentCover: string | undefined;
 }
+export interface BoDigitalMagazines {
+    name: string;
+    reference: string;
+    code: string;
+    baseMagazine?: string;
+}

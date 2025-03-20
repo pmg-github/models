@@ -12,7 +12,7 @@ export class ViewerTileBaseViewModel {
   redirectUrl: string | undefined = undefined;
   interests: ViewerInteresseViewModel[] | undefined = undefined;
   orderByValue: string | undefined = undefined;
-  portalDomain?:string | undefined = undefined;
+  portalDomain?: string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {
@@ -32,7 +32,7 @@ export class ViewerArticleBaseViewModel {
   typeId: number | undefined = undefined;
   externalUrl: string | undefined = undefined;
   searchTextRelated: string | undefined = undefined;
-  newsletterMoreLabel: string|undefined= undefined
+  newsletterMoreLabel: string | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {
@@ -106,4 +106,11 @@ export class RelatedMagazineViewModel {
   magazineReference: string | undefined = undefined;
   name: string | undefined = undefined;
   recentCover: string | undefined = undefined;
+}
+
+export interface BoDigitalMagazines {
+  name: string;
+  reference: string;
+  code: string;
+  baseMagazine?: string;
 }
