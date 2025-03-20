@@ -119,7 +119,7 @@ export interface BoDigitalMagazinesArticles {
   id: string;
   projectCode: string;
   articleReference: string;
-  sortOrder: string;
+  sortOrder: number;
   title: string;
   description: string;
   fileId: number;
