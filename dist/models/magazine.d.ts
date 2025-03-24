@@ -100,6 +100,7 @@ export interface BoDigitalMagazines {
     reference: string;
     code: string;
     baseMagazine?: string;
+    baseMagazineCode?: string;
 }
 export interface BoDigitalMagazinesArticles {
     id: number;
