@@ -156,6 +156,9 @@ export class ValidateTokenRequest {
   @Length(4, 6)
   code!: string;
 
+  @IsOptional()
+  language?:string
+
   constructor(data: Partial<ValidateTokenRequest>) {
     Object.assign(this, data);
   }

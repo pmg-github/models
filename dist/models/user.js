@@ -165,6 +165,7 @@ __decorate([
 class ValidateTokenRequest {
     email;
     code;
+    language;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -181,6 +182,10 @@ __decorate([
     (0, class_validator_1.Length)(4, 6),
     __metadata("design:type", String)
 ], ValidateTokenRequest.prototype, "code", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], ValidateTokenRequest.prototype, "language", void 0);
 class BcValidateTokenRequest {
     email;
     klnr;
