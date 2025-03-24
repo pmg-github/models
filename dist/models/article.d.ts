@@ -99,7 +99,8 @@ export interface BcArticleDetailIntressesModel {
     intresses: intresses[];
 }
 export interface BcArticleIntresseReachModel {
-    AudienceAmount: string;
+    AudienceAmountNl: string;
+    AudienceAmountFr: string;
     AudienceName: string;
     PortalCode: string;
     id: string;

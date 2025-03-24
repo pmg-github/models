@@ -155,7 +155,8 @@ export interface BcArticleDetailIntressesModel {
 }
 
 export interface BcArticleIntresseReachModel {
-  AudienceAmount: string;
+  AudienceAmountNl: string;
+  AudienceAmountFr: string;
   AudienceName: string;
   PortalCode: string;
   id: string;
