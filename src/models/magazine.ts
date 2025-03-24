@@ -125,6 +125,7 @@ export interface BoDigitalMagazinesArticles {
   description: string;
   fileId: number;
   imageUrl: string;
+  domain:string
 }
 
 export interface BoDigitalMagazinesDetail extends BoDigitalMagazines{
