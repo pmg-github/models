@@ -60,7 +60,6 @@ export interface BoArticleListModel {
     availableFrom: Date;
     availableUntil: Date;
     seoScore: number;
-    lines: number;
     author: string;
     updatedOn: Date;
     updatedBy: PmgUserModel;
