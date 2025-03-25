@@ -53,6 +53,7 @@ export interface BoArticleListModel {
     languageCode: string;
     title: string;
     description: string;
+    customerReference: string;
     type: BoArticleType;
     status: BoArticleStatus;
     displayDate: Date | string;

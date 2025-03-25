@@ -108,13 +108,14 @@ export interface BoArticleListModel {
   languageCode: string;
   title: string;
   description: string;
+  customerReference: string;
   type: BoArticleType;
   status: BoArticleStatus;
   displayDate: Date | string;
   availableFrom: Date;
   availableUntil: Date;
   seoScore: number;
-  lines:number;
+  lines: number;
   author: string;
   updatedOn: Date;
   updatedBy: PmgUserModel;
@@ -147,7 +148,7 @@ export interface BcArticleDetailModel {
   text: string;
   availableFrom?: Date;
   availableUntil?: Date;
-  company?:SelectOptionViewModel;
+  company?: SelectOptionViewModel;
 }
 export interface BcArticleDetailIntressesModel {
   articles: BcArticleDetailModel[];
