@@ -89,8 +89,10 @@ export declare class NewsletterContentModel {
 }
 export interface NewsletterOrderModel {
     reference: string;
+    title: string | null;
     articleReference: string | null;
     customerName: string | null;
+    customerReference: string | null;
 }
 export interface NewsletterQuicklinkModel {
     id: number;
