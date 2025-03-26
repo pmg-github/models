@@ -114,6 +114,7 @@ export interface BoDigitalMagazines {
   code: string;
   baseMagazine?: string;
   baseMagazineCode?: string;
+  amountOfArticles:number
 }
 
 export interface BoDigitalMagazinesArticles {
