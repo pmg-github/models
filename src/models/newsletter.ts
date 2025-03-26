@@ -144,6 +144,7 @@ export interface NewsletterMetaDataModel {
   introFileId: number | null;
   introImageUrl: string | null;
   pollCode: string | null;
+  themaCode: string | null;
 }
 
 export interface NewsletterNewsModel {
