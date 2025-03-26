@@ -89,8 +89,10 @@ export declare class NewsletterContentModel {
 }
 export interface NewsletterOrderModel {
     reference: string;
+    articleTitle: string | null;
     articleReference: string | null;
     customerName: string | null;
+    customerReference: string | null;
 }
 export interface NewsletterQuicklinkModel {
     id: number;
@@ -118,6 +120,7 @@ export interface NewsletterMetaDataModel {
     introFileId: number | null;
     introImageUrl: string | null;
     pollCode: string | null;
+    themaCode: string | null;
 }
 export interface NewsletterNewsModel {
     id: number;

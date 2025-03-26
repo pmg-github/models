@@ -115,7 +115,6 @@ export interface BoArticleListModel {
   availableFrom: Date;
   availableUntil: Date;
   seoScore: number;
-  lines: number;
   author: string;
   updatedOn: Date;
   updatedBy: PmgUserModel;
@@ -135,8 +134,8 @@ export interface bcArticleListModel {
   availableUntil: Date;
   portalDomain: string;
   available: bcAvailableLanguage[];
-  company:string
-  brand:string
+  company: string;
+  brand: string;
 }
 export interface BcArticleDetailModel {
   id: number;
