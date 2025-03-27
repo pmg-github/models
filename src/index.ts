@@ -155,7 +155,7 @@ import {
   UnpaidInvoicesStatsModel,
 } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
-import { BoMenuListModel } from "./models/bomenu";
+import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
 import { PopupModel } from "./models/popup";
 
@@ -332,6 +332,7 @@ export {
   PmgCompanyList,
   BoPageSearchListModel,
   BoMenuListModel,
+  BoMenuDetailListModel,
   PopupModel,
   AboViewModel,
   ProefAboCreateModel,
