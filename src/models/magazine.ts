@@ -13,6 +13,7 @@ export class ViewerTileBaseViewModel {
   interests: ViewerInteresseViewModel[] | undefined = undefined;
   orderByValue: string | undefined = undefined;
   portalDomain?: string | undefined = undefined;
+  customerReference?: string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {
@@ -114,7 +115,7 @@ export interface BoDigitalMagazines {
   code: string;
   baseMagazine?: string;
   baseMagazineCode?: string;
-  amountOfArticles:number
+  amountOfArticles: number;
 }
 
 export interface BoDigitalMagazinesArticles {
@@ -126,9 +127,9 @@ export interface BoDigitalMagazinesArticles {
   description: string;
   fileId: number;
   imageUrl: string;
-  domain:string
+  domain: string;
 }
 
-export interface BoDigitalMagazinesDetail extends BoDigitalMagazines{
-  content:BoDigitalMagazinesArticles[]
+export interface BoDigitalMagazinesDetail extends BoDigitalMagazines {
+  content: BoDigitalMagazinesArticles[];
 }

@@ -45,4 +45,6 @@ var SecurityEnum;
     SecurityEnum[SecurityEnum["UPLOAD_VIDEOS"] = 40] = "UPLOAD_VIDEOS";
     SecurityEnum[SecurityEnum["UPLOAD_FILES_DASHBOARD"] = 41] = "UPLOAD_FILES_DASHBOARD";
     SecurityEnum[SecurityEnum["MANAGE_TIME_REGISTRATION"] = 43] = "MANAGE_TIME_REGISTRATION";
+    SecurityEnum[SecurityEnum["NEWSLETTER_APPROVE"] = 44] = "NEWSLETTER_APPROVE";
+    SecurityEnum[SecurityEnum["NEWSLETTER_UNAPPROVE"] = 45] = "NEWSLETTER_UNAPPROVE";
 })(SecurityEnum || (exports.SecurityEnum = SecurityEnum = {}));
