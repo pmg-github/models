@@ -10,6 +10,7 @@ export declare class ViewerTileBaseViewModel {
     interests: ViewerInteresseViewModel[] | undefined;
     orderByValue: string | undefined;
     portalDomain?: string | undefined;
+    customerReference?: string | undefined;
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;
