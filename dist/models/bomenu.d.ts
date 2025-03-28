@@ -23,6 +23,6 @@ export interface BoMenuDetailListModel {
     target: string;
     inMenu?: number;
     goBack?: number;
-    items: BoMenuListModel[];
+    items: BoMenuDetailListModel[];
     securityIds: string[];
 }
