@@ -24,5 +24,5 @@ export interface BoMenuDetailListModel {
   inMenu?: number;
   goBack?: number;
   items: BoMenuListModel[];
-  securityIds: string
+  securityIds: string[]
 }
