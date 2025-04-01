@@ -200,7 +200,11 @@ import {
   SupportTaskListViewModel,
 } from "./models/support";
 
-import { FileListViewModel, FileUploadResponseModel, ZipUploadResponseModel } from "./models/files";
+import {
+  FileListViewModel,
+  FileUploadResponseModel,
+  ZipUploadResponseModel,
+} from "./models/files";
 
 import {
   TimeRegistrationActionListModel,
@@ -221,6 +225,8 @@ import {
 import { CommentTypeView, CommentListView } from "./models/comment";
 
 import { DocumentTypeViewModel } from "./models/documents";
+
+import { Issuers } from "./models/mollie";
 
 export {
   CommentTypeView,
@@ -388,5 +394,6 @@ export {
   PubsListCursorView,
   BoDigitalMagazines,
   BoDigitalMagazinesArticles,
-  BoDigitalMagazinesDetail
+  BoDigitalMagazinesDetail,
+  Issuers,
 };
