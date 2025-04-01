@@ -90,6 +90,7 @@ export interface SupportTicketViewModel {
   project: SelectOptionViewModel;
   bucket: string;
   snooze?:Date
+  estimatedHours:number
 }
 
 export interface returnFileResponse {

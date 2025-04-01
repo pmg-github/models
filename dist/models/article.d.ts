@@ -70,6 +70,7 @@ export interface BoArticleListModel {
     orderByValue: string;
     fileId: number | undefined | null;
     imageUrl: string | undefined | null;
+    numberOfLines: number | undefined | null;
 }
 export interface bcArticleListModel {
     id: number;
@@ -89,9 +90,9 @@ export interface BcArticleDetailModel {
     languageCode: string;
     statusId: number;
     status: string;
-    title: string;
+    title: string | null | undefined;
     imageUrl: string | undefined;
-    text: string;
+    text: string | null | undefined;
     availableFrom?: Date;
     availableUntil?: Date;
     company?: SelectOptionViewModel;
