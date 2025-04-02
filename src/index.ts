@@ -63,6 +63,7 @@ import {
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
   CompanyCardViewModel,
+  BcCompanyViewModel,
 } from "./models/company";
 
 import { ContextViewModel } from "./models/context";
@@ -333,6 +334,7 @@ export {
   EmployeesSearchListModel,
   EmployeeDetailModel,
   EmployeeWorkSchedule,
+  BcCompanyViewModel,
   PromptListModel,
   UnpaidInvoicesListModel,
   PmgCompanyList,

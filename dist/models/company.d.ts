@@ -29,6 +29,7 @@ export declare class CompanyViewModel {
 }
 export interface BcCompanyViewModel extends CompanyViewModel {
     contactPerson: PmgUserInterface;
+    vat: string;
 }
 export declare class CompanyCornerDBModel {
     [key: string]: any;
