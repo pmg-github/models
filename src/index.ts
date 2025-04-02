@@ -228,6 +228,7 @@ import { CommentTypeView, CommentListView } from "./models/comment";
 import { DocumentTypeViewModel } from "./models/documents";
 
 import { Issuers } from "./models/mollie";
+import { BestChoiceCategories } from "./models/bestCoice";
 
 export {
   CommentTypeView,
@@ -334,6 +335,7 @@ export {
   EmployeesSearchListModel,
   EmployeeDetailModel,
   EmployeeWorkSchedule,
+  BestChoiceCategories,
   BcCompanyViewModel,
   PromptListModel,
   UnpaidInvoicesListModel,
