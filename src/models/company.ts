@@ -32,7 +32,7 @@ export class CompanyViewModel {
 
 export interface BcCompanyViewModel extends CompanyViewModel{
   contactPerson:PmgUserInterface;
-  vat:string
+  vat?:string
 }
 
 export class CompanyCornerDBModel {
