@@ -230,7 +230,7 @@ import { DocumentTypeViewModel } from "./models/documents";
 import { Issuers } from "./models/mollie";
 import { BestChoiceCategories } from "./models/bestCoice";
 
-import { ProductViewModel } from "./models/product";
+import { ProductCategoryEnum, ProductViewModel } from "./models/product";
 
 export {
   CommentTypeView,
@@ -403,4 +403,5 @@ export {
   BoDigitalMagazinesDetail,
   Issuers,
   ProductViewModel,
+  ProductCategoryEnum,
 };
