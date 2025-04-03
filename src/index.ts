@@ -230,6 +230,8 @@ import { DocumentTypeViewModel } from "./models/documents";
 import { Issuers } from "./models/mollie";
 import { BestChoiceCategories } from "./models/bestCoice";
 
+import { ProductViewModel } from "./models/product";
+
 export {
   CommentTypeView,
   CommentListView,
@@ -400,4 +402,5 @@ export {
   BoDigitalMagazinesArticles,
   BoDigitalMagazinesDetail,
   Issuers,
+  ProductViewModel,
 };
