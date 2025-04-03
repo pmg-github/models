@@ -7,7 +7,8 @@ export interface ProductViewModel {
     isDelivery: boolean | number;
     VAT: number;
     priceExclVAT: number;
-    aboPriceExclVAT: number;
+    aboPriceExclVAT: number | null;
     priceInclVAT: number;
-    aboPriceInclVAT: number;
+    aboPriceInclVAT: number | null;
+    magazineCode: string | null;
 }
