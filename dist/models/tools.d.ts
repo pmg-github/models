@@ -3,3 +3,7 @@ export interface ToolsListView {
     name: string;
     groupName: string;
 }
+export interface ToolsListModel {
+    cursor: string;
+    content: ToolsListView[];
+}

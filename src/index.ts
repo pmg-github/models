@@ -229,11 +229,12 @@ import { DocumentTypeViewModel } from "./models/documents";
 
 import { Issuers } from "./models/mollie";
 import { BestChoiceCategories } from "./models/bestCoice";
-import { ToolsListView} from "./models/tools";
+import { ToolsListModel, ToolsListView} from "./models/tools";
 
 import { ProductCategoryEnum, ProductViewModel } from "./models/product";
 
 export {
+  ToolsListModel,
   ToolsListView,
   CommentTypeView,
   CommentListView,
