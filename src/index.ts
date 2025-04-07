@@ -231,6 +231,8 @@ import { Issuers } from "./models/mollie";
 import { BestChoiceCategories } from "./models/bestCoice";
 import { ToolsListView} from "./models/tools";
 
+import { ProductCategoryEnum, ProductViewModel } from "./models/product";
+
 export {
   ToolsListView,
   CommentTypeView,
@@ -402,4 +404,6 @@ export {
   BoDigitalMagazinesArticles,
   BoDigitalMagazinesDetail,
   Issuers,
+  ProductViewModel,
+  ProductCategoryEnum,
 };
