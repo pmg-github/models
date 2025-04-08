@@ -233,6 +233,8 @@ import { ToolDetailView, ToolsListModel, ToolsListView } from "./models/tools";
 
 import { ProductCategoryEnum, ProductViewModel } from "./models/product";
 
+import { PMGTeamMemberViewModel } from "./models/contacts";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -408,4 +410,5 @@ export {
   Issuers,
   ProductViewModel,
   ProductCategoryEnum,
+  PMGTeamMemberViewModel,
 };
