@@ -1,3 +1,5 @@
+import { SelectOptionViewModel } from "./selectoption";
+
 export interface ToolsListView {
   id: number;
   name: string;
@@ -11,13 +13,15 @@ export interface ToolsListModel {
 export interface ToolDetailView {
   id: number;
   nameNl: string;
-  genderNl: string;
+  genderNl: SelectOptionViewModel;
   keywordNl: string;
   descriptionNl: string;
   nameFr: string;
-  genderFr: string;
-  keywordFr: string
-  descriptionFr: string
-  groupName: string;
-  group: string;
+  genderFr: SelectOptionViewModel;
+  keywordFr: string;
+  descriptionFr: string;
+  group: SelectOptionViewModel;
+  articleReference: SelectOptionViewModel;
+  merkType: SelectOptionViewModel;
+  image: string;
 }
