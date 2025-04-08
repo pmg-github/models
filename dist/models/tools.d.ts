@@ -22,4 +22,5 @@ export interface ToolDetailView {
     articleReference: SelectOptionViewModel;
     merkType: SelectOptionViewModel;
     image: string;
+    imageId: number;
 }
