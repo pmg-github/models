@@ -235,6 +235,8 @@ import { ProductCategoryEnum, ProductViewModel } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
 
+import { CommunityViewModel } from "./models/community";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -411,4 +413,5 @@ export {
   ProductViewModel,
   ProductCategoryEnum,
   PMGTeamMemberViewModel,
+  CommunityViewModel,
 };
