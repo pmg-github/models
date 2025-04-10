@@ -5,6 +5,7 @@ import {
   IsDateString,
   isNotEmpty,
   IsNotEmpty,
+  IsNumber,
   Length,
   MaxLength,
   ValidateIf,
@@ -400,10 +401,7 @@ export class NewsletterTestMailCreateRequest {
   emailList?: string | undefined;
 }
 
-export class NewsletterScheduleCreateRequest {
-  bodyNL!: string | undefined | null;
-  bodyFR!: string | undefined | null;
-
+export class NewsletterScheduleBaseSaveRequest {
   @IsArray()
   @IsDateString(
     {},
@@ -412,7 +410,14 @@ export class NewsletterScheduleCreateRequest {
     }
   )
   dates!: string[];
-
-  // TODO: add validation later when frontend is updated, for now allow undefined
-  recipientsTypeId!: number | undefined;
 }
+
+export class NewsletterScheduleCreateRequest extends NewsletterScheduleBaseSaveRequest {
+  bodyNL!: string | undefined | null;
+  bodyFR!: string | undefined | null;
+
+  @IsNotEmpty()
+  recipientsTypeId!: number;
+}
+
+export class NewsletterScheduleSaveRequest extends NewsletterScheduleBaseSaveRequest {}

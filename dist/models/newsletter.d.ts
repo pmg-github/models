@@ -226,9 +226,13 @@ export declare class NewsletterTestMailCreateRequest {
     html: string;
     emailList?: string | undefined;
 }
-export declare class NewsletterScheduleCreateRequest {
+export declare class NewsletterScheduleBaseSaveRequest {
+    dates: string[];
+}
+export declare class NewsletterScheduleCreateRequest extends NewsletterScheduleBaseSaveRequest {
     bodyNL: string | undefined | null;
     bodyFR: string | undefined | null;
-    dates: string[];
-    recipientsTypeId: number | undefined;
+    recipientsTypeId: number;
+}
+export declare class NewsletterScheduleSaveRequest extends NewsletterScheduleBaseSaveRequest {
 }
