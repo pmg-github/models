@@ -4,6 +4,8 @@ export interface NewsletterBaseModel {
     subject: string;
     language: string;
     scheduledOn: Date | string;
+    statusId: number;
+    recipientsTypeId: number;
 }
 export declare class NewsletterContentType {
     id: number | undefined;
