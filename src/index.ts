@@ -119,6 +119,7 @@ import {
   NewsletterRecipientTypeModel,
   NewsletterArticleStatsViewModel,
   LanguageCountModel,
+  NewsletterScheduleSaveRequest,
 } from "./models/newsletter";
 
 import {
@@ -329,6 +330,7 @@ export {
   NewsletterSubjectAddRequest,
   NewsletterTestMailCreateRequest,
   NewsletterScheduleCreateRequest,
+  NewsletterScheduleSaveRequest,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,

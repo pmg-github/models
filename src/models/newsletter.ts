@@ -401,7 +401,10 @@ export class NewsletterTestMailCreateRequest {
   emailList?: string | undefined;
 }
 
-export class NewsletterScheduleBaseSaveRequest {
+export class NewsletterScheduleCreateRequest {
+  bodyNL!: string | undefined | null;
+  bodyFR!: string | undefined | null;
+
   @IsArray()
   @IsDateString(
     {},
@@ -410,14 +413,15 @@ export class NewsletterScheduleBaseSaveRequest {
     }
   )
   dates!: string[];
-}
-
-export class NewsletterScheduleCreateRequest extends NewsletterScheduleBaseSaveRequest {
-  bodyNL!: string | undefined | null;
-  bodyFR!: string | undefined | null;
 
   @IsNotEmpty()
   recipientsTypeId!: number;
 }
 
-export class NewsletterScheduleSaveRequest extends NewsletterScheduleBaseSaveRequest {}
+export class NewsletterScheduleSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsDateString()
+  date!: string;
+}
