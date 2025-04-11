@@ -57,5 +57,6 @@ export declare class ValidateTokenRequest {
 export declare class BcValidateTokenRequest {
     email: string;
     klnr: string;
+    code: string;
     constructor(data: Partial<ValidateTokenRequest>);
 }
