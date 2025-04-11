@@ -25,7 +25,7 @@ export interface SupportTicketListViewModel {
     subject: string;
     description: string;
     priority: Priority;
-    bucket: string;
+    bucket: SelectOptionViewModel | null;
     created_at: string;
     ticketNumber: string;
     connected_users_ids?: string;

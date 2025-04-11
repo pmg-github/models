@@ -173,10 +173,6 @@ export class BcValidateTokenRequest {
   @IsNotEmpty()
   klnr!: string;
 
-  @IsNotEmpty()
-  @Length(6, 6)
-  code!: string;
-
   constructor(data: Partial<ValidateTokenRequest>) {
     Object.assign(this, data);
   }
