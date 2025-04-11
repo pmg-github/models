@@ -4,6 +4,8 @@ export interface NewsletterBaseModel {
     subject: string;
     language: string;
     scheduledOn: Date | string;
+    statusId: number;
+    recipientsTypeId: number;
 }
 export declare class NewsletterContentType {
     id: number | undefined;
@@ -230,5 +232,9 @@ export declare class NewsletterScheduleCreateRequest {
     bodyNL: string | undefined | null;
     bodyFR: string | undefined | null;
     dates: string[];
-    recipientsTypeId: number | undefined;
+    recipientsTypeId: number;
+}
+export declare class NewsletterScheduleSaveRequest {
+    id: number;
+    date: string;
 }

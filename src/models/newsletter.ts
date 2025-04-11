@@ -5,6 +5,7 @@ import {
   IsDateString,
   isNotEmpty,
   IsNotEmpty,
+  IsNumber,
   Length,
   MaxLength,
   ValidateIf,
@@ -18,6 +19,8 @@ export interface NewsletterBaseModel {
   subject: string;
   language: string;
   scheduledOn: Date | string;
+  statusId: number;
+  recipientsTypeId: number;
 }
 
 export class NewsletterContentType {
@@ -413,6 +416,14 @@ export class NewsletterScheduleCreateRequest {
   )
   dates!: string[];
 
-  // TODO: add validation later when frontend is updated, for now allow undefined
-  recipientsTypeId!: number | undefined;
+  @IsNotEmpty()
+  recipientsTypeId!: number;
+}
+
+export class NewsletterScheduleSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsDateString()
+  date!: string;
 }

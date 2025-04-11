@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NewsletterScheduleCreateRequest = exports.NewsletterTestMailCreateRequest = exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectAddRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterViewTypeEnum = exports.NewsletterModel = exports.NewsletterProjectStatusEnum = exports.NewsletterContentType = void 0;
+exports.NewsletterScheduleSaveRequest = exports.NewsletterScheduleCreateRequest = exports.NewsletterTestMailCreateRequest = exports.NewsletterSubjectSaveRequest = exports.NewsletterSubjectAddRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterPollAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterContentModel = exports.NewsletterViewTypeEnum = exports.NewsletterModel = exports.NewsletterProjectStatusEnum = exports.NewsletterContentType = void 0;
 const class_validator_1 = require("class-validator");
 class NewsletterContentType {
     id = undefined;
@@ -383,7 +383,6 @@ class NewsletterScheduleCreateRequest {
     bodyNL;
     bodyFR;
     dates;
-    // TODO: add validation later when frontend is updated, for now allow undefined
     recipientsTypeId;
 }
 exports.NewsletterScheduleCreateRequest = NewsletterScheduleCreateRequest;
@@ -394,3 +393,20 @@ __decorate([
     }),
     __metadata("design:type", Array)
 ], NewsletterScheduleCreateRequest.prototype, "dates", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], NewsletterScheduleCreateRequest.prototype, "recipientsTypeId", void 0);
+class NewsletterScheduleSaveRequest {
+    id;
+    date;
+}
+exports.NewsletterScheduleSaveRequest = NewsletterScheduleSaveRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], NewsletterScheduleSaveRequest.prototype, "id", void 0);
+__decorate([
+    (0, class_validator_1.IsDateString)(),
+    __metadata("design:type", String)
+], NewsletterScheduleSaveRequest.prototype, "date", void 0);

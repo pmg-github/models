@@ -119,6 +119,7 @@ import {
   NewsletterRecipientTypeModel,
   NewsletterArticleStatsViewModel,
   LanguageCountModel,
+  NewsletterScheduleSaveRequest,
 } from "./models/newsletter";
 
 import {
@@ -235,6 +236,8 @@ import { ProductCategoryEnum, ProductViewModel } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
 
+import { CommunityViewModel } from "./models/community";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -327,6 +330,7 @@ export {
   NewsletterSubjectAddRequest,
   NewsletterTestMailCreateRequest,
   NewsletterScheduleCreateRequest,
+  NewsletterScheduleSaveRequest,
   PmgUserModel,
   NotificationListModel,
   NotificationMediaListModel,
@@ -411,4 +415,5 @@ export {
   ProductViewModel,
   ProductCategoryEnum,
   PMGTeamMemberViewModel,
+  CommunityViewModel,
 };
