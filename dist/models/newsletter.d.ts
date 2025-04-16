@@ -152,6 +152,11 @@ export interface LanguageCountModel {
     fr: number;
     total: number;
 }
+export declare class NewsletterSubscriptionSaveRequest {
+    portalCode: string;
+    language: string;
+    isActive: boolean;
+}
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;
     language: string;

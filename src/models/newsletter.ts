@@ -2,6 +2,7 @@ import { Type } from "class-transformer";
 import {
   ArrayMinSize,
   IsArray,
+  IsBoolean,
   IsDateString,
   isNotEmpty,
   IsNotEmpty,
@@ -181,6 +182,20 @@ export interface LanguageCountModel {
   nl: number;
   fr: number;
   total: number;
+}
+
+export class NewsletterSubscriptionSaveRequest {
+  @IsNotEmpty()
+  @Length(4, 4)
+  portalCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  language!: string;
+
+  @IsNotEmpty()
+  @IsBoolean()
+  isActive!: boolean;
 }
 
 export class NewsletterMetaDataCreateRequest {
