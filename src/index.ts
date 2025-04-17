@@ -121,6 +121,7 @@ import {
   LanguageCountModel,
   NewsletterScheduleSaveRequest,
   NewsletterSubscriptionSaveRequest,
+  NewsletterSubscribeViewModel,
 } from "./models/newsletter";
 
 import {
@@ -319,6 +320,7 @@ export {
   NewsletterRecipientTypeModel,
   NewsletterArticleStatsViewModel,
   LanguageCountModel,
+  NewsletterSubscribeViewModel,
   NewsletterSubscriptionSaveRequest,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,

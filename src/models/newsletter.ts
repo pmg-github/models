@@ -184,6 +184,13 @@ export interface LanguageCountModel {
   total: number;
 }
 
+export interface NewsletterSubscribeViewModel {
+  title: string;
+  description: string | null;
+  magazineCode: string;
+  portalCode: string;
+}
+
 export class NewsletterSubscriptionSaveRequest {
   @IsNotEmpty()
   @Length(4, 4)
