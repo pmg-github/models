@@ -1,12 +1,11 @@
 import { BcCompanyViewModel } from "./company";
 export interface BestChoiceCategories {
     code: string;
-    name: string;
     categories: {
         code: string;
         name: string;
         tools: {
-            code: string;
+            code: number;
             name: string;
         }[];
     }[];
