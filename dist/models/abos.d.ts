@@ -1,6 +1,7 @@
 export interface AboViewModel {
     id: number;
     reference: string;
+    portalCode: string;
     magazine: string;
     expiryDate: Date;
 }

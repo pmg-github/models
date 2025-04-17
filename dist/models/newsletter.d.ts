@@ -152,6 +152,23 @@ export interface LanguageCountModel {
     fr: number;
     total: number;
 }
+export interface NewsletterSubscribeViewModel {
+    title: string;
+    description: string | null;
+    magazineCode: string;
+    portalCode: string;
+}
+export interface AccountNewsletterSubscriptionModel {
+    id: number;
+    magazineCode: string;
+    isActive: boolean;
+    language: string;
+}
+export declare class NewsletterSubscriptionSaveRequest {
+    portalCode: string;
+    language: string;
+    isActive: boolean;
+}
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;
     language: string;
