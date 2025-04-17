@@ -31,7 +31,7 @@ export interface BestChoiceEditModel {
     id: number;
     tool: number;
     contextCode: string;
-    categoryCode: string;
+    category: string;
     company: BcCompanyViewModel;
     contact: {
         firstName: string;
