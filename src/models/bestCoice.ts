@@ -54,6 +54,7 @@ export interface BestChoiceSpecInputs {
       length: number | null;
       info: string | null;
       values:SelectOptionViewModel[]
+      required:boolean
     }[];
   }[];
 }
