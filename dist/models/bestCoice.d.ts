@@ -63,3 +63,7 @@ export interface BestChoiceDocuments {
     images: FileListViewModel[];
     documents: FileListViewModel[];
 }
+export interface BestChoiceParticipationReturn {
+    uid: string;
+    id: number;
+}
