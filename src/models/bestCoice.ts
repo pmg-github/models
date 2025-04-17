@@ -2,11 +2,10 @@ import { BcCompanyViewModel } from "./company";
 
 export interface BestChoiceCategories {
   code: string;
-  name: string;
   categories: {
     code: string;
     name: string;
-    tools: { code: string; name: string }[];
+    tools: { code: number; name: string }[];
   }[];
 }
 
@@ -31,7 +30,7 @@ export interface BestChoiceEditModel{
   tool:number
   contextCode:string
   category:string
-  company:BcCompanyViewModel
+  company:BcCompanyViewModel|undefined
   contact:{
     firstName:string
     lastName:string

@@ -32,7 +32,7 @@ export interface BestChoiceEditModel {
     tool: number;
     contextCode: string;
     category: string;
-    company: BcCompanyViewModel;
+    company: BcCompanyViewModel | undefined;
     contact: {
         firstName: string;
         lastName: string;
