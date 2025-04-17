@@ -40,7 +40,7 @@ export interface BestChoiceEditModel {
     };
 }
 export interface BestChoiceSpecInputs {
-    imageFormat: number;
+    imageFormat: string;
     imageMinWidth: number;
     productType: number;
     items: {
