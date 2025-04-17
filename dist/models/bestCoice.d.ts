@@ -1,3 +1,4 @@
+import { BcCompanyViewModel } from "./company";
 export interface BestChoiceCategories {
     code: string;
     name: string;
@@ -9,4 +10,17 @@ export interface BestChoiceCategories {
             name: string;
         }[];
     }[];
+}
+export interface BestChoiceParticipationView {
+    projectCode: string;
+    contextCode: string;
+    categoryCode: string;
+    statusId: number;
+    activeStep: number;
+    toolId: number;
+    klnr: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    company: BcCompanyViewModel;
 }
