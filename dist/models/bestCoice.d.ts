@@ -24,3 +24,18 @@ export interface BestChoiceParticipationView {
     email: string;
     company: BcCompanyViewModel;
 }
+export interface BestChoiceEditModel {
+    key: string;
+    project: string;
+    uid: string;
+    id: number;
+    tool: number;
+    contextCode: string;
+    categoryCode: string;
+    company: BcCompanyViewModel;
+    contact: {
+        firstName: string;
+        lastName: string;
+        email: string;
+    };
+}
