@@ -232,7 +232,7 @@ import { CommentTypeView, CommentListView } from "./models/comment";
 import { DocumentTypeViewModel } from "./models/documents";
 
 import { Issuers } from "./models/mollie";
-import { BestChoiceCategories, BestChoiceEditModel, BestChoiceParticipationView } from "./models/bestCoice";
+import { BestChoiceCategories, BestChoiceEditModel, BestChoiceParticipationView, BestChoiceSpecInputs } from "./models/bestCoice";
 import { ToolDetailView, ToolsListModel, ToolsListView } from "./models/tools";
 
 import { ProductCategoryEnum, ProductViewModel } from "./models/product";
@@ -356,6 +356,7 @@ export {
   BestChoiceCategories,
   BestChoiceParticipationView,
   BestChoiceEditModel,
+  BestChoiceSpecInputs,
   BcCompanyViewModel,
   PromptListModel,
   UnpaidInvoicesListModel,

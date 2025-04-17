@@ -39,3 +39,19 @@ export interface BestChoiceEditModel {
         email: string;
     };
 }
+export interface BestChoiceSpecInputs {
+    imageFormat: number;
+    imageMinWidth: number;
+    productType: number;
+    items: {
+        code: string;
+        inputs: {
+            name: string;
+            unit: string;
+            type: string;
+            code: number;
+            length: number | null;
+            info: string | null;
+        }[];
+    }[];
+}
