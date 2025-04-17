@@ -191,6 +191,13 @@ export interface NewsletterSubscribeViewModel {
   portalCode: string;
 }
 
+export interface AccountNewsletterSubscriptionModel {
+  id: number;
+  magazineCode: string;
+  isActive: boolean;
+  language: string;
+}
+
 export class NewsletterSubscriptionSaveRequest {
   @IsNotEmpty()
   @Length(4, 4)

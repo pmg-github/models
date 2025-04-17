@@ -158,6 +158,12 @@ export interface NewsletterSubscribeViewModel {
     magazineCode: string;
     portalCode: string;
 }
+export interface AccountNewsletterSubscriptionModel {
+    id: number;
+    magazineCode: string;
+    isActive: boolean;
+    language: string;
+}
 export declare class NewsletterSubscriptionSaveRequest {
     portalCode: string;
     language: string;
