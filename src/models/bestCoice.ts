@@ -1,4 +1,5 @@
 import { BcCompanyViewModel } from "./company";
+import { SelectOptionViewModel } from "./selectoption";
 
 export interface BestChoiceCategories {
   code: string;
@@ -52,6 +53,7 @@ export interface BestChoiceSpecInputs {
       code: number;
       length: number | null;
       info: string | null;
+      values:SelectOptionViewModel[]
     }[];
   }[];
 }
