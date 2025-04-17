@@ -1,4 +1,5 @@
 import { BcCompanyViewModel } from "./company";
+import { FileListViewModel } from "./files";
 import { SelectOptionViewModel } from "./selectoption";
 export interface BestChoiceCategories {
     code: string;
@@ -57,4 +58,8 @@ export interface BestChoiceSpecInputs {
             required: boolean;
         }[];
     }[];
+}
+export interface BestChoiceDocuments {
+    images: FileListViewModel[];
+    documents: FileListViewModel[];
 }
