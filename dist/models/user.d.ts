@@ -34,6 +34,8 @@ export declare class ContactUpdateRequest {
     firstName: string;
     lastName: string;
     phone: string;
+    language?: string;
+    sex?: string;
     constructor(data: Partial<ContactUpdateRequest>);
 }
 export declare class EmailCodeRequest {

@@ -103,6 +103,14 @@ export class ContactUpdateRequest {
   @MaxLength(36)
   phone!: string;
 
+  @IsOptional()
+  @MaxLength(36)
+  language?: string;
+
+  @IsOptional()
+  @MaxLength(36)
+  sex?: string;
+
   constructor(data: Partial<ContactUpdateRequest>) {
     Object.assign(this, data);
   }
