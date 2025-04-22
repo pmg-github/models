@@ -164,7 +164,7 @@ import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
 import { PopupModel } from "./models/popup";
 
-import { AboViewModel, ProefAboCreateModel } from "./models/abos";
+import { AboDetailViewModel, AboViewModel, ProefAboCreateModel } from "./models/abos";
 import { PortalViewModel, PortalCarouselViewModel } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
@@ -368,6 +368,7 @@ export {
   BoMenuDetailListModel,
   PopupModel,
   AboViewModel,
+  AboDetailViewModel,
   ProefAboCreateModel,
   PortalViewModel,
   PortalCarouselViewModel,

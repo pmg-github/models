@@ -1,4 +1,5 @@
 import { IsNotEmpty, Length, IsNumber } from "class-validator";
+import { AddressViewModel } from "./address";
 
 export interface AboViewModel {
   id: number;
@@ -6,6 +7,19 @@ export interface AboViewModel {
   portalCode: string;
   magazine: string;
   expiryDate: Date;
+}
+export interface AboDetailViewModel {
+  id: number;
+  magazine: string;
+  variationKey: string;
+  typeName: string;
+  deliveryName: string;
+  deliveryAdress: AddressViewModel;
+  billingName: string;
+  billingAdress: AddressViewModel;
+  isActive: boolean;
+  reference: string;
+  expiryDate: Date|undefined;
 }
 
 export class ProefAboCreateModel {
