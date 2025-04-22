@@ -17,7 +17,7 @@ export interface AboDetailViewModel {
     billingAdress: AddressViewModel;
     isActive: boolean;
     reference: string;
-    expiryDate: Date | undefined;
+    expiryDate: String;
 }
 export declare class ProefAboCreateModel {
     portalCode: string;
