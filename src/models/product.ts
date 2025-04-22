@@ -11,6 +11,7 @@ export interface ProductViewModel {
   priceInclVAT: number;
   aboPriceInclVAT: number | null;
   magazineCode: string | null;
+  tags: string[] | undefined | null;
 }
 
 export enum ProductCategoryEnum {
