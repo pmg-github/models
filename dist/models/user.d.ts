@@ -4,6 +4,8 @@ export declare class UserViewModel {
     firstName: string | null;
     lastName: string | null;
     phone: string | null;
+    gender: string | null;
+    language: string | null;
     get fullName(): string | undefined;
     constructor(userAPIInterface: UserAPIInterface);
 }
@@ -18,6 +20,8 @@ export interface UserAPIInterface {
     firstName: string | null;
     lastName: string | null;
     phone: string | null;
+    gender: string | null;
+    language: string | null;
 }
 export interface UserAboAPIInterface {
     expiryDate: string | null;

@@ -13,6 +13,8 @@ export class UserViewModel {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
+  gender:string | null;
+  language:string | null;
 
   get fullName(): string | undefined {
     let returnValue: string = "";
@@ -34,6 +36,8 @@ export class UserViewModel {
     this.firstName = userAPIInterface.firstName;
     this.lastName = userAPIInterface.lastName;
     this.phone = userAPIInterface.phone;
+    this.gender=userAPIInterface.gender;
+    this.language=userAPIInterface.language
   }
 }
 
@@ -56,6 +60,8 @@ export interface UserAPIInterface {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
+  gender:string | null;
+  language:string | null;
 }
 
 export interface UserAboAPIInterface {

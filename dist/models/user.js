@@ -18,6 +18,8 @@ class UserViewModel {
     firstName;
     lastName;
     phone;
+    gender;
+    language;
     get fullName() {
         let returnValue = "";
         if (this.firstName) {
@@ -35,6 +37,8 @@ class UserViewModel {
         this.firstName = userAPIInterface.firstName;
         this.lastName = userAPIInterface.lastName;
         this.phone = userAPIInterface.phone;
+        this.gender = userAPIInterface.gender;
+        this.language = userAPIInterface.language;
     }
 }
 exports.UserViewModel = UserViewModel;
