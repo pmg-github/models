@@ -12,6 +12,7 @@ export interface AboDetailViewModel {
   id: number;
   magazine: string;
   variationKey: string;
+  language: string;
   typeName: string;
   deliveryName: string;
   deliveryAdress: AddressViewModel;
