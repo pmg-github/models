@@ -37,6 +37,8 @@ export enum ArticleType {
   HOW_TO_CHOOSE = "howToChoose",
   SURVEYS = "surveys",
   ADS = "ads",
+  ADPOSTS ="AdPosts",
+  VACANCIES ="vacancies",
   // UNUSED => Events: use different API and exclude these from all articles (TODO: check if an overall excluded is needed if no param for type was passed?)
 }
 
@@ -48,6 +50,8 @@ export const articleTypeData: { [key in ArticleType]: number[] } = {
   [ArticleType.HOW_TO_CHOOSE]: [20],
   [ArticleType.SURVEYS]: [14],
   [ArticleType.ADS]: [11, 12, 13],
+  [ArticleType.ADPOSTS]: [20],
+  [ArticleType.VACANCIES]: [21],
 };
 
 // export const ArticleTypes = {

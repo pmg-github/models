@@ -16,7 +16,9 @@ export declare enum ArticleType {
     PRODUCTS = "products",
     HOW_TO_CHOOSE = "howToChoose",
     SURVEYS = "surveys",
-    ADS = "ads"
+    ADS = "ads",
+    ADPOSTS = "AdPosts",
+    VACANCIES = "vacancies"
 }
 export declare const articleTypeData: {
     [key in ArticleType]: number[];
