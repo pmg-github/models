@@ -25,10 +25,10 @@ export class CompanyViewModel {
   website: string | undefined = undefined;
   phone: string | undefined = undefined;
   fax: string | undefined = undefined;
-  vatNumber: string | undefined = undefined;
   mainAddressID: number | undefined = undefined;
   mainAddress: AddressViewModel | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
+  vatNumber?: string | undefined = undefined;
 }
 
 export interface BcCompanyViewModel extends CompanyViewModel {

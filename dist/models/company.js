@@ -11,10 +11,10 @@ class CompanyViewModel {
     website = undefined;
     phone = undefined;
     fax = undefined;
-    vatNumber = undefined;
     mainAddressID = undefined;
     mainAddress = undefined;
     interesses = undefined;
+    vatNumber = undefined;
 }
 exports.CompanyViewModel = CompanyViewModel;
 class CompanyCornerDBModel {
