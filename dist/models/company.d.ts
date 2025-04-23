@@ -23,6 +23,7 @@ export declare class CompanyViewModel {
     website: string | undefined;
     phone: string | undefined;
     fax: string | undefined;
+    vatNumber: string | undefined;
     mainAddressID: number | undefined;
     mainAddress: AddressViewModel | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;

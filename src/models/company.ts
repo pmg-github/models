@@ -2,17 +2,17 @@ import { ViewerInteresseViewModel } from "./magazine";
 import { AddressViewModel } from "./address";
 import { PmgUserInterface, PmgUserModel } from "./pmguser";
 
-export interface CompanyCardViewModel{
-  klnr:string|number
-  company:string
-  brand:string
-  vat:string
+export interface CompanyCardViewModel {
+  klnr: string | number;
+  company: string;
+  brand: string;
+  vat: string;
 }
-export interface MyCompanyList{
-  klnr:string|number
-  company:string
-  brand:string
-  isContact:boolean
+export interface MyCompanyList {
+  klnr: string | number;
+  company: string;
+  brand: string;
+  isContact: boolean;
 }
 
 export class CompanyViewModel {
@@ -25,14 +25,15 @@ export class CompanyViewModel {
   website: string | undefined = undefined;
   phone: string | undefined = undefined;
   fax: string | undefined = undefined;
+  vatNumber: string | undefined = undefined;
   mainAddressID: number | undefined = undefined;
   mainAddress: AddressViewModel | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
 }
 
-export interface BcCompanyViewModel extends CompanyViewModel{
-  contactPerson:PmgUserInterface;
-  vat?:string
+export interface BcCompanyViewModel extends CompanyViewModel {
+  contactPerson: PmgUserInterface;
+  vat?: string;
 }
 
 export class CompanyCornerDBModel {
