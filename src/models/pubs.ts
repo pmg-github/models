@@ -21,3 +21,8 @@ export interface PubsDetailView extends PubsListView {
     title:string,
     text:string
   }
+
+  export interface PubsSortView{
+    redirectUrl:string
+    pubCode:string
+}

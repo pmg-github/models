@@ -225,6 +225,7 @@ import {
   PubsDetailView,
   PubsListCursorView,
   PubsListView,
+  PubsSortView,
 } from "./models/pubs";
 
 import { CommentTypeView, CommentListView } from "./models/comment";
@@ -369,6 +370,8 @@ export {
   PopupModel,
   AboViewModel,
   AboDetailViewModel,
+  PubsSortView,
+
   ProefAboCreateModel,
   PortalViewModel,
   PortalCarouselViewModel,
