@@ -26,6 +26,7 @@ export declare class CompanyViewModel {
     mainAddressID: number | undefined;
     mainAddress: AddressViewModel | undefined;
     interesses: ViewerInteresseViewModel[] | undefined;
+    vatNumber?: string | undefined;
 }
 export interface BcCompanyViewModel extends CompanyViewModel {
     contactPerson: PmgUserInterface;

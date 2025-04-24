@@ -12,6 +12,13 @@ export declare class NewsletterContentType {
     reference: string | undefined;
     name: string | undefined;
 }
+export interface NewsletterMetaDataDetailModel {
+    title: string;
+    description: string;
+    name: string | null;
+    function: string | null;
+    fileUrl: string | null;
+}
 export declare enum NewsletterProjectStatusEnum {
     CONCEPT = "Concept",
     APPROVED = "Goedgekeurd",

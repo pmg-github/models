@@ -123,6 +123,7 @@ import {
   NewsletterSubscriptionSaveRequest,
   NewsletterSubscribeViewModel,
   AccountNewsletterSubscriptionModel,
+  NewsletterMetaDataDetailModel,
 } from "./models/newsletter";
 
 import {
@@ -164,7 +165,11 @@ import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
 import { PopupModel } from "./models/popup";
 
-import { AboDetailViewModel, AboViewModel, ProefAboCreateModel } from "./models/abos";
+import {
+  AboDetailViewModel,
+  AboViewModel,
+  ProefAboCreateModel,
+} from "./models/abos";
 import { PortalViewModel, PortalCarouselViewModel } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
@@ -233,7 +238,14 @@ import { CommentTypeView, CommentListView } from "./models/comment";
 import { DocumentTypeViewModel } from "./models/documents";
 
 import { Issuers } from "./models/mollie";
-import { BestChoiceCategories, BestChoiceDocuments, BestChoiceEditModel, BestChoiceParticipationReturn, BestChoiceParticipationView, BestChoiceSpecInputs } from "./models/bestCoice";
+import {
+  BestChoiceCategories,
+  BestChoiceDocuments,
+  BestChoiceEditModel,
+  BestChoiceParticipationReturn,
+  BestChoiceParticipationView,
+  BestChoiceSpecInputs,
+} from "./models/bestCoice";
 import { ToolDetailView, ToolsListModel, ToolsListView } from "./models/tools";
 
 import { ProductCategoryEnum, ProductViewModel } from "./models/product";
@@ -317,6 +329,7 @@ export {
   BcArticleIntresseReachModel,
   NewsletterOrderModel,
   NewsletterTileModel,
+  NewsletterMetaDataDetailModel,
   NewsletterNewsModel,
   NewsletterSubjectModel,
   NewsletterRecipientTypeModel,

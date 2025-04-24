@@ -30,6 +30,14 @@ export class NewsletterContentType {
   name: string | undefined = undefined;
 }
 
+export interface NewsletterMetaDataDetailModel {
+  title: string;
+  description: string;
+  name: string | null;
+  function: string | null;
+  fileUrl: string | null;
+}
+
 export enum NewsletterProjectStatusEnum {
   CONCEPT = "Concept",
   APPROVED = "Goedgekeurd",
