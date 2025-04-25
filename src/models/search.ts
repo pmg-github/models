@@ -13,7 +13,7 @@ export class SearchResultsSaveRequest {
   language!: string;
   
   @IsNotEmpty()
-  hits!: number;
+  NrOfResults!: number;
 
   constructor(data: Partial<SearchResultsSaveRequest>) {
     Object.assign(this, data);

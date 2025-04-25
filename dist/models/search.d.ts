@@ -2,6 +2,6 @@ export declare class SearchResultsSaveRequest {
     keyword: string;
     portalCode: string;
     language: string;
-    hits: number;
+    NrOfResults: number;
     constructor(data: Partial<SearchResultsSaveRequest>);
 }

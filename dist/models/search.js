@@ -15,7 +15,7 @@ class SearchResultsSaveRequest {
     keyword;
     portalCode;
     language;
-    hits;
+    NrOfResults;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -38,4 +38,4 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
-], SearchResultsSaveRequest.prototype, "hits", void 0);
+], SearchResultsSaveRequest.prototype, "NrOfResults", void 0);
