@@ -11,6 +11,9 @@ export class SearchResultsSaveRequest {
   @IsNotEmpty()
   @Length(2, 2)
   language!: string;
+  
+  @IsNotEmpty()
+  hits!: number;
 
   constructor(data: Partial<SearchResultsSaveRequest>) {
     Object.assign(this, data);
