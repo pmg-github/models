@@ -142,7 +142,7 @@ export interface bcArticleListModel {
   available: bcAvailableLanguage[];
   company: string;
   brand: string;
-  user: {
+  user?: {
     id:number
     firstName:string
     lastName:string
