@@ -84,6 +84,12 @@ export interface bcArticleListModel {
     available: bcAvailableLanguage[];
     company: string;
     brand: string;
+    user: {
+        id: number;
+        firstName: string;
+        lastName: string;
+        email: string;
+    };
 }
 export interface BcArticleDetailModel {
     id: number;
