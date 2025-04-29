@@ -1,4 +1,5 @@
 import { PmgUserModel } from "./pmguser";
+import { FileListViewModel } from "./files";
 export declare class NotificationMediaListModel {
     fileUrl: string | undefined;
 }
@@ -36,8 +37,7 @@ export interface NotificationDetailModel {
     id: number | undefined;
     title: string | undefined;
     text: string | undefined;
-    link: string | undefined;
-    fileIds: number[] | undefined;
+    fileIds: FileListViewModel[] | undefined;
     topicsIds: number[] | undefined;
 }
 export declare class NotificationSummaryListModelWhitCursorAndContent {

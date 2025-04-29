@@ -1,5 +1,6 @@
 import { IsNotEmpty, Length } from "class-validator";
 import { PmgUserModel } from "./pmguser";
+import { FileListViewModel } from "./files";
 
 export class NotificationMediaListModel {
   fileUrl: string | undefined = undefined;
@@ -42,8 +43,7 @@ export interface NotificationDetailModel{
   id: number | undefined ;
   title: string | undefined;
   text: string | undefined;
-  link:string|undefined;
-  fileIds: number[] | undefined;
+  fileIds: FileListViewModel[] | undefined;
   topicsIds: number[] | undefined ;
 }
 
