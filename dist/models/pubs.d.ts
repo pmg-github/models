@@ -1,5 +1,13 @@
 import { CompanyCardViewModel } from "./company";
 import { SelectOptionViewModel } from "./selectoption";
+export interface PubViewModel {
+    pubCode: string;
+    format: string;
+    title: string | null;
+    redirectUrl: string | null;
+    imageUrl: string | null;
+    customerReference: string | null;
+}
 export interface PubsListView {
     customer: CompanyCardViewModel;
     id: number;

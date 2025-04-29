@@ -1,16 +1,16 @@
 export declare class PopupModel {
-    ID: number | undefined;
-    typeID: number | undefined;
+    id: number | undefined;
+    typeId: number | undefined;
     typeReference: string | undefined;
     languageCode: string | undefined;
-    targetAudienceID: number | undefined;
+    targetAudienceId: number | undefined;
     targetAudienceReference: string | undefined;
-    positionID: number | undefined;
+    positionId: number | undefined;
     positionReference: string | undefined;
-    displayFrequencyID: number | undefined;
+    displayFrequencyId: number | undefined;
     displayFrequencyReference: string | undefined;
     delaySeconds: number | undefined;
-    fileID: number | undefined;
+    fileId: number | undefined;
     title: string | undefined;
     subTitle: string | undefined;
     intro: string | undefined;
