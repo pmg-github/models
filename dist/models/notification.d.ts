@@ -35,9 +35,9 @@ export interface NotificationSummaryListModel {
 }
 export interface NotificationDetailModel {
     id: number | undefined;
-    title: string | undefined;
+    titel: string | undefined;
     text: string | undefined;
-    fileIds: FileListViewModel[] | undefined;
+    files: FileListViewModel[] | undefined;
     topicsIds: number[] | undefined;
 }
 export declare class NotificationSummaryListModelWhitCursorAndContent {
