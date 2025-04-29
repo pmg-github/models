@@ -2,18 +2,18 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PopupModel = void 0;
 class PopupModel {
-    ID = undefined;
-    typeID = undefined;
+    id = undefined;
+    typeId = undefined;
     typeReference = undefined;
     languageCode = undefined;
-    targetAudienceID = undefined;
+    targetAudienceId = undefined;
     targetAudienceReference = undefined;
-    positionID = undefined;
+    positionId = undefined;
     positionReference = undefined;
-    displayFrequencyID = undefined;
+    displayFrequencyId = undefined;
     displayFrequencyReference = undefined;
     delaySeconds = undefined;
-    fileID = undefined;
+    fileId = undefined;
     title = undefined;
     subTitle = undefined;
     intro = undefined;

@@ -1,16 +1,16 @@
 export class PopupModel {
-  ID: number | undefined = undefined;
-  typeID: number | undefined = undefined;
+  id: number | undefined = undefined;
+  typeId: number | undefined = undefined;
   typeReference: string | undefined = undefined;
   languageCode: string | undefined = undefined;
-  targetAudienceID: number | undefined = undefined;
+  targetAudienceId: number | undefined = undefined;
   targetAudienceReference: string | undefined = undefined;
-  positionID: number | undefined = undefined;
+  positionId: number | undefined = undefined;
   positionReference: string | undefined = undefined;
-  displayFrequencyID: number | undefined = undefined;
+  displayFrequencyId: number | undefined = undefined;
   displayFrequencyReference: string | undefined = undefined;
   delaySeconds: number | undefined = undefined;
-  fileID: number | undefined = undefined;
+  fileId: number | undefined = undefined;
   title: string | undefined = undefined;
   subTitle: string | undefined = undefined;
   intro: string | undefined = undefined;
