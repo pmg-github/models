@@ -127,6 +127,7 @@ import {
 } from "./models/newsletter";
 
 import {
+  NotificationDetailModel,
   NotificationListModel,
   NotificationMediaListModel,
   NotificationSummaryListModel,
@@ -263,6 +264,7 @@ export {
   UnpaidInvoicesStatsModel,
   UnpaidInvoicesListModelWithCursor,
   NotificationSummaryListModelWhitCursorAndContent,
+  NotificationDetailModel,
   ArticleOrderByType,
   articleOrderByData,
   SearchResultsSaveRequest,

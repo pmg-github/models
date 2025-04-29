@@ -32,6 +32,14 @@ export interface NotificationSummaryListModel {
     reactionCounter: number;
     link: string | undefined;
 }
+export interface NotificationDetailModel {
+    id: number | undefined;
+    title: string | undefined;
+    text: string | undefined;
+    link: string | undefined;
+    fileIds: number[] | undefined;
+    topicsIds: number[] | undefined;
+}
 export declare class NotificationSummaryListModelWhitCursorAndContent {
     content: NotificationSummaryListModel[] | undefined;
     cursor: number | undefined;
