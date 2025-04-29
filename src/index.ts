@@ -231,6 +231,7 @@ import {
   PubsListCursorView,
   PubsListView,
   PubsSortView,
+  PubViewModel,
 } from "./models/pubs";
 
 import { CommentTypeView, CommentListView } from "./models/comment";
@@ -384,7 +385,6 @@ export {
   AboViewModel,
   AboDetailViewModel,
   PubsSortView,
-
   ProefAboCreateModel,
   PortalViewModel,
   PortalCarouselViewModel,
@@ -433,6 +433,7 @@ export {
   TimeRegistrationLocationListModel,
   SecurityEnum,
   CompanyCardViewModel,
+  PubViewModel,
   PubsListView,
   PubsDetailView,
   PubsListCursorView,
