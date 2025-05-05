@@ -42,8 +42,8 @@ export interface NotificationSummaryListModel {
 export interface NotificationDetailModel{
   id: number | undefined ;
   statusId:number
-  titel: string | undefined;
-  text: string | undefined;
+  titel: string ;
+  text: string ;
   files: FileListViewModel[] | undefined;
   topicsIds: number[] | undefined ;
 }
