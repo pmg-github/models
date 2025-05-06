@@ -40,6 +40,7 @@ export declare class ContactUpdateRequest {
     phone: string;
     language?: string;
     sex?: string;
+    newsletter?: string;
     constructor(data: Partial<ContactUpdateRequest>);
 }
 export declare class EmailCodeRequest {

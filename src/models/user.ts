@@ -116,6 +116,10 @@ export class ContactUpdateRequest {
   @IsOptional()
   @MaxLength(36)
   sex?: string;
+ 
+  @IsOptional()
+  @MaxLength(4)
+  newsletter?: string;
 
   constructor(data: Partial<ContactUpdateRequest>) {
     Object.assign(this, data);
