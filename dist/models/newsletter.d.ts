@@ -19,6 +19,9 @@ export interface NewsletterMetaDataDetailModel {
     function: string | null;
     fileUrl: string | null;
 }
+export interface NewsletterInfoModel {
+    slogan: string | null;
+}
 export declare enum NewsletterProjectStatusEnum {
     CONCEPT = "Concept",
     APPROVED = "Goedgekeurd",

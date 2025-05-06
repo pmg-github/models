@@ -124,6 +124,7 @@ import {
   NewsletterSubscribeViewModel,
   AccountNewsletterSubscriptionModel,
   NewsletterMetaDataDetailModel,
+  NewsletterInfoModel,
 } from "./models/newsletter";
 
 import {
@@ -333,6 +334,7 @@ export {
   NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterMetaDataDetailModel,
+  NewsletterInfoModel,
   NewsletterNewsModel,
   NewsletterSubjectModel,
   NewsletterRecipientTypeModel,
