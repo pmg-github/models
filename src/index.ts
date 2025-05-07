@@ -257,6 +257,8 @@ import { PMGTeamMemberViewModel } from "./models/contacts";
 
 import { CommunityViewModel } from "./models/community";
 
+import { PeriodFilterEnum } from "./models/period";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -449,4 +451,5 @@ export {
   ProductCategoryEnum,
   PMGTeamMemberViewModel,
   CommunityViewModel,
+  PeriodFilterEnum,
 };
