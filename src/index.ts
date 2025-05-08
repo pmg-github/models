@@ -50,7 +50,7 @@ import {
 
 import { PmgUserModel } from "./models/pmguser";
 
-import { FaqViewModel } from "./models/faq";
+import { FaqViewModel, BoFaqListViewModel } from "./models/faq";
 
 import {
   AddressHelper,
@@ -303,6 +303,7 @@ export {
   CompanyCornerDBModel,
   CompanyCornerPictureModel,
   FaqViewModel,
+  BoFaqListViewModel,
   AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
