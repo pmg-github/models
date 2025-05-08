@@ -124,6 +124,7 @@ import {
   NewsletterSubscribeViewModel,
   AccountNewsletterSubscriptionModel,
   NewsletterMetaDataDetailModel,
+  NewsletterInfoModel,
 } from "./models/newsletter";
 
 import {
@@ -256,6 +257,8 @@ import { PMGTeamMemberViewModel } from "./models/contacts";
 
 import { CommunityViewModel } from "./models/community";
 
+import { PeriodFilterEnum } from "./models/period";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -333,6 +336,7 @@ export {
   NewsletterOrderModel,
   NewsletterTileModel,
   NewsletterMetaDataDetailModel,
+  NewsletterInfoModel,
   NewsletterNewsModel,
   NewsletterSubjectModel,
   NewsletterRecipientTypeModel,
@@ -447,4 +451,5 @@ export {
   ProductCategoryEnum,
   PMGTeamMemberViewModel,
   CommunityViewModel,
+  PeriodFilterEnum,
 };
