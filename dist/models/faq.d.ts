@@ -3,6 +3,7 @@ export interface FaqViewModel {
     answer: string;
 }
 export interface BoFaqListViewModel {
+    id: number;
     question: string;
     category: string;
     portalName: string;
