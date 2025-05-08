@@ -27,28 +27,29 @@ export class NotificationListModel {
 }
 
 export interface NotificationSummaryListModel {
-  id: number | undefined ;
+  id: number | undefined;
   typeReference: string | undefined;
-  typeName: string | undefined ;
+  typeName: string | undefined;
   title: string | undefined;
   text: string | undefined;
   lastModificationDate: Date | undefined;
   sender: PmgUserModel;
-  isRead: number ;
-  reactionCounter: number ;
-  link:string|undefined
+  isRead: number;
+  reactionCounter: number;
+  link: string | undefined;
+  status: string;
 }
 
-export interface NotificationDetailModel{
-  id: number | undefined ;
-  statusId:number
-  titel: string ;
-  text: string ;
+export interface NotificationDetailModel {
+  id: number | undefined;
+  statusId: number;
+  titel: string;
+  text: string;
   files: FileListViewModel[] | undefined;
-  topicsIds: number[] | undefined ;
+  topicsIds: number[] | undefined;
 }
 
-export class NotificationSummaryListModelWhitCursorAndContent{
-  content:NotificationSummaryListModel[]| undefined = undefined;
-  cursor:number| undefined = undefined;
+export class NotificationSummaryListModelWhitCursorAndContent {
+  content: NotificationSummaryListModel[] | undefined = undefined;
+  cursor: number | undefined = undefined;
 }

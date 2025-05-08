@@ -32,6 +32,7 @@ export interface NotificationSummaryListModel {
     isRead: number;
     reactionCounter: number;
     link: string | undefined;
+    status: string;
 }
 export interface NotificationDetailModel {
     id: number | undefined;
