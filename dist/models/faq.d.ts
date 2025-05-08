@@ -14,8 +14,8 @@ export interface BoFaqDetailViewModel {
     id: number;
     questionNl: string;
     questionFr: string;
-    AnswerNl: string;
-    AnswerFr: string;
+    answerNl: string;
+    answerFr: string;
     categoryIds: number[];
     portalCodes: string[];
     statusId: number;
