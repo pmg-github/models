@@ -264,6 +264,8 @@ import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
 
+import {BoVideoViewModel} from "./models/video"
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -460,4 +462,5 @@ export {
   PMGTeamMemberViewModel,
   CommunityViewModel,
   PeriodFilterEnum,
+  BoVideoViewModel
 };
