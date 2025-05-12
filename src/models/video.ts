@@ -8,3 +8,13 @@ export interface BoVideoViewModel {
   owner: PmgUserInterface
   amountOfVideos: number
 }
+export interface BoVideoListViewModel {
+  id: number
+  origin:string
+  jobNr: string
+  languageCode: string
+  updatedAt: string
+  status: string
+  voiceOverLanguageCode: string
+  subTitlesLanguageCode: string
+}
