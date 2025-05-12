@@ -10,6 +10,10 @@ export interface BoFaqListViewModel {
   portalCode: string;
   status: string;
 }
+export interface BoFaqListViewModelWithCursorAndContent {
+  cursor:number,
+  content:BoFaqListViewModel[]
+}
 export interface BoFaqDetailViewModel {
   id: number;
   questionNl: string;
