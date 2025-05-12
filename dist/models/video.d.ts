@@ -1,3 +1,4 @@
+import { CompanyCardViewModel } from "./company";
 import { PmgUserInterface } from "./pmguser";
 export interface BoVideoViewModel {
     id: number;
@@ -6,6 +7,14 @@ export interface BoVideoViewModel {
     producer: PmgUserInterface;
     owner: PmgUserInterface;
     amountOfVideos: number;
+}
+export interface BoVideoDetailViewModel {
+    id: number;
+    jobNr: string;
+    titel: string;
+    info: string;
+    updatedAt: string;
+    customer: CompanyCardViewModel;
 }
 export interface BoVideoListViewModel {
     id: number;
