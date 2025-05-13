@@ -157,7 +157,7 @@ export interface NewsletterTileModel {
 
 export interface NewsletterMetaDataModel {
   id: number;
-  viewTypeId: number;
+  introViewTypeId: number;
   projectCode: string;
   introTitle: string;
   introDescription: string;
@@ -262,7 +262,7 @@ export class NewsletterIntroSaveRequest {
   introFunction: string | undefined;
 
   @IsNotEmpty()
-  viewTypeId!: number;
+  introViewTypeId!: number;
 
   constructor(data: Partial<NewsletterIntroSaveRequest>) {
     Object.assign(this, data);

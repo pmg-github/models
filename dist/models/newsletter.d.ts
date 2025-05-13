@@ -128,7 +128,7 @@ export interface NewsletterTileModel {
 }
 export interface NewsletterMetaDataModel {
     id: number;
-    viewTypeId: number;
+    introViewTypeId: number;
     projectCode: string;
     introTitle: string;
     introDescription: string;
@@ -195,7 +195,7 @@ export declare class NewsletterIntroSaveRequest {
     introFileId: number | null;
     introName: string | undefined;
     introFunction: string | undefined;
-    viewTypeId: number;
+    introViewTypeId: number;
     constructor(data: Partial<NewsletterIntroSaveRequest>);
 }
 export declare class NewsletterQuicklinkAddRequest {

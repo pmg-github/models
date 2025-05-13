@@ -126,7 +126,7 @@ class NewsletterIntroSaveRequest {
     // optional
     introName;
     introFunction;
-    viewTypeId;
+    introViewTypeId;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -158,7 +158,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
-], NewsletterIntroSaveRequest.prototype, "viewTypeId", void 0);
+], NewsletterIntroSaveRequest.prototype, "introViewTypeId", void 0);
 class NewsletterQuicklinkAddRequest {
     jobCode;
     language;
