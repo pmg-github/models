@@ -61,7 +61,7 @@ var NewsletterViewTypeEnum;
 })(NewsletterViewTypeEnum || (exports.NewsletterViewTypeEnum = NewsletterViewTypeEnum = {}));
 class NewsletterContentModel {
     id = undefined;
-    typeId = undefined;
+    articleTypeId = undefined;
     viewType = undefined;
     projectCode = undefined;
     languageCode = undefined;
@@ -76,6 +76,10 @@ class NewsletterContentModel {
     fileId = undefined;
     imageUrl = undefined;
     url = undefined;
+    authorFileId = undefined;
+    authorFileUrl = undefined;
+    authorName = undefined;
+    authorFunction = undefined;
 }
 exports.NewsletterContentModel = NewsletterContentModel;
 class NewsletterSubscriptionSaveRequest {

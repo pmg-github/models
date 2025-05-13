@@ -107,7 +107,7 @@ export enum NewsletterViewTypeEnum {
 
 export class NewsletterContentModel {
   id: number | undefined = undefined;
-  typeId: number | undefined = undefined;
+  articleTypeId: number | undefined = undefined;
   viewType: NewsletterViewTypeEnum | undefined = undefined;
   projectCode: string | undefined = undefined;
   languageCode: string | undefined = undefined;
@@ -122,6 +122,10 @@ export class NewsletterContentModel {
   fileId: number | undefined = undefined;
   imageUrl: string | undefined = undefined;
   url: string | undefined = undefined;
+  authorFileId: number | undefined = undefined;
+  authorFileUrl: string | undefined = undefined;
+  authorName: string | undefined = undefined;
+  authorFunction: string | undefined = undefined;
 }
 
 export interface NewsletterOrderModel {
@@ -152,6 +156,7 @@ export interface NewsletterTileModel {
 
 export interface NewsletterMetaDataModel {
   id: number;
+  viewTypeId: number;
   projectCode: string;
   introTitle: string;
   introDescription: string;
