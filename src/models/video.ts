@@ -24,6 +24,7 @@ export interface BoVideoListViewModel {
   languageCode: string;
   updatedAt: string;
   status: string;
+  statusId: number;
   voiceOverLanguageCode: string;
   subTitlesLanguageCode: string;
 }
