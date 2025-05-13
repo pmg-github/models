@@ -7,6 +7,7 @@ import {
   isNotEmpty,
   IsNotEmpty,
   IsNumber,
+  IsOptional,
   Length,
   MaxLength,
   ValidateIf,
@@ -260,6 +261,9 @@ export class NewsletterIntroSaveRequest {
   @MaxLength(255)
   introFunction: string | undefined;
 
+  @IsNotEmpty()
+  viewTypeId!: number;
+
   constructor(data: Partial<NewsletterIntroSaveRequest>) {
     Object.assign(this, data);
   }
@@ -362,6 +366,13 @@ export class NewsletterArticleSaveRequest {
   description!: string;
   @IsNotEmpty()
   moreLabel!: string;
+
+  @IsOptional()
+  authorFileId!: number | undefined | null;
+  @IsOptional()
+  authorName!: string | undefined | null;
+  @IsOptional()
+  authorFunction!: string | undefined | null;
 
   constructor(data: Partial<NewsletterArticleSaveRequest>) {
     Object.assign(this, data);

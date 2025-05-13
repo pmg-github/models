@@ -126,6 +126,7 @@ class NewsletterIntroSaveRequest {
     // optional
     introName;
     introFunction;
+    viewTypeId;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -154,6 +155,10 @@ __decorate([
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", Object)
 ], NewsletterIntroSaveRequest.prototype, "introFunction", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], NewsletterIntroSaveRequest.prototype, "viewTypeId", void 0);
 class NewsletterQuicklinkAddRequest {
     jobCode;
     language;
@@ -247,6 +252,9 @@ class NewsletterArticleSaveRequest {
     title;
     description;
     moreLabel;
+    authorFileId;
+    authorName;
+    authorFunction;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -291,6 +299,18 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], NewsletterArticleSaveRequest.prototype, "moreLabel", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], NewsletterArticleSaveRequest.prototype, "authorFileId", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], NewsletterArticleSaveRequest.prototype, "authorName", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], NewsletterArticleSaveRequest.prototype, "authorFunction", void 0);
 class NewsletterPollAddRequest {
     pollCode;
     projectCode;

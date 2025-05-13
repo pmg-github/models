@@ -195,6 +195,7 @@ export declare class NewsletterIntroSaveRequest {
     introFileId: number | null;
     introName: string | undefined;
     introFunction: string | undefined;
+    viewTypeId: number;
     constructor(data: Partial<NewsletterIntroSaveRequest>);
 }
 export declare class NewsletterQuicklinkAddRequest {
@@ -225,6 +226,9 @@ export declare class NewsletterArticleSaveRequest {
     title: string;
     description: string;
     moreLabel: string;
+    authorFileId: number | undefined | null;
+    authorName: string | undefined | null;
+    authorFunction: string | undefined | null;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
 }
 export declare class NewsletterPollAddRequest {
