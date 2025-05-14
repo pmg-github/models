@@ -264,7 +264,7 @@ import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
 
-import {BoVideoDetailViewModel, BoVideoListViewModel, BoVideoViewModel} from "./models/video"
+import {BoVideoDetailViewModel, BoVideoListViewModel, BoVideoViewModel, BoVideoViewModelWitCursorAndContent} from "./models/video"
 
 export {
   ToolDetailView,
@@ -464,5 +464,6 @@ export {
   PeriodFilterEnum,
   BoVideoViewModel,
   BoVideoListViewModel,
-  BoVideoDetailViewModel
+  BoVideoDetailViewModel,
+  BoVideoViewModelWitCursorAndContent
 };

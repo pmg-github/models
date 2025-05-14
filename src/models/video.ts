@@ -9,6 +9,11 @@ export interface BoVideoViewModel {
   owner: PmgUserInterface;
   amountOfVideos: number;
 }
+
+export interface BoVideoViewModelWitCursorAndContent{
+  content:BoVideoViewModel[],
+  cursor:number
+}
 export interface BoVideoDetailViewModel {
   id: number;
   jobNr: string;
