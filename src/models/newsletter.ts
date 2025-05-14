@@ -7,6 +7,7 @@ import {
   isNotEmpty,
   IsNotEmpty,
   IsNumber,
+  IsOptional,
   Length,
   MaxLength,
   ValidateIf,
@@ -107,7 +108,7 @@ export enum NewsletterViewTypeEnum {
 
 export class NewsletterContentModel {
   id: number | undefined = undefined;
-  typeId: number | undefined = undefined;
+  articleTypeId: number | undefined = undefined;
   viewType: NewsletterViewTypeEnum | undefined = undefined;
   projectCode: string | undefined = undefined;
   languageCode: string | undefined = undefined;
@@ -122,6 +123,10 @@ export class NewsletterContentModel {
   fileId: number | undefined = undefined;
   imageUrl: string | undefined = undefined;
   url: string | undefined = undefined;
+  authorFileId: number | undefined = undefined;
+  authorFileUrl: string | undefined = undefined;
+  authorName: string | undefined = undefined;
+  authorFunction: string | undefined = undefined;
 }
 
 export interface NewsletterOrderModel {
@@ -152,6 +157,7 @@ export interface NewsletterTileModel {
 
 export interface NewsletterMetaDataModel {
   id: number;
+  introViewTypeId: number;
   projectCode: string;
   introTitle: string;
   introDescription: string;
@@ -255,6 +261,9 @@ export class NewsletterIntroSaveRequest {
   @MaxLength(255)
   introFunction: string | undefined;
 
+  @IsNotEmpty()
+  introViewTypeId!: number;
+
   constructor(data: Partial<NewsletterIntroSaveRequest>) {
     Object.assign(this, data);
   }
@@ -357,6 +366,13 @@ export class NewsletterArticleSaveRequest {
   description!: string;
   @IsNotEmpty()
   moreLabel!: string;
+
+  @IsOptional()
+  authorFileId!: number | undefined | null;
+  @IsOptional()
+  authorName!: string | undefined | null;
+  @IsOptional()
+  authorFunction!: string | undefined | null;
 
   constructor(data: Partial<NewsletterArticleSaveRequest>) {
     Object.assign(this, data);

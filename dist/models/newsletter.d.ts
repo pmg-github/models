@@ -83,7 +83,7 @@ export declare enum NewsletterViewTypeEnum {
 }
 export declare class NewsletterContentModel {
     id: number | undefined;
-    typeId: number | undefined;
+    articleTypeId: number | undefined;
     viewType: NewsletterViewTypeEnum | undefined;
     projectCode: string | undefined;
     languageCode: string | undefined;
@@ -98,6 +98,10 @@ export declare class NewsletterContentModel {
     fileId: number | undefined;
     imageUrl: string | undefined;
     url: string | undefined;
+    authorFileId: number | undefined;
+    authorFileUrl: string | undefined;
+    authorName: string | undefined;
+    authorFunction: string | undefined;
 }
 export interface NewsletterOrderModel {
     reference: string;
@@ -124,6 +128,7 @@ export interface NewsletterTileModel {
 }
 export interface NewsletterMetaDataModel {
     id: number;
+    introViewTypeId: number;
     projectCode: string;
     introTitle: string;
     introDescription: string;
@@ -190,6 +195,7 @@ export declare class NewsletterIntroSaveRequest {
     introFileId: number | null;
     introName: string | undefined;
     introFunction: string | undefined;
+    introViewTypeId: number;
     constructor(data: Partial<NewsletterIntroSaveRequest>);
 }
 export declare class NewsletterQuicklinkAddRequest {
@@ -220,6 +226,9 @@ export declare class NewsletterArticleSaveRequest {
     title: string;
     description: string;
     moreLabel: string;
+    authorFileId: number | undefined | null;
+    authorName: string | undefined | null;
+    authorFunction: string | undefined | null;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
 }
 export declare class NewsletterPollAddRequest {
