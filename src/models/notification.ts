@@ -48,6 +48,7 @@ export interface NotificationDetailModel {
   text: string;
   files: FileListViewModel[] | undefined;
   topicsIds: number[] | undefined;
+  moreInfoLink: string | undefined;
 }
 
 export class NotificationSummaryListModelWhitCursorAndContent {
