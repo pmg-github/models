@@ -37,6 +37,7 @@ export interface NotificationSummaryListModel {
   isRead: number;
   reactionCounter: number;
   link: string | undefined;
+  moreInfoLink: string | undefined;
   status?: string;
 }
 
