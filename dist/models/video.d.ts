@@ -30,4 +30,5 @@ export interface BoVideoListViewModel {
     statusId: number;
     voiceOverLanguageCode: string;
     subTitlesLanguageCode: string;
+    videoUrl: string;
 }
