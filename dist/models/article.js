@@ -42,8 +42,8 @@ var ArticleType;
     // UNUSED => Events: use different API and exclude these from all articles (TODO: check if an overall excluded is needed if no param for type was passed?)
 })(ArticleType || (exports.ArticleType = ArticleType = {}));
 exports.articleTypeData = {
-    [ArticleType.NEWS]: [2],
-    [ArticleType.ARTICLES]: [1, 3, 15, 18],
+    [ArticleType.NEWS]: [2, 15, 22],
+    [ArticleType.ARTICLES]: [1, 3, 18],
     [ArticleType.MARKETING]: [4],
     [ArticleType.PRODUCTS]: [7, 8, 9, 10, 17], // probably will use a seperate API later on!!
     [ArticleType.HOW_TO_CHOOSE]: [20],
