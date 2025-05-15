@@ -47,4 +47,5 @@ var SecurityEnum;
     SecurityEnum[SecurityEnum["MANAGE_TIME_REGISTRATION"] = 43] = "MANAGE_TIME_REGISTRATION";
     SecurityEnum[SecurityEnum["NEWSLETTER_APPROVE"] = 44] = "NEWSLETTER_APPROVE";
     SecurityEnum[SecurityEnum["NEWSLETTER_UNAPPROVE"] = 45] = "NEWSLETTER_UNAPPROVE";
+    SecurityEnum[SecurityEnum["NEWSLETTER_SOFT_DELETE"] = 46] = "NEWSLETTER_SOFT_DELETE";
 })(SecurityEnum || (exports.SecurityEnum = SecurityEnum = {}));
