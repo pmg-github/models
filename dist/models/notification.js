@@ -23,6 +23,8 @@ class NotificationListModel {
     userReactionTypeId = undefined;
     media = undefined;
     topics = undefined;
+    jobNr = undefined;
+    mediaType = 1;
 }
 exports.NotificationListModel = NotificationListModel;
 class NotificationSummaryListModelWhitCursorAndContent {

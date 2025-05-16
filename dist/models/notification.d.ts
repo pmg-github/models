@@ -20,6 +20,8 @@ export declare class NotificationListModel {
     userReactionTypeId: number | undefined;
     media: NotificationMediaListModel[] | undefined;
     topics: NotificationTopicModel[] | undefined;
+    jobNr: string | undefined;
+    mediaType: number;
 }
 export interface NotificationSummaryListModel {
     id: number | undefined;
@@ -43,6 +45,8 @@ export interface NotificationDetailModel {
     files: FileListViewModel[] | undefined;
     topicsIds: number[] | undefined;
     moreInfoLink: string | undefined;
+    jobNr: string | undefined;
+    mediaType: number;
 }
 export declare class NotificationSummaryListModelWhitCursorAndContent {
     content: NotificationSummaryListModel[] | undefined;
