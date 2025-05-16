@@ -52,7 +52,7 @@ export interface NotificationDetailModel {
   topicsIds: number[] | undefined;
   moreInfoLink: string | undefined;
   jobNr: string | undefined;
-  mediaTypeID: number;
+  mediaTypeId: number;
 }
 
 export class NotificationSummaryListModelWhitCursorAndContent {
