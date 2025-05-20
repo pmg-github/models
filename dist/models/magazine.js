@@ -17,6 +17,7 @@ class ViewerTileBaseViewModel {
     orderByValue = undefined;
     portalDomain = undefined;
     customerReference = undefined;
+    displayDate = undefined;
 }
 exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
 class ViewerArticleBaseViewModel {

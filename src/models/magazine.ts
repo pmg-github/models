@@ -14,6 +14,7 @@ export class ViewerTileBaseViewModel {
   orderByValue: string | undefined = undefined;
   portalDomain?: string | undefined = undefined;
   customerReference?: string | undefined = undefined;
+  displayDate: Date | string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {

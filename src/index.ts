@@ -69,6 +69,7 @@ import {
   CompanyCornerPictureModel,
   CompanyCardViewModel,
   BcCompanyViewModel,
+  CompanyRankingOverviewModel,
 } from "./models/company";
 
 import { ContextViewModel } from "./models/context";
@@ -264,7 +265,12 @@ import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
 
-import {BoVideoDetailViewModel, BoVideoListViewModel, BoVideoViewModel, BoVideoViewModelWitCursorAndContent} from "./models/video"
+import {
+  BoVideoDetailViewModel,
+  BoVideoListViewModel,
+  BoVideoViewModel,
+  BoVideoViewModelWitCursorAndContent,
+} from "./models/video";
 
 export {
   ToolDetailView,
@@ -467,5 +473,6 @@ export {
   BoVideoViewModel,
   BoVideoListViewModel,
   BoVideoDetailViewModel,
-  BoVideoViewModelWitCursorAndContent
+  BoVideoViewModelWitCursorAndContent,
+  CompanyRankingOverviewModel,
 };
