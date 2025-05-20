@@ -60,4 +60,16 @@ export class CompanyCornerDBModel {
   WebsiteEN: string | undefined;
 }
 
+export type CompanyRankingOverviewModel = {
+  id: number;
+  customerReference: string;
+  customerName: string;
+  customerLocation: string;
+  rankingPosition: number;
+  value: number;
+  articleTitle: string | null;
+  articleReference: string | null;
+  articleImageUrl: string | null;
+};
+
 export class CompanyCornerPictureModel {}
