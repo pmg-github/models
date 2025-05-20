@@ -177,7 +177,7 @@ import {
   AboViewModel,
   ProefAboCreateModel,
 } from "./models/abos";
-import { PortalViewModel, PortalCarouselViewModel, BoPortalViewModel } from "./models/portal";
+import { PortalViewModel, PortalCarouselViewModel, BoPortalViewModel, BoPortalContextInteresses } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
 
@@ -405,6 +405,7 @@ export {
   PortalViewModel,
   PortalCarouselViewModel,
   BoPortalViewModel,
+  BoPortalContextInteresses,
   DocumentTypeViewModel,
   CampagneViewModel,
   CampagneItemViewModel,

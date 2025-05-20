@@ -19,3 +19,11 @@ export interface PortalCarouselViewModel {
     src: string;
     name: string;
 }
+export interface BoPortalContextInteresses {
+    code: string;
+    name: string;
+    interesses: {
+        code: string;
+        name: string;
+    }[];
+}
