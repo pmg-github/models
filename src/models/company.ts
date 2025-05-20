@@ -68,6 +68,7 @@ export type CompanyRankingOverviewModel = {
   rankingPosition: number;
   value: number;
   articleTitle: string | null;
+  articleDescription: string | null;
   articleReference: string | null;
   articleImageUrl: string | null;
 };
