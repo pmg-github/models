@@ -52,6 +52,7 @@ import { PmgUserModel } from "./pmguser";
 import { SelectOptionViewModel } from "./selectoption";
 export interface BoArticleListModel {
     id: number;
+    jobNr: string;
     reference: string;
     languageCode: string;
     title: string;

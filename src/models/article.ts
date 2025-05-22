@@ -111,6 +111,7 @@ import { SelectOptionViewModel } from "./selectoption";
 import { UserViewModel } from "./user";
 export interface BoArticleListModel {
   id: number;
+  jobNr: string;
   reference: string;
   languageCode: string;
   title: string;
