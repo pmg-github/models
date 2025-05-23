@@ -189,7 +189,7 @@ import {
 
 import { StatsPostModel } from "./models/stats";
 
-import { InterestViewModel } from "./models/interest";
+import { InteresseDetailView, InterestViewModel } from "./models/interest";
 
 import { AdTileViewModel } from "./models/tiles";
 
@@ -419,6 +419,7 @@ export {
   TranslationSaveRequest,
   StatsPostModel,
   InterestViewModel,
+  InteresseDetailView,
   ArticleType,
   articleTypeData,
   ArticlePremiumType,
