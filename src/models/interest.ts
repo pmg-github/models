@@ -6,6 +6,7 @@ export interface InterestViewModel {
 }
 
 export interface InteresseDetailView {
+  code:string;
   NameNl: string;
   NameFr: string;
   NameDe: string;

@@ -5,6 +5,7 @@ export interface InterestViewModel {
     type: string;
 }
 export interface InteresseDetailView {
+    code: string;
     NameNl: string;
     NameFr: string;
     NameDe: string;
