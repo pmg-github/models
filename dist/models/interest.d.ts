@@ -6,18 +6,18 @@ export interface InterestViewModel {
 }
 export interface InteresseDetailView {
     code: string;
-    NameNl: string;
-    NameFr: string;
-    NameDe: string;
-    NameEn: string;
-    KeywordsNl: string;
-    KeywordsFr: string;
-    KeywordsDe: string;
-    KeywordsEn: string;
-    ActivityNl: string;
-    ActivityFr: string;
-    ActivityDe: string;
-    ActivityEn: string;
+    nameNl: string;
+    nameFr: string;
+    nameDe: string;
+    nameEn: string;
+    keywordsNl: string;
+    keywordsFr: string;
+    keywordsDe: string;
+    keywordsEn: string;
+    activityNl: string;
+    activityFr: string;
+    activityDe: string;
+    activityEn: string;
     isLvl: boolean;
     kind: number;
     trending: string;
