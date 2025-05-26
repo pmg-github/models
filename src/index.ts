@@ -72,7 +72,7 @@ import {
   CompanyRankingOverviewModel,
 } from "./models/company";
 
-import { ContextViewModel } from "./models/context";
+import { ContextDetailView, ContextViewModel } from "./models/context";
 
 import {
   SelectOptionDescriptionTagsViewModel,
@@ -302,6 +302,7 @@ export {
   NewsletterTileViewModel,
   NewsletterMetaDataViewModel,
   ContextViewModel,
+  ContextDetailView,
   UserAPIInterface,
   UserAboAPIInterface,
   UserViewModel,
