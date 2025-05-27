@@ -14,6 +14,7 @@ import {
   BcArticleDetailModel,
   BcArticleDetailIntressesModel,
   BcArticleIntresseReachModel,
+  BcListingDetailModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -477,4 +478,5 @@ export {
   BoVideoDetailViewModel,
   BoVideoViewModelWitCursorAndContent,
   CompanyRankingOverviewModel,
+  BcListingDetailModel,
 };

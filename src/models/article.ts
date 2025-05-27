@@ -166,6 +166,21 @@ export interface BcArticleDetailModel {
   availableUntil?: Date;
   company?: SelectOptionViewModel;
 }
+export interface BcListingDetailModel {
+  id: number;
+  reference: string;
+  jobCode?: string;
+  languageCode: string;
+  statusId: number;
+  status: string;
+  title: string | null | undefined;
+  imageUrl: string | undefined;
+  text: string | null | undefined;
+  availableFrom?: Date;
+  availableUntil?: Date;
+  company?: SelectOptionViewModel;
+  articleType:number
+}
 export interface BcArticleDetailIntressesModel {
   articles: BcArticleDetailModel[];
   intresses: intresses[];
