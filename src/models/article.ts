@@ -179,7 +179,8 @@ export interface BcListingDetailModel {
   availableFrom?: Date;
   availableUntil?: Date;
   company?: SelectOptionViewModel;
-  articleType:number
+  articleType: 20 | 21;
+  interesse:string
 }
 export interface BcArticleDetailIntressesModel {
   articles: BcArticleDetailModel[];
