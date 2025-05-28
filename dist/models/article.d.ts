@@ -93,6 +93,24 @@ export interface bcArticleListModel {
         email: string;
     };
 }
+export interface bcListingListModel {
+    id: number;
+    reference: string;
+    title: string;
+    availableFrom: Date;
+    availableUntil: Date;
+    portalDomain: string;
+    available: bcAvailableLanguage[];
+    company: string;
+    brand: string;
+    type: string;
+    user?: {
+        id: number;
+        firstName: string;
+        lastName: string;
+        email: string;
+    };
+}
 export interface BcArticleDetailModel {
     id: number;
     reference: string;

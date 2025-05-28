@@ -15,6 +15,7 @@ import {
   BcArticleDetailIntressesModel,
   BcArticleIntresseReachModel,
   BcListingDetailModel,
+  bcListingListModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -292,6 +293,7 @@ export {
   BoArticleStatus,
   BoArticleJobTask,
   BcArticleDetailModel,
+  bcListingListModel,
   BoArticleType,
   MagazineTileViewModel,
   MagazineArticleViewModel,
