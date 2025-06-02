@@ -38,6 +38,8 @@ class ViewerArticleBaseViewModel {
     externalUrl = undefined;
     searchTextRelated = undefined;
     newsletterMoreLabel = undefined;
+    moreLink = undefined;
+    moreLinkText = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {

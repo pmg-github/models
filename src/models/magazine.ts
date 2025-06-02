@@ -35,6 +35,8 @@ export class ViewerArticleBaseViewModel {
   externalUrl: string | undefined = undefined;
   searchTextRelated: string | undefined = undefined;
   newsletterMoreLabel: string | undefined = undefined;
+  moreLink:string|undefined=undefined
+  moreLinkText:string|undefined=undefined
 }
 
 export class ViewerAdBaseViewModel {

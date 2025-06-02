@@ -31,6 +31,8 @@ export declare class ViewerArticleBaseViewModel {
     externalUrl: string | undefined;
     searchTextRelated: string | undefined;
     newsletterMoreLabel: string | undefined;
+    moreLink: string | undefined;
+    moreLinkText: string | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;
