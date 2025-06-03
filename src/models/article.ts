@@ -102,6 +102,7 @@ export type ArticleSearchOptions = {
   cursorArticle?: ViewerTileBaseViewModel;
   useNewsletterTitles?: boolean;
   allowHiddenArticles?: boolean;
+  useCache?: boolean;
 };
 
 /* BACKOFFICE */

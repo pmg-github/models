@@ -47,6 +47,7 @@ export type ArticleSearchOptions = {
     cursorArticle?: ViewerTileBaseViewModel;
     useNewsletterTitles?: boolean;
     allowHiddenArticles?: boolean;
+    useCache?: boolean;
 };
 import { PmgUserModel } from "./pmguser";
 import { SelectOptionViewModel } from "./selectoption";
