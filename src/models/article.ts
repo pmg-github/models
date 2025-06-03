@@ -199,8 +199,10 @@ export interface BcListingDetailModel {
   company?: SelectOptionViewModel;
   articleType: 20 | 21;
   interesse?: string;
-  link:string;
-  linkText:string;
+  link?:string;
+  linkText?:string;
+  email?:string
+  phoneNumber?:string
 }
 
 export interface BcArticleDetailIntressesModel {
