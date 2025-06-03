@@ -2,6 +2,7 @@ export declare class ViewerTileBaseViewModel {
     id: number;
     reference: string | undefined;
     title: string | undefined;
+    type: number | undefined;
     description: string | undefined;
     isPremium: boolean | undefined;
     fileId: number | undefined;
@@ -12,6 +13,7 @@ export declare class ViewerTileBaseViewModel {
     portalDomain?: string | undefined;
     customerReference?: string | undefined;
     displayDate: Date | string | undefined;
+    customerName: string | undefined;
 }
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;

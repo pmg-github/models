@@ -8,6 +8,7 @@ class ViewerTileBaseViewModel {
     id;
     reference = undefined;
     title = undefined;
+    type = undefined;
     description = undefined;
     isPremium = undefined;
     fileId = undefined;
@@ -18,6 +19,7 @@ class ViewerTileBaseViewModel {
     portalDomain = undefined;
     customerReference = undefined;
     displayDate = undefined;
+    customerName = undefined;
 }
 exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
 class ViewerArticleBaseViewModel {

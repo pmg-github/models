@@ -5,6 +5,7 @@ export class ViewerTileBaseViewModel {
   id!: number;
   reference: string | undefined = undefined;
   title: string | undefined = undefined;
+  type: number | undefined = undefined;
   description: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
   fileId: number | undefined = undefined;
@@ -15,6 +16,7 @@ export class ViewerTileBaseViewModel {
   portalDomain?: string | undefined = undefined;
   customerReference?: string | undefined = undefined;
   displayDate: Date | string | undefined = undefined;
+  customerName: string | undefined = undefined;
 }
 
 export class ViewerArticleBaseViewModel {
