@@ -6,3 +6,9 @@ export interface ContextViewModel {
   name: string;
   interests: InterestViewModel[] | undefined;
 }
+
+export interface ContextDetailView {
+  code: string;
+  nameNl: string;
+  nameFr: string;
+}

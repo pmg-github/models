@@ -47,9 +47,9 @@ exports.articleTypeData = {
     [ArticleType.MARKETING]: [4],
     [ArticleType.PRODUCTS]: [7, 8, 9, 10, 17], // probably will use a seperate API later on!!
     [ArticleType.HOW_TO_CHOOSE]: [20],
-    [ArticleType.SURVEYS]: [14],
     [ArticleType.ADS]: [11, 12, 13],
-    [ArticleType.ADPOSTS]: [20],
+    [ArticleType.ADPOSTS]: [20, 21],
+    [ArticleType.SURVEYS]: [14],
     [ArticleType.VACANCIES]: [21],
     [ArticleType.OPINIES]: [22],
 };

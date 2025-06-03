@@ -14,6 +14,8 @@ import {
   BcArticleDetailModel,
   BcArticleDetailIntressesModel,
   BcArticleIntresseReachModel,
+  BcListingDetailModel,
+  bcListingListModel,
 } from "./models/article";
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -72,7 +74,7 @@ import {
   CompanyRankingOverviewModel,
 } from "./models/company";
 
-import { ContextViewModel } from "./models/context";
+import { ContextDetailView, ContextViewModel } from "./models/context";
 
 import {
   SelectOptionDescriptionTagsViewModel,
@@ -189,7 +191,7 @@ import {
 
 import { StatsPostModel } from "./models/stats";
 
-import { InterestViewModel } from "./models/interest";
+import { InteresseDetailView, InterestViewModel } from "./models/interest";
 
 import { AdTileViewModel } from "./models/tiles";
 
@@ -291,6 +293,7 @@ export {
   BoArticleStatus,
   BoArticleJobTask,
   BcArticleDetailModel,
+  bcListingListModel,
   BoArticleType,
   MagazineTileViewModel,
   MagazineArticleViewModel,
@@ -302,6 +305,7 @@ export {
   NewsletterTileViewModel,
   NewsletterMetaDataViewModel,
   ContextViewModel,
+  ContextDetailView,
   UserAPIInterface,
   UserAboAPIInterface,
   UserViewModel,
@@ -419,6 +423,7 @@ export {
   TranslationSaveRequest,
   StatsPostModel,
   InterestViewModel,
+  InteresseDetailView,
   ArticleType,
   articleTypeData,
   ArticlePremiumType,
@@ -475,4 +480,5 @@ export {
   BoVideoDetailViewModel,
   BoVideoViewModelWitCursorAndContent,
   CompanyRankingOverviewModel,
+  BcListingDetailModel,
 };

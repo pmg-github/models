@@ -8,6 +8,8 @@ export interface PubViewModel {
   redirectUrl: string | null;
   imageUrl: string | null;
   customerReference: string | null;
+  moreUrl?: string | null;
+  moreText?: string | null;
 }
 
 export interface PubsListView {

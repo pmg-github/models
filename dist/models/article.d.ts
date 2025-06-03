@@ -53,6 +53,7 @@ import { PmgUserModel } from "./pmguser";
 import { SelectOptionViewModel } from "./selectoption";
 export interface BoArticleListModel {
     id: number;
+    jobNr: string;
     reference: string;
     languageCode: string;
     title: string;
@@ -93,6 +94,24 @@ export interface bcArticleListModel {
         email: string;
     };
 }
+export interface bcListingListModel {
+    id: number;
+    reference: string;
+    title: string;
+    availableFrom: Date;
+    availableUntil: Date;
+    portalDomain: string;
+    available: bcAvailableLanguage[];
+    company: string;
+    brand: string;
+    type: string;
+    user?: {
+        id: number;
+        firstName: string;
+        lastName: string;
+        email: string;
+    };
+}
 export interface BcArticleDetailModel {
     id: number;
     reference: string;
@@ -106,6 +125,26 @@ export interface BcArticleDetailModel {
     availableFrom?: Date;
     availableUntil?: Date;
     company?: SelectOptionViewModel;
+}
+export interface BcListingDetailModel {
+    id: number;
+    reference: string;
+    jobCode?: string;
+    languageCode: string;
+    statusId: number;
+    status: string;
+    title: string | null | undefined;
+    imageUrl: string | undefined;
+    text: string | null | undefined;
+    availableFrom?: Date;
+    availableUntil?: Date;
+    company?: SelectOptionViewModel;
+    articleType: 20 | 21;
+    interesse?: string;
+    link?: string;
+    linkText?: string;
+    email?: string;
+    phoneNumber?: string;
 }
 export interface BcArticleDetailIntressesModel {
     articles: BcArticleDetailModel[];

@@ -49,9 +49,9 @@ export const articleTypeData: { [key in ArticleType]: number[] } = {
   [ArticleType.MARKETING]: [4],
   [ArticleType.PRODUCTS]: [7, 8, 9, 10, 17], // probably will use a seperate API later on!!
   [ArticleType.HOW_TO_CHOOSE]: [20],
-  [ArticleType.SURVEYS]: [14],
   [ArticleType.ADS]: [11, 12, 13],
-  [ArticleType.ADPOSTS]: [20],
+  [ArticleType.ADPOSTS]: [20, 21],
+  [ArticleType.SURVEYS]: [14],
   [ArticleType.VACANCIES]: [21],
   [ArticleType.OPINIES]: [22],
 };
@@ -112,6 +112,7 @@ import { SelectOptionViewModel } from "./selectoption";
 import { UserViewModel } from "./user";
 export interface BoArticleListModel {
   id: number;
+  jobNr: string;
   reference: string;
   languageCode: string;
   title: string;
@@ -152,6 +153,24 @@ export interface bcArticleListModel {
     email: string;
   };
 }
+export interface bcListingListModel {
+  id: number;
+  reference: string;
+  title: string;
+  availableFrom: Date;
+  availableUntil: Date;
+  portalDomain: string;
+  available: bcAvailableLanguage[];
+  company: string;
+  brand: string;
+  type: string;
+  user?: {
+    id: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+  };
+}
 export interface BcArticleDetailModel {
   id: number;
   reference: string;
@@ -166,6 +185,27 @@ export interface BcArticleDetailModel {
   availableUntil?: Date;
   company?: SelectOptionViewModel;
 }
+export interface BcListingDetailModel {
+  id: number;
+  reference: string;
+  jobCode?: string;
+  languageCode: string;
+  statusId: number;
+  status: string;
+  title: string | null | undefined;
+  imageUrl: string | undefined;
+  text: string | null | undefined;
+  availableFrom?: Date;
+  availableUntil?: Date;
+  company?: SelectOptionViewModel;
+  articleType: 20 | 21;
+  interesse?: string;
+  link?:string;
+  linkText?:string;
+  email?:string
+  phoneNumber?:string
+}
+
 export interface BcArticleDetailIntressesModel {
   articles: BcArticleDetailModel[];
   intresses: intresses[];

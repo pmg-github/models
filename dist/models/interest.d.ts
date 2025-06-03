@@ -4,3 +4,16 @@ export interface InterestViewModel {
     name: string;
     type: string;
 }
+export interface InteresseDetailView {
+    code: string;
+    nameNl: string;
+    nameFr: string;
+    keywordsNl: string;
+    keywordsFr: string;
+    activityNl: string;
+    activityFr: string;
+    isLvl: boolean;
+    kind: number;
+    trending: string[];
+    portals: string[];
+}
