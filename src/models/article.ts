@@ -113,7 +113,6 @@ export interface ArticleContact {
   phoneNumber: string;
   functionNl?: string;
   functionFr?: string;
-  articleId: number;
 }
 
 /* BACKOFFICE */
