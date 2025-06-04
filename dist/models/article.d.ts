@@ -152,7 +152,7 @@ export interface BcListingDetailModel {
     interesse?: string;
     link?: string;
     linkText?: string;
-    contact: ArticleContact[];
+    contacts: ArticleContact[];
 }
 export interface BcArticleDetailIntressesModel {
     articles: BcArticleDetailModel[];
