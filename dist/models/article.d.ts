@@ -48,6 +48,14 @@ export type ArticleSearchOptions = {
     useNewsletterTitles?: boolean;
     allowHiddenArticles?: boolean;
 };
+export interface ArticleContact {
+    id?: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phoneNumber: string;
+    function: string;
+}
 import { PmgUserModel } from "./pmguser";
 import { SelectOptionViewModel } from "./selectoption";
 export interface BoArticleListModel {
@@ -142,8 +150,7 @@ export interface BcListingDetailModel {
     interesse?: string;
     link?: string;
     linkText?: string;
-    email?: string;
-    phoneNumber?: string;
+    contact: ArticleContact[];
 }
 export interface BcArticleDetailIntressesModel {
     articles: BcArticleDetailModel[];

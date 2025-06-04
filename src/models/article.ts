@@ -104,6 +104,15 @@ export type ArticleSearchOptions = {
   allowHiddenArticles?: boolean;
 };
 
+export interface ArticleContact {
+  id?: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  function:string;
+}
+
 /* BACKOFFICE */
 
 import { PmgUserInterface, PmgUserModel } from "./pmguser";
@@ -199,10 +208,9 @@ export interface BcListingDetailModel {
   company?: SelectOptionViewModel;
   articleType: 20 | 21;
   interesse?: string;
-  link?:string;
-  linkText?:string;
-  email?:string
-  phoneNumber?:string
+  link?: string;
+  linkText?: string;
+  contact: ArticleContact[];
 }
 
 export interface BcArticleDetailIntressesModel {
