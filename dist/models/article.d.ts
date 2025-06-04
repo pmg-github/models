@@ -55,7 +55,7 @@ export interface ArticleContact {
     lastName: string;
     email: string;
     phoneNumber: string;
-    function: string;
+    function?: string;
 }
 import { PmgUserModel } from "./pmguser";
 import { SelectOptionViewModel } from "./selectoption";
