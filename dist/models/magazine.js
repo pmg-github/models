@@ -40,8 +40,6 @@ class ViewerArticleBaseViewModel {
     externalUrl = undefined;
     searchTextRelated = undefined;
     newsletterMoreLabel = undefined;
-    moreLink = undefined;
-    moreLinkText = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {
@@ -81,6 +79,9 @@ class MagazineTileViewModel extends ViewerTileBaseViewModel {
 exports.MagazineTileViewModel = MagazineTileViewModel;
 class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
     interesses = undefined;
+    moreLink = undefined;
+    moreLinkText = undefined;
+    contact = [];
 }
 exports.MagazineArticleViewModel = MagazineArticleViewModel;
 class MagazineAdViewModel extends ViewerAdBaseViewModel {

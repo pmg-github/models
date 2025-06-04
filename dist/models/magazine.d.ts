@@ -15,6 +15,14 @@ export declare class ViewerTileBaseViewModel {
     displayDate: Date | string | undefined;
     customerName: string | undefined;
 }
+export interface ArticleContact {
+    id: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phoneNumber: string;
+    function?: string;
+}
 export declare class ViewerArticleBaseViewModel {
     reference: string | undefined;
     jobCode: string | undefined;
@@ -33,8 +41,6 @@ export declare class ViewerArticleBaseViewModel {
     externalUrl: string | undefined;
     searchTextRelated: string | undefined;
     newsletterMoreLabel: string | undefined;
-    moreLink: string | undefined;
-    moreLinkText: string | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;
@@ -73,6 +79,9 @@ export declare class MagazineTileViewModel extends ViewerTileBaseViewModel {
 }
 export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
     interesses: MagazineInteresseViewModel[] | undefined;
+    moreLink: string | undefined;
+    moreLinkText: string | undefined;
+    contact: ArticleContact[];
 }
 export declare class MagazineAdViewModel extends ViewerAdBaseViewModel {
 }

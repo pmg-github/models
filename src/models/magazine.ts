@@ -18,7 +18,14 @@ export class ViewerTileBaseViewModel {
   displayDate: Date | string | undefined = undefined;
   customerName: string | undefined = undefined;
 }
-
+export interface ArticleContact {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  function?: string;
+}
 export class ViewerArticleBaseViewModel {
   reference: string | undefined = undefined;
   jobCode: string | undefined = undefined;
@@ -37,8 +44,7 @@ export class ViewerArticleBaseViewModel {
   externalUrl: string | undefined = undefined;
   searchTextRelated: string | undefined = undefined;
   newsletterMoreLabel: string | undefined = undefined;
-  moreLink:string|undefined=undefined
-  moreLinkText:string|undefined=undefined
+  
 }
 
 export class ViewerAdBaseViewModel {
@@ -84,6 +90,9 @@ export interface ViewerMagazineViewModel {
 export class MagazineTileViewModel extends ViewerTileBaseViewModel {}
 export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
   interesses: MagazineInteresseViewModel[] | undefined = undefined;
+  moreLink: string | undefined = undefined;
+  moreLinkText: string | undefined = undefined;
+  contact: ArticleContact[] = [];
 }
 export class MagazineAdViewModel extends ViewerAdBaseViewModel {}
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {}
