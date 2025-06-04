@@ -111,7 +111,8 @@ export interface ArticleContact {
   lastName: string;
   email: string;
   phoneNumber: string;
-  function?: string;
+  functionNl?: string;
+  functionFr?: string;
   articleId: number;
 }
 
