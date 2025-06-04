@@ -47,6 +47,7 @@ export type ArticleSearchOptions = {
     cursorArticle?: ViewerTileBaseViewModel;
     useNewsletterTitles?: boolean;
     allowHiddenArticles?: boolean;
+    useCache?: boolean;
 };
 export interface ArticleContact {
     id?: number;
