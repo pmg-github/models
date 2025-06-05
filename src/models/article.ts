@@ -209,7 +209,7 @@ export interface BcListingDetailModel {
   availableUntil?: Date;
   company?: SelectOptionViewModel;
   articleType: 20 | 21;
-  interesse?: string;
+  interesse: string;
   link?: string;
   linkText?: string;
   contacts: ArticleContact[];
