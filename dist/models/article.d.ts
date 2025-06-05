@@ -142,9 +142,9 @@ export interface BcListingDetailModel {
     languageCode: string;
     statusId: number;
     status: string;
-    title: string | undefined;
-    imageUrl: string | undefined;
-    text: string | undefined;
+    title: string;
+    imageUrl?: string;
+    text: string;
     availableFrom?: Date;
     availableUntil?: Date;
     company?: SelectOptionViewModel;
