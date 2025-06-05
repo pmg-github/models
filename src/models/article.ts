@@ -188,9 +188,9 @@ export interface BcArticleDetailModel {
   languageCode: string;
   statusId: number;
   status: string;
-  title: string | null | undefined;
+  title: string  | undefined;
   imageUrl: string | undefined;
-  text: string | null | undefined;
+  text: string  | undefined;
   availableFrom?: Date;
   availableUntil?: Date;
   company?: SelectOptionViewModel;
@@ -202,9 +202,9 @@ export interface BcListingDetailModel {
   languageCode: string;
   statusId: number;
   status: string;
-  title: string | null | undefined;
+  title: string  | undefined;
   imageUrl: string | undefined;
-  text: string | null | undefined;
+  text: string  | undefined;
   availableFrom?: Date;
   availableUntil?: Date;
   company?: SelectOptionViewModel;
