@@ -43,5 +43,6 @@ export declare enum SecurityEnum {
     MANAGE_TIME_REGISTRATION = 43,
     NEWSLETTER_APPROVE = 44,
     NEWSLETTER_UNAPPROVE = 45,
-    NEWSLETTER_SOFT_DELETE = 46
+    NEWSLETTER_SOFT_DELETE = 46,
+    IntresseAdminostrators = 48
 }

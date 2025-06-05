@@ -44,4 +44,5 @@ export enum SecurityEnum {
   NEWSLETTER_APPROVE = 44,
   NEWSLETTER_UNAPPROVE = 45,
   NEWSLETTER_SOFT_DELETE = 46,
+  IntresseAdminostrators = 48,
 }
