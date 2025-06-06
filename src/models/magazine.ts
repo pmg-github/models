@@ -17,6 +17,7 @@ export class ViewerTileBaseViewModel {
   customerReference?: string | undefined = undefined;
   displayDate: Date | string | undefined = undefined;
   customerName: string | undefined = undefined;
+  customerCity: string | undefined = undefined;
 }
 export interface ArticleContact {
   id: number;

@@ -20,6 +20,7 @@ class ViewerTileBaseViewModel {
     customerReference = undefined;
     displayDate = undefined;
     customerName = undefined;
+    customerCity = undefined;
 }
 exports.ViewerTileBaseViewModel = ViewerTileBaseViewModel;
 class ViewerArticleBaseViewModel {
