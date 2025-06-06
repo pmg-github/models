@@ -11,7 +11,7 @@ export interface BoPortalViewModel {
   code: string;
   title: string;
   domain: string;
-  hasSecurity:string;
+  hasSecurity:boolean;
   countInteresses: number;
   countContext: number;
 }
