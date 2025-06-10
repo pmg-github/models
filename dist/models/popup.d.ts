@@ -40,6 +40,7 @@ export interface BoPopupList {
 }
 export interface BoPopupDetailMl {
     fileId: number;
+    fileUrl: string;
     title: string;
     subTitle: string;
     intro: string;
@@ -55,6 +56,6 @@ export interface BoPopupDetailView {
     isActive: boolean;
     dateFrom?: string;
     dateUntil: string;
-    deployFrequency: string;
+    displayFrequency: string;
     delaySeconds: string;
 }
