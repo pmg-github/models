@@ -39,8 +39,8 @@ export interface BoPopupList {
     content: BoPopup[];
 }
 export interface BoPopupDetailMl {
-    fileId: number;
-    fileUrl: string;
+    fileId?: number;
+    fileUrl?: string;
     title: string;
     subTitle: string;
     intro: string;
@@ -49,13 +49,13 @@ export interface BoPopupDetailMl {
     buttonLink: string;
 }
 export interface BoPopupDetailView {
-    id: number;
+    id?: number;
     portals: string[];
     nl: BoPopupDetailMl;
     fr: BoPopupDetailMl;
     isActive: boolean;
     dateFrom?: string;
     dateUntil: string;
-    displayFrequency: string;
-    delaySeconds: string;
+    displayFrequency: number;
+    delaySeconds: number;
 }
