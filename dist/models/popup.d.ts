@@ -38,3 +38,23 @@ export interface BoPopupList {
     nextCursor: number;
     content: BoPopup[];
 }
+export interface BoPopupDetailMl {
+    fileId: number;
+    title: string;
+    subTitle: string;
+    intro: string;
+    text: string;
+    buttonText: string;
+    buttonLink: string;
+}
+export interface BoPopupDetailView {
+    id: number;
+    portals: string[];
+    nl: BoPopupDetailMl;
+    fr: BoPopupDetailMl;
+    isActive: boolean;
+    dateFrom?: string;
+    dateUntil: string;
+    deployFrequency: string;
+    delaySeconds: string;
+}

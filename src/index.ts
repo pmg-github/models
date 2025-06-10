@@ -173,7 +173,7 @@ import {
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
-import { BoPopup, BoPopupList, PopupModel } from "./models/popup";
+import { BoPopup, BoPopupDetailView, BoPopupList, PopupModel } from "./models/popup";
 
 import {
   AboDetailViewModel,
@@ -484,4 +484,5 @@ export {
   PortalComponentViewModel,
   BoPopup,
   BoPopupList,
+  BoPopupDetailView,
 };
