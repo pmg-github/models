@@ -26,3 +26,12 @@ export declare class PopupModel {
     lastModificationDate: Date | undefined;
     fileUrl: string | undefined;
 }
+export interface BoPopup {
+    id: number;
+    title: string;
+    portals: string;
+}
+export interface BoPopupList {
+    nextCursor: number;
+    content: BoPopup[];
+}
