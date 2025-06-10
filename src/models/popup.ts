@@ -32,7 +32,10 @@ export class PopupModel {
 export interface BoPopup {
   id: number;
   title: string;
-  portals: PortalComponentViewModel[];
+  amountPortals: number;
+  dateFrom: string;
+  dateUntil: string;
+  active: boolean;
 }
 export interface BoPopupList {
   nextCursor: number;
