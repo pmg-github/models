@@ -1,3 +1,5 @@
+import { PortalComponentViewModel } from "./portal";
+
 export class PopupModel {
   id: number | undefined = undefined;
   typeId: number | undefined = undefined;
@@ -30,7 +32,7 @@ export class PopupModel {
 export interface BoPopup {
   id: number;
   title: string;
-  portals: string;
+  portals: PortalComponentViewModel[];
 }
 export interface BoPopupList {
   nextCursor: number;
