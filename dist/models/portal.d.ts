@@ -15,6 +15,11 @@ export interface BoPortalViewModel {
     countInteresses: number;
     countContext: number;
 }
+export interface PortalComponentViewModel {
+    code: string;
+    title: string;
+    domain: string;
+}
 export interface PortalCarouselViewModel {
     link: string;
     src: string;

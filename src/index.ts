@@ -173,14 +173,14 @@ import {
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
-import { PopupModel } from "./models/popup";
+import { BoPopup, BoPopupList, PopupModel } from "./models/popup";
 
 import {
   AboDetailViewModel,
   AboViewModel,
   ProefAboCreateModel,
 } from "./models/abos";
-import { PortalViewModel, PortalCarouselViewModel, BoPortalViewModel, BoPortalContextInteresses } from "./models/portal";
+import { PortalViewModel, PortalCarouselViewModel, BoPortalViewModel, BoPortalContextInteresses, PortalComponentViewModel } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
 
@@ -481,4 +481,7 @@ export {
   BoVideoViewModelWitCursorAndContent,
   CompanyRankingOverviewModel,
   BcListingDetailModel,
+  PortalComponentViewModel,
+  BoPopup,
+  BoPopupList,
 };
