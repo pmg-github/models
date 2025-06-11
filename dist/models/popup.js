@@ -10,9 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreatePopupDto = exports.PopupModel = void 0;
-const selectoption_1 = require("./selectoption");
 const class_validator_1 = require("class-validator");
-const class_transformer_1 = require("class-transformer");
 class PopupModel {
     id = undefined;
     typeId = undefined;
@@ -85,64 +83,5 @@ __decorate([
     __metadata("design:type", String)
 ], PopupMlDto.prototype, "buttonLink", void 0);
 class CreatePopupDto {
-    id;
-    portals;
-    // @Type(() => PopupMlDto)
-    nl;
-    // @Type(() => PopupMlDto)
-    fr;
-    isActive;
-    dateFrom;
-    dateUntil;
-    displayFrequency;
-    delaySeconds;
-    constructor(data) {
-        Object.assign(this, data);
-    }
 }
 exports.CreatePopupDto = CreatePopupDto;
-__decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], CreatePopupDto.prototype, "id", void 0);
-__decorate([
-    (0, class_validator_1.IsArray)(),
-    (0, class_validator_1.IsString)({ each: true }),
-    __metadata("design:type", Array)
-], CreatePopupDto.prototype, "portals", void 0);
-__decorate([
-    (0, class_validator_1.ValidateNested)()
-    // @Type(() => PopupMlDto)
-    ,
-    __metadata("design:type", PopupMlDto)
-], CreatePopupDto.prototype, "nl", void 0);
-__decorate([
-    (0, class_validator_1.ValidateNested)()
-    // @Type(() => PopupMlDto)
-    ,
-    __metadata("design:type", PopupMlDto)
-], CreatePopupDto.prototype, "fr", void 0);
-__decorate([
-    (0, class_validator_1.IsBoolean)(),
-    __metadata("design:type", Boolean)
-], CreatePopupDto.prototype, "isActive", void 0);
-__decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], CreatePopupDto.prototype, "dateFrom", void 0);
-__decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], CreatePopupDto.prototype, "dateUntil", void 0);
-__decorate([
-    (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => selectoption_1.SelectOptionViewModelDto),
-    __metadata("design:type", selectoption_1.SelectOptionViewModelDto)
-], CreatePopupDto.prototype, "displayFrequency", void 0);
-__decorate([
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], CreatePopupDto.prototype, "delaySeconds", void 0);
