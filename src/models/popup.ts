@@ -115,5 +115,9 @@ export class CreatePopupDto {
   displayFrequency!: SelectOptionViewModelDto;
 
   @IsNumber() delaySeconds!: number;
+
+  constructor(data: Partial<CreatePopupDto>) {
+    Object.assign(this, data);
+  }
 }
 

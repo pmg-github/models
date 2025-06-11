@@ -79,5 +79,6 @@ export declare class CreatePopupDto {
     dateUntil?: string;
     displayFrequency: SelectOptionViewModelDto;
     delaySeconds: number;
+    constructor(data: Partial<CreatePopupDto>);
 }
 export {};

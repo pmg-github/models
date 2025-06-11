@@ -94,6 +94,9 @@ class CreatePopupDto {
     dateUntil;
     displayFrequency;
     delaySeconds;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.CreatePopupDto = CreatePopupDto;
 __decorate([
