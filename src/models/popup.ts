@@ -93,7 +93,7 @@ class PopupMlDto {
 export class CreatePopupDto {
   @IsOptional() @IsNumber() id?: number;
 
-  // @IsArray()
+  @IsArray()
   @IsString({ each: true })
   portals!: string[];
 

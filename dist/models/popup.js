@@ -85,7 +85,6 @@ __decorate([
 ], PopupMlDto.prototype, "buttonLink", void 0);
 class CreatePopupDto {
     id;
-    // @IsArray()
     portals;
     // @Type(() => PopupMlDto)
     nl;
@@ -108,6 +107,7 @@ __decorate([
     __metadata("design:type", Number)
 ], CreatePopupDto.prototype, "id", void 0);
 __decorate([
+    (0, class_validator_1.IsArray)(),
     (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], CreatePopupDto.prototype, "portals", void 0);
