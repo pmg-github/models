@@ -98,11 +98,11 @@ export class CreatePopupDto {
   portals!: string[];
 
   @ValidateNested()
-  @Type(() => PopupMlDto)
+  // @Type(() => PopupMlDto)
   nl!: PopupMlDto;
 
   @ValidateNested()
-  @Type(() => PopupMlDto)
+  // @Type(() => PopupMlDto)
   fr!: PopupMlDto;
 
   @IsBoolean() isActive!: boolean;
