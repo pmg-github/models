@@ -80,7 +80,7 @@ export interface BoPopupDetailView {
 
 
 class PopupMlDto {
-  @IsString() fileId!: string;
+  @IsNumber() fileId!: string;
   @IsString() title!: string;
 
   @IsOptional() @IsString() subTitle?: string;

@@ -55,7 +55,7 @@ class PopupMlDto {
     }
 }
 __decorate([
-    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNumber)(),
     __metadata("design:type", String)
 ], PopupMlDto.prototype, "fileId", void 0);
 __decorate([
