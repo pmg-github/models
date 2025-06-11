@@ -83,5 +83,25 @@ __decorate([
     __metadata("design:type", String)
 ], PopupMlDto.prototype, "buttonLink", void 0);
 class CreatePopupDto {
+    // @IsOptional() @IsNumber() id?: number;
+    // @IsArray()
+    // @IsString({ each: true })
+    // portals!: string[];
+    // @ValidateNested()
+    // // @Type(() => PopupMlDto)
+    // nl!: PopupMlDto;
+    // @ValidateNested()
+    // // @Type(() => PopupMlDto)
+    // fr!: PopupMlDto;
+    // @IsBoolean() isActive!: boolean;
+    // @IsOptional() @IsString() dateFrom?: string;
+    // @IsOptional() @IsString() dateUntil?: string;
+    // @ValidateNested()
+    // // @Type(() => SelectOptionViewModelDto)
+    // displayFrequency!: SelectOptionViewModelDto;
+    // @IsNumber() delaySeconds!: number;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.CreatePopupDto = CreatePopupDto;

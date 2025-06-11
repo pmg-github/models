@@ -61,4 +61,5 @@ export interface BoPopupDetailView {
     delaySeconds: number;
 }
 export declare class CreatePopupDto {
+    constructor(data: Partial<CreatePopupDto>);
 }

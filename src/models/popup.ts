@@ -116,8 +116,8 @@ export class CreatePopupDto {
 
   // @IsNumber() delaySeconds!: number;
 
-  // constructor(data: Partial<CreatePopupDto>) {
-  //   Object.assign(this, data);
-  // }
+  constructor(data: Partial<CreatePopupDto>) {
+    Object.assign(this, data);
+  }
 }
 
