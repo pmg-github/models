@@ -17,6 +17,10 @@ export interface SelectOptionViewModel {
 export class SelectOptionViewModelDto {
   @IsString() key!: string;
   @IsString() value!: string;
+
+  constructor(data: Partial<SelectOptionViewModelDto>) {
+    Object.assign(this, data);
+  }
 }
 
 export interface SelectOptionIconViewModel

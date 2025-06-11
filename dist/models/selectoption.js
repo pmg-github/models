@@ -14,6 +14,9 @@ const class_validator_1 = require("class-validator");
 class SelectOptionViewModelDto {
     key;
     value;
+    constructor(data) {
+        Object.assign(this, data);
+    }
 }
 exports.SelectOptionViewModelDto = SelectOptionViewModelDto;
 __decorate([

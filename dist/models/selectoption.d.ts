@@ -5,6 +5,7 @@ export interface SelectOptionViewModel {
 export declare class SelectOptionViewModelDto {
     key: string;
     value: string;
+    constructor(data: Partial<SelectOptionViewModelDto>);
 }
 export interface SelectOptionIconViewModel extends SelectOptionDescriptionViewModel {
     Icon: string;

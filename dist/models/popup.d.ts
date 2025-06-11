@@ -68,6 +68,7 @@ declare class PopupMlDto {
     text?: string;
     buttonText?: string;
     buttonLink?: string;
+    constructor(data: Partial<PopupMlDto>);
 }
 export declare class CreatePopupDto {
     id?: number;
