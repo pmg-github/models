@@ -100,10 +100,12 @@ export class CreatePopupDto {
   @IsString({ each: true })
   portals!: string[];
 
+  @IsOptional()
   @ValidateNested()
   @Type(() => PopupMlDto)
   nl!: PopupMlDto;
 
+  @IsOptional()
   @ValidateNested()
   @Type(() => PopupMlDto)
   fr!: PopupMlDto;
