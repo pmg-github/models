@@ -87,7 +87,9 @@ __decorate([
 class CreatePopupDto {
     id;
     portals;
+    // @Type(() => PopupMlDto)
     nl;
+    // @Type(() => PopupMlDto)
     fr;
     isActive;
     dateFrom;
@@ -110,13 +112,15 @@ __decorate([
     __metadata("design:type", Array)
 ], CreatePopupDto.prototype, "portals", void 0);
 __decorate([
-    (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => PopupMlDto),
+    (0, class_validator_1.ValidateNested)()
+    // @Type(() => PopupMlDto)
+    ,
     __metadata("design:type", PopupMlDto)
 ], CreatePopupDto.prototype, "nl", void 0);
 __decorate([
-    (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => PopupMlDto),
+    (0, class_validator_1.ValidateNested)()
+    // @Type(() => PopupMlDto)
+    ,
     __metadata("design:type", PopupMlDto)
 ], CreatePopupDto.prototype, "fr", void 0);
 __decorate([
