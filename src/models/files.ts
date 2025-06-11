@@ -1,7 +1,7 @@
 export interface FileUploadResponseModel {
   statusCode: number;
   status: string;
-  fileId: number;
+  fileId: string;
   fileSize: number;
   fileExtension: string;
   fileUrl: string;
