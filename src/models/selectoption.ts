@@ -6,7 +6,23 @@ import {
   IsArray,
   ValidateNested,
   IsNumber,
+  isNumberString,
+  IsNumberString,
+  ValidatorConstraint,
+  ValidatorConstraintInterface,
+  ValidationArguments,
+  Validate,
 } from "class-validator";
+
+@ValidatorConstraint({ name: "isStringOrNumber", async: false })
+class IsStringOrNumberConstraint implements ValidatorConstraintInterface {
+  validate(value: unknown, _args: ValidationArguments) {
+    return typeof value === "string" || typeof value === "number";
+  }
+  defaultMessage(_args: ValidationArguments) {
+    return "value must be a string or a number";
+  }
+}
 
 export interface SelectOptionViewModel {
   // New property names to use instead of id/name => remove old properties when other code is replaced!
@@ -16,7 +32,7 @@ export interface SelectOptionViewModel {
 
 export class SelectOptionViewModelDto {
   @IsString() key!: string;
-  @IsString() value!: string;
+  @Validate(IsStringOrNumberConstraint) value!: string | number;
 
   constructor(data: Partial<SelectOptionViewModelDto>) {
     Object.assign(this, data);

@@ -11,6 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SelectOptionViewModelDto = void 0;
 const class_validator_1 = require("class-validator");
+let IsStringOrNumberConstraint = class IsStringOrNumberConstraint {
+    validate(value, _args) {
+        return typeof value === "string" || typeof value === "number";
+    }
+    defaultMessage(_args) {
+        return "value must be a string or a number";
+    }
+};
+IsStringOrNumberConstraint = __decorate([
+    (0, class_validator_1.ValidatorConstraint)({ name: "isStringOrNumber", async: false })
+], IsStringOrNumberConstraint);
 class SelectOptionViewModelDto {
     key;
     value;
@@ -24,6 +35,6 @@ __decorate([
     __metadata("design:type", String)
 ], SelectOptionViewModelDto.prototype, "key", void 0);
 __decorate([
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
+    (0, class_validator_1.Validate)(IsStringOrNumberConstraint),
+    __metadata("design:type", Object)
 ], SelectOptionViewModelDto.prototype, "value", void 0);
