@@ -1,5 +1,18 @@
 import { PortalComponentViewModel } from "./portal";
-import { SelectOptionViewModel } from "./selectoption";
+import {
+  SelectOptionViewModel,
+  SelectOptionViewModelDto,
+} from "./selectoption";
+import {
+  validate,
+  IsBoolean,
+  IsOptional,
+  IsString,
+  IsArray,
+  ValidateNested,
+  IsNumber,
+} from "class-validator";
+import { plainToInstance, Type } from "class-transformer";
 
 export class PopupModel {
   id: number | undefined = undefined;
@@ -63,3 +76,44 @@ export interface BoPopupDetailView {
   displayFrequency: SelectOptionViewModel;
   delaySeconds: number;
 }
+
+
+
+class PopupMlDto {
+  @IsString() fileId!: string;
+  @IsString() title!: string;
+
+  @IsOptional() @IsString() subTitle?: string;
+  @IsOptional() @IsString() intro?: string;
+  @IsOptional() @IsString() text?: string;
+  @IsOptional() @IsString() buttonText?: string;
+  @IsOptional() @IsString() buttonLink?: string;
+}
+
+export class CreatePopupDto {
+  @IsOptional() @IsNumber() id?: number;
+
+  @IsArray()
+  @IsString({ each: true })
+  portals!: string[];
+
+  @ValidateNested()
+  @Type(() => PopupMlDto)
+  nl!: PopupMlDto;
+
+  @ValidateNested()
+  @Type(() => PopupMlDto)
+  fr!: PopupMlDto;
+
+  @IsBoolean() isActive!: boolean;
+
+  @IsOptional() @IsString() dateFrom?: string;
+  @IsOptional() @IsString() dateUntil?: string;
+
+  @ValidateNested()
+  @Type(() => SelectOptionViewModelDto)
+  displayFrequency!: SelectOptionViewModelDto;
+
+  @IsNumber() delaySeconds!: number;
+}
+

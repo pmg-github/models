@@ -2,6 +2,10 @@ export interface SelectOptionViewModel {
     key: string;
     value: number | string;
 }
+export declare class SelectOptionViewModelDto {
+    key: string;
+    value: string;
+}
 export interface SelectOptionIconViewModel extends SelectOptionDescriptionViewModel {
     Icon: string;
 }

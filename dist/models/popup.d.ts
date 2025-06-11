@@ -1,4 +1,4 @@
-import { SelectOptionViewModel } from "./selectoption";
+import { SelectOptionViewModel, SelectOptionViewModelDto } from "./selectoption";
 export declare class PopupModel {
     id: number | undefined;
     typeId: number | undefined;
@@ -60,3 +60,24 @@ export interface BoPopupDetailView {
     displayFrequency: SelectOptionViewModel;
     delaySeconds: number;
 }
+declare class PopupMlDto {
+    fileId: string;
+    title: string;
+    subTitle?: string;
+    intro?: string;
+    text?: string;
+    buttonText?: string;
+    buttonLink?: string;
+}
+export declare class CreatePopupDto {
+    id?: number;
+    portals: string[];
+    nl: PopupMlDto;
+    fr: PopupMlDto;
+    isActive: boolean;
+    dateFrom?: string;
+    dateUntil?: string;
+    displayFrequency: SelectOptionViewModelDto;
+    delaySeconds: number;
+}
+export {};
