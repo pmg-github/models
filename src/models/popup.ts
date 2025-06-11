@@ -1,4 +1,5 @@
 import { PortalComponentViewModel } from "./portal";
+import { SelectOptionViewModel } from "./selectoption";
 
 export class PopupModel {
   id: number | undefined = undefined;
@@ -59,6 +60,6 @@ export interface BoPopupDetailView {
   isActive: boolean;
   dateFrom?: string;
   dateUntil: string;
-  displayFrequency: number;
+  displayFrequency: SelectOptionViewModel;
   delaySeconds: number;
 }

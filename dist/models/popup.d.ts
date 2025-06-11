@@ -1,3 +1,4 @@
+import { SelectOptionViewModel } from "./selectoption";
 export declare class PopupModel {
     id: number | undefined;
     typeId: number | undefined;
@@ -56,6 +57,6 @@ export interface BoPopupDetailView {
     isActive: boolean;
     dateFrom?: string;
     dateUntil: string;
-    displayFrequency: number;
+    displayFrequency: SelectOptionViewModel;
     delaySeconds: number;
 }
