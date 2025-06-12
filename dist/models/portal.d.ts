@@ -28,6 +28,7 @@ export interface PortalCarouselViewModel {
 export interface BoPortalContextInteresses {
     code: string;
     name: string;
+    creator: string;
     interesses: {
         code: string;
         name: string;
