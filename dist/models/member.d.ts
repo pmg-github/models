@@ -1,0 +1,28 @@
+export declare class MemberCreateRequest {
+    language: string;
+    portalCode: string;
+    selectedAboProductId: number;
+    email: string;
+    firstName?: string;
+    lastName?: string;
+    isB2B: boolean;
+    klnr?: string;
+    vatNumber?: string;
+    companyName?: string;
+    hasDifferentInvoiceAddress: boolean;
+    deliveryAddressId?: number;
+    invoiceAddressId?: number;
+    deliveryStreet?: string;
+    deliveryStreetNumber?: string;
+    deliveryStreetBoxNumber?: string;
+    deliveryZipCode?: string;
+    deliveryCity?: string;
+    deliveryCountryCode?: string;
+    invoiceStreet?: string;
+    invoiceStreetNumber?: string;
+    invoiceStreetBoxNumber?: string;
+    invoiceZipCode?: string;
+    invoiceCity?: string;
+    invoiceCountryCode?: string;
+    constructor(data: Partial<MemberCreateRequest>);
+}

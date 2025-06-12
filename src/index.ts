@@ -173,14 +173,26 @@ import {
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
-import { BoPopup, BoPopupDetailView, BoPopupList, CreatePopupDto, PopupModel } from "./models/popup";
+import {
+  BoPopup,
+  BoPopupDetailView,
+  BoPopupList,
+  CreatePopupDto,
+  PopupModel,
+} from "./models/popup";
 
 import {
   AboDetailViewModel,
   AboViewModel,
   ProefAboCreateModel,
 } from "./models/abos";
-import { PortalViewModel, PortalCarouselViewModel, BoPortalViewModel, BoPortalContextInteresses, PortalComponentViewModel } from "./models/portal";
+import {
+  PortalViewModel,
+  PortalCarouselViewModel,
+  BoPortalViewModel,
+  BoPortalContextInteresses,
+  PortalComponentViewModel,
+} from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
 
@@ -273,6 +285,8 @@ import {
   BoVideoViewModel,
   BoVideoViewModelWitCursorAndContent,
 } from "./models/video";
+
+import { MemberCreateRequest } from "./models/member";
 
 export {
   ToolDetailView,
@@ -486,4 +500,5 @@ export {
   BoPopupList,
   BoPopupDetailView,
   CreatePopupDto,
+  MemberCreateRequest,
 };
