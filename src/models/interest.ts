@@ -26,5 +26,5 @@ export interface InteresseListView {
   code: string;
   name: string;
   inUse: boolean;
-  portals: PortalComponentViewModel[];
+  portals: string;
 }
