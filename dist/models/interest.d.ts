@@ -17,3 +17,10 @@ export interface InteresseDetailView {
     trending: string[];
     portals: string[];
 }
+export interface InteresseListView {
+    id: number;
+    code: string;
+    name: string;
+    inUse: boolean;
+    portals: string[];
+}

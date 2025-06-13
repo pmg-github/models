@@ -203,7 +203,7 @@ import {
 
 import { StatsPostModel } from "./models/stats";
 
-import { InteresseDetailView, InterestViewModel } from "./models/interest";
+import { InteresseDetailView, InteresseListView, InterestViewModel } from "./models/interest";
 
 import { AdTileViewModel } from "./models/tiles";
 
@@ -501,4 +501,5 @@ export {
   BoPopupDetailView,
   CreatePopupDto,
   MemberCreateRequest,
+  InteresseListView,
 };
