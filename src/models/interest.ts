@@ -1,3 +1,5 @@
+import { PortalComponentViewModel } from "./portal";
+
 export interface InterestViewModel {
   id: number;
   code: string;
@@ -24,5 +26,5 @@ export interface InteresseListView {
   code: string;
   name: string;
   inUse: boolean;
-  portals: string[];
+  portals: PortalComponentViewModel[];
 }
