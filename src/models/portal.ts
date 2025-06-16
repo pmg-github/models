@@ -32,3 +32,8 @@ export interface BoPortalContextInteresses {
   creator:string;
   interesses: { code: string; name: string }[];
 }
+export interface BoPortalContextPortal {
+  code: string;
+  name: string;
+  context: { code: string; name: string }[];
+}

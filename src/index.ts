@@ -192,6 +192,7 @@ import {
   BoPortalViewModel,
   BoPortalContextInteresses,
   PortalComponentViewModel,
+  BoPortalContextPortal,
 } from "./models/portal";
 
 import { CampagneViewModel, CampagneItemViewModel } from "./models/campagne";
@@ -430,6 +431,7 @@ export {
   PortalCarouselViewModel,
   BoPortalViewModel,
   BoPortalContextInteresses,
+  BoPortalContextPortal,
   DocumentTypeViewModel,
   CampagneViewModel,
   CampagneItemViewModel,

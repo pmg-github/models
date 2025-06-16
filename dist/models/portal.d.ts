@@ -34,3 +34,11 @@ export interface BoPortalContextInteresses {
         name: string;
     }[];
 }
+export interface BoPortalContextPortal {
+    code: string;
+    name: string;
+    context: {
+        code: string;
+        name: string;
+    }[];
+}
