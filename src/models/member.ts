@@ -33,6 +33,9 @@ export class MemberCreateRequest {
   @IsOptional()
   lastName?: string;
 
+  @IsOptional()
+  phone?: string;
+
   @IsNotEmpty()
   isB2B!: boolean;
 

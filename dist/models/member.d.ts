@@ -5,6 +5,7 @@ export declare class MemberCreateRequest {
     email: string;
     firstName?: string;
     lastName?: string;
+    phone?: string;
     isB2B: boolean;
     klnr?: string;
     vatNumber?: string;

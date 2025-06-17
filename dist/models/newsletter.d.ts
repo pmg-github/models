@@ -247,6 +247,11 @@ export declare class NewsletterNewsSaveRequest {
     title: string;
     date: string;
 }
+export declare class NewsletterAdPostSaveRequest {
+    id: number;
+    title: string;
+    description: string;
+}
 export declare class NewsletterSubjectAddRequest {
     projectCode: string;
     subjectNL: string | null;
