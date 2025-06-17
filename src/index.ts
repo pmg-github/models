@@ -110,6 +110,7 @@ import {
   NewsletterQuicklinkModel,
   NewsletterTileModel,
   NewsletterNewsModel,
+  NewsletterAdPostModel,
   NewsletterSubjectModel,
   NewsletterMetaDataCreateRequest,
   NewsletterIntroSaveRequest,
@@ -205,7 +206,11 @@ import {
 
 import { StatsPostModel } from "./models/stats";
 
-import { InteresseDetailView, InteresseListView, InterestViewModel } from "./models/interest";
+import {
+  InteresseDetailView,
+  InteresseListView,
+  InterestViewModel,
+} from "./models/interest";
 
 import { AdTileViewModel } from "./models/tiles";
 
@@ -374,6 +379,7 @@ export {
   NewsletterMetaDataDetailModel,
   NewsletterInfoModel,
   NewsletterNewsModel,
+  NewsletterAdPostModel,
   NewsletterSubjectModel,
   NewsletterRecipientTypeModel,
   NewsletterArticleStatsViewModel,

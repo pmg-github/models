@@ -176,6 +176,13 @@ export interface NewsletterNewsModel {
   date: string;
 }
 
+export interface NewsletterAdPostModel {
+  id: number;
+  articleReference: string;
+  title: string;
+  description: string | null;
+}
+
 export interface NewsletterSubjectModel {
   id: number;
   index: number;
