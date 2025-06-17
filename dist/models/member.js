@@ -18,6 +18,7 @@ class MemberCreateRequest {
     email;
     firstName;
     lastName;
+    phone;
     isB2B;
     klnr;
     vatNumber;
@@ -73,6 +74,10 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], MemberCreateRequest.prototype, "lastName", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], MemberCreateRequest.prototype, "phone", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Boolean)

@@ -424,6 +424,19 @@ export class NewsletterNewsSaveRequest {
   date!: string;
 }
 
+export class NewsletterAdPostSaveRequest {
+  @IsNotEmpty()
+  id!: number;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  title!: string;
+
+  @IsOptional()
+  @MaxLength(255)
+  description!: string;
+}
+
 export class NewsletterSubjectAddRequest {
   @IsNotEmpty()
   @Length(12, 12)
