@@ -103,7 +103,7 @@ export class CreatePopupDto {
 
   @IsOptional()
   @ValidateNested()
-  // @Type(() => PopupMlDto)
+  @Type(() => PopupMlDto)
   nl!: PopupMlDto;
 
   @IsOptional()
@@ -117,7 +117,7 @@ export class CreatePopupDto {
   @IsOptional() @IsString() dateUntil?: string;
 
   @ValidateNested()
-  // @Type(() => SelectOptionViewModelDto)
+  @Type(() => SelectOptionViewModelDto)
   displayFrequency!: SelectOptionViewModelDto;
 
   @IsNumber() delaySeconds!: number;

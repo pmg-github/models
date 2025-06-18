@@ -90,13 +90,11 @@ __decorate([
 class CreatePopupDto {
     id;
     portals;
-    // @Type(() => PopupMlDto)
     nl;
     fr;
     isActive;
     dateFrom;
     dateUntil;
-    // @Type(() => SelectOptionViewModelDto)
     displayFrequency;
     delaySeconds;
     constructor(data) {
@@ -116,9 +114,8 @@ __decorate([
 ], CreatePopupDto.prototype, "portals", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.ValidateNested)()
-    // @Type(() => PopupMlDto)
-    ,
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => PopupMlDto),
     __metadata("design:type", PopupMlDto)
 ], CreatePopupDto.prototype, "nl", void 0);
 __decorate([
@@ -142,9 +139,8 @@ __decorate([
     __metadata("design:type", String)
 ], CreatePopupDto.prototype, "dateUntil", void 0);
 __decorate([
-    (0, class_validator_1.ValidateNested)()
-    // @Type(() => SelectOptionViewModelDto)
-    ,
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => selectoption_1.SelectOptionViewModelDto),
     __metadata("design:type", selectoption_1.SelectOptionViewModelDto)
 ], CreatePopupDto.prototype, "displayFrequency", void 0);
 __decorate([
