@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreatePopupDto = exports.PopupModel = void 0;
 const selectoption_1 = require("./selectoption");
 const class_validator_1 = require("class-validator");
+// import { Type } from "class-transformer";
 class PopupModel {
     id = undefined;
     typeId = undefined;
