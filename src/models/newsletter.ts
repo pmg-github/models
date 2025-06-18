@@ -13,8 +13,15 @@ import {
   ValidateIf,
   ValidateNested,
 } from "class-validator";
+import { SelectOptionViewModel } from "./selectoption";
 
 // Simple interface for basic newsletter metadata (newsletter table, not projects!)
+export interface NewsletterClusterModel {
+  id: number;
+  prjCode: SelectOptionViewModel;
+  magazine: SelectOptionViewModel;
+  interesses: string[];
+}
 export interface NewsletterBaseModel {
   id: number;
   reference: string;

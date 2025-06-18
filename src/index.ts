@@ -135,6 +135,7 @@ import {
   AccountNewsletterSubscriptionModel,
   NewsletterMetaDataDetailModel,
   NewsletterInfoModel,
+  NewsletterClusterModel,
 } from "./models/newsletter";
 
 import {
@@ -512,4 +513,5 @@ export {
   CreatePopupDto,
   MemberCreateRequest,
   InteresseListView,
+  NewsletterClusterModel,
 };

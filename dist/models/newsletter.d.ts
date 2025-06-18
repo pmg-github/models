@@ -1,3 +1,10 @@
+import { SelectOptionViewModel } from "./selectoption";
+export interface NewsletterClusterModel {
+    id: number;
+    prjCode: SelectOptionViewModel;
+    magazine: SelectOptionViewModel;
+    interesses: string[];
+}
 export interface NewsletterBaseModel {
     id: number;
     reference: string;
