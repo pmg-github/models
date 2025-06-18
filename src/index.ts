@@ -1,4 +1,4 @@
-import "reflect-metadata";
+// import "reflect-metadata";
 // Import and re-export your modules
 import {
   ArticleOrderByType,

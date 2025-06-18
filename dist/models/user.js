@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BcValidateTokenRequest = exports.ValidateTokenRequest = exports.BcEmailCodeRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = void 0;
-const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
 class UserViewModel {
     id; // = ContactID
@@ -168,8 +167,9 @@ class BcEmailCodeRequest {
 }
 exports.BcEmailCodeRequest = BcEmailCodeRequest;
 __decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_transformer_1.Transform)(({ value }) => (value === "" ? undefined : value)),
+    (0, class_validator_1.IsOptional)()
+    // @Transform(({ value }) => (value === "" ? undefined : value))
+    ,
     (0, class_validator_1.IsEmail)(),
     (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)
@@ -219,8 +219,9 @@ class BcValidateTokenRequest {
 exports.BcValidateTokenRequest = BcValidateTokenRequest;
 __decorate([
     (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsEmail)(),
-    (0, class_transformer_1.Transform)(({ value }) => (value === "" ? undefined : value)),
+    (0, class_validator_1.IsEmail)()
+    // @Transform(({ value }) => (value === "" ? undefined : value))
+    ,
     (0, class_validator_1.MaxLength)(60),
     __metadata("design:type", String)
 ], BcValidateTokenRequest.prototype, "email", void 0);
