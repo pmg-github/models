@@ -176,13 +176,13 @@ import {
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
-import {
-  BoPopup,
-  BoPopupDetailView,
-  BoPopupList,
-  CreatePopupDto,
-  PopupModel,
-} from "./models/popup";
+// import {
+//   BoPopup,
+//   BoPopupDetailView,
+//   BoPopupList,
+//   CreatePopupDto,
+//   PopupModel,
+// } from "./models/popup";
 
 import {
   AboDetailViewModel,
@@ -431,7 +431,7 @@ export {
   BoPageSearchListModel,
   BoMenuListModel,
   BoMenuDetailListModel,
-  PopupModel,
+  // PopupModel,
   AboViewModel,
   AboDetailViewModel,
   PubsSortView,
@@ -507,10 +507,10 @@ export {
   CompanyRankingOverviewModel,
   BcListingDetailModel,
   PortalComponentViewModel,
-  BoPopup,
-  BoPopupList,
-  BoPopupDetailView,
-  CreatePopupDto,
+  // BoPopup,
+  // BoPopupList,
+  // BoPopupDetailView,
+  // CreatePopupDto,
   MemberCreateRequest,
   InteresseListView,
   NewsletterClusterModel,

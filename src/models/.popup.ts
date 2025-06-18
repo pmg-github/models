@@ -79,19 +79,19 @@ export interface BoPopupDetailView {
 
 
 
-class PopupMlDto {
-  @IsNumber() fileId!: string;
-  @IsString() title!: string;
+// class PopupMlDto {
+//   @IsNumber() fileId!: string;
+//   @IsString() title!: string;
 
-  @IsOptional() @IsString() subTitle?: string;
-  @IsOptional() @IsString() intro?: string;
-  @IsOptional() @IsString() text?: string;
-  @IsOptional() @IsString() buttonText?: string;
-  @IsOptional() @IsString() buttonLink?: string;
-  constructor(data: Partial<PopupMlDto>) {
-    Object.assign(this, data);
-  }
-}
+//   @IsOptional() @IsString() subTitle?: string;
+//   @IsOptional() @IsString() intro?: string;
+//   @IsOptional() @IsString() text?: string;
+//   @IsOptional() @IsString() buttonText?: string;
+//   @IsOptional() @IsString() buttonLink?: string;
+//   constructor(data: Partial<PopupMlDto>) {
+//     Object.assign(this, data);
+//   }
+// }
 
 export class CreatePopupDto {
   // @IsOptional() @IsNumber() id?: number;
