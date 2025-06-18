@@ -93,7 +93,7 @@ export interface BoPopupDetailView {
 //   }
 // }
 
-export class CreatePopupDto {
+// export class CreatePopupDto {
   // @IsOptional() @IsNumber() id?: number;
 
   // @IsArray()
@@ -124,5 +124,5 @@ export class CreatePopupDto {
   // constructor(data: Partial<CreatePopupDto>) {
   //   Object.assign(this, data);
   // }
-}
+// }
 
