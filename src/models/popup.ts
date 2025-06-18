@@ -94,35 +94,35 @@ class PopupMlDto {
 }
 
 export class CreatePopupDto {
-  @IsOptional() @IsNumber() id?: number;
+  // @IsOptional() @IsNumber() id?: number;
 
-  @IsArray()
-  @IsString({ each: true })
-  portals!: string[];
+  // @IsArray()
+  // @IsString({ each: true })
+  // portals!: string[];
 
-  @IsOptional()
-  @ValidateNested()
-  // @Type(() => PopupMlDto)
-  nl!: PopupMlDto;
+  // @IsOptional()
+  // @ValidateNested()
+  // // @Type(() => PopupMlDto)
+  // nl!: PopupMlDto;
 
-  @IsOptional()
-  @ValidateNested()
-  // @Type(() => PopupMlDto)
-  fr!: PopupMlDto;
+  // @IsOptional()
+  // @ValidateNested()
+  // // @Type(() => PopupMlDto)
+  // fr!: PopupMlDto;
 
-  @IsBoolean() isActive!: boolean;
+  // @IsBoolean() isActive!: boolean;
 
-  @IsOptional() @IsString() dateFrom?: string;
-  @IsOptional() @IsString() dateUntil?: string;
+  // @IsOptional() @IsString() dateFrom?: string;
+  // @IsOptional() @IsString() dateUntil?: string;
 
-  @ValidateNested()
-  // @Type(() => SelectOptionViewModelDto)
-  displayFrequency!: SelectOptionViewModelDto;
+  // @ValidateNested()
+  // // @Type(() => SelectOptionViewModelDto)
+  // displayFrequency!: SelectOptionViewModelDto;
 
-  @IsNumber() delaySeconds!: number;
+  // @IsNumber() delaySeconds!: number;
 
-  constructor(data: Partial<CreatePopupDto>) {
-    Object.assign(this, data);
-  }
+  // constructor(data: Partial<CreatePopupDto>) {
+  //   Object.assign(this, data);
+  // }
 }
 
