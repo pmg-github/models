@@ -295,7 +295,7 @@ import {
   BoVideoViewModelWitCursorAndContent,
 } from "./models/video";
 
-import { MemberCreateRequest } from "./models/member";
+// import { MemberCreateRequest } from "./models/member";
 
 export {
   ToolDetailView,
@@ -512,7 +512,7 @@ export {
   // BoPopupList,
   // BoPopupDetailView,
   // CreatePopupDto,
-  MemberCreateRequest,
+  // MemberCreateRequest,
   InteresseListView,
   NewsletterClusterModel,
 };
