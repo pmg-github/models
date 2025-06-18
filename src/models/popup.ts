@@ -12,7 +12,7 @@ import {
   ValidateNested,
   IsNumber,
 } from "class-validator";
-import { plainToInstance, Type } from "class-transformer";
+import { Type } from "class-transformer";
 
 export class PopupModel {
   id: number | undefined = undefined;
