@@ -20,6 +20,7 @@ export interface NewsletterClusterModel {
   id: number;
   prjCode: SelectOptionViewModel;
   magazine: SelectOptionViewModel;
+  type: SelectOptionViewModel;
   interesses: string[];
 }
 export interface NewsletterBaseModel {
