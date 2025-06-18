@@ -12,7 +12,7 @@ import {
   ValidateNested,
   IsNumber,
 } from "class-validator";
-// import { Type } from "class-transformer";
+import { Type } from "class-transformer";
 
 export class PopupModel {
   id: number | undefined = undefined;
@@ -79,50 +79,51 @@ export interface BoPopupDetailView {
 
 
 
-// class PopupMlDto {
-//   @IsNumber() fileId!: string;
-//   @IsString() title!: string;
+class PopupMlDto {
+  @IsNumber() 
+  fileId!: string;
+  @IsString() title!: string;
 
-//   @IsOptional() @IsString() subTitle?: string;
-//   @IsOptional() @IsString() intro?: string;
-//   @IsOptional() @IsString() text?: string;
-//   @IsOptional() @IsString() buttonText?: string;
-//   @IsOptional() @IsString() buttonLink?: string;
-//   constructor(data: Partial<PopupMlDto>) {
-//     Object.assign(this, data);
-//   }
-// }
+  @IsOptional() @IsString() subTitle?: string;
+  @IsOptional() @IsString() intro?: string;
+  @IsOptional() @IsString() text?: string;
+  @IsOptional() @IsString() buttonText?: string;
+  @IsOptional() @IsString() buttonLink?: string;
+  constructor(data: Partial<PopupMlDto>) {
+    Object.assign(this, data);
+  }
+}
 
-// export class CreatePopupDto {
-  // @IsOptional() @IsNumber() id?: number;
+export class CreatePopupDto {
+  @IsOptional() @IsNumber() id?: number;
 
-  // @IsArray()
-  // @IsString({ each: true })
-  // portals!: string[];
+  @IsArray()
+  @IsString({ each: true })
+  portals!: string[];
 
-  // @IsOptional()
-  // @ValidateNested()
-  // // @Type(() => PopupMlDto)
-  // nl!: PopupMlDto;
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => PopupMlDto)
+  nl!: PopupMlDto;
 
-  // @IsOptional()
-  // @ValidateNested()
-  // // @Type(() => PopupMlDto)
-  // fr!: PopupMlDto;
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => PopupMlDto)
+  fr!: PopupMlDto;
 
-  // @IsBoolean() isActive!: boolean;
+  @IsBoolean() isActive!: boolean;
 
-  // @IsOptional() @IsString() dateFrom?: string;
-  // @IsOptional() @IsString() dateUntil?: string;
+  @IsOptional() @IsString() dateFrom?: string;
+  @IsOptional() @IsString() dateUntil?: string;
 
-  // @ValidateNested()
-  // // @Type(() => SelectOptionViewModelDto)
-  // displayFrequency!: SelectOptionViewModelDto;
+  @ValidateNested()
+  @Type(() => SelectOptionViewModelDto)
+  displayFrequency!: SelectOptionViewModelDto;
 
-  // @IsNumber() delaySeconds!: number;
+  @IsNumber() delaySeconds!: number;
 
-  // constructor(data: Partial<CreatePopupDto>) {
-  //   Object.assign(this, data);
-  // }
-// }
+  constructor(data: Partial<CreatePopupDto>) {
+    Object.assign(this, data);
+  }
+}
 

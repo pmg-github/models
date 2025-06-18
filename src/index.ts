@@ -177,13 +177,13 @@ import {
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
 
-// import {
-//   BoPopup,
-//   BoPopupDetailView,
-//   BoPopupList,
-//   CreatePopupDto,
-//   PopupModel,
-// } from "./models/popup";
+import {
+  BoPopup,
+  BoPopupDetailView,
+  BoPopupList,
+  CreatePopupDto,
+  PopupModel,
+} from "./models/popup";
 
 import {
   AboDetailViewModel,
@@ -295,7 +295,7 @@ import {
   BoVideoViewModelWitCursorAndContent,
 } from "./models/video";
 
-// import { MemberCreateRequest } from "./models/member";
+import { MemberCreateRequest } from "./models/member";
 
 export {
   ToolDetailView,
@@ -508,11 +508,11 @@ export {
   CompanyRankingOverviewModel,
   BcListingDetailModel,
   PortalComponentViewModel,
-  // BoPopup,
-  // BoPopupList,
-  // BoPopupDetailView,
-  // CreatePopupDto,
-  // MemberCreateRequest,
+  BoPopup,
+  BoPopupList,
+  BoPopupDetailView,
+  CreatePopupDto,
+  MemberCreateRequest,
   InteresseListView,
   NewsletterClusterModel,
 };
