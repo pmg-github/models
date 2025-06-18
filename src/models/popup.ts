@@ -108,7 +108,7 @@ export class CreatePopupDto {
 
   @IsOptional()
   @ValidateNested()
-  // @Type(() => PopupMlDto)
+  @Type(() => PopupMlDto)
   fr!: PopupMlDto;
 
   @IsBoolean() isActive!: boolean;
