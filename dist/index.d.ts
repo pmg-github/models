@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { ArticleOrderByType, articleOrderByData, ArticleType, articleTypeData, ArticlePremiumType, ArticleSearchOptions, BoArticleListModel, BoArticleStatus, BoArticleJobTask, BoArticleType, bcArticleListModel, BcArticleDetailModel, BcArticleDetailIntressesModel, BcArticleIntresseReachModel, BcListingDetailModel, bcListingListModel } from "./models/article";
 import { SearchResultsSaveRequest } from "./models/search";
 import { ViewerMagazineViewModel, MagazineTileViewModel, MagazineArticleViewModel, MagazineAdViewModel, MagazineMetaDataViewModel, MagazineImageArticleCombinationViewModel, MagazineCustomerTileViewModel, RelatedMagazineViewModel, NewsletterTileViewModel, NewsletterMetaDataViewModel, ViewerTileBaseViewModel, BoDigitalMagazines, BoDigitalMagazinesArticles, BoDigitalMagazinesDetail } from "./models/magazine";
