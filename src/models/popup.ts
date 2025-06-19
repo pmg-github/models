@@ -57,7 +57,7 @@ export interface BoPopupList {
 }
 export interface BoPopupDetailMl {
   fileId?: number;
-  fileUrl?:string;
+  fileUrl?: string;
   title: string;
   subTitle: string;
   intro: string;
@@ -77,10 +77,8 @@ export interface BoPopupDetailView {
   delaySeconds: number;
 }
 
-
-
 class PopupMlDto {
-  @IsNumber() 
+  @IsNumber()
   fileId!: string;
   @IsString() title!: string;
 
@@ -102,13 +100,9 @@ export class CreatePopupDto {
   portals!: string[];
 
   @IsOptional()
-  @ValidateNested()
-  @Type(() => PopupMlDto)
   nl!: PopupMlDto;
 
   @IsOptional()
-  @ValidateNested()
-  @Type(() => PopupMlDto)
   fr!: PopupMlDto;
 
   @IsBoolean() isActive!: boolean;
@@ -117,7 +111,6 @@ export class CreatePopupDto {
   @IsOptional() @IsString() dateUntil?: string;
 
   @ValidateNested()
-  @Type(() => SelectOptionViewModelDto)
   displayFrequency!: SelectOptionViewModelDto;
 
   @IsNumber() delaySeconds!: number;
@@ -126,4 +119,3 @@ export class CreatePopupDto {
     Object.assign(this, data);
   }
 }
-

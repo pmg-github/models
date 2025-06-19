@@ -1,4 +1,3 @@
-import { Transform } from "class-transformer";
 import {
   IsEmail,
   IsNotEmpty,
@@ -13,8 +12,8 @@ export class UserViewModel {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
-  gender:string | null;
-  language:string | null;
+  gender: string | null;
+  language: string | null;
 
   get fullName(): string | undefined {
     let returnValue: string = "";
@@ -36,8 +35,8 @@ export class UserViewModel {
     this.firstName = userAPIInterface.firstName;
     this.lastName = userAPIInterface.lastName;
     this.phone = userAPIInterface.phone;
-    this.gender=userAPIInterface.gender;
-    this.language=userAPIInterface.language
+    this.gender = userAPIInterface.gender;
+    this.language = userAPIInterface.language;
   }
 }
 
@@ -60,8 +59,8 @@ export interface UserAPIInterface {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
-  gender:string | null;
-  language:string | null;
+  gender: string | null;
+  language: string | null;
 }
 
 export interface UserAboAPIInterface {
@@ -116,7 +115,7 @@ export class ContactUpdateRequest {
   @IsOptional()
   @MaxLength(36)
   sex?: string;
- 
+
   @IsOptional()
   @MaxLength(4)
   newsletter?: string;
@@ -175,7 +174,7 @@ export class ValidateTokenRequest {
   code!: string;
 
   @IsOptional()
-  language?:string
+  language?: string;
 
   constructor(data: Partial<ValidateTokenRequest>) {
     Object.assign(this, data);

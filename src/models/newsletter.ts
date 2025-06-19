@@ -1,4 +1,3 @@
-// import { Type } from "class-transformer";
 import {
   ArrayMinSize,
   IsArray,
@@ -11,7 +10,6 @@ import {
   Length,
   MaxLength,
   ValidateIf,
-  ValidateNested,
 } from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
 
