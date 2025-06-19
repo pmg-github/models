@@ -11,6 +11,11 @@ import {
 export class MemberCreateRequest {
   @IsNotEmpty()
   @IsString()
+  @Length(36, 36)
+  userUuid!: string;
+
+  @IsNotEmpty()
+  @IsString()
   @Length(2, 2)
   language!: string;
 
