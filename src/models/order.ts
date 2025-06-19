@@ -3,6 +3,8 @@ export interface OrderDetailViewModel {
   reference: string;
   statusId: number;
   status: string;
+  paymentMethodId: number;
+  paymentMethod: string;
   date: string | Date;
   totalProductsPriceExclVat: number;
   totalProductsPriceInclVat: number;
