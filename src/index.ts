@@ -297,7 +297,13 @@ import {
 
 import { MemberCreateRequest } from "./models/member";
 
-import { OrderDetailViewModel, OrderLineViewModel } from "./models/order";
+import {
+  OrderDetailViewModel,
+  OrderLineViewModel,
+  OrderAddressViewModel,
+  OrderCompanyViewModel,
+  OrderVatTotal,
+} from "./models/order";
 
 export {
   ToolDetailView,
@@ -519,4 +525,7 @@ export {
   NewsletterClusterModel,
   OrderDetailViewModel,
   OrderLineViewModel,
+  OrderAddressViewModel,
+  OrderCompanyViewModel,
+  OrderVatTotal,
 };
