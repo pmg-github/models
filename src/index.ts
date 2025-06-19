@@ -432,7 +432,7 @@ export {
   BoPageSearchListModel,
   BoMenuListModel,
   BoMenuDetailListModel,
-  // PopupModel,
+  PopupModel,
   AboViewModel,
   AboDetailViewModel,
   PubsSortView,
