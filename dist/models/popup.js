@@ -94,6 +94,7 @@ class CreatePopupDto {
     isActive;
     dateFrom;
     dateUntil;
+    // @ValidateNested()
     displayFrequency;
     delaySeconds;
     constructor(data) {
@@ -134,7 +135,7 @@ __decorate([
     __metadata("design:type", String)
 ], CreatePopupDto.prototype, "dateUntil", void 0);
 __decorate([
-    (0, class_validator_1.ValidateNested)(),
+    (0, class_validator_1.IsOptional)(),
     __metadata("design:type", selectoption_1.SelectOptionViewModelDto)
 ], CreatePopupDto.prototype, "displayFrequency", void 0);
 __decorate([
