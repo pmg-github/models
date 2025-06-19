@@ -17,7 +17,7 @@ import {
   BcArticleIntresseReachModel,
   BcListingDetailModel,
   bcListingListModel,
-} from "./models/article";//help
+} from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
 
@@ -297,6 +297,8 @@ import {
 
 import { MemberCreateRequest } from "./models/member";
 
+import { OrderDetailViewModel, OrderLineViewModel } from "./models/order";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -515,4 +517,6 @@ export {
   MemberCreateRequest,
   InteresseListView,
   NewsletterClusterModel,
+  OrderDetailViewModel,
+  OrderLineViewModel,
 };
