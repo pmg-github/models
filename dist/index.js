@@ -4,7 +4,7 @@ exports.NewsletterScheduleCreateRequest = exports.NewsletterTestMailCreateReques
 exports.MemberCreateRequest = exports.CreatePopupDto = exports.PeriodFilterEnum = exports.ProductCategoryEnum = exports.Issuers = exports.SecurityEnum = exports.TimeRegistrationRecordCreateRequest = exports.TimeRegistrationStatusEnum = exports.Priority = exports.UpdateTicketStatusModel = exports.UpdateTicketPriorityModel = exports.UpdateCommentToTicketModel = exports.CreateSuportTicketModel = exports.AddUserToTicketModel = exports.AddCommentToTicketModel = exports.SimpleSortSaveRequest = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = exports.TranslationSaveRequest = exports.DeeplTranslationRequest = exports.ProefAboCreateModel = exports.PopupModel = exports.KnowledgebaseTagViewModel = exports.KnowledgebaseSimpleListModel = exports.KnowledgebaseModel = exports.KnowledgebaseCategoryViewModel = exports.KnowledgebaseMediaListModel = exports.NotificationTopicModel = exports.NotificationMediaListModel = exports.NotificationListModel = exports.PmgUserModel = exports.NewsletterScheduleSaveRequest = void 0;
 // import "reflect-metadata";
 // Import and re-export your modules
-const article_1 = require("./models/article");
+const article_1 = require("./models/article"); //help
 Object.defineProperty(exports, "ArticleOrderByType", { enumerable: true, get: function () { return article_1.ArticleOrderByType; } });
 Object.defineProperty(exports, "articleOrderByData", { enumerable: true, get: function () { return article_1.articleOrderByData; } });
 Object.defineProperty(exports, "ArticleType", { enumerable: true, get: function () { return article_1.ArticleType; } });

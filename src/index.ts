@@ -17,7 +17,7 @@ import {
   BcArticleIntresseReachModel,
   BcListingDetailModel,
   bcListingListModel,
-} from "./models/article";
+} from "./models/article";//help
 
 import { SearchResultsSaveRequest } from "./models/search";
 
