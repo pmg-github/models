@@ -4,5 +4,5 @@ export interface BoGroupsListModel {
 }
 export interface BoGroupsListWithCursorModel {
     cursor: number;
-    groups: BoGroupsListModel[];
+    content: BoGroupsListModel[];
 }
