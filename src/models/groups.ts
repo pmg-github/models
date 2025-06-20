@@ -10,6 +10,13 @@ export interface BoGroupsListWithCursorModel {
   content: BoGroupsListModel[];
 }
 
+export interface BoGroupsDetailModel {
+  id:number
+  name:string
+  remarks:string
+  users:number[]
+}
+
 // export class ProefAboCreateModel {
 //   @IsNotEmpty()
 //   @Length(4, 4)
