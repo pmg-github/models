@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MemberCreateRequest = void 0;
 const class_validator_1 = require("class-validator");
 class MemberCreateRequest {
+    userUuid;
     language;
     portalCode;
     selectedAboProductId;
@@ -43,6 +44,12 @@ class MemberCreateRequest {
     }
 }
 exports.MemberCreateRequest = MemberCreateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(36, 36),
+    __metadata("design:type", String)
+], MemberCreateRequest.prototype, "userUuid", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),

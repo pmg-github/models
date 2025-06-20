@@ -1,4 +1,5 @@
 export declare class MemberCreateRequest {
+    userUuid: string;
     language: string;
     portalCode: string;
     selectedAboProductId: number;

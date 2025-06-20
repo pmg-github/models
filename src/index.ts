@@ -17,7 +17,7 @@ import {
   BcArticleIntresseReachModel,
   BcListingDetailModel,
   bcListingListModel,
-} from "./models/article";//help
+} from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
 
@@ -297,6 +297,14 @@ import {
 
 import { MemberCreateRequest } from "./models/member";
 
+import {
+  OrderDetailViewModel,
+  OrderLineViewModel,
+  OrderAddressViewModel,
+  OrderCompanyViewModel,
+  OrderVatTotal,
+} from "./models/order";
+
 import { BoGroupsListModel, BoGroupsListWithCursorModel, } from "./models/groups";
 
 export {
@@ -519,4 +527,9 @@ export {
   NewsletterClusterModel,
   BoGroupsListWithCursorModel,
   BoGroupsListModel,
+  OrderDetailViewModel,
+  OrderLineViewModel,
+  OrderAddressViewModel,
+  OrderCompanyViewModel,
+  OrderVatTotal,
 };
