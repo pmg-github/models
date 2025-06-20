@@ -15,6 +15,7 @@ export interface BoGroupsDetailModel {
   name:string
   remarks:string
   users:number[]
+  security:number[]
 }
 
 // export class ProefAboCreateModel {
