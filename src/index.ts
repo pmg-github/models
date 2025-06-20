@@ -305,7 +305,7 @@ import {
   OrderVatTotal,
 } from "./models/order";
 
-import { BoGroupsListModel, BoGroupsListWithCursorModel, } from "./models/groups";
+import { BoGroupsDetailModel, BoGroupsListModel, BoGroupsListWithCursorModel, } from "./models/groups";
 
 export {
   ToolDetailView,
@@ -532,4 +532,5 @@ export {
   OrderAddressViewModel,
   OrderCompanyViewModel,
   OrderVatTotal,
+  BoGroupsDetailModel,
 };
