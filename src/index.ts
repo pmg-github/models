@@ -297,6 +297,8 @@ import {
 
 import { MemberCreateRequest } from "./models/member";
 
+import { BoGroupsListModel, BoGroupsListWithCursorModel, } from "./models/groups";
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -515,4 +517,6 @@ export {
   MemberCreateRequest,
   InteresseListView,
   NewsletterClusterModel,
+  BoGroupsListWithCursorModel,
+  BoGroupsListModel,
 };
