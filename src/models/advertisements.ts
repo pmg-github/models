@@ -2,11 +2,12 @@ export interface AdvertisementListViewModel {
   id: number;
   format: string;
   title: string;
+  description: string;
   price: number;
   unit: string;
-  cpm:number;
+  cpm: number;
   video: string;
   shortMiu: string;
   miuAnker: string;
-  images:string[];
+  images: string[];
 }
