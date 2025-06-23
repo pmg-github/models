@@ -297,6 +297,8 @@ import {
 
 import { MemberCreateRequest } from "./models/member";
 
+import { AdvertisementListViewModel } from "./models/advertisements";
+
 import {
   OrderDetailViewModel,
   OrderLineViewModel,
@@ -533,4 +535,5 @@ export {
   OrderCompanyViewModel,
   OrderVatTotal,
   BoGroupsDetailModel,
+  AdvertisementListViewModel,
 };
