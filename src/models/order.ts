@@ -13,7 +13,7 @@ export interface OrderDetailViewModel {
   totalDeliveryPriceInclVat: number;
   totalDeliveryVat: number;
   totalPriceExclVat: number; // productprice + delvieryprice
-  totalPiceInclVat: number; // productprice + delvieryprice
+  totalPriceInclVat: number; // productprice + delvieryprice
   totalVat: number; // sum of all vattotals
   molliePaymentUrl: string;
 

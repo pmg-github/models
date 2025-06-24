@@ -13,7 +13,7 @@ export interface OrderDetailViewModel {
     totalDeliveryPriceInclVat: number;
     totalDeliveryVat: number;
     totalPriceExclVat: number;
-    totalPiceInclVat: number;
+    totalPriceInclVat: number;
     totalVat: number;
     molliePaymentUrl: string;
     deliveryAddress: OrderAddressViewModel;
