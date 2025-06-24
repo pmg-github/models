@@ -269,6 +269,8 @@ import { CommentTypeView, CommentListView } from "./models/comment";
 
 import { DocumentTypeViewModel } from "./models/documents";
 
+import { FetchOpts } from "./models/request";
+
 import { Issuers } from "./models/mollie";
 import {
   BestChoiceCategories,
@@ -536,4 +538,5 @@ export {
   OrderVatTotal,
   BoGroupsDetailModel,
   AdvertisementListViewModel,
+  FetchOpts,
 };
