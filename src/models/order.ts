@@ -16,6 +16,7 @@ export interface OrderDetailViewModel {
   totalPriceInclVat: number; // productprice + delvieryprice
   totalVat: number; // sum of all vattotals
   molliePaymentUrl: string;
+  hasToPayVat: boolean | number;
 
   deliveryAddress: OrderAddressViewModel;
   invoiceAddress: OrderAddressViewModel;
