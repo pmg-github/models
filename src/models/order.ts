@@ -42,6 +42,7 @@ export interface OrderCompanyViewModel {
 
 export interface OrderLineViewModel {
   id: number;
+  articleReference: string;
   productId: number;
   productName: string;
   productDescription: string;
