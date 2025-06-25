@@ -153,6 +153,7 @@ export interface BcListingDetailModel {
     link?: string;
     linkText?: string;
     contacts: ArticleContact[];
+    portals: string[];
 }
 export interface BcArticleDetailIntressesModel {
     articles: BcArticleDetailModel[];
