@@ -187,6 +187,7 @@ export interface NewsletterAdPostModel {
   articleReference: string;
   title: string;
   description: string | null;
+  interest: string | null;
 }
 
 export interface NewsletterSubjectModel {
