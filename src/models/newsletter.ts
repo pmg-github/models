@@ -180,6 +180,7 @@ export interface NewsletterNewsModel {
   articleReference: string;
   title: string;
   date: string;
+  imageUrl: string | null;
 }
 
 export interface NewsletterAdPostModel {
@@ -188,6 +189,7 @@ export interface NewsletterAdPostModel {
   title: string;
   description: string | null;
   interest: string | null;
+  imageUrl: string | null;
 }
 
 export interface NewsletterSubjectModel {
