@@ -1,5 +1,5 @@
 import { PortalComponentViewModel } from "./portal";
-import { SelectOptionViewModel } from "./selectoption";
+import { SelectOptionDescriptionViewModel } from "./selectoption";
 
 export interface InterestViewModel {
   id: number;
@@ -9,7 +9,7 @@ export interface InterestViewModel {
 }
 
 export interface InteresseDetailView {
-  group:SelectOptionViewModel
+  group:SelectOptionDescriptionViewModel
   code:string;
   nameNl: string;
   nameFr: string;

@@ -1,4 +1,4 @@
-import { SelectOptionViewModel } from "./selectoption";
+import { SelectOptionDescriptionViewModel } from "./selectoption";
 export interface InterestViewModel {
     id: number;
     code: string;
@@ -6,7 +6,7 @@ export interface InterestViewModel {
     type: string;
 }
 export interface InteresseDetailView {
-    group: SelectOptionViewModel;
+    group: SelectOptionDescriptionViewModel;
     code: string;
     nameNl: string;
     nameFr: string;
