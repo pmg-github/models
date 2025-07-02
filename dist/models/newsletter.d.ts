@@ -152,12 +152,15 @@ export interface NewsletterNewsModel {
     articleReference: string;
     title: string;
     date: string;
+    imageUrl: string | null;
 }
 export interface NewsletterAdPostModel {
     id: number;
     articleReference: string;
     title: string;
     description: string | null;
+    interest: string | null;
+    imageUrl: string | null;
 }
 export interface NewsletterSubjectModel {
     id: number;
