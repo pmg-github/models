@@ -134,6 +134,7 @@ export interface BcArticleDetailModel {
     availableFrom?: Date;
     availableUntil?: Date;
     company?: SelectOptionViewModel;
+    creator: number;
 }
 export interface BcListingDetailModel {
     id: number;
