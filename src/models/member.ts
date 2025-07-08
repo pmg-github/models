@@ -79,6 +79,8 @@ export class MemberCreateRequest {
   @ValidateIf((o) => !o.deliveryAddressId)
   @IsNotEmpty()
   deliveryCountryCode?: string;
+  @IsOptional()
+  deliveryAttention?: string | undefined;
 
   @ValidateIf((o) => o.hasDifferentInvoiceAddress && !o.invoiceAddressId)
   @IsNotEmpty()
@@ -97,6 +99,8 @@ export class MemberCreateRequest {
   @ValidateIf((o) => o.hasDifferentInvoiceAddress && !o.invoiceAddressId)
   @IsNotEmpty()
   invoiceCountryCode?: string;
+  @IsOptional()
+  invoiceAttention?: string | undefined;
 
   constructor(data: Partial<MemberCreateRequest>) {
     Object.assign(this, data);

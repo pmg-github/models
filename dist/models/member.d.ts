@@ -20,11 +20,13 @@ export declare class MemberCreateRequest {
     deliveryZipCode?: string;
     deliveryCity?: string;
     deliveryCountryCode?: string;
+    deliveryAttention?: string | undefined;
     invoiceStreet?: string;
     invoiceStreetNumber?: string;
     invoiceStreetBoxNumber?: string;
     invoiceZipCode?: string;
     invoiceCity?: string;
     invoiceCountryCode?: string;
+    invoiceAttention?: string | undefined;
     constructor(data: Partial<MemberCreateRequest>);
 }

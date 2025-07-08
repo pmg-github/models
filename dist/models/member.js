@@ -33,12 +33,14 @@ class MemberCreateRequest {
     deliveryZipCode;
     deliveryCity;
     deliveryCountryCode;
+    deliveryAttention;
     invoiceStreet;
     invoiceStreetNumber;
     invoiceStreetBoxNumber;
     invoiceZipCode;
     invoiceCity;
     invoiceCountryCode;
+    invoiceAttention;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -145,6 +147,10 @@ __decorate([
     __metadata("design:type", String)
 ], MemberCreateRequest.prototype, "deliveryCountryCode", void 0);
 __decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], MemberCreateRequest.prototype, "deliveryAttention", void 0);
+__decorate([
     (0, class_validator_1.ValidateIf)((o) => o.hasDifferentInvoiceAddress && !o.invoiceAddressId),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
@@ -173,3 +179,7 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], MemberCreateRequest.prototype, "invoiceCountryCode", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], MemberCreateRequest.prototype, "invoiceAttention", void 0);
