@@ -81,10 +81,6 @@ export class AddressContactCreateRequest {
 //  TODO: make create request an extension of this class
 export class AddressContactUpdateRequest {
   @IsNotEmpty()
-  @Length(2, 2)
-  lang!: string;
-
-  @IsNotEmpty()
   @MaxLength(355)
   street!: string;
 

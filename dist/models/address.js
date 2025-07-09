@@ -101,7 +101,6 @@ __decorate([
 ], AddressContactCreateRequest.prototype, "companyName", void 0);
 //  TODO: make create request an extension of this class
 class AddressContactUpdateRequest {
-    lang;
     street;
     streetNumber;
     streetBoxNumber;
@@ -115,11 +114,6 @@ class AddressContactUpdateRequest {
     }
 }
 exports.AddressContactUpdateRequest = AddressContactUpdateRequest;
-__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Length)(2, 2),
-    __metadata("design:type", String)
-], AddressContactUpdateRequest.prototype, "lang", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MaxLength)(355),

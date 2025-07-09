@@ -24,7 +24,6 @@ export declare class AddressContactCreateRequest {
     constructor(data: Partial<AddressContactCreateRequest>);
 }
 export declare class AddressContactUpdateRequest {
-    lang: string;
     street: string;
     streetNumber: string;
     streetBoxNumber: string;
