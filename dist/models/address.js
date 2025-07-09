@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = void 0;
+exports.AddressContactUpdateRequest = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = void 0;
 const class_validator_1 = require("class-validator");
 class AddressHelper {
     // remove spaces and dots for a clean comparison
@@ -99,3 +99,53 @@ __decorate([
     (0, class_validator_1.MaxLength)(80),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "companyName", void 0);
+//  TODO: make create request an extension of this class
+class AddressContactUpdateRequest {
+    lang;
+    street;
+    streetNumber;
+    streetBoxNumber;
+    city;
+    zipCode;
+    countryCode;
+    // Company stuff CANNOT be changed later on!!!
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.AddressContactUpdateRequest = AddressContactUpdateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "lang", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(355),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "street", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(50),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "streetNumber", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.MaxLength)(50),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "streetBoxNumber", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MaxLength)(255),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "city", void 0);
+__decorate([
+    (0, class_validator_1.MaxLength)(20),
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "zipCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "countryCode", void 0);

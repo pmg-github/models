@@ -64,6 +64,7 @@ import {
   AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
+  AddressContactUpdateRequest,
 } from "./models/address";
 
 import {
@@ -188,6 +189,7 @@ import {
 import {
   AboDetailViewModel,
   AboViewModel,
+  ContactenAboUpdateRequest,
   ProefAboCreateModel,
 } from "./models/abos";
 import {
@@ -309,7 +311,11 @@ import {
   OrderVatTotal,
 } from "./models/order";
 
-import { BoGroupsDetailModel, BoGroupsListModel, BoGroupsListWithCursorModel, } from "./models/groups";
+import {
+  BoGroupsDetailModel,
+  BoGroupsListModel,
+  BoGroupsListWithCursorModel,
+} from "./models/groups";
 
 export {
   ToolDetailView,
@@ -363,6 +369,7 @@ export {
   AddressHelper,
   AddressViewModel,
   AddressContactCreateRequest,
+  AddressContactUpdateRequest,
   BcArticleDetailIntressesModel,
   SelectOptionViewModel,
   SelectOptionDescriptionViewModel,
@@ -451,6 +458,7 @@ export {
   AboDetailViewModel,
   PubsSortView,
   ProefAboCreateModel,
+  ContactenAboUpdateRequest,
   PortalViewModel,
   PortalCarouselViewModel,
   BoPortalViewModel,

@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProefAboCreateModel = void 0;
+exports.ContactenAboUpdateRequest = exports.ProefAboCreateModel = void 0;
 const class_validator_1 = require("class-validator");
 class ProefAboCreateModel {
     portalCode;
@@ -37,3 +37,25 @@ __decorate([
     ,
     __metadata("design:type", Number)
 ], ProefAboCreateModel.prototype, "addressId", void 0);
+class ContactenAboUpdateRequest {
+    lang;
+    deliveryAddressId;
+    invoiceAddressId;
+    constructor(data) {
+        Object.assign(this, data);
+    }
+}
+exports.ContactenAboUpdateRequest = ContactenAboUpdateRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], ContactenAboUpdateRequest.prototype, "lang", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], ContactenAboUpdateRequest.prototype, "deliveryAddressId", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], ContactenAboUpdateRequest.prototype, "invoiceAddressId", void 0);

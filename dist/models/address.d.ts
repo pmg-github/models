@@ -23,3 +23,13 @@ export declare class AddressContactCreateRequest {
     companyName: string;
     constructor(data: Partial<AddressContactCreateRequest>);
 }
+export declare class AddressContactUpdateRequest {
+    lang: string;
+    street: string;
+    streetNumber: string;
+    streetBoxNumber: string;
+    city: string;
+    zipCode: string;
+    countryCode: string;
+    constructor(data: Partial<AddressContactUpdateRequest>);
+}

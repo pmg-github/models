@@ -26,3 +26,9 @@ export declare class ProefAboCreateModel {
     addressId: number;
     constructor(data: Partial<ProefAboCreateModel>);
 }
+export declare class ContactenAboUpdateRequest {
+    lang: string;
+    deliveryAddressId: number;
+    invoiceAddressId: number;
+    constructor(data: Partial<ContactenAboUpdateRequest>);
+}

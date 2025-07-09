@@ -40,3 +40,19 @@ export class ProefAboCreateModel {
     Object.assign(this, data);
   }
 }
+
+export class ContactenAboUpdateRequest {
+  @IsNotEmpty()
+  @Length(2, 2)
+  lang!: string;
+
+  @IsNotEmpty()
+  deliveryAddressId!: number;
+
+  @IsNotEmpty()
+  invoiceAddressId!: number;
+
+  constructor(data: Partial<ContactenAboUpdateRequest>) {
+    Object.assign(this, data);
+  }
+}

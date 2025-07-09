@@ -1,6 +1,7 @@
 import {
   IsBoolean,
   IsNotEmpty,
+  IsOptional,
   Length,
   Matches,
   MaxLength,
@@ -73,6 +74,43 @@ export class AddressContactCreateRequest {
   companyName!: string;
 
   constructor(data: Partial<AddressContactCreateRequest>) {
+    Object.assign(this, data);
+  }
+}
+
+//  TODO: make create request an extension of this class
+export class AddressContactUpdateRequest {
+  @IsNotEmpty()
+  @Length(2, 2)
+  lang!: string;
+
+  @IsNotEmpty()
+  @MaxLength(355)
+  street!: string;
+
+  @IsNotEmpty()
+  @MaxLength(50)
+  streetNumber!: string;
+
+  @IsOptional()
+  @MaxLength(50)
+  streetBoxNumber!: string;
+
+  @IsNotEmpty()
+  @MaxLength(255)
+  city!: string;
+
+  @MaxLength(20)
+  @IsNotEmpty()
+  zipCode!: string;
+
+  @IsNotEmpty()
+  @Length(2, 2)
+  countryCode!: string;
+
+  // Company stuff CANNOT be changed later on!!!
+
+  constructor(data: Partial<AddressContactUpdateRequest>) {
     Object.assign(this, data);
   }
 }
