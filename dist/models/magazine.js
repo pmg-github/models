@@ -56,6 +56,7 @@ class ViewerCustomerTileViewModel {
     brand = undefined;
     logoUrl = undefined;
     redirectUrl = undefined;
+    orderLineNumber = undefined;
 }
 exports.ViewerCustomerTileViewModel = ViewerCustomerTileViewModel;
 class ViewerMetaDataViewModel {

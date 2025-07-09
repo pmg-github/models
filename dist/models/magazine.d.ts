@@ -55,6 +55,7 @@ export declare class ViewerCustomerTileViewModel {
     brand: string | undefined;
     logoUrl: string | undefined;
     redirectUrl: string | undefined;
+    orderLineNumber: number | undefined;
 }
 export declare class ViewerMetaDataViewModel {
     title: string | undefined;

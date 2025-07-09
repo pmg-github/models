@@ -61,6 +61,7 @@ export class ViewerCustomerTileViewModel {
   brand: string | undefined = undefined;
   logoUrl: string | undefined = undefined;
   redirectUrl: string | undefined = undefined;
+  orderLineNumber: number | undefined = undefined;
 }
 
 export class ViewerMetaDataViewModel {
