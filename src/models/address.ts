@@ -108,6 +108,10 @@ export class AddressContactUpdateRequest {
   @Length(2, 2)
   countryCode!: string;
 
+  @IsOptional()
+  @MaxLength(255)
+  attention?: string;
+
   // Company stuff CANNOT be changed later on!!!
 
   constructor(data: Partial<AddressContactUpdateRequest>) {

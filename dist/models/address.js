@@ -108,6 +108,7 @@ class AddressContactUpdateRequest {
     city;
     zipCode;
     countryCode;
+    attention;
     // Company stuff CANNOT be changed later on!!!
     constructor(data) {
         Object.assign(this, data);
@@ -149,3 +150,8 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], AddressContactUpdateRequest.prototype, "countryCode", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.MaxLength)(255),
+    __metadata("design:type", String)
+], AddressContactUpdateRequest.prototype, "attention", void 0);

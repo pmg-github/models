@@ -31,5 +31,6 @@ export declare class AddressContactUpdateRequest {
     city: string;
     zipCode: string;
     countryCode: string;
+    attention?: string;
     constructor(data: Partial<AddressContactUpdateRequest>);
 }
