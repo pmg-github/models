@@ -10,4 +10,5 @@ export interface AdvertisementListViewModel {
     shortMiu: string;
     miuAnker: string;
     images: string[];
+    type: string;
 }
