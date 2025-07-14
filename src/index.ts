@@ -208,7 +208,7 @@ import {
   TranslationSaveRequest,
 } from "./models/translation";
 
-import { StatsPostModel } from "./models/stats";
+import { StatsListViewModel, StatsPostModel } from "./models/stats";
 
 import {
   InteresseDetailView,
@@ -547,4 +547,5 @@ export {
   BoGroupsDetailModel,
   AdvertisementListViewModel,
   FetchOpts,
+  StatsListViewModel,
 };
