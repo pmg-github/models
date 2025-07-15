@@ -20,18 +20,27 @@ export class AddressHelper {
 
 export class AddressViewModel {
   id: number | undefined = undefined;
+  attention: string | undefined = undefined;
   street: string | undefined = undefined;
   streetNumber: string | undefined = undefined;
   streetBoxNumber: string | undefined = undefined;
   city: string | undefined = undefined;
   zipCode: string | undefined = undefined;
   countryCode: string | undefined = undefined;
+  companyReference: string | undefined = undefined;
+  companyName: string | undefined = undefined;
+  companyVat: string | undefined = undefined;
+  companyNumber: string | undefined = undefined;
+  isEditable: boolean | undefined = undefined;
 }
 
 export class AddressContactCreateRequest {
   @IsNotEmpty()
   @Length(2, 2)
   lang!: string;
+
+  @IsOptional()
+  attention?: string;
 
   @IsNotEmpty()
   @MaxLength(355)

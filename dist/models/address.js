@@ -23,16 +23,23 @@ class AddressHelper {
 exports.AddressHelper = AddressHelper;
 class AddressViewModel {
     id = undefined;
+    attention = undefined;
     street = undefined;
     streetNumber = undefined;
     streetBoxNumber = undefined;
     city = undefined;
     zipCode = undefined;
     countryCode = undefined;
+    companyReference = undefined;
+    companyName = undefined;
+    companyVat = undefined;
+    companyNumber = undefined;
+    isEditable = undefined;
 }
 exports.AddressViewModel = AddressViewModel;
 class AddressContactCreateRequest {
     lang;
+    attention;
     street;
     streetNumber;
     streetBoxNumber;
@@ -53,6 +60,10 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "lang", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], AddressContactCreateRequest.prototype, "attention", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MaxLength)(355),
