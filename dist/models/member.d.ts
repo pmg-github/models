@@ -11,6 +11,7 @@ export declare class MemberCreateRequest {
     klnr?: string;
     vatNumber?: string;
     companyName?: string;
+    companyNumber?: string;
     hasDifferentInvoiceAddress: boolean;
     deliveryAddressId?: number;
     invoiceAddressId?: number;

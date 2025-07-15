@@ -53,6 +53,8 @@ export class MemberCreateRequest {
   @ValidateIf((o) => o.isB2B && !o.klnr)
   @IsNotEmpty()
   companyName?: string;
+  @IsOptional()
+  companyNumber?: string;
 
   @IsNotEmpty()
   hasDifferentInvoiceAddress!: boolean;

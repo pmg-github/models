@@ -24,6 +24,7 @@ class MemberCreateRequest {
     klnr;
     vatNumber;
     companyName;
+    companyNumber;
     hasDifferentInvoiceAddress;
     deliveryAddressId;
     invoiceAddressId;
@@ -105,6 +106,10 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], MemberCreateRequest.prototype, "companyName", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], MemberCreateRequest.prototype, "companyNumber", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Boolean)
