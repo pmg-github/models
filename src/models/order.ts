@@ -38,6 +38,7 @@ export interface OrderAddressViewModel {
 export interface OrderCompanyViewModel {
   name: string | undefined | null;
   vatNumber: string;
+  companyNumber: string | undefined | null;
 }
 
 export interface OrderLineViewModel {
