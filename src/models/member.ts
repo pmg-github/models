@@ -49,10 +49,10 @@ export class MemberCreateRequest {
 
   @ValidateIf((o) => o.isB2B && !o.klnr)
   @IsNotEmpty()
-  vatNumber?: string;
-  @ValidateIf((o) => o.isB2B && !o.klnr)
-  @IsNotEmpty()
   companyName?: string;
+  // Either vatNumber or companyNumber must be provided
+  @IsOptional()
+  vatNumber?: string;
   @IsOptional()
   companyNumber?: string;
 

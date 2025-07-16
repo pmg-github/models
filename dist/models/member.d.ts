@@ -9,8 +9,8 @@ export declare class MemberCreateRequest {
     phone?: string;
     isB2B: boolean;
     klnr?: string;
-    vatNumber?: string;
     companyName?: string;
+    vatNumber?: string;
     companyNumber?: string;
     hasDifferentInvoiceAddress: boolean;
     deliveryAddressId?: number;

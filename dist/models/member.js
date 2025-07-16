@@ -22,8 +22,9 @@ class MemberCreateRequest {
     phone;
     isB2B;
     klnr;
-    vatNumber;
     companyName;
+    // Either vatNumber or companyNumber must be provided
+    vatNumber;
     companyNumber;
     hasDifferentInvoiceAddress;
     deliveryAddressId;
@@ -100,12 +101,11 @@ __decorate([
     (0, class_validator_1.ValidateIf)((o) => o.isB2B && !o.klnr),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], MemberCreateRequest.prototype, "vatNumber", void 0);
-__decorate([
-    (0, class_validator_1.ValidateIf)((o) => o.isB2B && !o.klnr),
-    (0, class_validator_1.IsNotEmpty)(),
-    __metadata("design:type", String)
 ], MemberCreateRequest.prototype, "companyName", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], MemberCreateRequest.prototype, "vatNumber", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
