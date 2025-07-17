@@ -72,15 +72,16 @@ export class AddressContactCreateRequest {
 
   @ValidateIf((obj: AddressContactCreateRequest, val: string) => obj.isB2b)
   @IsNotEmpty()
-  @Matches(
-    /^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[\s-.]?[0-9A-Z]{2,12}[\s-.]?/
-  )
-  vat!: string;
-
-  @ValidateIf((obj: AddressContactCreateRequest, val: string) => obj.isB2b)
-  @IsNotEmpty()
   @MaxLength(80)
   companyName!: string;
+
+  // @ValidateIf((obj: AddressContactCreateRequest, val: string) => obj.isB2b)
+  // @IsNotEmpty()
+  // @Matches(
+  //   /^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[\s-.]?[0-9A-Z]{2,12}[\s-.]?/
+  // )
+  @IsOptional()
+  vat!: string;
 
   @IsOptional()
   companyNumber?: string;

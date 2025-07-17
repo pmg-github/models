@@ -48,8 +48,13 @@ class AddressContactCreateRequest {
     countryCode;
     // Company stuff
     isB2b;
-    vat;
     companyName;
+    // @ValidateIf((obj: AddressContactCreateRequest, val: string) => obj.isB2b)
+    // @IsNotEmpty()
+    // @Matches(
+    //   /^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[\s-.]?[0-9A-Z]{2,12}[\s-.]?/
+    // )
+    vat;
     companyNumber;
     constructor(data) {
         Object.assign(this, data);
@@ -102,15 +107,13 @@ __decorate([
 __decorate([
     (0, class_validator_1.ValidateIf)((obj, val) => obj.isB2b),
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Matches)(/^(ATU|BE0|BG|CHE|CY|CZ|DE|DK|EE|EL|ES|FI|FR|GB|GR|HR|HU|IE|IT|LT|LU|LV|MT|NL|PL|PT|RO|SE|SI|SK)[\s-.]?[0-9A-Z]{2,12}[\s-.]?/),
-    __metadata("design:type", String)
-], AddressContactCreateRequest.prototype, "vat", void 0);
-__decorate([
-    (0, class_validator_1.ValidateIf)((obj, val) => obj.isB2b),
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MaxLength)(80),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "companyName", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], AddressContactCreateRequest.prototype, "vat", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)

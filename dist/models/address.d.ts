@@ -26,8 +26,8 @@ export declare class AddressContactCreateRequest {
     zipCode: string;
     countryCode: string;
     isB2b: boolean;
-    vat: string;
     companyName: string;
+    vat: string;
     companyNumber?: string;
     constructor(data: Partial<AddressContactCreateRequest>);
 }
