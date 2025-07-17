@@ -6,6 +6,7 @@ export interface OrderDetailViewModel {
   paymentMethodId: number;
   paymentMethod: string;
   date: string | Date;
+  isoDate: string;
   totalProductsPriceExclVat: number;
   totalProductsPriceInclVat: number;
   totalProductsVat: number;
