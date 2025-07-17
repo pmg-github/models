@@ -50,6 +50,7 @@ class AddressContactCreateRequest {
     isB2b;
     vat;
     companyName;
+    companyNumber;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -110,6 +111,10 @@ __decorate([
     (0, class_validator_1.MaxLength)(80),
     __metadata("design:type", String)
 ], AddressContactCreateRequest.prototype, "companyName", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], AddressContactCreateRequest.prototype, "companyNumber", void 0);
 //  TODO: make create request an extension of this class
 class AddressContactUpdateRequest {
     street;

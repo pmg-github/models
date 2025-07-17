@@ -28,6 +28,7 @@ export declare class AddressContactCreateRequest {
     isB2b: boolean;
     vat: string;
     companyName: string;
+    companyNumber?: string;
     constructor(data: Partial<AddressContactCreateRequest>);
 }
 export declare class AddressContactUpdateRequest {

@@ -82,6 +82,9 @@ export class AddressContactCreateRequest {
   @MaxLength(80)
   companyName!: string;
 
+  @IsOptional()
+  companyNumber?: string;
+
   constructor(data: Partial<AddressContactCreateRequest>) {
     Object.assign(this, data);
   }
