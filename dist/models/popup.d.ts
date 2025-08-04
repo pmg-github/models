@@ -80,6 +80,7 @@ export declare class CreatePopupDto {
     dateFrom?: string;
     dateUntil?: string;
     displayFrequency: SelectOptionViewModelDto;
+    targetAudience: SelectOptionViewModelDto;
     delaySeconds: number;
     constructor(data: Partial<CreatePopupDto>);
 }

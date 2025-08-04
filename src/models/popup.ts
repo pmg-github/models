@@ -105,15 +105,18 @@ export class CreatePopupDto {
 
   @IsOptional()
   fr!: PopupMlDto;
-  
+
   @IsBoolean() isActive!: boolean;
-  
+
   @IsOptional() @IsString() dateFrom?: string;
   @IsOptional() @IsString() dateUntil?: string;
-  
+
   // @ValidateNested()
   @IsOptional()
   displayFrequency!: SelectOptionViewModelDto;
+  
+  @IsOptional()
+  targetAudience!: SelectOptionViewModelDto;
 
   @IsNumber() delaySeconds!: number;
 
