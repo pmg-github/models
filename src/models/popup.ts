@@ -74,6 +74,7 @@ export interface BoPopupDetailView {
   dateFrom?: string;
   dateUntil: string;
   displayFrequency: SelectOptionViewModel;
+  TargetAudience: SelectOptionViewModel;
   delaySeconds: number;
 }
 
