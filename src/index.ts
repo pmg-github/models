@@ -82,6 +82,7 @@ import {
   SelectOptionDescriptionTagsViewModel,
   SelectOptionDescriptionViewModel,
   SelectOptionViewModel,
+  SelectOptionViewModelDto,
 } from "./models/selectoption";
 
 import {
@@ -549,4 +550,5 @@ export {
   FetchOpts,
   StatsListViewModel,
   ToolsArticleListView,
+  SelectOptionViewModelDto,
 };
