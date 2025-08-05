@@ -231,6 +231,7 @@ export declare class NewsletterArticleAddRequest {
     jobCode: string;
     language: string;
     articleReference: string;
+    viewTypeId?: number | undefined;
     constructor(data: Partial<NewsletterArticleAddRequest>);
 }
 export declare class NewsletterArticleSaveRequest {

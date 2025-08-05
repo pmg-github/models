@@ -218,6 +218,7 @@ class NewsletterArticleAddRequest {
     jobCode;
     language;
     articleReference;
+    viewTypeId;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -238,6 +239,10 @@ __decorate([
     (0, class_validator_1.Length)(15, 15),
     __metadata("design:type", String)
 ], NewsletterArticleAddRequest.prototype, "articleReference", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], NewsletterArticleAddRequest.prototype, "viewTypeId", void 0);
 class NewsletterArticleSaveRequest {
     id;
     jobCode;
