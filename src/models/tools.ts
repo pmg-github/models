@@ -26,3 +26,12 @@ export interface ToolDetailView {
   image: string;
   imageId:number
 }
+
+export interface ToolsArticleListView {
+  id: number;
+  name: string;
+  discription: string;
+  articleReference: string;
+  imageUrl: string;
+  '3dUid':string
+}

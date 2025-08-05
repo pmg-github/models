@@ -282,7 +282,7 @@ import {
   BestChoiceParticipationView,
   BestChoiceSpecInputs,
 } from "./models/bestCoice";
-import { ToolDetailView, ToolsListModel, ToolsListView } from "./models/tools";
+import { ToolDetailView, ToolsArticleListView, ToolsListModel, ToolsListView } from "./models/tools";
 
 import { ProductCategoryEnum, ProductViewModel } from "./models/product";
 
@@ -548,4 +548,5 @@ export {
   AdvertisementListViewModel,
   FetchOpts,
   StatsListViewModel,
+  ToolsArticleListView,
 };
