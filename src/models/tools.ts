@@ -34,4 +34,5 @@ export interface ToolsArticleListView {
   articleReference: string;
   imageUrl: string;
   '3dUid':string
+  '3dUrl':string
 }
