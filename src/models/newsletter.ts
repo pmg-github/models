@@ -343,6 +343,9 @@ export class NewsletterArticleAddRequest {
   @Length(15, 15)
   articleReference!: string;
 
+  @IsOptional()
+  viewTypeId?: number | undefined;
+
   constructor(data: Partial<NewsletterArticleAddRequest>) {
     Object.assign(this, data);
   }
