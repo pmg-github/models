@@ -1,4 +1,4 @@
-export interface rankingTabs {
+export interface rankingTypes {
     id: number;
     name: string;
     categoryName: string;
