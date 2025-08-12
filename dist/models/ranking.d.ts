@@ -7,3 +7,9 @@ export interface rankingTypes {
     interesseSoort: string;
     currentProject: string;
 }
+export interface RankingInteresses {
+    reference: string;
+    title: string;
+    description: string;
+    project: string;
+}
