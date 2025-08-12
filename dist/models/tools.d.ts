@@ -30,6 +30,6 @@ export interface ToolsArticleListView {
     discription: string;
     articleReference: string;
     imageUrl: string;
-    '3dUid': string;
-    '3dUrl': string;
+    "3dUid": string;
+    "3dUrl": string;
 }

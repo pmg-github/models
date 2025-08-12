@@ -318,6 +318,10 @@ import {
   BoGroupsListWithCursorModel,
 } from "./models/groups";
 
+import {
+  rankingTabs
+} from "./models/ranking"
+
 export {
   ToolDetailView,
   ToolsListModel,
@@ -551,4 +555,5 @@ export {
   StatsListViewModel,
   ToolsArticleListView,
   SelectOptionViewModelDto,
+  rankingTabs,
 };
