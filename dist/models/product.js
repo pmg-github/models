@@ -23,7 +23,7 @@ var ProductOrderByType;
     ProductOrderByType["DEFAULT"] = "default";
     ProductOrderByType["PRICE_ASC"] = "priceAsc";
     ProductOrderByType["PRICE_DESC"] = "priceDesc";
-    ProductOrderByType["ALPHABETICAL"] = "aplhabetical";
+    ProductOrderByType["ALPHABETICAL"] = "alphabetical";
 })(ProductOrderByType || (exports.ProductOrderByType = ProductOrderByType = {}));
 exports.productOrderByData = {
     // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
