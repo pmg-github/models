@@ -294,6 +294,8 @@ import {
   ProductCategoryEnum,
   ProductViewModel,
   ProductCategoryViewModel,
+  ProductOrderByType,
+  productOrderByData,
 } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
@@ -533,6 +535,8 @@ export {
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
+  ProductOrderByType,
+  productOrderByData,
   PMGTeamMemberViewModel,
   CommunityViewModel,
   PeriodFilterEnum,

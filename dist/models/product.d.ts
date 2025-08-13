@@ -1,3 +1,4 @@
+import { OrderByType } from "./db";
 export interface ProductCategoryViewModel {
     id: number;
     name: string;
@@ -33,3 +34,12 @@ export declare enum ProductCategoryEnum {
     PMG_VERBRUIKSGOEDEREN = 12,
     GESCHENKEN = 13
 }
+export declare enum ProductOrderByType {
+    DEFAULT = "default",
+    PRICE_ASC = "priceAsc",
+    PRICE_DESC = "priceDesc",
+    ALPHABETICAL = "aplhabetical"
+}
+export declare const productOrderByData: {
+    [key in ProductOrderByType]: OrderByType;
+};
