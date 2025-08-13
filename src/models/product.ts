@@ -20,6 +20,7 @@ export interface ProductViewModel {
   aboPriceInclVAT: number | null;
   magazineCode: string | null;
   tags: string[] | undefined | null;
+  orderByValue: string;
 }
 
 export enum ProductCategoryEnum {
