@@ -1,3 +1,8 @@
+export interface ProductCategoryViewModel {
+    id: number;
+    name: string;
+    numberOfProducts: number;
+}
 export interface ProductViewModel {
     id: number;
     reference: string;
