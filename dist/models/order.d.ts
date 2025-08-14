@@ -48,6 +48,7 @@ export interface OrderLineViewModel {
     productPriceInclVat: number;
     productVat: number;
     productVatPercentage: number;
+    productImageUrl: string | null | undefined;
     quantity: number;
     totalPriceExclVat: number;
     totalPriceInclVat: number;

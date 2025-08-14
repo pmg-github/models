@@ -1,3 +1,11 @@
+import { OrderByType } from "./db";
+
+export interface ProductCategoryViewModel {
+  id: number;
+  name: string;
+  numberOfProducts: number;
+}
+
 export interface ProductViewModel {
   id: number;
   reference: string;
@@ -12,6 +20,7 @@ export interface ProductViewModel {
   aboPriceInclVAT: number | null;
   magazineCode: string | null;
   tags: string[] | undefined | null;
+  orderByValue: string;
 }
 
 export enum ProductCategoryEnum {
@@ -29,3 +38,32 @@ export enum ProductCategoryEnum {
   PMG_VERBRUIKSGOEDEREN = 12,
   GESCHENKEN = 13,
 }
+
+// ORDER BY
+export enum ProductOrderByType {
+  DEFAULT = "default",
+  PRICE_ASC = "price-asc",
+  PRICE_DESC = "price-desc",
+  ALPHABETICAL = "alphabetical",
+}
+
+export const productOrderByData: { [key in ProductOrderByType]: OrderByType } =
+  {
+    // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
+    [ProductOrderByType.DEFAULT]: {
+      column: "productcategory_product.CategoryID",
+      direction: "desc",
+    },
+    [ProductOrderByType.PRICE_ASC]: {
+      column: "product.Price",
+      direction: "asc",
+    },
+    [ProductOrderByType.PRICE_DESC]: {
+      column: "product.Price",
+      direction: "desc",
+    },
+    [ProductOrderByType.ALPHABETICAL]: {
+      column: "article.Title",
+      direction: "asc",
+    },
+  };

@@ -283,9 +283,20 @@ import {
   BestChoiceParticipationView,
   BestChoiceSpecInputs,
 } from "./models/bestCoice";
-import { ToolDetailView, ToolsArticleListView, ToolsListModel, ToolsListView } from "./models/tools";
+import {
+  ToolDetailView,
+  ToolsArticleListView,
+  ToolsListModel,
+  ToolsListView,
+} from "./models/tools";
 
-import { ProductCategoryEnum, ProductViewModel } from "./models/product";
+import {
+  ProductCategoryEnum,
+  ProductViewModel,
+  ProductCategoryViewModel,
+  ProductOrderByType,
+  productOrderByData,
+} from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
 
@@ -523,6 +534,9 @@ export {
   Issuers,
   ProductViewModel,
   ProductCategoryEnum,
+  ProductCategoryViewModel,
+  ProductOrderByType,
+  productOrderByData,
   PMGTeamMemberViewModel,
   CommunityViewModel,
   PeriodFilterEnum,
