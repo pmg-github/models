@@ -21,8 +21,8 @@ var ProductCategoryEnum;
 var ProductOrderByType;
 (function (ProductOrderByType) {
     ProductOrderByType["DEFAULT"] = "default";
-    ProductOrderByType["PRICE_ASC"] = "priceAsc";
-    ProductOrderByType["PRICE_DESC"] = "priceDesc";
+    ProductOrderByType["PRICE_ASC"] = "price-asc";
+    ProductOrderByType["PRICE_DESC"] = "price-desc";
     ProductOrderByType["ALPHABETICAL"] = "alphabetical";
 })(ProductOrderByType || (exports.ProductOrderByType = ProductOrderByType = {}));
 exports.productOrderByData = {

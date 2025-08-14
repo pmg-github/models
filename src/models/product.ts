@@ -42,8 +42,8 @@ export enum ProductCategoryEnum {
 // ORDER BY
 export enum ProductOrderByType {
   DEFAULT = "default",
-  PRICE_ASC = "priceAsc",
-  PRICE_DESC = "priceDesc",
+  PRICE_ASC = "price-asc",
+  PRICE_DESC = "price-desc",
   ALPHABETICAL = "alphabetical",
 }
 
