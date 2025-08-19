@@ -74,6 +74,7 @@ import {
   CompanyCardViewModel,
   BcCompanyViewModel,
   CompanyRankingOverviewModel,
+  CompanyFinatialViewModel,
 } from "./models/company";
 
 import { ContextDetailView, ContextViewModel } from "./models/context";
@@ -569,4 +570,5 @@ export {
   SelectOptionViewModelDto,
   rankingTypes,
   RankingInteresses,
+  CompanyFinatialViewModel,
 };

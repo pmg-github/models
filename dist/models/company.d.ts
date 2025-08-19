@@ -28,6 +28,19 @@ export declare class CompanyViewModel {
     interesses: ViewerInteresseViewModel[] | undefined;
     vatNumber?: string | undefined;
 }
+export interface CompanyFinatialViewModel {
+    turnover: number;
+    operating: number;
+    operatingEmployee: number;
+    capital: number;
+    cashflow: number;
+    liquidity: number;
+    solvency: number;
+    profitability: number;
+    employeesWorkers: number;
+    employeesServants: number;
+    employeesTotal: number;
+}
 export interface BcCompanyViewModel extends CompanyViewModel {
     contactPerson: PmgUserInterface;
     vat?: string;
