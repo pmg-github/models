@@ -30,3 +30,8 @@ export declare class CartUpdateRequest {
     invoiceAttention?: string | undefined;
     constructor(data: Partial<CartUpdateRequest>);
 }
+export declare class CartDiscountAddRequest {
+    discountCode: string;
+    portalCode: string;
+    userUuid?: string;
+}

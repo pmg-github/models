@@ -105,3 +105,14 @@ export class CartUpdateRequest {
     Object.assign(this, data);
   }
 }
+
+export class CartDiscountAddRequest {
+  @IsNotEmpty()
+  @Length(1, 45)
+  discountCode!: string;
+  @IsNotEmpty()
+  @Length(4, 4)
+  portalCode!: string;
+  @IsOptional()
+  userUuid?: string;
+}

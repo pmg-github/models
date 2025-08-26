@@ -210,7 +210,12 @@ import {
   TranslationSaveRequest,
 } from "./models/translation";
 
-import { ArticleStatsListViewModel, PubsStatsListViewModel, StatsListViewModel, StatsPostModel } from "./models/stats";
+import {
+  ArticleStatsListViewModel,
+  PubsStatsListViewModel,
+  StatsListViewModel,
+  StatsPostModel,
+} from "./models/stats";
 
 import {
   InteresseDetailView,
@@ -332,7 +337,7 @@ import {
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
-import { CartUpdateRequest } from "./models/webshop";
+import { CartDiscountAddRequest, CartUpdateRequest } from "./models/webshop";
 
 export {
   ToolDetailView,
@@ -574,6 +579,7 @@ export {
   RankingInteresses,
   CompanyFinatialViewModel,
   CartUpdateRequest,
+  CartDiscountAddRequest,
   ArticleStatsListViewModel,
   PubsStatsListViewModel,
 };
