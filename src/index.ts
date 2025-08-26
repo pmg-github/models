@@ -337,7 +337,11 @@ import {
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
-import { CartDiscountAddRequest, CartUpdateRequest } from "./models/webshop";
+import {
+  CartBaseRequest,
+  CartDiscountAddRequest,
+  CartUpdateRequest,
+} from "./models/webshop";
 
 export {
   ToolDetailView,
@@ -578,6 +582,7 @@ export {
   rankingTypes,
   RankingInteresses,
   CompanyFinatialViewModel,
+  CartBaseRequest,
   CartUpdateRequest,
   CartDiscountAddRequest,
   ArticleStatsListViewModel,

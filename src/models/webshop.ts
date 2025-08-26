@@ -8,6 +8,14 @@ import {
   ValidateIf,
 } from "class-validator";
 
+export class CartBaseRequest {
+  @IsNotEmpty()
+  @Length(4, 4)
+  portalCode!: string;
+  @IsOptional()
+  userUuid?: string;
+}
+
 export class CartUpdateRequest {
   @IsNotEmpty()
   @IsString()
@@ -106,13 +114,8 @@ export class CartUpdateRequest {
   }
 }
 
-export class CartDiscountAddRequest {
+export class CartDiscountAddRequest extends CartBaseRequest {
   @IsNotEmpty()
   @Length(1, 45)
   discountCode!: string;
-  @IsNotEmpty()
-  @Length(4, 4)
-  portalCode!: string;
-  @IsOptional()
-  userUuid?: string;
 }
