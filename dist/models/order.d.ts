@@ -16,8 +16,13 @@ export interface OrderDetailViewModel {
     totalPriceExclVat: number;
     totalPriceInclVat: number;
     totalVat: number;
+    totalDiscountPriceExclVat: number | undefined;
+    totalDiscountPriceInclVat: number | undefined;
     molliePaymentUrl: string;
     hasToPayVat: boolean | number;
+    discountCode: string | undefined;
+    discountName: string | null | undefined;
+    hasValidDiscount: boolean | undefined;
     deliveryAddress: OrderAddressViewModel;
     invoiceAddress: OrderAddressViewModel;
     company: OrderCompanyViewModel | undefined;
