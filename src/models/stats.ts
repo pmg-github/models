@@ -17,15 +17,6 @@ export interface StatsPostModel {
 }
 
 export interface StatsListViewModel {
-  typeId: number;
-  orderLineNumber: number | null;
-  projectCode: string | null;
-  jobCode: string | null;
-  articleReference: string | null;
-  id: number;
-  customer: CompanyCardViewModel;
-  pubCode: string | null;
-  format: SelectOptionViewModel;
   views: {
     nl: number;
     fr: number;
@@ -41,4 +32,24 @@ export interface StatsListViewModel {
     fr: number;
     total: number;
   };
+}
+export interface PubsStatsListViewModel extends StatsListViewModel {
+  id: number;
+  typeId: number;
+  projectCode: string | null;
+  jobCode: string | null;
+  articleReference: string | null;
+  pubCode: string | null;
+  customer: CompanyCardViewModel;
+  format: SelectOptionViewModel;
+  orderLineNumber: number | null;
+}
+export interface ArticleStatsListViewModel extends StatsListViewModel {
+  id: number;
+  typeId: number;
+  projectCode: string | null;
+  jobCode: string | null;
+  articleReference: string | null;
+  customer: CompanyCardViewModel;
+  articleType: string | null;
 }

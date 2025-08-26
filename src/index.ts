@@ -210,7 +210,7 @@ import {
   TranslationSaveRequest,
 } from "./models/translation";
 
-import { StatsListViewModel, StatsPostModel } from "./models/stats";
+import { ArticleStatsListViewModel, PubsStatsListViewModel, StatsListViewModel, StatsPostModel } from "./models/stats";
 
 import {
   InteresseDetailView,
@@ -571,4 +571,6 @@ export {
   rankingTypes,
   RankingInteresses,
   CompanyFinatialViewModel,
+  ArticleStatsListViewModel,
+  PubsStatsListViewModel,
 };
