@@ -51,5 +51,6 @@ export interface ArticleStatsListViewModel extends StatsListViewModel {
   jobCode: string | null;
   articleReference: string | null;
   customer: CompanyCardViewModel;
-  articleType: string | null;
+  articleTitle: string;
+  articleType: string;
 }
