@@ -210,7 +210,12 @@ import {
   TranslationSaveRequest,
 } from "./models/translation";
 
-import { ArticleStatsListViewModel, PubsStatsListViewModel, StatsListViewModel, StatsPostModel } from "./models/stats";
+import {
+  ArticleStatsListViewModel,
+  PubsStatsListViewModel,
+  StatsListViewModel,
+  StatsPostModel,
+} from "./models/stats";
 
 import {
   InteresseDetailView,
@@ -332,7 +337,11 @@ import {
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
-import { CartUpdateRequest } from "./models/webshop"; 
+import {
+  CartBaseRequest,
+  CartDiscountAddRequest,
+  CartUpdateRequest,
+} from "./models/webshop"; 
 import { EventPageListView } from "./models/events"; 
 
 export {
@@ -574,7 +583,9 @@ export {
   rankingTypes,
   RankingInteresses,
   CompanyFinatialViewModel,
+  CartBaseRequest,
   CartUpdateRequest,
+  CartDiscountAddRequest,
   ArticleStatsListViewModel,
   PubsStatsListViewModel,
   EventPageListView,

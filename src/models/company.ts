@@ -84,6 +84,9 @@ export type CompanyRankingOverviewModel = {
   articleDescription: string | null;
   articleReference: string | null;
   articleImageUrl: string | null;
+  hasContactenAbo: boolean | number;
+  isCurrentProject: boolean | number;
+  isMRK: boolean | number;
 };
 
 export class CompanyCornerPictureModel {}

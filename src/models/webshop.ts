@@ -8,6 +8,14 @@ import {
   ValidateIf,
 } from "class-validator";
 
+export class CartBaseRequest {
+  @IsNotEmpty()
+  @Length(4, 4)
+  portalCode!: string;
+  @IsOptional()
+  userUuid?: string;
+}
+
 export class CartUpdateRequest {
   @IsNotEmpty()
   @IsString()
@@ -104,4 +112,10 @@ export class CartUpdateRequest {
   constructor(data: Partial<CartUpdateRequest>) {
     Object.assign(this, data);
   }
+}
+
+export class CartDiscountAddRequest extends CartBaseRequest {
+  @IsNotEmpty()
+  @Length(1, 45)
+  discountCode!: string;
 }

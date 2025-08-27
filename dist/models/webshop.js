@@ -9,8 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CartUpdateRequest = void 0;
+exports.CartDiscountAddRequest = exports.CartUpdateRequest = exports.CartBaseRequest = void 0;
 const class_validator_1 = require("class-validator");
+class CartBaseRequest {
+    portalCode;
+    userUuid;
+}
+exports.CartBaseRequest = CartBaseRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(4, 4),
+    __metadata("design:type", String)
+], CartBaseRequest.prototype, "portalCode", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], CartBaseRequest.prototype, "userUuid", void 0);
 class CartUpdateRequest {
     userUuid;
     language;
@@ -183,3 +197,12 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Object)
 ], CartUpdateRequest.prototype, "invoiceAttention", void 0);
+class CartDiscountAddRequest extends CartBaseRequest {
+    discountCode;
+}
+exports.CartDiscountAddRequest = CartDiscountAddRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.Length)(1, 45),
+    __metadata("design:type", String)
+], CartDiscountAddRequest.prototype, "discountCode", void 0);

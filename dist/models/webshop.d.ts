@@ -1,3 +1,7 @@
+export declare class CartBaseRequest {
+    portalCode: string;
+    userUuid?: string;
+}
 export declare class CartUpdateRequest {
     userUuid: string;
     language: string;
@@ -29,4 +33,7 @@ export declare class CartUpdateRequest {
     invoiceCountryCode?: string;
     invoiceAttention?: string | undefined;
     constructor(data: Partial<CartUpdateRequest>);
+}
+export declare class CartDiscountAddRequest extends CartBaseRequest {
+    discountCode: string;
 }
