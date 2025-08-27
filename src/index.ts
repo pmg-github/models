@@ -332,7 +332,8 @@ import {
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
-import { CartUpdateRequest } from "./models/webshop";
+import { CartUpdateRequest } from "./models/webshop"; 
+import { EventPageListView } from "./models/events"; 
 
 export {
   ToolDetailView,
@@ -576,4 +577,5 @@ export {
   CartUpdateRequest,
   ArticleStatsListViewModel,
   PubsStatsListViewModel,
+  EventPageListView,
 };
