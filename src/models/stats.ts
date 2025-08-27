@@ -54,3 +54,33 @@ export interface ArticleStatsListViewModel extends StatsListViewModel {
   articleTitle: string;
   articleType: string;
 }
+export interface NewsletterStatsListViewModel {
+  id: number;
+  title: string;
+  projectCode: string | null;
+  recipients: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  opened: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  uniqueOpened: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  clicks: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  uniqueClicks: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+}

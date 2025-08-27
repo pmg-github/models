@@ -212,6 +212,7 @@ import {
 
 import {
   ArticleStatsListViewModel,
+  NewsletterStatsListViewModel,
   PubsStatsListViewModel,
   StatsListViewModel,
   StatsPostModel,
@@ -589,4 +590,5 @@ export {
   ArticleStatsListViewModel,
   PubsStatsListViewModel,
   EventPageListView,
+  NewsletterStatsListViewModel,
 };
