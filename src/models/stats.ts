@@ -57,6 +57,7 @@ export interface ArticleStatsListViewModel extends StatsListViewModel {
 export interface NewsletterStatsListViewModel {
   id: number;
   title: string;
+  sendOn: string;
   projectCode: string | null;
   recipients: {
     nl: number;
