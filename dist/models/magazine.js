@@ -88,6 +88,8 @@ class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
 }
 exports.MagazineArticleViewModel = MagazineArticleViewModel;
 class MagazineAdViewModel extends ViewerAdBaseViewModel {
+    pubCode = undefined;
+    orderLineNumber = undefined;
 }
 exports.MagazineAdViewModel = MagazineAdViewModel;
 class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {

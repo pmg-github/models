@@ -99,7 +99,10 @@ export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
   moreLinkText: string | undefined = undefined;
   contact: ArticleContact[] = [];
 }
-export class MagazineAdViewModel extends ViewerAdBaseViewModel {}
+export class MagazineAdViewModel extends ViewerAdBaseViewModel {
+  pubCode?:string=undefined
+  orderLineNumber?:string=undefined
+}
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {}
 export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
   coverImageUrl: string | undefined = undefined;

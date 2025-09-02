@@ -88,6 +88,8 @@ export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel
     contact: ArticleContact[];
 }
 export declare class MagazineAdViewModel extends ViewerAdBaseViewModel {
+    pubCode?: string;
+    orderLineNumber?: string;
 }
 export declare class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }
