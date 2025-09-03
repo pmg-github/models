@@ -60,6 +60,18 @@ export class CartUpdateItemRequest {
   JSONData!: object | string; // check if we want object or string here?
 }
 
+export class CartDeleteItemRequest {
+  @IsNotEmpty()
+  @IsString()
+  @Length(36, 36)
+  userUuid!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Length(4, 4)
+  portalCode!: string;
+}
+
 export class CartUpdateRequest {
   @IsNotEmpty()
   @IsString()

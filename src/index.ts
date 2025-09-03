@@ -339,11 +339,14 @@ import {
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
 import {
+  CartAddItemRequest,
   CartBaseRequest,
+  CartDeleteItemRequest,
   CartDiscountAddRequest,
+  CartUpdateItemRequest,
   CartUpdateRequest,
-} from "./models/webshop"; 
-import { EventPageListView } from "./models/events"; 
+} from "./models/webshop";
+import { EventPageListView } from "./models/events";
 
 export {
   ToolDetailView,
@@ -585,6 +588,9 @@ export {
   RankingInteresses,
   CompanyFinatialViewModel,
   CartBaseRequest,
+  CartAddItemRequest,
+  CartUpdateItemRequest,
+  CartDeleteItemRequest,
   CartUpdateRequest,
   CartDiscountAddRequest,
   ArticleStatsListViewModel,

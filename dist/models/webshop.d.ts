@@ -16,6 +16,10 @@ export declare class CartUpdateItemRequest {
     quantity: number;
     JSONData: object | string;
 }
+export declare class CartDeleteItemRequest {
+    userUuid: string;
+    portalCode: string;
+}
 export declare class CartUpdateRequest {
     userUuid: string;
     language: string;
