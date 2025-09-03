@@ -2,6 +2,24 @@ export declare class CartBaseRequest {
     portalCode: string;
     userUuid?: string;
 }
+export declare class CartAddItemRequest {
+    userUuid: string;
+    language: string;
+    portalCode: string;
+    productId: number;
+    amount: number;
+    JSONData?: object | string;
+}
+export declare class CartUpdateItemRequest {
+    userUuid: string;
+    portalCode: string;
+    quantity: number;
+    JSONData?: object | string;
+}
+export declare class CartDeleteItemRequest {
+    userUuid: string;
+    portalCode: string;
+}
 export declare class CartUpdateRequest {
     userUuid: string;
     language: string;

@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CartDiscountAddRequest = exports.CartUpdateRequest = exports.CartBaseRequest = void 0;
+exports.CartDiscountAddRequest = exports.CartUpdateRequest = exports.CartDeleteItemRequest = exports.CartUpdateItemRequest = exports.CartAddItemRequest = exports.CartBaseRequest = void 0;
 const class_validator_1 = require("class-validator");
 class CartBaseRequest {
     portalCode;
@@ -25,6 +25,89 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], CartBaseRequest.prototype, "userUuid", void 0);
+class CartAddItemRequest {
+    userUuid;
+    language;
+    portalCode;
+    productId;
+    amount;
+    JSONData; // check if we want object or string here?
+}
+exports.CartAddItemRequest = CartAddItemRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(36, 36),
+    __metadata("design:type", String)
+], CartAddItemRequest.prototype, "userUuid", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(2, 2),
+    __metadata("design:type", String)
+], CartAddItemRequest.prototype, "language", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(4, 4),
+    __metadata("design:type", String)
+], CartAddItemRequest.prototype, "portalCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], CartAddItemRequest.prototype, "productId", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], CartAddItemRequest.prototype, "amount", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], CartAddItemRequest.prototype, "JSONData", void 0);
+class CartUpdateItemRequest {
+    userUuid;
+    portalCode;
+    quantity;
+    JSONData; // check if we want object or string here?
+}
+exports.CartUpdateItemRequest = CartUpdateItemRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(36, 36),
+    __metadata("design:type", String)
+], CartUpdateItemRequest.prototype, "userUuid", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(4, 4),
+    __metadata("design:type", String)
+], CartUpdateItemRequest.prototype, "portalCode", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Number)
+], CartUpdateItemRequest.prototype, "quantity", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], CartUpdateItemRequest.prototype, "JSONData", void 0);
+class CartDeleteItemRequest {
+    userUuid;
+    portalCode;
+}
+exports.CartDeleteItemRequest = CartDeleteItemRequest;
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(36, 36),
+    __metadata("design:type", String)
+], CartDeleteItemRequest.prototype, "userUuid", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.Length)(4, 4),
+    __metadata("design:type", String)
+], CartDeleteItemRequest.prototype, "portalCode", void 0);
 class CartUpdateRequest {
     userUuid;
     language;
