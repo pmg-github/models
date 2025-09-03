@@ -58,6 +58,8 @@ export interface OrderLineViewModel {
     totalPriceExclVat: number;
     totalPriceInclVat: number;
     totalVat: number;
+    productCategoryIds: number[] | undefined | null;
+    JSONData: object | null | undefined;
 }
 export interface OrderVatTotal {
     vatPercentage: number;

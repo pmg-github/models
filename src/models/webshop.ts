@@ -16,6 +16,50 @@ export class CartBaseRequest {
   userUuid?: string;
 }
 
+export class CartAddItemRequest {
+  @IsNotEmpty()
+  @IsString()
+  @Length(36, 36)
+  userUuid!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Length(2, 2)
+  language!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Length(4, 4)
+  portalCode!: string;
+
+  @IsNotEmpty()
+  productId!: number;
+
+  @IsNotEmpty()
+  amount!: number;
+
+  @IsOptional()
+  JSONData!: object | string; // check if we want object or string here?
+}
+
+export class CartUpdateItemRequest {
+  @IsNotEmpty()
+  @IsString()
+  @Length(36, 36)
+  userUuid!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Length(4, 4)
+  portalCode!: string;
+
+  @IsNotEmpty()
+  quantity!: number;
+
+  @IsOptional()
+  JSONData!: object | string; // check if we want object or string here?
+}
+
 export class CartUpdateRequest {
   @IsNotEmpty()
   @IsString()
