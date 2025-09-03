@@ -81,6 +81,7 @@ export type CompanyRankingOverviewModel = {
     hasContactenAbo: boolean | number;
     isCurrentProject: boolean | number;
     isMRK: boolean | number;
+    orderByValue: number;
 };
 export declare class CompanyCornerPictureModel {
 }
