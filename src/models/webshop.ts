@@ -39,7 +39,7 @@ export class CartAddItemRequest {
   amount!: number;
 
   @IsOptional()
-  JSONData!: object | string; // check if we want object or string here?
+  JSONData?: object | string; // check if we want object or string here?
 }
 
 export class CartUpdateItemRequest {
@@ -57,7 +57,7 @@ export class CartUpdateItemRequest {
   quantity!: number;
 
   @IsOptional()
-  JSONData!: object | string; // check if we want object or string here?
+  JSONData?: object | string; // check if we want object or string here?
 }
 
 export class CartDeleteItemRequest {
