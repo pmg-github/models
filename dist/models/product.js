@@ -16,6 +16,8 @@ var ProductCategoryEnum;
     ProductCategoryEnum[ProductCategoryEnum["BROKER"] = 11] = "BROKER";
     ProductCategoryEnum[ProductCategoryEnum["PMG_VERBRUIKSGOEDEREN"] = 12] = "PMG_VERBRUIKSGOEDEREN";
     ProductCategoryEnum[ProductCategoryEnum["GESCHENKEN"] = 13] = "GESCHENKEN";
+    ProductCategoryEnum[ProductCategoryEnum["VOORSCHRIFTBOEKJES"] = 14] = "VOORSCHRIFTBOEKJES";
+    ProductCategoryEnum[ProductCategoryEnum["ATTESTEN"] = 15] = "ATTESTEN";
 })(ProductCategoryEnum || (exports.ProductCategoryEnum = ProductCategoryEnum = {}));
 // ORDER BY
 var ProductOrderByType;

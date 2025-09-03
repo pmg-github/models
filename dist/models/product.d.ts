@@ -18,6 +18,7 @@ export interface ProductViewModel {
     aboPriceInclVAT: number | null;
     magazineCode: string | null;
     tags: string[] | undefined | null;
+    categoryIds: number[] | undefined | null;
     orderByValue: string;
 }
 export declare enum ProductCategoryEnum {
@@ -33,7 +34,9 @@ export declare enum ProductCategoryEnum {
     ABO_HERNIEUWING = 10,
     BROKER = 11,
     PMG_VERBRUIKSGOEDEREN = 12,
-    GESCHENKEN = 13
+    GESCHENKEN = 13,
+    VOORSCHRIFTBOEKJES = 14,
+    ATTESTEN = 15
 }
 export declare enum ProductOrderByType {
     DEFAULT = "default",
