@@ -8,13 +8,13 @@ export declare class CartAddItemRequest {
     portalCode: string;
     productId: number;
     amount: number;
-    JSONData: object | string;
+    JSONData?: object | string;
 }
 export declare class CartUpdateItemRequest {
     userUuid: string;
     portalCode: string;
     quantity: number;
-    JSONData: object | string;
+    JSONData?: object | string;
 }
 export declare class CartDeleteItemRequest {
     userUuid: string;
