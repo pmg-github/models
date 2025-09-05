@@ -31,7 +31,7 @@ export interface StatsListViewModel {
         total: number;
     };
 }
-export interface PubsStatsListViewModel extends StatsListViewModel {
+export interface PubsStatsListViewModel {
     id: number;
     typeId: number;
     projectCode: string | null;
@@ -41,6 +41,26 @@ export interface PubsStatsListViewModel extends StatsListViewModel {
     customer: CompanyCardViewModel;
     format: SelectOptionViewModel;
     orderLineNumber: number | null;
+    views: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    clicks?: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    clicksUnique?: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    viewsUnique: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
 }
 export interface ArticleStatsListViewModel extends StatsListViewModel {
     id: number;
