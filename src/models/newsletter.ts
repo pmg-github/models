@@ -104,6 +104,7 @@ export class NewsletterModel {
   numberOfOpened: number | undefined = undefined;
   numberOfOpenedUnique: number | undefined = undefined;
   numberOfClicks: number | undefined = undefined;
+  NumberOfAudience: number | undefined = undefined;
   numberOfClicksUnique: number | undefined = undefined;
 }
 
