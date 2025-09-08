@@ -49,4 +49,5 @@ var SecurityEnum;
     SecurityEnum[SecurityEnum["NEWSLETTER_UNAPPROVE"] = 45] = "NEWSLETTER_UNAPPROVE";
     SecurityEnum[SecurityEnum["NEWSLETTER_SOFT_DELETE"] = 46] = "NEWSLETTER_SOFT_DELETE";
     SecurityEnum[SecurityEnum["InteresseAdministrators"] = 48] = "InteresseAdministrators";
+    SecurityEnum[SecurityEnum["STATS_MASTER"] = 49] = "STATS_MASTER";
 })(SecurityEnum || (exports.SecurityEnum = SecurityEnum = {}));
