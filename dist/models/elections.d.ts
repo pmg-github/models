@@ -25,3 +25,12 @@ export interface ElectionsViewModel {
         imageUrl: string;
     }[];
 }
+export interface SelectedParticipants {
+    id: number;
+    amount: number;
+}
+export declare class SubmitVote {
+    electionId: number;
+    selectedParticipants: SelectedParticipants[];
+    constructor(data: Partial<SubmitVote>);
+}

@@ -1,3 +1,5 @@
+import { IsNumber, IsOptional } from "class-validator";
+
 export interface ElectionsViewModel {
   id: number;
   title: string;
@@ -24,4 +26,20 @@ export interface ElectionsViewModel {
     subTitle: string;
     imageUrl: string;
   }[];
+}
+
+export interface SelectedParticipants{
+    id:number,
+    amount:number,
+}
+
+export class SubmitVote {
+  @IsNumber()
+  electionId!: number;
+  @IsOptional()
+  selectedParticipants!: SelectedParticipants[];
+
+  constructor(data: Partial<SubmitVote>) {
+    Object.assign(this, data);
+  }
 }
