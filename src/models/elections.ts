@@ -11,6 +11,7 @@ export interface ElectionsViewModel {
   voteFrom: string;
   typeId: number;
   askMotivation: boolean;
+  hasVoted: boolean;
   redirectToForm: string;
   rulesPage: string;
   amountOfVotes: number;
