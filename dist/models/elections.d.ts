@@ -28,10 +28,11 @@ export interface ElectionsViewModel {
 export interface SelectedParticipants {
     id: number;
     amount: number;
+    motivationAnser?: string;
 }
 export declare class SubmitVote {
     electionId: number;
     selectedParticipants: SelectedParticipants[];
-    motivationAnser: string;
+    tiebreakerAnser: string;
     constructor(data: Partial<SubmitVote>);
 }

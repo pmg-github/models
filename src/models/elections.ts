@@ -31,6 +31,7 @@ export interface ElectionsViewModel {
 export interface SelectedParticipants {
   id: number;
   amount: number;
+  motivationAnser?:string
 }
 
 export class SubmitVote {
@@ -40,7 +41,7 @@ export class SubmitVote {
   selectedParticipants!: SelectedParticipants[];
   @IsOptional()
   @IsString()
-  motivationAnser!: string;
+  tiebreakerAnser!: string;
 
   constructor(data: Partial<SubmitVote>) {
     Object.assign(this, data);
