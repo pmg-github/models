@@ -7,9 +7,9 @@ export interface ElectionsViewModel {
     shareImage: null;
     voteUntil: string;
     voteFrom: string;
-    typeId: 1;
-    askMotivation: 0;
-    redirectToForm: 1;
+    typeId: number;
+    askMotivation: boolean;
+    redirectToForm: string;
     rulesPage: string;
     amountOfVotes: number;
     whiteStars: boolean;
@@ -32,5 +32,6 @@ export interface SelectedParticipants {
 export declare class SubmitVote {
     electionId: number;
     selectedParticipants: SelectedParticipants[];
+    motivationAnser: string;
     constructor(data: Partial<SubmitVote>);
 }

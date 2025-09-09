@@ -1,4 +1,4 @@
-import { IsNumber, IsOptional } from "class-validator";
+import { IsNumber, IsOptional, IsString } from "class-validator";
 
 export interface ElectionsViewModel {
   id: number;
@@ -9,9 +9,9 @@ export interface ElectionsViewModel {
   shareImage: null;
   voteUntil: string;
   voteFrom: string;
-  typeId: 1;
-  askMotivation: 0;
-  redirectToForm: 1;
+  typeId: number;
+  askMotivation: boolean;
+  redirectToForm: string;
   rulesPage: string;
   amountOfVotes: number;
   whiteStars: boolean;
@@ -28,9 +28,9 @@ export interface ElectionsViewModel {
   }[];
 }
 
-export interface SelectedParticipants{
-    id:number,
-    amount:number,
+export interface SelectedParticipants {
+  id: number;
+  amount: number;
 }
 
 export class SubmitVote {
@@ -38,6 +38,9 @@ export class SubmitVote {
   electionId!: number;
   @IsOptional()
   selectedParticipants!: SelectedParticipants[];
+  @IsOptional()
+  @IsString()
+  motivationAnser!: string;
 
   constructor(data: Partial<SubmitVote>) {
     Object.assign(this, data);

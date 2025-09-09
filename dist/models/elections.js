@@ -14,6 +14,7 @@ const class_validator_1 = require("class-validator");
 class SubmitVote {
     electionId;
     selectedParticipants;
+    motivationAnser;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -27,3 +28,8 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Array)
 ], SubmitVote.prototype, "selectedParticipants", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], SubmitVote.prototype, "motivationAnser", void 0);
