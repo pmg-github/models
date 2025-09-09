@@ -310,6 +310,7 @@ import { PMGTeamMemberViewModel } from "./models/contacts";
 import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
+import { ElectionsViewModel } from "./models/elections";
 
 import {
   BoVideoDetailViewModel,
@@ -597,4 +598,5 @@ export {
   PubsStatsListViewModel,
   EventPageListView,
   NewsletterStatsListViewModel,
+  ElectionsViewModel,
 };
