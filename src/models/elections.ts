@@ -41,8 +41,8 @@ export class SubmitVote {
   @IsOptional()
   selectedParticipants!: SelectedParticipants[];
   @IsOptional()
-  @IsString()
-  tiebreakerAnser!: string;
+  @IsNumber()
+  tiebreakerAnser!: number;
 
   constructor(data: Partial<SubmitVote>) {
     Object.assign(this, data);

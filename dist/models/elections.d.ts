@@ -34,6 +34,6 @@ export interface SelectedParticipants {
 export declare class SubmitVote {
     electionId: number;
     selectedParticipants: SelectedParticipants[];
-    tiebreakerAnser: string;
+    tiebreakerAnser: number;
     constructor(data: Partial<SubmitVote>);
 }
