@@ -22,6 +22,7 @@ export interface ProductViewModel {
   tags: string[] | undefined | null;
   categoryIds: number[] | undefined | null;
   orderByValue: string;
+  maxQuantity: number | null;
 }
 
 export enum ProductCategoryEnum {

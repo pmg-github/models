@@ -20,6 +20,7 @@ export interface ProductViewModel {
     tags: string[] | undefined | null;
     categoryIds: number[] | undefined | null;
     orderByValue: string;
+    maxQuantity: number | null;
 }
 export declare enum ProductCategoryEnum {
     PRINT_ABONNEMENTEN = 1,
