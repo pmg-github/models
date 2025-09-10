@@ -30,7 +30,7 @@ export interface PubsStatsListViewModel {
         fr: number;
         total: number;
     };
-    clicks?: {
+    clicks: {
         nl: number;
         fr: number;
         total: number;
