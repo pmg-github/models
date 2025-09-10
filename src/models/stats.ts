@@ -16,23 +16,6 @@ export interface StatsPostModel {
   jsonData?: string;
 }
 
-export interface StatsListViewModel {
-  views: {
-    nl: number;
-    fr: number;
-    total: number;
-  };
-  clicks?: {
-    nl: number;
-    fr: number;
-    total: number;
-  };
-  leads: {
-    nl: number;
-    fr: number;
-    total: number;
-  };
-}
 export interface PubsStatsListViewModel {
   id: number;
   typeId: number;
@@ -43,6 +26,7 @@ export interface PubsStatsListViewModel {
   customer: CompanyCardViewModel;
   format: SelectOptionViewModel;
   orderLineNumber: number | null;
+  SortValue: number;
   views: {
     nl: number;
     fr: number;
@@ -64,7 +48,7 @@ export interface PubsStatsListViewModel {
     total: number;
   };
 }
-export interface ArticleStatsListViewModel extends StatsListViewModel {
+export interface ArticleStatsListViewModel {
   id: number;
   typeId: number;
   projectCode: string | null;
@@ -73,12 +57,24 @@ export interface ArticleStatsListViewModel extends StatsListViewModel {
   customer: CompanyCardViewModel;
   articleTitle: string;
   articleType: string;
+  SortValue: number;
+  views: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  leads: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
 }
 export interface NewsletterStatsListViewModel {
   id: number;
   title: string;
   sendOn: string;
   projectCode: string | null;
+  SortValue: number;
   recipients: {
     nl: number;
     fr: number;

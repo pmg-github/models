@@ -214,7 +214,6 @@ import {
   ArticleStatsListViewModel,
   NewsletterStatsListViewModel,
   PubsStatsListViewModel,
-  StatsListViewModel,
   StatsPostModel,
 } from "./models/stats";
 
@@ -582,7 +581,6 @@ export {
   BoGroupsDetailModel,
   AdvertisementListViewModel,
   FetchOpts,
-  StatsListViewModel,
   ToolsArticleListView,
   SelectOptionViewModelDto,
   rankingTypes,
