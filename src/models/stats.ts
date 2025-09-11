@@ -80,6 +80,21 @@ export interface NewsletterStatsListViewModel {
     fr: number;
     total: number;
   };
+  reach: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  send: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  failed: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
   opened: {
     nl: number;
     fr: number;
