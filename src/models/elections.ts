@@ -1,4 +1,5 @@
 import { IsNumber, IsOptional, IsString } from "class-validator";
+import { FileListViewModel } from "./files";
 
 export interface ElectionsViewModel {
   id: number;
@@ -27,6 +28,15 @@ export interface ElectionsViewModel {
     subTitle: string;
     imageUrl: string;
   }[];
+}
+export interface participantDetailViewModel {
+  id: number;
+  participantId: number;
+  title: string;
+  subTitle: string;
+  description: string;
+  imageUrl: string;
+  images: FileListViewModel[];
 }
 
 export interface SelectedParticipants {

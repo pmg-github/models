@@ -1,3 +1,4 @@
+import { FileListViewModel } from "./files";
 export interface ElectionsViewModel {
     id: number;
     title: string;
@@ -25,6 +26,15 @@ export interface ElectionsViewModel {
         subTitle: string;
         imageUrl: string;
     }[];
+}
+export interface participantDetailViewModel {
+    id: number;
+    participantId: number;
+    title: string;
+    subTitle: string;
+    description: string;
+    imageUrl: string;
+    images: FileListViewModel[];
 }
 export interface SelectedParticipants {
     id: number;
