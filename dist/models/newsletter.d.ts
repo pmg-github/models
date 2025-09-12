@@ -131,6 +131,8 @@ export interface NewsletterTileModel {
     id: number;
     reference: string;
     date: Date;
+    portal: string;
+    portalName: string;
     displayDate: string;
     title: string;
     redirectUrl: string;
