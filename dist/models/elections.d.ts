@@ -27,7 +27,7 @@ export interface ElectionsViewModel {
         imageUrl: string;
     }[];
 }
-export interface participantDetailViewModel {
+export interface ParticipantDetailViewModel {
     id: number;
     participantId: number;
     title: string;
