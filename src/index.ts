@@ -309,7 +309,7 @@ import { PMGTeamMemberViewModel } from "./models/contacts";
 import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
-import { ElectionsViewModel, ParticipantDetailViewModel, SelectedParticipants, SubmitVote } from "./models/elections";
+import { ElectionsViewModel, ParticipantDetailPageViewModel, ParticipantDetailViewModel, SelectedParticipants, SubmitVote } from "./models/elections";
 
 import {
   BoVideoDetailViewModel,
@@ -600,4 +600,5 @@ export {
   SelectedParticipants,
   SubmitVote,
   ParticipantDetailViewModel,
+  ParticipantDetailPageViewModel,
 };
