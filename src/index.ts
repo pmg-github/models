@@ -167,6 +167,14 @@ import {
   EmployeesSearchListModel,
   EmployeeDetailModel,
   EmployeeWorkSchedule,
+  EmployeeFunctionListModel,
+  EmployeeTeamListModel,
+  EmployeesSearchCursorListModel,
+  CreateEmployee,
+  Gender,
+  PMGCompanyListModel,
+  ContractTypeListModel,
+  CivilStatusListModel
 } from "./models/employee";
 
 import { PromptListModel } from "./models/prompt";
@@ -471,6 +479,14 @@ export {
   EmployeesSearchListModel,
   EmployeeDetailModel,
   EmployeeWorkSchedule,
+  EmployeeFunctionListModel,
+  EmployeeTeamListModel,
+  EmployeesSearchCursorListModel,
+  CreateEmployee,
+  PMGCompanyListModel,
+  ContractTypeListModel,
+  CivilStatusListModel,
+  Gender,
   BestChoiceCategories,
   BestChoiceParticipationView,
   BestChoiceEditModel,

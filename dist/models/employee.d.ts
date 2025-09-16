@@ -39,15 +39,15 @@ export declare enum Gender {
     M = "M",
     F = "F"
 }
-export interface PMGCompanyListModule {
+export interface PMGCompanyListModel {
     code: string;
     name: string;
 }
-export interface civilStatusListModel {
+export interface CivilStatusListModel {
     code: string;
     name: string;
 }
-export interface contractTypeListModel {
+export interface ContractTypeListModel {
     code: string;
     name: string;
 }
