@@ -81,6 +81,7 @@ export interface BestChoiceTileViewModel {
     displayDate: string;
     customerName: string | null;
     customerCity: string | null;
+    project: string;
 }
 export interface BestChoiceProductViewModel {
     id: number;
