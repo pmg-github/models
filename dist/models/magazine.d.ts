@@ -1,3 +1,4 @@
+import { ProductViewModel } from "./product";
 export declare class ViewerTileBaseViewModel {
     id: number;
     reference: string | undefined;
@@ -42,6 +43,7 @@ export declare class ViewerArticleBaseViewModel {
     externalUrl: string | undefined;
     searchTextRelated: string | undefined;
     newsletterMoreLabel: string | undefined;
+    product: ProductViewModel | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;
@@ -86,6 +88,8 @@ export declare class MagazineArticleViewModel extends ViewerArticleBaseViewModel
     contact: ArticleContact[];
 }
 export declare class MagazineAdViewModel extends ViewerAdBaseViewModel {
+    pubCode?: string;
+    orderLineNumber?: string;
 }
 export declare class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {
 }

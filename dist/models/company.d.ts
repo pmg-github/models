@@ -28,6 +28,19 @@ export declare class CompanyViewModel {
     interesses: ViewerInteresseViewModel[] | undefined;
     vatNumber?: string | undefined;
 }
+export interface CompanyFinatialViewModel {
+    turnover: number;
+    operating: number;
+    operatingEmployee: number;
+    capital: number;
+    cashflow: number;
+    liquidity: number;
+    solvency: number;
+    profitability: number;
+    employeesWorkers: number;
+    employeesServants: number;
+    employeesTotal: number;
+}
 export interface BcCompanyViewModel extends CompanyViewModel {
     contactPerson: PmgUserInterface;
     vat?: string;
@@ -65,6 +78,10 @@ export type CompanyRankingOverviewModel = {
     articleDescription: string | null;
     articleReference: string | null;
     articleImageUrl: string | null;
+    hasContactenAbo: boolean | number;
+    isCurrentProject: boolean | number;
+    isMRK: boolean | number;
+    orderByValue: number;
 };
 export declare class CompanyCornerPictureModel {
 }

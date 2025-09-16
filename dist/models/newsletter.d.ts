@@ -83,6 +83,7 @@ export declare class NewsletterModel {
     numberOfOpened: number | undefined;
     numberOfOpenedUnique: number | undefined;
     numberOfClicks: number | undefined;
+    NumberOfAudience: number | undefined;
     numberOfClicksUnique: number | undefined;
 }
 export declare enum NewsletterViewTypeEnum {
@@ -130,6 +131,8 @@ export interface NewsletterTileModel {
     id: number;
     reference: string;
     date: Date;
+    portal: string;
+    portalName: string;
     displayDate: string;
     title: string;
     redirectUrl: string;

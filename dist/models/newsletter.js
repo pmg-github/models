@@ -51,6 +51,7 @@ class NewsletterModel {
     numberOfOpened = undefined;
     numberOfOpenedUnique = undefined;
     numberOfClicks = undefined;
+    NumberOfAudience = undefined;
     numberOfClicksUnique = undefined;
 }
 exports.NewsletterModel = NewsletterModel;

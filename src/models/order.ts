@@ -13,11 +13,18 @@ export interface OrderDetailViewModel {
   totalDeliveryPriceExclVat: number;
   totalDeliveryPriceInclVat: number;
   totalDeliveryVat: number;
-  totalPriceExclVat: number; // productprice + delvieryprice
-  totalPriceInclVat: number; // productprice + delvieryprice
+  totalPriceExclVat: number; // productprice + delvieryprice - discount
+  totalPriceInclVat: number; // productprice + delvieryprice - discount
   totalVat: number; // sum of all vattotals
+  totalDiscountPriceExclVat: number | undefined;
+  totalDiscountPriceInclVat: number | undefined;
   molliePaymentUrl: string;
   hasToPayVat: boolean | number;
+
+  discountCode: string | undefined;
+  discountName: string | null | undefined;
+
+  hasValidDiscount: boolean | undefined;
 
   deliveryAddress: OrderAddressViewModel;
   invoiceAddress: OrderAddressViewModel;
@@ -52,10 +59,14 @@ export interface OrderLineViewModel {
   productPriceInclVat: number;
   productVat: number;
   productVatPercentage: number;
+  productImageUrl: string | null | undefined;
   quantity: number;
   totalPriceExclVat: number;
   totalPriceInclVat: number;
   totalVat: number;
+  productCategoryIds: number[] | undefined | null;
+  JSONData: object | null | undefined;
+  maxQuantity: number | null;
 }
 
 export interface OrderVatTotal {

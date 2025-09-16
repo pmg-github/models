@@ -74,6 +74,7 @@ import {
   CompanyCardViewModel,
   BcCompanyViewModel,
   CompanyRankingOverviewModel,
+  CompanyFinatialViewModel,
 } from "./models/company";
 
 import { ContextDetailView, ContextViewModel } from "./models/context";
@@ -209,7 +210,12 @@ import {
   TranslationSaveRequest,
 } from "./models/translation";
 
-import { StatsListViewModel, StatsPostModel } from "./models/stats";
+import {
+  ArticleStatsListViewModel,
+  NewsletterStatsListViewModel,
+  PubsStatsListViewModel,
+  StatsPostModel,
+} from "./models/stats";
 
 import {
   InteresseDetailView,
@@ -283,15 +289,27 @@ import {
   BestChoiceParticipationView,
   BestChoiceSpecInputs,
 } from "./models/bestCoice";
-import { ToolDetailView, ToolsArticleListView, ToolsListModel, ToolsListView } from "./models/tools";
+import {
+  ToolDetailView,
+  ToolsArticleListView,
+  ToolsListModel,
+  ToolsListView,
+} from "./models/tools";
 
-import { ProductCategoryEnum, ProductViewModel } from "./models/product";
+import {
+  ProductCategoryEnum,
+  ProductViewModel,
+  ProductCategoryViewModel,
+  ProductOrderByType,
+  productOrderByData,
+} from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
 
 import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
+import { ElectionsViewModel, ParticipantDetailPageViewModel, ParticipantDetailViewModel, SelectedParticipants, SubmitVote } from "./models/elections";
 
 import {
   BoVideoDetailViewModel,
@@ -319,6 +337,16 @@ import {
 } from "./models/groups";
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
+
+import {
+  CartAddItemRequest,
+  CartBaseRequest,
+  CartDeleteItemRequest,
+  CartDiscountAddRequest,
+  CartUpdateItemRequest,
+  CartUpdateRequest,
+} from "./models/webshop";
+import { EventPageListView } from "./models/events";
 
 export {
   ToolDetailView,
@@ -523,6 +551,9 @@ export {
   Issuers,
   ProductViewModel,
   ProductCategoryEnum,
+  ProductCategoryViewModel,
+  ProductOrderByType,
+  productOrderByData,
   PMGTeamMemberViewModel,
   CommunityViewModel,
   PeriodFilterEnum,
@@ -550,9 +581,24 @@ export {
   BoGroupsDetailModel,
   AdvertisementListViewModel,
   FetchOpts,
-  StatsListViewModel,
   ToolsArticleListView,
   SelectOptionViewModelDto,
   rankingTypes,
   RankingInteresses,
+  CompanyFinatialViewModel,
+  CartBaseRequest,
+  CartAddItemRequest,
+  CartUpdateItemRequest,
+  CartDeleteItemRequest,
+  CartUpdateRequest,
+  CartDiscountAddRequest,
+  ArticleStatsListViewModel,
+  PubsStatsListViewModel,
+  EventPageListView,
+  NewsletterStatsListViewModel,
+  ElectionsViewModel,
+  SelectedParticipants,
+  SubmitVote,
+  ParticipantDetailViewModel,
+  ParticipantDetailPageViewModel,
 };

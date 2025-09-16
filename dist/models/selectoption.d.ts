@@ -1,6 +1,6 @@
 export interface SelectOptionViewModel {
     key: string;
-    value: number | string;
+    value: number | string | boolean;
 }
 export declare class SelectOptionViewModelDto {
     key: string;

@@ -1,5 +1,8 @@
 // BASE CLASSES
 // Actual classes should inherit from this
+
+import { ProductViewModel } from "./product";
+
 // TODO make a single article base class and use these for both tiles and detail!
 export class ViewerTileBaseViewModel {
   id!: number;
@@ -45,7 +48,7 @@ export class ViewerArticleBaseViewModel {
   externalUrl: string | undefined = undefined;
   searchTextRelated: string | undefined = undefined;
   newsletterMoreLabel: string | undefined = undefined;
-  
+  product: ProductViewModel | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {
@@ -96,7 +99,10 @@ export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
   moreLinkText: string | undefined = undefined;
   contact: ArticleContact[] = [];
 }
-export class MagazineAdViewModel extends ViewerAdBaseViewModel {}
+export class MagazineAdViewModel extends ViewerAdBaseViewModel {
+  pubCode?:string=undefined
+  orderLineNumber?:string=undefined
+}
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {}
 export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
   coverImageUrl: string | undefined = undefined;

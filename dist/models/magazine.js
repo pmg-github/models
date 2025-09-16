@@ -1,8 +1,8 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineInteresseViewModel = exports.MagazineMetaDataViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerInteresseViewModel = exports.ViewerMetaDataViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
 // BASE CLASSES
 // Actual classes should inherit from this
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.MagazineInteresseViewModel = exports.MagazineMetaDataViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerInteresseViewModel = exports.ViewerMetaDataViewModel = exports.ViewerCustomerTileViewModel = exports.ViewerAdBaseViewModel = exports.ViewerArticleBaseViewModel = exports.ViewerTileBaseViewModel = void 0;
 // TODO make a single article base class and use these for both tiles and detail!
 class ViewerTileBaseViewModel {
     id;
@@ -41,6 +41,7 @@ class ViewerArticleBaseViewModel {
     externalUrl = undefined;
     searchTextRelated = undefined;
     newsletterMoreLabel = undefined;
+    product = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {
@@ -87,6 +88,8 @@ class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
 }
 exports.MagazineArticleViewModel = MagazineArticleViewModel;
 class MagazineAdViewModel extends ViewerAdBaseViewModel {
+    pubCode = undefined;
+    orderLineNumber = undefined;
 }
 exports.MagazineAdViewModel = MagazineAdViewModel;
 class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {

@@ -36,4 +36,7 @@ export interface PubsDetailView extends PubsListView {
 export interface PubsSortView {
   redirectUrl: string;
   pubCode: string;
+  orderLineNumber: string;
+  moreText?: string;
+  moreUrl?: string;
 }

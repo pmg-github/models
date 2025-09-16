@@ -104,6 +104,7 @@ export class NewsletterModel {
   numberOfOpened: number | undefined = undefined;
   numberOfOpenedUnique: number | undefined = undefined;
   numberOfClicks: number | undefined = undefined;
+  NumberOfAudience: number | undefined = undefined;
   numberOfClicksUnique: number | undefined = undefined;
 }
 
@@ -156,6 +157,8 @@ export interface NewsletterTileModel {
   id: number;
   reference: string;
   date: Date;
+  portal:string
+  portalName:string
   displayDate: string;
   title: string;
   redirectUrl: string;
