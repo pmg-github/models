@@ -45,6 +45,7 @@ export interface ElectionsViewModel {
   redirectToForm: string;
   rulesPage: string;
   amountOfVotes: number;
+  uniquePoints: boolean;
   withStars: boolean;
   tiebreaker: boolean;
   tiebreakerText?: string;
