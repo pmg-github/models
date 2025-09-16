@@ -291,11 +291,17 @@ import { FetchOpts } from "./models/request";
 import { Issuers } from "./models/mollie";
 import {
   BestChoiceCategories,
+  BestChoiceDealsViewModel,
   BestChoiceDocuments,
   BestChoiceEditModel,
+  BestChoiceInfoViewModel,
   BestChoiceParticipationReturn,
   BestChoiceParticipationView,
+  BestChoiceProductViewModel,
   BestChoiceSpecInputs,
+  BestChoiceSpecsViewModel,
+  BestChoiceTileViewModel,
+  BestChoiceTipsViewModel,
 } from "./models/bestCoice";
 import {
   ToolDetailView,
@@ -617,4 +623,10 @@ export {
   SubmitVote,
   // ParticipantDetailViewModel,
   ParticipantDetailPageViewModel,
+  BestChoiceTileViewModel,
+  BestChoiceProductViewModel,
+  BestChoiceTipsViewModel,
+  BestChoiceDealsViewModel,
+  BestChoiceSpecsViewModel,
+  BestChoiceInfoViewModel,
 };
