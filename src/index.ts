@@ -174,7 +174,7 @@ import {
   Gender,
   PMGCompanyListModel,
   ContractTypeListModel,
-  CivilStatusListModel
+  CivilStatusListModel,
 } from "./models/employee";
 
 import { PromptListModel } from "./models/prompt";
@@ -323,7 +323,12 @@ import { PMGTeamMemberViewModel } from "./models/contacts";
 import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
-import { ElectionsViewModel, ParticipantDetailPageViewModel, SelectedParticipants, SubmitVote } from "./models/elections";
+import {
+  ElectionsViewModel,
+  ParticipantDetailPageViewModel,
+  SelectedParticipants,
+  SubmitVote,
+} from "./models/elections";
 
 import {
   BoVideoDetailViewModel,
@@ -351,6 +356,8 @@ import {
 } from "./models/groups";
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
+
+import { BoRedirectsListModel } from "./models/redirects";
 
 import {
   CartAddItemRequest,
@@ -629,4 +636,5 @@ export {
   BestChoiceDealsViewModel,
   BestChoiceSpecsViewModel,
   BestChoiceInfoViewModel,
+  BoRedirectsListModel,
 };
