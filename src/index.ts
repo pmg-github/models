@@ -357,7 +357,7 @@ import {
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
-import { BoRedirectsListModel } from "./models/redirects";
+import { BoRedirectsDetailModel, BoRedirectsListModel } from "./models/redirects";
 
 import {
   CartAddItemRequest,
@@ -637,4 +637,5 @@ export {
   BestChoiceSpecsViewModel,
   BestChoiceInfoViewModel,
   BoRedirectsListModel,
+  BoRedirectsDetailModel,
 };
