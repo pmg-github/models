@@ -9,5 +9,6 @@ export interface BoRedirectsDetailModel {
     name: string;
     url: string;
     targetUrl: string;
+    remarks: string;
     permanent: boolean;
 }
