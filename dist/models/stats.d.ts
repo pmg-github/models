@@ -55,6 +55,7 @@ export interface ArticleStatsListViewModel {
     customer: CompanyCardViewModel;
     articleTitle: string;
     articleType: string;
+    portalDomain: string;
     SortValue: number;
     views: {
         nl: number;
