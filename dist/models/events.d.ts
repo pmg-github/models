@@ -19,18 +19,19 @@ export interface PageEditorListView {
     description: string;
     enabled: boolean;
 }
+export interface PageEditorBlockDetailView {
+    id: number;
+    key: string;
+    props: JSON;
+    visibleFrom: string;
+    visibleUntil: string;
+    enabled: boolean;
+}
 export interface PageEditorDetailView {
     id: number;
     title: string;
     description: string;
     layout: string;
     isEnabled: number;
-    blocks: {
-        id: number;
-        key: string;
-        props: JSON;
-        visibleFrom: string;
-        visibleUntil: string;
-        enabled: boolean;
-    }[];
+    blocks: PageEditorBlockDetailView[];
 }

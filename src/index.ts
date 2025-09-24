@@ -367,7 +367,7 @@ import {
   CartUpdateItemRequest,
   CartUpdateRequest,
 } from "./models/webshop";
-import { EventPageListView, PageEditorDetailView, PageEditorListView } from "./models/events";
+import { EventPageListView, PageEditorBlockDetailView, PageEditorDetailView, PageEditorListView } from "./models/events";
 
 export {
   ToolDetailView,
@@ -640,4 +640,5 @@ export {
   BoRedirectsDetailModel,
   PageEditorListView,
   PageEditorDetailView,
+  PageEditorBlockDetailView,
 };
