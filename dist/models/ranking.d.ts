@@ -13,3 +13,10 @@ export interface RankingInteresses {
     description: string;
     project: string;
 }
+export interface RankingMagazineMetaDataViewModel {
+    title: string;
+    description: string | null;
+    searchPlaceholder: string | null;
+    category: string | null;
+    currentProject: string | null;
+}
