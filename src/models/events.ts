@@ -10,3 +10,13 @@ export interface EventPageListView {
     props: JSON;
   }[];
 }
+
+export interface PageEditorListView {
+  id: number;
+  reference: string;
+  title: string;
+  language: string;
+  layout: string;
+  description: string;
+  enabled: boolean;
+}
