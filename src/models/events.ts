@@ -23,7 +23,7 @@ export interface PageEditorListView {
 export interface PageEditorBlockDetailView {
   id: number;
   key: string;
-  props: object;
+  props: Object;
   visibleFrom: string;
   visibleUntil: string;
   enabled: boolean;
