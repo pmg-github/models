@@ -34,6 +34,6 @@ export interface PageEditorDetailView {
     title: string;
     description: string;
     language: string;
-    isEnabled: number;
+    isEnabled: boolean;
     blocks: PageEditorBlockDetailView[];
 }
