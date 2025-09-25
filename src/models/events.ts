@@ -23,16 +23,18 @@ export interface PageEditorListView {
 export interface PageEditorBlockDetailView {
   id: number;
   key: string;
-  props: Object;
+  props: JSON;
   visibleFrom: string;
   visibleUntil: string;
   enabled: boolean;
 }
 export interface PageEditorDetailView {
   id: number;
+  slug: string;
+  layout: string;
   title: string;
   description: string;
-  layout: string;
+  language: string;
   isEnabled: number;
   blocks: PageEditorBlockDetailView[];
 }
