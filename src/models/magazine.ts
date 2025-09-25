@@ -56,6 +56,8 @@ export class ViewerAdBaseViewModel {
   imageUrl: string | undefined = undefined;
   redirectUrl: string | null | undefined = undefined;
   customerReference: string | undefined = undefined;
+  isVideo: boolean | undefined = undefined;
+  isCover: boolean | undefined = undefined;
 }
 
 export class ViewerCustomerTileViewModel {
@@ -100,8 +102,8 @@ export class MagazineArticleViewModel extends ViewerArticleBaseViewModel {
   contact: ArticleContact[] = [];
 }
 export class MagazineAdViewModel extends ViewerAdBaseViewModel {
-  pubCode?:string=undefined
-  orderLineNumber?:string=undefined
+  pubCode?: string = undefined;
+  orderLineNumber?: string = undefined;
 }
 export class MagazineCustomerTileViewModel extends ViewerCustomerTileViewModel {}
 export class MagazineMetaDataViewModel extends ViewerMetaDataViewModel {
