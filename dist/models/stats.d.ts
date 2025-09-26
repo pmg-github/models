@@ -104,12 +104,12 @@ export interface NewsletterStatsListViewModel {
         fr: number;
         total: number;
     };
-    clicks: {
+    views: {
         nl: number;
         fr: number;
         total: number;
     };
-    uniqueClicks: {
+    uniqueViews: {
         nl: number;
         fr: number;
         total: number;
@@ -120,16 +120,6 @@ export interface NewsletterStatsListViewModel {
         total: number;
     };
     uniqueOpenedNoBot?: {
-        nl: number;
-        fr: number;
-        total: number;
-    };
-    clicksNoBot?: {
-        nl: number;
-        fr: number;
-        total: number;
-    };
-    uniqueClicksNoBot?: {
         nl: number;
         fr: number;
         total: number;
