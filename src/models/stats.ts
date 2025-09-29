@@ -47,6 +47,26 @@ export interface PubsStatsListViewModel {
     fr: number;
     total: number;
   };
+  opened: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  uniqueOpened: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  openedNoBot?: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  uniqueOpenedNoBot?: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
 }
 export interface ArticleStatsListViewModel {
   id: number;
