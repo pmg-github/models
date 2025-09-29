@@ -4,6 +4,7 @@ export interface EventPageListView {
     description: string;
     layout: string;
     isEnabled: number;
+    color: string;
     blocks: {
         id: number;
         key: string;
@@ -29,6 +30,7 @@ export interface PageEditorBlockDetailView {
 }
 export interface PageEditorDetailView {
     id: number;
+    color: string;
     slug: string;
     layout: string;
     title: string;
