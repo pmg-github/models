@@ -57,12 +57,12 @@ export interface PubsStatsListViewModel {
     fr: number;
     total: number;
   };
-  openedNoBot?: {
+  openedNoBot: {
     nl: number;
     fr: number;
     total: number;
   };
-  uniqueOpenedNoBot?: {
+  uniqueOpenedNoBot: {
     nl: number;
     fr: number;
     total: number;
