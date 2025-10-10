@@ -196,7 +196,7 @@ import {
   PopupModel,
 } from "./models/popup";
 
-import { BadmailsListView } from "./models/badmails";
+import { BadmailsDetailView, BadmailsListView } from "./models/badmails";
 
 import {
   AboDetailViewModel,
@@ -652,4 +652,5 @@ export {
   PageEditorDetailView,
   PageEditorBlockDetailView,
   BadmailsListView,
+  BadmailsDetailView,
 };
