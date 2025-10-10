@@ -21,6 +21,7 @@ export interface ProductViewModel {
     categoryIds: number[] | undefined | null;
     orderByValue: string;
     maxQuantity: number | null;
+    alreadyBought: boolean | undefined;
 }
 export declare enum ProductCategoryEnum {
     PRINT_ABONNEMENTEN = 1,

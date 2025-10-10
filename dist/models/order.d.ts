@@ -59,7 +59,7 @@ export interface OrderLineViewModel {
     totalPriceInclVat: number;
     totalVat: number;
     productCategoryIds: number[] | undefined | null;
-    JSONData: object | null | undefined;
+    JSONData: any | null | undefined;
     maxQuantity: number | null;
 }
 export interface OrderVatTotal {

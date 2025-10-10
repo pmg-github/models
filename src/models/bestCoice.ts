@@ -54,18 +54,69 @@ export interface BestChoiceSpecInputs {
       code: number;
       length: number | null;
       info: string | null;
-      values:SelectOptionViewModel[]
-      required:boolean
+      values: SelectOptionViewModel[];
+      required: boolean;
     }[];
   }[];
 }
 
-export interface BestChoiceDocuments{
-  images:FileListViewModel[]
-  documents:FileListViewModel[]
+export interface BestChoiceDocuments {
+  images: FileListViewModel[];
+  documents: FileListViewModel[];
 }
 
-export interface BestChoiceParticipationReturn{
-  uid:string
-  id:number
+export interface BestChoiceParticipationReturn {
+  uid: string;
+  id: number;
+}
+
+export interface BestChoiceTileViewModel {
+  id: number;
+  reference: string;
+  title: string;
+  type: number;
+  description: string;
+  isPremium: boolean;
+  fileId: number;
+  imageUrl: string;
+  // orderByValue: string | undefined = undefined;
+  portalDomain?: string;
+  customerReference?: string | null;
+  displayDate: string;
+  customerName: string | null;
+  customerCity: string | null;
+  project:string
+}
+
+export interface BestChoiceProductViewModel {
+  id: number;
+  brand: string;
+  type: string;
+  imageUrl: string;
+  specs: {
+    id: number;
+    participantId:number
+    score:string|number|boolean
+  }[];
+}
+export interface BestChoiceTipsViewModel {
+  videoCode: string;
+  title: string;
+}
+export interface BestChoiceDealsViewModel {
+  id: number;
+  reference: string;
+  title: string;
+  imageUrl: string;
+  redirectUrl: string;
+}
+export interface BestChoiceSpecsViewModel {
+  id: number;
+  name: string;
+  unit: string;
+  type: string;
+}
+
+export interface BestChoiceInfoViewModel extends BestChoiceTileViewModel {
+  videoCode:string|null;
 }

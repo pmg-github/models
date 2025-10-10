@@ -50,6 +50,8 @@ export declare class ViewerAdBaseViewModel {
     imageUrl: string | undefined;
     redirectUrl: string | null | undefined;
     customerReference: string | undefined;
+    isVideo: boolean | undefined;
+    isCover: boolean | undefined;
 }
 export declare class ViewerCustomerTileViewModel {
     customerReference: string | undefined;

@@ -49,6 +49,8 @@ class ViewerAdBaseViewModel {
     imageUrl = undefined;
     redirectUrl = undefined;
     customerReference = undefined;
+    isVideo = undefined;
+    isCover = undefined;
 }
 exports.ViewerAdBaseViewModel = ViewerAdBaseViewModel;
 class ViewerCustomerTileViewModel {

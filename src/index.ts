@@ -293,11 +293,17 @@ import { FetchOpts } from "./models/request";
 import { Issuers } from "./models/mollie";
 import {
   BestChoiceCategories,
+  BestChoiceDealsViewModel,
   BestChoiceDocuments,
   BestChoiceEditModel,
+  BestChoiceInfoViewModel,
   BestChoiceParticipationReturn,
   BestChoiceParticipationView,
+  BestChoiceProductViewModel,
   BestChoiceSpecInputs,
+  BestChoiceSpecsViewModel,
+  BestChoiceTileViewModel,
+  BestChoiceTipsViewModel,
 } from "./models/bestCoice";
 import {
   ToolDetailView,
@@ -354,6 +360,11 @@ import {
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
 import {
+  BoRedirectsDetailModel,
+  BoRedirectsListModel,
+} from "./models/redirects";
+
+import {
   CartAddItemRequest,
   CartBaseRequest,
   CartDeleteItemRequest,
@@ -361,7 +372,12 @@ import {
   CartUpdateItemRequest,
   CartUpdateRequest,
 } from "./models/webshop";
-import { EventPageListView } from "./models/events";
+import {
+  EventPageListView,
+  PageEditorBlockDetailView,
+  PageEditorDetailView,
+  PageEditorListView,
+} from "./models/events";
 
 export {
   ToolDetailView,
@@ -624,5 +640,16 @@ export {
   SubmitVote,
   // ParticipantDetailViewModel,
   ParticipantDetailPageViewModel,
+  BestChoiceTileViewModel,
+  BestChoiceProductViewModel,
+  BestChoiceTipsViewModel,
+  BestChoiceDealsViewModel,
+  BestChoiceSpecsViewModel,
+  BestChoiceInfoViewModel,
+  BoRedirectsListModel,
+  BoRedirectsDetailModel,
+  PageEditorListView,
+  PageEditorDetailView,
+  PageEditorBlockDetailView,
   BadmailsListView,
 };
