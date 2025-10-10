@@ -4,7 +4,7 @@ export interface BadmailsListView {
     email: string;
     company: string;
     companyNr: string;
-    firstNaam: string;
+    firstName: string;
     lastName: string;
     function: string;
     updatedAt: string | Date;
