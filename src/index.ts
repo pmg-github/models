@@ -174,7 +174,7 @@ import {
   Gender,
   PMGCompanyListModel,
   ContractTypeListModel,
-  CivilStatusListModel
+  CivilStatusListModel,
 } from "./models/employee";
 
 import { PromptListModel } from "./models/prompt";
@@ -195,6 +195,8 @@ import {
   CreatePopupDto,
   PopupModel,
 } from "./models/popup";
+
+import { BadmailsListView } from "./models/badmails";
 
 import {
   AboDetailViewModel,
@@ -317,7 +319,12 @@ import { PMGTeamMemberViewModel } from "./models/contacts";
 import { CommunityViewModel } from "./models/community";
 
 import { PeriodFilterEnum } from "./models/period";
-import { ElectionsViewModel, ParticipantDetailPageViewModel, SelectedParticipants, SubmitVote } from "./models/elections";
+import {
+  ElectionsViewModel,
+  ParticipantDetailPageViewModel,
+  SelectedParticipants,
+  SubmitVote,
+} from "./models/elections";
 
 import {
   BoVideoDetailViewModel,
@@ -617,4 +624,5 @@ export {
   SubmitVote,
   // ParticipantDetailViewModel,
   ParticipantDetailPageViewModel,
+  BadmailsListView,
 };
