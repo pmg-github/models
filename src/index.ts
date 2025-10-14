@@ -17,6 +17,9 @@ import {
   BcArticleIntresseReachModel,
   BcListingDetailModel,
   bcListingListModel,
+  BoArticleMetaDataModel,
+  BoArticleFileModel,
+  BoArticleProductModel,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -587,6 +590,9 @@ export {
   BoDigitalMagazines,
   BoDigitalMagazinesArticles,
   BoDigitalMagazinesDetail,
+  BoArticleFileModel,
+  BoArticleMetaDataModel,
+  BoArticleProductModel,
   Issuers,
   ProductViewModel,
   ProductCategoryEnum,

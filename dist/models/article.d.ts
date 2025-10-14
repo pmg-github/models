@@ -194,4 +194,61 @@ export interface BoArticleJobTask {
     startDate: Date;
     parentCode: string;
 }
+export interface BoArticleMetaDataModel {
+    id: number;
+    typeId: number;
+    reference: string;
+    language: string;
+    portalCode: string;
+    statusId: number;
+    title: string;
+    newsletterTitle: string;
+    printTitle: string;
+    description: string;
+    keywords: string;
+    fileId: number | null;
+    fileUrl: string | null;
+    displayDate: string | Date;
+    displayAuthor: string;
+    availableFrom: string | Date | null;
+    availableUntil: string | Date | null;
+    creatorParentCode: string;
+    updaterParentCode: string;
+    ownerParentCode: string;
+    translatorParentCode: string;
+    newsletterMoreLabel: string;
+    productId: number | null;
+}
+export interface BoArticleFileModel {
+    fileId: number;
+    fileUrl: string;
+    extension: string;
+    securityTypeId: number;
+    altText: string | null;
+}
+export interface BoArticleProductModel {
+    id: number;
+    statusId: number;
+    supplierId: number;
+    isDelivery: boolean | number;
+    deliveryTimeId: number | null;
+    deliveryPriceId: number | null;
+    price: number;
+    oldPrice: number | null;
+    aboPrice: number | null;
+    vat: number;
+    aboTypeId: number | null;
+    aboVariationId: number | null;
+    creditsPortalId: number | null;
+    hasCredits: boolean | number;
+    creditsAmount: number | null;
+    creditTypeId: number | null;
+    hasCredits2: boolean | number;
+    creditsAmount2: number | null;
+    creditTypeId2: number | null;
+    creditsPrice: number | null;
+    creditsPriceTypeId: number | null;
+    maxInBasket: number | null;
+    magazineCode: string | null;
+}
 export {};
