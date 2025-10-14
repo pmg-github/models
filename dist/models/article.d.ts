@@ -198,6 +198,7 @@ export interface BoArticleMetaDataModel {
     id: number;
     typeId: number;
     reference: string;
+    jobCode: string;
     language: string;
     portalCode: string;
     statusId: number;
