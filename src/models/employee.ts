@@ -9,6 +9,12 @@ import {
   IsIBAN,
   IsIn,
   Matches,
+  IsArray,
+  isInt,
+  isDecimal,
+  isString,
+  IsDecimal,
+  IsInt,
 } from "class-validator";
 
 export interface EmployeesSearchListModel {
@@ -23,8 +29,8 @@ export interface EmployeesSearchListModel {
 }
 
 export interface EmployeesSearchCursorListModel {
-  nextCursor:string
-  content:EmployeesSearchListModel[]
+  nextCursor: string;
+  content: EmployeesSearchListModel[];
 }
 
 export interface EmployeeDetailModel {
@@ -52,21 +58,40 @@ export interface EmployeeWorkSchedule {
   };
 }
 
+export interface EmployeeDetailViewModel {
+  code: string;
+  firstName: string;
+  lastName: string;
+  internNumber: string;
+
+  /*
+  code: string;
+  firstName: string;
+  lastName: string;
+  internalPhoneNumber: string;
+  teamName: string;
+  functionName: string;
+  presenceStatus: string;
+  lastActivityTime: string;
+  */
+}
+
 export enum Gender {
-  M = "M",
-  F = "F",
+  Male = "M",
+  Female = "V",
 }
-export interface PMGCompanyListModel{
+
+export interface PMGCompanyListModel {
   code: string;
   name: string;
 }
 
-export interface CivilStatusListModel{
+export interface CivilStatusListModel {
   code: string;
   name: string;
 }
 
-export interface ContractTypeListModel{
+export interface ContractTypeListModel {
   code: string;
   name: string;
 }
@@ -85,23 +110,26 @@ export interface EmployeeTeamListModel {
 const RRNR_REGEX = /^(?:\d{2}\.\d{2}\.\d{2}-\d{3}\.\d{2}|\d{11})$/;
 
 export class CreateEmployee {
-  @IsString()  @Matches(/^[A-Za-z]{3}$/, { message: "parentCode must be exactly 3 letters (A–Z)" }) parentCode!: string;
+  @IsString()
+  @Matches(/^[A-Za-z]{3}$/, {
+    message: "parentCode must be exactly 3 letters (A–Z)",
+  })
+  parentCode!: string;
 
   @IsOptional() @IsString() internNumber?: string;
 
-  @IsOptional() @IsString() PMGCompany?: string;
-
+  @IsOptional() @IsString() pmgCompany?: string;
 
   @IsOptional() @IsString() timeTable?: string;
 
-  @IsOptional() @IsString() lastName?: string;
+  @IsString() lastName!: string;
   @IsOptional() @IsString() firstName?: string;
 
   @IsEnum(Gender) gender?: Gender;
 
   // Address
-  @IsOptional() @IsString() streetAdres?: string;
-  @IsOptional() @IsString() zipCode?: string;        // keep as string to preserve leading zeros
+  @IsOptional() @IsString() streetAddress?: string;
+  @IsOptional() @IsString() zipCode?: string; // keep as string to preserve leading zeros
   @IsOptional() @IsString() city?: string;
 
   // Civil status
@@ -109,28 +137,28 @@ export class CreateEmployee {
   @IsOptional() @IsString() partner?: string;
 
   // Personal
-  @IsOptional() @IsDateString() birthDate?: string;  // ISO 8601 if you normalize
-  @IsOptional() @IsString()    birthPlace?: string;
+  @IsOptional() @IsDateString() birthDate?: string; // ISO 8601 if you normalize
+  @IsOptional() @IsString() birthPlace?: string;
 
   @IsOptional() @Matches(RRNR_REGEX) nationalRegistrationNumber?: string;
-  @IsOptional() @IsString()    sisKaart?: string;
+  @IsOptional() @IsString() sisKaart?: string;
 
   // Contacts
   @IsOptional() @IsString() phone?: string;
   @IsOptional() @IsString() mobile?: string;
-  @IsOptional() @IsIBAN()   bankAccount?: string;
-  @IsOptional() @IsEmail()  email?: string;
+  @IsOptional() @IsIBAN() bankAccount?: string;
+  @IsOptional() @IsEmail() email?: string;
 
   // Employment
-  @IsOptional() @IsDateString() startDate?: string;
+  @IsDateString() startDate!: string;
   @IsOptional() @IsDateString() permanentStartDate?: string;
   @IsOptional() @IsDateString() endDate?: string;
 
   @IsOptional() @IsString() contractType?: string;
 
   @IsOptional() @IsString() ownCompany?: string;
-  // Equipment / flags (DB often stores these as 0/1 → transform to boolean)
 
+  // Equipment / flags (DB often stores these as 0/1 → transform to boolean)
   @IsOptional() @IsBoolean() hasCompanyPhone?: boolean;
   @IsOptional() @IsBoolean() hasSimCard?: boolean;
   @IsOptional() @IsBoolean() hasVisa?: boolean;
@@ -142,24 +170,29 @@ export class CreateEmployee {
   @IsOptional() @IsBoolean() timeRegistration?: boolean;
 
   // Misc
-  @IsOptional() @IsString()  employeeNumber?: string;
-  @IsOptional() @IsString()  carPlate?: string;
+  @IsOptional() @IsString() employeeNumber?: string;
+  @IsOptional() @IsString() carPlate?: string;
 
-  @IsOptional() @IsString()  idCardNr?: string;
-  @IsOptional() @IsDateString() idCardValidFrom?: string;   // note: renamed for consistency
+  @IsOptional() @IsString() idCardNr?: string;
+  @IsOptional() @IsDateString() idCardValidFrom?: string;
   @IsOptional() @IsDateString() idCardValidUntil?: string;
 
   @IsOptional() @IsString() workplace?: string;
 
   @IsOptional() @IsNumber() personId?: number;
 
- // @IsOptional() @IsBoolean() isActive?: boolean;
+  @IsBoolean() isActive!: boolean;
   @IsOptional() @IsBoolean() allowSearch?: boolean;
 
-  @IsOptional() @IsIn(["nl", "fr", "en"]) languagePreference?: "nl" | "fr" | "en";
+  @IsOptional() @IsIn(["nl", "fr", "en"]) languagePreference?:
+    | "nl"
+    | "fr"
+    | "en";
+
+  @IsArray() functionCodes!: string[];
+  @IsArray() teamCodes!: string[];
 
   constructor(data: Partial<CreateEmployee>) {
     Object.assign(this, data);
   }
-
 }

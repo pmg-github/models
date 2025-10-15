@@ -17,6 +17,9 @@ import {
   BcArticleIntresseReachModel,
   BcListingDetailModel,
   bcListingListModel,
+  BoArticleMetaDataModel,
+  BoArticleFileModel,
+  BoArticleProductModel,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -196,6 +199,8 @@ import {
   PopupModel,
 } from "./models/popup";
 
+import { BadmailsDetailView, BadmailsListView } from "./models/badmails";
+
 import {
   AboDetailViewModel,
   AboViewModel,
@@ -357,7 +362,10 @@ import {
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
 
-import { BoRedirectsDetailModel, BoRedirectsListModel } from "./models/redirects";
+import {
+  BoRedirectsDetailModel,
+  BoRedirectsListModel,
+} from "./models/redirects";
 
 import {
   CartAddItemRequest,
@@ -367,7 +375,12 @@ import {
   CartUpdateItemRequest,
   CartUpdateRequest,
 } from "./models/webshop";
-import { EventPageListView, PageEditorBlockDetailView, PageEditorDetailView, PageEditorListView } from "./models/events";
+import {
+  EventPageListView,
+  PageEditorBlockDetailView,
+  PageEditorDetailView,
+  PageEditorListView,
+} from "./models/events";
 
 export {
   ToolDetailView,
@@ -577,6 +590,9 @@ export {
   BoDigitalMagazines,
   BoDigitalMagazinesArticles,
   BoDigitalMagazinesDetail,
+  BoArticleFileModel,
+  BoArticleMetaDataModel,
+  BoArticleProductModel,
   Issuers,
   ProductViewModel,
   ProductCategoryEnum,
@@ -641,4 +657,6 @@ export {
   PageEditorListView,
   PageEditorDetailView,
   PageEditorBlockDetailView,
+  BadmailsListView,
+  BadmailsDetailView,
 };

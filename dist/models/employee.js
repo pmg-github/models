@@ -13,21 +13,21 @@ exports.CreateEmployee = exports.Gender = void 0;
 const class_validator_1 = require("class-validator");
 var Gender;
 (function (Gender) {
-    Gender["M"] = "M";
-    Gender["F"] = "F";
+    Gender["Male"] = "M";
+    Gender["Female"] = "V";
 })(Gender || (exports.Gender = Gender = {}));
 // Belgian Rijksregisternummer (basic check: 11 digits, optionally with separators like 00.00.00-000.00)
 const RRNR_REGEX = /^(?:\d{2}\.\d{2}\.\d{2}-\d{3}\.\d{2}|\d{11})$/;
 class CreateEmployee {
     parentCode;
     internNumber;
-    PMGCompany;
+    pmgCompany;
     timeTable;
     lastName;
     firstName;
     gender;
     // Address
-    streetAdres;
+    streetAddress;
     zipCode; // keep as string to preserve leading zeros
     city;
     // Civil status
@@ -63,13 +63,15 @@ class CreateEmployee {
     employeeNumber;
     carPlate;
     idCardNr;
-    idCardValidFrom; // note: renamed for consistency
+    idCardValidFrom;
     idCardValidUntil;
     workplace;
     personId;
-    // @IsOptional() @IsBoolean() isActive?: boolean;
+    isActive;
     allowSearch;
     languagePreference;
+    functionCodes;
+    teamCodes;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -77,7 +79,9 @@ class CreateEmployee {
 exports.CreateEmployee = CreateEmployee;
 __decorate([
     (0, class_validator_1.IsString)(),
-    (0, class_validator_1.Matches)(/^[A-Za-z]{3}$/, { message: "parentCode must be exactly 3 letters (A–Z)" }),
+    (0, class_validator_1.Matches)(/^[A-Za-z]{3}$/, {
+        message: "parentCode must be exactly 3 letters (A–Z)",
+    }),
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "parentCode", void 0);
 __decorate([
@@ -89,14 +93,13 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
-], CreateEmployee.prototype, "PMGCompany", void 0);
+], CreateEmployee.prototype, "pmgCompany", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "timeTable", void 0);
 __decorate([
-    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "lastName", void 0);
@@ -113,7 +116,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
-], CreateEmployee.prototype, "streetAdres", void 0);
+], CreateEmployee.prototype, "streetAddress", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
@@ -175,7 +178,6 @@ __decorate([
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "email", void 0);
 __decorate([
-    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsDateString)(),
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "startDate", void 0);
@@ -280,6 +282,10 @@ __decorate([
     __metadata("design:type", Number)
 ], CreateEmployee.prototype, "personId", void 0);
 __decorate([
+    (0, class_validator_1.IsBoolean)(),
+    __metadata("design:type", Boolean)
+], CreateEmployee.prototype, "isActive", void 0);
+__decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
@@ -289,3 +295,11 @@ __decorate([
     (0, class_validator_1.IsIn)(["nl", "fr", "en"]),
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "languagePreference", void 0);
+__decorate([
+    (0, class_validator_1.IsArray)(),
+    __metadata("design:type", Array)
+], CreateEmployee.prototype, "functionCodes", void 0);
+__decorate([
+    (0, class_validator_1.IsArray)(),
+    __metadata("design:type", Array)
+], CreateEmployee.prototype, "teamCodes", void 0);

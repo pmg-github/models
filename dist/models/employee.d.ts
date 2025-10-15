@@ -35,9 +35,15 @@ export interface EmployeeWorkSchedule {
         endHour: string | null;
     };
 }
+export interface EmployeeDetailViewModel {
+    code: string;
+    firstName: string;
+    lastName: string;
+    internNumber: string;
+}
 export declare enum Gender {
-    M = "M",
-    F = "F"
+    Male = "M",
+    Female = "V"
 }
 export interface PMGCompanyListModel {
     code: string;
@@ -62,12 +68,12 @@ export interface EmployeeTeamListModel {
 export declare class CreateEmployee {
     parentCode: string;
     internNumber?: string;
-    PMGCompany?: string;
+    pmgCompany?: string;
     timeTable?: string;
-    lastName?: string;
+    lastName: string;
     firstName?: string;
     gender?: Gender;
-    streetAdres?: string;
+    streetAddress?: string;
     zipCode?: string;
     city?: string;
     civilStatus?: string;
@@ -80,7 +86,7 @@ export declare class CreateEmployee {
     mobile?: string;
     bankAccount?: string;
     email?: string;
-    startDate?: string;
+    startDate: string;
     permanentStartDate?: string;
     endDate?: string;
     contractType?: string;
@@ -101,7 +107,10 @@ export declare class CreateEmployee {
     idCardValidUntil?: string;
     workplace?: string;
     personId?: number;
+    isActive: boolean;
     allowSearch?: boolean;
     languagePreference?: "nl" | "fr" | "en";
+    functionCodes: string[];
+    teamCodes: string[];
     constructor(data: Partial<CreateEmployee>);
 }
