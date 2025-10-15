@@ -45,5 +45,6 @@ export declare enum SecurityEnum {
     NEWSLETTER_UNAPPROVE = 45,
     NEWSLETTER_SOFT_DELETE = 46,
     InteresseAdministrators = 48,
-    STATS_MASTER = 49
+    STATS_MASTER = 49,
+    EVENTS_MASTER = 50
 }
