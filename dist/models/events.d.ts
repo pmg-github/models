@@ -38,4 +38,5 @@ export interface PageEditorDetailView {
     language: string;
     isEnabled: boolean;
     blocks: PageEditorBlockDetailView[];
+    projectCode: string;
 }

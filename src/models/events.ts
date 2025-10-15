@@ -31,7 +31,7 @@ export interface PageEditorBlockDetailView {
 }
 export interface PageEditorDetailView {
   id: number;
-  color:string;
+  color: string;
   slug: string;
   layout: string;
   title: string;
@@ -39,4 +39,5 @@ export interface PageEditorDetailView {
   language: string;
   isEnabled: boolean;
   blocks: PageEditorBlockDetailView[];
+  projectCode:string;
 }
