@@ -1,5 +1,5 @@
 export interface UnpaidInvoicesListModel {
-  id:string
+  id: string;
   pmgCompanyName: string;
   pmgCompanyFolder: string;
   customerNumber: string;
@@ -31,13 +31,13 @@ export interface UnpaidInvoicesListModel {
   invoiceFileUrl: string;
 }
 
-export interface UnpaidInvoicesStatsModel{
-  totalCount:number
-  totalInvoiceAmount:number
-  totalInvoiceUnpaidAmount:number
-  overdue30Days:number
-  overdue60Days:number
-  overdue90Days:number
+export interface UnpaidInvoicesStatsModel {
+  totalCount: number;
+  totalInvoiceAmount: number;
+  totalInvoiceUnpaidAmount: number;
+  overdue30Days: number;
+  overdue60Days: number;
+  overdue90Days: number;
 }
 
 export interface PmgCompanyList {
@@ -45,7 +45,43 @@ export interface PmgCompanyList {
   name: string;
 }
 
-export interface UnpaidInvoicesListModelWithCursor{
-  content:UnpaidInvoicesListModel[]
-  nextCursor:number
+export interface UnpaidInvoicesListModelWithCursor {
+  content: UnpaidInvoicesListModel[];
+  nextCursor: number;
+}
+
+export interface UnpaidInvoicesDocumentView {
+  unpaidInvoices: string;
+  emailTo: string;
+  emailExtra: string;
+  emailCustomer: string;
+  customerId: string;
+  customerNumber: string;
+  companyFolder: string;
+  companyReference: string;
+  companyName: string;
+  countryCode: string;
+  street: string;
+  city: string;
+  telephone: string;
+  vatNumber: string;
+  hrNumber: string;
+  bank: string;
+  iban: string;
+  bic: string;
+  debiteurenEmail: string;
+  customerCompanyName: string;
+  customerStreet: string;
+  customerStreetNumber: string;
+  customerStreetBoxNumber: string;
+  customerZipCode: string;
+  customerCity: string;
+  order: [
+    {
+      invoiceNumber: string;
+      invoiceDate: string;
+      invoiceExpirationDate: string;
+      invoiceAmount: string;
+    }
+  ];
 }

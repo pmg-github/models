@@ -187,6 +187,7 @@ import {
   PmgCompanyList,
   UnpaidInvoicesListModelWithCursor,
   UnpaidInvoicesStatsModel,
+  UnpaidInvoicesDocumentView,
 } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
@@ -659,4 +660,5 @@ export {
   PageEditorBlockDetailView,
   BadmailsListView,
   BadmailsDetailView,
+  UnpaidInvoicesDocumentView,
 };

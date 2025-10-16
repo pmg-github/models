@@ -46,3 +46,38 @@ export interface UnpaidInvoicesListModelWithCursor {
     content: UnpaidInvoicesListModel[];
     nextCursor: number;
 }
+export interface UnpaidInvoicesDocumentView {
+    unpaidInvoices: string;
+    emailTo: string;
+    emailExtra: string;
+    emailCustomer: string;
+    customerId: string;
+    customerNumber: string;
+    companyFolder: string;
+    companyReference: string;
+    companyName: string;
+    countryCode: string;
+    street: string;
+    city: string;
+    telephone: string;
+    vatNumber: string;
+    hrNumber: string;
+    bank: string;
+    iban: string;
+    bic: string;
+    debiteurenEmail: string;
+    customerCompanyName: string;
+    customerStreet: string;
+    customerStreetNumber: string;
+    customerStreetBoxNumber: string;
+    customerZipCode: string;
+    customerCity: string;
+    order: [
+        {
+            invoiceNumber: string;
+            invoiceDate: string;
+            invoiceExpirationDate: string;
+            invoiceAmount: string;
+        }
+    ];
+}
