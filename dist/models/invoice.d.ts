@@ -72,12 +72,10 @@ export interface UnpaidInvoicesDocumentView {
     customerStreetBoxNumber: string;
     customerZipCode: string;
     customerCity: string;
-    order: [
-        {
-            invoiceNumber: string;
-            invoiceDate: string;
-            invoiceExpirationDate: string;
-            invoiceAmount: string;
-        }
-    ];
+    order: {
+        invoiceNumber: string;
+        invoiceDate: string;
+        invoiceExpirationDate: string;
+        invoiceAmount: string;
+    }[];
 }
