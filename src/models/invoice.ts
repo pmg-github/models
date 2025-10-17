@@ -51,7 +51,7 @@ export interface UnpaidInvoicesListModelWithCursor {
 }
 
 export interface UnpaidInvoicesDocumentView {
-  unpaidInvoices: string;
+  unpaidInvoices: number;
   emailTo: string;
   emailExtra: string;
   emailCustomer: string;
