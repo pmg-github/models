@@ -281,6 +281,7 @@ import {
 
 import { SecurityEnum } from "./models/security";
 import {
+  DummyPubListView,
   PubsDetailView,
   PubsListCursorView,
   PubsListView,
@@ -661,4 +662,5 @@ export {
   BadmailsListView,
   BadmailsDetailView,
   UnpaidInvoicesDocumentView,
+  DummyPubListView,
 };

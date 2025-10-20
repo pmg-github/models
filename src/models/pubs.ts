@@ -40,3 +40,10 @@ export interface PubsSortView {
   moreText?: string;
   moreUrl?: string;
 }
+
+export interface DummyPubListView {
+  id:number
+  pubCode: string;
+  dateFrom: string;
+  dateUntil: string;
+}
