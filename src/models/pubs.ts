@@ -48,9 +48,10 @@ export interface DummyPubListView {
   dateUntil: string;
 }
 export interface DummyPubDetailView {
-  id:number
+  id: number;
   pubCode: SelectOptionViewModel;
-  dateFrom: string;
-  dateUntil: string;
-  portalCode:string[]
+  dateFrom?: string;
+  dateUntil?: string;
+  portalCode: string[];
+  description?: string;
 }
