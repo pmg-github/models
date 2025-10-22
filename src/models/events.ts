@@ -24,7 +24,7 @@ export interface PageEditorListView {
 export interface PageEditorBlockDetailView {
   id: number;
   key: string;
-  props: JSON;
+  props: any;
   visibleFrom: string;
   visibleUntil: string;
   enabled: boolean;
