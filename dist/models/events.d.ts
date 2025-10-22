@@ -39,4 +39,6 @@ export interface PageEditorDetailView {
     isEnabled: boolean;
     blocks: PageEditorBlockDetailView[];
     projectCode: string;
+    availableFrom: string;
+    availableUntil: string;
 }

@@ -39,5 +39,7 @@ export interface PageEditorDetailView {
   language: string;
   isEnabled: boolean;
   blocks: PageEditorBlockDetailView[];
-  projectCode:string;
+  projectCode: string;
+  availableFrom: string;
+  availableUntil: string;
 }
