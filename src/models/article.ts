@@ -279,10 +279,10 @@ export interface BoArticleMetaDataModel {
   displayAuthor: string;
   availableFrom: string | Date | null;
   availableUntil: string | Date | null;
-  creatorParentCode: PmgUserInterface;
-  updaterParentCode: PmgUserInterface;
-  ownerParentCode: PmgUserInterface;
-  translatorParentCode: PmgUserInterface;
+  creator: PmgUserInterface;
+  updater: PmgUserInterface;
+  owner: PmgUserInterface;
+  translator: PmgUserInterface;
   newsletterMoreLabel: string;
   productId: number | null;
   updatedAt: Date;
