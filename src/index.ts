@@ -187,6 +187,7 @@ import {
   PmgCompanyList,
   UnpaidInvoicesListModelWithCursor,
   UnpaidInvoicesStatsModel,
+  UnpaidInvoicesDocumentView,
 } from "./models/invoice";
 import { BoPageSearchListModel } from "./models/bopage";
 import { BoMenuDetailListModel, BoMenuListModel } from "./models/bomenu";
@@ -280,6 +281,8 @@ import {
 
 import { SecurityEnum } from "./models/security";
 import {
+  DummyPubDetailView,
+  DummyPubListView,
   PubsDetailView,
   PubsListCursorView,
   PubsListView,
@@ -659,4 +662,7 @@ export {
   PageEditorBlockDetailView,
   BadmailsListView,
   BadmailsDetailView,
+  UnpaidInvoicesDocumentView,
+  DummyPubListView,
+  DummyPubDetailView,
 };

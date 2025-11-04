@@ -24,14 +24,14 @@ export interface PageEditorListView {
 export interface PageEditorBlockDetailView {
   id: number;
   key: string;
-  props: JSON;
+  props: any;
   visibleFrom: string;
   visibleUntil: string;
   enabled: boolean;
 }
 export interface PageEditorDetailView {
   id: number;
-  color:string;
+  color: string;
   slug: string;
   layout: string;
   title: string;
@@ -39,4 +39,7 @@ export interface PageEditorDetailView {
   language: string;
   isEnabled: boolean;
   blocks: PageEditorBlockDetailView[];
+  projectCode: string;
+  dateFrom: string;
+  dateUntil: string;
 }

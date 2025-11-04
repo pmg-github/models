@@ -279,12 +279,13 @@ export interface BoArticleMetaDataModel {
   displayAuthor: string;
   availableFrom: string | Date | null;
   availableUntil: string | Date | null;
-  creatorParentCode: string;
-  updaterParentCode: string;
-  ownerParentCode: string;
-  translatorParentCode: string;
+  creator: PmgUserInterface;
+  updater: PmgUserInterface;
+  owner: PmgUserInterface;
+  translator: PmgUserInterface;
   newsletterMoreLabel: string;
   productId: number | null;
+  updatedAt: Date;
 }
 
 export interface BoArticleFileModel {

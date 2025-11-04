@@ -58,7 +58,7 @@ export interface ArticleContact {
     functionNl?: string;
     functionFr?: string;
 }
-import { PmgUserModel } from "./pmguser";
+import { PmgUserInterface, PmgUserModel } from "./pmguser";
 import { SelectOptionViewModel } from "./selectoption";
 export interface BoArticleListModel {
     id: number;
@@ -213,12 +213,13 @@ export interface BoArticleMetaDataModel {
     displayAuthor: string;
     availableFrom: string | Date | null;
     availableUntil: string | Date | null;
-    creatorParentCode: string;
-    updaterParentCode: string;
-    ownerParentCode: string;
-    translatorParentCode: string;
+    creator: PmgUserInterface;
+    updater: PmgUserInterface;
+    owner: PmgUserInterface;
+    translator: PmgUserInterface;
     newsletterMoreLabel: string;
     productId: number | null;
+    updatedAt: Date;
 }
 export interface BoArticleFileModel {
     fileId: number;

@@ -26,11 +26,11 @@ export interface BoVideoListViewModel {
   id: number;
   origin: string;
   jobNr: string;
-  languageCode: string;
+  language: string;
   updatedAt: string;
   status: string;
   statusId: number;
-  voiceOverLanguageCode: string;
-  subTitlesLanguageCode: string;
+  voiceOverLanguage: string;
+  subTitlesLanguage: string;
   videoUrl:string
 }

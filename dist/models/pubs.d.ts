@@ -35,3 +35,17 @@ export interface PubsSortView {
     moreText?: string;
     moreUrl?: string;
 }
+export interface DummyPubListView {
+    id: number;
+    pubCode: string;
+    dateFrom: string;
+    dateUntil: string;
+}
+export interface DummyPubDetailView {
+    id: number;
+    pubCode: SelectOptionViewModel;
+    dateFrom?: string;
+    dateUntil?: string;
+    portalCode: string[];
+    description?: string;
+}

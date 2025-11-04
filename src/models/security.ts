@@ -46,4 +46,6 @@ export enum SecurityEnum {
   NEWSLETTER_SOFT_DELETE = 46,
   InteresseAdministrators = 48,
   STATS_MASTER = 49,
+  EVENTS_MASTER = 50,
+  ADVANCED_ARTICLE_TYPES = 51,
 }
