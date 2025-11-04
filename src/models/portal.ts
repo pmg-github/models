@@ -5,13 +5,14 @@ export interface PortalViewModel {
   title: string;
   domain: string;
   logo: string;
+  hasVatOnProducts: boolean | number | undefined;
 }
 export interface BoPortalViewModel {
   id: number;
   code: string;
   title: string;
   domain: string;
-  hasSecurity:boolean;
+  hasSecurity: boolean;
   countInteresses: number;
   countContext: number;
 }
@@ -25,11 +26,10 @@ export interface PortalCarouselViewModel {
   src: string;
   name: string;
 }
-
 export interface BoPortalContextInteresses {
   code: string;
   name: string;
-  creator:string;
+  creator: string;
   interesses: { code: string; name: string }[];
 }
 export interface BoPortalContextPortal {
