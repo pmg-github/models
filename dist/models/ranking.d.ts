@@ -6,6 +6,7 @@ export interface rankingTypes {
     translationKey: string;
     interesseSoort: string;
     currentProject: string;
+    cover: string;
 }
 export interface RankingInteresses {
     reference: string;
