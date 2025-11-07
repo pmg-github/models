@@ -5,6 +5,7 @@ export interface PortalViewModel {
     title: string;
     domain: string;
     logo: string;
+    hasVatOnProducts: boolean | number | undefined;
 }
 export interface BoPortalViewModel {
     id: number;
