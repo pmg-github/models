@@ -108,3 +108,15 @@ export class MemberCreateRequest {
     Object.assign(this, data);
   }
 }
+
+export interface MemberDiscount {
+  id: number;
+  code: string;
+  name: string;
+  discountPercentage: string; // Somehow MySQL decimals are parsed as a string when using knex (result of mysql driver, done to prevent prevision loss)
+  startsAt: Date | string | null;
+  endsAt: Date | string | null;
+  isSingleUse: boolean | number;
+  usedAt: Date | string | null;
+  productIds: number[] | null;
+}

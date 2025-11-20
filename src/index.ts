@@ -345,7 +345,7 @@ import {
   BoVideoViewModelWitCursorAndContent,
 } from "./models/video";
 
-import { MemberCreateRequest } from "./models/member";
+import { MemberCreateRequest, MemberDiscount } from "./models/member";
 
 import { AdvertisementListViewModel } from "./models/advertisements";
 
@@ -617,6 +617,7 @@ export {
   BoPopupDetailView,
   CreatePopupDto,
   MemberCreateRequest,
+  MemberDiscount,
   InteresseListView,
   NewsletterClusterModel,
   BoGroupsListWithCursorModel,

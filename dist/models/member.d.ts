@@ -31,3 +31,14 @@ export declare class MemberCreateRequest {
     invoiceAttention?: string | undefined;
     constructor(data: Partial<MemberCreateRequest>);
 }
+export interface MemberDiscount {
+    id: number;
+    code: string;
+    name: string;
+    discountPercentage: string;
+    startsAt: Date | string | null;
+    endsAt: Date | string | null;
+    isSingleUse: boolean | number;
+    usedAt: Date | string | null;
+    productIds: number[] | null;
+}
