@@ -118,5 +118,5 @@ export interface MemberDiscount {
   endsAt: Date | string | null;
   isSingleUse: boolean | number;
   usedAt: Date | string | null;
-  productIds: number[] | null;
+  productIds: number[];
 }
