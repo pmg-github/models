@@ -27,6 +27,9 @@ export class MemberCreateRequest {
   @IsNotEmpty()
   selectedAboProductId!: number;
 
+  @IsOptional()
+  discountCode?: string;
+
   @IsNotEmpty()
   @IsString()
   @IsEmail()

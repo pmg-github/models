@@ -3,6 +3,7 @@ export declare class MemberCreateRequest {
     language: string;
     portalCode: string;
     selectedAboProductId: number;
+    discountCode?: string;
     email: string;
     firstName?: string;
     lastName?: string;
