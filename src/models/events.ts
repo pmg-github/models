@@ -4,12 +4,14 @@ export interface EventPageListView {
   description: string;
   layout: string;
   isEnabled: number;
-  color:string;
+  color: string;
   blocks: {
     id: number;
     key: string;
     props: JSON;
   }[];
+  navigationIconUrl: string;
+  navigationJson: JSON;
 }
 
 export interface PageEditorListView {
