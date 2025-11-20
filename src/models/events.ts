@@ -10,8 +10,11 @@ export interface EventPageListView {
     key: string;
     props: JSON;
   }[];
-  navigationIconUrl: string;
-  navigationJson: JSON;
+  navigation: {
+    logoUrl: string;
+    items: { link: string; name: string; target: string }[];
+    search: number;
+  };
 }
 
 export interface PageEditorListView {
