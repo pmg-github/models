@@ -16,6 +16,7 @@ class MemberCreateRequest {
     language;
     portalCode;
     selectedAboProductId;
+    discountCode;
     email;
     firstName;
     lastName;
@@ -70,6 +71,10 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", Number)
 ], MemberCreateRequest.prototype, "selectedAboProductId", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", String)
+], MemberCreateRequest.prototype, "discountCode", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),

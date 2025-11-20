@@ -3,6 +3,7 @@ export declare class MemberCreateRequest {
     language: string;
     portalCode: string;
     selectedAboProductId: number;
+    discountCode?: string;
     email: string;
     firstName?: string;
     lastName?: string;
@@ -30,4 +31,15 @@ export declare class MemberCreateRequest {
     invoiceCountryCode?: string;
     invoiceAttention?: string | undefined;
     constructor(data: Partial<MemberCreateRequest>);
+}
+export interface MemberDiscount {
+    id: number;
+    code: string;
+    name: string;
+    discountPercentage: string;
+    startsAt: Date | string | null;
+    endsAt: Date | string | null;
+    isSingleUse: boolean | number;
+    usedAt: Date | string | null;
+    productIds: number[];
 }
