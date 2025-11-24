@@ -1,3 +1,4 @@
+import { SelectOptionViewModel } from "./selectoption";
 export interface EventPageListView {
     id: number;
     title: string;
@@ -50,4 +51,5 @@ export interface PageEditorDetailView {
     projectCode: string;
     dateFrom: string;
     dateUntil: string;
+    header: SelectOptionViewModel;
 }
