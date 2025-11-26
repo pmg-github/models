@@ -101,6 +101,7 @@ export type ArticleSearchOptions = {
   orderByType?: ArticleOrderByType;
   cursorArticle?: ViewerTileBaseViewModel;
   useNewsletterTitles?: boolean;
+  ignoreRelatedMags?: boolean;
   allowHiddenArticles?: boolean;
   useCache?: boolean;
 };
