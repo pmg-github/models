@@ -97,6 +97,7 @@ class ContactUpdateRequest {
     language;
     sex;
     newsletter;
+    riziv;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -132,6 +133,11 @@ __decorate([
     (0, class_validator_1.MaxLength)(4),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "newsletter", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], ContactUpdateRequest.prototype, "riziv", void 0);
 class EmailCodeRequest {
     email;
     portalCode;

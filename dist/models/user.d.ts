@@ -41,6 +41,7 @@ export declare class ContactUpdateRequest {
     language?: string;
     sex?: string;
     newsletter?: string;
+    riziv?: number;
     constructor(data: Partial<ContactUpdateRequest>);
 }
 export declare class EmailCodeRequest {

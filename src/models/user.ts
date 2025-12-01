@@ -1,6 +1,7 @@
 import {
   IsEmail,
   IsNotEmpty,
+  IsNumber,
   IsOptional,
   Length,
   MaxLength,
@@ -119,6 +120,10 @@ export class ContactUpdateRequest {
   @IsOptional()
   @MaxLength(4)
   newsletter?: string;
+
+  @IsOptional()
+  @IsNumber(ContactUpdateRequest)
+  riziv?: number;
 
   constructor(data: Partial<ContactUpdateRequest>) {
     Object.assign(this, data);
