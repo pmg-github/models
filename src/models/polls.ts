@@ -1,8 +1,4 @@
-import {
-  IsNotEmpty,
-  IsNumber,
-  IsString,
-} from "class-validator";
+import { IsNotEmpty, IsNumber, IsString } from "class-validator";
 
 export interface PubPollViewModel {
   id: number;
@@ -32,4 +28,12 @@ export class PubPollDto {
   constructor(data: Partial<PubPollDto>) {
     Object.assign(this, data);
   }
+}
+
+export interface BoPollViewListModel {
+  id: number;
+  question: string;
+  name: string;
+  status: string;
+  amountOfVotes: number;
 }

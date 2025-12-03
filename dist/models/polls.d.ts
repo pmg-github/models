@@ -15,3 +15,10 @@ export declare class PubPollDto {
     orderLineNumber?: string;
     constructor(data: Partial<PubPollDto>);
 }
+export interface BoPollViewListModel {
+    id: number;
+    question: string;
+    name: string;
+    status: string;
+    amountOfVotes: number;
+}

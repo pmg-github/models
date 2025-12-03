@@ -364,7 +364,7 @@ import {
 } from "./models/groups";
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
-import { PubPollDto, PubPollViewModel,  } from "./models/polls";
+import { BoPollViewListModel, PubPollDto, PubPollViewModel,  } from "./models/polls";
 
 import {
   BoRedirectsDetailModel,
@@ -669,4 +669,5 @@ export {
   DummyPubDetailView,
   PubPollDto,
   PubPollViewModel,
+  BoPollViewListModel,
 };
