@@ -122,7 +122,7 @@ export class ContactUpdateRequest {
   newsletter?: string;
 
   @IsOptional()
-  @IsNumber(ContactUpdateRequest)
+  @IsNumber()
   riziv?: number;
 
   constructor(data: Partial<ContactUpdateRequest>) {
