@@ -29,15 +29,13 @@ export interface BoPollViewModel {
     questionNl: string;
     questionFr: string;
     questionEn: string;
-    questionDe: string;
     name: string;
-    description: string;
+    description?: string;
     status: SelectOptionViewModel;
     answers: {
         id: number;
         answerNl: string;
         answerFr: string;
         answerEn: string;
-        answerDe: string;
     }[];
 }
