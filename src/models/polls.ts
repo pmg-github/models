@@ -1,16 +1,18 @@
 import { IsNotEmpty, IsNumber, IsString } from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
+import { CompanyCardViewModel } from "./company";
 
 export interface PubPollViewModel {
   id: number;
   question: string;
-  colorScheme: null;
+  colorScheme: string;
   amountOfVotes: number;
   answers: {
     id: number;
     answer: string;
     amountOfVotes: number;
   }[];
+  customer: CompanyCardViewModel;
 }
 
 export class PubPollDto {
