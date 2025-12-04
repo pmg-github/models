@@ -50,6 +50,7 @@ export interface BoPollViewModel {
   name: string;
   description?: string;
   status: SelectOptionViewModel;
+  color: SelectOptionViewModel;
   answers: {
     id: number;
     answerNl: string;
