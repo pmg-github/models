@@ -1,3 +1,4 @@
+import { SelectOptionViewModel } from "./selectoption";
 export interface PubPollViewModel {
     id: number;
     question: string;
@@ -21,4 +22,22 @@ export interface BoPollViewListModel {
     name: string;
     status: string;
     amountOfVotes: number;
+}
+export interface BoPollViewModel {
+    id: number;
+    jobCode: SelectOptionViewModel;
+    questionNl: string;
+    questionFr: string;
+    questionEn: string;
+    questionDe: string;
+    name: string;
+    description: string;
+    status: SelectOptionViewModel;
+    answers: {
+        id: number;
+        answerNl: string;
+        answerFr: string;
+        answerEn: string;
+        answerDe: string;
+    }[];
 }
