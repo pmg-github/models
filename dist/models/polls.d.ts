@@ -11,6 +11,7 @@ export interface PubPollViewModel {
         amountOfVotes: number;
     }[];
     customer: CompanyCardViewModel;
+    orderLineNumber: string;
 }
 export declare class PubPollDto {
     pollId: number;
