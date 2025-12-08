@@ -11,9 +11,11 @@ export interface PubPollViewModel {
     id: number;
     answer: string;
     amountOfVotes: number;
+    hasVoted: boolean;
   }[];
   customer: CompanyCardViewModel;
   orderLineNumber: string;
+  hasVoted: boolean;
 }
 
 export class PubPollDto {
