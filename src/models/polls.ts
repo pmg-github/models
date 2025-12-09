@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsNumber, IsString } from "class-validator";
+import { IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
 import { SelectOptionViewModel } from "./selectoption";
 import { CompanyCardViewModel } from "./company";
 
@@ -27,7 +27,7 @@ export class PubPollDto {
   @IsNumber()
   answerId!: number;
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsString()
   orderLineNumber?: string;
 
