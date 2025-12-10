@@ -43,6 +43,7 @@ export interface SupportTaskListViewModel {
     id: number;
     description: string;
     finished: boolean;
+    asigntUserId: number;
 }
 export interface SupportTicketIcalModel {
     id: number;

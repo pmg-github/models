@@ -31,7 +31,7 @@ export interface SupportTicketListViewModel {
   subject: string;
   description: string;
   priority: Priority;
-  bucket: SelectOptionViewModel|null;
+  bucket: SelectOptionViewModel | null;
   created_at: string;
   ticketNumber: string;
   connected_users_ids?: string;
@@ -41,14 +41,15 @@ export interface SupportTicketListViewModel {
   isRead: boolean;
   amountOfTasks?: number;
   amountOfFinishedTasks?: number;
-  deadline:string
-  endDate:string
-  startDate:string
+  deadline: string;
+  endDate: string;
+  startDate: string;
 }
 export interface SupportTaskListViewModel {
   id: number;
   description: string;
   finished: boolean;
+  asigntUserId: number;
 }
 export interface SupportTicketIcalModel {
   id: number;
@@ -89,8 +90,8 @@ export interface SupportTicketViewModel {
   files: returnFileResponse[];
   project: SelectOptionViewModel;
   bucket: string;
-  snooze?:Date
-  estimatedHours:number
+  snooze?: Date;
+  estimatedHours: number;
 }
 
 export interface returnFileResponse {
