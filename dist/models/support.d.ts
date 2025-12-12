@@ -68,6 +68,8 @@ export interface SupportTicketViewModel {
     id: number;
     user: PmgUserInterface;
     connected_users: PmgUserInterface[];
+    followers: PmgUserInterface[];
+    testers: PmgUserInterface[];
     category: string;
     status: string;
     subject: string;
