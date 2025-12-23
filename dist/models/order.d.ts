@@ -28,6 +28,7 @@ export interface OrderDetailViewModel {
     company: OrderCompanyViewModel | undefined;
     orderLines: OrderLineViewModel[];
     vatTotals: OrderVatTotal[];
+    attachmentUrls: string[] | undefined;
 }
 export interface OrderAddressViewModel {
     forAttention: string | undefined | null;
