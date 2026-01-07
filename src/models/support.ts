@@ -92,6 +92,7 @@ export interface SupportTicketViewModel {
   files: returnFileResponse[];
   project: SelectOptionViewModel;
   bucket: string;
+  triage: number;
   snooze?: Date;
   estimatedHours: number;
 }
