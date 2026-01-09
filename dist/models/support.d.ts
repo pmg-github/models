@@ -20,8 +20,12 @@ export interface SupportTicketListViewModelWhitCursorAndContent {
 export interface SupportTicketListViewModel {
     id: number;
     user: PmgUserInterface;
-    statusId: string;
+    statusId: number;
+    categoryId: number;
+    triage: number;
+    bucketId: number;
     subject: string;
+    description: string;
     priority: Priority;
     bucket: SelectOptionViewModel | null;
     created_at: string;
