@@ -74,9 +74,9 @@ export interface SupportTicketViewModel {
     categoryId: number;
     statusId: number;
     subject: string;
-    startDate: Date | string;
-    endDate: Date | string;
-    deadline: Date | string;
+    startDate?: Date | string;
+    endDate?: Date | string;
+    deadline?: Date | string;
     description: string;
     priority: Priority;
     created_at: string;
