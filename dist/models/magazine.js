@@ -7,6 +7,7 @@ exports.RelatedMagazineViewModel = exports.MagazineImageArticleCombinationViewMo
 class ViewerTileBaseViewModel {
     id;
     reference = undefined;
+    isVideo = undefined;
     title = undefined;
     type = undefined;
     description = undefined;

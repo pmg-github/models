@@ -2,6 +2,7 @@ import { ProductViewModel } from "./product";
 export declare class ViewerTileBaseViewModel {
     id: number;
     reference: string | undefined;
+    isVideo: boolean | undefined;
     title: string | undefined;
     type: number | undefined;
     description: string | undefined;
