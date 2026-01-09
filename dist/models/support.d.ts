@@ -23,7 +23,6 @@ export interface SupportTicketListViewModel {
     statusId: number;
     categoryId: number;
     triage: number;
-    bucketId: number;
     subject: string;
     description: string;
     priority: Priority;
