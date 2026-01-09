@@ -26,10 +26,8 @@ export interface SupportTicketListViewModelWhitCursorAndContent {
 export interface SupportTicketListViewModel {
   id: number;
   user: PmgUserInterface;
-  category: string;
-  status: string;
+  statusId: string;
   subject: string;
-  description: string;
   priority: Priority;
   bucket: SelectOptionViewModel | null;
   created_at: string;
@@ -79,8 +77,8 @@ export interface SupportTicketViewModel {
   connected_users: PmgUserInterface[];
   followers: PmgUserInterface[];
   testers: PmgUserInterface[];
-  category: string;
-  status: string;
+  categoryId: number;
+  statusId: number;
   subject: string;
   startDate: Date | string;
   endDate: Date | string;
