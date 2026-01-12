@@ -16,6 +16,7 @@ export interface PubPollViewModel {
   customer: CompanyCardViewModel;
   orderLineNumber: string;
   hasVoted: boolean;
+  url: string;
 }
 
 export class PubPollDto {
