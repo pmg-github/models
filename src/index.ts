@@ -385,6 +385,7 @@ import {
   PageEditorDetailView,
   PageEditorListView,
 } from "./models/events";
+import { BotDetectionResult } from "./models/napi";
 
 export {
   ToolDetailView,
@@ -670,4 +671,5 @@ export {
   PubPollDto,
   PubPollViewModel,
   BoPollViewListModel,
+  BotDetectionResult,
 };
