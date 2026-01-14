@@ -104,6 +104,7 @@ export type ArticleSearchOptions = {
   ignoreRelatedMags?: boolean;
   allowHiddenArticles?: boolean;
   useCache?: boolean;
+  isVideo?:boolean;
 };
 
 export interface ArticleContact {
