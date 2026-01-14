@@ -115,7 +115,9 @@ export class MagazineInteresseViewModel extends ViewerInteresseViewModel {}
 
 // NEWSLETTERS (in magazine project)
 export class NewsletterTileViewModel extends ViewerTileBaseViewModel {}
-export class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {}
+export class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
+  pollCode: string | undefined = undefined;
+}
 
 // SPECIFIC CLASSES (no inheritance needed since only used on)
 

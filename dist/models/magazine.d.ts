@@ -105,6 +105,7 @@ export declare class MagazineInteresseViewModel extends ViewerInteresseViewModel
 export declare class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
 export declare class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
+    pollCode: string | undefined;
 }
 export declare class MagazineImageArticleCombinationViewModel {
     reference: string | undefined;

@@ -111,6 +111,7 @@ class NewsletterTileViewModel extends ViewerTileBaseViewModel {
 }
 exports.NewsletterTileViewModel = NewsletterTileViewModel;
 class NewsletterMetaDataViewModel extends ViewerMetaDataViewModel {
+    pollCode = undefined;
 }
 exports.NewsletterMetaDataViewModel = NewsletterMetaDataViewModel;
 // SPECIFIC CLASSES (no inheritance needed since only used on)
