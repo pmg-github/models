@@ -53,6 +53,6 @@ exports.productOrderByData = {
     },
     [ProductOrderByType.DATE_DESC]: {
         column: "article.DisplayDate",
-        direction: "asc",
+        direction: "desc",
     },
 };
