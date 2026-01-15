@@ -403,7 +403,6 @@ export class NewsletterArticleSaveRequest {
 
 export class NewsletterPollAddRequest {
   @IsNotEmpty()
-  @Length(12, 12)
   pollCode!: string;
 
   @IsNotEmpty()

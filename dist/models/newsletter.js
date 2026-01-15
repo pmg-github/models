@@ -328,7 +328,6 @@ class NewsletterPollAddRequest {
 exports.NewsletterPollAddRequest = NewsletterPollAddRequest;
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Length)(12, 12),
     __metadata("design:type", String)
 ], NewsletterPollAddRequest.prototype, "pollCode", void 0);
 __decorate([
