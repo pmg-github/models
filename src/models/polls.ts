@@ -6,6 +6,7 @@ export interface PubPollViewModel {
   id: number;
   question: string;
   colorScheme: string;
+  reference: string;
   amountOfVotes: number;
   answers: {
     id: number;
