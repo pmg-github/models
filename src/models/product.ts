@@ -50,25 +50,34 @@ export enum ProductOrderByType {
   PRICE_ASC = "price-asc",
   PRICE_DESC = "price-desc",
   ALPHABETICAL = "alphabetical",
+  DATE_ASC = "date-asc",
+  DATE_DESC = "date-desc",
 }
 
-export const productOrderByData: { [key in ProductOrderByType]: OrderByType } =
-  {
-    // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
-    [ProductOrderByType.DEFAULT]: {
-      column: "productcategory_product.CategoryID",
-      direction: "desc",
-    },
-    [ProductOrderByType.PRICE_ASC]: {
-      column: "product.Price",
-      direction: "asc",
-    },
-    [ProductOrderByType.PRICE_DESC]: {
-      column: "product.Price",
-      direction: "desc",
-    },
-    [ProductOrderByType.ALPHABETICAL]: {
-      column: "article.Title",
-      direction: "asc",
-    },
-  };
+export const productOrderByData: { [key in ProductOrderByType]: OrderByType } = {
+  // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
+  [ProductOrderByType.DEFAULT]: {
+    column: "productcategory_product.CategoryID",
+    direction: "desc",
+  },
+  [ProductOrderByType.PRICE_ASC]: {
+    column: "product.Price",
+    direction: "asc",
+  },
+  [ProductOrderByType.PRICE_DESC]: {
+    column: "product.Price",
+    direction: "desc",
+  },
+  [ProductOrderByType.ALPHABETICAL]: {
+    column: "article.Title",
+    direction: "asc",
+  },
+  [ProductOrderByType.DATE_ASC]: {
+    column: "article.DisplayDate",
+    direction: "asc",
+  },
+  [ProductOrderByType.DATE_DESC]: {
+    column: "article.DisplayDate",
+    direction: "asc",
+  },
+};

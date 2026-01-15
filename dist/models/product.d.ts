@@ -44,7 +44,9 @@ export declare enum ProductOrderByType {
     DEFAULT = "default",
     PRICE_ASC = "price-asc",
     PRICE_DESC = "price-desc",
-    ALPHABETICAL = "alphabetical"
+    ALPHABETICAL = "alphabetical",
+    DATE_ASC = "date-asc",
+    DATE_DESC = "date-desc"
 }
 export declare const productOrderByData: {
     [key in ProductOrderByType]: OrderByType;
