@@ -35,6 +35,8 @@ export interface BoPollViewModel {
     questionNl: string;
     questionFr: string;
     questionEn: string;
+    isMultiple: boolean;
+    isTest: boolean;
     name: string;
     description?: string;
     status: SelectOptionViewModel;
