@@ -46,5 +46,6 @@ export interface BoPollViewModel {
         answerNl: string;
         answerFr: string;
         answerEn: string;
+        isWright: boolean;
     }[];
 }
