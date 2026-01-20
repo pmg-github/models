@@ -7,6 +7,8 @@ import {
   IsNotEmpty,
   IsNumber,
   IsOptional,
+  IsString,
+  isString,
   Length,
   MaxLength,
   ValidateIf,
@@ -257,6 +259,14 @@ export class NewsletterMetaDataCreateRequest {
   @IsNotEmpty()
   @Length(2, 2)
   language!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  introTitle!: string;
+
+  @IsNotEmpty()
+  @IsString()
+  introDescription!: string;
 }
 
 export class NewsletterIntroSaveRequest {

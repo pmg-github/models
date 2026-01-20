@@ -207,6 +207,8 @@ export declare class NewsletterSubscriptionSaveRequest {
 export declare class NewsletterMetaDataCreateRequest {
     projectCode: string;
     language: string;
+    introTitle: string;
+    introDescription: string;
 }
 export declare class NewsletterIntroSaveRequest {
     id: number;

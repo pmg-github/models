@@ -107,6 +107,8 @@ __decorate([
 class NewsletterMetaDataCreateRequest {
     projectCode;
     language;
+    introTitle;
+    introDescription;
 }
 exports.NewsletterMetaDataCreateRequest = NewsletterMetaDataCreateRequest;
 __decorate([
@@ -119,6 +121,16 @@ __decorate([
     (0, class_validator_1.Length)(2, 2),
     __metadata("design:type", String)
 ], NewsletterMetaDataCreateRequest.prototype, "language", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], NewsletterMetaDataCreateRequest.prototype, "introTitle", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], NewsletterMetaDataCreateRequest.prototype, "introDescription", void 0);
 class NewsletterIntroSaveRequest {
     id;
     introTitle;
