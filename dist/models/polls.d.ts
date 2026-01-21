@@ -3,6 +3,7 @@ import { CompanyCardViewModel } from "./company";
 export interface PubPollViewModel {
     id: number;
     question: string;
+    label: string;
     colorScheme: string;
     reference: string;
     amountOfVotes: number;
@@ -35,6 +36,9 @@ export interface BoPollViewModel {
     questionNl: string;
     questionFr: string;
     questionEn: string;
+    labelNl: string;
+    labelFr: string;
+    labelEn: string;
     isMultiple: boolean;
     isTest: boolean;
     name: string;
