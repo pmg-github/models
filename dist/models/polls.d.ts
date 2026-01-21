@@ -19,7 +19,7 @@ export interface PubPollViewModel {
 }
 export declare class PubPollDto {
     pollId: number;
-    answerId: number;
+    answerIds: number[];
     orderLineNumber?: string;
     constructor(data: Partial<PubPollDto>);
 }

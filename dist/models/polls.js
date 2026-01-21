@@ -13,7 +13,7 @@ exports.PubPollDto = void 0;
 const class_validator_1 = require("class-validator");
 class PubPollDto {
     pollId;
-    answerId;
+    answerIds;
     orderLineNumber;
     constructor(data) {
         Object.assign(this, data);
@@ -27,9 +27,9 @@ __decorate([
 ], PubPollDto.prototype, "pollId", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], PubPollDto.prototype, "answerId", void 0);
+    (0, class_validator_1.IsArray)(),
+    __metadata("design:type", Array)
+], PubPollDto.prototype, "answerIds", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
