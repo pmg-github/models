@@ -22,6 +22,8 @@ export interface ProductViewModel {
     orderByValue: string;
     maxQuantity: number | null;
     alreadyBought: boolean | undefined;
+    label: string | undefined;
+    specs: JSON | undefined;
 }
 export declare enum ProductCategoryEnum {
     PRINT_ABONNEMENTEN = 1,
@@ -46,7 +48,8 @@ export declare enum ProductOrderByType {
     PRICE_DESC = "price-desc",
     ALPHABETICAL = "alphabetical",
     DATE_ASC = "date-asc",
-    DATE_DESC = "date-desc"
+    DATE_DESC = "date-desc",
+    SORT_ORDER = "sort-order"
 }
 export declare const productOrderByData: {
     [key in ProductOrderByType]: OrderByType;

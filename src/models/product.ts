@@ -24,6 +24,8 @@ export interface ProductViewModel {
   orderByValue: string;
   maxQuantity: number | null;
   alreadyBought: boolean | undefined;
+  label: string | undefined;
+  specs: JSON | undefined;
 }
 
 export enum ProductCategoryEnum {
@@ -52,34 +54,40 @@ export enum ProductOrderByType {
   ALPHABETICAL = "alphabetical",
   DATE_ASC = "date-asc",
   DATE_DESC = "date-desc",
+  SORT_ORDER = "sort-order",
 }
 
-export const productOrderByData: { [key in ProductOrderByType]: OrderByType } = {
-  // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
-  [ProductOrderByType.DEFAULT]: {
-    column: "productcategory_product.CategoryID",
-    direction: "desc",
-  },
-  [ProductOrderByType.PRICE_ASC]: {
-    column: "product.Price",
-    direction: "asc",
-  },
-  [ProductOrderByType.PRICE_DESC]: {
-    column: "product.Price",
-    direction: "desc",
-  },
-  [ProductOrderByType.ALPHABETICAL]: {
-    column: "article.Title",
-    direction: "asc",
-  },
-  [ProductOrderByType.DATE_ASC]: {
-    column: "article.DisplayDate",
-    direction: "asc",
-  },
-  [ProductOrderByType.DATE_DESC]: {
-    column: "article.DisplayDate",
-    direction: "desc",
-  },
-};
+export const productOrderByData: { [key in ProductOrderByType]: OrderByType } =
+  {
+    // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
+    [ProductOrderByType.DEFAULT]: {
+      column: "productcategory_product.CategoryID",
+      direction: "desc",
+    },
+    [ProductOrderByType.PRICE_ASC]: {
+      column: "product.Price",
+      direction: "asc",
+    },
+    [ProductOrderByType.PRICE_DESC]: {
+      column: "product.Price",
+      direction: "desc",
+    },
+    [ProductOrderByType.ALPHABETICAL]: {
+      column: "article.Title",
+      direction: "asc",
+    },
+    [ProductOrderByType.DATE_ASC]: {
+      column: "article.DisplayDate",
+      direction: "asc",
+    },
+    [ProductOrderByType.DATE_DESC]: {
+      column: "article.DisplayDate",
+      direction: "desc",
+    },
+    [ProductOrderByType.SORT_ORDER]: {
+      column: "product.SortOrder",
+      direction: "asc",
+    },
+  };
 
 // test

@@ -28,6 +28,7 @@ var ProductOrderByType;
     ProductOrderByType["ALPHABETICAL"] = "alphabetical";
     ProductOrderByType["DATE_ASC"] = "date-asc";
     ProductOrderByType["DATE_DESC"] = "date-desc";
+    ProductOrderByType["SORT_ORDER"] = "sort-order";
 })(ProductOrderByType || (exports.ProductOrderByType = ProductOrderByType = {}));
 exports.productOrderByData = {
     // TODO FIX DEFAULT, FOR NOW DONE LIKE THIS FOR /PRICING!!
@@ -54,6 +55,10 @@ exports.productOrderByData = {
     [ProductOrderByType.DATE_DESC]: {
         column: "article.DisplayDate",
         direction: "desc",
+    },
+    [ProductOrderByType.SORT_ORDER]: {
+        column: "product.SortOrder",
+        direction: "asc",
     },
 };
 // test
