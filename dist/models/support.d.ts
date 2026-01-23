@@ -87,6 +87,7 @@ export interface SupportTicketViewModel {
     triage: number;
     snooze?: Date;
     estimatedHours: number;
+    inChangelog: boolean;
 }
 export interface returnFileResponse {
     name: string;
