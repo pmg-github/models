@@ -17,6 +17,8 @@ export interface PubPollViewModel {
   amountOfVotes: number;
   button?: string;
   successMessage?: string;
+  successMessageRight?: string;
+  successMessageWrong?: string;
   helperText?: string;
   answers: {
     id: number;
@@ -73,6 +75,12 @@ export interface BoPollViewModel {
   succesMessageNl: string;
   succesMessageFr: string;
   succesMessageEn: string;
+  succesMessageRightNl: string;
+  succesMessageRightFr: string;
+  succesMessageRightEn: string;
+  succesMessageWrongNl: string;
+  succesMessageWrongFr: string;
+  succesMessageWrongEn: string;
   isMultiple: boolean;
   isTest: boolean;
   name: string;
