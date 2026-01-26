@@ -7,6 +7,8 @@ export interface PubPollViewModel {
     colorScheme: string;
     reference: string;
     amountOfVotes: number;
+    button?: string;
+    successMessage?: string;
     answers: {
         id: number;
         answer: string;
@@ -39,6 +41,12 @@ export interface BoPollViewModel {
     labelNl: string;
     labelFr: string;
     labelEn: string;
+    buttonNl: string;
+    buttonFr: string;
+    buttonEn: string;
+    succesMessageNl: string;
+    succesMessageFr: string;
+    succesMessageEn: string;
     isMultiple: boolean;
     isTest: boolean;
     name: string;
