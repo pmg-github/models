@@ -60,6 +60,7 @@ export interface BoPollViewListModel {
 export interface BoPollViewModel {
   id: number;
   jobCode: SelectOptionViewModel;
+  reference: string;
   questionNl: string;
   questionFr: string;
   questionEn: string;
