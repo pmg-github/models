@@ -260,13 +260,13 @@ export class NewsletterMetaDataCreateRequest {
   @Length(2, 2)
   language!: string;
 
-  @IsNotEmpty()
-  @IsString()
-  introTitle!: string;
+  // @IsNotEmpty()
+  // @IsString()
+  // introTitle!: string;
 
-  @IsNotEmpty()
-  @IsString()
-  introDescription!: string;
+  // @IsNotEmpty()
+  // @IsString()
+  // introDescription!: string;
 }
 
 export class NewsletterIntroSaveRequest {
