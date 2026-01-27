@@ -386,9 +386,10 @@ import {
   PageEditorListView,
 } from "./models/events";
 import { BotDetectionResult } from "./models/napi";
-import { BoHeroListView } from "./models/hero";
+import { BoHeroListView, BoHeroDetailView } from "./models/hero";
 
 export {
+  BoHeroDetailView,
   ToolDetailView,
   ToolsListModel,
   ToolsListView,

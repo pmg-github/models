@@ -17,13 +17,16 @@ export interface PageEditorListView {
   description: string;
   enabled: boolean;
 }
-export interface PageEditorBlockDetailView {
-  id: number;
-  key: string;
-  props: any;
-  visibleFrom: string;
-  visibleUntil: string;
-  enabled: boolean;
+export interface BoHeroDetailView {
+  id?: number;
+  name: string;
+  language: string;
+  statusId: number;
+  json: JSON;
+  availableFrom: string | Date;
+  availableUntil: string | Date;
+  sortOrder: number;
+  portals: string[];
 }
 export interface PageEditorDetailView {
   id: number;
@@ -34,7 +37,7 @@ export interface PageEditorDetailView {
   description: string;
   language: string;
   isEnabled: boolean;
-  blocks: PageEditorBlockDetailView[];
+  blocks: string[];
   projectCode: string;
   dateFrom: string;
   dateUntil: string;
