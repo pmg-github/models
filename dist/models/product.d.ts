@@ -22,7 +22,10 @@ export interface ProductViewModel {
     orderByValue: string;
     maxQuantity: number | null;
     alreadyBought: boolean | undefined;
-    label: string | undefined;
+    label?: {
+        text: string | undefined;
+        color: string | undefined;
+    };
     specs: JSON | undefined;
 }
 export declare enum ProductCategoryEnum {
