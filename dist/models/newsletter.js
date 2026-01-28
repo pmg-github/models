@@ -81,6 +81,7 @@ class NewsletterContentModel {
     authorFileUrl = undefined;
     authorName = undefined;
     authorFunction = undefined;
+    isVideo = undefined;
 }
 exports.NewsletterContentModel = NewsletterContentModel;
 class NewsletterSubscriptionSaveRequest {
