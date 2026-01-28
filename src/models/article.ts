@@ -143,7 +143,7 @@ export interface BoArticleListModel {
   task?: BoArticleJobTask;
   portalDomain: string;
   isPublished: boolean;
-  isVideo: boolean;
+  isVideo?: boolean;
   orderByValue: string;
   fileId: number | undefined | null;
   imageUrl: string | undefined | null;
