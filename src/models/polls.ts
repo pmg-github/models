@@ -43,6 +43,10 @@ export class PubPollDto {
   @IsOptional()
   @IsString()
   orderLineNumber?: string;
+  
+  @IsOptional()
+  @IsString()
+  projectCode?: string;
 
   constructor(data: Partial<PubPollDto>) {
     Object.assign(this, data);
