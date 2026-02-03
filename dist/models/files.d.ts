@@ -25,9 +25,10 @@ export interface FileListViewModel {
     createdAt: string;
 }
 export interface FileViewModel {
+    id: number;
     name: string;
-    fileUrl: string;
+    url: string;
     altText: string;
     extension: string;
-    isSecure: boolean;
+    isProtected: boolean;
 }
