@@ -267,6 +267,7 @@ import {
 import {
   FileListViewModel,
   FileUploadResponseModel,
+  FileViewModel,
   ZipUploadResponseModel,
 } from "./models/files";
 
@@ -364,7 +365,11 @@ import {
 } from "./models/groups";
 
 import { RankingInteresses, rankingTypes } from "./models/ranking";
-import { BoPollViewListModel, PubPollDto, PubPollViewModel,  } from "./models/polls";
+import {
+  BoPollViewListModel,
+  PubPollDto,
+  PubPollViewModel,
+} from "./models/polls";
 
 import {
   BoRedirectsDetailModel,
@@ -582,6 +587,7 @@ export {
   FileListViewModel,
   ZipUploadResponseModel,
   FileUploadResponseModel,
+  FileViewModel,
   TimeRegistrationRecordModel,
   TimeRegistrationViewModel,
   TimeRegistrationStatusEnum,

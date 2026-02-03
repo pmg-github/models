@@ -43,6 +43,7 @@ class ViewerArticleBaseViewModel {
     searchTextRelated = undefined;
     newsletterMoreLabel = undefined;
     product = undefined;
+    attachments = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {

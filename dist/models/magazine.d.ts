@@ -1,3 +1,4 @@
+import { FileViewModel } from "./files";
 import { ProductViewModel } from "./product";
 export declare class ViewerTileBaseViewModel {
     id: number;
@@ -45,6 +46,7 @@ export declare class ViewerArticleBaseViewModel {
     searchTextRelated: string | undefined;
     newsletterMoreLabel: string | undefined;
     product: ProductViewModel | undefined;
+    attachments: FileViewModel[] | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;

@@ -24,3 +24,10 @@ export interface FileListViewModel {
     originalName: string;
     createdAt: string;
 }
+export interface FileViewModel {
+    name: string;
+    fileUrl: string;
+    altText: string;
+    extension: string;
+    isSecure: boolean;
+}

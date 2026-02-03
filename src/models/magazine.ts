@@ -1,6 +1,7 @@
 // BASE CLASSES
 // Actual classes should inherit from this
 
+import { FileViewModel } from "./files";
 import { ProductViewModel } from "./product";
 
 // TODO make a single article base class and use these for both tiles and detail!
@@ -50,6 +51,7 @@ export class ViewerArticleBaseViewModel {
   searchTextRelated: string | undefined = undefined;
   newsletterMoreLabel: string | undefined = undefined;
   product: ProductViewModel | undefined = undefined;
+  attachments: FileViewModel[] | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {
