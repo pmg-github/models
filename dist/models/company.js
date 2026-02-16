@@ -14,6 +14,7 @@ class CompanyViewModel {
     mainAddressID = undefined;
     mainAddress = undefined;
     interesses = undefined;
+    hideFinancialData = undefined;
     vatNumber = undefined;
 }
 exports.CompanyViewModel = CompanyViewModel;

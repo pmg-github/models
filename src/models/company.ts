@@ -28,6 +28,7 @@ export class CompanyViewModel {
   mainAddressID: number | undefined = undefined;
   mainAddress: AddressViewModel | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
+  hideFinancialData: boolean | undefined = undefined;
   vatNumber?: string | undefined = undefined;
 }
 export interface CompanyFinatialViewModel {
@@ -87,7 +88,7 @@ export type CompanyRankingOverviewModel = {
   hasContactenAbo: boolean | number;
   isCurrentProject: boolean | number;
   isMRK: boolean | number;
-  orderByValue:number;
+  orderByValue: number;
 };
 
 export class CompanyCornerPictureModel {}
