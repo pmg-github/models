@@ -28,7 +28,7 @@ export class CompanyViewModel {
   mainAddressID: number | undefined = undefined;
   mainAddress: AddressViewModel | undefined = undefined;
   interesses: ViewerInteresseViewModel[] | undefined = undefined;
-  hideFinancialData: boolean | undefined = undefined;
+  hideFinancialData?: boolean | undefined = undefined;
   vatNumber?: string | undefined = undefined;
 }
 export interface CompanyFinatialViewModel {
