@@ -1,4 +1,5 @@
 import { OrderByType } from "./db";
+import { FileViewModel } from "./files";
 export interface ProductCategoryViewModel {
     id: number;
     name: string;
@@ -27,6 +28,7 @@ export interface ProductViewModel {
         color: string | undefined;
     };
     specs: JSON | undefined;
+    attachment: FileViewModel | undefined;
 }
 export declare enum ProductCategoryEnum {
     PRINT_ABONNEMENTEN = 1,
