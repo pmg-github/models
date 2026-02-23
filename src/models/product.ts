@@ -4,6 +4,7 @@ import { FileViewModel } from "./files";
 export interface ProductCategoryViewModel {
   id: number;
   name: string;
+  description: string | null | undefined;
   numberOfProducts: number;
 }
 
