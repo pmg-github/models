@@ -30,6 +30,7 @@ export interface ProductViewModel {
     };
     specs: JSON | undefined;
     attachment: FileViewModel | undefined;
+    stock: number | undefined;
 }
 export declare enum ProductCategoryEnum {
     PRINT_ABONNEMENTEN = 1,

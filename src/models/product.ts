@@ -29,6 +29,7 @@ export interface ProductViewModel {
   label?: { text: string | undefined; color: string | undefined };
   specs: JSON | undefined;
   attachment: FileViewModel | undefined;
+  stock: number | undefined;
 }
 
 export enum ProductCategoryEnum {
