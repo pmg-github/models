@@ -1,9 +1,11 @@
 import { OrderByType } from "./db";
+import { FileViewModel } from "./files";
 import { SelectOptionViewModel } from "./selectoption";
 
 export interface ProductCategoryViewModel {
   id: number;
   name: string;
+  description: string | null | undefined;
   numberOfProducts: number;
 }
 
@@ -27,6 +29,8 @@ export interface ProductViewModel {
   alreadyBought: boolean | undefined;
   label?: { text: string | undefined; color: string | undefined };
   specs: JSON | undefined;
+  attachment: FileViewModel | undefined;
+  stock: number | undefined;
 }
 
 export enum ProductCategoryEnum {

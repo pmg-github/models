@@ -1,8 +1,10 @@
 import { OrderByType } from "./db";
+import { FileViewModel } from "./files";
 import { SelectOptionViewModel } from "./selectoption";
 export interface ProductCategoryViewModel {
     id: number;
     name: string;
+    description: string | null | undefined;
     numberOfProducts: number;
 }
 export interface ProductViewModel {
@@ -28,6 +30,8 @@ export interface ProductViewModel {
         color: string | undefined;
     };
     specs: JSON | undefined;
+    attachment: FileViewModel | undefined;
+    stock: number | undefined;
 }
 export declare enum ProductCategoryEnum {
     PRINT_ABONNEMENTEN = 1,
