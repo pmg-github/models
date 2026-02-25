@@ -1,4 +1,5 @@
 import { OrderByType } from "./db";
+import { SelectOptionViewModel } from "./selectoption";
 export interface ProductCategoryViewModel {
     id: number;
     name: string;
@@ -53,6 +54,17 @@ export declare enum ProductOrderByType {
     DATE_ASC = "date-asc",
     DATE_DESC = "date-desc",
     SORT_ORDER = "sort-order"
+}
+export interface BoProductPriorityDetailView {
+    id: number;
+    name: string;
+    description: string;
+    dateFrom: string;
+    dateUntil: string;
+    category: SelectOptionViewModel;
+    product: SelectOptionViewModel;
+    isPinned: boolean;
+    priority: number;
 }
 export declare const productOrderByData: {
     [key in ProductOrderByType]: OrderByType;

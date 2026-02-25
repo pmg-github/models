@@ -325,6 +325,7 @@ import {
   ProductCategoryViewModel,
   ProductOrderByType,
   productOrderByData,
+  BoProductPriorityDetailView,
 } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
@@ -681,4 +682,5 @@ export {
   BoPollViewListModel,
   BotDetectionResult,
   BoHeroListView,
+  BoProductPriorityDetailView,
 };
