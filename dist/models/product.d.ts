@@ -57,7 +57,8 @@ export declare enum ProductOrderByType {
     ALPHABETICAL = "alphabetical",
     DATE_ASC = "date-asc",
     DATE_DESC = "date-desc",
-    SORT_ORDER = "sort-order"
+    SORT_ORDER = "sort-order",
+    RELEVANCE = "relevance"
 }
 export interface BoProductPriorityDetailView {
     id: number;

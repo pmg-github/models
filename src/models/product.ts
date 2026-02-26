@@ -60,6 +60,7 @@ export enum ProductOrderByType {
   DATE_ASC = "date-asc",
   DATE_DESC = "date-desc",
   SORT_ORDER = "sort-order",
+  RELEVANCE = "relevance",
 }
 
 export interface BoProductPriorityDetailView {
@@ -104,6 +105,10 @@ export const productOrderByData: { [key in ProductOrderByType]: OrderByType } =
     [ProductOrderByType.SORT_ORDER]: {
       column: "product.SortOrder",
       direction: "asc",
+    },
+    [ProductOrderByType.RELEVANCE]: {
+      column: "relevance",
+      direction: "desc",
     },
   };
 
