@@ -68,7 +68,7 @@ export interface BoProductPriorityDetailView {
     category: SelectOptionViewModel;
     product: SelectOptionViewModel;
     isPinned: boolean;
-    priority: number;
+    priority: SelectOptionViewModel;
 }
 export declare const productOrderByData: {
     [key in ProductOrderByType]: OrderByType;
