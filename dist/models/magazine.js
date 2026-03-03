@@ -30,6 +30,7 @@ class ViewerArticleBaseViewModel {
     title = undefined;
     description = undefined;
     text = undefined;
+    json = undefined;
     displayDate = undefined;
     displayAuthor = undefined;
     isPremium = undefined;

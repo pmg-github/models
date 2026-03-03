@@ -33,6 +33,7 @@ export declare class ViewerArticleBaseViewModel {
     title: string | undefined;
     description: string | undefined;
     text: string | undefined;
+    json: string | null | undefined;
     displayDate: Date | undefined;
     displayAuthor: string | undefined;
     isPremium: boolean | undefined;

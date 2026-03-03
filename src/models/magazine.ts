@@ -38,6 +38,7 @@ export class ViewerArticleBaseViewModel {
   title: string | undefined = undefined;
   description: string | undefined = undefined;
   text: string | undefined = undefined;
+  json: string | null | undefined = undefined;
   displayDate: Date | undefined = undefined;
   displayAuthor: string | undefined = undefined;
   isPremium: boolean | undefined = undefined;
