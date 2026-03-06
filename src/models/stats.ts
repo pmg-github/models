@@ -13,7 +13,8 @@ export interface StatsPostModel {
   contactId?: number;
   intValue?: number;
   varCharValue?: string;
-  jsonData?: string;
+  jsonData?: JSON;
+  portalCode?: string;
 }
 
 export interface PubsStatsListViewModel {
