@@ -48,4 +48,6 @@ export interface DummyPubDetailView {
     dateUntil?: string;
     portalCode: string[];
     description?: string;
+    availableNl: boolean | number;
+    availableFr: boolean | number;
 }
