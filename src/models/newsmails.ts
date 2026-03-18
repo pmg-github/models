@@ -1,6 +1,7 @@
 export interface NewsMailOverviewModel {
   id: number;
-  from: string;
+  fromName: string;
+  fromEmail: string;
   subject: string;
   date: Date | string;
   statusId: number;
