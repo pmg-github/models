@@ -10,7 +10,8 @@ export interface NewsMailOverviewModel {
 
 export interface NewsMailDetailModel extends NewsMailOverviewModel {
   embargoDate: Date | string;
-  mailBody: string;
+  mailText: string;
+  mailHtml: string;
   summary: string;
   propositionTitle: string;
   propositionHtml: string;
