@@ -42,7 +42,7 @@ export interface PubsSortView {
 }
 
 export interface DummyPubListView {
-  id:number
+  id: number;
   pubCode: string;
   dateFrom: string;
   dateUntil: string;
@@ -54,6 +54,7 @@ export interface DummyPubDetailView {
   dateUntil?: string;
   portalCode: string[];
   description?: string;
-  availableNl:boolean|number;
-  availableFr:boolean|number;
+  // Commented out: threw build errors on live API
+  // availableNl:boolean|number;
+  // availableFr:boolean|number;
 }
