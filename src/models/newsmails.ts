@@ -5,6 +5,7 @@ export interface NewsMailOverviewModel {
   subject: string;
   date: Date | string;
   statusId: number;
+  orderValue: string | number;
 }
 
 export interface NewsMailDetailModel extends NewsMailOverviewModel {
