@@ -400,7 +400,7 @@ import {
   NewsMailInterestsModel,
 } from "./models/newsmails";
 
-import { BannerViewModel, bannerWidthEnum } from "./models/page";
+import { BannerViewModel, BannerWidthEnum, bannerWidthEnum } from "./models/page";
 
 export {
   BoHeroDetailView,

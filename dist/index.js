@@ -129,3 +129,5 @@ Object.defineProperty(exports, "CartDeleteItemRequest", { enumerable: true, get:
 Object.defineProperty(exports, "CartDiscountAddRequest", { enumerable: true, get: function () { return webshop_1.CartDiscountAddRequest; } });
 Object.defineProperty(exports, "CartUpdateItemRequest", { enumerable: true, get: function () { return webshop_1.CartUpdateItemRequest; } });
 Object.defineProperty(exports, "CartUpdateRequest", { enumerable: true, get: function () { return webshop_1.CartUpdateRequest; } });
+const page_1 = require("./models/page");
+Object.defineProperty(exports, "BannerWidthEnum", { enumerable: true, get: function () { return page_1.BannerWidthEnum; } });
