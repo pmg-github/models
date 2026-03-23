@@ -394,6 +394,8 @@ import {
 import { BotDetectionResult } from "./models/napi";
 import { BoHeroListView, BoHeroDetailView } from "./models/hero";
 
+import { bannerWidthEnum } from "./models/page";
+
 export {
   BoHeroDetailView,
   ToolDetailView,
@@ -683,4 +685,5 @@ export {
   BotDetectionResult,
   BoHeroListView,
   BoProductPriorityDetailView,
+  bannerWidthEnum,
 };
