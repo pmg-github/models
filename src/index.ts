@@ -400,7 +400,7 @@ import {
   NewsMailInterestsModel,
 } from "./models/newsmails";
 
-import { bannerWidthEnum } from "./models/page";
+import { BannerViewModel, bannerWidthEnum } from "./models/page";
 
 export {
   BoHeroDetailView,
@@ -695,5 +695,6 @@ export {
   NewsMailDetailModel,
   NewsMailCompanyModel,
   NewsMailInterestsModel,
-  bannerWidthEnum,
+  BannerWidthEnum,
+  BannerViewModel,
 };
