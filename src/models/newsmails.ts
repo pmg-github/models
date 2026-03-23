@@ -4,19 +4,19 @@ export interface NewsMailOverviewModel {
   fromEmail: string;
   subject: string;
   date: Date | string;
-  statusId: number;
+  statusId: number | null;
   orderValue: string | number;
 }
 
 export interface NewsMailDetailModel extends NewsMailOverviewModel {
-  embargoDate: Date | string;
+  embargoDate: Date | string | null;
   mailText: string;
   mailHtml: string;
-  summary: string;
-  propositionTitle: string;
-  propositionHtml: string;
-  interests: NewsMailInterestsModel[];
-  companyData: NewsMailCompanyModel;
+  summary: string | null;
+  propositionTitle: string | null;
+  propositionHtml: string | null;
+  interests: NewsMailInterestsModel[] | null;
+  companyData: NewsMailCompanyModel | null;
 }
 
 export interface NewsMailInterestsModel {
