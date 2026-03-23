@@ -37,3 +37,8 @@ export interface NewsMailCompanyModel {
     website: string;
     vatNumber: string;
 }
+export interface NewsMailStatusModel {
+    id: number;
+    name: string;
+    description: string | null;
+}
