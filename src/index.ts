@@ -393,6 +393,12 @@ import {
 } from "./models/events";
 import { BotDetectionResult } from "./models/napi";
 import { BoHeroListView, BoHeroDetailView } from "./models/hero";
+import {
+  NewsMailOverviewModel,
+  NewsMailCompanyModel,
+  NewsMailDetailModel,
+  NewsMailInterestsModel,
+} from "./models/newsmails";
 
 import { bannerWidthEnum } from "./models/page";
 
@@ -685,5 +691,9 @@ export {
   BotDetectionResult,
   BoHeroListView,
   BoProductPriorityDetailView,
+  NewsMailOverviewModel,
+  NewsMailDetailModel,
+  NewsMailCompanyModel,
+  NewsMailInterestsModel,
   bannerWidthEnum,
 };
