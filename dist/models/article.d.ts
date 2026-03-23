@@ -50,6 +50,7 @@ export type ArticleSearchOptions = {
     allowHiddenArticles?: boolean;
     useCache?: boolean;
     isVideo?: boolean;
+    containsVideo?: boolean;
     typeIds?: number[];
 };
 export interface ArticleContact {
