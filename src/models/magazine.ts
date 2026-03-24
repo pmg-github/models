@@ -9,6 +9,7 @@ export class ViewerTileBaseViewModel {
   id!: number;
   reference: string | undefined = undefined;
   isVideo: boolean | undefined = undefined;
+  containsVideo: boolean | number | undefined = undefined;
   title: string | undefined = undefined;
   type: number | undefined = undefined;
   description: string | undefined = undefined;
