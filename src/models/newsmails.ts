@@ -1,3 +1,5 @@
+import { FileViewModel } from "./files";
+
 export interface NewsMailOverviewModel {
   id: number;
   fromName: string;
@@ -17,6 +19,7 @@ export interface NewsMailDetailModel extends NewsMailOverviewModel {
   propositionHtml: string | null;
   interests: NewsMailInterestsModel[] | null;
   companyData: NewsMailCompanyModel | null;
+  attachments: FileViewModel[] | null;
 }
 
 export interface NewsMailInterestsModel {
