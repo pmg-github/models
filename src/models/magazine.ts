@@ -9,6 +9,7 @@ export class ViewerTileBaseViewModel {
   id!: number;
   reference: string | undefined = undefined;
   isVideo: boolean | undefined = undefined;
+  containsVideo: boolean | number | undefined = undefined;
   title: string | undefined = undefined;
   type: number | undefined = undefined;
   description: string | undefined = undefined;
@@ -54,6 +55,7 @@ export class ViewerArticleBaseViewModel {
   newsletterMoreLabel: string | undefined = undefined;
   product: ProductViewModel | undefined = undefined;
   attachments: FileViewModel[] | undefined = undefined;
+  isVideo: boolean | undefined = undefined;
   specs: JSON | undefined = undefined;
 }
 

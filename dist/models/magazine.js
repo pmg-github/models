@@ -8,6 +8,7 @@ class ViewerTileBaseViewModel {
     id;
     reference = undefined;
     isVideo = undefined;
+    containsVideo = undefined;
     title = undefined;
     type = undefined;
     description = undefined;
@@ -46,6 +47,7 @@ class ViewerArticleBaseViewModel {
     newsletterMoreLabel = undefined;
     product = undefined;
     attachments = undefined;
+    isVideo = undefined;
     specs = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
