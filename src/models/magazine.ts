@@ -54,6 +54,7 @@ export class ViewerArticleBaseViewModel {
   newsletterMoreLabel: string | undefined = undefined;
   product: ProductViewModel | undefined = undefined;
   attachments: FileViewModel[] | undefined = undefined;
+  specs: JSON | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {

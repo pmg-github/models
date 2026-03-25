@@ -49,6 +49,7 @@ export declare class ViewerArticleBaseViewModel {
     newsletterMoreLabel: string | undefined;
     product: ProductViewModel | undefined;
     attachments: FileViewModel[] | undefined;
+    specs: JSON | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;
