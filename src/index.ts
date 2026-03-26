@@ -265,6 +265,7 @@ import {
 } from "./models/support";
 
 import {
+  BoFileViewModel,
   FileListViewModel,
   FileUploadResponseModel,
   FileViewModel,
@@ -697,4 +698,5 @@ export {
   NewsMailInterestsModel,
   BannerWidthEnum,
   BannerViewModel,
+  BoFileViewModel,
 };

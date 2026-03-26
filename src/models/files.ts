@@ -34,3 +34,10 @@ export interface FileViewModel {
   extension: string;
   isProtected: boolean;
 }
+export interface BoFileViewModel {
+  id: number;
+  originalFileId: number;
+  name: string;
+  url: string;
+  altText: string;
+}
