@@ -41,3 +41,11 @@ export interface BoFileViewModel {
   url: string;
   altText: string;
 }
+
+type PixabayImage = {
+  id: number;
+  webformatURL: string;
+  largeImageURL: string;
+  previewURL: string;
+  tags: string;
+};
