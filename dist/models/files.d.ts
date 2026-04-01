@@ -41,17 +41,17 @@ export interface BoFileViewModel {
     metadata: BoFileMetadataViewModel;
 }
 export interface BoFileMetadataViewModel {
-    nl: {
+    nl?: {
         name: string;
         altText: string;
         keywords: string;
     };
-    fr: {
+    fr?: {
         name: string;
         altText: string;
         keywords: string;
     };
-    en: {
+    en?: {
         name: string;
         altText: string;
         keywords: string;
