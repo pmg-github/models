@@ -265,6 +265,7 @@ import {
 } from "./models/support";
 
 import {
+  BoFileMetadataViewModel,
   BoFileViewModel,
   FileListViewModel,
   FileUploadResponseModel,
@@ -699,4 +700,5 @@ export {
   BannerWidthEnum,
   BannerViewModel,
   BoFileViewModel,
+  BoFileMetadataViewModel,
 };

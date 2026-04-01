@@ -40,6 +40,24 @@ export interface BoFileViewModel {
   name: string;
   url: string;
   altText: string;
+  metadata: BoFileMetadataViewModel;
+}
+export interface BoFileMetadataViewModel {
+  nl: {
+    name: string;
+    altText: string;
+    keywords: string;
+  };
+  fr: {
+    name: string;
+    altText: string;
+    keywords: string;
+  };
+  en: {
+    name: string;
+    altText: string;
+    keywords: string;
+  };
 }
 
 type PixabayImage = {
