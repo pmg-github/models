@@ -42,6 +42,7 @@ export interface BoFileViewModel {
   originalFileId: number;
   name: string;
   url: string;
+  originalFileUrl: string;
   metadata: BoFileMetadataViewModel;
   updatedAt: string;
   createdAt: string;
