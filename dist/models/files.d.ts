@@ -46,6 +46,8 @@ export interface BoFileViewModel {
     updater?: PmgUserInterface;
     extension: string;
     filesize: number;
+    width: number;
+    height: number;
 }
 export interface BoFileMetadataViewModel {
     nl?: {
