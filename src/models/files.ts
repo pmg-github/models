@@ -1,3 +1,6 @@
+import { PmgUserInterface } from "./pmguser";
+import { UserViewModel } from "./user";
+
 export interface FileUploadResponseModel {
   statusCode: number;
   status: string;
@@ -39,8 +42,13 @@ export interface BoFileViewModel {
   originalFileId: number;
   name: string;
   url: string;
-  altText: string;
   metadata: BoFileMetadataViewModel;
+  updatedAt: string;
+  createdAt: string;
+  creator?: PmgUserInterface;
+  updater?: PmgUserInterface;
+  extension: string;
+  filesize: number;
 }
 export interface BoFileMetadataViewModel {
   nl?: {
