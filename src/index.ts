@@ -267,6 +267,7 @@ import {
 import {
   BoFileMetadataViewModel,
   BoFileViewModel,
+  FileButtonViewModel,
   FileListViewModel,
   FileUploadResponseModel,
   FileViewModel,
@@ -701,4 +702,5 @@ export {
   BannerViewModel,
   BoFileViewModel,
   BoFileMetadataViewModel,
+  FileButtonViewModel,
 };

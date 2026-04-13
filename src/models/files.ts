@@ -71,10 +71,7 @@ export interface BoFileMetadataViewModel {
   };
 }
 
-type PixabayImage = {
+export interface FileButtonViewModel {
   id: number;
-  webformatURL: string;
-  largeImageURL: string;
-  previewURL: string;
-  tags: string;
-};
+  url: string;
+}

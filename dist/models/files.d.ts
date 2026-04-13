@@ -66,3 +66,7 @@ export interface BoFileMetadataViewModel {
         keywords: string;
     };
 }
+export interface FileButtonViewModel {
+    id: number;
+    url: string;
+}

@@ -13,6 +13,7 @@ import {
   IsNumber,
 } from "class-validator";
 import { Type } from "class-transformer";
+import { FileButtonViewModel } from "./files";
 
 export class PopupModel {
   id: number | undefined = undefined;
@@ -56,8 +57,7 @@ export interface BoPopupList {
   content: BoPopup[];
 }
 export interface BoPopupDetailMl {
-  fileId?: number;
-  fileUrl?: string;
+  file?: FileButtonViewModel;
   title: string;
   subTitle: string;
   intro: string;

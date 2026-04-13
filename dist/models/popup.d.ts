@@ -1,4 +1,5 @@
 import { SelectOptionViewModel, SelectOptionViewModelDto } from "./selectoption";
+import { FileButtonViewModel } from "./files";
 export declare class PopupModel {
     id: number | undefined;
     typeId: number | undefined;
@@ -40,8 +41,7 @@ export interface BoPopupList {
     content: BoPopup[];
 }
 export interface BoPopupDetailMl {
-    fileId?: number;
-    fileUrl?: string;
+    file?: FileButtonViewModel;
     title: string;
     subTitle: string;
     intro: string;
