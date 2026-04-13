@@ -62,7 +62,7 @@ export interface BoPopupDetailView {
     delaySeconds: number;
 }
 declare class PopupMlDto {
-    fileId: string;
+    file?: FileButtonViewModel;
     title: string;
     subTitle?: string;
     intro?: string;

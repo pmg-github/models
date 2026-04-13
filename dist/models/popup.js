@@ -42,7 +42,7 @@ class PopupModel {
 }
 exports.PopupModel = PopupModel;
 class PopupMlDto {
-    fileId;
+    file;
     title;
     subTitle;
     intro;
@@ -54,9 +54,9 @@ class PopupMlDto {
     }
 }
 __decorate([
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", String)
-], PopupMlDto.prototype, "fileId", void 0);
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", Object)
+], PopupMlDto.prototype, "file", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)

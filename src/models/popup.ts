@@ -11,6 +11,7 @@ import {
   IsArray,
   ValidateNested,
   IsNumber,
+  IsNotEmpty,
 } from "class-validator";
 import { Type } from "class-transformer";
 import { FileButtonViewModel } from "./files";
@@ -79,8 +80,9 @@ export interface BoPopupDetailView {
 }
 
 class PopupMlDto {
-  @IsNumber()
-  fileId!: string;
+  @IsNotEmpty()
+  file?: FileButtonViewModel;
+
   @IsString() title!: string;
 
   @IsOptional() @IsString() subTitle?: string;
