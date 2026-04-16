@@ -33,6 +33,12 @@ export interface FileViewModel {
     extension: string;
     isProtected: boolean;
 }
+export interface BoFileListViewModel {
+    id: number;
+    name: string;
+    url: string;
+    isFavorite: boolean;
+}
 export interface BoFileViewModel {
     id: number;
     originalFileId: number;

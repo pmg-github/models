@@ -265,6 +265,7 @@ import {
 } from "./models/support";
 
 import {
+  BoFileListViewModel,
   BoFileMetadataViewModel,
   BoFileViewModel,
   FileButtonViewModel,
@@ -703,4 +704,5 @@ export {
   BoFileViewModel,
   BoFileMetadataViewModel,
   FileButtonViewModel,
+  BoFileListViewModel,
 };
