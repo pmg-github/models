@@ -704,5 +704,5 @@ export {
   BoFileViewModel,
   BoFileMetadataViewModel,
   FileButtonViewModel,
-  BoFileListViewModel,
+  BoFileListViewModel
 };

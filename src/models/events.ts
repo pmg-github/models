@@ -49,5 +49,6 @@ export interface PageEditorDetailView {
   projectCode: string;
   dateFrom: string;
   dateUntil: string;
-  header:SelectOptionViewModel
+  header: SelectOptionViewModel;
+  portalCode: string[];
 }
