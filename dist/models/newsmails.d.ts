@@ -15,6 +15,7 @@ export interface NewsMailDetailModel extends NewsMailOverviewModel {
     summary: string | null;
     propositionTitle: string | null;
     propositionHtml: string | null;
+    propositionKeywords: string | null | undefined;
     interests: NewsMailInterestsModel[] | null;
     companyData: NewsMailCompanyModel | null;
     attachments: FileViewModel[] | null;
