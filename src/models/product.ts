@@ -9,6 +9,29 @@ export interface ProductCategoryViewModel {
   numberOfProducts: number;
 }
 
+export interface BOProductDetailModel {
+  id?: number;
+  name: string;
+  article: SelectOptionViewModel;
+  statusId: number;
+  supplierId: number;
+  isDelivery: boolean;
+  deliveryPriceId: number;
+  vat: number;
+  price: number;
+  aboPrice: number;
+  oldPrice: number;
+  maxInBasket: number;
+  magazineCode: string | null;
+  labelId: number;
+  aboTypeId: number;
+  aboVariationId: number;
+  specsNl: string | null;
+  specsFr: string | null;
+  specsEn: string | null;
+  accountingProductCategoryId: number;
+}
+
 export interface ProductViewModel {
   id: number;
   reference: string;

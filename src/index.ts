@@ -330,6 +330,7 @@ import {
   ProductOrderByType,
   productOrderByData,
   BoProductPriorityDetailView,
+  BOProductDetailModel,
 } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
@@ -704,5 +705,6 @@ export {
   BoFileViewModel,
   BoFileMetadataViewModel,
   FileButtonViewModel,
-  BoFileListViewModel
+  BoFileListViewModel,
+  BOProductDetailModel,
 };
