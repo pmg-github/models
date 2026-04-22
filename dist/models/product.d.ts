@@ -23,10 +23,11 @@ export interface BOProductDetailModel {
     aboPrice: number;
     oldPrice: number;
     maxInBasket: number;
-    magazineCode: string | null;
+    magazine?: SelectOptionViewModel;
     labelId: number;
-    aboTypeId: number;
-    aboVariationId: number;
+    aboType: SelectOptionViewModel;
+    aboVariation: SelectOptionViewModel;
+    aboPortal: SelectOptionViewModel;
     specsNl: string | null;
     specsFr: string | null;
     specsEn: string | null;
