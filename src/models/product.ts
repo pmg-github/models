@@ -13,13 +13,14 @@ export interface BOProductDetailModel {
   id?: number;
   name: string;
   article: SelectOptionViewModel;
-  categories:number[]
+  categories: number[];
   portals: string[];
   statusId: number;
   supplier: SelectOptionViewModel;
   isDelivery: boolean;
   deliveryPrice: SelectOptionViewModel;
   vat: number;
+  productTypeID: number;
   price: number;
   aboPrice: number;
   oldPrice: number;

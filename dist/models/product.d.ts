@@ -18,6 +18,7 @@ export interface BOProductDetailModel {
     isDelivery: boolean;
     deliveryPrice: SelectOptionViewModel;
     vat: number;
+    productTypeID: number;
     price: number;
     aboPrice: number;
     oldPrice: number;
