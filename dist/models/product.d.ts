@@ -11,6 +11,8 @@ export interface BOProductDetailModel {
     id?: number;
     name: string;
     article: SelectOptionViewModel;
+    categories: number[];
+    portals: string[];
     statusId: number;
     supplierId: number;
     isDelivery: boolean;
