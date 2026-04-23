@@ -18,22 +18,21 @@ export interface BOProductDetailModel {
   statusId: number;
   supplier: SelectOptionViewModel;
   isDelivery: boolean;
-  deliveryPrice: SelectOptionViewModel;
+  deliveryPrice?: SelectOptionViewModel;
   vat: number;
   productTypeID: number;
   price: number;
-  aboPrice: number;
-  oldPrice: number;
-  maxInBasket: number;
+  aboPrice?: number;
+  oldPrice?: number;
+  maxInBasket: number|null;
   magazine?: SelectOptionViewModel;
-  labelId: number;
+  label?: SelectOptionViewModel;
   aboType: SelectOptionViewModel;
   aboVariation: SelectOptionViewModel;
   aboPortal: SelectOptionViewModel;
-  specsNl: string | null;
-  specsFr: string | null;
-  specsEn: string | null;
-  accountingProductCategoryId: number;
+  specsNl?: Object;
+  specsFr?: Object;
+  specsEn?: Object;
 }
 
 export interface ProductViewModel {
