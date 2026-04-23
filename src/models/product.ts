@@ -24,15 +24,18 @@ export interface BOProductDetailModel {
   price: number;
   aboPrice?: number;
   oldPrice?: number;
-  maxInBasket: number|null;
+  maxInBasket: number | null;
   magazine?: SelectOptionViewModel;
   label?: SelectOptionViewModel;
   aboType: SelectOptionViewModel;
   aboVariation: SelectOptionViewModel;
   aboPortal: SelectOptionViewModel;
-  specsNl?: Object;
-  specsFr?: Object;
-  specsEn?: Object;
+  specs: {
+    labelNl: string;
+    labelFr: string;
+    labelEn: string;
+    included: boolean;
+  }[];
 }
 
 export interface ProductViewModel {

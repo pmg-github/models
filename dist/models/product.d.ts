@@ -28,9 +28,12 @@ export interface BOProductDetailModel {
     aboType: SelectOptionViewModel;
     aboVariation: SelectOptionViewModel;
     aboPortal: SelectOptionViewModel;
-    specsNl?: Object;
-    specsFr?: Object;
-    specsEn?: Object;
+    specs: {
+        labelNl: string;
+        labelFr: string;
+        labelEn: string;
+        included: boolean;
+    }[];
 }
 export interface ProductViewModel {
     id: number;
