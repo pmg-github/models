@@ -291,6 +291,7 @@ export interface BoArticleMetaDataModel {
   newsletterMoreLabel: string;
   productId: number | null;
   updatedAt: Date;
+  // SeoScore:number;
 }
 
 export interface BoArticleFileModel {
