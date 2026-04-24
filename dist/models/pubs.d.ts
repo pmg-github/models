@@ -34,6 +34,7 @@ export interface PubsSortView {
     orderLineNumber: string;
     moreText?: string;
     moreUrl?: string;
+    kind: "URL" | "iFRAME" | "SCRIPT";
 }
 export interface DummyPubListView {
     id: number;
