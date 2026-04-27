@@ -56,6 +56,16 @@ export const articleTypeData: { [key in ArticleType]: number[] } = {
   [ArticleType.OPINIES]: [22],
 };
 
+export interface ArticleTypeModel {
+  id: number;
+  jobTypeCode: "W" | "S" | "I";
+  name: string;
+  description: string | null;
+  isPremium: boolean;
+  requiresRegistration: boolean;
+  isSecure: boolean;
+}
+
 // export const ArticleTypes = {
 //   NEWS: [2], // Gewone "nieuwsberichten"
 //   ARTICLES: [1, 3, 4, 15, 18], // Gewone "artikels"
