@@ -45,6 +45,8 @@ export type ExternalImageViewModel = {
     id: number;
     downloadUrl: string;
     thumbnailUrl: string;
+    imported: boolean;
+    existingFileId: number | null;
 };
 export interface BoFileViewModel {
     id: number;
