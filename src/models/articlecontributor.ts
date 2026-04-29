@@ -23,6 +23,7 @@ export interface ArticleContributorEditModel {
   email: string | undefined | null;
   phone: string | undefined | null;
   fileId: number | undefined | null;
+  fileUrl: string | undefined | null;
   functionNl: string | undefined | null;
   functionFr: string | undefined | null;
 }
