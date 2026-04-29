@@ -410,7 +410,7 @@ import { BannerViewModel, BannerWidthEnum } from "./models/page";
 import {
   ArticleContributorTypeEnum,
   ArticleContributorViewModel,
-  ArticleContributorSaveRequest,
+  ArticleContributorEditModel,
 } from "./models/articleContributor";
 
 export {
@@ -715,5 +715,5 @@ export {
   BOProductDetailModel,
   ArticleContributorViewModel,
   ArticleContributorTypeEnum,
-  ArticleContributorSaveRequest,
+  ArticleContributorEditModel,
 };

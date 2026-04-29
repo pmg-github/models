@@ -16,7 +16,7 @@ export enum ArticleContributorTypeEnum {
   CONTACT = "contact",
 }
 
-export interface ArticleContributorSaveRequest {
+export interface ArticleContributorEditModel {
   id: number | undefined;
   firstName: string | undefined | null;
   lastName: string | undefined | null;
