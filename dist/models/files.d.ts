@@ -43,7 +43,8 @@ export type ExternalImageViewModel = {
     from: "getty" | "pixabay";
     price: number;
     id: number;
-    url: string;
+    downloadUrl: string;
+    thumbnailUrl: string;
 };
 export interface BoFileViewModel {
     id: number;
