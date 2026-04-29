@@ -39,6 +39,12 @@ export interface BoFileListViewModel {
     url: string;
     isFavorite: boolean;
 }
+export type ExternalImageViewModel = {
+    from: "getty" | "pixabay";
+    price: number;
+    id: number;
+    url: string;
+};
 export interface BoFileViewModel {
     id: number;
     originalFileId: number;
