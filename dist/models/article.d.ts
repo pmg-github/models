@@ -24,6 +24,15 @@ export declare enum ArticleType {
 export declare const articleTypeData: {
     [key in ArticleType]: number[];
 };
+export interface ArticleTypeModel {
+    id: number;
+    jobTypeCode: "W" | "S" | "I";
+    name: string;
+    description: string | null;
+    isPremium: boolean;
+    requiresRegistration: boolean;
+    isSecure: boolean;
+}
 export declare enum ArticlePremiumType {
     ALL = 0,
     ONLY_PREMIUM = 1,
