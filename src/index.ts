@@ -407,6 +407,12 @@ import {
 
 import { BannerViewModel, BannerWidthEnum } from "./models/page";
 
+import {
+  ArticleContributorTypeEnum,
+  ArticleContributorViewModel,
+  ArticleContributorSaveRequest,
+} from "./models/articleContributor";
+
 export {
   BoHeroDetailView,
   ToolDetailView,
@@ -707,4 +713,7 @@ export {
   FileButtonViewModel,
   BoFileListViewModel,
   BOProductDetailModel,
+  ArticleContributorViewModel,
+  ArticleContributorTypeEnum,
+  ArticleContributorSaveRequest,
 };
