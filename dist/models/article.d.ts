@@ -216,10 +216,7 @@ export interface BoArticleTranscriptionModel {
     transcriptionSummery: string | null;
     fileSize: number;
     date: Date;
-    status: {
-        id: number;
-        name: string;
-    };
+    status: SelectOptionViewModel;
 }
 export interface BoArticleMetaDataModel {
     id: number;
