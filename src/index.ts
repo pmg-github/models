@@ -20,6 +20,7 @@ import {
   BoArticleMetaDataModel,
   BoArticleFileModel,
   BoArticleProductModel,
+  BoArticleTranscriptionModel,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -718,4 +719,5 @@ export {
   ArticleContributorTypeEnum,
   ArticleContributorEditModel,
   ExternalImageViewModel,
+  BoArticleTranscriptionModel,
 };

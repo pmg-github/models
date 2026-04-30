@@ -275,6 +275,20 @@ export interface BoArticleJobTask {
   parentCode: string;
 }
 
+export interface BoArticleTranscriptionModel {
+  id: number;
+  user: PmgUserInterface;
+  url: string;
+  transcription: string | null;
+  transcriptionSummery: string | null;
+  fileSize: number;
+  date: Date;
+  status: {
+    id: number;
+    name: string;
+  };
+}
+
 export interface BoArticleMetaDataModel {
   id: number;
   typeId: number;
