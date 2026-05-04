@@ -21,6 +21,7 @@ import {
   BoArticleFileModel,
   BoArticleProductModel,
   BoArticleTranscriptionModel,
+  ArticleTypeModel,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -720,4 +721,5 @@ export {
   ArticleContributorEditModel,
   ExternalImageViewModel,
   BoArticleTranscriptionModel,
+  ArticleTypeModel,
 };
