@@ -71,21 +71,16 @@ export interface BoFileViewModel {
   height: number;
 }
 export interface BoFileMetadataViewModel {
-  nl?: {
-    name: string;
-    altText: string;
-    keywords: string;
-  };
-  fr?: {
-    name: string;
-    altText: string;
-    keywords: string;
-  };
-  en?: {
-    name: string;
-    altText: string;
-    keywords: string;
-  };
+  nl?: metadata;
+  fr?: metadata;
+  en?: metadata;
+}
+
+interface metadata {
+  name: string;
+  altText: string;
+  keywords: string;
+  copyRight?: string;
 }
 
 export interface FileButtonViewModel {
