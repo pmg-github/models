@@ -52,6 +52,7 @@ export type ExternalImageViewModel = {
   thumbnailUrl: string;
   imported: boolean;
   existingFileId: number | null;
+  copyRight: string;
 };
 
 export interface BoFileViewModel {
@@ -69,6 +70,7 @@ export interface BoFileViewModel {
   filesize: number;
   width: number;
   height: number;
+  importId?: number | null;
 }
 export interface BoFileMetadataViewModel {
   nl?: metadata;
