@@ -70,7 +70,7 @@ export interface BoFileViewModel {
   filesize: number;
   width: number;
   height: number;
-  importId?: number | null;
+  importedId?: number;
 }
 export interface BoFileMetadataViewModel {
   nl?: metadata;
