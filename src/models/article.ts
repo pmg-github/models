@@ -322,6 +322,13 @@ export interface BoArticleFileModel {
   securityTypeId: number;
   altText: string | null;
 }
+export interface BoArticleImageModel {
+  id: number;
+  url: string;
+  copyRight?: string;
+  altText: string;
+  caption: string;
+}
 
 export interface BoArticleProductModel {
   id: number;
