@@ -1,4 +1,5 @@
 import { OrderByType } from "./db";
+import { FileButtonViewModel } from "./files";
 import { ViewerTileBaseViewModel } from "./magazine";
 export declare enum ArticleOrderByType {
     RECENT_FIRST = "recentFirst",
@@ -231,8 +232,7 @@ export interface BoArticleMetaDataModel {
     printTitle: string;
     description: string;
     keywords: string;
-    fileId: number | null;
-    fileUrl: string | null;
+    tileImage: FileButtonViewModel;
     displayDate: string | Date;
     displayAuthor: string;
     availableFrom: string | Date | null;
