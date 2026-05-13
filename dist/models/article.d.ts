@@ -313,6 +313,6 @@ export interface BoArticleSaveRequest {
 }
 export interface ArticleContributorArticleSaveModel {
     articleContributorId: number;
-    contibutionType: ArticleContributorTypeEnum | string;
+    contributionType: ArticleContributorTypeEnum | string;
 }
 export {};
