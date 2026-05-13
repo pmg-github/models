@@ -365,6 +365,9 @@ export interface BoArticleSaveRequest {
   reference: string;
 
   // Op artikelId (taalafhankelijk)
+  html: string | null | undefined;
+  json: string | null | undefined;
+
   title: string | null | undefined;
   printTitle: string | null | undefined;
   description: string | null | undefined;

@@ -292,6 +292,8 @@ export interface BoArticleProductModel {
 export interface BoArticleSaveRequest {
     id: number;
     reference: string;
+    html: string | null | undefined;
+    json: string | null | undefined;
     title: string | null | undefined;
     printTitle: string | null | undefined;
     description: string | null | undefined;
