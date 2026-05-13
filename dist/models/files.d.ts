@@ -38,6 +38,9 @@ export interface BoFileListViewModel {
     name: string;
     url: string;
     isFavorite: boolean;
+    aspectRatio: number;
+    height: number;
+    width: number;
 }
 export type ExternalImageViewModel = {
     from: "getty" | "pixabay";
