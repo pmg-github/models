@@ -93,7 +93,8 @@ export interface ArticleStatsListViewModel {
 }
 export interface NewsletterStatsListViewModel {
   id: number;
-  title: string;
+  titleNl: string;
+  titleFr: string;
   sendOn: string;
   projectCode: string | null;
   SortValue: number;
