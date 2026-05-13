@@ -244,6 +244,9 @@ export interface BoArticleMetaDataModel {
     newsletterMoreLabel: string;
     productId: number | null;
     updatedAt: Date;
+    seoScore: number;
+    jobTypeCode: string;
+    interests: string[];
 }
 export interface BoArticleFileModel {
     fileId: number;
