@@ -312,7 +312,9 @@ export interface BoArticleMetaDataModel {
   newsletterMoreLabel: string;
   productId: number | null;
   updatedAt: Date;
-  // SeoScore:number;
+  seoScore: number;
+  jobTypeCode: string;
+  interests: string[];
 }
 
 export interface BoArticleFileModel {
