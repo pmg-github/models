@@ -1,3 +1,4 @@
+import { ArticleContributorTypeEnum } from "./articleContributor";
 import { OrderByType } from "./db";
 import { FileButtonViewModel } from "./files";
 import { ViewerTileBaseViewModel } from "./magazine";
@@ -312,7 +313,10 @@ export interface BoArticleMetaDataModel {
   newsletterMoreLabel: string;
   productId: number | null;
   updatedAt: Date;
-  // SeoScore:number;
+  seoScore: number;
+  jobTypeCode: string;
+  interests: string[];
+  onlyOnOwnPortal: boolean | number;
 }
 
 export interface BoArticleFileModel {
@@ -354,4 +358,44 @@ export interface BoArticleProductModel {
   creditsPriceTypeId: number | null;
   maxInBasket: number | null;
   magazineCode: string | null;
+}
+
+export interface BoArticleSaveRequest {
+  id: number;
+  reference: string;
+
+  // Op artikelId (taalafhankelijk)
+  html: string | null | undefined;
+  json: string | null | undefined;
+
+  title: string | null | undefined;
+  printTitle: string | null | undefined;
+  description: string | null | undefined;
+  keywords: string | null | undefined;
+  fileId: number | null | undefined; // tegelfoto
+
+  filesIds: number[] | undefined | null; // bijlagen
+
+  newsletterTitle: string | null | undefined;
+  newsletterMoreLabel: string | null | undefined;
+
+  // Determines certain options for the request
+  options: {
+    updateDisplayDate: boolean;
+  };
+
+  // Op artikelReference (taalonafhankelijk)
+  availableFrom: string | Date | null;
+  availableUntil: string | Date | null;
+  onlyOnOwnPortal: boolean | number | undefined; // IsPrive in db!
+
+  contributors: ArticleContributorArticleSaveModel[] | undefined | null;
+
+  // Op jobbonniveau (dus ook taalonafhankelijk)
+  interests: string[] | undefined | null;
+}
+
+export interface ArticleContributorArticleSaveModel {
+  articleContributorId: number;
+  contributionType: ArticleContributorTypeEnum | string;
 }

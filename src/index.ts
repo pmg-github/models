@@ -23,6 +23,8 @@ import {
   BoArticleTranscriptionModel,
   ArticleTypeModel,
   BoArticleImageModel,
+  BoArticleSaveRequest,
+  ArticleContributorArticleSaveModel,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -724,4 +726,6 @@ export {
   BoArticleTranscriptionModel,
   ArticleTypeModel,
   BoArticleImageModel,
+  BoArticleSaveRequest,
+  ArticleContributorArticleSaveModel,
 };

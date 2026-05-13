@@ -1,3 +1,4 @@
+import { ArticleContributorTypeEnum } from "./articleContributor";
 import { OrderByType } from "./db";
 import { FileButtonViewModel } from "./files";
 import { ViewerTileBaseViewModel } from "./magazine";
@@ -244,6 +245,10 @@ export interface BoArticleMetaDataModel {
     newsletterMoreLabel: string;
     productId: number | null;
     updatedAt: Date;
+    seoScore: number;
+    jobTypeCode: string;
+    interests: string[];
+    onlyOnOwnPortal: boolean | number;
 }
 export interface BoArticleFileModel {
     fileId: number;
@@ -283,5 +288,31 @@ export interface BoArticleProductModel {
     creditsPriceTypeId: number | null;
     maxInBasket: number | null;
     magazineCode: string | null;
+}
+export interface BoArticleSaveRequest {
+    id: number;
+    reference: string;
+    html: string | null | undefined;
+    json: string | null | undefined;
+    title: string | null | undefined;
+    printTitle: string | null | undefined;
+    description: string | null | undefined;
+    keywords: string | null | undefined;
+    fileId: number | null | undefined;
+    filesIds: number[] | undefined | null;
+    newsletterTitle: string | null | undefined;
+    newsletterMoreLabel: string | null | undefined;
+    options: {
+        updateDisplayDate: boolean;
+    };
+    availableFrom: string | Date | null;
+    availableUntil: string | Date | null;
+    onlyOnOwnPortal: boolean | number | undefined;
+    contributors: ArticleContributorArticleSaveModel[] | undefined | null;
+    interests: string[] | undefined | null;
+}
+export interface ArticleContributorArticleSaveModel {
+    articleContributorId: number;
+    contributionType: ArticleContributorTypeEnum | string;
 }
 export {};
