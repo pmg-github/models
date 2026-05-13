@@ -247,6 +247,7 @@ export interface BoArticleMetaDataModel {
     seoScore: number;
     jobTypeCode: string;
     interests: string[];
+    onlyOnOwnPortal: boolean | number;
 }
 export interface BoArticleFileModel {
     fileId: number;
