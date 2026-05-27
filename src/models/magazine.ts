@@ -56,6 +56,7 @@ export class ViewerArticleBaseViewModel {
   product: ProductViewModel | undefined = undefined;
   attachments: FileViewModel[] | undefined = undefined;
   isVideo: boolean | undefined = undefined;
+  transcription: string | undefined = undefined;
   specs: JSON | undefined = undefined;
 }
 

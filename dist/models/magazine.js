@@ -48,6 +48,7 @@ class ViewerArticleBaseViewModel {
     product = undefined;
     attachments = undefined;
     isVideo = undefined;
+    transcription = undefined;
     specs = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
