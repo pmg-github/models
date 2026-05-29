@@ -305,6 +305,7 @@ export interface BoArticleSaveRequest {
     options: {
         updateDisplayDate: boolean;
     };
+    seoScore: number | null | undefined;
     availableFrom: string | Date | null;
     availableUntil: string | Date | null;
     onlyOnOwnPortal: boolean | number | undefined;

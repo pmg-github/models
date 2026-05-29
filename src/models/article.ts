@@ -384,6 +384,8 @@ export interface BoArticleSaveRequest {
     updateDisplayDate: boolean;
   };
 
+  seoScore: number | null | undefined;
+
   // Op artikelReference (taalonafhankelijk)
   availableFrom: string | Date | null;
   availableUntil: string | Date | null;
