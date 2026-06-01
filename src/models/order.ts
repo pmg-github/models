@@ -31,8 +31,6 @@ export interface OrderDetailViewModel {
   company: OrderCompanyViewModel | undefined;
   orderLines: OrderLineViewModel[];
   vatTotals: OrderVatTotal[];
-
-  attachmentUrls: string[] | undefined;
 }
 
 export interface OrderAddressViewModel {
@@ -69,6 +67,8 @@ export interface OrderLineViewModel {
   productCategoryIds: number[] | undefined | null;
   JSONData: any | null | undefined;
   maxQuantity: number | null;
+
+  attachmentUrls: string[] | undefined;
 }
 
 export interface OrderVatTotal {
