@@ -245,6 +245,7 @@ export interface BoArticleMetaDataModel {
     newsletterMoreLabel: string;
     productId: number | null;
     updatedAt: Date;
+    createdAt: Date;
     seoScore: number;
     jobTypeCode: string;
     interests: string[];
