@@ -303,6 +303,7 @@ export interface BoArticleSaveRequest {
     filesIds: number[] | undefined | null;
     newsletterTitle: string | null | undefined;
     newsletterMoreLabel: string | null | undefined;
+    portalCode: string | null | undefined;
     options: {
         updateDisplayDate: boolean;
     };

@@ -380,6 +380,8 @@ export interface BoArticleSaveRequest {
   newsletterTitle: string | null | undefined;
   newsletterMoreLabel: string | null | undefined;
 
+  portalCode: string | null | undefined;
+
   // Determines certain options for the request
   options: {
     updateDisplayDate: boolean;
