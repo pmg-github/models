@@ -419,6 +419,8 @@ import {
   ArticleContributorEditModel,
 } from "./models/articleContributor";
 
+import { MagJobViewModel } from "./models/magjobs";
+
 export {
   BoHeroDetailView,
   ToolDetailView,
@@ -728,4 +730,5 @@ export {
   BoArticleImageModel,
   BoArticleSaveRequest,
   ArticleContributorArticleSaveModel,
+  MagJobViewModel,
 };
