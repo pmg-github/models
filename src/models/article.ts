@@ -317,6 +317,7 @@ export interface BoArticleMetaDataModel {
   seoScore: number;
   jobTypeCode: string;
   interests: string[];
+  defaultInterest: string;
   onlyOnOwnPortal: boolean | number;
 }
 
@@ -398,6 +399,7 @@ export interface BoArticleSaveRequest {
 
   // Op jobbonniveau (dus ook taalonafhankelijk)
   interests: string[] | undefined | null;
+  defaultInterest: string | undefined | null;
 }
 
 export interface ArticleContributorArticleSaveModel {

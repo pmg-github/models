@@ -249,6 +249,7 @@ export interface BoArticleMetaDataModel {
     seoScore: number;
     jobTypeCode: string;
     interests: string[];
+    defaultInterest: string;
     onlyOnOwnPortal: boolean | number;
 }
 export interface BoArticleFileModel {
@@ -313,6 +314,7 @@ export interface BoArticleSaveRequest {
     onlyOnOwnPortal: boolean | number | undefined;
     contributors: ArticleContributorArticleSaveModel[] | undefined | null;
     interests: string[] | undefined | null;
+    defaultInterest: string | undefined | null;
 }
 export interface ArticleContributorArticleSaveModel {
     articleContributorId: number;
