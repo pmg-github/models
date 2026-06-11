@@ -413,17 +413,15 @@ export interface BoArticleStatsModel {
     viewsFr: number;
     views: number;
   };
-  perProject: 
-    {
-      "projectCode": string,
-      "viewsNl": number,
-      "viewsFr": number,
-      "views": number
-    }
-  [],
-  "last7Days": {
-    "viewsNl": number,
-    "viewsFr": number,
-    "views": number
-  }
+  perProject: {
+    projectCode: string;
+    viewsNl: number;
+    viewsFr: number;
+    views: number;
+  }[];
+  last7Days: {
+    viewsNl: number;
+    viewsFr: number;
+    views: number;
+  };
 }
