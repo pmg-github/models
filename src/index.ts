@@ -421,6 +421,11 @@ import {
 
 import { MagJobViewModel } from "./models/magjobs";
 
+import {
+  DashboardLogResourceEnum,
+  DashboardLogViewModel,
+} from "./models/dashboardlog";
+
 export {
   BoHeroDetailView,
   ToolDetailView,
@@ -731,4 +736,6 @@ export {
   BoArticleSaveRequest,
   ArticleContributorArticleSaveModel,
   MagJobViewModel,
+  DashboardLogViewModel,
+  DashboardLogResourceEnum,
 };
