@@ -320,4 +320,23 @@ export interface ArticleContributorArticleSaveModel {
     articleContributorId: number;
     contributionType: ArticleContributorTypeEnum | string;
 }
+export interface BoArticleStatsModel {
+    total: {
+        viewsNl: number;
+        viewsFr: number;
+        views: number;
+    };
+    perProject: {
+        "projectCode": string;
+        "viewsNl": number;
+        "viewsFr": number;
+        "views": number;
+    };
+    []: any;
+    "last7Days": {
+        "viewsNl": number;
+        "viewsFr": number;
+        "views": number;
+    };
+}
 export {};
