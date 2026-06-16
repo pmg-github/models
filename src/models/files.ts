@@ -45,6 +45,7 @@ export interface BoFileListViewModel {
   aspectRatio: number;
   height: number;
   width: number;
+  createdByParentCode: string;
 }
 
 export type ExternalImageViewModel = {
