@@ -231,6 +231,7 @@ export interface BoArticleMetaDataModel {
     title: string;
     newsletterTitle: string;
     printTitle: string;
+    printSubTitle: string;
     description: string;
     keywords: string;
     tileImage: FileButtonViewModel;
@@ -298,6 +299,7 @@ export interface BoArticleSaveRequest {
     json: string | null | undefined;
     title: string | null | undefined;
     printTitle: string | null | undefined;
+    printSubTitle: string | null | undefined;
     description: string | null | undefined;
     keywords: string | null | undefined;
     fileId: number | null | undefined;
