@@ -6,5 +6,6 @@ export interface MagJobViewModel {
 export declare enum MagJobActionStatusEnum {
     DONE = "DONE",
     TODO = "TODO",
-    BUSY = "BUSY"
+    BUSY = "BUSY",
+    NO_STATUS = "----"
 }

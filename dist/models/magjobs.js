@@ -6,4 +6,5 @@ var MagJobActionStatusEnum;
     MagJobActionStatusEnum["DONE"] = "DONE";
     MagJobActionStatusEnum["TODO"] = "TODO";
     MagJobActionStatusEnum["BUSY"] = "BUSY";
+    MagJobActionStatusEnum["NO_STATUS"] = "----";
 })(MagJobActionStatusEnum || (exports.MagJobActionStatusEnum = MagJobActionStatusEnum = {}));
