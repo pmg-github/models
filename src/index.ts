@@ -420,7 +420,7 @@ import {
   ArticleContributorEditModel,
 } from "./models/articleContributor";
 
-import { MagJobStatusEnum, MagJobViewModel } from "./models/magjobs";
+import { MagJobActionStatusEnum, MagJobViewModel } from "./models/magjobs";
 
 import {
   DashboardLogResourceEnum,
@@ -740,5 +740,5 @@ export {
   DashboardLogViewModel,
   DashboardLogResourceEnum,
   BoArticleStatsModel,
-  MagJobStatusEnum,
+  MagJobActionStatusEnum,
 };

@@ -3,7 +3,7 @@ export interface MagJobViewModel {
     title: string;
     briefing: string;
 }
-export declare enum MagJobStatusEnum {
+export declare enum MagJobActionStatusEnum {
     DONE = "DONE",
     TODO = "TODO",
     BUSY = "BUSY"
