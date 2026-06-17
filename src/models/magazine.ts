@@ -3,6 +3,7 @@
 
 import { FileViewModel } from "./files";
 import { ProductViewModel } from "./product";
+import { BenefitViewModel } from "./benefit";
 
 // TODO make a single article base class and use these for both tiles and detail!
 export class ViewerTileBaseViewModel {
@@ -54,6 +55,7 @@ export class ViewerArticleBaseViewModel {
   searchTextRelated: string | undefined = undefined;
   newsletterMoreLabel: string | undefined = undefined;
   product: ProductViewModel | undefined = undefined;
+  benefit: BenefitViewModel | undefined = undefined;
   attachments: FileViewModel[] | undefined = undefined;
   isVideo: boolean | undefined = undefined;
   transcription: string | undefined = undefined;
