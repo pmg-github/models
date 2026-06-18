@@ -17,4 +17,5 @@ export interface BenefitViewModel {
     statusId: number;
     validFrom: string | Date | null;
     validUntil: string | Date | null;
+    disclaimer: string | null;
 }
