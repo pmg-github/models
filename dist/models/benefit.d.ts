@@ -8,6 +8,8 @@ export interface BenefitViewModel {
     customerLogoUrl: string | null;
     customerWebsite: string | null;
     title: string;
+    subTitle: string | null;
+    specsLabel: string | null;
     specs: string | null;
     discountCode: string | null;
     discountValue: string | null;
