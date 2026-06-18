@@ -331,6 +331,10 @@ import {
 } from "./models/tools";
 
 import {
+  BenefitViewModel
+} from "./models/benefit";
+
+import {
   ProductCategoryEnum,
   ProductViewModel,
   ProductCategoryViewModel,
@@ -420,7 +424,7 @@ import {
   ArticleContributorEditModel,
 } from "./models/articleContributor";
 
-import { MagJobViewModel } from "./models/magjobs";
+import { MagJobActionStatusEnum, MagJobViewModel } from "./models/magjobs";
 
 import {
   DashboardLogResourceEnum,
@@ -641,6 +645,7 @@ export {
   BoArticleMetaDataModel,
   BoArticleProductModel,
   Issuers,
+  BenefitViewModel, 
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
@@ -740,4 +745,5 @@ export {
   DashboardLogViewModel,
   DashboardLogResourceEnum,
   BoArticleStatsModel,
+  MagJobActionStatusEnum,
 };

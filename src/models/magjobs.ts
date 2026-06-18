@@ -3,3 +3,10 @@ export interface MagJobViewModel {
   title: string;
   briefing: string;
 }
+
+export enum MagJobActionStatusEnum {
+  DONE = "DONE",
+  TODO = "TODO",
+  BUSY = "BUSY",
+  NO_STATUS = "----", // Fernand logic
+}

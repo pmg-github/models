@@ -1,5 +1,6 @@
 import { FileViewModel } from "./files";
 import { ProductViewModel } from "./product";
+import { BenefitViewModel } from "./benefit";
 export declare class ViewerTileBaseViewModel {
     id: number;
     reference: string | undefined;
@@ -49,6 +50,7 @@ export declare class ViewerArticleBaseViewModel {
     searchTextRelated: string | undefined;
     newsletterMoreLabel: string | undefined;
     product: ProductViewModel | undefined;
+    benefit: BenefitViewModel | undefined;
     attachments: FileViewModel[] | undefined;
     isVideo: boolean | undefined;
     transcription: string | undefined;

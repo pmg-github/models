@@ -46,6 +46,7 @@ class ViewerArticleBaseViewModel {
     searchTextRelated = undefined;
     newsletterMoreLabel = undefined;
     product = undefined;
+    benefit = undefined;
     attachments = undefined;
     isVideo = undefined;
     transcription = undefined;
