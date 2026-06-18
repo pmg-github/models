@@ -331,6 +331,10 @@ import {
 } from "./models/tools";
 
 import {
+  BenefitViewModel
+} from "./models/benefit";
+
+import {
   ProductCategoryEnum,
   ProductViewModel,
   ProductCategoryViewModel,
@@ -641,6 +645,7 @@ export {
   BoArticleMetaDataModel,
   BoArticleProductModel,
   Issuers,
+  BenefitViewModel, 
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
