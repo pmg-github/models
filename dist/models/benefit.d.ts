@@ -11,6 +11,7 @@ export interface BenefitViewModel {
     subTitle: string | null;
     specsLabel: string | null;
     specs: string | null;
+    discountCodeLabel: string | null;
     discountCode: string | null;
     discountValue: string | null;
     discountLabel: string | null;

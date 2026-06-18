@@ -5,12 +5,13 @@ export interface BenefitViewModel {
   customerNumber: string | null;
   customerName: string | null;
   customerLogoId: number | null;
-  customerLogoUrl: string | null; 
-  customerWebsite: string | null; 
+  customerLogoUrl: string | null;
+  customerWebsite: string | null;
   title: string;
   subTitle: string | null;
   specsLabel: string | null;
   specs: string | null;
+  discountCodeLabel: string | null;
   discountCode: string | null;
   discountValue: string | null;
   discountLabel: string | null;
@@ -21,4 +22,3 @@ export interface BenefitViewModel {
   validUntil: string | Date | null;
   disclaimer: string | null;
 }
-
