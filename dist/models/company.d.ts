@@ -84,5 +84,12 @@ export type CompanyRankingOverviewModel = {
     isMRK: boolean | number;
     orderByValue: number;
 };
+export interface CompanyContactsViewModel {
+    contactNumber: number;
+    contactId: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+}
 export declare class CompanyCornerPictureModel {
 }

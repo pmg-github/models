@@ -84,6 +84,7 @@ import {
   BcCompanyViewModel,
   CompanyRankingOverviewModel,
   CompanyFinatialViewModel,
+  CompanyContactsViewModel,
 } from "./models/company";
 
 import { ContextDetailView, ContextViewModel } from "./models/context";
@@ -749,4 +750,5 @@ export {
   BoArticleStatsModel,
   MagJobActionStatusEnum,
   MagJobActionViewModel,
+  CompanyContactsViewModel,
 };
