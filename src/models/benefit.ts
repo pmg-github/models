@@ -21,4 +21,5 @@ export interface BenefitViewModel {
   validFrom: string | Date | null;
   validUntil: string | Date | null;
   disclaimer: string | null;
+  portals: string[];
 }
