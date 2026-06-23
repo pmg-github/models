@@ -85,7 +85,7 @@ export type CompanyRankingOverviewModel = {
     orderByValue: number;
 };
 export interface CompanyContactsViewModel {
-    contactNumber: number;
+    contactNumber: string;
     contactId: number;
     firstName: string;
     lastName: string;
