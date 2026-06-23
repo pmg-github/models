@@ -84,6 +84,7 @@ import {
   BcCompanyViewModel,
   CompanyRankingOverviewModel,
   CompanyFinatialViewModel,
+  CompanyContactsViewModel,
 } from "./models/company";
 
 import { ContextDetailView, ContextViewModel } from "./models/context";
@@ -330,9 +331,7 @@ import {
   ToolsListView,
 } from "./models/tools";
 
-import {
-  BenefitViewModel
-} from "./models/benefit";
+import { BenefitViewModel } from "./models/benefit";
 
 import {
   ProductCategoryEnum,
@@ -424,7 +423,11 @@ import {
   ArticleContributorEditModel,
 } from "./models/articleContributor";
 
-import { MagJobActionStatusEnum, MagJobViewModel } from "./models/magjobs";
+import {
+  MagJobActionStatusEnum,
+  MagJobActionViewModel,
+  MagJobViewModel,
+} from "./models/magjobs";
 
 import {
   DashboardLogResourceEnum,
@@ -645,7 +648,7 @@ export {
   BoArticleMetaDataModel,
   BoArticleProductModel,
   Issuers,
-  BenefitViewModel, 
+  BenefitViewModel,
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
@@ -746,4 +749,6 @@ export {
   DashboardLogResourceEnum,
   BoArticleStatsModel,
   MagJobActionStatusEnum,
+  MagJobActionViewModel,
+  CompanyContactsViewModel,
 };

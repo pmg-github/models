@@ -91,4 +91,12 @@ export type CompanyRankingOverviewModel = {
   orderByValue: number;
 };
 
+export interface CompanyContactsViewModel {
+  contactNumber: string;
+  contactId: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+}
+
 export class CompanyCornerPictureModel {}
