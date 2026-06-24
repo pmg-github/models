@@ -331,7 +331,7 @@ import {
   ToolsListView,
 } from "./models/tools";
 
-import { BenefitViewModel } from "./models/benefit";
+import { BenefitViewModel, BenefitListModel } from "./models/benefit";
 
 import {
   ProductCategoryEnum,
@@ -649,6 +649,7 @@ export {
   BoArticleProductModel,
   Issuers,
   BenefitViewModel,
+  BenefitListModel,
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
