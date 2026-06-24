@@ -23,3 +23,12 @@ export interface BenefitViewModel {
   disclaimer: string | null;
   portals: string[];
 }
+
+export interface BenefitListModel {
+  id: number;
+  articleReference: string;
+  articleTilePictureUrl: string | null;
+  customerLogoUrl: string | null;
+  title: string;
+  specs: string | null;
+}
