@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = exports.articleOrderByData = exports.ArticleOrderByType = void 0;
+exports.ArticleStatusEnum = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = exports.articleOrderByData = exports.ArticleOrderByType = void 0;
 // ORDER BY
 var ArticleOrderByType;
 (function (ArticleOrderByType) {
@@ -78,3 +78,14 @@ var ArticlePremiumType;
     ArticlePremiumType[ArticlePremiumType["ONLY_PREMIUM"] = 1] = "ONLY_PREMIUM";
     ArticlePremiumType[ArticlePremiumType["NO_PREMIUM"] = 2] = "NO_PREMIUM";
 })(ArticlePremiumType || (exports.ArticlePremiumType = ArticlePremiumType = {}));
+var ArticleStatusEnum;
+(function (ArticleStatusEnum) {
+    ArticleStatusEnum[ArticleStatusEnum["PUBLISHED"] = 1] = "PUBLISHED";
+    ArticleStatusEnum[ArticleStatusEnum["DRAFT"] = 2] = "DRAFT";
+    ArticleStatusEnum[ArticleStatusEnum["DELETED"] = 3] = "DELETED";
+    ArticleStatusEnum[ArticleStatusEnum["ARCHIVED"] = 4] = "ARCHIVED";
+    ArticleStatusEnum[ArticleStatusEnum["OFF_FOR_PUBLICATION"] = 5] = "OFF_FOR_PUBLICATION";
+    ArticleStatusEnum[ArticleStatusEnum["PUBLISHED_VIA_LINK"] = 6] = "PUBLISHED_VIA_LINK";
+    ArticleStatusEnum[ArticleStatusEnum["WAIT_FOR_APPROVAL_CUSTOMER"] = 7] = "WAIT_FOR_APPROVAL_CUSTOMER";
+    ArticleStatusEnum[ArticleStatusEnum["WAIT_FOR_APPROVAL_PMG"] = 8] = "WAIT_FOR_APPROVAL_PMG";
+})(ArticleStatusEnum || (exports.ArticleStatusEnum = ArticleStatusEnum = {}));

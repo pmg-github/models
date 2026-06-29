@@ -340,4 +340,14 @@ export interface BoArticleStatsModel {
         views: number;
     };
 }
+export declare enum ArticleStatusEnum {
+    PUBLISHED = 1,
+    DRAFT = 2,
+    DELETED = 3,
+    ARCHIVED = 4,
+    OFF_FOR_PUBLICATION = 5,
+    PUBLISHED_VIA_LINK = 6,
+    WAIT_FOR_APPROVAL_CUSTOMER = 7,
+    WAIT_FOR_APPROVAL_PMG = 8
+}
 export {};
