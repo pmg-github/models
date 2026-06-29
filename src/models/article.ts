@@ -63,9 +63,10 @@ export interface ArticleTypeModel {
   jobTypeCode: "W" | "S" | "I";
   name: string;
   description: string | null;
-  isPremium: boolean;
-  requiresRegistration: boolean;
-  isSecure: boolean;
+  isPremium: boolean | number;
+  requiresRegistration: boolean | number;
+  requiresCustomer: boolean | number;
+  isSecure: boolean | number;
 }
 
 // export const ArticleTypes = {
