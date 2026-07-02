@@ -361,6 +361,9 @@ import {
   BoVideoListViewModel,
   BoVideoViewModel,
   BoVideoViewModelWitCursorAndContent,
+  VideoDetailView,
+  VideoSourceView,
+  VideoTrackView,
 } from "./models/video";
 
 import { MemberCreateRequest, MemberDiscount } from "./models/member";
@@ -663,6 +666,9 @@ export {
   BoVideoListViewModel,
   BoVideoDetailViewModel,
   BoVideoViewModelWitCursorAndContent,
+  VideoDetailView,
+  VideoSourceView,
+  VideoTrackView,
   CompanyRankingOverviewModel,
   BcListingDetailModel,
   PortalComponentViewModel,
