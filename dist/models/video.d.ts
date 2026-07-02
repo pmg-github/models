@@ -39,6 +39,9 @@ export interface BoVideoSearchViewModel {
     title: string;
     videoUrl: string;
     videoPosterUrl: string | null;
+    statusId: number;
+    status: string;
+    isSelectable: boolean;
 }
 export interface VideoDetailView {
     id: number;
