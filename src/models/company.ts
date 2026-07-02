@@ -88,6 +88,7 @@ export type CompanyRankingOverviewModel = {
   hasContactenAbo: boolean | number;
   isCurrentProject: boolean | number;
   isMRK: boolean | number;
+  hasActiveOrder: boolean | number;
   orderByValue: number;
 };
 

@@ -26,6 +26,7 @@ import {
   BoArticleSaveRequest,
   ArticleContributorArticleSaveModel,
   BoArticleStatsModel,
+  ArticleStatusEnum,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -752,4 +753,5 @@ export {
   MagJobActionStatusEnum,
   MagJobActionViewModel,
   CompanyContactsViewModel,
+  ArticleStatusEnum,
 };
