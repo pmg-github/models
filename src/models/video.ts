@@ -40,6 +40,8 @@ export interface BoVideoSearchViewModel {
   jobCode: string;
   languageCode: string;
   title: string;
+  videoUrl: string;
+  videoPosterUrl: string | null;
 }
 
 export interface VideoDetailView {
