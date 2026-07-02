@@ -32,3 +32,23 @@ export interface BoVideoListViewModel {
     subTitlesLanguage: string;
     videoUrl: string;
 }
+export interface VideoDetailView {
+    id: number;
+    jobCode: string;
+    languageCode: string;
+    title: string;
+    poster?: string | null;
+    sources: VideoSourceView[];
+    tracks: VideoTrackView[];
+}
+export interface VideoSourceView {
+    src: string;
+    type: string;
+}
+export interface VideoTrackView {
+    kind: "subtitles" | "chapters";
+    src: string;
+    label: string;
+    srclang: string;
+    default?: boolean;
+}
