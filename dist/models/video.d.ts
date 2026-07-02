@@ -32,6 +32,12 @@ export interface BoVideoListViewModel {
     subTitlesLanguage: string;
     videoUrl: string;
 }
+export interface BoVideoSearchViewModel {
+    id: number;
+    jobCode: string;
+    languageCode: string;
+    title: string;
+}
 export interface VideoDetailView {
     id: number;
     jobCode: string;
