@@ -439,7 +439,7 @@ import {
   DashboardLogViewModel,
 } from "./models/dashboardlog";
 
-import { InteractionAdd } from "./models/adds";
+import { Adds, InteractionAdd } from "./models/adds";
 
 export {
   BoHeroDetailView,
@@ -764,4 +764,5 @@ export {
   CompanyContactsViewModel,
   ArticleStatusEnum,
   InteractionAdd,
+  Adds,
 };

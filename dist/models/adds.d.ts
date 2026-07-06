@@ -5,3 +5,17 @@ export interface InteractionAdd {
     text: string;
     icon: string;
 }
+export interface Adds {
+    orderLineNumber?: string;
+    pubCode?: string;
+    redirectUrl?: string;
+    moreUrl?: string;
+    moreText?: string;
+    contactButton?: string;
+    contactText?: string;
+    interectionOrderLineNumber?: number;
+    pubUrl?: string;
+    isVideo?: number;
+    openPopup?: number;
+    klnr?: string;
+}
