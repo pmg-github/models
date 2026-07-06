@@ -431,6 +431,8 @@ import {
   DashboardLogViewModel,
 } from "./models/dashboardlog";
 
+import { InteractionAdd } from "./models/adds";
+
 export {
   BoHeroDetailView,
   ToolDetailView,
@@ -645,7 +647,7 @@ export {
   BoArticleMetaDataModel,
   BoArticleProductModel,
   Issuers,
-  BenefitViewModel, 
+  BenefitViewModel,
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
@@ -746,4 +748,5 @@ export {
   DashboardLogResourceEnum,
   BoArticleStatsModel,
   MagJobActionStatusEnum,
+  InteractionAdd,
 };
