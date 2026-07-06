@@ -26,6 +26,7 @@ import {
   BoArticleSaveRequest,
   ArticleContributorArticleSaveModel,
   BoArticleStatsModel,
+  ArticleStatusEnum,
 } from "./models/article"; //help
 
 import { SearchResultsSaveRequest } from "./models/search";
@@ -84,6 +85,7 @@ import {
   BcCompanyViewModel,
   CompanyRankingOverviewModel,
   CompanyFinatialViewModel,
+  CompanyContactsViewModel,
 } from "./models/company";
 
 import { ContextDetailView, ContextViewModel } from "./models/context";
@@ -330,9 +332,7 @@ import {
   ToolsListView,
 } from "./models/tools";
 
-import {
-  BenefitViewModel
-} from "./models/benefit";
+import { BenefitViewModel, BenefitListModel } from "./models/benefit";
 
 import {
   ProductCategoryEnum,
@@ -361,6 +361,10 @@ import {
   BoVideoListViewModel,
   BoVideoViewModel,
   BoVideoViewModelWitCursorAndContent,
+  BoVideoSearchViewModel,
+  VideoDetailView,
+  VideoSourceView,
+  VideoTrackView,
 } from "./models/video";
 
 import { MemberCreateRequest, MemberDiscount } from "./models/member";
@@ -424,7 +428,11 @@ import {
   ArticleContributorEditModel,
 } from "./models/articleContributor";
 
-import { MagJobActionStatusEnum, MagJobViewModel } from "./models/magjobs";
+import {
+  MagJobActionStatusEnum,
+  MagJobActionViewModel,
+  MagJobViewModel,
+} from "./models/magjobs";
 
 import {
   DashboardLogResourceEnum,
@@ -660,6 +668,10 @@ export {
   BoVideoListViewModel,
   BoVideoDetailViewModel,
   BoVideoViewModelWitCursorAndContent,
+  BoVideoSearchViewModel,
+  VideoDetailView,
+  VideoSourceView,
+  VideoTrackView,
   CompanyRankingOverviewModel,
   BcListingDetailModel,
   PortalComponentViewModel,
@@ -748,5 +760,8 @@ export {
   DashboardLogResourceEnum,
   BoArticleStatsModel,
   MagJobActionStatusEnum,
+  MagJobActionViewModel,
+  CompanyContactsViewModel,
+  ArticleStatusEnum,
   InteractionAdd,
 };

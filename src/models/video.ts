@@ -10,9 +10,9 @@ export interface BoVideoViewModel {
   amountOfVideos: number;
 }
 
-export interface BoVideoViewModelWitCursorAndContent{
-  content:BoVideoViewModel[],
-  cursor:number
+export interface BoVideoViewModelWitCursorAndContent {
+  content: BoVideoViewModel[];
+  cursor: number;
 }
 export interface BoVideoDetailViewModel {
   id: number;
@@ -32,5 +32,40 @@ export interface BoVideoListViewModel {
   statusId: number;
   voiceOverLanguage: string;
   subTitlesLanguage: string;
-  videoUrl:string
+  videoUrl: string;
+}
+
+export interface BoVideoSearchViewModel {
+  id: number;
+  jobCode: string;
+  languageCode: string;
+  title: string;
+  videoUrl: string;
+  videoPosterUrl: string | null;
+  statusId: number;
+  status: string;
+  isSelectable: boolean;
+}
+
+export interface VideoDetailView {
+  id: number;
+  jobCode: string;
+  languageCode: string;
+  title: string;
+  poster?: string | null;
+  sources: VideoSourceView[];
+  tracks: VideoTrackView[];
+}
+
+export interface VideoSourceView {
+  src: string;
+  type: string;
+}
+
+export interface VideoTrackView {
+  kind: "subtitles" | "chapters";
+  src: string;
+  label: string;
+  srclang: string;
+  default?: boolean;
 }

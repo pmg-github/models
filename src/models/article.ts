@@ -63,9 +63,10 @@ export interface ArticleTypeModel {
   jobTypeCode: "W" | "S" | "I";
   name: string;
   description: string | null;
-  isPremium: boolean;
-  requiresRegistration: boolean;
-  isSecure: boolean;
+  isPremium: boolean | number;
+  requiresRegistration: boolean | number;
+  requiresCustomer: boolean | number;
+  isSecure: boolean | number;
 }
 
 // export const ArticleTypes = {
@@ -426,4 +427,15 @@ export interface BoArticleStatsModel {
     viewsFr: number;
     views: number;
   };
+}
+
+export enum ArticleStatusEnum {
+  PUBLISHED = 1,
+  DRAFT = 2,
+  DELETED = 3,
+  ARCHIVED = 4,
+  OFF_FOR_PUBLICATION = 5,
+  PUBLISHED_VIA_LINK = 6,
+  WAIT_FOR_APPROVAL_CUSTOMER = 7,
+  WAIT_FOR_APPROVAL_PMG = 8,
 }

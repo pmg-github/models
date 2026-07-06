@@ -7,6 +7,7 @@ export interface BenefitViewModel {
     customerLogoId: number | null;
     customerLogoUrl: string | null;
     customerWebsite: string | null;
+    label: string | null;
     title: string;
     subTitle: string | null;
     specsLabel: string | null;
@@ -21,4 +22,15 @@ export interface BenefitViewModel {
     validFrom: string | Date | null;
     validUntil: string | Date | null;
     disclaimer: string | null;
+    portals: string[];
+}
+export interface BenefitListModel {
+    id: number;
+    articleReference: string;
+    articleTilePictureUrl: string | null;
+    customerLogoUrl: string | null;
+    label: string | null;
+    title: string;
+    subTitle: string | null;
+    specs: string | null;
 }

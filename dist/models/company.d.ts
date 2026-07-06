@@ -82,7 +82,15 @@ export type CompanyRankingOverviewModel = {
     hasContactenAbo: boolean | number;
     isCurrentProject: boolean | number;
     isMRK: boolean | number;
+    hasActiveOrder: boolean | number;
     orderByValue: number;
 };
+export interface CompanyContactsViewModel {
+    contactNumber: string;
+    contactId: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+}
 export declare class CompanyCornerPictureModel {
 }
