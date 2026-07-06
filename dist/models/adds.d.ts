@@ -13,6 +13,7 @@ export interface AddsViewModel {
     moreUrl?: string;
     moreText?: string;
     contactButton?: string;
+    orderKlnr?: string;
     contactText?: string;
     interectionOrderLineNumber?: string;
     pubUrl?: string;
