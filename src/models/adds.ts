@@ -14,9 +14,9 @@ export interface AddsViewModel {
   moreText?: string;
   contactButton?: string;
   contactText?: string;
-  interectionOrderLineNumber?: number;
+  interectionOrderLineNumber?: string;
   pubUrl?: string;
-  isVideo?: number;
-  openPopup?: number;
+  isVideo?: boolean;
+  openPopup?: boolean;
   klnr?: string;
 }
