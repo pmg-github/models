@@ -4,6 +4,7 @@ export interface InteractionAdd {
   url: string;
   text: string;
   icon: string;
+  klnr?: string;
 }
 
 export interface AddsViewModel {
