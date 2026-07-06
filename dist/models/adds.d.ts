@@ -5,7 +5,7 @@ export interface InteractionAdd {
     text: string;
     icon: string;
 }
-export interface Adds {
+export interface AddsViewModel {
     orderLineNumber?: string;
     pubCode?: string;
     redirectUrl?: string;
