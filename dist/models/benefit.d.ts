@@ -35,34 +35,34 @@ export interface BenefitListModel {
     subTitle: string | null;
     specs: string | null;
 }
-export type BoBenefitLocaleViewModel = {
-    customerName: string | null;
-    customerLogoId: number | null;
-    customerWebsite: string | null;
-    label: string | null;
-    title: string | null;
-    subTitle: string | null;
-    specsLabel: string | null;
-    specs: string | null;
-    discountCodeLabel: string | null;
-    discountValue: string | null;
-    discountLabel: string | null;
-    buttonText: string | null;
-    buttonUrl: string | null;
-    disclaimer: string | null;
-};
-export type BoBenefitViewModel = {
-    id: number;
-    internalName: string;
-    internalDescription: string | null;
+export interface BoBenefitLocaleViewModel {
+    customerName?: string;
+    customerLogoId?: number;
+    customerWebsite?: string;
+    label?: string;
+    title?: string;
+    subTitle?: string;
+    specsLabel?: string;
+    specs?: string;
+    discountCodeLabel?: string;
+    discountValue?: string;
+    discountLabel?: string;
+    buttonText?: string;
+    buttonUrl?: string;
+    disclaimer?: string;
+}
+export interface BoBenefitViewModel {
+    id?: number;
+    internalName?: string;
+    internalDescription?: string;
     article: SelectOptionViewModel;
     type: SelectOptionViewModel;
-    customerNumber: string | null;
-    discountCode: string | null;
+    customerNumber?: string;
+    discountCode?: string;
     status: SelectOptionViewModel;
-    validFrom: string | null;
-    validUntil: string | null;
+    validFrom?: string;
+    validUntil?: string;
     nl: BoBenefitLocaleViewModel;
     fr: BoBenefitLocaleViewModel;
     en: BoBenefitLocaleViewModel;
-};
+}
