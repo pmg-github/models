@@ -766,4 +766,5 @@ export {
   InteractionAdd,
   AddsViewModel,
   BoBenefitViewModel,
+  BenefitListModel,
 };
