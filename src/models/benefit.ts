@@ -47,14 +47,6 @@ export interface BoBenefitLocaleViewModel {
   title?: string;
   subTitle?: string;
   specsLabel?: string;
-  specs?: {
-    benefits: {
-      labelNl: string;
-      labelFr: string;
-      labelEn: string;
-      included: boolean;
-    }[];
-  };
   discountCodeLabel?: string;
   discountValue?: string;
   discountLabel?: string;
@@ -74,6 +66,12 @@ export interface BoBenefitViewModel {
   status: SelectOptionViewModel;
   validFrom?: string;
   validUntil?: string;
+  specs: {
+    labelNl: string;
+    labelFr: string;
+    labelEn: string;
+    included: boolean;
+  }[];
   nl: BoBenefitLocaleViewModel;
   fr: BoBenefitLocaleViewModel;
   en: BoBenefitLocaleViewModel;
