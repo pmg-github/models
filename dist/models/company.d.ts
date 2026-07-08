@@ -88,9 +88,12 @@ export type CompanyRankingOverviewModel = {
 export interface CompanyContactsViewModel {
     contactNumber: string;
     contactId: number;
-    firstName: string;
-    lastName: string;
+    firstName: string | null;
+    lastName: string | null;
     email: string;
+    phone: string | null;
+    mobile: string | null;
+    language: string | null;
 }
 export declare class CompanyCornerPictureModel {
 }
