@@ -38,7 +38,7 @@ export interface BenefitListModel {
 }
 export interface BoBenefitLocaleViewModel {
     customerName?: string;
-    customerLogoId?: FileButtonViewModel;
+    customerLogo?: FileButtonViewModel;
     customerWebsite?: string;
     label?: string;
     title?: string;
@@ -65,7 +65,7 @@ export interface BoBenefitViewModel {
     internalDescription?: string;
     article: SelectOptionViewModel;
     type: SelectOptionViewModel;
-    customerNumber?: string;
+    customerNumber?: SelectOptionViewModel;
     discountCode?: string;
     status: SelectOptionViewModel;
     validFrom?: string;
