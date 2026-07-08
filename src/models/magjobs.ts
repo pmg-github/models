@@ -2,6 +2,7 @@ export interface MagJobViewModel {
   jobCode: string;
   title: string;
   briefing: string;
+  customerReference: string | null;
 }
 
 export enum MagJobActionStatusEnum {
