@@ -63,3 +63,21 @@ export interface VideoTrackView {
     srclang: string;
     default?: boolean;
 }
+export interface VideoUploadResponse {
+    statusCode: number;
+    status: "success" | "error";
+    fileId?: number;
+    bunnyLibraryId?: string;
+    bunnyVideoId?: string;
+    fileSize?: number;
+    fileExtension?: string;
+    originalName?: string;
+    redirectLabel?: string;
+    redirectUrl?: string;
+    message?: string;
+    error?: unknown;
+}
+export interface BunnyCreateVideoResponse {
+    guid: string;
+    title: string;
+}
