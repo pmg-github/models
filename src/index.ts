@@ -332,7 +332,7 @@ import {
   ToolsListView,
 } from "./models/tools";
 
-import { BenefitViewModel, BenefitListModel } from "./models/benefit";
+import { BenefitViewModel, BenefitListModel, BoBenefitViewModel } from "./models/benefit";
 
 import {
   ProductCategoryEnum,
@@ -438,6 +438,8 @@ import {
   DashboardLogResourceEnum,
   DashboardLogViewModel,
 } from "./models/dashboardlog";
+
+import { AddsViewModel, InteractionAdd } from "./models/adds";
 
 export {
   BoHeroDetailView,
@@ -654,7 +656,6 @@ export {
   BoArticleProductModel,
   Issuers,
   BenefitViewModel,
-  BenefitListModel,
   ProductViewModel,
   ProductCategoryEnum,
   ProductCategoryViewModel,
@@ -762,4 +763,8 @@ export {
   MagJobActionViewModel,
   CompanyContactsViewModel,
   ArticleStatusEnum,
+  InteractionAdd,
+  AddsViewModel,
+  BoBenefitViewModel,
+  BenefitListModel,
 };

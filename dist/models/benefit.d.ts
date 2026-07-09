@@ -1,3 +1,5 @@
+import { FileButtonViewModel } from "./files";
+import { SelectOptionViewModel } from "./selectoption";
 export interface BenefitViewModel {
     id: number;
     articleReference: string;
@@ -33,4 +35,40 @@ export interface BenefitListModel {
     title: string;
     subTitle: string | null;
     specs: string | null;
+}
+export interface BoBenefitLocaleViewModel {
+    customerName?: string;
+    customerLogo?: FileButtonViewModel;
+    customerWebsite?: string;
+    label?: string;
+    title?: string;
+    subTitle?: string;
+    specsLabel?: string;
+    discountCodeLabel?: string;
+    discountValue?: string;
+    discountLabel?: string;
+    buttonText?: string;
+    buttonUrl?: string;
+    disclaimer?: string;
+}
+export interface BoBenefitViewModel {
+    id?: number;
+    internalName?: string;
+    internalDescription?: string;
+    article: SelectOptionViewModel;
+    type: SelectOptionViewModel;
+    customerNumber?: SelectOptionViewModel;
+    discountCode?: string;
+    status: SelectOptionViewModel;
+    validFrom?: string;
+    validUntil?: string;
+    specs: {
+        labelNl: string;
+        labelFr: string;
+        labelEn: string;
+        included: boolean;
+    }[];
+    nl: BoBenefitLocaleViewModel;
+    fr: BoBenefitLocaleViewModel;
+    en: BoBenefitLocaleViewModel;
 }
