@@ -332,7 +332,11 @@ import {
   ToolsListView,
 } from "./models/tools";
 
-import { BenefitViewModel, BenefitListModel, BoBenefitViewModel } from "./models/benefit";
+import {
+  BenefitViewModel,
+  BenefitListModel,
+  BoBenefitViewModel,
+} from "./models/benefit";
 
 import {
   ProductCategoryEnum,
@@ -365,6 +369,8 @@ import {
   VideoDetailView,
   VideoSourceView,
   VideoTrackView,
+  VideoUploadResponse,
+  BunnyCreateVideoResponse,
 } from "./models/video";
 
 import { MemberCreateRequest, MemberDiscount } from "./models/member";
@@ -672,6 +678,8 @@ export {
   VideoDetailView,
   VideoSourceView,
   VideoTrackView,
+  VideoUploadResponse,
+  BunnyCreateVideoResponse,
   CompanyRankingOverviewModel,
   BcListingDetailModel,
   PortalComponentViewModel,
