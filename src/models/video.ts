@@ -89,3 +89,9 @@ export interface BunnyCreateVideoResponse {
   guid: string;
   title: string;
 }
+
+export interface BunnyChapter {
+  title: string;
+  start: number;
+  end: number;
+}

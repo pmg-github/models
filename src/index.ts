@@ -371,6 +371,7 @@ import {
   VideoTrackView,
   VideoUploadResponse,
   BunnyCreateVideoResponse,
+  BunnyChapter,
 } from "./models/video";
 
 import { MemberCreateRequest, MemberDiscount } from "./models/member";
@@ -680,6 +681,7 @@ export {
   VideoTrackView,
   VideoUploadResponse,
   BunnyCreateVideoResponse,
+  BunnyChapter,
   CompanyRankingOverviewModel,
   BcListingDetailModel,
   PortalComponentViewModel,
