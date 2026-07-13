@@ -46,6 +46,7 @@ export interface BoVideoSearchViewModel {
 export interface VideoDetailView {
     id: number;
     jobCode: string;
+    bunnyVideoId: string | null;
     languageCode: string;
     title: string;
     poster?: string | null;
