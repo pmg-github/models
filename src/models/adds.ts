@@ -7,6 +7,18 @@ export interface InteractionAdd {
   klnr?: string;
 }
 
+export interface BcInteractionAdd {
+  id: number;
+  type: number;
+  urlNl: string;
+  urlFr: string;
+  text: string;
+  textNl: string;
+  textFr: string;
+  icon: string;
+  klnr?: string;
+}
+
 export interface AddsViewModel {
   orderLineNumber?: string;
   pubCode?: string;

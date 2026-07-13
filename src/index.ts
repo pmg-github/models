@@ -446,7 +446,7 @@ import {
   DashboardLogViewModel,
 } from "./models/dashboardlog";
 
-import { AddsViewModel, InteractionAdd } from "./models/adds";
+import { AddsViewModel, BcInteractionAdd, InteractionAdd } from "./models/adds";
 
 export {
   BoHeroDetailView,
@@ -777,4 +777,5 @@ export {
   AddsViewModel,
   BoBenefitViewModel,
   BenefitListModel,
+  BcInteractionAdd,
 };
