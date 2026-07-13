@@ -6,12 +6,11 @@ export interface InteractionAdd {
     icon: string;
     klnr?: string;
 }
-export interface BcInteractionAdd {
+export interface BcInteractionAddListModel {
     id: number;
     type: number;
     urlNl: string;
     urlFr: string;
-    text: string;
     textNl: string;
     textFr: string;
     icon: string;
