@@ -1,5 +1,6 @@
 export declare enum DashboardLogResourceEnum {
-    ARTICLE = "article"
+    ARTICLE = "article",
+    MAGJOB = "magjob"
 }
 export interface DashboardLogViewModel {
     id: number;
