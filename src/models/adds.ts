@@ -1,3 +1,5 @@
+import { SelectOptionViewModel } from "./selectoption";
+
 export interface InteractionAdd {
   id: number;
   type: number;
@@ -8,14 +10,13 @@ export interface InteractionAdd {
 }
 
 export interface BcInteractionAddListModel {
-  id: number;
-  type: number;
+  id?: number;
+  type: SelectOptionViewModel;
   urlNl: string;
   urlFr: string;
   textNl: string;
   textFr: string;
-  icon: string;
-  klnr?: string;
+  icon: SelectOptionViewModel;
 }
 
 export interface AddsViewModel {
