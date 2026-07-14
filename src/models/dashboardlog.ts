@@ -1,5 +1,6 @@
 export enum DashboardLogResourceEnum {
   ARTICLE = "article",
+  MAGJOB = "magjob",
 }
 
 export interface DashboardLogViewModel {
