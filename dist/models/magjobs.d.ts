@@ -25,3 +25,16 @@ export interface MagJobActionViewModel {
     updater: string | null;
     updatedAt: Date | string | null;
 }
+export declare class MagJobSaveRequest {
+    title: string | undefined;
+    briefing: string | undefined;
+    inlasMagazine: string | undefined;
+    baseJobCode: string | undefined;
+    parts: string[] | undefined;
+    language: string | undefined;
+    customerReference: string | undefined;
+    customerContactNumber: string | undefined;
+    numberOfPages: number | undefined;
+    numberOfCharacters: number | undefined;
+    rubriek: string | undefined;
+}

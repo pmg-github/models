@@ -1,3 +1,5 @@
+import { IsNotEmpty } from "class-validator";
+
 export interface MagJobViewModel {
   jobCode: string;
   title: string;
@@ -26,4 +28,19 @@ export interface MagJobActionViewModel {
   unit: string | null;
   updater: string | null;
   updatedAt: Date | string | null;
+}
+
+export class MagJobSaveRequest {
+  // Not sure what validation rules should be on here, for now no validtion rules, everything is optional
+  title: string | undefined;
+  briefing: string | undefined;
+  inlasMagazine: string | undefined;
+  baseJobCode: string | undefined;
+  parts: string[] | undefined;
+  language: string | undefined;
+  customerReference: string | undefined;
+  customerContactNumber: string | undefined;
+  numberOfPages: number | undefined;
+  numberOfCharacters: number | undefined;
+  rubriek: string | undefined;
 }

@@ -438,6 +438,7 @@ import {
 import {
   MagJobActionStatusEnum,
   MagJobActionViewModel,
+  MagJobSaveRequest,
   MagJobViewModel,
 } from "./models/magjobs";
 
@@ -446,7 +447,11 @@ import {
   DashboardLogViewModel,
 } from "./models/dashboardlog";
 
-import { AddsViewModel, BcInteractionAddListModel, InteractionAdd } from "./models/adds";
+import {
+  AddsViewModel,
+  BcInteractionAddListModel,
+  InteractionAdd,
+} from "./models/adds";
 
 export {
   BoHeroDetailView,
@@ -771,6 +776,7 @@ export {
   BoArticleStatsModel,
   MagJobActionStatusEnum,
   MagJobActionViewModel,
+  MagJobSaveRequest,
   CompanyContactsViewModel,
   ArticleStatusEnum,
   InteractionAdd,
