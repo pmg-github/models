@@ -112,6 +112,7 @@ export declare class NewsletterContentModel {
     authorName: string | undefined;
     authorFunction: string | undefined;
     isVideo: boolean | undefined;
+    containsVideo: boolean | undefined;
 }
 export interface NewsletterOrderModel {
     reference: string;
