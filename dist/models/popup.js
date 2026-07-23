@@ -9,9 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreatePopupDto = exports.PopupModel = void 0;
+exports.CreatePopupDto = exports.PopupModel = exports.PopupTargetScopeType = void 0;
 const selectoption_1 = require("./selectoption");
 const class_validator_1 = require("class-validator");
+// Targeting scope types
+var PopupTargetScopeType;
+(function (PopupTargetScopeType) {
+    PopupTargetScopeType["GLOBAL"] = "global";
+    PopupTargetScopeType["SECTION_DETAIL"] = "section_detail";
+    PopupTargetScopeType["DETAIL_ITEM"] = "detail_item";
+    PopupTargetScopeType["SPECIFIC_PAGE"] = "specific_page";
+})(PopupTargetScopeType || (exports.PopupTargetScopeType = PopupTargetScopeType = {}));
 class PopupModel {
     id = undefined;
     typeId = undefined;
@@ -98,6 +106,9 @@ class CreatePopupDto {
     displayFrequency;
     targetAudience;
     delaySeconds;
+    // Targeting fields
+    targetingScopes;
+    specificPageIds;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -147,3 +158,14 @@ __decorate([
     (0, class_validator_1.IsNumber)(),
     __metadata("design:type", Number)
 ], CreatePopupDto.prototype, "delaySeconds", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    __metadata("design:type", Array)
+], CreatePopupDto.prototype, "targetingScopes", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsNumber)({}, { each: true }),
+    __metadata("design:type", Array)
+], CreatePopupDto.prototype, "specificPageIds", void 0);

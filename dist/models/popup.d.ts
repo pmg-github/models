@@ -1,5 +1,19 @@
 import { SelectOptionViewModel, SelectOptionViewModelDto } from "./selectoption";
 import { FileButtonViewModel } from "./files";
+export declare enum PopupTargetScopeType {
+    GLOBAL = "global",
+    SECTION_DETAIL = "section_detail",
+    DETAIL_ITEM = "detail_item",
+    SPECIFIC_PAGE = "specific_page"
+}
+export interface PopupTargetRule {
+    id?: number;
+    popupId: number;
+    scopeType: PopupTargetScopeType;
+    routeGroup?: string;
+    routeKey?: string;
+    itemReference?: string;
+}
 export declare class PopupModel {
     id: number | undefined;
     typeId: number | undefined;
@@ -60,6 +74,8 @@ export interface BoPopupDetailView {
     displayFrequency: SelectOptionViewModel;
     targetAudience: SelectOptionViewModel;
     delaySeconds: number;
+    targetingScopes?: PopupTargetRule[];
+    specificPageIds?: number[];
 }
 declare class PopupMlDto {
     file?: FileButtonViewModel;
@@ -82,6 +98,8 @@ export declare class CreatePopupDto {
     displayFrequency: SelectOptionViewModelDto;
     targetAudience: SelectOptionViewModelDto;
     delaySeconds: number;
+    targetingScopes?: PopupTargetRule[];
+    specificPageIds?: number[];
     constructor(data: Partial<CreatePopupDto>);
 }
 export {};

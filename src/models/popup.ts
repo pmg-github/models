@@ -12,9 +12,28 @@ import {
   ValidateNested,
   IsNumber,
   IsNotEmpty,
+  IsEnum,
 } from "class-validator";
 import { Type } from "class-transformer";
 import { FileButtonViewModel } from "./files";
+
+// Targeting scope types
+export enum PopupTargetScopeType {
+  GLOBAL = "global",
+  SECTION_DETAIL = "section_detail",
+  DETAIL_ITEM = "detail_item",
+  SPECIFIC_PAGE = "specific_page",
+}
+
+// Target rule interface
+export interface PopupTargetRule {
+  id?: number;
+  popupId: number;
+  scopeType: PopupTargetScopeType;
+  routeGroup?: string; // e.g., "dossier", "calendar"
+  routeKey?: string; // language-independent route key if needed
+  itemReference?: string; // specific detail item reference
+}
 
 export class PopupModel {
   id: number | undefined = undefined;
@@ -77,6 +96,9 @@ export interface BoPopupDetailView {
   displayFrequency: SelectOptionViewModel;
   targetAudience: SelectOptionViewModel;
   delaySeconds: number;
+  // Targeting fields
+  targetingScopes?: PopupTargetRule[];
+  specificPageIds?: number[]; // linked pages from website.popup_page
 }
 
 class PopupMlDto {
@@ -116,11 +138,21 @@ export class CreatePopupDto {
   // @ValidateNested()
   @IsOptional()
   displayFrequency!: SelectOptionViewModelDto;
-  
+
   @IsOptional()
   targetAudience!: SelectOptionViewModelDto;
 
   @IsNumber() delaySeconds!: number;
+
+  // Targeting fields
+  @IsOptional()
+  @IsArray()
+  targetingScopes?: PopupTargetRule[];
+
+  @IsOptional()
+  @IsArray()
+  @IsNumber({}, { each: true })
+  specificPageIds?: number[];
 
   constructor(data: Partial<CreatePopupDto>) {
     Object.assign(this, data);

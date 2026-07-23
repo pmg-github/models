@@ -206,6 +206,9 @@ import {
   BoPopupList,
   CreatePopupDto,
   PopupModel,
+  PopupTargetRule,
+  PopupTargetScopeType,
+  PopupRouteGroup,
 } from "./models/popup";
 
 import { BadmailsDetailView, BadmailsListView } from "./models/badmails";
@@ -694,6 +697,9 @@ export {
   BoPopupList,
   BoPopupDetailView,
   CreatePopupDto,
+  PopupTargetRule,
+  PopupTargetScopeType,
+  PopupRouteGroup,
   MemberCreateRequest,
   MemberDiscount,
   InteresseListView,
