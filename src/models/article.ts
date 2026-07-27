@@ -321,6 +321,7 @@ export interface BoArticleMetaDataModel {
   interests: string[];
   defaultInterest: string;
   onlyOnOwnPortal: boolean | number;
+  customerReference: string | null;
 }
 
 export interface BoArticleFileModel {
