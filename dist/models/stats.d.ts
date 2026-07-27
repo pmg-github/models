@@ -15,33 +15,30 @@ export interface StatsPostModel {
     jsonData?: JSON;
     portalCode?: string;
 }
-export interface PubsStatsListViewModel {
-    id: number;
+interface StatsListViewModel {
     typeId: number;
     projectCode: string | null;
     jobCode: string | null;
     articleReference: string | null;
-    pubCode: string | null;
+    id: number;
     customer: CompanyCardViewModel;
-    format: SelectOptionViewModel;
-    orderLineNumber: number | null;
     SortValue: number;
-    views: {
+    interactions: {
         nl: number;
         fr: number;
         total: number;
     };
-    clicks: {
+    interactionsUnique: {
         nl: number;
         fr: number;
         total: number;
     };
-    clicksUnique: {
+    impressions: {
         nl: number;
         fr: number;
         total: number;
     };
-    viewsUnique: {
+    impressionsUnique: {
         nl: number;
         fr: number;
         total: number;
@@ -67,27 +64,15 @@ export interface PubsStatsListViewModel {
         total: number;
     };
 }
-export interface ArticleStatsListViewModel {
-    id: number;
-    typeId: number;
-    projectCode: string | null;
-    jobCode: string | null;
-    articleReference: string | null;
-    customer: CompanyCardViewModel;
+export interface PubsStatsListViewModel extends StatsListViewModel {
+    pubCode: string | null;
+    format: SelectOptionViewModel;
+    orderLineNumber: number | null;
+}
+export interface ArticleStatsListViewModel extends StatsListViewModel {
     articleTitle: string;
     articleType: string;
     portalDomain: string;
-    SortValue: number;
-    views: {
-        nl: number;
-        fr: number;
-        total: number;
-    };
-    leads: {
-        nl: number;
-        fr: number;
-        total: number;
-    };
 }
 export interface NewsletterStatsListViewModel {
     id: number;
@@ -126,12 +111,12 @@ export interface NewsletterStatsListViewModel {
         fr: number;
         total: number;
     };
-    views: {
+    impressions: {
         nl: number;
         fr: number;
         total: number;
     };
-    uniqueViews: {
+    impressionsUnique: {
         nl: number;
         fr: number;
         total: number;
@@ -147,3 +132,4 @@ export interface NewsletterStatsListViewModel {
         total: number;
     };
 }
+export {};
