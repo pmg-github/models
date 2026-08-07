@@ -41,6 +41,7 @@ export declare class ContactUpdateRequest {
     lastName: string;
     phone: string;
     landline?: string;
+    id?: number;
     language?: string;
     sex?: string;
     newsletter?: string;

@@ -118,6 +118,10 @@ export class ContactUpdateRequest {
 
   @IsOptional()
   @MaxLength(36)
+  id?: number;
+
+  @IsOptional()
+  @MaxLength(36)
   language?: string;
 
   @IsOptional()

@@ -97,6 +97,7 @@ class ContactUpdateRequest {
     lastName;
     phone;
     landline;
+    id;
     language;
     sex;
     newsletter;
@@ -126,6 +127,11 @@ __decorate([
     (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "landline", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.MaxLength)(36),
+    __metadata("design:type", Number)
+], ContactUpdateRequest.prototype, "id", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(36),
