@@ -17,6 +17,7 @@ class UserViewModel {
     firstName;
     lastName;
     phone;
+    landline;
     gender;
     language;
     get fullName() {
@@ -36,6 +37,7 @@ class UserViewModel {
         this.firstName = userAPIInterface.firstName;
         this.lastName = userAPIInterface.lastName;
         this.phone = userAPIInterface.phone;
+        this.landline = userAPIInterface.landline;
         this.gender = userAPIInterface.gender;
         this.language = userAPIInterface.language;
     }
@@ -94,6 +96,7 @@ class ContactUpdateRequest {
     firstName;
     lastName;
     phone;
+    landline;
     language;
     sex;
     newsletter;
@@ -118,6 +121,11 @@ __decorate([
     (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "phone", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.MaxLength)(36),
+    __metadata("design:type", String)
+], ContactUpdateRequest.prototype, "landline", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.MaxLength)(36),

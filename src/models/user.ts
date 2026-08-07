@@ -13,6 +13,7 @@ export class UserViewModel {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
+  landline: string | null;
   gender: string | null;
   language: string | null;
 
@@ -36,6 +37,7 @@ export class UserViewModel {
     this.firstName = userAPIInterface.firstName;
     this.lastName = userAPIInterface.lastName;
     this.phone = userAPIInterface.phone;
+    this.landline = userAPIInterface.landline;
     this.gender = userAPIInterface.gender;
     this.language = userAPIInterface.language;
   }
@@ -60,6 +62,7 @@ export interface UserAPIInterface {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
+  landline: string | null;
   gender: string | null;
   language: string | null;
 }
@@ -108,6 +111,10 @@ export class ContactUpdateRequest {
   @IsOptional()
   @MaxLength(36)
   phone!: string;
+
+  @IsOptional()
+  @MaxLength(36)
+  landline?: string;
 
   @IsOptional()
   @MaxLength(36)

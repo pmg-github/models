@@ -4,6 +4,7 @@ export declare class UserViewModel {
     firstName: string | null;
     lastName: string | null;
     phone: string | null;
+    landline: string | null;
     gender: string | null;
     language: string | null;
     get fullName(): string | undefined;
@@ -20,6 +21,7 @@ export interface UserAPIInterface {
     firstName: string | null;
     lastName: string | null;
     phone: string | null;
+    landline: string | null;
     gender: string | null;
     language: string | null;
 }
@@ -38,6 +40,7 @@ export declare class ContactUpdateRequest {
     firstName: string;
     lastName: string;
     phone: string;
+    landline?: string;
     language?: string;
     sex?: string;
     newsletter?: string;
