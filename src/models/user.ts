@@ -117,7 +117,6 @@ export class ContactUpdateRequest {
   landline?: string;
 
   @IsOptional()
-  @MaxLength(36)
   id?: number;
 
   @IsOptional()
