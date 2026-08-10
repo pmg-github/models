@@ -5,12 +5,30 @@ export interface MagJobViewModel {
   title: string;
   briefing: string;
   customerReference: string | null;
+  // New props
+  jobKind?: string;
+  magazine?: string;
+  comsec?: string;
+  updatedAt?: Date | string;
+  updatedBy?: string;
+  baseFor?: string | null;
+  inlasMagazine?: string | null;
+  base?: string;
+  parts?: string[];
+  language?: string;
+  planner?: string;
+  status?: MagJobActionStatusEnum;
+  customerContact?: string | null;
+  pages?: number | null;
+  characters?: number | null;
+  section?: string | null; // = rubriek
 }
 
 export enum MagJobActionStatusEnum {
   DONE = "DONE",
   TODO = "TODO",
   BUSY = "BUSY",
+  DELETED = "DLTD",
   NO_STATUS = "----", // Fernand logic
 }
 

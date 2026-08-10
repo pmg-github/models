@@ -6,6 +6,7 @@ var MagJobActionStatusEnum;
     MagJobActionStatusEnum["DONE"] = "DONE";
     MagJobActionStatusEnum["TODO"] = "TODO";
     MagJobActionStatusEnum["BUSY"] = "BUSY";
+    MagJobActionStatusEnum["DELETED"] = "DLTD";
     MagJobActionStatusEnum["NO_STATUS"] = "----";
 })(MagJobActionStatusEnum || (exports.MagJobActionStatusEnum = MagJobActionStatusEnum = {}));
 class MagJobSaveRequest {
