@@ -72,7 +72,6 @@ export interface PubsStatsListViewModel extends StatsListViewModel {
   orderLineNumber: number | null;
 }
 export interface ArticleStatsListViewModel extends StatsListViewModel {
-  
   articleTitle: string;
   articleType: string;
   portalDomain: string;
@@ -130,6 +129,16 @@ export interface NewsletterStatsListViewModel {
     total: number;
   };
   uniqueOpenedNoBot?: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  clicksNoBot?: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  uniqueClicksNoBot?: {
     nl: number;
     fr: number;
     total: number;

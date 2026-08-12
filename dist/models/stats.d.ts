@@ -131,5 +131,15 @@ export interface NewsletterStatsListViewModel {
         fr: number;
         total: number;
     };
+    clicksNoBot?: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    uniqueClicksNoBot?: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
 }
 export {};
