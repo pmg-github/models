@@ -236,6 +236,7 @@ import {
 
 import {
   ArticleStatsListViewModel,
+  NewsletterStatsDetailViewModel,
   NewsletterStatsListViewModel,
   PubsStatsListViewModel,
   StatsPostModel,
@@ -788,4 +789,5 @@ export {
   BoBenefitViewModel,
   BenefitListModel,
   BcInteractionAddListModel,
+  NewsletterStatsDetailViewModel,
 };
