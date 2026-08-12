@@ -14,7 +14,6 @@ export interface MagJobViewModel {
   baseFor?: string | null;
   inlasMagazine?: string | null;
   base?: string;
-  parts?: string[];
   language?: string;
   planner?: string;
   status?: MagJobActionStatusEnum;
