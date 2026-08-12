@@ -142,4 +142,24 @@ export interface NewsletterStatsListViewModel {
         total: number;
     };
 }
+export interface NewsletterStatsDetailViewModel {
+    id: number;
+    titleNl: string;
+    titleFr: string;
+    sendOn: string;
+    projectCode: string | null;
+    SortValue: number;
+    recipients: number;
+    reach: number;
+    send: number;
+    failed: number;
+    opened: number;
+    uniqueOpened: number;
+    impressions: number;
+    impressionsUnique: number;
+    openedNoBot?: number;
+    uniqueOpenedNoBot?: number;
+    clicksNoBot?: number;
+    uniqueClicksNoBot?: number;
+}
 export {};
