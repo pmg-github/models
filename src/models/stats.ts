@@ -149,6 +149,7 @@ export interface NewsletterStatsDetailViewModel {
   title: string;
   sendOn: string;
   status: string;
+  statusReference: string;
   isResend: boolean;
   projectCode: string | null;
   SortValue: number;
