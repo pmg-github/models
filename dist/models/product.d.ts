@@ -45,6 +45,7 @@ export interface ProductViewModel {
     VAT: number;
     priceExclVAT: number;
     aboPriceExclVAT: number | null;
+    catalogPrice: number | null;
     priceInclVAT: number;
     aboPriceInclVAT: number | null;
     magazineCode: string | null;
