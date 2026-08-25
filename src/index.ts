@@ -349,6 +349,7 @@ import {
   productOrderByData,
   BoProductPriorityDetailView,
   BOProductDetailModel,
+  ProductStatusEnum,
 } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
@@ -676,6 +677,7 @@ export {
   ProductCategoryViewModel,
   ProductOrderByType,
   productOrderByData,
+  ProductStatusEnum,
   PMGTeamMemberViewModel,
   CommunityViewModel,
   PeriodFilterEnum,
