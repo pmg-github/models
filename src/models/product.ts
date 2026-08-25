@@ -62,6 +62,8 @@ export interface ProductViewModel {
   specs: JSON | undefined;
   attachment: FileViewModel | undefined;
   stock: number | undefined;
+  statusId: number;
+  status: string;
 }
 
 export enum ProductCategoryEnum {
