@@ -106,3 +106,9 @@ export interface BoProductPriorityDetailView {
 export declare const productOrderByData: {
     [key in ProductOrderByType]: OrderByType;
 };
+export declare enum ProductStatusEnum {
+    AVAILABLE = 1,
+    TEMPORARY_UNAVAILABLE = 2,
+    SOLD_OUT = 3,
+    DISCONTINUED = 4
+}
