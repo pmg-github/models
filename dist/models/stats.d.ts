@@ -74,6 +74,34 @@ export interface ArticleStatsListViewModel extends StatsListViewModel {
     articleType: string;
     portalDomain: string;
 }
+export interface InteresseStatsListViewModel {
+    id: number;
+    SortValue: number;
+    typeId: number;
+    projectCode: string | null;
+    interesseReference: string;
+    interesseName: string;
+    interactions: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    interactionsUnique: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    impressions: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    impressionsUnique: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+}
 export interface NewsletterStatsListViewModel {
     id: number;
     titleNl: string;
