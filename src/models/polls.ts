@@ -59,6 +59,7 @@ export interface BoPollViewListModel {
   name: string;
   status: string;
   amountOfVotes: number;
+  domain: string;
 }
 
 export interface BoPollViewModel {
@@ -90,6 +91,7 @@ export interface BoPollViewModel {
   isTest: boolean;
   name: string;
   description?: string;
+  domain: string;
   status: SelectOptionViewModel;
   color?: SelectOptionViewModel;
   answers: {
