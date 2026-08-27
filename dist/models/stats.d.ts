@@ -102,6 +102,35 @@ export interface InteresseStatsListViewModel {
         total: number;
     };
 }
+export interface CustomPageStatsListViewModel {
+    id: number;
+    SortValue: number;
+    typeId: number;
+    projectCode: string | null;
+    pageReference: string;
+    pageTitle: string;
+    pageSlug: string | null;
+    interactions: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    interactionsUnique: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    impressions: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+    impressionsUnique: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
+}
 export interface NewsletterStatsListViewModel {
     id: number;
     titleNl: string;

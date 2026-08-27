@@ -236,6 +236,7 @@ import {
 
 import {
   ArticleStatsListViewModel,
+  CustomPageStatsListViewModel,
   InteresseStatsListViewModel,
   NewsletterStatsDetailViewModel,
   NewsletterStatsListViewModel,
@@ -728,6 +729,7 @@ export {
   CartUpdateRequest,
   CartDiscountAddRequest,
   ArticleStatsListViewModel,
+  CustomPageStatsListViewModel,
   InteresseStatsListViewModel,
   PubsStatsListViewModel,
   EventPageListView,
