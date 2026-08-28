@@ -109,9 +109,11 @@ export interface CustomPageStatsListViewModel {
   SortValue: number;
   typeId: number;
   projectCode: string | null;
-  pageReference: string;
-  pageTitle: string;
-  pageSlug: string | null;
+  reference: string;
+  title: string;
+  slug: string | null;
+  domain: string | null;
+  url: string | null;
   interactions: {
     nl: number;
     fr: number;
