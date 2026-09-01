@@ -60,6 +60,7 @@ export class ViewerArticleBaseViewModel {
   isVideo: boolean | undefined = undefined;
   transcription: string | undefined = undefined;
   specs: JSON | undefined = undefined;
+  source: string | null | undefined = undefined;
 }
 
 export class ViewerAdBaseViewModel {

@@ -55,6 +55,7 @@ export declare class ViewerArticleBaseViewModel {
     isVideo: boolean | undefined;
     transcription: string | undefined;
     specs: JSON | undefined;
+    source: string | null | undefined;
 }
 export declare class ViewerAdBaseViewModel {
     typeId: number;
