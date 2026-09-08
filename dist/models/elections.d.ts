@@ -29,6 +29,7 @@ export interface ElectionsViewModel {
         title: string;
         subTitle: string;
         imageUrl: string;
+        numberOfVotes: number;
     }[];
 }
 export interface ParticipantDetailPageViewModel {
