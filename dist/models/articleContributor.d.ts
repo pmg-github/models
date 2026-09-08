@@ -24,4 +24,5 @@ export interface ArticleContributorEditModel {
     fileUrl: string | undefined | null;
     functionNl: string | undefined | null;
     functionFr: string | undefined | null;
+    functionEn: string | undefined | null;
 }
