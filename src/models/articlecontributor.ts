@@ -27,4 +27,5 @@ export interface ArticleContributorEditModel {
   functionNl: string | undefined | null;
   functionFr: string | undefined | null;
   functionEn: string | undefined | null;
+  cursorValue: string | undefined | null;
 }
