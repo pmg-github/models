@@ -8,7 +8,6 @@ export interface ArticleContributorViewModel {
   fileUrl: string | null;
   function: string | null;
   contributionType: ArticleContributorTypeEnum;
-  parentCode: string | null;
 }
 
 export enum ArticleContributorTypeEnum {
