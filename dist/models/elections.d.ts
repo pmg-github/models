@@ -14,35 +14,6 @@ export interface ElectionsViewModel {
     redirectToForm: string;
     rulesPage: string;
     amountOfVotes: number;
-    withStars: boolean;
-    tiebreaker: boolean;
-    tiebreakerText?: string;
-    context?: string;
-    interesse?: string;
-    tool?: string;
-    participants: {
-        id: number;
-        eventParticipantsId: number;
-        title: string;
-        subTitle: string;
-        imageUrl: string;
-    }[];
-}
-export interface ElectionsViewModel {
-    id: number;
-    title: string;
-    info: null;
-    shareTitle: string;
-    shareInfo: null;
-    shareImage: null;
-    voteUntil: string;
-    voteFrom: string;
-    typeId: number;
-    askMotivation: boolean;
-    hasVoted: boolean;
-    redirectToForm: string;
-    rulesPage: string;
-    amountOfVotes: number;
     minVotes: number;
     uniquePoints: boolean;
     withStars: boolean;
@@ -51,6 +22,7 @@ export interface ElectionsViewModel {
     context?: string;
     interesse?: string;
     tool?: string;
+    showResultsAfter: boolean;
     participants: {
         id: number;
         eventParticipantsId: number;
