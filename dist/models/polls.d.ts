@@ -27,6 +27,7 @@ export declare class PubPollDto {
     answerIds: number[];
     orderLineNumber?: string;
     projectCode?: string;
+    portalCode?: string;
     constructor(data: Partial<PubPollDto>);
 }
 export interface BoPollViewListModel {
