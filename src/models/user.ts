@@ -10,6 +10,8 @@ import {
 export class UserViewModel {
   id: number; // = ContactID
   email: string;
+  // New e-mail address awaiting confirmation, if any.
+  pendingEmail?: string | null;
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
@@ -34,6 +36,7 @@ export class UserViewModel {
   constructor(userAPIInterface: UserAPIInterface) {
     this.id = userAPIInterface.id;
     this.email = userAPIInterface.email;
+    this.pendingEmail = userAPIInterface.pendingEmail;
     this.firstName = userAPIInterface.firstName;
     this.lastName = userAPIInterface.lastName;
     this.phone = userAPIInterface.phone;
@@ -59,6 +62,7 @@ export class UserAboViewModel implements UserAboAPIInterface {
 export interface UserAPIInterface {
   id: number;
   email: string;
+  pendingEmail?: string | null;
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
@@ -115,6 +119,12 @@ export class ContactUpdateRequest {
   @IsOptional()
   @MaxLength(36)
   landline?: string;
+
+  // New e-mail address; requires confirmation before it becomes active.
+  @IsOptional()
+  @IsEmail()
+  @MaxLength(60)
+  email?: string;
 
   @IsOptional()
   id?: number;

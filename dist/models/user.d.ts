@@ -1,6 +1,7 @@
 export declare class UserViewModel {
     id: number;
     email: string;
+    pendingEmail?: string | null;
     firstName: string | null;
     lastName: string | null;
     phone: string | null;
@@ -18,6 +19,7 @@ export declare class UserAboViewModel implements UserAboAPIInterface {
 export interface UserAPIInterface {
     id: number;
     email: string;
+    pendingEmail?: string | null;
     firstName: string | null;
     lastName: string | null;
     phone: string | null;
@@ -41,6 +43,7 @@ export declare class ContactUpdateRequest {
     lastName: string;
     phone: string;
     landline?: string;
+    email?: string;
     id?: number;
     language?: string;
     sex?: string;

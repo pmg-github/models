@@ -14,6 +14,8 @@ const class_validator_1 = require("class-validator");
 class UserViewModel {
     id; // = ContactID
     email;
+    // New e-mail address awaiting confirmation, if any.
+    pendingEmail;
     firstName;
     lastName;
     phone;
@@ -34,6 +36,7 @@ class UserViewModel {
     constructor(userAPIInterface) {
         this.id = userAPIInterface.id;
         this.email = userAPIInterface.email;
+        this.pendingEmail = userAPIInterface.pendingEmail;
         this.firstName = userAPIInterface.firstName;
         this.lastName = userAPIInterface.lastName;
         this.phone = userAPIInterface.phone;
@@ -97,6 +100,8 @@ class ContactUpdateRequest {
     lastName;
     phone;
     landline;
+    // New e-mail address; requires confirmation before it becomes active.
+    email;
     id;
     language;
     sex;
@@ -127,6 +132,12 @@ __decorate([
     (0, class_validator_1.MaxLength)(36),
     __metadata("design:type", String)
 ], ContactUpdateRequest.prototype, "landline", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.MaxLength)(60),
+    __metadata("design:type", String)
+], ContactUpdateRequest.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Number)
