@@ -163,6 +163,7 @@ export interface BoArticleListModel {
   fileId: number | undefined | null;
   imageUrl: string | undefined | null;
   numberOfLines: number | undefined | null;
+  newEditorUsed: boolean | number | undefined;
 }
 export interface bcArticleListModel {
   id: number;
