@@ -136,8 +136,8 @@ export class NewsletterContentModel {
   authorFileUrl: string | undefined = undefined;
   authorName: string | undefined = undefined;
   authorFunction: string | undefined = undefined;
-  isVideo: boolean| undefined = undefined;
-  containsVideo: boolean| undefined = undefined;
+  isVideo: boolean | undefined = undefined;
+  containsVideo: boolean | undefined = undefined;
 }
 
 export interface NewsletterOrderModel {
@@ -161,8 +161,8 @@ export interface NewsletterTileModel {
   id: number;
   reference: string;
   date: Date;
-  portal:string
-  portalName:string
+  portal: string;
+  portalName: string;
   displayDate: string;
   title: string;
   redirectUrl: string;
@@ -407,6 +407,8 @@ export class NewsletterArticleSaveRequest {
   authorName!: string | undefined | null;
   @IsOptional()
   authorFunction!: string | undefined | null;
+  @IsOptional()
+  headerText!: string | undefined | null;
 
   constructor(data: Partial<NewsletterArticleSaveRequest>) {
     Object.assign(this, data);
@@ -515,7 +517,7 @@ export class NewsletterScheduleCreateRequest {
     {},
     {
       each: true,
-    }
+    },
   )
   dates!: string[];
 

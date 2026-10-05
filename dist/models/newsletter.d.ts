@@ -254,6 +254,7 @@ export declare class NewsletterArticleSaveRequest {
     authorFileId: number | undefined | null;
     authorName: string | undefined | null;
     authorFunction: string | undefined | null;
+    headerText: string | undefined | null;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
 }
 export declare class NewsletterPollAddRequest {
