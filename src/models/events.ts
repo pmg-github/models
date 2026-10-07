@@ -25,8 +25,10 @@ export interface PageEditorListView {
   reference: string;
   title: string;
   language: string;
+  languageCode: string;
+  domain: string | null;
   layout: string;
-  description: string;
+  description: string | null;
   enabled: boolean;
 }
 export interface PageEditorBlockDetailView {
@@ -37,20 +39,22 @@ export interface PageEditorBlockDetailView {
   visibleUntil: string;
   enabled: boolean;
 }
-export interface PageEditorDetailView {
+export interface PageEditorDetailView<
+  ProjectCode = SelectOptionViewModel & { value: string },
+> {
   id: number;
   color: string;
   slug: string;
   layout: string;
   title: string;
-  description: string;
+  description: string | null;
   language: string;
   isEnabled: boolean;
   showFooter: boolean;
   blocks: PageEditorBlockDetailView[];
-  projectCode: string;
-  dateFrom: string;
-  dateUntil: string;
-  header: SelectOptionViewModel;
+  projectCode?: ProjectCode;
+  dateFrom?: string;
+  dateUntil?: string;
+  header?: SelectOptionViewModel & { value: number };
   portalCode: string[];
 }
