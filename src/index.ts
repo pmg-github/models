@@ -459,6 +459,8 @@ import {
   InteractionAdd,
 } from "./models/adds";
 
+import { AKAcademyAccredationRequest } from "./models/akacademy";
+
 export {
   BoHeroDetailView,
   ToolDetailView,
@@ -796,4 +798,5 @@ export {
   BenefitListModel,
   BcInteractionAddListModel,
   NewsletterStatsDetailViewModel,
+  AKAcademyAccredationRequest,
 };
