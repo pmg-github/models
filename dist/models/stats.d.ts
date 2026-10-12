@@ -185,6 +185,11 @@ export interface NewsletterStatsListViewModel {
         fr: number;
         total: number;
     };
+    interactionsUnique: {
+        nl: number;
+        fr: number;
+        total: number;
+    };
     openedNoBot?: {
         nl: number;
         fr: number;
