@@ -83,6 +83,7 @@ class NewsletterContentModel {
     authorFunction = undefined;
     isVideo = undefined;
     containsVideo = undefined;
+    headerText = undefined;
 }
 exports.NewsletterContentModel = NewsletterContentModel;
 class NewsletterSubscriptionSaveRequest {
@@ -275,6 +276,7 @@ class NewsletterArticleSaveRequest {
     authorFileId;
     authorName;
     authorFunction;
+    headerText;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -331,6 +333,10 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Object)
 ], NewsletterArticleSaveRequest.prototype, "authorFunction", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Object)
+], NewsletterArticleSaveRequest.prototype, "headerText", void 0);
 class NewsletterPollAddRequest {
     pollCode;
     projectCode;

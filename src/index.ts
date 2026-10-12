@@ -236,6 +236,9 @@ import {
 
 import {
   ArticleStatsListViewModel,
+  CustomPageStatsListViewModel,
+  InteresseStatsListViewModel,
+  NewsletterStatsDetailViewModel,
   NewsletterStatsListViewModel,
   PubsStatsListViewModel,
   StatsPostModel,
@@ -348,6 +351,7 @@ import {
   productOrderByData,
   BoProductPriorityDetailView,
   BOProductDetailModel,
+  ProductStatusEnum,
 } from "./models/product";
 
 import { PMGTeamMemberViewModel } from "./models/contacts";
@@ -454,6 +458,8 @@ import {
   BcInteractionAddListModel,
   InteractionAdd,
 } from "./models/adds";
+
+import { AKAcademyAccredationRequest } from "./models/akacademy";
 
 export {
   BoHeroDetailView,
@@ -675,6 +681,7 @@ export {
   ProductCategoryViewModel,
   ProductOrderByType,
   productOrderByData,
+  ProductStatusEnum,
   PMGTeamMemberViewModel,
   CommunityViewModel,
   PeriodFilterEnum,
@@ -724,6 +731,8 @@ export {
   CartUpdateRequest,
   CartDiscountAddRequest,
   ArticleStatsListViewModel,
+  CustomPageStatsListViewModel,
+  InteresseStatsListViewModel,
   PubsStatsListViewModel,
   EventPageListView,
   NewsletterStatsListViewModel,
@@ -788,4 +797,6 @@ export {
   BoBenefitViewModel,
   BenefitListModel,
   BcInteractionAddListModel,
+  NewsletterStatsDetailViewModel,
+  AKAcademyAccredationRequest,
 };

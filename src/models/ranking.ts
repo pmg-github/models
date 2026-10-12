@@ -7,6 +7,7 @@ export interface rankingTypes {
   interesseSoort: string;
   currentProject: string;
   cover: string;
+  url: string | null;
 }
 
 export interface RankingInteresses {

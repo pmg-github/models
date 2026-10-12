@@ -163,6 +163,7 @@ export interface BoArticleListModel {
   fileId: number | undefined | null;
   imageUrl: string | undefined | null;
   numberOfLines: number | undefined | null;
+  newEditorUsed: boolean | number | undefined;
 }
 export interface bcArticleListModel {
   id: number;
@@ -322,6 +323,7 @@ export interface BoArticleMetaDataModel {
   defaultInterest: string;
   onlyOnOwnPortal: boolean | number;
   customerReference: string | null;
+  source: string | null;
 }
 
 export interface BoArticleFileModel {
@@ -404,6 +406,8 @@ export interface BoArticleSaveRequest {
   // Op jobbonniveau (dus ook taalonafhankelijk)
   interests: string[] | undefined | null;
   defaultInterest: string | undefined | null;
+
+  source: string | null | undefined;
 }
 
 export interface ArticleContributorArticleSaveModel {

@@ -51,6 +51,7 @@ class ViewerArticleBaseViewModel {
     isVideo = undefined;
     transcription = undefined;
     specs = undefined;
+    source = undefined;
 }
 exports.ViewerArticleBaseViewModel = ViewerArticleBaseViewModel;
 class ViewerAdBaseViewModel {

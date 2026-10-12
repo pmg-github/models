@@ -52,6 +52,7 @@ export interface BestChoiceSpecInputs {
             unit: string;
             type: string;
             code: number;
+            decimals: number | null;
             length: number | null;
             info: string | null;
             values: SelectOptionViewModel[];

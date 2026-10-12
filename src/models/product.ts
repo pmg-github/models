@@ -48,6 +48,8 @@ export interface ProductViewModel {
   VAT: number;
   priceExclVAT: number;
   aboPriceExclVAT: number | null;
+  catalogPriceExclVAT: number | null;
+  catalogPriceInclVAT: number | null;
   priceInclVAT: number;
   aboPriceInclVAT: number | null;
   magazineCode: string | null;
@@ -60,6 +62,8 @@ export interface ProductViewModel {
   specs: JSON | undefined;
   attachment: FileViewModel | undefined;
   stock: number | undefined;
+  statusId: number;
+  status: string;
 }
 
 export enum ProductCategoryEnum {
@@ -141,4 +145,9 @@ export const productOrderByData: { [key in ProductOrderByType]: OrderByType } =
     },
   };
 
-// test
+export enum ProductStatusEnum {
+  AVAILABLE = 1,
+  TEMPORARY_UNAVAILABLE = 2,
+  SOLD_OUT = 3,
+  DISCONTINUED = 4,
+}

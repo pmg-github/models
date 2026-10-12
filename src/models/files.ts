@@ -46,6 +46,7 @@ export interface BoFileListViewModel {
   height: number;
   width: number;
   createdByParentCode: string;
+  type: string;
 }
 
 export type ExternalImageViewModel = {

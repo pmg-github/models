@@ -72,10 +72,68 @@ export interface PubsStatsListViewModel extends StatsListViewModel {
   orderLineNumber: number | null;
 }
 export interface ArticleStatsListViewModel extends StatsListViewModel {
-  
   articleTitle: string;
   articleType: string;
   portalDomain: string;
+}
+export interface InteresseStatsListViewModel {
+  id: number;
+  SortValue: number;
+  typeId: number;
+  projectCode: string | null;
+  interesseReference: string;
+  interesseName: string;
+  interactions: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  interactionsUnique: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  impressions: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  impressionsUnique: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+}
+export interface CustomPageStatsListViewModel {
+  id: number;
+  SortValue: number;
+  typeId: number;
+  projectCode: string | null;
+  reference: string;
+  title: string;
+  slug: string | null;
+  domain: string | null;
+  url: string | null;
+  interactions: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  interactionsUnique: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  impressions: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  impressionsUnique: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
 }
 export interface NewsletterStatsListViewModel {
   id: number;
@@ -124,6 +182,11 @@ export interface NewsletterStatsListViewModel {
     fr: number;
     total: number;
   };
+  interactions: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
   openedNoBot?: {
     nl: number;
     fr: number;
@@ -134,4 +197,36 @@ export interface NewsletterStatsListViewModel {
     fr: number;
     total: number;
   };
+  clicksNoBot?: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+  uniqueClicksNoBot?: {
+    nl: number;
+    fr: number;
+    total: number;
+  };
+}
+export interface NewsletterStatsDetailViewModel {
+  id: number;
+  title: string;
+  sendOn: string;
+  status: string;
+  statusReference: string;
+  isResend: boolean;
+  projectCode: string | null;
+  SortValue: number;
+  recipients: number;
+  reach: number;
+  send: number;
+  failed: number;
+  opened: number;
+  uniqueOpened: number;
+  impressions: number;
+  impressionsUnique: number;
+  openedNoBot?: number;
+  uniqueOpenedNoBot?: number;
+  clicksNoBot?: number;
+  uniqueClicksNoBot?: number;
 }

@@ -8,6 +8,7 @@ export interface PortalViewModel {
   hasVatOnProducts: boolean | number | undefined;
   isLive: boolean | number | undefined;
   requireLoginForAdd: boolean | number | undefined;
+  isFreePremium: boolean | number | undefined;
 }
 export interface BoPortalViewModel {
   id: number;

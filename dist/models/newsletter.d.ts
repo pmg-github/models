@@ -113,6 +113,7 @@ export declare class NewsletterContentModel {
     authorFunction: string | undefined;
     isVideo: boolean | undefined;
     containsVideo: boolean | undefined;
+    headerText: string | undefined;
 }
 export interface NewsletterOrderModel {
     reference: string;
@@ -254,6 +255,7 @@ export declare class NewsletterArticleSaveRequest {
     authorFileId: number | undefined | null;
     authorName: string | undefined | null;
     authorFunction: string | undefined | null;
+    headerText: string | undefined | null;
     constructor(data: Partial<NewsletterArticleSaveRequest>);
 }
 export declare class NewsletterPollAddRequest {

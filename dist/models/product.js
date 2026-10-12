@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.productOrderByData = exports.ProductOrderByType = exports.ProductCategoryEnum = void 0;
+exports.ProductStatusEnum = exports.productOrderByData = exports.ProductOrderByType = exports.ProductCategoryEnum = void 0;
 var ProductCategoryEnum;
 (function (ProductCategoryEnum) {
     ProductCategoryEnum[ProductCategoryEnum["PRINT_ABONNEMENTEN"] = 1] = "PRINT_ABONNEMENTEN";
@@ -66,4 +66,10 @@ exports.productOrderByData = {
         direction: "desc",
     },
 };
-// test
+var ProductStatusEnum;
+(function (ProductStatusEnum) {
+    ProductStatusEnum[ProductStatusEnum["AVAILABLE"] = 1] = "AVAILABLE";
+    ProductStatusEnum[ProductStatusEnum["TEMPORARY_UNAVAILABLE"] = 2] = "TEMPORARY_UNAVAILABLE";
+    ProductStatusEnum[ProductStatusEnum["SOLD_OUT"] = 3] = "SOLD_OUT";
+    ProductStatusEnum[ProductStatusEnum["DISCONTINUED"] = 4] = "DISCONTINUED";
+})(ProductStatusEnum || (exports.ProductStatusEnum = ProductStatusEnum = {}));

@@ -52,6 +52,7 @@ export interface BestChoiceSpecInputs {
       unit: string;
       type: string;
       code: number;
+      decimals: number | null;
       length: number | null;
       info: string | null;
       values: SelectOptionViewModel[];
@@ -85,7 +86,7 @@ export interface BestChoiceTileViewModel {
   displayDate: string;
   customerName: string | null;
   customerCity: string | null;
-  project:string
+  project: string;
 }
 
 export interface BestChoiceProductViewModel {
@@ -95,8 +96,8 @@ export interface BestChoiceProductViewModel {
   imageUrl: string;
   specs: {
     id: number;
-    participantId:number
-    score:string|number|boolean
+    participantId: number;
+    score: string | number | boolean;
   }[];
 }
 export interface BestChoiceTipsViewModel {
@@ -118,5 +119,5 @@ export interface BestChoiceSpecsViewModel {
 }
 
 export interface BestChoiceInfoViewModel extends BestChoiceTileViewModel {
-  videoCode:string|null;
+  videoCode: string | null;
 }
