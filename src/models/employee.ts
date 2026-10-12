@@ -60,20 +60,71 @@ export interface EmployeeWorkSchedule {
 
 export interface EmployeeDetailViewModel {
   code: string;
-  firstName: string;
+  firstName?: string;
   lastName: string;
-  internNumber: string;
+  gender?: Gender;
 
-  /*
-  code: string;
-  firstName: string;
-  lastName: string;
-  internalPhoneNumber: string;
-  teamName: string;
-  functionName: string;
-  presenceStatus: string;
-  lastActivityTime: string;
-  */
+  internalNumber?: string;
+
+  pmgCompany?: PMGCompanyListModel;
+  timeTable?: string;
+
+  // Address
+  streetAddress?: string;
+  zipCode?: string;
+  city?: string;
+
+  // Civil status
+  civilStatus?: CivilStatusListModel;
+  partner?: string;
+
+  // Personal
+  birthDate?: string;
+  birthPlace?: string;
+  nationalRegistrationNumber?: string;
+
+  // Contact
+  phone?: string;
+  mobile?: string;
+  bankAccount?: string;
+  email?: string;
+
+  // Employment
+  startDate: string;
+  permanentStartDate?: string;
+  endDate?: string;
+
+  contractType?: ContractTypeListModel;
+  ownCompany?: string;
+
+  // Equipment / permissions
+  hasCompanyPhone?: boolean;
+  hasSimCard?: boolean;
+  hasVisa?: boolean;
+  hasLaptop?: boolean;
+  hasCardReader?: boolean;
+  mayWorkFromHome?: boolean;
+  isExecutive?: boolean;
+  hasRecup?: boolean;
+  timeRegistration?: boolean;
+
+  // Misc
+  employeeNumber?: string;
+  carPlate?: string;
+
+  idCardNr?: string;
+  idCardValidFrom?: string;
+  idCardValidUntil?: string;
+
+  workplace?: string;
+
+  isActive: boolean;
+  allowSearch?: boolean;
+
+  languagePreference?: "nl" | "fr" | "en";
+
+  functions: EmployeeFunctionListModel[];
+  teams: EmployeeTeamListModel[];
 }
 
 export enum Gender {
@@ -116,7 +167,7 @@ export class CreateEmployee {
   })
   parentCode!: string;
 
-  @IsOptional() @IsString() internNumber?: string;
+  @IsOptional() @IsString() internalNumber?: string;
 
   @IsOptional() @IsString() pmgCompany?: string;
 
@@ -124,7 +175,6 @@ export class CreateEmployee {
 
   @IsString() lastName!: string;
   @IsOptional() @IsString() firstName?: string;
-
   @IsEnum(Gender) gender?: Gender;
 
   // Address
@@ -139,9 +189,7 @@ export class CreateEmployee {
   // Personal
   @IsOptional() @IsDateString() birthDate?: string; // ISO 8601 if you normalize
   @IsOptional() @IsString() birthPlace?: string;
-
   @IsOptional() @Matches(RRNR_REGEX) nationalRegistrationNumber?: string;
-  @IsOptional() @IsString() sisKaart?: string;
 
   // Contacts
   @IsOptional() @IsString() phone?: string;
@@ -179,8 +227,6 @@ export class CreateEmployee {
 
   @IsOptional() @IsString() workplace?: string;
 
-  @IsOptional() @IsNumber() personId?: number;
-
   @IsBoolean() isActive!: boolean;
   @IsOptional() @IsBoolean() allowSearch?: boolean;
 
@@ -189,8 +235,15 @@ export class CreateEmployee {
     | "fr"
     | "en";
 
-  @IsArray() functionCodes!: string[];
-  @IsArray() teamCodes!: string[];
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  functionCodes?: string[];
+
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  teamCodes?: string[];
 
   constructor(data: Partial<CreateEmployee>) {
     Object.assign(this, data);
