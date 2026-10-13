@@ -1,4 +1,4 @@
-import { IsNotEmpty } from "class-validator";
+import { IsDateString, IsNotEmpty } from "class-validator";
 
 export class AKAcademyAccredationRequest {
   @IsNotEmpty()
@@ -9,6 +9,10 @@ export class AKAcademyAccredationRequest {
 
   @IsNotEmpty()
   title!: string;
+
+  @IsNotEmpty()
+  @IsDateString()
+  completedAt!: string;
 
   constructor(data: Partial<AKAcademyAccredationRequest>) {
     Object.assign(this, data);
