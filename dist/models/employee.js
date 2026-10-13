@@ -20,7 +20,7 @@ var Gender;
 const RRNR_REGEX = /^(?:\d{2}\.\d{2}\.\d{2}-\d{3}\.\d{2}|\d{11})$/;
 class CreateEmployee {
     parentCode;
-    internNumber;
+    internalNumber;
     pmgCompany;
     timeTable;
     lastName;
@@ -37,7 +37,6 @@ class CreateEmployee {
     birthDate; // ISO 8601 if you normalize
     birthPlace;
     nationalRegistrationNumber;
-    sisKaart;
     // Contacts
     phone;
     mobile;
@@ -66,7 +65,6 @@ class CreateEmployee {
     idCardValidFrom;
     idCardValidUntil;
     workplace;
-    personId;
     isActive;
     allowSearch;
     languagePreference;
@@ -88,7 +86,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
-], CreateEmployee.prototype, "internNumber", void 0);
+], CreateEmployee.prototype, "internalNumber", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
@@ -152,11 +150,6 @@ __decorate([
     (0, class_validator_1.Matches)(RRNR_REGEX),
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "nationalRegistrationNumber", void 0);
-__decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], CreateEmployee.prototype, "sisKaart", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
@@ -277,11 +270,6 @@ __decorate([
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "workplace", void 0);
 __decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], CreateEmployee.prototype, "personId", void 0);
-__decorate([
     (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
 ], CreateEmployee.prototype, "isActive", void 0);
@@ -296,10 +284,14 @@ __decorate([
     __metadata("design:type", String)
 ], CreateEmployee.prototype, "languagePreference", void 0);
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], CreateEmployee.prototype, "functionCodes", void 0);
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], CreateEmployee.prototype, "teamCodes", void 0);

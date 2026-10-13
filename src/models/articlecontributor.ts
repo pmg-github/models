@@ -7,6 +7,7 @@ export interface ArticleContributorViewModel {
   fileId: number | null;
   fileUrl: string | null;
   function: string | null;
+  salutationTranslationKey: string | null;
   contributionType: ArticleContributorTypeEnum;
 }
 
@@ -27,5 +28,6 @@ export interface ArticleContributorEditModel {
   functionNl: string | undefined | null;
   functionFr: string | undefined | null;
   functionEn: string | undefined | null;
+  salutationTranslationKey: string | undefined | null;
   cursorValue: string | undefined | null;
 }

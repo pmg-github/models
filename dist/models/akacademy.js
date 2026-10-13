@@ -15,6 +15,7 @@ class AKAcademyAccredationRequest {
     contactId;
     activityNumber;
     title;
+    completedAt;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -32,3 +33,8 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], AKAcademyAccredationRequest.prototype, "title", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsDateString)(),
+    __metadata("design:type", String)
+], AKAcademyAccredationRequest.prototype, "completedAt", void 0);

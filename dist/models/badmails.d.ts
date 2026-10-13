@@ -27,5 +27,6 @@ export interface BadmailsDetailView {
         email: string;
         telephoneNr: string;
         contactNr: string;
+        function: string;
     }[];
 }

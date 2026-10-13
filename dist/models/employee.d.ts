@@ -37,9 +37,49 @@ export interface EmployeeWorkSchedule {
 }
 export interface EmployeeDetailViewModel {
     code: string;
-    firstName: string;
+    firstName?: string;
     lastName: string;
-    internNumber: string;
+    gender?: Gender;
+    internalNumber?: string;
+    pmgCompany?: PMGCompanyListModel;
+    timeTable?: string;
+    streetAddress?: string;
+    zipCode?: string;
+    city?: string;
+    civilStatus?: CivilStatusListModel;
+    partner?: string;
+    birthDate?: string;
+    birthPlace?: string;
+    nationalRegistrationNumber?: string;
+    phone?: string;
+    mobile?: string;
+    bankAccount?: string;
+    email?: string;
+    startDate: string;
+    permanentStartDate?: string;
+    endDate?: string;
+    contractType?: ContractTypeListModel;
+    ownCompany?: string;
+    hasCompanyPhone?: boolean;
+    hasSimCard?: boolean;
+    hasVisa?: boolean;
+    hasLaptop?: boolean;
+    hasCardReader?: boolean;
+    mayWorkFromHome?: boolean;
+    isExecutive?: boolean;
+    hasRecup?: boolean;
+    timeRegistration?: boolean;
+    employeeNumber?: string;
+    carPlate?: string;
+    idCardNr?: string;
+    idCardValidFrom?: string;
+    idCardValidUntil?: string;
+    workplace?: string;
+    isActive: boolean;
+    allowSearch?: boolean;
+    languagePreference?: "nl" | "fr" | "en";
+    functions: EmployeeFunctionListModel[];
+    teams: EmployeeTeamListModel[];
 }
 export declare enum Gender {
     Male = "M",
@@ -67,7 +107,7 @@ export interface EmployeeTeamListModel {
 }
 export declare class CreateEmployee {
     parentCode: string;
-    internNumber?: string;
+    internalNumber?: string;
     pmgCompany?: string;
     timeTable?: string;
     lastName: string;
@@ -81,7 +121,6 @@ export declare class CreateEmployee {
     birthDate?: string;
     birthPlace?: string;
     nationalRegistrationNumber?: string;
-    sisKaart?: string;
     phone?: string;
     mobile?: string;
     bankAccount?: string;
@@ -106,11 +145,10 @@ export declare class CreateEmployee {
     idCardValidFrom?: string;
     idCardValidUntil?: string;
     workplace?: string;
-    personId?: number;
     isActive: boolean;
     allowSearch?: boolean;
     languagePreference?: "nl" | "fr" | "en";
-    functionCodes: string[];
-    teamCodes: string[];
+    functionCodes?: string[];
+    teamCodes?: string[];
     constructor(data: Partial<CreateEmployee>);
 }
