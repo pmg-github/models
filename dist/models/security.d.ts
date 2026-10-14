@@ -48,5 +48,6 @@ export declare enum SecurityEnum {
     STATS_MASTER = 49,
     EVENTS_MASTER = 50,
     ADVANCED_ARTICLE_TYPES = 51,
-    ARTICLE_MASTER = 53
+    ARTICLE_MASTER = 53,
+    UNIQUE_STATS = 55
 }

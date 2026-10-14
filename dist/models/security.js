@@ -53,4 +53,5 @@ var SecurityEnum;
     SecurityEnum[SecurityEnum["EVENTS_MASTER"] = 50] = "EVENTS_MASTER";
     SecurityEnum[SecurityEnum["ADVANCED_ARTICLE_TYPES"] = 51] = "ADVANCED_ARTICLE_TYPES";
     SecurityEnum[SecurityEnum["ARTICLE_MASTER"] = 53] = "ARTICLE_MASTER";
+    SecurityEnum[SecurityEnum["UNIQUE_STATS"] = 55] = "UNIQUE_STATS";
 })(SecurityEnum || (exports.SecurityEnum = SecurityEnum = {}));
