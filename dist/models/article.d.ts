@@ -256,6 +256,7 @@ export interface BoArticleMetaDataModel {
     onlyOnOwnPortal: boolean | number;
     customerReference: string | null;
     source: string | null;
+    newEditorUsed: boolean | number | undefined;
 }
 export interface BoArticleFileModel {
     fileId: number;
