@@ -409,6 +409,8 @@ export interface BoArticleSaveRequest {
   defaultInterest: string | undefined | null;
 
   source: string | null | undefined;
+
+  numberOfLines: number | null | undefined;
 }
 
 export interface ArticleContributorArticleSaveModel {

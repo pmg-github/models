@@ -323,6 +323,7 @@ export interface BoArticleSaveRequest {
     interests: string[] | undefined | null;
     defaultInterest: string | undefined | null;
     source: string | null | undefined;
+    numberOfLines: number | null | undefined;
 }
 export interface ArticleContributorArticleSaveModel {
     articleContributorId: number;
