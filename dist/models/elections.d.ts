@@ -23,6 +23,7 @@ export interface ElectionsViewModel {
     interesse?: string;
     tool?: string;
     showResultsAfter: boolean;
+    stemText?: string;
     participants: {
         id: number;
         eventParticipantsId: number;
