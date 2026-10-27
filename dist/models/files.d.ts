@@ -37,10 +37,11 @@ export interface BoFileListViewModel {
     id: number;
     name: string;
     url: string;
-    isFavorite: boolean;
+    isFavorite: boolean | 0 | 1;
     aspectRatio: number;
     height: number;
     width: number;
+    cursor: string;
     createdByParentCode: string;
     type: string;
 }
