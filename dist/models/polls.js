@@ -17,6 +17,7 @@ class PubPollDto {
     orderLineNumber;
     projectCode;
     portalCode;
+    languageCode;
     constructor(data) {
         Object.assign(this, data);
     }
@@ -47,3 +48,8 @@ __decorate([
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], PubPollDto.prototype, "portalCode", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], PubPollDto.prototype, "languageCode", void 0);

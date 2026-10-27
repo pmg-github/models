@@ -52,6 +52,10 @@ export class PubPollDto {
   @IsString()
   portalCode?: string;
 
+  @IsOptional()
+  @IsString()
+  languageCode?: string;
+
   constructor(data: Partial<PubPollDto>) {
     Object.assign(this, data);
   }
