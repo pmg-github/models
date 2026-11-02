@@ -188,7 +188,14 @@ import {
   CivilStatusListModel,
 } from "./models/employee";
 
-import { PromptListModel } from "./models/prompt";
+import {
+  PromptListModel,
+  PromptJson,
+  PromptModel,
+  PromptFileModel,
+  PromptSaveRequest,
+  PromptFileSaveRequest,
+} from "./models/prompt";
 
 import {
   UnpaidInvoicesListModel,
@@ -601,6 +608,11 @@ export {
   BestChoiceSpecInputs,
   BcCompanyViewModel,
   PromptListModel,
+  PromptJson,
+  PromptModel,
+  PromptFileModel,
+  PromptSaveRequest,
+  PromptFileSaveRequest,
   UnpaidInvoicesListModel,
   PmgCompanyList,
   BoPageSearchListModel,
