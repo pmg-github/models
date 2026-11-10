@@ -9,6 +9,7 @@ export enum ArticleOrderByType {
   ARTICLE_NUMBER = "articleNumber",
   MOST_RELEVANT = "mostRelevant",
   MOST_POPULAR = "mostPopular",
+  RECENT_UPDATED = "recentUpdated",
 }
 
 export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
@@ -27,6 +28,10 @@ export const articleOrderByData: { [key in ArticleOrderByType]: OrderByType } =
     },
     [ArticleOrderByType.MOST_POPULAR]: {
       column: "article_views.Views",
+      direction: "desc",
+    },
+    [ArticleOrderByType.RECENT_UPDATED]: {
+      column: "article.LastModificationDate",
       direction: "desc",
     },
   };

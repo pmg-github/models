@@ -6,7 +6,8 @@ export declare enum ArticleOrderByType {
     RECENT_FIRST = "recentFirst",
     ARTICLE_NUMBER = "articleNumber",
     MOST_RELEVANT = "mostRelevant",
-    MOST_POPULAR = "mostPopular"
+    MOST_POPULAR = "mostPopular",
+    RECENT_UPDATED = "recentUpdated"
 }
 export declare const articleOrderByData: {
     [key in ArticleOrderByType]: OrderByType;

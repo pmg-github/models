@@ -8,6 +8,7 @@ var ArticleOrderByType;
     ArticleOrderByType["ARTICLE_NUMBER"] = "articleNumber";
     ArticleOrderByType["MOST_RELEVANT"] = "mostRelevant";
     ArticleOrderByType["MOST_POPULAR"] = "mostPopular";
+    ArticleOrderByType["RECENT_UPDATED"] = "recentUpdated";
 })(ArticleOrderByType || (exports.ArticleOrderByType = ArticleOrderByType = {}));
 exports.articleOrderByData = {
     [ArticleOrderByType.RECENT_FIRST]: {
@@ -24,6 +25,10 @@ exports.articleOrderByData = {
     },
     [ArticleOrderByType.MOST_POPULAR]: {
         column: "article_views.Views",
+        direction: "desc",
+    },
+    [ArticleOrderByType.RECENT_UPDATED]: {
+        column: "article.LastModificationDate",
         direction: "desc",
     },
 };
