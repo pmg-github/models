@@ -19,6 +19,7 @@ export interface PromptFileModel {
     fileId: number;
     portalCode: string | null;
     isDeleted: number;
+    fileUrl?: string;
 }
 export declare class PromptSaveRequest {
     id?: number;

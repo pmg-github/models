@@ -35,6 +35,7 @@ export interface PromptFileModel {
   fileId: number;
   portalCode: string | null;
   isDeleted: number;
+  fileUrl?: string;
 }
 
 export class PromptSaveRequest {
