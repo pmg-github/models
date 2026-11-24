@@ -60,4 +60,6 @@ export class MagJobSaveRequest {
   numberOfPages: number | undefined;
   numberOfCharacters: number | undefined;
   rubriek: string | undefined;
+  interests: string[] | undefined;
+  defaultInterests: string[] | undefined;
 }
