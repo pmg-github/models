@@ -24,5 +24,6 @@ class MagJobSaveRequest {
     rubriek;
     interests;
     defaultInterest;
+    fileIds;
 }
 exports.MagJobSaveRequest = MagJobSaveRequest;
