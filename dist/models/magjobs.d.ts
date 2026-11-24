@@ -54,5 +54,5 @@ export declare class MagJobSaveRequest {
     numberOfCharacters: number | undefined;
     rubriek: string | undefined;
     interests: string[] | undefined;
-    defaultInterests: string[] | undefined;
+    defaultInterest: string | undefined;
 }

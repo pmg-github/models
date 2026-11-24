@@ -23,6 +23,6 @@ class MagJobSaveRequest {
     numberOfCharacters;
     rubriek;
     interests;
-    defaultInterests;
+    defaultInterest;
 }
 exports.MagJobSaveRequest = MagJobSaveRequest;
