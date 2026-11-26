@@ -1,10 +1,24 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NewsletterTestMailCreateRequest = exports.NewsletterSubjectAddRequest = exports.NewsletterSubjectSaveRequest = exports.NewsletterAdPostSaveRequest = exports.NewsletterNewsSaveRequest = exports.NewsletterNewsAddRequest = exports.NewsletterArticleSaveRequest = exports.NewsletterArticleAddRequest = exports.NewsletterQuicklinkSaveRequest = exports.NewsletterQuicklinkAddRequest = exports.NewsletterIntroSaveRequest = exports.NewsletterMetaDataCreateRequest = exports.NewsletterSubscriptionSaveRequest = exports.NewsletterContentModel = exports.NewsletterViewTypeEnum = exports.NewsletterModel = exports.NewsletterContentType = exports.NewsletterProjectStatusEnum = exports.SymposiumPostMultiLanguageField = exports.SymposiumPostSaveRequest = exports.SymposiumPostCreateRequest = exports.AddressContactUpdateRequest = exports.AddressContactCreateRequest = exports.AddressViewModel = exports.AddressHelper = exports.CompanyCornerPictureModel = exports.CompanyCornerDBModel = exports.CompanyViewModel = exports.ValidateTokenRequest = exports.BcValidateTokenRequest = exports.BcEmailCodeRequest = exports.EmailCodeRequest = exports.ContactUpdateRequest = exports.ContactCreateModel = exports.UserAboViewModel = exports.UserViewModel = exports.NewsletterMetaDataViewModel = exports.NewsletterTileViewModel = exports.RelatedMagazineViewModel = exports.MagazineCustomerTileViewModel = exports.MagazineImageArticleCombinationViewModel = exports.MagazineMetaDataViewModel = exports.MagazineAdViewModel = exports.MagazineArticleViewModel = exports.MagazineTileViewModel = exports.ViewerTileBaseViewModel = exports.SearchResultsSaveRequest = exports.articleOrderByData = exports.ArticleOrderByType = exports.NotificationSummaryListModelWhitCursorAndContent = void 0;
 exports.CartDiscountAddRequest = exports.CartUpdateRequest = exports.CartDeleteItemRequest = exports.CartUpdateItemRequest = exports.CartAddItemRequest = exports.CartBaseRequest = exports.SelectOptionViewModelDto = exports.MemberCreateRequest = exports.PopupTargetScopeType = exports.CreatePopupDto = exports.PeriodFilterEnum = exports.ProductStatusEnum = exports.productOrderByData = exports.ProductOrderByType = exports.ProductCategoryEnum = exports.Issuers = exports.SecurityEnum = exports.TimeRegistrationRecordCreateRequest = exports.TimeRegistrationStatusEnum = exports.Priority = exports.UpdateTicketStatusModel = exports.UpdateTicketPriorityModel = exports.UpdateCommentToTicketModel = exports.CreateSuportTicketModel = exports.AddUserToTicketModel = exports.AddCommentToTicketModel = exports.SimpleSortSaveRequest = exports.ArticlePremiumType = exports.articleTypeData = exports.ArticleType = exports.TranslationSaveRequest = exports.DeeplTranslationRequest = exports.ContactenAboUpdateRequest = exports.ProefAboCreateModel = exports.PopupModel = exports.PromptFileSaveRequest = exports.PromptSaveRequest = exports.Gender = exports.CreateEmployee = exports.KnowledgebaseTagViewModel = exports.KnowledgebaseSimpleListModel = exports.KnowledgebaseModel = exports.KnowledgebaseCategoryViewModel = exports.KnowledgebaseMediaListModel = exports.NotificationTopicModel = exports.NotificationMediaListModel = exports.NotificationListModel = exports.PmgUserModel = exports.NewsletterScheduleSaveRequest = exports.NewsletterScheduleCreateRequest = void 0;
 exports.AKAcademyAccredationRequest = exports.ArticleStatusEnum = exports.MagJobSaveRequest = exports.MagJobActionStatusEnum = exports.DashboardLogResourceEnum = exports.ArticleContributorTypeEnum = exports.BannerWidthEnum = exports.PubPollDto = exports.SubmitVote = void 0;
-// import "reflect-metadata";
 // Import and re-export your modules
+__exportStar(require("./models/bouwnieuws"), exports);
 const article_1 = require("./models/article"); //help
 Object.defineProperty(exports, "ArticleOrderByType", { enumerable: true, get: function () { return article_1.ArticleOrderByType; } });
 Object.defineProperty(exports, "articleOrderByData", { enumerable: true, get: function () { return article_1.articleOrderByData; } });

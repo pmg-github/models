@@ -1,5 +1,6 @@
-// import "reflect-metadata";
 // Import and re-export your modules
+export * from "./models/bouwnieuws";
+export type { AvailableVideo, VideoProjectSearchResult } from "./models/video";
 import {
   ArticleOrderByType,
   articleOrderByData,

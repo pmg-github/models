@@ -1,6 +1,25 @@
 import { CompanyCardViewModel, CompanyViewModel } from "./company";
 import { PmgUserInterface } from "./pmguser";
 
+export interface AvailableVideo {
+  title: string | null;
+  jobCode: string;
+  languageCode: string;
+  videoUrl: string | null;
+  videoPosterUrl: string | null;
+  uploadedAt: string | null;
+  durationSeconds: number | null;
+  statusId: number | null;
+  status: string | null;
+  usageCount: number;
+  availableLanguages: ("nl" | "fr")[];
+}
+
+export interface VideoProjectSearchResult {
+  content: (BoVideoViewModel & { video?: AvailableVideo })[];
+  cursor: string | null;
+}
+
 export interface BoVideoViewModel {
   id: number;
   jobNr: string;
