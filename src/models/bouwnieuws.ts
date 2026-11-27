@@ -4,6 +4,7 @@ import {
   ArrayUnique,
   IsArray,
   IsBoolean,
+  IsDateString,
   IsObject,
   IsString,
   Length,
@@ -102,9 +103,14 @@ export class BouwnieuwsSelectionItem {
   @ValidateIf((_object, value) => value !== undefined)
   @IsBoolean()
   isIntro?: boolean;
+
+  @ValidateIf((_object, value) => value !== undefined && value !== null)
+  @IsDateString({ strict: true })
+  addedAt?: string | null;
 }
 
-export interface StoredBouwnieuwsSelectionItem extends BouwnieuwsSelectionItem {
+export interface StoredBouwnieuwsSelectionItem
+  extends Omit<BouwnieuwsSelectionItem, "addedAt"> {
   addedAt: Date | string | null;
 }
 

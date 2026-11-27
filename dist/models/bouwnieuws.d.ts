@@ -63,8 +63,9 @@ export declare class BouwnieuwsSelectionItem {
     jobCode: string;
     languageCode: string;
     isIntro?: boolean;
+    addedAt?: string | null;
 }
-export interface StoredBouwnieuwsSelectionItem extends BouwnieuwsSelectionItem {
+export interface StoredBouwnieuwsSelectionItem extends Omit<BouwnieuwsSelectionItem, "addedAt"> {
     addedAt: Date | string | null;
 }
 export declare class BouwnieuwsSelectionSaveRequest {

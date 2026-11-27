@@ -22,6 +22,7 @@ class BouwnieuwsSelectionItem {
     jobCode;
     languageCode;
     isIntro;
+    addedAt;
 }
 exports.BouwnieuwsSelectionItem = BouwnieuwsSelectionItem;
 __decorate([
@@ -40,6 +41,11 @@ __decorate([
     (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
 ], BouwnieuwsSelectionItem.prototype, "isIntro", void 0);
+__decorate([
+    (0, class_validator_1.ValidateIf)((_object, value) => value !== undefined && value !== null),
+    (0, class_validator_1.IsDateString)({ strict: true }),
+    __metadata("design:type", Object)
+], BouwnieuwsSelectionItem.prototype, "addedAt", void 0);
 let BouwnieuwsIntroLimit = class BouwnieuwsIntroLimit {
     validate(items) {
         return (Array.isArray(items) &&
